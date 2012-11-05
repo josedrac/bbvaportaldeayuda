@@ -30,7 +30,7 @@
 		float:left;
 	    width:282px;
 		height:160px;
-		margin-left:15px;
+		margin-left:20px;
 	  }
 	  #TagVideo{
 	    color:#FF7800;
