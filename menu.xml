@@ -50,7 +50,7 @@ ol, ul {
 .cabeceramenu ul li{
   float: left;
   text-align: center;
-  background: url('https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/JMCtemp/Portal%20Ayuda/img/separador-menu.png') no-repeat scroll right top transparent;
+  background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
 }
 
 .cabeceramenu ul li .enlace, 
@@ -117,16 +117,14 @@ margin-top:-19px;
 }*/
 
 
-#sites-chrome-everything a:link {
-    color: #005596 !important;
-}
+
 </style>
 
 
 
 <div class="cabeceramenu">
   <ul>   
-	<li class="home first"><span class="enlace" tabindex="0"><span><a href=""  target="_parent"  title="home"><img src="https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/JMCtemp/Portal%20Ayuda/img/Home.png" alt="Home" /></a></span></span></li>
+	<li class="home first"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/"  target="_parent"  title="home"><img src="http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/Home.png" alt="Home" /></a></span></span></li>
 	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iníciate en tu NET</a></span></span></li>
 	<li class="apps"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Google Apps</a></span></span></li>
 	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Movilidad</a></span></span></li>  
