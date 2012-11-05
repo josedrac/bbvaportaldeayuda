@@ -34,11 +34,13 @@
 	  }
 	  #TagVideo{
 	    color:#FCC3A5;
+		font-weight:bold;
 	  }
 	  
       #titleVideo{
 		color:#A7BDDB;
-	    
+	    font-weight:bold;
+		margin-bottom:20px;
 	  }
 	  #textVideo{
 		color:#323232;
