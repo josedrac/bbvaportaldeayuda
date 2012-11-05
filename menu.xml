@@ -21,7 +21,7 @@ ol, ul {
 }
 
 .cabeceramenu {
-	width: 91.3em;
+	width: 91em;
 	height: 5.1em;
 	margin-top: 0px;
 	-webkit-border-radius: 5px;
@@ -99,7 +99,7 @@ margin-top:-19px;
 .cabeceramenu ul li.apps, 
 .cabeceramenu ul li.movilidad,
 .cabeceramenu ul li.exito {
-	width: 219px;
+	width: 200px;
 }
 /*
 .cabeceramenu  ul li.home .enlace span{
