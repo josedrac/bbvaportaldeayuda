@@ -75,6 +75,7 @@ ol, ul {
   text-decoration:none;
   font-family: Myriad Pro;
   font-size:14px;
+  font-weight:bold;
 }
 
 
@@ -126,7 +127,7 @@ margin-top:-19px;
 <div class="cabeceramenu">
   <ul>   
 	<li class="home first"><span class="enlace" tabindex="0"><span><a href=""  target="_parent"  title="home"><img src="https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/JMCtemp/Portal%20Ayuda/img/Home.png" alt="Home" /></a></span></span></li>
-	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iniciate en tu NET</a></span></span></li>
+	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iníciate en tu NET</a></span></span></li>
 	<li class="apps"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Google Apps</a></span></span></li>
 	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Movilidad</a></span></span></li>  
 	<li class="exito"><span class="enlace" tabindex="0"><span><a href=""  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
