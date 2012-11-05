@@ -53,7 +53,7 @@ ol, ul {
   background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
 
 }
-.cabeceramenu ul li .exito  {
+.exito  {
   float: left;
   text-align: center;
   background-image:none;
