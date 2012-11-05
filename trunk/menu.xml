@@ -47,7 +47,7 @@ ol, ul {
   margin:0;
   padding:0;
 }
-.cabeceramenu ul li .separador{
+.cabeceramenu ul li #separador{
   float: left;
   text-align: center;
   background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
@@ -129,7 +129,7 @@ margin-top:-19px;
 
 <div class="cabeceramenu">
   <ul> 
-  <div class="separador">  
+  <div id="separador">  
 	<li class="home first"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/"  target="_parent"  title="home"><img src="http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/Home.png" alt="Home" /></a></span></span></li>
 	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iníciate en tu NET</a></span></span></li>
 	<li class="apps"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Google Apps</a></span></span></li>
