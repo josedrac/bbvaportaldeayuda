@@ -33,7 +33,7 @@
 		margin-left:20px;
 	  }
 	  #TagVideo{
-	    color:#FCC3A5;
+	    color:#FF7800;
 		font-weight:bold;
 	  }
 	  
@@ -50,7 +50,8 @@
 	    }
 	#infoVideo{
 		float:left;
-		width:346px;
+		width:325px;
+		height:60px;
 		margin-left:20px;
 		}
 	</style>
