@@ -58,7 +58,7 @@ ol, ul {
 .cabeceramenu ul li .exito{
   float: left;
   text-align: center;
- 
+  background:none;
 }
 .cabeceramenu ul li .enlace, 
 .cabeceramenu ul li .enlace:hover{
