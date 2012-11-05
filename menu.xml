@@ -52,7 +52,11 @@ ol, ul {
   text-align: center;
   background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
 }
-
+.cabeceramenu ul li .exito{
+  float: left;
+  text-align: center;
+ 
+}
 .cabeceramenu ul li .enlace, 
 .cabeceramenu ul li .enlace:hover{
   font-size: 1.4em;
