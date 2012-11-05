@@ -47,10 +47,7 @@ ol, ul {
   margin:0;
   padding:0;
 }
-.cabeceramenu ul li .home,
-.cabeceramenu ul li .iniciate,
-.cabeceramenu ul li .apps,
-.cabeceramenu ul li .movilidad{
+.cabeceramenu ul li {
   float: left;
   text-align: center;
   background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
