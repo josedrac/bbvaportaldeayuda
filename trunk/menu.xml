@@ -99,7 +99,7 @@ margin-top:-19px;
 .cabeceramenu ul li.apps, 
 .cabeceramenu ul li.movilidad,
 .cabeceramenu ul li.exito {
-	width: 200px;
+	width: 212px;
 }
 /*
 .cabeceramenu  ul li.home .enlace span{
