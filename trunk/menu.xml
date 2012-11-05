@@ -110,6 +110,11 @@ margin-top:-19px;
 .cabeceramenu ul li.exito .enlace span{
 	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -3437px transparent;
 }*/
+
+
+#sites-chrome-everything a:link {
+    color: #005596 !important;
+}
 </style>
 
 
