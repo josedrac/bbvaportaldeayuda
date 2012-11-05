@@ -98,8 +98,12 @@ margin-top:-19px;
 	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 8px -3150px;
 	height: 1.577em;
 }
+.cabeceramenu ul li.iniciate .enlace a{
+font-family:Myriad pro;
+}
 .cabeceramenu ul li.iniciate .enlace span{
 	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2430px transparent;
+	
 }
 .cabeceramenu ul li.apps .enlace span{
 	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2575px transparent;
