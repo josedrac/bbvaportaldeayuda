@@ -21,8 +21,8 @@ ol, ul {
 }
 
 .cabeceramenu {
-	width: 96em;
-	height: 5em;
+	width: 91.3em;
+	height: 5.1em;
 	margin-top: 0px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
