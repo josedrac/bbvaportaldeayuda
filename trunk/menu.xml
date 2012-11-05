@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <Module>
+  <ModulePrefs title="menu findings"/> 
+ <Content type="html">
+ <![CDATA[ 
+  <style> 
+
+body, html {
+	font-size: 125%;
+	background-color: rgb(255, 255, 255);
+}
+body {
+	font-size: 0.5em;
+	font-family: Arial,sans-serif;
+	color: rgb(0, 76, 153);
+	text-align: left;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none outside none;
+}
+
+.cabeceramenu {
+	width: 96em;
+	height: 5em;
+	margin-top: 1.8em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #0079c1;
+	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzljMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDUyOWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
+	background: -moz-linear-gradient(top,  #0079c1 0%, #00529b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0079c1), color-stop(100%,#00529b));
+	background: -webkit-linear-gradient(top,  #0079c1 0%,#00529b 100%);
+	background: -o-linear-gradient(top,  #0079c1 0%,#00529b 100%);
+	background: -ms-linear-gradient(top,  #0079c1 0%,#00529b 100%);
+	background: linear-gradient(to bottom,  #0079c1 0%,#00529b 100%);
+	/*
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#00529b',GradientType=0 );
+	*/
+	position: relative;
+	font-family: BBVA Web Medium;
+	font-weight: normal;
+	text-align: center;
+}
+.cabeceramenu ul{
+  margin:0;
+  padding:0;
+}
+.cabeceramenu ul li{
+  float: left;
+  text-align: center;
+  background: url('https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/JMCtemp/Portal%20Ayuda/img/separador-menu.png') no-repeat scroll right top transparent;
+}
+
+.cabeceramenu ul li .enlace, 
+.cabeceramenu ul li .enlace:hover{
+  font-size: 1.4em;
+  margin-right: 0.071em;
+  display: block;
+  color: #FFF;
+  cursor: pointer;
+  height: 3.571em;
+
+}
+.cabeceramenu ul li .enlace:hover{
+  background-color: #004c99;
+}
+
+
+.cabeceramenu ul li a, 
+.cabeceramenu ul li a:hover{
+  color: #FFF;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+
+.cabeceramenu ul li.home {
+	width: 81px;
+}
+.cabeceramenu ul li .enlace span{
+	padding-top: 1.286em;
+	display: inline-block;
+	height: 2em;
+}
+.cabeceramenu ul li .enlace span img{
+margin-top:-19px;
+}
+.cabeceramenu ul li.iniciate, 
+.cabeceramenu ul li.apps, 
+.cabeceramenu ul li.movilidad,
+.cabeceramenu ul li.exito {
+	width: 219px;
+}
+/*
+.cabeceramenu  ul li.home .enlace span{
+	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 8px -3150px;
+	height: 1.577em;
+}
+.cabeceramenu ul li.iniciate .enlace span{
+	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2430px transparent;
+}
+.cabeceramenu ul li.apps .enlace span{
+	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2575px transparent;
+}
+.cabeceramenu ul li.movilidad .enlace span{
+	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2717px transparent;
+}
+.cabeceramenu ul li.exito .enlace span{
+	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -3437px transparent;
+}*/
+</style>
+
+
+
+<div class="cabeceramenu">
+  <ul>   
+	<li class="home first"><span class="enlace" tabindex="0"><span><a href=""  target="_parent"  title="home"><img src="https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/JMCtemp/Portal%20Ayuda/img/Home.png" alt="Home" /></a></span></span></li>
+	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iniciate en tu NET</a></span></span></li>
+	<li class="apps"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Google Apps</a></span></span></li>
+	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Movilidad</a></span></span></li>  
+	<li class="exito"><span class="enlace" tabindex="0"><span><a href=""  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
+  </ul>    
+</div>
+
+  ]]> 
+  </Content>
+  </Module>
