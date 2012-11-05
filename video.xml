@@ -21,15 +21,15 @@
 	<style type="text/css">
 	
       #video-container{
-	    float:left;
+	   // float:left;
 		width:668px;
 		height:271px;
 	  }
 	  
 	  #urlVideo{
-		float:left;
-	    width:284px;
-		height:189px;
+		//float:left;
+	    width:282px;
+		height:160px;
 		margin-right:15px;
 	  }
 	  #TagVideo{
@@ -76,7 +76,7 @@
 	 document.getElementById("textVideo").innerHTML = textVideo;
 	 //document.getElementById("urlVideo").innerHTML = '<EMBED SRC="'+urlVideo+'" HEIGHT=189 WIDTH=284 type="application/x-shockwave-flash" AUTOSTART=TRUE LOOP=FALSE/>';
 	 //alert(urlVideo);
-	 document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="284" height="189"></object> </embed>';
+	 document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="282" height="160"></object> </embed>';
 	 //<Embed> <object style="height: 189px; width: 284px; float:left;"><param name="movie" value="'+urlVideo+'"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always">
      //alert(document.getElementById("urlVideo"));
 	
