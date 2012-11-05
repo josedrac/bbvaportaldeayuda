@@ -48,6 +48,8 @@
 	    }
 	#infoVideo{
 		float:left;
+		width:346px;
+		margin-left:40px;
 		}
 	</style>
     
