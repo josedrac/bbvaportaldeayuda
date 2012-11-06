@@ -110,7 +110,12 @@ margin-top:-19px;
 
 .cabeceramenu  ul li.homefirst {
 	width: 81px;
-
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.cabeceramenu ul li.homefirst span:hover{
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .cabeceramenu  ul li.homefirst span{
