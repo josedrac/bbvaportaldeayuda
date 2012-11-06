@@ -46,7 +46,7 @@
 		color:#323232;
 		font-size:12px;
 		font-family:arial;
-		height:160px;
+		height:100px;
 	    }
 	#infoVideo{
 		float:left;
