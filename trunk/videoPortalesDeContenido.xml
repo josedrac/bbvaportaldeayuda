@@ -30,8 +30,8 @@
 		height:271px;
 	  }
 	  
-	  #urlVideo
-	  #urlVideo,{
+	  #urlVideo,
+	  #urlVideo2{
 		float:left;
 	    width:282px;
 		height:160px;
@@ -75,7 +75,7 @@
 	<div id="infoVideo">	
 		<div id="tagVideo"></div>
 		<div id="titleVideo"></div>
-        <div id="textVideo"></div></div>
+        <div id="textVideo"></div></div><br/>
 	 <hr/>
 	 
 		<div id="urlVideo2"></div>
