@@ -38,13 +38,13 @@
 	  }
 	  
 	  #urlVideo{
-		float:left;
+		float:right;
 	    width:282px;
 		height:160px;
 		margin-left:20px;
 	  }
 	  #urlVideo2{
-		float:left;
+		float:right;
 	    width:282px;
 		height:160px;
 		margin-left:20px;
@@ -114,8 +114,9 @@
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
 	 </div>
-	 
-	</div>
+</div>
+	
+	
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
