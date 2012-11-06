@@ -3,6 +3,7 @@
   <ModulePrefs title="menu findings"/> 
  <Content type="html">
  <![CDATA[ 
+ <head><link rel="stylesheet" type="text/css" href="http://bbvaportaldeayuda.googlecode.com/svn/trunk/styles.css" media="all"></head>
   <style> 
 
 body, html {
