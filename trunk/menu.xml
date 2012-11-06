@@ -40,7 +40,7 @@ ol, ul {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#00529b',GradientType=0 );
 	*/
 	position: relative;
-	font-family: 'BBVA Web Medium';
+	font-family: BBVA Web Medium;
 	font-weight: normal;
 	text-align: center;
 }
