@@ -259,6 +259,9 @@ margin-top:-19px;
 		if (parametros.indexOf("home")!=-1)
 		{   
 			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "#004c99";
+			document.getElementsByClassName("homefirst")[0].style.border-top-left-radius = "5px";
+			document.getElementsByClassName("homefirst")[0].style.border-bottom-left-radius = "5px";
+			
 		}
 		
 	}
