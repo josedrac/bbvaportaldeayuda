@@ -85,6 +85,7 @@ ol, ul {
   text-decoration:none;
   font-family: BBVA Web Medium;
   font-size:14px;
+  font-style:normal;
   
 }
 
