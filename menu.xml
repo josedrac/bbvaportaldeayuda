@@ -255,7 +255,7 @@ margin-top:-19px;
 
 <script type="text/javascript">
 function redirect(){
-window.parent.location.href = "https://sites.google.com/a/bbva.com/portaldeayuda/home";
+window.parent.location.href = https://sites.google.com/a/bbva.com/portaldeayuda/home ;
 }
 </script>
 	<!-- Elemento de menú set visited -->
