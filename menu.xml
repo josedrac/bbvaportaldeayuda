@@ -232,7 +232,12 @@ margin-top:-19px;
 	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spritegraficos24.png') no-repeat scroll 28px -3150px;
 	
 }
+.active{
+background-color:#004C99;
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
 
+}
 
 
 </style>
@@ -254,7 +259,7 @@ margin-top:-19px;
 	gadgets.util.registerOnLoadHandler(datospagina);
 	function datospagina()
 	{   
-	    
+	    document.getElementsByClassName("homefirst")[0].className="active";
 		var parametros = gadgets.util.getUrlParameters()["parent"];	
 		/*if (parametros.indexOf("home")!=-1)
 		{   
