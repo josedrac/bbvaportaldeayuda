@@ -222,6 +222,8 @@ margin-top:-19px;
 
 .cabeceramenu  ul li.homefirst {
 	width: 81px;
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 .cabeceramenu ul li.homefirst span:hover{
 	border-bottom-left-radius: 5px;
@@ -258,7 +260,7 @@ margin-top:-19px;
 		var parametros = gadgets.util.getUrlParameters()["parent"];	
 		if (parametros.indexOf("home")!=-1)
 		{   
-		alert("entro");
+			alert("entro");
 			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "#004C99";
 			document.getElementsByClassName("homefirst")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 			
