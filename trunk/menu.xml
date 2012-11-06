@@ -262,7 +262,7 @@ border-top-left-radius: 5px;
 	gadgets.util.registerOnLoadHandler(datospagina);
 	function datospagina()
 	{   
-	    document.getElementsByClassName("homefirst")[0].className="active";
+	    document.getElementsByClassName("homefirst")[0].classname ="active";
 		var parametros = gadgets.util.getUrlParameters()["parent"];	
 		/*if (parametros.indexOf("home")!=-1)
 		{   
