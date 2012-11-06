@@ -232,7 +232,8 @@ margin-top:-19px;
 
 .cabeceramenu  ul li.homefirst span{
 	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spritegraficos24.png') no-repeat scroll 28px -3150px;
-	
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 
