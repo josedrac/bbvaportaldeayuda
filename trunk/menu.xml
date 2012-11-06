@@ -258,8 +258,8 @@ margin-top:-19px;
 		var parametros = gadgets.util.getUrlParameters()["parent"];	
 		if (parametros.indexOf("home")!=-1)
 		{   
-			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "#E2FAFE";
-			document.getElementsByClassName("homefirst")[0].style.border-bottom = "1px solid #E2FAFE";
+			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "#004C99";
+			document.getElementsByClassName("homefirst")[0].style.border-bottom = "1px solid #004C99";
 		
 			
 		}
