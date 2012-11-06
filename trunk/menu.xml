@@ -253,11 +253,12 @@ margin-top:-19px;
 	<script type="text/javascript">
 	gadgets.util.registerOnLoadHandler(datospagina);
 	function datospagina()
-	{
+	{   alert("entro1");
+	    
 		var parametros = gadgets.util.getUrlParameters()["parent"];	
 		if (parametros.indexOf("home")!=-1)
-		{
-			document.getElementById("homefirst").style.backgroundColor = "#004c99";
+		{   alert("entro2");
+			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "#004c99";
 		}
 		
 	}
