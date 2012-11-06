@@ -26,14 +26,23 @@
 	width:681px;
 	float:left;
 	}
-      #video-container,
+      #video-container{
+   	    float:left;
+		width:668px;
+		height:271px;
+		}
 	  #video-container2{
 	    float:left;
 		width:668px;
 		height:271px;
 	  }
 	  
-	  #urlVideo,
+	  #urlVideo{
+		float:left;
+	    width:282px;
+		height:160px;
+		margin-left:20px;
+	  }
 	  #urlVideo2{
 		float:left;
 	    width:282px;
@@ -41,26 +50,44 @@
 		margin-left:20px;
 	  }
 	  
-	  #TagVideo,
+	  #TagVideo{
+	   color:#FF7800;
+		//font-weight:bold;
+	  }
 	  #TagVideo2{
 	    color:#FF7800;
 		//font-weight:bold;
 	  }
 	  
-      #titleVideo,
+      #titleVideo{
+	  color:#0064B9;
+	    //font-weight:bold;
+		margin-bottom:20px;
+	  
+	  }
 	  #titleVideo2{
 		color:#0064B9;
 	    //font-weight:bold;
 		margin-bottom:20px;
 	  }
-	  #textVideo,
+	  #textVideo{
+	  color:#323232;
+		font-size:12px;
+		font-family:arial;
+		height:100px;
+	  }
 	  #textVideo2{
 		color:#323232;
 		font-size:12px;
 		font-family:arial;
 		height:100px;
 	    }
-	#infoVideo,
+	#infoVideo{
+	float:left;
+		width:325px;
+		height:160px;
+		margin-left:20px;
+	}
 	#infoVideo2{
 		float:left;
 		width:325px;
