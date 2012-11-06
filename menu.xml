@@ -221,7 +221,7 @@ margin-top:-19px;
 }
 
 .cabeceramenu  ul li.homefirst {
-	width: 81px;
+	width: 80px;
 }
 .cabeceramenu ul li.homefirst span:hover{
 	border-bottom-left-radius: 5px;
