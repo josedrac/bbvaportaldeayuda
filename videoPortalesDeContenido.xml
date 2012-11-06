@@ -22,7 +22,10 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
 	<style type="text/css">
-	
+	#comboVideo{
+	width:681px;
+	float:left;
+	}
       #video-container,
 	  #video-container2{
 	    float:left;
@@ -69,15 +72,15 @@
 	}	
 	</style>
     
-	
+<div id="comboVideo">
 	<div id="video-container">
 		<div id="urlVideo"></div>
 	<div id="infoVideo">	
 		<div id="tagVideo"></div>
 		<div id="titleVideo"></div>
-        <div id="textVideo"></div></div><br/>
+        <div id="textVideo"></div></div><br/></div>
 	 <hr/>
-	 
+	 <div id="video-container2">
 		<div id="urlVideo2"></div>
 	<div id="infoVideo2">	
 		<div id="tagVideo2"></div>
@@ -85,7 +88,7 @@
         <div id="textVideo2"></div></div>
 	 </div>
 	 
-	
+	</div>
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
