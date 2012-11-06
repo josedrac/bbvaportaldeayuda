@@ -259,10 +259,8 @@ margin-top:-19px;
 		if (parametros.indexOf("home")!=-1)
 		{   
 			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "#004C99";
-			document.getElementsByClassName("homefirst")[0].style.borderBottom = "color:#004C99";
-			document.getElementsByClassName("homefirst")[0].style.borderTop = "color:#004C99";
-			document.getElementsByClassName("homefirst")[0].style.borderLeft = "color:#004C99";
-			document.getElementsByClassName("homefirst")[0].style.borderRight = "color:#004C99";
+			document.getElementsByClassName("homefirst")[0].style.border = "1px solid #004C99";
+			
 		
 			
 		}
