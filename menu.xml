@@ -229,25 +229,6 @@ margin-top:-19px;
 	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spritegraficos24.png') no-repeat scroll 28px -3150px;
 	
 }
-/*
-.cabeceramenu  ul li.homefirst .enlace span {
-	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spritegraficos24.png') no-repeat scroll 8px -3150px;
-	height: 1.577em;
-}
-
-.cabeceramenu ul li.iniciate .enlace span{
-	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2430px transparent;
-	
-}
-.cabeceramenu ul li.apps .enlace span{
-	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2575px transparent;
-}
-.cabeceramenu ul li.movilidad .enlace span{
-	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -2717px transparent;
-}
-.cabeceramenu ul li.exito .enlace span{
-	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 0 -3437px transparent;
-}*/
 
 
 
@@ -265,6 +246,19 @@ margin-top:-19px;
 	<li class="exito"><span class="enlace" tabindex="0"><span><a href=""  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
+	<!-- Elemento de menú set visited -->
+	<script type="text/javascript">
+	gadgets.util.registerOnLoadHandler(datospagina);
+	function datospagina()
+	{
+		var parametros = gadgets.util.getUrlParameters()["parent"];	
+		if (parametros.indexOf("home")!=-1)
+		{
+			document.getElementById("homefirst").style.backgroundColor = "#004c99";
+		}
+		
+	}
+	</script>
 
   ]]> 
   </Content>
