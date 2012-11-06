@@ -83,7 +83,7 @@ ol, ul {
   color: #FFF;
   cursor: pointer;
   text-decoration:none;
-  font-family: 'BBVA Web Medium';
+  font-family: BBVA Web Medium;
   font-size:14px;
   
 }
