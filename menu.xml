@@ -111,7 +111,7 @@ margin-top:-19px;
 }
 
 .cabeceramenu  ul li.homefirst .enlace span{
-	background: url('../img/ico-spritegraficos24.png') no-repeat scroll 8px -3150px;
+	background: url(http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spritegraficos24.png) no-repeat scroll 8px -3150px;
 	height: 1.577em;
 }
 
