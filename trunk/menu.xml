@@ -225,12 +225,12 @@ margin-top:-19px;
 	border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
-.cabeceramenu ul li.homefirst span:hover{
+.cabeceramenu ul li.homefirst a:hover{
 	border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
 
-.cabeceramenu  ul li.homefirst span{
+.cabeceramenu  ul li.homefirst a{
 	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spritegraficos24.png') no-repeat scroll 28px -3150px;
 	border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -245,7 +245,7 @@ margin-top:-19px;
 <div class="cabeceramenu">
   <ul> 
   
-	<li class="homefirst"><span class="enlace" tabindex="0"><a href="https://sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></span></li>
+	<li class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></li>
 	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iníciate en tu NET</a></span></span></li>
 	<li class="apps"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Google Apps</a></span></span></li>
 	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Movilidad</a></span></span></li> 
