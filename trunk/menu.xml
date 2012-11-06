@@ -221,7 +221,7 @@ margin-top:-19px;
 }
 
 .cabeceramenu  ul li.homefirst {
-	width: 80px;
+	width: 81px;
 }
 .cabeceramenu ul li.homefirst span:hover{
 	border-bottom-left-radius: 5px;
@@ -233,10 +233,13 @@ margin-top:-19px;
 	
 }
 .active{
+
+width: 81px;
+}
+.active ul li{
 background-color:#004C99;
 border-bottom-left-radius: 5px;
 border-top-left-radius: 5px;
-
 }
 
 
