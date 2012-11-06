@@ -126,15 +126,26 @@
 	 var urlVideo = prefs.getString("urlVideo");
 	 var tagVideo = prefs.getString("tagVideo");
 	 
+	 var titleVideo2 = prefs.getString("titleVideo2");
+	 var textVideo2 = prefs.getString("textVideo2");
+	 var urlVideo2 = prefs.getString("urlVideo2");
+	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
 	 document.getElementById("textVideo").innerHTML = textVideo;
 	 //document.getElementById("urlVideo").innerHTML = '<EMBED SRC="'+urlVideo+'" HEIGHT=189 WIDTH=284 type="application/x-shockwave-flash" AUTOSTART=TRUE LOOP=FALSE/>';
 	 //alert(urlVideo);
-	 document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="282" height="160" ></object> </embed>';
+	 document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
 	 //<Embed> <object style="height: 189px; width: 284px; float:left;"><param name="movie" value="'+urlVideo+'"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always">
      //alert(document.getElementById("urlVideo"));
+	 
+	 document.getElementById("tagVideo2").innerHTML = tagVideo2;
+	 document.getElementById("titleVideo2").innerHTML = titleVideo2;
+	 document.getElementById("textVideo2").innerHTML = textVideo2;
+	 
+	 document.getElementById("urlVideo2").innerHTML = '<embed src="'+urlVideo2+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
+	 
 	
 	
 
