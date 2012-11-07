@@ -158,7 +158,7 @@
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-	 document.getElementById("Urlall").innerHTML = '<a target="_parent" href='+Urlall+'></a>';
+	 document.getElementById("Urlall").innerHTML = '<a target="_parent" href="'+Urlall+'"></a>';
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
