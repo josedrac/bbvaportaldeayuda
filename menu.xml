@@ -248,13 +248,19 @@ margin-top:-19px;
   <ul> 
   
 	<li class="homefirst"><a class="enlace" href="https://www.sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></li>
-	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Iníciate en tu NET</a></span></span></li>
-	<li class="apps"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Google Apps</a></span></span></li>
-	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href=""  target="_parent">Movilidad</a></span></span></li> 
-	<li class="exito"><span class="enlace" tabindex="0"><span><a href=""  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
+	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent">Iníciate en tu NET</a></span></span></li>
+	<li class="apps"><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent">Google Apps</a></span></span></li>
+	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent">Movilidad</a></span></span></li> 
+	<li class="exito"><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
+<script type="text/javascript">
+function redirect(){
 
+return false;
+}
+
+</script>
 
 	<!-- Elemento de menú set visited -->
 	<script type="text/javascript">
