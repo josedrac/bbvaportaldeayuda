@@ -193,6 +193,7 @@
 	  font-size:18px;
 	  margin-bottom:20px;
 	  width:238px;
+	  margin-left:-4px;
 	  
 	  }
 	  #titleVideo2{
@@ -201,6 +202,7 @@
 	    font-family:BBVA Office Book;
 		margin-bottom:20px;
 		width:238px;
+		margin-left:-4px;
 	  }
 	  #textVideo{
 	    color:#434A58;
@@ -244,7 +246,7 @@
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
 	width:89px;
 	height:40px;
-	margin-right:58px;
+	margin-right:70px;
 	margin-top:21px;
 	}
 	#allcontent a{
