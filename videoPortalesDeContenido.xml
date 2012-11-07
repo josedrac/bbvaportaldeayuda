@@ -148,12 +148,12 @@
       #video-container{
    	    float:left;
 		width:668px;
-		height:250px;
+		height:251px;
 		}
 	  #video-container2{
 	    float:left;
 		width:668px;
-		height:250px;
+		height:251px;
 	  }
 	  
 	  #urlVideo{
@@ -225,7 +225,7 @@
 		}
 	hr{
     width:621px;
-	margin-bottom:30px;
+	margin-bottom:20px;
 	margin-left:-1px;
 	}	
 	#allcontent{
