@@ -263,7 +263,7 @@ margin-top:-19px;
 	{   
 	   
 		var parametros = gadgets.util.getUrlParameters()["parent"];
-alert(parametros);		
+	
 		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
 		{   
 			
