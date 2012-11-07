@@ -172,11 +172,13 @@
 	  #TagVideo{
 	   color:#FF7800;
 	   margin-bottom:11px;
+	   margin-left:15px;
 		//font-weight:bold;
 	  }
 	  #TagVideo2{
 	    color:#FF7800;
 		margin-bottom:11px;
+		margin-left:15px;
 		//font-weight:bold;
 	  }
 	  
@@ -198,14 +200,14 @@
 		font-size:12px;
 		font-family:arial;
 		height:100px;
-		width:300px;
+		width:269px;
 	  }
 	  #textVideo2{
 		color:#434A58;
 		font-size:12px;
 		font-family:arial;
 		height:100px;
-		width:300px;
+		width:269px;
 	    }
 	#infoVideo{
 	float:left;
