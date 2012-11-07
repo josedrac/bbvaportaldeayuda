@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
  <Module>
-  <ModulePrefs title="menu findings">
+  <ModulePrefs title="menu Ayuda">
   <Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />  
   </ModulePrefs> 
  <Content type="html">
  <![CDATA[ 
- <link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/styles.css" media="all">
+ 
   <style> 
   /* @group fonts */
 @font-face {
