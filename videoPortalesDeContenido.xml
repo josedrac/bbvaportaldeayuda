@@ -245,15 +245,10 @@
 	padding:13px 20px 0px 0px;
 	float:right;
 	}
-	#titlepage{
-	float:left;
-	color:#0078D2;
-	font-family: BBVA Web Medium;
-	font-size:30px;
-	}
+	
 	</style>
 	
-<div id="titlepage">Bienvenidos al Escritorio de Trabajo de BBVA</div>	
+
 <div id="titlecomboVideo"></div>    
 <div id="comboVideo">
 	<div id="video-container">
