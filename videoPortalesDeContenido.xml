@@ -233,7 +233,7 @@
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
 	width:89px;
 	height:40px;
-	margin-right:15px;
+	margin-right:58px;
 	margin-top:-25px;
 	}
 	#allcontent a{
