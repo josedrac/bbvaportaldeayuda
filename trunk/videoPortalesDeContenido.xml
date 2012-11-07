@@ -96,9 +96,9 @@
 		}
 	hr{
 	float:left;
-    width:671px;
-	margin-bottom:22px;
-	
+    width:681px;
+	margin-bottom:30px;
+	margin-left:-1px;
 	}	
 	</style>
     
