@@ -211,13 +211,13 @@
 	    }
 	#infoVideo{
 	float:left;
-		width:681px;
+		width:600px;
 		height:160px;
 		margin-left:15px;
 	}
 	#infoVideo2{
 		float:left;
-		width:681px;
+		width:600px;
 		height:160px;
 		margin-left:15px;
 		}
