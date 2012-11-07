@@ -41,13 +41,13 @@
 		float:right;
 	    width:282px;
 		height:160px;
-		margin-right:22px;
+		margin-right:47px;
 	  }
 	  #urlVideo2{
 		float:right;
 	    width:282px;
 		height:160px;
-		margin-right:22px;
+		margin-right:47px;
 	  }
 	  
 	  #TagVideo{
@@ -84,13 +84,13 @@
 	    }
 	#infoVideo{
 	float:left;
-		width:325px;
+		width:300px;
 		height:160px;
 		margin-left:20px;
 	}
 	#infoVideo2{
 		float:left;
-		width:325px;
+		width:300px;
 		height:160px;
 		margin-left:20px;
 		}
