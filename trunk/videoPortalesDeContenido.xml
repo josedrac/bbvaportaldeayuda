@@ -95,6 +95,7 @@
 		margin-left:20px;
 		}
 	hr{
+	float:left;
     width:671px;
 	margin:22px -1px;
 	align:center;
