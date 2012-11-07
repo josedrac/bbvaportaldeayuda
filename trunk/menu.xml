@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
  <Module>
   <ModulePrefs title="menu Ayuda">
-  <Require feature="dynamic-height"/>   
+  <Require feature="dynamic-height"/> 
+	<Require feature="idi"/>
+	<Require feature="locked-domain" />	
 	<Require feature="setprefs" />  
   </ModulePrefs> 
  <Content type="html">
