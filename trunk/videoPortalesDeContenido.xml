@@ -170,13 +170,13 @@
 	  }
 	  
 	  #TagVideo{
-	   color:#FF7800;
+	   color:#000;
 	   margin-bottom:11px;
 	   margin-left:15px;
 		//font-weight:bold;
 	  }
 	  #TagVideo2{
-	    color:#FF7800;
+	    color:#000;
 		margin-bottom:11px;
 		margin-left:15px;
 		//font-weight:bold;
