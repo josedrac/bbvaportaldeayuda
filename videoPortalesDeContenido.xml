@@ -161,13 +161,15 @@
 		float:right;
 	    width:302px;
 		height:201px;
-		margin-right:-6px;
+		margin-right:4px;
+		margin-top:5px;
 	  }
 	  #urlVideo2{
 		float:right;
 	    width:302px;
 		height:201px;
-		margin-right:-6px;
+		margin-right:4px;
+		margin-top:5px;
 	  }
 	  
 	  #TagVideo{
