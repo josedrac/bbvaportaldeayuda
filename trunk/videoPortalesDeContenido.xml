@@ -184,7 +184,7 @@
 	  
       #titleVideo{
 	  color:#0078D2;
-	  font-family:BBVA Web Light;
+	  font-family:BBVA Web Medium;
 	  font-size:18px;
 	  margin-bottom:20px;
 	  width:238px;
@@ -193,7 +193,7 @@
 	  #titleVideo2{
 		color:#0078D2;
 		font-size:18px;
-	    font-family:BBVA Web Light;
+	    font-family:BBVA Web Medium;
 		margin-bottom:20px;
 		width:238px;
 	  }
