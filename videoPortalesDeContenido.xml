@@ -182,8 +182,8 @@
 	  #TagVideo2{
 	    color:#000;
 		margin-bottom:11px;
-		margin-left:11px;
-		margin-top:-7px;
+		margin-left: 13px;
+		margin-top: -22px;
 		//font-weight:bold;
 	  }
 	  
