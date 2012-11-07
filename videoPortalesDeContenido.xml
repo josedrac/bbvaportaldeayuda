@@ -198,22 +198,24 @@
 		font-size:12px;
 		font-family:arial;
 		height:100px;
+		width:300px;
 	  }
 	  #textVideo2{
 		color:#434A58;
 		font-size:12px;
 		font-family:arial;
 		height:100px;
+		width:300px;
 	    }
 	#infoVideo{
 	float:left;
-		width:325px;
+		width:681px;
 		height:160px;
 		margin-left:15px;
 	}
 	#infoVideo2{
 		float:left;
-		width:325px;
+		width:681px;
 		height:160px;
 		margin-left:15px;
 		}
