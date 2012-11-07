@@ -74,13 +74,13 @@
 	  }
 	  
       #titleVideo{
-	  color:#0064B9;
+	  color:#0078D2;
 	    //font-weight:bold;
 		margin-bottom:20px;
 	  
 	  }
 	  #titleVideo2{
-		color:#0064B9;
+		color:#0078D2;
 	    //font-weight:bold;
 		margin-bottom:20px;
 	  }
