@@ -120,6 +120,7 @@
 	width:90px;
 	height:20px;
 	margin-left:15px;
+	margin-top:-25px;
 	}
 	#allcontent a{
 	text-align:center;
