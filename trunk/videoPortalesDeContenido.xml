@@ -208,6 +208,8 @@
 		font-family:arial;
 		height:100px;
 		width:269px;
+		margin-top: 33px;
+		margin-left: -3px;
 	  }
 	  #textVideo2{
 		color:#434A58;
@@ -215,6 +217,8 @@
 		font-family:arial;
 		height:100px;
 		width:269px;
+		margin-top: 33px;
+		margin-left: -3px;
 	    }
 	#infoVideo{
 	float:left;
