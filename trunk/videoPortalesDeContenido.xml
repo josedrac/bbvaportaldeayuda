@@ -100,13 +100,13 @@
 	float:left;
 		width:300px;
 		height:160px;
-		margin-left:20px;
+		margin-left:15px;
 	}
 	#infoVideo2{
 		float:left;
 		width:325px;
 		height:160px;
-		margin-left:20px;
+		margin-left:15px;
 		}
 	hr{
 	float:left;
