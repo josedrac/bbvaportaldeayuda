@@ -131,7 +131,8 @@
 		<div id="tagVideo2"></div>
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
-	 </div>
+	 </div><hr/>
+	 <div id="allcontent"></div>
 </div>
 	
 	
