@@ -130,7 +130,8 @@
 /* @end */
 	
 	#titlecomboVideo{
-	margin-top:0px;
+	margin-top:-9px;
+	margin-left:-15px;
 	
 	}
 	#titlecomboVideo h2{
@@ -172,13 +173,15 @@
 	  #TagVideo{
 	   color:#000;
 	   margin-bottom:11px;
-	   margin-left:15px;
+	   margin-left:11px;
+	   margin-top:-7px;
 		//font-weight:bold;
 	  }
 	  #TagVideo2{
 	    color:#000;
 		margin-bottom:11px;
-		margin-left:15px;
+		margin-left:11px;
+		margin-top:-7px;
 		//font-weight:bold;
 	  }
 	  
@@ -216,12 +219,14 @@
 		width:600px;
 		height:160px;
 		margin-left:15px;
+		margin-top:-9px;
 	}
 	#infoVideo2{
 		float:left;
 		width:600px;
 		height:160px;
 		margin-left:15px;
+		margin-top:-9px;
 		}
 	hr{
     width:621px;
