@@ -222,8 +222,7 @@
 		margin-left:15px;
 		}
 	hr{
-	float:left;
-    width:681px;
+    width:621px;
 	margin-bottom:30px;
 	margin-left:-1px;
 	}	
