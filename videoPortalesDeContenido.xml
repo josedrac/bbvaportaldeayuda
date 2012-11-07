@@ -148,7 +148,7 @@
       #video-container{
    	    float:left;
 		width:668px;
-		height:225px;
+		height:250px;
 		}
 	  #video-container2{
 	    float:left;
@@ -160,13 +160,13 @@
 		float:right;
 	    width:302px;
 		height:201px;
-		margin-right:22px;
+		margin-right:-6px;
 	  }
 	  #urlVideo2{
 		float:right;
 	    width:302px;
 		height:201px;
-		margin-right:22px;
+		margin-right:-6px;
 	  }
 	  
 	  #TagVideo{
