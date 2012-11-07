@@ -158,14 +158,14 @@
 	  
 	  #urlVideo{
 		float:right;
-	    width:282px;
-		height:160px;
+	    width:302px;
+		height:201px;
 		margin-right:22px;
 	  }
 	  #urlVideo2{
 		float:right;
-	    width:282px;
-		height:160px;
+	    width:302px;
+		height:201px;
 		margin-right:22px;
 	  }
 	  
