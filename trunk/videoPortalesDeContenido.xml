@@ -231,7 +231,7 @@
 	text-align:center;
 	text-decoration:none;
 	color:#FFF;
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Medium;
 	font-size:12px;
 	padding:13px 20px 0px 0px;
 	float:right;
