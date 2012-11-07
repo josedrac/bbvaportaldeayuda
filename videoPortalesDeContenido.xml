@@ -122,10 +122,11 @@
 	}
 	#allcontent a{
 	text-align:center;
-	text-decoration:underline;
+	text-decoration:none;
 	color:#FFF;
 	font-family: Myriad Pro;
 	font-size:12px;
+	padding:0px 0px 0px 0px;
 	}
 	</style>
 	
