@@ -148,7 +148,7 @@ ol, ul {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#00529b',GradientType=0 );
 	*/
 	position: relative;
-	font-family: 'BBVA Web Medium';
+	font-family: BBVA Web Medium;
 	font-weight: normal;
 	text-align: center;
 }
@@ -195,7 +195,7 @@ ol, ul {
   color: #FFF;
   cursor: pointer;
   text-decoration:none;
-  font-family: 'BBVA Web Medium';
+  font-family: BBVA Web Medium;
   font-size:14px;
   font-style:normal;
   
