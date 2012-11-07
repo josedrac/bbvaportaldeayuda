@@ -29,12 +29,12 @@
       #video-container{
    	    float:left;
 		width:668px;
-		height:271px;
+		height:225px;
 		}
 	  #video-container2{
 	    float:left;
 		width:668px;
-		height:271px;
+		height:225px;
 	  }
 	  
 	  #urlVideo{
@@ -95,7 +95,8 @@
 		margin-left:20px;
 		}
 	hr{
-    width:681px;
+    width:671px;
+	margin:10px 5px;
 	}	
 	</style>
     
