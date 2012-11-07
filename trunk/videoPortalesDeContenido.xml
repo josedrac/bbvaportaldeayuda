@@ -253,7 +253,7 @@
 	<div id="infoVideo">	
 		<div id="urlVideo"></div>
 		<div id="titleVideo"></div>
-        <div id="textVideo"></div></div><br/></div>
+        <div id="textVideo"></div></div></div>
 	 <hr/>
 	 <div id="video-container2">
 	    <div id="tagVideo2"></div>
