@@ -114,6 +114,10 @@
 	margin-bottom:30px;
 	margin-left:-1px;
 	}	
+	#allcontent{
+	float:left;
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
+	}
 	</style>
 	
 <div id="titlecomboVideo"></div>    
