@@ -96,7 +96,8 @@
 		}
 	hr{
     width:671px;
-	margin:10px 5px;
+	margin:22px -1px;
+	align:center;
 	}	
 	</style>
     
