@@ -8,7 +8,7 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-
+<UserPref name="Urlall" display_name="Url page all videos" required="true" />  
 <UserPref name="titlecomboVideo" display_name="Tilte Box Video" required="true" />    
 <UserPref name="tagVideo" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo" display_name="Title Video" required="true" />
@@ -145,6 +145,7 @@
 	 var prefs = new gadgets.Prefs();
 	 
 	 var titlecomboVideo = prefs.getString("titlecomboVideo");
+	 var Urlall = prefs.getString("Urlall");
 	 
 	 var titleVideo = prefs.getString("titleVideo");
 	 var textVideo = prefs.getString("textVideo");
@@ -157,6 +158,7 @@
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
+	 document.getElementById("Urlall").innerHTML = '<a target="_parent" href='+Urlall+'></a>';
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
@@ -193,7 +195,13 @@
 			}
   </style>
   <table width="100%" border="0" id="tablaconfig">  
-  <tr>       
+			<tr>       
+                <td>
+                    Url -Page All Videos: <input type="text" size="100" id="Urlall" value="__UP_Urlall__"   onchange="registra('Urlall')"/>                   
+                </td>
+            </tr>
+			<tr/>
+			<tr>       
                 <td>
                     Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
                 </td>
