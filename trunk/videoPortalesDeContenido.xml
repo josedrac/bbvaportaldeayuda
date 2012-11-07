@@ -116,12 +116,16 @@
 	}	
 	#allcontent{
 	float:left;
-	color:#FFF;
-	font-family: Myriad Pro;
-	font-size:12px;
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
 	width:90px;
 	height:20px;
+	}
+	#allcontent a{
+	text-align:center;
+	text-decoration:underline;
+	color:#FFF;
+	font-family: Myriad Pro;
+	font-size:12px;
 	}
 	</style>
 	
