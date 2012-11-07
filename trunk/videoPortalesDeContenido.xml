@@ -245,16 +245,16 @@
 <div id="titlecomboVideo"></div>    
 <div id="comboVideo">
 	<div id="video-container">
-		<div id="urlVideo"></div>
-	<div id="infoVideo">	
 		<div id="tagVideo"></div>
+	<div id="infoVideo">	
+		<div id="urlVideo"></div>
 		<div id="titleVideo"></div>
         <div id="textVideo"></div></div><br/></div>
 	 <hr/>
 	 <div id="video-container2">
-		<div id="urlVideo2"></div>
+	    <div id="tagVideo2"></div>
 	<div id="infoVideo2">	
-		<div id="tagVideo2"></div>
+		<div id="urlVideo2"></div>
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
 	 </div><hr/>
