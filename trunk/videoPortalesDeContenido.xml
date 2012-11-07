@@ -171,11 +171,12 @@
 	  
 	  #TagVideo{
 	   color:#FF7800;
-	   margin-bottom:12px;
+	   margin-bottom:11px;
 		//font-weight:bold;
 	  }
 	  #TagVideo2{
 	    color:#FF7800;
+		margin-bottom:11px;
 		//font-weight:bold;
 	  }
 	  
@@ -183,7 +184,7 @@
 	  color:#0078D2;
 	  font-family:BBVA Web Light;
 	  font-size:18px;
-		margin-bottom:20px;
+	  margin-bottom:20px;
 	  
 	  }
 	  #titleVideo2{
