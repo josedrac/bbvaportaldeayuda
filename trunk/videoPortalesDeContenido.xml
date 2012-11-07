@@ -9,6 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 
+<UserPref name="titlecomboVideo" display_name="Tilte Box Video" required="true" />    
 <UserPref name="tagVideo" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo" display_name="Title Video" required="true" />
 <UserPref name="textVideo" display_name="Text Video" required="true" />
@@ -22,6 +23,18 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
 	<style type="text/css">
+	
+	#titlecomboVideo{
+	
+	
+	}
+	#titlecomboVideo h2{
+	float:left;
+	color:#0078D2;
+	font-family:Myriad Pro;
+	font-size:30px;
+	}
+	
 	#comboVideo{
 	width:681px;
 	float:left;
@@ -101,7 +114,8 @@
 	margin-left:-1px;
 	}	
 	</style>
-    
+	
+<div id="titlecomboVideo"></div>    
 <div id="comboVideo">
 	<div id="video-container">
 		<div id="urlVideo"></div>
@@ -124,6 +138,8 @@
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 
+	 var titlecomboVideo = prefs.getString("titlecomboVideo");
+	 
 	 var titleVideo = prefs.getString("titleVideo");
 	 var textVideo = prefs.getString("textVideo");
 	 var urlVideo = prefs.getString("urlVideo");
@@ -133,6 +149,8 @@
 	 var textVideo2 = prefs.getString("textVideo2");
 	 var urlVideo2 = prefs.getString("urlVideo2");
 	 var tagVideo2 = prefs.getString("tagVideo2");
+	 
+	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
@@ -169,7 +187,13 @@
 			}
   </style>
   <table width="100%" border="0" id="tablaconfig">  
-	 <tr>       
+  <tr>       
+                <td>
+                    Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
+                </td>
+            </tr>
+			<tr/>
+			<tr>       
                 <td>
                     Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
                 </td>
