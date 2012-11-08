@@ -257,7 +257,7 @@
 	padding-left: 1.4em;
 	padding-right: 1.4em;
 	float:right;
-	margin-right:68px;
+	margin-right:8px;
 	width:108px;
 	margin-top:17px;
 	}
@@ -315,6 +315,13 @@
 	width:610px;
 	height:4px;
 	display:block;
+	}
+	.sites-embed-align-left-wrapping-off{
+	display: block;
+	clear: both;
+	text-align: left;
+	margin: 5px auto 5px 0;
+	width: 650px;
 	}
 	</style>
 	
