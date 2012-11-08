@@ -120,7 +120,9 @@
 }
 
 /* @end */
-	
+	#content{
+	height:60px;
+	}
 	#titlepage{
 	float:left;
 	color:#0078D2;
@@ -139,10 +141,10 @@
 	}
 	
 	</style>
-	
+<div id=content>	
 <div id="titlepage"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle"/>
-	
+	</div>
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
