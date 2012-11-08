@@ -250,13 +250,19 @@
 	margin-top:21px;
 	}
 	#allcontent a{
-	text-align:center;
+	/*text-align:center;
 	text-decoration:none;
 	color:#FFF;
 	font-family: BBVA Web Medium;
 	font-size:12px;
 	padding:13px 20px 0px 0px;
-	float:right;
+	float:right;*/
+	-webkit-border-radius: .4em;
+	-moz-border-radius: .4em;
+	border-radius: .4em;
+	height: 4em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
 	}
 	
 	</style>
@@ -278,7 +284,7 @@
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
 	 </div>
-	 <div id="allcontent"></div>
+	 <button type="button" id="allcontent"><span>Ver todos</span></button>
 </div>
 	
 	
@@ -300,7 +306,7 @@
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-	 document.getElementById("allcontent").innerHTML = '<a target="_parent" href="'+Urlall+'">Ver todos</a>';
+	 document.getElementById("allcontent").innerHTML = '<a target="_parent" href="'+Urlall+'"/>';
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
