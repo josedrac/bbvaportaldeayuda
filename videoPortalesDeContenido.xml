@@ -255,6 +255,7 @@
 	height: 4em;
 	padding-left: 1.4em;
 	padding-right: 1.4em;
+	float:right;
 	}
 	 .allcontent a{
 	/*text-align:center;
