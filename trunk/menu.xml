@@ -168,12 +168,13 @@ ol, ul {
   
 }
 
-.cabeceramenu ul li.exito span{ 
+.cabeceramenu ul li.exito{ 
   float: left;
   text-align: center;
   background:none;
   width:257;
 }
+.cabeceramenu ul li.exito span,
 .cabeceramenu ul li.exito span:hover { 
 	border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
