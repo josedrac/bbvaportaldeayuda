@@ -301,11 +301,18 @@
 	position: relative;
 	overflow: visible;
 	}
+	.linetitle{
+	background:url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	
+	}
+	
+	.linevideo{
+	background:url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
+	}
 	</style>
 	
 	
-<div id="titlecomboVideo"></div><hr/>    
+<div id="titlecomboVideo"></div><div class="linetitle"></div>
 <div id="comboVideo">
 	<div id="video-container">
 		<div id="tagVideo"></div>
@@ -313,7 +320,7 @@
 		<div id="urlVideo"></div>
 		<div id="titleVideo"></div>
         <div id="textVideo"></div></div></div>
-	 <hr/>
+	 <div class="linevideo"></div>
 	 <div id="video-container2">
 	    <div id="tagVideo2"></div>
 	<div id="infoVideo2">	
