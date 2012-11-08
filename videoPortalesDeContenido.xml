@@ -240,6 +240,7 @@
     width:610px;
 	margin-bottom:20px;
 	margin-left:-1px;
+	color:#DCDCDC;
 	}	
 	#allcontent{
 	/*float:right;
