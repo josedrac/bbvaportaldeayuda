@@ -242,21 +242,13 @@
 	margin-left:-1px;
 	}	
 	#allcontent{
-	float:right;
+	/*float:right;
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
 	width:89px;
 	height:40px;
 	margin-right:70px;
-	margin-top:21px;
-	}
-	#allcontent a{
-	/*text-align:center;
-	text-decoration:none;
-	color:#FFF;
-	font-family: BBVA Web Medium;
-	font-size:12px;
-	padding:13px 20px 0px 0px;
-	float:right;*/
+	margin-top:21px;*/
+	*/
 	-webkit-border-radius: .4em;
 	-moz-border-radius: .4em;
 	border-radius: .4em;
@@ -264,6 +256,16 @@
 	padding-left: 1.4em;
 	padding-right: 1.4em;
 	}
+	/* #allcontent a{
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	font-family: BBVA Web Medium;
+	font-size:12px;
+	padding:13px 20px 0px 0px;
+	float:right;
+	
+	}*/
 	
 	</style>
 	
