@@ -133,10 +133,10 @@
 	width:939px;
 	}
 	.linedowntitle{
-	margin-bottom:41px;
+	margin-bottom:40px;
 	width:939px;
 	display:block;
-	
+	height:1px;
 	}
 	
 	</style>
