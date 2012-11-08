@@ -130,7 +130,7 @@
 	padding-top:7px;
 	}
 	
-	.linedowntitle{
+	#titlepage img{
 	margin-bottom:40px;
 	width:939px;
 	display:block;
@@ -139,8 +139,9 @@
 	
 	</style>
 	
-<div id="titlepage"></div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle"/>
+<div id="titlepage">
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" /></div>
+
 	
 	
    <script type="text/javascript">
