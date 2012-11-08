@@ -129,9 +129,7 @@
 	margin-bottom:10px;
 	padding-top:7px;
 	}
-	hr{
-	width:939px;
-	}
+	
 	.linedowntitle{
 	margin-bottom:40px;
 	width:939px;
