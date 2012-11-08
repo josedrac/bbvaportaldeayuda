@@ -241,7 +241,7 @@
 	margin-bottom:20px;
 	margin-left:-1px;
 	}	
-	#allcontent{
+	.allcontent{
 	/*float:right;
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
 	width:89px;
@@ -256,7 +256,7 @@
 	padding-left: 1.4em;
 	padding-right: 1.4em;
 	}
-	 #allcontent a{
+	 .allcontent a{
 	/*text-align:center;
 	text-decoration:none;
 	color:#FFF;
@@ -289,7 +289,7 @@
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
 	 </div>
-	 <button type="button" id="allcontent"><span>Ver todos</span></button>
+	 <button type="button" class="allcontent"><span>Ver todos</span></button>
 </div>
 	
 	
