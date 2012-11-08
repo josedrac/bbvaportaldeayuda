@@ -256,16 +256,19 @@
 	padding-left: 1.4em;
 	padding-right: 1.4em;
 	}
-	/* #allcontent a{
-	text-align:center;
+	 #allcontent a{
+	/*text-align:center;
 	text-decoration:none;
 	color:#FFF;
 	font-family: BBVA Web Medium;
 	font-size:12px;
 	padding:13px 20px 0px 0px;
-	float:right;
-	
-	}*/
+	float:right;*/
+	font-size: 1.4em;
+	position: relative;
+	top: -1px;
+	margin-right: 0;
+	}
 	
 	</style>
 	
