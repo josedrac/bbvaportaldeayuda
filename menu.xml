@@ -179,6 +179,11 @@ ol, ul {
     border-top-right-radius: 5px;
 	width:257;
 }
+.cabeceramenu ul li.exito a,
+.cabeceramenu ul li.exito a:hover{ 
+margin-left:25px;
+
+}
 .cabeceramenu ul li .enlace, 
 .cabeceramenu ul li .enlace:hover{
   font-size: 1.4em;
