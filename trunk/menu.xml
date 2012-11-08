@@ -132,7 +132,7 @@ ol, ul {
 }
 
 .cabeceramenu {
-	width: 91em;
+	width: 96em;
 	height: 5.1em;
 	margin-top: 0px;
 	-webkit-border-radius: 5px;
