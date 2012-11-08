@@ -128,26 +128,28 @@
 	font-size:30px;
 	margin-bottom:10px;
 	padding-top:7px;
+	height:30px;
+	
 	}
 	
 	.linedowntitle{
 	margin-bottom:40px;
 	width:939px;
 	display:block;
-	height:1px;
+	height:7px;
 	}
 	
 	</style>
 	
 <div id="titlepage"></div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle"/>
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 	
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 var titlepage = prefs.getString("titlepage");
-	 document.getElementById("titlepage").innerHTML += titlepage;
+	 document.getElementById("titlepage").innerHTML = titlepage;
 	
    </script>
    
