@@ -256,6 +256,7 @@
 	padding-left: 1.4em;
 	padding-right: 1.4em;
 	float:right;
+	margin-right:68px;
 	}
 	 #allcontent a{
 	/*text-align:center;
@@ -269,6 +270,7 @@
 	position: relative;
 	top: -1px;
 	margin-right: 0;
+	text-decoration:none;
 	}
 	
 	</style>
