@@ -149,12 +149,12 @@
       #video-container{
    	    float:left;
 		width:607px;
-		height:251px;
+		height:238px;
 		}
 	  #video-container2{
 	    float:left;
 		width:607px;
-		height:251px;
+		height:238px;
 	  }
 	  
 	  #urlVideo{
@@ -315,6 +315,7 @@
 	width:610px;
 	height:4px;
 	display:block;
+	margin-bottom:13px;
 	}
 	.sites-embed-align-left-wrapping-off{
 	display: block;
