@@ -303,12 +303,12 @@
 	overflow: visible;
 	}
 	.linetitle{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png');
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	width:610px;
 	}
 	
 	.linevideo{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png');
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	width:610px;
 	}
 	</style>
