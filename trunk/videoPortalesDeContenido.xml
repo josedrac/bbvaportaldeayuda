@@ -274,7 +274,7 @@
 	text-decoration:none;
 	color:#FFF;
 	font-family: BBVA Web Medium;
-	font-size:12px;
+	font-size:14px;
 	}
 	button{
 	background: #0079C1;
