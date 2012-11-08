@@ -319,7 +319,7 @@
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
 	 </div>
-	 <div id=boton><button type="button" id="allcontent"></button></div>
+	 <button type="button" id="allcontent"></button>
 </div>
 	
 	
@@ -341,7 +341,7 @@
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-	 document.getElementById("boton").innerHTML = '<a target="_parent" href="'+Urlall+'">Ver todos</a>';
+	 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
