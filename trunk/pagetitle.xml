@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="titlepage1.xml"
+  <ModulePrefs title="titlepage.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -128,12 +128,9 @@
 	font-size:30px;
 	margin-bottom:10px;
 	padding-top:7px;
-	display:block;
-	width:939px;
-	height:41px;
 	}
 	
-	#titlepage img{
+	.linedowntitle{
 	margin-bottom:40px;
 	width:939px;
 	display:block;
@@ -142,16 +139,15 @@
 	
 	</style>
 	
-<div id="titlepage">hol
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png"></img></div>
-
+<div id="titlepage"></div>
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle"/>
 	
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 var titlepage = prefs.getString("titlepage");
-	 document.getElementById("titlepage").innerHTML = titlepage;
+	 document.getElementById("titlepage").innerHTML += titlepage;
 	
    </script>
    
