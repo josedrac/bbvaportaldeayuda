@@ -129,6 +129,7 @@
 	margin-bottom:6px;
 	padding-top:11px;
 	height:30px;
+	margin-left:11px;
 	}
 	
 	.linedowntitle{
