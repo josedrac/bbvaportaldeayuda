@@ -168,7 +168,7 @@ ol, ul {
   
 }
 
-.cabeceramenu ul li.exito { 
+.cabeceramenu ul li.exito span{ 
   float: left;
   text-align: center;
   background:none;
