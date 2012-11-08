@@ -165,13 +165,14 @@ ol, ul {
   float: left;
   text-align: center;
   background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
-
+  width:223px;
 }
 
 .cabeceramenu ul li.exito { 
   float: left;
   text-align: center;
   background:none;
+  width:223px;
 }
 .cabeceramenu ul li.exito span:hover { 
 	border-bottom-right-radius: 5px;
