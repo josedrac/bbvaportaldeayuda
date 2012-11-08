@@ -303,18 +303,22 @@
 	overflow: visible;
 	}
 	.linetitle{
+	display:block;
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	width:610px;
+	height:4px;
 	}
 	
 	.linevideo{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	width:610px;
+	height:4px;
+	display:block;
 	}
 	</style>
 	
 	
-<div id="titlecomboVideo"></div><div class="linetitle"></div>
+<div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 <div id="comboVideo">
 	<div id="video-container">
 		<div id="tagVideo"></div>
@@ -322,7 +326,7 @@
 		<div id="urlVideo"></div>
 		<div id="titleVideo"></div>
         <div id="textVideo"></div></div></div>
-	 <div class="linevideo"></div>
+	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideo"/>
 	 <div id="video-container2">
 	    <div id="tagVideo2"></div>
 	<div id="infoVideo2">	
