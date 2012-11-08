@@ -172,13 +172,13 @@ ol, ul {
   float: left;
   text-align: center;
   background:none;
-  width:257;
+  width:218px;
 }
 .cabeceramenu ul li.exito span,
 .cabeceramenu ul li.exito span:hover { 
 	border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-	width:257;
+	width:218px;
 }
 .cabeceramenu ul li.exito a,
 .cabeceramenu ul li.exito a:hover{ 
