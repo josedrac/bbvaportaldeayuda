@@ -241,7 +241,7 @@
 	margin-bottom:20px;
 	margin-left:-1px;
 	}	
-	.allcontent{
+	#allcontent{
 	/*float:right;
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
 	width:89px;
@@ -257,7 +257,7 @@
 	padding-right: 1.4em;
 	float:right;
 	}
-	 .allcontent a{
+	 #allcontent a{
 	/*text-align:center;
 	text-decoration:none;
 	color:#FFF;
@@ -290,7 +290,7 @@
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
 	 </div>
-	 <button type="button" class="allcontent"><span>Ver todos</span></button>
+	 <button type="button" id="allcontent"></button>
 </div>
 	
 	
@@ -312,7 +312,7 @@
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-	 document.getElementById("allcontent").innerHTML = '<a target="_parent" href="'+Urlall+'"/>';
+	 document.getElementById("allcontent").innerHTML = '<a target="_parent" href="'+Urlall+'">Ver todos</a>';
 	 
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
