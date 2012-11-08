@@ -304,14 +304,12 @@
 	}
 	.linetitle{
 	display:block;
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	width:610px;
 	height:4px;
 	margin-bottom:20px;
 	}
 	
 	.linevideo{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png')no-repeat;
 	width:610px;
 	height:4px;
 	display:block;
