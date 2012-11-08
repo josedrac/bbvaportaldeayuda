@@ -126,16 +126,23 @@
 	color:#0078D2;
 	font-family: BBVA Web Light;
 	font-size:30px;
-	margin-bottom:51px;
+	margin-bottom:10px;
 	padding-top:7px;
 	}
 	hr{
 	width:939px;
 	}
+	.linedowntitle{
+	margin-bottom:41px;
+	width:939px;
+	display:block;
+	
+	}
 	
 	</style>
 	
-<div id="titlepage"></div><hr/>
+<div id="titlepage"></div>
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle"/>
 	
 	
    <script type="text/javascript">
