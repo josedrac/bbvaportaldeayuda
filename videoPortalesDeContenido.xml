@@ -303,7 +303,7 @@
 	position: relative;
 	overflow: visible;
 	}
-	button:hover{
+	#allcontent button:hover{
 	background-color:#004C99;
 	}
 	#allcontent a:hover{
