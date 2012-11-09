@@ -191,7 +191,7 @@
 	  color:#0078D2;
 	  font-family:BBVA Office Book;
 	  font-size:18px;
-	  margin-bottom:20px;
+	  margin-bottom:0px;
 	  width:248px;
 	  margin-left:-4px;
 	  
@@ -200,7 +200,7 @@
 		color:#0078D2;
 		font-size:18px;
 	    font-family:BBVA Office Book;
-		margin-bottom:20px;
+		margin-bottom:0px;
 		width:248px;
 		margin-left:-4px;
 	  }
@@ -210,7 +210,7 @@
 		font-family:arial;
 		height:100px;
 		width:269px;
-		margin-top: 33px;
+		margin-top: 10px;
 		margin-left: -3px;
 	  }
 	  #textVideo2{
@@ -219,7 +219,7 @@
 		font-family:arial;
 		height:100px;
 		width:269px;
-		margin-top: 33px;
+		margin-top: 10px;
 		margin-left: -3px;
 	    }
 	#infoVideo{
