@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="videosresume.xml"
+  <ModulePrefs title="video.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -17,10 +17,6 @@
 <UserPref name="tagVideo2" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo2" display_name="Title Video" required="true" />
 <UserPref name="textVideo2" display_name="Text Video" required="true" />
-<UserPref name="urlVideo2" display_name="Url Video" required="true" />	
-<UserPref name="tagVideo3" display_name="Tag Video" required="true" />  
-<UserPref name="titleVideo3" display_name="Title Video" required="true" />
-<UserPref name="textVideo3" display_name="Text Video" required="true" />
 <UserPref name="urlVideo2" display_name="Url Video" required="true" />	
  <Content type="html">
     <![CDATA[
@@ -350,15 +346,8 @@
 		<div id="urlVideo2"></div>
 		<div id="titleVideo2"></div>
         <div id="textVideo2"></div></div>
-	 </div> <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideo"/>
-	 <div id="video-container3">
-	    <div id="tagVideo3"></div>
-	<div id="infoVideo3">	
-		<div id="urlVideo3"></div>
-		<div id="titleVideo3"></div>
-        <div id="textVideo3"></div></div>
 	 </div>
-	 
+	 <button type="button" id="allcontent"></button>
 </div>
 	
 	
@@ -378,11 +367,6 @@
 	 var textVideo2 = prefs.getString("textVideo2");
 	 var urlVideo2 = prefs.getString("urlVideo2");
 	 var tagVideo2 = prefs.getString("tagVideo2");
-	 
-	 var titleVideo3 = prefs.getString("titleVideo3");
-	 var textVideo3 = prefs.getString("textVideo3");
-	 var urlVideo3 = prefs.getString("urlVideo3");
-	 var tagVideo3 = prefs.getString("tagVideo3");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 	 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
@@ -422,7 +406,12 @@
 			}
   </style>
   <table width="100%" border="0" id="tablaconfig">  
-			
+			<tr>       
+                <td>
+                    Url -Page All Videos: <input type="text" size="100" id="Urlall" value="__UP_Urlall__"   onchange="registra('Urlall')"/>                   
+                </td>
+            </tr>
+			<tr/>
 			<tr>       
                 <td>
                     Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
