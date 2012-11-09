@@ -83,7 +83,7 @@
             -khtml-border-radius: 2px;
             width: 298px;
             clear: both;
-			margin-top:7px;
+			margin-top:12px;
 					}
 					ul{
 						padding-left: 19px;
