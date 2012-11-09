@@ -308,6 +308,8 @@
 	}
 	#allcontent a:hover{
 	background-color:#004C99;
+	width:108px;
+	height:40px;
 	}
 	
 	.linetitle{
