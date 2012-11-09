@@ -306,6 +306,10 @@
 	button:hover{
 	background-color:#004C99;
 	}
+	#allcontent a:hover{
+	background-color:#004C99;
+	}
+	
 	.linetitle{
 	display:block;
 	width:610px;
