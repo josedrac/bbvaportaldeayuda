@@ -373,7 +373,7 @@
 			var pagTotales = Math.ceil(filas/5);
 			var html = "";
 			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-			
+			alert(data.getValue(0,0));
 			 for(var i=0;i<filas;i++){
 			 
 			   html += "<div id='comboVideo'>";
@@ -385,7 +385,7 @@
 			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(0,8)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
-			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal='"+data.getValue(0,0)+"'>Saber más</a></button>";
+			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(0,0)+">Saber más</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
 			   
