@@ -354,6 +354,7 @@
 			}
 		function handleQueryResponse(response) {
 			data = response.getDataTable();	
+			alert(data);
 			var filas = data.getNumberOfRows();
 			var html = "";
 			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
