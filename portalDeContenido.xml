@@ -303,7 +303,7 @@
 	
 	.linetitle{
 	display:block;
-	width:610px;
+	width:632px;
 	height:4px;
 	margin-bottom:20px;
 	}
