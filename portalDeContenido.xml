@@ -201,7 +201,7 @@
 	  #textVideo{
 	    color:#0065B7;
 		font-size:11px;
-		font-family:arial;
+		font-family:BBVA Web Medium;
 		height:40px;
 		width:620px;
 		margin-top: 15px;
@@ -211,7 +211,7 @@
 	  #textVideo2{
 		color:#0065B7;
 		font-size:11px;
-		font-family:arial;
+		font-family:BBVA Web Medium;
 		height:100px;
 		width:269px;
 		margin-top: 15px;
