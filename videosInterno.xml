@@ -361,7 +361,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,B,C,D,E,F,max(G) group by A";
+				var querytosend = "select *";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -380,12 +380,12 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			  
-			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='302' height='201'</embed></div>";
-			   html += "<div id='titleVideo'>"+data.getValue(0,1)+"</div>";
-			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
-			   html += "<div id='userVideo'> "+data.getValue(0,8)+"</div>";
-			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
-			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(0,0)+"'>Saber más</a></button>";
+			   html += "<embed src='"+data.getValue(i,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='302' height='201'</embed></div>";
+			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
+			   html += "<div id='dateVideo'>"+data.getValue(i,7).toString()+" - </div>";
+			   html += "<div id='userVideo'> "+data.getValue(i,8)+"</div>";
+			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
+			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(i,0)+"'>Saber más</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
 			   
