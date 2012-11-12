@@ -310,13 +310,13 @@
 	
 	.linetitle{
 	display:block;
-	width:610px;
+	width:613px;
 	height:4px;
 	margin-bottom:20px;
 	}
 	
 	.linevideo{
-	width:610px;
+	width:613px;
 	height:4px;
 	display:block;
 	margin-bottom:26px;
