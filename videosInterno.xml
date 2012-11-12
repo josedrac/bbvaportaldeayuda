@@ -320,6 +320,15 @@
 	margin: 5px auto 5px 0;
 	width: 650px;
 	}
+	
+	#dateVideo{
+	color:#71777F;
+	font-size:11px;
+	}
+	#userVideo{
+	color:#71777F;
+	font-size:11px;
+	}
 	</style>
 	
 <div id="listportales"></div>	
@@ -364,8 +373,8 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>"+data.getValue(0,2)+"</div>";
 			   html += "<div id='titleVideo'>"+data.getValue(0,1)+"</div>";
-			   html += "<div id='dateVideo'>"+data.getValue(0,6)+" - </div>";
-			   html += "<div id='userVideo'>"+data.getValue(0,7)+"</div>";
+			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
+			   html += "<div id='userVideo'>"+data.getValue(0,8)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="</div></div></div>";
 			  
