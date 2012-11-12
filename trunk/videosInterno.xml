@@ -151,15 +151,15 @@
 	  
 	  #urlVideo{
 		float:right;
-	    width:302px;
+	    width:313px;
 		height:201px;
 		margin-right:4px;
 		margin-top:5px;
 	  }
 	  #urlVideo2{
 		float:right;
-	    width:302px;
-		height:201px;
+	    width:313px;
+		height:229px;
 		margin-right:4px;
 		margin-top:5px;
 	  }
@@ -383,7 +383,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			  
-			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='302' height='201'</embed></div>";
+			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='313' height='229'</embed></div>";
 			   html += "<div id='titleVideo'>"+data.getValue(0,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(0,8)+"</div>";
