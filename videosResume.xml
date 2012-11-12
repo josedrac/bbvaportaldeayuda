@@ -259,7 +259,7 @@
 	float:right;
 	margin-right:8px;
 	width:108px;
-	margin-top:14px;
+	margin-top:20px;
 	}
 	 #allcontent a{
 	/*text-align:center;
