@@ -380,7 +380,7 @@
 			  
 			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'</embed></div>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
-			
+			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
 			   
 			
