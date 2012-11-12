@@ -205,7 +205,8 @@
 		height:40px;
 		width:620px;
 		margin-top: 15px;
-		margin-left: 7px;
+		margin-left: -5px;
+		padding:5px 5px;
 		float:left;
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
 	  }
