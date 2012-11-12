@@ -388,7 +388,7 @@
 			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(0,8)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
-			   html +="</div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div></div>";
+			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
 			   
 			}
