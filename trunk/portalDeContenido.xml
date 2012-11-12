@@ -207,16 +207,18 @@
 		margin-top: 15px;
 		margin-left: 7px;
 		float:left;
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
 	  }
 	  #textVideo2{
 		color:#0065B7;
 		font-size:11px;
 		font-family:BBVA Web Medium;
-		height:100px;
-		width:269px;
+		height:40px;
+		width:620px;
 		margin-top: 15px;
 		margin-left: 7px;
 		float:left;
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
 	    }
 	#infoVideo{
 	float:left;
