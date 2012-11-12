@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-
+	<UserPref name="titlecomboVideo" display_name="Tilte Box Video" required="true" />   
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -331,6 +331,7 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
+	 var titlecomboVideo = prefs.getString("titlecomboVideo");
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 
 	 function loadVisualizationAPI() 
@@ -355,18 +356,18 @@
 			data = response.getDataTable();	
 			var filas = data.getNumberOfRows();
 			var html = "";
-			html += "<div id='titlecomboVideo'></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
+			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
 			 for(var i=0;i<filas;i++){
 			 
 			   html += "<div id='comboVideo'>";
-			   html += "<div id='video-container'>";
+			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>"+data.getValue(0,2)+"</div>";
 			   html += "<div id='titleVideo'>"+data.getValue(0,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(0,6)+" - </div>";
 			   html += "<div id='userVideo'>"+data.getValue(0,7)+"</div>";
-			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
-			   html +="</div></div>";
+			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
+			   html +="</div></div></div>";
 			  
 			   
 			}
