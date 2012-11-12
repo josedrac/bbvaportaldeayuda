@@ -405,7 +405,15 @@
 			   document.getElementById('listportales').innerHTML = html;
 				
 			}
-	
+	    
+
+				function SendGmail(){
+
+				var to ='c.gallego.gomez.contractor@bbva.com';
+				window.open (str,"send mail");
+
+				}
+
 
   </script>
     ]]>
