@@ -295,7 +295,7 @@
 	overflow: visible;
 	}
 	#allcontent:hover{
-	background: #0069B1;
+	background: #004C99;
 	}
 	
 	
