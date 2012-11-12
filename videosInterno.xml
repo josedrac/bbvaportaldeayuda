@@ -266,9 +266,10 @@
 	margin-right: 0;
 	text-decoration:none;
 	color:#FFF;
-	font-family: BBVA Office Light;
+	font-family: BBVA Web Light;
 	font-size:12px;
-	padding-left:5px;
+	margijn-left:-16px;
+	width:90px;
 	}
 	
 	button{
