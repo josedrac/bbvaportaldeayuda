@@ -141,12 +141,12 @@
       #video-container{
    	    float:left;
 		width:607px;
-		height:219px;
+		height:504px;
 		}
 	  #video-container2{
 	    float:left;
 		width:607px;
-		height:219px;
+		height:504px;
 	  }
 	  
 	  #urlVideo{
@@ -202,8 +202,8 @@
 	    color:#434A58;
 		font-size:12px;
 		font-family:arial;
-		height:100px;
-		width:269px;
+		height:40px;
+		width:620px;
 		margin-top: 15px;
 		margin-left: 7px;
 		float:left;
@@ -309,7 +309,7 @@
 	}
 	
 	.linevideo{
-	width:610px;
+	width:632px;
 	height:4px;
 	display:block;
 	margin-bottom:23px;
