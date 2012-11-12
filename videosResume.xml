@@ -139,7 +139,7 @@
 	color:#0078D2;
 	font-family:BBVA Web Light;
 	font-size:22px;
-	margin:3px 0px 10px 22px;
+	margin:6px 0px 10px 22px;
 	}
 	
 	#comboVideo{
@@ -149,12 +149,12 @@
       #video-container{
    	    float:left;
 		width:607px;
-		height:238px;
+		height:248px;
 		}
 	  #video-container2{
 	    float:left;
 		width:607px;
-		height:238px;
+		height:248px;
 	  }
 	  
 	  #urlVideo{
