@@ -340,8 +340,8 @@
 	margin-top:-15px;
 	}
     #emailTo{
-	width:607px;
-	height:32px;
+	//width:607px;
+	//height:32px;
 	font-size:12px;
 	font-family:BBVA Office Book;
 	
