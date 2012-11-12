@@ -361,7 +361,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select *";
+				var querytosend = "select A,B,C,D,E,F,max(G) group by A";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
