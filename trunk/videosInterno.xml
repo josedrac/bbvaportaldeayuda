@@ -373,7 +373,7 @@
 			var pagTotales = Math.ceil(filas/5);
 			var html = "";
 			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-			alert(data.getValue(0,0));
+			
 			 for(var i=0;i<filas;i++){
 			 
 			   html += "<div id='comboVideo'>";
