@@ -334,6 +334,7 @@
 	color:#71777F;
 	font-size:11px;
 	float:left;
+	margin-left:2px;
 	}
 	</style>
 	
