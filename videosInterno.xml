@@ -206,6 +206,7 @@
 		width:269px;
 		margin-top: 33px;
 		margin-left: -3px;
+		float:left;
 	  }
 	  #textVideo2{
 		color:#434A58;
@@ -215,6 +216,7 @@
 		width:269px;
 		margin-top: 33px;
 		margin-left: -3px;
+		float:left;
 	    }
 	#infoVideo{
 	float:left;
@@ -380,7 +382,7 @@
 			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='302' height='201'</embed></div>";
 			   html += "<div id='titleVideo'>"+data.getValue(0,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
-			   html += "<div id='userVideo'>"+data.getValue(0,8)+"</div>";
+			   html += "<div id='userVideo'> "+data.getValue(0,8)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="</div></div></div>";
 			  
