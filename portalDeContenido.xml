@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-	<UserPref name="titlecomboVideo" display_name="Tilte Box Video" required="true" />   
+	
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -127,7 +127,7 @@
 	
 	}
 	#titlecomboVideo h2{
-	float:left;
+	
 	color:#0078D2;
 	font-family:BBVA Web Light;
 	font-size:22px;
@@ -347,7 +347,6 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
-	 var titlecomboVideo = prefs.getString("titlecomboVideo");
 	 var portalContenido = gadgets.util.getUrlParameters()["parent"].split("=");
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -370,21 +369,16 @@
 				
 			}
 		function handleQueryResponse(response) {
-			data = response.getDataTable();	
-			var filas = data.getNumberOfRows();
-			var html = "";
-			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
+		
+			   data = response.getDataTable();	
+			   var html = "";
+			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
-			 
-			 
 			   html += "<div id='comboVideo'>";
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			  
 			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'</embed></div>";
-			   html += "<div id='titleVideo'>"+data.getValue(0,1)+"</div>";
-			   html += "<div id='dateVideo'>"+data.getValue(0,7).toString()+" - </div>";
-			   html += "<div id='userVideo'> "+data.getValue(0,8)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
@@ -392,7 +386,7 @@
 			
 				
 				
-				document.getElementById('listportales').innerHTML = html;
+			   document.getElementById('listportales').innerHTML = html;
 				
 			}
 	
