@@ -137,7 +137,7 @@
 	#comboVideo{
 	width:620px;
 	float:left;
-	display:block;
+	
 	}
       #video-container{
    	    float:left;
