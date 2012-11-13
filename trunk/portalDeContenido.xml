@@ -418,7 +418,7 @@
 				'&su=' + subject;
 				alert(gadgets.util.getUrlParameters()["parent"]);
 				window.open(str,'send mail','_parent');
-				window.parent.location.href = gadgets.util.getUrlParameters()["parent"];
+				window.location.href = gadgets.util.getUrlParameters()["parent"];
 
 				}
 
