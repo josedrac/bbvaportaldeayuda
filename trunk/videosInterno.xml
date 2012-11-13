@@ -341,14 +341,14 @@
             clear:both;
             display:block;
             margin-left:15px;
-            font-family: BBVA Web Medium;
+            font-family: BBVA Office Book;
 			color:#0078D2;
 			float:left;
         }
 
     .bloqueSiguiente{
             display:block;
-            font-family: BBVA Web Medium;
+            font-family: BBVA Office Book;
             float:right;
             margin-top:0px;
             margin-right:50px;
