@@ -418,7 +418,7 @@
 				'&su=' + subject;
 				
 				window.open(str,'_blank','send mail');
-				window.open(gadgets.util.getUrlParameters()["parent"],'Video');
+				window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
 
 				}
 
