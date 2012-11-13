@@ -341,7 +341,6 @@
             clear:both;
             display:block;
             margin-left:15px;
-            font-weight:bold;
             font-family: BBVA Web Medium;
 			color:#0078D2;
         }
@@ -352,7 +351,6 @@
             float:right;
             margin-top:0px;
             margin-right:50px;
-            font-weight:bold;
 			color:#0078D2;
         }
 	p.text {	 
