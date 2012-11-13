@@ -414,7 +414,7 @@
 				//window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
 				var to = emailTo;
 				var subject ='Error en Portal de Ayuda';
-				var str = 'http://mail.google.com/mail/?view=cm&fs=1'+'&to='+to+'&su='+subject;
+				var str = 'https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+subject;
 				window.parent.location.href = str;
 				
 				//window.open(str,'_blank','send mail');
