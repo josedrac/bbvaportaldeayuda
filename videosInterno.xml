@@ -342,16 +342,18 @@
             display:block;
             margin-left:15px;
             font-weight:bold;
-            font-family: arial,sans-serif;
+            font-family: BBVA Web Medium;
+			color:#0078D2;
         }
 
     .bloqueSiguiente{
             display:block;
-            font-family: arial,sans-serif;
+            font-family: BBVA Web Medium;
             float:right;
             margin-top:0px;
             margin-right:50px;
             font-weight:bold;
+			color:#0078D2;
         }
 	p.text {	 
             font-size: 0.8em;
