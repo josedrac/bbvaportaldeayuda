@@ -417,7 +417,7 @@
 				'&to=' + to +
 				'&su=' + subject;
 				var aux = gadgets.util.getUrlParameters()["parent"];
-				window.parent.open(str,'_blank','send mail');
+				window.parent.opener(str,'_blank','send mail');
 				//window.parent.location.href = aux;
 				window.parent.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
 				//window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
