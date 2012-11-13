@@ -417,11 +417,8 @@
 				'&to=' + to +
 				'&su=' + subject;
 				alert(gadgets.util.getUrlParameters()["parent"]);
-				window.location.href = gadgets.util.getUrlParameters()["parent"];
-				window.parent.location.href = gadgets.util.getUrlParameters()["parent"];
-				window.open(str,gadgets.util.getUrlParameters()["parent"],'_parent');
-				window.location.href = "https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal=Video001";
-				window.parent.location.href = "https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal=Video001";
+				window.open(str,'send mail','_blank');
+				
 
 				}
 
