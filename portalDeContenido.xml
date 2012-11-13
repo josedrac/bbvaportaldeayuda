@@ -410,7 +410,7 @@
 
 				function SendGmail(){
 				
-				window.parent.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo;
+				window.parent.parent.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo;
 				/*
 				var to = emailTo;
 				var subject ='Yo';
