@@ -416,7 +416,7 @@
 				var str = 'http://mail.google.com/mail/?view=cm&fs=1'+
 				'&to=' + to +
 				'&su=' + subject;
-				window.open(str,"_parent","send mail");
+				window.parent.opener.location = str;
 
 
 				}
