@@ -410,8 +410,14 @@
 
 				function SendGmail(){
 				
-				window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
-				
+				//window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
+				var to = emailTo;
+				var subject ='Error en Portal de Ayuda';
+				var str = 'http://mail.google.com/mail/?view=cm&fs=1'+
+				'&to=' + to +
+				'&su=' + subject;
+				window.open (str,"send mail");
+
 
 				}
 
