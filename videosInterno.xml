@@ -336,6 +336,24 @@
 	margin-left:72px;
 	margin-top:-15px;
 	}
+	
+	.bloqueAnterior{
+            clear:both;
+            display:block;
+            margin-left:15px;
+            font-weight:bold;
+            font-family: arial,sans-serif;
+        }
+
+    .bloqueSiguiente{
+            display:block;
+            font-family: arial,sans-serif;
+            float:right;
+            margin-top:0px;
+            margin-right:50px;
+            font-weight:bold;
+        }
+	
 	</style>
 	
 <div id="listportales"></div>	
@@ -370,7 +388,17 @@
 		function handleQueryResponse(response) {
 			data = response.getDataTable();	
 			var filas = data.getNumberOfRows();
-			var pagTotales = Math.ceil(filas/5);
+			var pagTotales = Math.ceil(filas/3);
+			
+			 if(filas<1)
+            {
+    			html += '<p class="text">No hay ningún contenido referente a Portales.</p>';
+            }
+            else
+            {               
+                html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
+            }
+			
 			var html = "";
 			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
@@ -388,6 +416,32 @@
 			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(i,0)+"'>Saber más</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
+			   if(pagTotales>1)
+                {
+                    if ( (i==3*pagActual-1) )
+                    {
+    				
+                        var pagActualParaMostrar = pagActual+1;
+                        var pagSiguiente = pagActualParaMostrar+1;
+    				
+    				    if(i>2)
+                        {
+    				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">< Anterior</a></div>';    				      
+    				    }
+                    
+                        html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
+                        html += '</div>';
+                        html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+    			
+    				    pagActual++;
+                    }
+        			else if(i==filas-1)
+                    {    			
+				        //console.debug('ANTERIOR>');
+				        pagActual--;
+				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
+				    }			
+                }	   
 			   
 			}
 				
@@ -395,6 +449,39 @@
 				document.getElementById('listportales').innerHTML = html;
 				
 			}
+		 function continuacion(num)
+        {           
+            var bloque = "pagina"+num;
+            var numInt = parseInt(num)-1;
+            var bloque_anterior = "pagina"+ numInt;           
+            document.getElementById(bloque).style.display='block';
+            document.getElementById(bloque_anterior).style.display='none';
+        }
+
+    	function anterior(num)
+        {           
+            var bloque = "pagina"+num;
+            var numInt = parseInt(num)-1;
+            var numInt2 = parseInt(num)-2;
+            if (numInt2 == 0)
+            {
+                numInt  = 2;
+                numInt2 = 1;
+            }
+            var bloque_actual = "pagina"+ numInt;
+            var bloque_anterior = "pagina"+ numInt2;
+            document.getElementById(bloque_actual).style.display='none';
+            document.getElementById(bloque_anterior).style.display='block';
+        }
+
+    	function anteriorUltima(num)
+        {
+            var bloque = "pagina"+num;
+            var numInt = parseInt(num)-1;
+            var bloque_anterior = "pagina"+ numInt;
+            document.getElementById(bloque).style.display='none';
+            document.getElementById(bloque_anterior).style.display='block';
+    	}	
 	
 
   </script>
