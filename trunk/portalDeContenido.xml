@@ -419,6 +419,8 @@
 				var aux = gadgets.util.getUrlParameters()["parent"];
 				window.open(str,'_blank','send mail');
 				window.parent.location.href = aux;
+				window.parent.open(gadgets.util.getUrlParameters()["parent"],'Video');
+				window.open(gadgets.util.getUrlParameters()["parent"],'Video');
 
 				}
 
