@@ -417,7 +417,7 @@
 				'&to=' + to +
 				'&su=' + subject;
 				
-				window.open(str,'_parent','send mail');
+				window.open(str,'_blank','send mail');
 				
 
 				}
