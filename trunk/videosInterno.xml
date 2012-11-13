@@ -389,7 +389,7 @@
 			data = response.getDataTable();	
 			var filas = data.getNumberOfRows();
 			var pagTotales = Math.ceil(filas/3);
-			
+			var pagActual = 1;
 			 if(filas<1)
             {
     			html += '<p class="text">No hay ningún contenido referente a Portales.</p>';
