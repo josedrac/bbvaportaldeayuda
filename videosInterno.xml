@@ -337,7 +337,7 @@
 	margin-top:-15px;
 	}
 	
-	.bloqueAnterior{
+	/* .bloqueAnterior{
             clear:both;
             display:block;
             margin-left:15px;
@@ -352,18 +352,18 @@
             margin-top:0px;
             margin-right:50px;
             font-weight:bold;
-        }
+        } */
 	p.text {	 
             font-size: 0.8em;
             color: #3B3B3B;
         }
 
-    #bloqueEnlaces a,
+   /* #bloqueEnlaces a,
     #bloqueEnlaces1 a{
             font-size: 0.8em;
             text-decoration: none;
             font-weight: normal;
-        }
+        }*/
 	
 	</style>
 	
