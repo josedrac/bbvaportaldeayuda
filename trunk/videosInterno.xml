@@ -364,6 +364,8 @@
             font-size: 0.8em;
             text-decoration: none;
             font-weight: normal;
+			font-family: BBVA Office Book;
+			color:#0078D2;
         }
 	
 	</style>
