@@ -413,10 +413,10 @@
 				var to = emailTo;
 				var subject ='Yo';
 				var message ='Ejemplo del cuerpo del mensaje.';
-				var str = 'http://mail.google.com/mail/?view=cm&fs=1'+
+				var str = 'https://mail.google.com/mail/?view=cm&fs=1'+
 				'&to=' + to +
 				'&su=' + subject;
-				window.open (str,"send mail");
+				window.parent.open (str,"send mail");
 
 				}
 
