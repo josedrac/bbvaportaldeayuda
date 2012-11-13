@@ -401,16 +401,17 @@
 			var filas = data.getNumberOfRows();
 			var pagTotales = Math.ceil(filas/3);
 			var pagActual = 1;
+			var html = "";
 			 if(filas<1)
             {
     			html += '<p class="text">No hay ningún contenido referente a Portales.</p>';
             }
             else
             {               
-                html += '<div id="pagina1" class="paginaNueva" style=" display: block;height: 660px;">';
+                html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
             }
 			
-			var html = "";
+			
 			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
 			 for(var i=0;i<filas;i++){
