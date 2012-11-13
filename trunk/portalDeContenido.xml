@@ -412,10 +412,10 @@
 				
 				var to = emailTo;
 				var subject ='Yo';
-				var str = 'https://mail.google.com/mail/?'+
+				var str = 'https://mail.google.com/mail/?&fs=1'+
 				'&to=' + to +
 				'&su=' + subject;
-				window.parent.open(str,"send mail");
+				window.parent.location.href = str; 
 
 				}
 
