@@ -418,7 +418,7 @@
 				'&su=' + subject;
 				var aux = gadgets.util.getUrlParameters()["parent"];
 				window.open(str,'_blank','send mail');
-				window.location.href = aux;
+				window.parent.location.href = aux;
 
 				}
 
