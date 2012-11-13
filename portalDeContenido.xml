@@ -410,7 +410,7 @@
 
 				function SendGmail(){
 				
-				window.parent.opener = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
+				parent.window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
 				
 
 				}
