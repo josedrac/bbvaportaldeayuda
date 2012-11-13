@@ -466,7 +466,6 @@
             var numInt = parseInt(num)-1;
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
-			alert("aki "+bloque_anterior);
             document.getElementById(bloque_anterior).style.display='none';
         }
 
