@@ -410,12 +410,14 @@
 
 				function SendGmail(){
 				
+				window.parent.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo;
+				/*
 				var to = emailTo;
 				var subject ='Yo';
 				var str = 'https://mail.google.com/mail/?view=cm&fs=1'+
 				'&to=' + to +
 				'&su=' + subject;
-				window.parent.open = str; 
+				window.parent.open = str; */
 
 				}
 
