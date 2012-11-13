@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-	
+	<UserPref name="emailTo" display_name="email To" required="true" />	
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -364,6 +364,7 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
+	 var emailTo = prefs.getString("emailTo");
 	 var portalContenido = gadgets.util.getUrlParameters()["parent"].split("=");
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -408,9 +409,14 @@
 	    
 
 				function SendGmail(){
-
-				var to ='c.gallego.gomez.contractor@bbva.com';
-				window.parent.open (str,"send mail");
+				
+				var to = emailTo;
+				var subject ='Yo';
+				var message ='Ejemplo del cuerpo del mensaje.';
+				var str = 'http://mail.google.com/mail/?view=cm&fs=1'+
+				'&to=' + to +
+				'&su=' + subject;
+				window.open (str,"send mail");
 
 				}
 
