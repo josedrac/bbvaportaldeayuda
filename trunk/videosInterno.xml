@@ -407,7 +407,7 @@
             }
             else
             {               
-                html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
+                html += '<div id="pagina1" class="paginaNueva" style=" display: block;height: 660px;">';
             }
 			
 			var html = "";
@@ -426,7 +426,7 @@
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
 			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(i,0)+"'>Saber más</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
-			  
+			  alert(3*pagActual-1);
 			   if(pagTotales>1)
                 {
                     if ( (i==3*pagActual-1) )
