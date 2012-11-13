@@ -408,7 +408,7 @@
             }
             else
             {               
-                html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;"/>';
+                html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
             }
 			
 			
@@ -443,8 +443,9 @@
                     
                         html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
                         
-                        html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;"/>';
-					
+                        html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+					     html += '</div>';
+						 html += '</div>';
     			
     				    pagActual++;
                     }
