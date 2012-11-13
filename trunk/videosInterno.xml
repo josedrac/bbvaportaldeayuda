@@ -442,10 +442,10 @@
     				    }
                     
                         html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
-                        
+                        html += '</div>';
                         html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
-					     html += '</div>';
-						 html += '</div>';
+					     
+						 
     			
     				    pagActual++;
                     }
@@ -454,6 +454,7 @@
 				        //console.debug('ANTERIOR>');
 				        pagActual--;
 				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
+						html += '</div>';
 				    }			
                 }	   
 			   
