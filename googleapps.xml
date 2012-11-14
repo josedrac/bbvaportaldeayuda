@@ -180,10 +180,10 @@
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
-<div id="titleapp"></div>
+<div id="titleapp" class="titleapp"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textapp" class="text"></div>
-<div id="titleguia" class="titleapp"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
+<div id="titleguia" class="title" ></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textguia" class="text"></div>
 <div id="titletrucos" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textTrucos" class="text"></div>
