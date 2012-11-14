@@ -127,7 +127,7 @@
 
 /* @end */
 	
-	#titlepage{
+	#titleapp{
 	float:left;
 	color:#0078D2;
 	font-family: BBVA Web Light;
@@ -144,7 +144,7 @@
 	display:block;
 	}
 	
-	#textPage{
+	#textapp{
 	margin-bottom:102px;
 	width:616px;
 	height:57px;
@@ -156,6 +156,7 @@
 	
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
+
 <div id="titleapp"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textapp"></div>
@@ -209,11 +210,19 @@
                     Title - Google App: <input type="text" size="100" id="titleapp" value="__UP_titleapp__"   onchange="registra('titleapp')"/>                   
                 </td>
             </tr>
+			<table width="100%" height="170px;" border="0" id="tablaconfig1">	
 			<tr>       
                 <td>
-					Text - Google App: <textarea id="textapp" style="height: 245px; width: 100%" onchange="registra('textapp')" >__UP_textapp__</textarea>
+					Text - Google App (admite bbcode): 
+					<script language="Javascript">
+					<!--
+						editor_para("textapp");
+					//-->
+					</script>
+					<textarea id="textapp" style="height: 245px; width: 100%" onchange="registra('textapp')" >__UP_textapp__</textarea>
 				</td>
             </tr>
+			</table>
 			<tr>       
                 <td>
 					Title - Guía Google App: <input type="text" size="100" id="titleguia" value="__UP_titleguia__"   onchange="registra('titleguia')"/>
