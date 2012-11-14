@@ -148,7 +148,7 @@
 	color:#434A58;	
 	margin-left:9px;
 	}
-	.tablasoporte{
+	.tablasoporte table{
 	width:600px;
 	font-family:BBVA Web Medium;
 	font-size:12px;
