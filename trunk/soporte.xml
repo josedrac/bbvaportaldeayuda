@@ -158,6 +158,11 @@
 	.tablasoporte td{
 	width:150px;
 	}
+	.cabecera td{
+	font-family:BBVA Web Medium;
+	font-size:18px;
+	color:#000;
+	}
 	
 	</style>
 	
@@ -197,8 +202,9 @@
 				var filas = data.getNumberOfRows();
 				var html= "";
 				html += "<table class='tablasoporte'>";
-				html += "<tr><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr>";
-				for(var i=0;i<filas;i++){
+				html += "<tr class="cabecera"><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr>";
+				html += "<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />";
+				for(var i=1;i<filas;i++){
 					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
