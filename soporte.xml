@@ -176,7 +176,7 @@
 <div id="titlepage"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textPage"></div>
-<div class="tablasoporte"></div>	
+<div class="infosoporte"></div>	
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -208,7 +208,7 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				var html= "";
-				html += "<table>";
+				html += "<table class='tablasoporte'>";
 				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td style='width:300px;'>Horario de atenci&oacute;n</td></tr>";
 			    html += "<tr><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' /></tr>";
 				for(var i=1;i<filas;i++){
@@ -216,7 +216,7 @@
 	
 				}
 				html += "</table>";
-		document.getElementsByClassName('tablasoporte')[0].innerHTML += html;
+		document.getElementsByClassName('infosoporte')[0].innerHTML += html;
 	
 		}
    </script>
