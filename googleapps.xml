@@ -160,21 +160,26 @@
 	font-size: 18px;
 	font-family: BBVA Web Light;
 	}
+	.text{
+	color:#0065B7;
+	font-size: 12px;
+	font-family: BBVA Web Medium;
+	}
 	
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
 <div id="titleapp"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textapp"></div>
+<div id="textapp" class="text"></div>
 <div id="titleguia" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textguia"></div>
+<div id="textguia" class="text"></div>
 <div id="titletrucos" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textTrucos"></div>
+<div id="textTrucos" class="text"></div>
 <div id="titleAvanzado" class="title"></div></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textAvanzado"></div>
+<div id="textAvanzado"class="text"></div>
 <div id="titleAyuda" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textAyuda"></div>
+<div id="textAyuda" class="text"></div>
 	
 	
    <script type="text/javascript">
