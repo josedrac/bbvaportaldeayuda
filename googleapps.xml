@@ -150,10 +150,15 @@
 	margin-bottom:102px;
 	width:616px;
 	height:57px;
-	font-family: BBVA Office Light;
+	font-family: BBVA Web Light;
 	font-size:12px;
 	color:#71777F;	
 	margin-left:9px;
+	}
+	.title{
+	color:#000;
+	font-size: 18px;
+	font-family: BBVA Web Light;
 	}
 	
 	</style>
@@ -166,7 +171,7 @@
 <div id="textguia"></div>
 <div id="titletrucos" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textTrucos"></div>
-<div id="titleAvanzado"></div></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
+<div id="titleAvanzado" class="title"></div></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textAvanzado"></div>
 <div id="titleAyuda" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textAyuda"></div>
