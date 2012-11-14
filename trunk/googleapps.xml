@@ -222,8 +222,8 @@
                 <td>
                     Title - Google App: <input type="text" size="100" id="titleapp" value="__UP_titleapp__"   onchange="registra('titleapp')"/>                   
                 </td>
-            </tr>
-			<table width="100%" height="170px;" border="0" id="tablaconfig1">	
+            </tr></table>
+			<table width="100%" height="170px;" border="0" id="tablaconfig">	
 			<tr>       
                 <td>
 					Text - Google App (admite bbcode): 
