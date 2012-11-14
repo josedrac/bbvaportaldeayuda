@@ -160,6 +160,12 @@
 	color:#000;
 	font-size: 18px;
 	font-family: BBVA Web Light;
+	margin-left:22px;
+	}
+	.titleapp{
+	color:#000;
+	font-size: 18px;
+	font-family: BBVA Web Light;
 	margin-left:11px;
 	}
 	.text{
@@ -175,7 +181,7 @@
 <div id="titleapp"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textapp" class="text"></div>
-<div id="titleguia" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
+<div id="titleguia" class="titleapp"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textguia" class="text"></div>
 <div id="titletrucos" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textTrucos" class="text"></div>
