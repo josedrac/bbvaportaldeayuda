@@ -155,6 +155,9 @@
 	color:#434A58;
 	
 	}
+	#tablesoporte td{
+	width:150px;
+	}
 	
 	</style>
 	
@@ -163,7 +166,7 @@
 <div id="textPage"></div>
 <table id="tablasoporte">
 <tr>
-<td>Pa&iacutes</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td>
+<td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td>
 </tr><tr><td><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" /></td></tr>
 
 </table>	
