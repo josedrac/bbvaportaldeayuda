@@ -213,7 +213,7 @@
 				var filas = data.getNumberOfRows();
 				var html= "";
 				html += "<table class='tablasoporte'>";
-				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td style='width:300px;'>Horario de atenci&oacute;n</td></tr><tr/></table>";
+				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td style='padding-left:10px;'>Correo</td><td style='padding-left:10px;'>Tel&eacute;fono</td><td style='width:300px;'>Horario de atenci&oacute;n</td></tr><tr/></table>";
 			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table class='tablasoporte'>";
 				for(var i=1;i<filas;i++){
 					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
