@@ -176,7 +176,7 @@
 <div id="titlepage"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textPage"></div>
-<div class="infosoporte"></div>	
+<div id="infosoporte"></div>	
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -216,7 +216,7 @@
 	
 				}
 				html += "</table>";
-		document.getElementsByClassName('infosoporte')[0].innerHTML += html;
+		document.getElementById('infosoporte').innerHTML += html;
 	
 		}
    </script>
