@@ -135,7 +135,8 @@
 	font-family: BBVA Web Light;
 	font-size:22px;
 	margin-bottom:6px;
-	padding-top:11px;
+	padding-top:0px;
+	margin-top:-16px;
 	height:30px;
 	margin-left:11px;
 	}
