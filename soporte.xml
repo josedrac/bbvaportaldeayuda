@@ -138,6 +138,10 @@
 	width:939px;
 	display:block;
 	}
+	.linedownheadertable{
+	width:939px;
+	display:block;
+	}
 	
 	#textPage{
 	margin-bottom:102px;
@@ -149,7 +153,7 @@
 	margin-left:9px;
 	}
 	.tablasoporte{
-	width:600px;
+	width:620px;
 	font-family:BBVA Web Medium;
 	font-size:12px;
 	color:#434A58;
@@ -158,9 +162,7 @@
 	.tablasoporte td{
 	width:150px;
 	}
-	.cabecera{
-	width:600px;
-	}
+	
 	.cabecera td{
 	font-family:BBVA Web Medium;
 	font-size:18px;
@@ -207,7 +209,7 @@
 				var html= "";
 				html += "<table class='tablasoporte'>";
 				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr>";
-				html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
+				html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' />";
 				for(var i=1;i<filas;i++){
 					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
 	
