@@ -236,46 +236,77 @@
 				</td>
             </tr>
 			</table>
+			<table width="100%" border="0" id="tablaconfig">
 			<tr>       
                 <td>
 					Title - Guía Google App: <input type="text" size="100" id="titleguia" value="__UP_titleguia__"   onchange="registra('titleguia')"/>
 				</td>
-            </tr>
+            </tr></table>
+				<table width="100%" height="170px;" border="0" id="tablaconfig">
 				<tr>       
                 <td>
-					Text - Guía Google App: <textarea id="textguia" style="height: 245px; width: 100%" onchange="registra('textguia')" >__UP_textguia__</textarea>
+					Text - Guía Google App: 
+					<script language="Javascript">
+					<!--
+						editor_para("textguia");
+					//-->
+					</script>
+					<textarea id="textguia" style="height: 245px; width: 100%" onchange="registra('textguia')" >__UP_textguia__</textarea>
 				</td>
-            </tr>
+            </tr></table>
+			<table width="100%" border="0" id="tablaconfig">
 			<tr>       
                 <td>
 					Title - Trucos y Consejos: <input type="text" size="100" id="titletrucos" value="__UP_titletrucos__"   onchange="registra('titletrucos')"/>
 				</td>
-            </tr>
-			<tr>       
+            </tr></table>
+			<table width="100%" height="170px;" border="0" id="tablaconfig">
+			  <tr>       
                 <td>
-					Text - Trucos y Consejos: <textarea id="textTrucos" style="height: 245px; width: 100%" onchange="registra('textTrucos')" >__UP_textTrucos__</textarea>
+					Text - Trucos y Consejos: 
+					<script language="Javascript">
+					<!--
+						editor_para("textTrucos");
+					//-->
+					</script>
+					<textarea id="textTrucos" style="height: 245px; width: 100%" onchange="registra('textTrucos')" >__UP_textTrucos__</textarea>
 				</td>
-            </tr>
+            </tr></table>
+			<table width="100%" border="0" id="tablaconfig">
 			<tr>       
                 <td>
 					Title - Avanzado: <input type="text" size="100" id="titleAvanzado" value="__UP_titleAvanzado__"   onchange="registra('titleAvanzado')"/>
 				</td>
-            </tr>
+            </tr></table>
+			<table width="100%" height="170px;" border="0" id="tablaconfig">
 			<tr>       
                 <td>
-					Text - Avanzado: <textarea id="textAvanzado" style="height: 245px; width: 100%" onchange="registra('textAvanzado')" >__UP_textAvanzado__</textarea>
+					Text - Avanzado: 
+					<script language="Javascript">
+					<!--
+						editor_para("textAvanzado");
+					//-->
+					</script>
+					<textarea id="textAvanzado" style="height: 245px; width: 100%" onchange="registra('textAvanzado')" >__UP_textAvanzado__</textarea>
 				</td>
-            </tr>
+            </tr></table>
+			<table width="100%" border="0" id="tablaconfig">
 			<tr>       
                 <td>
 					Title - Ayuda Oficial: <input type="text" size="100" id="titleAyuda" value="__UP_titleAyuda__"   onchange="registra('titleAyuda')"/>
 				</td>
-            </tr>
-			<tr>       
+            </tr></table>
+			<table width="100%" height="170px;" border="0" id="tablaconfig"><tr>       
                 <td>
-					Text - Ayuda Oficial: <textarea id="textAyuda" style="height: 245px; width: 100%" onchange="registra('textAyuda')" >__UP_textAyuda__</textarea>
+					Text - Ayuda Oficial: 
+					<script language="Javascript">
+					<!--
+						editor_para("textAyuda");
+					//-->
+					</script>
+					<textarea id="textAyuda" style="height: 245px; width: 100%" onchange="registra('textAyuda')" >__UP_textAyuda__</textarea>
 				</td>
-            </tr>
+            </tr></table>
 			
 			
 	</table>	
