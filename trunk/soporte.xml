@@ -148,7 +148,7 @@
 	color:#434A58;	
 	margin-left:9px;
 	}
-	.tablasoporte table{
+	#tablasoporte table{
 	width:600px;
 	font-family:BBVA Web Medium;
 	font-size:12px;
@@ -164,12 +164,7 @@
 <div id="titlepage"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textPage"></div>
-<table class="tablasoporte">
-<tr>
-<td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td>
-</tr><tr><td><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" /></td></tr>
-
-</table>	
+<div class="tablasoporte"></div>	
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -201,10 +196,13 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				var html= "";
+				html += "<table class='tablasoporte'>";
+				html += "<tr><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr>";
 				for(var i=0;i<filas;i++){
 					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
+				html += "</table>";
 		document.getElementsByClassName('tablasoporte')[0].innerHTML += html;
 	
 		}
