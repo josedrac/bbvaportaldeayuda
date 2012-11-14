@@ -158,6 +158,9 @@
 	.tablasoporte td{
 	width:150px;
 	}
+	.cabecera{
+	width:600px;
+	}
 	.cabecera td{
 	font-family:BBVA Web Medium;
 	font-size:18px;
