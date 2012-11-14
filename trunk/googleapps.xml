@@ -236,7 +236,7 @@
 			<table width="100%" height="170px;" border="0" id="tablaconfig">	
 			<tr>       
                 <td>
-					Text - App (admite bbcode): 
+					Text - App: 
 					<script language="Javascript">
 					<!--
 						editor_para("textapp");
