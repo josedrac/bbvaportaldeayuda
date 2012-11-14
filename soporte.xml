@@ -148,14 +148,14 @@
 	color:#434A58;	
 	margin-left:9px;
 	}
-	#tablesoporte{
+	.tablesoporte{
 	width:600px;
 	font-family:BBVA Web Medium;
 	font-size:12px;
 	color:#434A58;
 	
 	}
-	#tablesoporte td{
+	.tablesoporte td{
 	width:150px;
 	}
 	
@@ -164,7 +164,7 @@
 <div id="titlepage"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textPage"></div>
-<table id="tablasoporte">
+<table class="tablasoporte">
 <tr>
 <td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td>
 </tr><tr><td><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" /></td></tr>
