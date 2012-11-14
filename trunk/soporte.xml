@@ -205,7 +205,7 @@
 					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
-		document.getElementById('tablasoporte').innerHTML += html;
+		document.getElementsByClassName('tablasoporte')[0].innerHTML += html;
 	
 		}
    </script>
