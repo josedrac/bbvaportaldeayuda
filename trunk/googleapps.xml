@@ -136,9 +136,9 @@
 	font-size:22px;
 	margin-bottom:6px;
 	padding-top:0px;
-	margin-top:-3px;
+	margin-top:-4px;
 	height:30px;
-	margin-left:11px;
+	margin-left:22px;
 	}
 	
 	.linedowntitle{
