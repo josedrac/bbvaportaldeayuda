@@ -226,6 +226,12 @@
   <table width="100%" border="0" id="tablaconfig">  
 			<tr>       
                 <td>
+                    Url -Spreadsheet: <input type="text" size="100" id="_table_query_url" value="__UP__table_query_url__"   onchange="registra('_table_query_url')"/>                   
+                </td>
+            </tr>
+			
+			<tr>       
+                <td>
                     Title -Page: <input type="text" size="100" id="titlepage" value="__UP_titlepage__"   onchange="registra('titlepage')"/>                   
                 </td>
             </tr>
