@@ -148,7 +148,7 @@
 	}
 	
 	#textapp{
-	margin-bottom:30px;
+	margin-bottom:22px;
 	width:616px;
 	height:57px;
 	font-family: BBVA Web Light;
@@ -161,6 +161,7 @@
 	font-size: 18px;
 	font-family: BBVA Web Light;
 	margin-left:22px;
+	margin-top:77px;
 	}
 	.titleapp{
 	color:#000;
@@ -172,7 +173,7 @@
 	color:#0065B7;
 	font-size: 12px;
 	font-family: BBVA Web Medium;
-	margin-left:11px;
+	margin-left:18px;
 	}
 	
 	</style>
