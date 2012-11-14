@@ -145,13 +145,14 @@
 	}
 	
 	#textPage{
-	margin-bottom:102px;
+	margin-bottom:90px;
 	width:675px;
 	height:57px;
 	font-family: BBVA Office Light;
 	font-size:14px;
 	color:#434A58;	
 	margin-left:9px;
+	padding-top:11px;
 	}
 	.tablasoporte{
 	width:675px;
