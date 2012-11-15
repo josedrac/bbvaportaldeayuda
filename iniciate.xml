@@ -228,6 +228,7 @@
 				for(var i=0;i<filas;i++){
 				alert("i "+i);
 				alert(data.getValue(i,1));
+				alert(data.getValue(i,2));
 					html +="<a href='"+data.getValue(i,2)+"'>"+data.getValue(i,1)+"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 					html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png'/>";
 				}
