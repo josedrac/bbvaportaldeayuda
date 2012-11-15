@@ -190,7 +190,7 @@
 	
 	</style>
 	
-<div>
+<div id="iniciate"></div>
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -225,7 +225,7 @@
 					html += "<li><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png'/></li>";
 				}
 				html += "</ul>";
-		document.getElementById('infosoporte').innerHTML += html;
+		document.getElementById('iniciate').innerHTML += html;
 	
 		}
    </script>
