@@ -219,12 +219,12 @@
 				var filas = data.getNumberOfRows();
 				var html= "";
 				html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'";
-				html += "<ul>";
+				
 				for(var i=1;i<filas;i++){
-					html += "<li>data.getValue(i,1)<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></li>";
-					html += "<li><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png'/></li>";
+					html += data.getValue(i,1)+"<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+					html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png'/>";
 				}
-				html += "</ul>";
+				
 		document.getElementById('iniciate').innerHTML += html;
 	
 		}
