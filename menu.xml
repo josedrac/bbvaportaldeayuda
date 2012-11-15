@@ -296,8 +296,8 @@ return false;
 		
 		}
 		if(parametros.indexOf("google-apps")!=-1){
-			document.getElementsByClassName("exito")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("exito")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			document.getElementsByClassName("apps")[0].style.backgroundColor = "rgb(0, 80, 152)";
+			document.getElementsByClassName("apps")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 		
 		}
 		
