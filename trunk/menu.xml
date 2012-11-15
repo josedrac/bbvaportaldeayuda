@@ -172,6 +172,8 @@ ol, ul {
   float: left;
   text-align: center;
   background:none;
+  border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 
 }
 .cabeceramenu ul li.exito span,
@@ -183,7 +185,8 @@ ol, ul {
 .cabeceramenu ul li.exito a,
 .cabeceramenu ul li.exito a:hover{ 
 margin-left:0px;
-
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
 }
 .cabeceramenu ul li .enlace, 
 .cabeceramenu ul li .enlace:hover{
