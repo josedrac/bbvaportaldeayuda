@@ -225,7 +225,7 @@
 				var html= "";
 				html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'";
 				
-				for(var i=0;i<filas;i++){
+				for(var i=1;i<filas;i++){
 					html += data.getValue(i,1)+"<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 					html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png'/>";
 				}
