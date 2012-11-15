@@ -180,6 +180,12 @@
 	font-family: BBVA Web Medium;
 	color:#0065B7;
 	}
+	.iniciate a{
+	font-size:16px;
+	font-family: BBVA Web Medium;
+	color:#0065B7;
+	text-decoration:none;
+	}
 	.flecha{
 	margin-left:15px;
 	
