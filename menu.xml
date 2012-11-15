@@ -259,7 +259,7 @@ margin-top:-19px;
 	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent">Iníciate en tu NET</a></span></span></li>
 	<li class="apps"><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent">Google Apps</a></span></span></li>
 	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent">Movilidad</a></span></span></li> 
-	<li class="exito"><span class="enlace" tabindex="0"><span><a href="javascript:redirect();"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
+	<li class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
 <script type="text/javascript">
@@ -286,6 +286,11 @@ return false;
 			
 		
 			
+		}
+		if(parametros.indexOf("casos-de-exito")!=-1){
+			document.getElementsByClassName("exito")[0].style.backgroundColor = "rgb(0, 80, 152)";
+			document.getElementsByClassName("exito")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+		
 		}
 		
 	}
