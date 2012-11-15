@@ -187,6 +187,7 @@
 	text-decoration:none;
 	padding:10px 0px;
 	margin-left:10px;
+	margin-bottom:10px;
 	}
 	.flecha{
 	margin-left:15px;
