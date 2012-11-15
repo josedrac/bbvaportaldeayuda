@@ -177,8 +177,7 @@
 	}
 	#iniciate{
 	font-size:16px;
-	font-family: BBVA Web Light;
-	font-weight:bold;
+	font-family: BBVA Web Medium;
 	color:#0065B7;
 	}
 	.flecha{
