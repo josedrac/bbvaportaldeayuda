@@ -186,6 +186,7 @@
 	color:#0065B7;
 	text-decoration:none;
 	padding:10px 0px;
+	margin-left:10px;
 	}
 	.flecha{
 	margin-left:15px;
@@ -235,11 +236,11 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				var html= "";
-				html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'";
+				html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'/>";
 				
 				for(var i=0;i<filas;i++){
 				
-					html +="<a href='"+data.getValue(i,2)+"'>"+data.getValue(i,1)+"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+					html += "<a href='"+data.getValue(i,2)+"'>"+data.getValue(i,1)+"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 					html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 				}
 				
