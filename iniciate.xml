@@ -180,7 +180,7 @@
 	font-family: BBVA Web Medium;
 	color:#0065B7;
 	}
-	.iniciate a{
+	#iniciate a{
 	font-size:16px;
 	font-family: BBVA Web Medium;
 	color:#0065B7;
