@@ -213,7 +213,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,max(B)where A like '%Video%'";
+				var querytosend = "select max(A),B group by B";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
