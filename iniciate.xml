@@ -185,6 +185,7 @@
 	font-family: BBVA Web Medium;
 	color:#0065B7;
 	text-decoration:none;
+	padding:10px 0px;
 	}
 	.flecha{
 	margin-left:15px;
