@@ -213,7 +213,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(A),B group by B";
+				var querytosend = "select A,B";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -226,6 +226,7 @@
 				html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'";
 				
 				for(var i=0;i<filas;i++){
+				alert(data.getValue(i,1));
 					html += data.getValue(i,1)+"<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 					html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png'/>";
 				}
