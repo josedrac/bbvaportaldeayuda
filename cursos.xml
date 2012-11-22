@@ -217,8 +217,9 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlCurso = prefs.getString("urlCurso");
-	 
-	 document.getElementById('curso').innerHTML = '<a href="#" onclick="window.open('+urlCurso+',\''Curso'\',\''width=500,height=500'\')" target="_blank">019710_DRIVE</a>';
+	 var title ="Curso";
+	 var stylesW = "width=500,height=500";
+	 document.getElementById('curso').innerHTML = '<a href="#" onclick="window.open('+urlCurso+','+title+','+stylesW+')" target="_blank">019710_DRIVE</a>';
 	 
 	/*
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
