@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Eliminar Archivos</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+ <link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../../js/noobs.js"></script>
+	
+	<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+<div class="primer_parrafo" id="encabezado">
+ <p>Veamos los pasos a seguir para eliminar archivos de nuestro Drive.</p>
+</div>
+
+
+<div id="caja_dinamica">
+	<div id="caja_pasos">
+	
+
+	<div id="handles4" class="buttons"> 
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Eliminar</li> 
+   <li>Compartido</li> 
+   <li>Papelera</li>
+
+	<li>- Restaurar</li>
+    <li>- Eliminar de la papelera</li>
+    <li>- Vaciar papelera</li>
+
+    
+  </ul> 
+	</div>
+ </div>
+
+	<div class="mask3">
+		<div id="box">
+  
+  	<div>
+   	<div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+   </div>
+
+	<!-- 1 -->
+   <div>
+    <p>Para eliminar uno o varios archivos existen varias alternativas. La m&aacute;s sencilla es seleccionarlos y hacer clic en el bot&oacute;n &quot;<strong>Suprimir</strong>&quot; ubicado en la parte superior. </p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/1.jpg"), title:"Seleccionar un archivo y pulsar el bot&oacute;n suprimir"}); return false;' title="Pincha para ampliar" href="#"><img src="img/1.jpg" width="217" height="138" alt="proceso eliminaci&oacute;n desde bot&oacute;n" border="0"></a></p>
+    <p>Otra forma de eliminarlos es pulsando el bot&oacute;n derecho del rat&oacute;n y luego seleccionar la opci&oacute;n &quot;<strong><a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/2.jpg"), title:"Men&uacute; pulsando bot&oacute;n derecho del rat&oacute;n"}); return false;'>eliminar</a></strong>&quot; del men&uacute; que se despliega. El mismo men&uacute; lo encontraremos desde el bot&oacute;n &quot;<strong><a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/3.jpg"), title:"Eliminar desde men&uacute; M&aacute;s"}); return false;'>M&aacute;s</a></strong>&quot;.</p>
+    
+    <p>Cuando eliminamos un archivo, veremos un mensaje en la parte superior de la pantalla que indica que se ha movido a la Papelera. Aqu&iacute; encontramos tambi&eacute;n la opci&oacute;n para deshacer la eliminaci&oacute;n.</p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/4.jpg"), title:"Mensaje de confirmaci&oacute;n"}); return false;' title="Pincha para ampliar" href="#"><img src="img/4.jpg" width="273" height="41" alt="Mensaje de confirmaci&oacute;n" border="0"></a></p>
+   </div>
+
+	<!-- 2 -->   
+   
+  <div>
+   <p>Si eliminamos un archivo del cual somos propietarios, pero est&aacute; siendo compartido con otras personas, &eacute;ste se mover&aacute; a la papelera y dejar&aacute; de estar compartido. Si restauramos este archivo desde la papelera, volver&aacute; a compartirse con quienes ten&iacute;an acceso.</p>
+
+     <p align="center"><img class="imagenes" src="img/c1.jpg" alt="Movido a la Papelera" border="0"></p>
+     <p align="center">&nbsp;</p>
+
+   <p>En el caso de eliminar un archivo que han compartido con nosotros y por tanto &quot;<strong>no somos propietarios</strong>&quot;, dejaremos de tener acceso al archivo y no podremos restaurarlo ya que &quot;<strong>no se mover&aacute; a la Papelera</strong>&quot;. Para volver a tener acceso, el propietario deber&aacute; compartirlo nuevamente con nosotros.</p>
+
+   <p align="center"><img class="imagenes" src="img/c2.jpg" alt="Suprimido" border="0"></p>
+  </div>
+   
+	<!-- 3 -->   
+  <div>
+   <p>Desde la <strong>Papelera</strong>, podremos recuperar los archivos que hemos eliminado previamente.</p>
+   <p>Para acceder a la Papelera, debemos hacer clic sobre el enlace &quot;<strong>M&aacute;s</strong>&quot; del men&uacute; de la izquierda y seleccionar la opci&oacute;n &quot;<strong>Papelera</strong>&quot; de las opciones que se despliegan.</p>
+   <p align="center"> <a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/p1.jpg"), title:"Acceso a la Papelera"}); return false;' title="Pincha para ampliar" href="#"><img src="img/p1.jpg" alt="Acceso a la Papelera" width="260" height="179" border="0" class="imagenes"></a></p>
+   <p align="left">Hecho esto, accederemos a la papelera donde encontraremos el listado de archivos que hab&iacute;amos eliminado. Desde aqu&iacute; podremos recuperarlos para volver a trabajar sobre ellos, o bien, eliminarlos definitivamente.</p>
+  </div>
+   
+	<!-- 4 -->   
+  <div>
+   <p>En la <strong>Papelera</strong>, encontraremos todos los documentos que hemos eliminado. Aqu&iacute; se almacenan en lugar de eliminarse definitivamente. Gracias a esto podr&iacute;amos recuperar un archivo que hab&iacute;amos eliminado.</p>
+     <p>Para &quot;<strong>Restaurar</strong>&quot; uno o varios archivos desde la papelera, debemos seleccionar aquellos archivos que deseamos restaurar. Al seleccionarlos, en la parte superior aparecen una serie de botones, debemos pulsar la opci&oacute;n &quot;<strong>Restaurar</strong>&quot;.</p>
+     <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/r1.jpg"), title:"Proceso para restaurar archivos"}); return false;' title="Pincha para ampliar" href="#"><img src="img/r1.jpg" alt="Restaurar archivos" width="137" height="73" class="imagenes"></a></p>
+     <p>Una vez pulsado, aparecer&aacute; un mensaje en la parte superior confirmando que se han recuperado los archivos. Podemos deshacer la restauraci&oacute;n pulsando sobre el enlace &quot;Deshacer&quot; del mensaje.</p>
+     <p align="center"><img src="img/r2.jpg" alt="Mensaje de confirmaci&oacute;n" width="354" height="31" class="imagenes"></p>
+     <p>Los archivos recuperados, volver&aacute;n a las carpetas donde los ten&iacute;amos alojados originalmente antes de su eliminaci&oacute;n.</p>
+  </div>
+  
+
+		<!-- 5 -->   
+  <div>
+   <p>Puede que necesitemos eliminar de forma definitiva algunos documentos de la Papelera, pero no todos a la vez. Para llevar a cabo esta acci&oacute;n, deberemos seleccionar aquellos elementos que deseamos eliminar completamente de nuestro Drive, para luego hacer clic sobre la opci&oacute;n &quot;<strong>Eliminar definitivamente</strong>&quot; entre las opciones superiores.</p>
+   <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/e1.jpg"), title:"Bot&oacute;n Eliminar definitivamente"}); return false;' title="Pincha para ampliar" href="#"><img src="img/e1.jpg" alt="Bot&oacute;n Eliminar definitivamente" width="198" height="106" class="imagenes"></a></p>
+   <p>Aparecer&aacute; un mensaje de confirmaci&oacute;n indicando que se han eliminado los archivos. En este caso, <strong>no tendremos la posibilidad de deshacer la eliminaci&oacute;n</strong>, por lo que deberemos estar muy atentos.</p>
+   <p align="center"><img src="img/e2.jpg" alt="Mensaje de confirmaci&oacute;n" width="199" height="33" class="imagenes"></p>
+  </div>
+  
+  <!-- 6 -->   
+  <div>
+   <p>Si deseamos eliminar de forma definitiva todos los elementos que se encuentran en la Papelera, podremos hacerlo desde la opci&oacute;n &quot;<strong>Vaciar papelera</strong>&quot;.</p>
+   <p align="center"><img class="imagenes" src="img/p2.jpg" alt="Confirmaci&oacute;n de vaciado"></p>
+   <p>Una vez pulsado, aparecer&aacute; un mensaje de confirmaci&oacute;n. Acept&aacute;ndolo proceder&aacute; la eliminaci&oacute;n de todos los archivos que se encuentren en la Papelera.</p>
+  </div>
+  
+
+
+
+
+   
+ 
+   <div> contenido_oculto </div>
+	 </div>
+  
+  
+  <div style="clear:both"></div>
+	</div>
+ 
+	
+</div>
+
+</div>
+</body>
+</html>

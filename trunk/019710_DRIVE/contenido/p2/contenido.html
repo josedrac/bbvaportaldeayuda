@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Introducci&oacute;n</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+  <link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../../js/noobs.js"></script>
+	
+	<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 739,
+				handles: $$('#handles5H li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+  <style type="text/css">
+<!--
+.Estilo1 {
+	font-size: 230%;
+	font-weight: bold;
+	color: #1492dd;
+	margin-left:40px;
+}
+.contenido_caja_dinamica_H ul{
+list-style-image:url(../../img/vineta.gif);
+margin-left:10px;
+}
+
+li{
+padding:5px;
+}
+-->
+</style>
+</head>
+<body>
+<div class="contenedor_contenido">
+<div class="primer_parrafo" id="encabezado">
+ <p><strong>Google Drive</strong>, es una herramienta que nos permite <strong>alojar gran cantidad de archivos en Internet.</strong> Gracias a ello, podremos acceder a nuestra informaci&oacute;n desde cualquier sitio. Adem&aacute;s, permite trabajar con estos archivos directamente en el navegador y por si esto fuera poco, podemos compartir nuestros archivos con otras personas para trabajar colaborativamente.</p>
+</div>
+
+
+<div id="caja_dinamicaH" >
+	<div id="caja_pasos" style="float:none; width:auto">
+	
+
+    <div id="handles5H" class="buttonsH"> 
+      <ul>
+       <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+        <li>
+         <div align="center">Ventajas</div>
+        </li> 
+       <li>
+        <div align="center">¿Qu&eacute; puedo hacer con los archivos?</div>
+       </li> 
+       <li>
+        <div align="center">¿C&oacute;mo puedo compartir mis archivos?</div>
+       </li> 
+     </ul> 
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+	<div class="mask3" style="height:300px; width:740px">
+		<div id="box" style="border:none">
+    
+    	<div class="contenido_caja_dinamica_H">
+      	<div class="instruccion_dinamica" style="top:80px; left:160px;">Pulsa sobre los enlaces superiores</div>
+      </div>
+
+<!-- 1 -->
+      <div class="contenido_caja_dinamica_H">
+        <ul>
+         <li>Podremos almacenar y acceder a nuestros archivos en cualquier lugar.</li>
+         <li>Los archivos, carpetas y documentos de nuestra cuenta estar&aacute;n siempre actualizados.</li>
+         <li>Podemos compartir nuestros archivos con muchas personas.</li>
+         <li>Google Drive ofrece la posibilidad de trabajar colaborativamente, accediendo y<br>
+colaborando sin tener que gestionar distintas versiones de un mismo archivo.</li>
+         <li>La herramienta cuenta con un gran n&uacute;mero de aplicaciones compatibles con las<br>
+que podremos crear distintos tipos de archivos, gestion&aacute;ndolos seg&uacute;n nos interese.</li>
+         <li>Podemos editar gran cantidad de archivos y documentos sin necesidad de instalar<br>
+programas en nuestro equipo.</li>
+        </ul>
+        <img src="img/mano.gif" style="position:absolute; top:30px; right:0px;" />
+      </div>
+
+<!-- 2 -->     
+      
+    <div class="contenido_caja_dinamica_H">
+      <ul>
+       <li>Puedo utilizar esta herramienta para alojar una copia de seguridad de mis archivos m&aacute;s importantes.</li>
+       <li>Si necesito utilizar un archivo desde cualquier ordenador, no hace falta que lo lleve en un pendrive,<br> lo subo a Drive y lo tengo siempre disponible.</li>
+       <li>Puedo intercambiar archivos de gran peso que no podr&iacute;a enviar por correo electr&oacute;nico.</li>
+       <li>No necesito que el programa para editar mis archivos est&eacute; instalado en todos los<br>
+ordenadores donde accedo, puedo abrirlo directamente en el navegador.</li>
+       <li>En Chrome Store dispongo de un n&uacute;mero creciente de aplicaciones que puedo<br>
+a&ntilde;adir a Drive y pueden ayudarme en mi trabajo diario.</li>
+      </ul>
+      <img src="img/hombre.gif" style="position:absolute; top:50px; right:0px;" />
+
+    </div>
+    
+    <div class="contenido_caja_dinamica_H">
+      <ul>
+       <li>Puedo compartir mis archivos con otras personas, y si hago alg&uacute;n cambio, no tengo<br>
+que volver a enviarlo por correo.</li>
+       <li>Puedo permitir que mis compa&ntilde;eros hagan cambios en los archivos, y tener siempre<br>
+ en mi Drive la &uacute;ltima versi&oacute;n.</li>
+       <li>Siempre que se modifica un archivo, se genera una nueva versi&oacute;n, por lo que<br>
+puedo recuperar versiones antiguas de mis archivos.</li>
+       <li>Puedo chatear con los compa&ntilde;eros con los que comparto, de esta manera,<br>
+podr&iacute;amos revisar un documento conjuntamente con personas que se encuentren<br>
+en diferentes sedes.</li>
+      </ul>
+            <img src="img/manos.gif" style="position:absolute; top:0px; right:0px;" />
+
+    </div>
+
+    <div class="contenido_caja_dinamica_H">contenido_oculto</div>
+	 </div>
+    
+    
+    <div style="clear:both"></div>
+	</div>
+  
+	
+</div>
+
+</div>
+</body>
+</html>

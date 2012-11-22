@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Revisiones</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+ <link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../../js/noobs.js"></script>
+	
+	<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+<div class="primer_parrafo" id="encabezado">
+ <p>Drive guarda por nosotros diferentes versiones de los archivos, si lo necesit&aacute;ramos podr&iacute;amos recuperar una versi&oacute;n anterior.</p>
+</div>
+
+
+<div id="caja_dinamica">
+	<div id="caja_pasos">
+	
+
+	<div id="handles4" class="buttons"> 
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Introducci&oacute;n</li> 
+   <li>Documentos</li> 
+   <li>Otros Archivos</li> 
+  </ul> 
+	</div>
+ </div>
+
+	<div class="mask3">
+		<div id="box">
+  
+  	<div>
+   	<div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+   </div>
+
+<!-- 1 -->
+  <div>
+   <p>Siempre que realizamos una modificaci&oacute;n sobre uno de nuestros archivos o documentos, Drive <strong>guarda una versi&oacute;n</strong> que nos permite volver hacia atr&aacute;s para recuperar versiones anteriores de un documento.</p>
+   <p>Es interesante esta funcionalidad ya que cuando existen muchas personas que editan los documentos, es posible que no todos est&eacute;n de acuerdo con una modificaci&oacute;n y se precise deshacer el cambio.</p>
+   <p> No es necesario entonces que alojemos diferentes copias de un mismo archivo en nuestro Drive, ya que mediante las "<strong>revisiones</strong>" conseguiremos el mismo resultado de una manera mucho m&aacute;s organizada.</p>
+  </div>
+
+<!-- 2 -->   
+   
+  <div>
+  	<a href="#" class="enlace_imagen" style="float:right;" title="Pincha para ampliar." onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/1.jpg"), title:"Podemos a&ntilde;adir comentarios o responderlos"}); return false;'><img src="img/1.jpg" alt="Historial de Revisi&oacute;n" width="202" height="308" border="0" class="imagenes"></a>
+ <p>Cuando trabajamos sobre los documentos de Drive (documentos de texto, presentaciones y hojas de c&aacute;lculo) las revisiones se guardan en el "<strong>Historial de revisiones</strong>" donde podremos ver todos los cambios que ha sufrido el documento en el tiempo.</p>
+   <p>Para consultar el historial de uno de nuestros documentos, haremos clic sobre &eacute;l para abrirlo. Una vez abierto, desde el men&uacute; "<strong>Archivo</strong>" haremos clic sobre la opci&oacute;n "<a href="#" title="Pincha para ampliar." onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/2.jpg"), title:"Ver historial de revisi&oacute;n"}); return false;'>Ver historial de revisi&oacute;n</a>". Aparecer&aacute; una ventana con el registro de cambios efectuados en el documento.</p>
+   <p>La ventana de historial de revisi&oacute;n nos mostrar&aacute; un listado ordenado desde la &uacute;ltima modificaci&oacute;n a la primera. Veremos la <a href="#" title="Pincha para ampliar." onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/3.jpg"), title:"Informaci&oacute;n de la revisi&oacute;n"}); return false;'>fecha de cada cambio, la hora, y el usuario</a> que lo realiz&oacute;.</p>
+   <p>Si hacemos clic en cualquiera de los registros del listado, se mostrar&aacute; la opci&oacute;n "<a href="#" title="Pincha para ampliar." onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/4.jpg"), title:"Pulsando el enlace restauramos a esa versi&oacute;n"}); return false;'>Restaurar esta revisi&oacute;n</a>". Si pinchamos en el link, el documento volver&aacute; al momento en el que se realiz&oacute; la modificaci&oacute;n de este registro. Obtendremos as&iacute; una versi&oacute;n anterior del documento. </p>
+  </div>
+   
+<!-- 3 -->   
+  <div>
+   <p>Cuando trabajamos con otros archivos (que no fueron creados con aplicaciones instaladas posteriormente) tambi&eacute;n podremos recuperar una versi&oacute;n anterior, pero en este caso no veremos de forma directa los cambios realizados en cada revisi&oacute;n, y tampoco podremos restaurarlo. Lo que podremos hacer con las diferentes revisiones que tengamos del archivo es <strong>descargarlas</strong>.</p>
+   <p>Una vez descargada, podr&iacute;amos recuperar la informaci&oacute;n que necesitamos y volver a editar el archivo en su &uacute;ltima versi&oacute;n. O bien, subir la nueva versi&oacute;n que descargamos como un nuevo archivo de Drive.</p>
+   <p>Para ver las diferentes revisiones de estos archivos, haremos clic sobre la opci&oacute;n <a href="#" title="Pincha para ampliar." onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/5.jpg"), title:"Opci&oacute;n Administrar revisiones"}); return false;'>"Archivo" y a continuaci&oacute;n en la opci&oacute;n "Administrar revisiones"</a>.</p>
+   <p>Al principio de la <a href="#" title="Pincha para ampliar." onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/6.jpg"), title:"Ventana Historial de revisiones"}); return false;'>ventana</a> encontraremos la <strong>&uacute;ltima versi&oacute;n</strong> y a continuaci&oacute;n los enlaces a las <strong>diferentes versiones alojadas</strong> en Drive y que podr&iacute;amos descargar. </p>
+  </div>
+   
+   <div>
+   contenido_oculto
+   </div>
+   
+   
+   
+   
+   
+   
+
+	 </div>
+  
+  
+  <div style="clear:both"></div>
+	</div>
+ 
+	
+</div>
+
+</div>
+</body>
+</html>

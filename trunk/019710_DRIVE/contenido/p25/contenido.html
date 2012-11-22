@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Crear archivos con aplicaciones</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+ <link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../../js/noobs.js"></script>
+	
+	<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+<div class="primer_parrafo" id="encabezado">
+ <p>Encontraremos multitud de aplicaciones compatibles con <b>Drive</b>. Dependiendo del tipo de aplicaci&oacute;n con el que estemos trabajando, se crear&aacute;n unos tipos de archivo u otros. </p>
+</div>
+
+
+<div id="caja_dinamica">
+	<div id="caja_pasos">
+	
+
+	<div id="handles4" class="buttons"> 
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Bot&oacute;n Crear</li> 
+   <li>Abrir Aplicaci&oacute;n</li> 
+   <li>Crear archivo</li> 
+   <li>Guardar archivo</li> 
+   <li>Bandeja Mi Unidad</li> 
+    
+   </ul> 
+	</div>
+ </div>
+
+	<div class="mask3">
+		<div id="box">
+  
+  	<div>
+   	<div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+   </div>
+
+<!-- 1 -->
+   <div>
+    <p>Para comenzar, haremos clic sobre<b> CREAR </b>y sobre la opci&oacute;n <b>M&aacute;s</b>. Aqu&iacute; encontraremos las aplicaciones que tengamos descargadas. </p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/1_max.jpg"), title:"Haremos clic sobre CREAR y sobre la opci&oacute;n M&aacute;s "}); return false; ' title="Pincha para ampliar" href="#"><img src="img/1.jpg" alt="Men&uacute; Crear" width="420" height="247" border="0"></a></p>
+   </div>
+
+<!-- 2 -->   
+   
+  <div>
+    <p>Elegiremos la aplicaci&oacute;n que deseemos de la lista y la abriremos haciendo doble clic sobre ella. </p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/2_max.jpg"), title:"Aplicaci&oacute;n abierta"}); return false; ' title="Pincha para ampliar" href="#"><img class="imagenes" src="img/2.jpg" alt="Lista aplicaciones" width="504" height="115" border="0"></a></p>
+   
+   </div>
+   
+<!-- 3 -->   
+   <div>
+    <p>Una vez en ella, crearemos un archivo nuevo. Existen infinidad de aplicaciones disponibles, con lo que la forma de crear un archivo depender&aacute; del tipo de aplicaci&oacute;n que estemos utilizando. </p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/3_max.jpg"), title:"Crear nuevo documento"}); return false; ' title="Pincha para ampliar" href="#"><img class="imagenes" src="img/3.jpg" alt="Crear imagen nueva" width="392" height="180" border="0"></a></p>
+   
+   </div>
+   
+ <!-- 4 -->   
+   <div>
+    
+    <p>Guardaremos el archivo creado. La mayor&iacute;a de las aplicaciones nos permiten, adem&aacute;s de almacenar el archivo en la bandeja de documentos de <b>Mi Unidad</b>, guardar los archivos de forma local.</p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/4_max.jpg"), title:"Guardar archivo"}); return false; ' title="Pincha para ampliar" href="#"> <img class="imagenes" src="img/4.jpg" alt="Guardar archivo." width="483" height="225" border="0"></a></p>
+   </div>
+  
+  <!-- 5 -->   
+   <div>
+    
+    <p>En este caso hemos guardado nuestro archivo online y podremos visualizarlo desde la bandeja de <b>Mi Unidad</b>.</p>
+    <p align="center"> <img class="imagenes" src="img/5.jpg" alt="Bandeja Mi Unidad" width="453" height="186" border="0"></p>
+   </div>
+  
+   
+   <div>
+   contenido_oculto
+   </div>
+   
+   
+   
+   
+   
+   
+
+	 </div>
+  
+  
+  <div style="clear:both"></div>
+	</div>
+ 
+	
+</div>
+
+</div>
+</body>
+</html>
