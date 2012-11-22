@@ -219,8 +219,12 @@
 	 var urlCurso = prefs.getString("urlCurso");
 	 var title ="Curso";
 	 var stylesW = "width=500,height=500";
-	 document.getElementById('cursos').innerHTML = '<a href="#" onclick="function(){window.parent.location('+urlCurso+');}" target="_blank">019710_DRIVE</a>';
+	 document.getElementById('cursos').innerHTML = '<a href="#" onclick="openCurso()" target="_blank">019710_DRIVE</a>';
 	 
+	 
+	 function openCurso(){
+	  window.open(urlCurso,'_blank','width=500,height=500');
+	 }
 	/*
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
