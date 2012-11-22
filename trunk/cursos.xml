@@ -218,7 +218,7 @@
 	 var prefs = new _IG_Prefs();
 	 var urlCurso = prefs.getString("urlCurso");
 	 
-	 document.getElementById('curso').innerHTML = "<a href='"+urlCurso+"' onclick="return window.open(this.href,'Curso','width=500,height=500')">019710_DRIVE</a>"
+	 document.getElementById('curso').innerHTML = "<a href='#' onclick="return window.open('"+urlCurso+"','Curso','width=500,height=500')">019710_DRIVE</a>"
 	 
 	/*
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
