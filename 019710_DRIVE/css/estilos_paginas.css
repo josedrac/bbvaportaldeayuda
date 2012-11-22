@@ -1,0 +1,358 @@
+body {
+	margin: 0px;
+	margin-top:5px;
+	margin-left:5px;
+	
+	padding: 0px;
+}
+
+a{
+text-decoration:none;
+font-weight:bold;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+p {
+	margin:0px;
+	margin-bottom:10px;
+}
+
+ul{
+margin-top:0px;
+
+}
+
+li{
+margin-top:0px;
+margin-bottom:0px;
+}
+
+
+.contenedor_contenido{
+	padding-right:10px;
+	padding-left:5px;
+	padding-top:0px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	margin-top:5px;
+	font-size:75%;
+	text-align:justify;
+}
+
+.primer_parrafo{
+ padding-left:18px;
+
+}
+
+
+
+#encabezado{
+	margin-bottom:10px;
+}
+
+
+
+h3{
+padding:0px;
+margin:0px;
+margin-bottom:5px;
+font-weight:bold;
+color:#0d4ea4;
+
+}
+
+#caja_dinamica{
+	background-image:url(../img/bg_caja_pop.gif);
+	background-repeat:repeat-x;
+	padding:5px;
+	border:1px solid #003366;
+	margin-left:17px;
+
+}
+
+.sample{padding:20px 30px; margin:4px 0 25px 0; border:1px solid #e1e1e1}
+
+
+#caja_pasos{
+width:130px;
+float:left;
+}
+
+.titulo_pasos{
+color:#003366;
+font-weight:bold;
+text-align:center;
+margin-bottom:5px;
+width:120px;
+margin-top:5px;
+font-size:14px;
+}
+
+#handles4 {
+	border:1px solid #0066CC;
+	margin-right:5px;
+	text-align:left;
+	background-color:#e8f1f6;
+	padding:0px;
+	clear:left;
+}
+
+
+
+
+
+#box{
+	position:absolute;
+	border:1px solid #003366;
+}
+
+#box p{
+	margin:0px;
+	margin-bottom:10px;
+}
+
+#box div{
+	width:560px;
+	padding:10px;
+	height:345px;
+	float:left;
+	background:#fff;
+	background-image:url(../img/fondo_caja_din.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+
+.mask3{
+	position:relative;
+	width:580px;
+	height:345px;
+	overflow:hidden;
+}
+
+
+.buttons ul{
+	margin:0px;
+	padding:0px;
+}
+
+.buttons li {
+	color: #0d3c8c;
+	cursor: pointer;
+	padding:5px;
+	list-style:none;
+}
+
+.buttons li.active {
+	border-bottom:1px solid #137e99;
+	border-top:1px solid #137e99;
+	color:#000;
+	margin-bottom:5px;
+	margin-top:5px;
+	background-color:#ffa739;
+	background-image:url(../img/brillo_naranja.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+.buttons li:hover {
+	background:#a1cbd7;
+	color:#000;
+	
+}
+
+
+.imagenes{
+	border:1px solid #003366;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+a.enlace_imagen img{
+	border:2px solid #0066cc;
+}
+
+a.enlace_imagen img:hover{
+	border:2px solid #FF6600;
+}
+
+#box .instruccion_dinamica{
+	background-image:url(../img/pulsa_dinamica.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	width:294px;
+	height:45px;
+	padding-left:80px;
+	padding-top:35px;
+	font-weight:bold;
+	font-size:120%;
+	left:90px;
+	top:100px;
+	background-color:transparent;
+	position:relative;
+}
+
+#box .instruccion_oculta{
+	visibility:hidden;
+	height:1px;
+	font-size:1px;
+	padding:0px;
+	margin:0px;
+}
+
+
+/*/////////////////////////////    CAJA DINAMICA botones superiores     ////////////////////////////*/
+
+#handles5H {
+	border-bottom:1px solid #000;
+	text-align:left;
+	padding:0px;
+	clear:left;
+}
+
+#handles5H li{
+	float:left;
+	padding-left:30px; 
+	padding-right:30px;
+	display:block;
+	margin-right:3px;
+	border-left:1px solid #666666;
+	background-image:url(../img/pestanaH.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	
+}
+
+
+.buttonsH ul{
+	margin:0px;
+	padding:0px;
+}
+
+.buttonsH li {
+	color: #000000;
+	cursor: pointer;
+	padding:5px;
+	list-style:none;
+	background-color:#BBE2FF;
+}
+
+.buttonsH li.active {
+	background-color:#ffa739;
+}
+.buttonsH li:hover {
+	background:#0066CC;
+	color:#FFFFFF;
+
+}
+
+.contenido_caja_dinamica_H {
+	width:718px !important;
+	border-left:1px solid #333333;
+	background:none !important;
+	position:relative;
+	/*height:450px !important;*/
+	
+}
+
+#caja_dinamicaH{
+	background-image:url(../img/fondo_caja_din.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	background-color:#FFFFFF;
+	margin:0px; padding:0px;
+	height:auto;
+	width:740px;
+	border-bottom:1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////// CAJAS ///////////////////////*/
+
+
+.caja_destacado{
+	margin-top:15px;
+	text-align:center;
+	border:2px solid #094ea4;
+	background-color:#bfe4fe;
+	background-image:url(../img/caja_destacado.jpg);
+	background-position:right bottom;
+	background-repeat:no-repeat;
+	padding-right:8px;
+	padding-left:8px;
+}
+.caja_destacado p{
+margin:10px;
+}
+
+
+
+.caja_importante{
+	height:auto;
+    background-image:url(../img/caja_importante.jpg);
+	background-position:bottom right;
+	border:2px solid #a63200;
+	background-repeat:no-repeat;
+	background-color:#ffa739;
+	padding-right:8px;
+	padding-left:2px;
+	padding-bottom:5px;
+}
+.caja_importante p{
+	margin:10px;
+}
+
+.caja_recuerda{
+	height:auto;
+    background-image:url(../img/caja_recuerda.jpg);
+	background-position:bottom right;
+	border:2px solid #5ba600;
+	background-repeat:no-repeat;
+	background-color:#aee3b5;
+	padding-right:8px;
+	padding-left:2px;
+	padding-bottom:5px;
+}
+
+.caja_recuerda p{
+	margin:10px;
+}
+
+
+/*Fin cajas */
+
+
+.ver_ejemplo{
+	background-image:url(../img/ejemplo.jpg);
+	display:block;
+	padding-top:10px;
+	padding-left:38px;
+	height:27px;
+	width:72px;
+	color:#FFFFFF;
+	font-weight:bold;
+	border:1px solid #003366;
+}
+
+.ver_ejemplo:hover{
+	border:1px solid #FF6600;
+	color:#FFC68C;
+	text-decoration:none;
+}
