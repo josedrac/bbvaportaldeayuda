@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Importar diapositivas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado">
+ <p>La aplicaci&oacute;n nos permite subir al sistema archivos con extensi&oacute;n <strong>.ppt</strong> o <strong>.pps</strong>. Podremos trabajar con archivos no creados en su origen con esta aplicaci&oacute;n. Tambi&eacute;n es posible importar diapositivas que ya est&eacute;n creadas desde una presentaci&oacute;n a otra.</p>
+ </div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li>
+   <li>Opci&oacute;n Importar diapositivas...</li>
+   <li>Archivo a insertar</li>
+   <li>Seleccionar carpeta</li>
+   <li>Archivo a importar</li>
+   <li>Subir</li>
+   <li>Seleccionar diapositivas</li>
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>En el men&uacute; <strong>Insertar</strong>, elegiremos la opci&oacute;n <strong>Importar diapositivas...</strong> Aparecer&aacute; entonces un cuadro de di&aacute;logo.</p>
+   <p align="center"><img class="imagenes" src="img/53-1.jpg" alt="Opci&oacute;n Importar diapositivas&hellip;" width="275" height="280" border="0"></p>
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>Primero elegiremos en la pesta&ntilde;a <strong>Presentaciones</strong> el archivo al cual queramos insertar las diapositivas que tengamos ya creadas en otra presentaci&oacute;n.</p>
+   <p align="center"><img class="imagenes" src="img/53-2.jpg" alt="Seleccionar el archivo al cual queramos insertar las diaposivivas." width="453" height="280" border="0"></p>
+  </div>
+  <!-- 3 -->
+  <div>
+   <p>Pasaremos al siguiente paso: pincharemos la pesta&ntilde;a <strong>Subir</strong> y seleccionaremos la carpeta en donde queramos subir el archivo. </p>
+   <p align="center"><img src="img/53-3.jpg" alt="Opci&oacute;n Subir." width="439" height="221" border="0" align="center" class="imagenes"></p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>A continuaci&oacute;n seleccionaremos el <strong>archivo</strong> del que deseemos importar las diapositivas. Tambi&eacute;n podremos marcar la casilla si queremos convertir el formato del archivo al de la aplicaci&oacute;n.</p>
+   <p align="center"><img class="imagenes" src="img/53-4.jpg" alt="Seleccionar el archivo del que deseamos importar las diapositivas." width="462" height="229" border="0" /></p>
+  </div>
+  <!-- 5 -->
+  <div>
+   <p>Una vez hecho esto, pulsaremos <strong>Subir</strong>. El sistema comenzar&aacute; a cargar el archivo. </p>
+   <p align="center"><img class="imagenes" src="img/53-5.jpg" alt="Tras pinchar en Subir se comenzar&aacute; a cargar el archivo." width="540" height="230" border="0"></p>
+  </div>
+  <!-- 6 -->
+  <div>
+   <p>Pasaremos entonces al siguiente paso, donde podremos seleccionar las diapositivas que deseamos incluir en nuestra presentaci&oacute;n pinchando sobre ellas. Para finalizar pincharemos en Importar diapositivas. Las diapositivas aparecer&aacute;n insertadas en la presentaci&oacute;n elegida.</p>
+   <p align="center"><img src="img/53-6.jpg" alt="Selecci&oacute;n de diapositivas a importar." width="336" height="260" border="0" align="center" class="imagenes"></p>
+  </div>
+  <div> contenido_oculto </div>
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>

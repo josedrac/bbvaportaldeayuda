@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Insertar imagen</title>
+
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+	
+</script>
+	<script>
+		parent.$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			parent.$(".group1").colorbox({rel:'group1'});
+		});
+	</script>
+
+ <style type="text/css">
+<!--
+ul {
+	margin-left: 140px;
+}
+-->
+ </style>
+</head>
+<body>
+	<div class="contenedor_contenido">
+  
+  <p>&nbsp;</p>
+  <div class="primer_parrafo">
+   <p> Agregar una imagen a nuestra presentaci&oacute;n es muy sencillo. Para ello, accederemos al men&uacute; <a href="#" title="Pincha para ampliar informaci&oacute;n" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/insertar.jpg"), title:"C&oacute;mo insertar una imagen "}); return false;'>Insertar</a> y elegiremos la opci&oacute;n<strong> Imagen…	 </strong></p> 
+  </div>
+  
+  <p> </p>
+
+  
+  <div style="float:left; width:55%">
+  
+  <p> Aparecer&aacute; una ventana con las 4 posibilidades que ofrece el sistema para cargar una imagen. Una opci&oacute;n es pinchar en <a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/subir1.jpg"), title:"Insertar una imagen desde la opci&oacute;n Subir "}); return false;'>Subir</a>, buscar en nuestro equipo y seleccionar la imagen que queramos teniendo en cuenta que tiene que ser inferior a 2000 x 2000 p&iacute;xeles. </p> 
+  
+  <p> No nos olvidaremos de pinchar en el bot&oacute;n <a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/subir2.jpg"), title:"Terminaremos pinchando en Subir para aceptar la operaci&oacute;n "}); return false;'>Subir </a>para aceptar la operaci&oacute;n. A continuaci&oacute;n la imagen aparecer&aacute; insertada dentro de la diapositiva.</p> 
+  
+     
+  </div>
+  
+  <p style="float:right"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/subir_max.jpg"), title:"Posibilidades para cargar una imagen"}); return false;' title="Pincha para ampliar" href="#"><img src = "img/subir_min.jpg" alt="Ventana de subida" width="300" height="185"></a></p>
+  
+  
+  <p style="clear:both;"> Tambi&eacute;n podremos insertar una imagen pegando su<strong> URL</strong>, haciendo una b&uacute;squeda de<strong> im&aacute;genes de Google</strong> o de los<strong> &Aacute;lbumes web de Picasa.</strong></p>
+  
+  
+  
+  
+  
+
+
+</div>
+
+
+</body>
+</html>
