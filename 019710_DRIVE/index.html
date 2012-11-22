@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Tutorial de Formaci&oacute;n Google Drive</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link href="css/estilos_interfaz.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/colorbox.css" />
+
+<script  type="text/javascript" src="js/brwdet.js"></script>
+<script type="text/javascript" src="js/apiwrapper.js"></script>
+<script type="text/javascript" src="js/scofunctions.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script  type="text/javascript" src="js/jquery.colorbox.js"></script>
+
+
+<script type="text/javascript">
+
+	total = 69;
+	tiempo_minimo_de_lectura = 3; //segundos
+	tiempo_inicial = 0;
+	curso_scorm = true;
+	alto_frame = 457; //Medida &oacute; "dinamico";
+	
+	var contador;
+	var nporcentaje_progreso
+	
+	loadPage();
+	
+	
+	function controlador_tiempo(){
+	
+		if(datos_pagina[contador].charAt(0) != 3){
+
+			seg_transc = tiempo_inicial++;
+				
+			if(seg_transc >= tiempo_minimo_de_lectura){
+				datos_pagina[contador] =  "3|"+ seg_transc; 
+				setLocation(contador,datos_pagina);
+				paginas_vistas++;
+				
+			}else{
+				datos_pagina[contador] =  "1|"+ seg_transc; 
+			}
+						
+		}
+		
+				nporcentaje_progreso = Math.round(paginas_vistas*100/total);
+				
+				document.getElementById("barra_progreso").style.backgroundPosition = nporcentaje_progreso +"px";
+				document.getElementById("porcentaje_progreso").innerHTML = nporcentaje_progreso + "%";	
+				
+				
+			setTimeout("controlador_tiempo()",1000) //se ejecuta cada 1 segundo.
+	}
+	
+	
+	
+	function carga_pagina(){
+			
+		$("#contenido").fadeOut(1);
+		$("#titulo_pagina").fadeOut(1);
+		$("#contenido").css("display", "none"); 
+		$("#titulo_pagina").css("display", "none"); 
+
+		nporcentaje_progreso = Math.round(paginas_vistas*100/total);		
+		document.getElementById("barra_progreso").style.backgroundPosition = nporcentaje_progreso +"px";
+		document.getElementById("porcentaje_progreso").innerHTML = nporcentaje_progreso + "%";
+		document.getElementById("paginador").innerHTML = contador + " / " + total;
+		document.getElementById("contenido").src = "contenido/p"+contador+"/contenido.html";
+		document.getElementById("titulo_pagina").innerHTML = "";
+
+		if(contador == 1){
+			document.getElementById("izq").className="izqd";
+		}else{
+			document.getElementById("izq").className="izqa";
+		}
+		
+		if(contador == total){
+			document.getElementById("der").className="derd";
+		}else{
+			document.getElementById("der").className="dera";
+		}
+		
+		setLocation(contador,datos_pagina)
+		
+		alto_contenido();
+	}
+	
+	function anima_elmentos(){
+		$('#titulo_pagina').fadeIn(200, function() {
+			$("#contenido").fadeIn(1000);
+        });
+	}
+	
+	var timeout_anim;
+ 	
+	function pagina_cargada(titulo){
+		
+		clearTimeout(timeout_anim);
+		 
+		timeout_anim=setTimeout("anima_elmentos()",150);
+	
+		dato_tiempo_ar = datos_pagina[contador].split("|")[1];
+	
+		if(dato_tiempo_ar != 0){
+			tiempo_inicial = dato_tiempo_ar;
+		}else{
+			tiempo_inicial = 0;
+		}
+			
+		document.getElementById("titulo_pagina").innerHTML = titulo;
+		
+		
+		
+
+	}
+	
+	function pagina_descargada(){
+		ocultar_emergente();
+	}
+	
+	function ocultar_emergente(){
+		$.colorbox.close();
+	}
+	
+	function p_siguiente(){
+		clearTimeout(timeout_anim);
+		if(contador != total){
+			contador++;
+			carga_pagina();
+		}
+	}
+	
+	function p_anterior(){
+		clearTimeout(timeout_anim);
+		if(contador != 1){
+			contador--;
+			carga_pagina();
+		}
+	}
+	
+	
+	
+	function alto_contenido() {
+		if(alto_frame == "dinamico"){
+			alto = document.body.scrollHeight - 93;
+		}else{
+			alto = alto_frame;
+		}
+		document.getElementById("contenido").style.height = alto + "px";
+	
+	}
+
+
+
+	
+</script>
+
+</head>
+<!--para alto din&aacute;mico onResize="alto_contenido()"-->
+<body onload="carga_pagina(); controlador_tiempo();" scroll="no" onUnload="javascript:unloadPage()">
+
+<div id="contenedor_ppal">
+    <div id="encabezado_top">
+    	<div id="iconos">
+        	<a class="ico_indice" onclick='$.colorbox({href:"toc.html", title:"Indice del curso"}); return false; ' title="&Iacute;ndice" href="#"></a>
+            <a class="ico_ayuda" onclick='$.colorbox({href:"ayuda.html", title:"Ayuda del curso"}); return false; ' title="Ayuda" href="#"></a>
+            <a class="ico_imprimir" href="javascript:print()" title="Imprimir"></a>
+            <a class="ico_salir" onclick='$.colorbox({href:"cerrar.html"}); return false; ' title="Salir" href="#"></a>
+            <div class="clearer"></div>
+            
+            <div id="progreso">
+                <div class="txt_prog">Progreso</div>
+                <div class="clearer"></div>
+                <div id="barra_progreso"></div>
+                <div id="porcentaje_progreso">0%</div>
+            </div>
+        </div>
+        
+        <div id="titulos">
+            <div id="titulo_curso"> Google Drive</div>
+            <div id="titulo_modulo">Tutorial de Formaci&oacute;n</div>
+          <div id="titulo_pagina">-</div>
+        </div>
+		<div class="clearer"></div>
+    </div>
+    
+    <iframe id="contenido" src="contenido/cargando.html" width="100%" scrolling="no" frameborder="0" allowtransparency="true" name="contenido"></iframe>
+    
+    
+    
+    	
+        
+    </div>
+    
+    <div class="clearer"></div>
+    
+    
+</div>
+
+<div id="nav">
+    <a href="#" id="izq" title="Anterior" onClick="p_anterior();"></a> <div id="paginador">-/-</div> <a href="#" id="der" title="Siguiente" onClick="p_siguiente();"></a>
+</div>
+
+</html>
