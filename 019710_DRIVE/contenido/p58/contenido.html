@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Crear dispositivas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+	
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado">
+ <p>Hay varias formas de crear una nueva diapositiva. Veamos las diferentes opciones:</p>
+ </div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Opci&oacute;n 1</li>
+   <li>Opci&oacute;n 2</li>
+   <li>Opci&oacute;n 3</li>
+   <li>Opci&oacute;n 4</li>
+   <li>Opci&oacute;n 5</li>
+
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>Crear una nueva diapositiva es muy sencillo, solo tenemos que pulsar el <strong>icono M&aacute;s</strong> de la barra de herramientas. Autom&aacute;ticamente aparecer&aacute; una nueva diapositiva en blanco a continuaci&oacute;n de la &uacute;ltima diapositiva seleccionada.</p>
+   <p align="center"> <img class="imagenes" src="img/49-1.jpg" alt="C&oacute;mo crear una nueva diapositiva desde el icono M&aacute;s de la barra de herramientas." width="435" height="265" border="0"></p>
+   
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>Si pulsamos la flecha del icono <strong>M&aacute;s</strong> de la barra de herramientas, aparecer&aacute; un men&uacute; desplegable con las caracter&iacute;sticas de la diapositiva a crear. Elegiremos entonces una de las opciones y de nuevo veremos crearse una nueva diapositiva con el tipo de dise&ntilde;o especificado.</p>   
+   <p align="center"><img class="imagenes" src="img/49-2.jpg" alt="C&oacute;mo crear una nueva diapositiva desde el icono M&aacute;s de la barra de herramientas." width="435" height="265" border="0"></p>
+    
+  </div>
+  
+  <!-- 3 -->
+  <div>
+   <p>Existe un tercer modo de creaci&oacute;n. Pincharemos en el men&uacute; <strong>Insertar</strong> y seleccionaremos <strong>Nueva diapositiva</strong>.</p>
+   
+   <p align="center"> <img class="imagenes"src="img/49-3.jpg" alt="C&oacute;mo crear una nueva diapositiva desde el men&uacute; Insertar." width="253" height="276" border="0"></a> </p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>Tambi&eacute;n podemos crear una diapositiva desde el men&uacute; <strong>Diapositiva</strong>, seleccionando la opci&oacute;n <strong>Nueva diapositiva.</strong></p>
+   <p align="center"> <img class="imagenes" src="img/49-4.jpg" alt="C&oacute;mo crear una nueva diapositiva desde el men&uacute; Diapositiva." width="308" height="226" border="0"> </p>
+  </div>
+  <!-- 5 -->
+  <div>
+   <p>Si lo que queremos es crear una diapositiva igual a otra, tenemos la opci&oacute;n de crear un duplicado. Seleccionaremos la diapositiva en cuesti&oacute;n y pulsaremos la opci&oacute;n <strong>Duplicar diapositiva</strong> desde el men&uacute; <strong>Diapositiva</strong>.</p>
+   <p align="center"> <img class="imagenes" src="img/49-5.jpg" alt="C&oacute;mo duplicar una diapositiva." width="308" height="226" border="0"></a> </p>
+  </div>
+  
+  <div>contenido_oculto</div>
+  
+  
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>

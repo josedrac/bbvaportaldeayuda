@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Aplicaciones</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+  <link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../../js/noobs.js"></script>
+	
+	<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 739,
+				handles: $$('#handles5H li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+  <style type="text/css">
+<!--
+.Estilo1 {
+	font-size: 230%;
+	font-weight: bold;
+	color: #1492dd;
+	margin-left:40px;
+}
+.contenido_caja_dinamica_H ul{
+list-style-image:url(../../img/vineta.gif);
+margin-left:10px;
+}
+
+li{
+padding:5px;
+}
+-->
+</style>
+</head>
+<body>
+<div class="contenedor_contenido">
+<div class="primer_parrafo" id="encabezado">
+ <p><b>Google Drive</b> nos proporciona la posibilidad de trabajar con numerosas aplicaciones que podremos instalar gratuitamente desde <b>Chrome Web Store</b>. </p>
+ <p>No importa cu&aacute;ntas aplicaciones instalemos, podremos acceder a todas ellas de igual forma, a trav&eacute;s de nuestra cuenta<b> Drive</b>. </p>
+</div>
+
+
+<div id="caja_dinamicaH" >
+	<div id="caja_pasos" style="float:none; width:auto">
+	
+
+    <div id="handles5H" class="buttonsH"> 
+      <ul>
+       <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+        <li>
+         <div align="center">Ventajas</div>
+        </li> 
+       <li>
+        <div align="center">¿Qu&eacute; puedo hacer con las aplicaciones?</div>
+       </li>  
+     </ul> 
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+	<div class="mask3" style="height:300px; width:740px">
+		<div id="box" style="border:none">
+    
+    	<div class="contenido_caja_dinamica_H">
+      	<div class="instruccion_dinamica" style="top:80px; left:160px;">Pulsa sobre los enlaces superiores</div>
+      </div>
+
+<!-- 1 -->
+    <div class="contenido_caja_dinamica_H">
+    
+        <p>Estas son algunas de las ventajas que tendremos a la hora de trabajar con las aplicaciones compatibles con Drive: </p>
+        
+        <ul style="width:400px; float:left;">
+            <li>Acceder  a archivos y abrirlos en Google Drive.</li>
+            <li>Crear  archivos nuevos del tipo de archivo de la aplicaci&oacute;n.</li>
+            <li>Acceder  a archivos de Google Drive desde una aplicaci&oacute;n externa.</li>
+            <li>Guardar  un archivo en Google Drive desde una aplicaci&oacute;n externa.</li>
+            <li>Compartir  cualquier tipo de archivo, incluidos los archivos creados con una  aplicaci&oacute;n de Google Drive. </li>
+            <li>Trabajar con diferentes archivos sin necesidad de tener instalados programas en el ordenador.</li>
+            <li>Trabajar con multitud de aplicaciones que nos permiten gestionar proyectos diferentes.</li>
+        </ul>
+        <img class="imagenes" src="img/chrome-store1.jpg" alt="Chrome web store" width="256" height="256" style="position:absolute; top:30px; right:0px;" />
+    </div>
+
+<!-- 2 -->     
+      
+    <div class="contenido_caja_dinamica_H">
+        <ul>
+            <li>Puedo trabajar desde cualquier ordenador sin necesidad de instalar ninguna aplicaci&oacute;n en el equipo.</li>
+            <li>Crear y editar im&aacute;genes, incluso en PSD. Aplicar efectos, retocar fotos, etc.</li>
+            <li>Trabajar con gr&aacute;ficos vectoriales.</li>
+            <li>Capturar y editar videos de gran tama&ntilde;o.</li>
+            <li>Crear diagramas y gr&aacute;ficos.</li>
+            <li>Planificar el trabajo mediante diagramas de Gantt.</li>
+            <li>Crear documentos con diferentes suits de ofim&aacute;tica online.</li>
+            <li>Editar y reproducir listas de audio.</li>
+            <li>Crear planos de casas y edificios.</li>
+            <li>Firmar documentos y enviarlos por Fax.</li>
+        </ul>
+  		<img src="img/chica.gif" style="position:absolute; top:25px; right:0px;" />
+    
+    </div>
+    
+    
+
+    <div class="contenido_caja_dinamica_H">contenido_oculto</div>
+	 </div>
+    
+    
+    <div style="clear:both"></div>
+	</div>
+  
+	
+</div>
+
+</div>
+</body>
+</html>

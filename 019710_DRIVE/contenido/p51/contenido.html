@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trabajo colaborativo</title>
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+	
+</script>
+<script>
+		parent.$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			parent.$(".group1").colorbox({rel:'group1'});
+		});
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="caja_destacado" style="margin-left:19px">
+ <p>Esta aplicaci&oacute;n permite que varias personas desde distintos puntos geogr&aacute;ficos puedan colaborar de forma simult&aacute;nea en un mismo documento desde cualquier equipo que disponga de acceso a Internet.</p>
+ </div>
+
+<p></p>
+ <div align="left"></div>
+ <p>Cuando uno modifica el archivo el resto puede ver los cambios en tiempo real y responder a ellos de forma inmediata. Todos los colaboradores trabajan en el mismo archivo, por lo que no tienen que estar comparando ni unificando archivos.</p>
+ <div align="center"><img src="img/42-1.jpg" alt="&Uacute;ltima modificaci&oacute;n" width="422" height="221" align="center" class="imagenes"></a><br>
+ <br>
+ </div>
+ <p>Podemos realizar una hoja de c&aacute;lculo, ya sea en solitario o colaborativamente, quedando registro en el<br>
+<a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/42-2.jpg"), title:"Historial de las ediciones trabajadas "}); return false;'>historial de revisi&oacute;n</a> de las ediciones sucesivas as&iacute; como del origen de las mismas.</p>
+</div>
+</body>
+</html>

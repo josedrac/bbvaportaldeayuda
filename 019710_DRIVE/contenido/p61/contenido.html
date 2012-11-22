@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Orden de diapositivas</title>
+
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+	
+</script>
+	<script>
+		parent.$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			parent.$(".group1").colorbox({rel:'group1'});
+		});
+	</script>
+
+ <style type="text/css">
+<!--
+ul {
+	margin-left: 140px;
+}
+-->
+ </style>
+</head>
+<body>
+	<div class="contenedor_contenido">
+  
+  <div class="primer_parrafo">
+  <p>Al crear varias diapositivas, podemos decidir cu&aacute;l ser&aacute; su orden de aparici&oacute;n en la presentaci&oacute;n, algo que nos resultar&aacute; muy &uacute;til.  </p>
+  </div>
+  
+  <p>&nbsp;</p>
+  <div style="float:left; width:350px">
+  
+  <p>En la secci&oacute;n de diapositivas de la izquierda, aparecen numeradas todas las p&aacute;ginas existentes. Para mover una diapositiva s&oacute;lo tendremos que hacer clic sobre la diapositiva que queramos reordenar y arrastrarla hacia la posici&oacute;n deseada.<strong></strong></p>
+  
+  <p>Soltaremos entonces el bot&oacute;n izquierdo del rat&oacute;n y veremos como la diapositiva se renumera autom&aacute;ticamente. </p>
+   
+  </div>
+  
+  <p style="float:right"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/mover_max.jpg"), title:"C&oacute;mo mover diapositivas para renumerarlas "}); return false;' title="Pincha para ampliar" href="#"><img src = "img/mover_min.jpg" alt="Mover diapositiva" width="247" height="193"></a></p>
+  
+  <div style="clear:both;"></div> 
+
+
+</div>
+
+
+  <div style="clear:both;"></div>
+  
+
+</div>
+</body>
+</html>

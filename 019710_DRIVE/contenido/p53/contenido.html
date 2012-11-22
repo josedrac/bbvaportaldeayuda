@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Comentarios</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado">
+ <p>Es posible insertar comentarios o notas en las celdas para que otros usuarios las lean. Estos son los pasos que debemos seguir para insertarlos:</p>
+ </div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li>
+   <li>Clic en la celda</li>
+   <li>Insertar comentario</li>
+   <li>Introducir texto</li>
+   <li>Marca naranja</li>
+   <li>Visualizar comentario</li>
+   <li>Eliminar comentario</li>
+   <li>Permisos</li>
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>Para a&ntilde;adir un comentario en un documento de texto, en la pantalla de edici&oacute;n, haremos clic en la celda en la que queramos insertar un comentario.</p>
+   <p align="center"><img class="imagenes" src="img/44-1.jpg" alt="Selecci&oacute;n de la celda en donde colocaremos el comentario." width="387" height="251" border="0"></p>
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>Insertaremos un comentario haciendo clic con el bot&oacute;n derecho y eligiendo "<a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/44-3.jpg"), title:"Pincharemos en Inserta un comentario "}); return false;'>Inserta un comentario</a>", o tambi&eacute;n haciendo clic en el men&uacute; desplegable "<a href="#" title="Pincha para ampliar" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/44-4.jpg"), title:"Pincharemos en Comentario "}); return false;'>Insertar</a>" y eligiendo "<strong>Comentario</strong>". </p>
+   <p align="center"><img class="imagenes" src="img/44-2.jpg" alt="Selecci&oacute;n de la celda en donde colocaremos el comentario." width="387" height="251" border="0"></p>
+  </div>
+  <!-- 3 -->
+  <div>
+   <p>Aparecer&aacute; un cuadro de comentario con nuestro nombre de usuario en donde introduciremos el texto deseado. Para guardar el comentario y cerrar el cuadro, haremos clic en otra celda de la hoja de c&aacute;lculo.</p>
+   <p align="center"><img class="imagenes" src="img/44-5.jpg" alt="Cuadro en el que escribir el comentario." width="387" height="251" border="0"></p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>En la esquina superior derecha de la celda aparecer&aacute; una <strong>marca naranja</strong> que indicar&aacute; que hay un comentario insertado.</p>
+   <p align="center"><img class="imagenes" src="img/44-6.jpg" alt="Marcador de comentario." width="387" height="251" border="0"></p>
+  </div>
+  <!-- 5 -->
+  <div>
+   <p>Para ver un comentario despu&eacute;s de haberlo insertado, pasaremos el rat&oacute;n por el indicador de comentario naranja. Haremos clic en el cuadro <strong>Comentario</strong> para visualizarlo en la pantalla.</p>
+   <p align="center"><img class="imagenes" src="img/44-7.jpg" alt="Comentario abierto." width="387" height="251" border="0"></p>
+  </div>
+  <!-- 6 -->
+  <div>
+   <p>Para eliminar un comentario nos pondremos sobre la celda que contenga el comentario y haremos clic con el bot&oacute;n derecho del rat&oacute;n. Seleccionaremos <strong>Borrar comentario</strong> para eliminarlo. El indicador naranja desaparecer&aacute; de la celda.</p>
+   <p align="center"><img class="imagenes" src="img/44-8.jpg" alt="C&oacute;mo borrar un comentario." width="215" height="253" border="0"></p>
+  </div>
+   <!-- 7 -->
+  <div>
+   <p>Tanto los colaboradores como los lectores pueden ver los comentarios que se han a&ntilde;adido a la hoja de c&aacute;lculo. Los <strong>colaboradores</strong> pueden editar, eliminar y visualizar los comentarios, mientras que los <strong>lectores s&oacute;lo pueden verlos.</strong> </p>
+  </div>
+  <div> contenido_oculto </div>
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Reglas notificaci&oacute;n</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado">
+ <p>Podemos configurar notificaciones para saber cu&aacute;ndo nuestros colaboradores han modificado las hojas de c&aacute;lculo y conocer qu&eacute; hojas o celdas han cambiado, as&iacute; como elegir la frecuencia con la que deseamos recibirlas. Veremos c&oacute;mo hacerlo a continuaci&oacute;n:</p>
+ </div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li>
+   <li>Men&uacute; Herramientas</li>
+   <li>Definir Reglas de notificaci&oacute;n</li>
+   <li>Modificar o Suprimir</li>
+   <li>Finalizar </li>
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>Para habilitar las reglas de notificaci&oacute;n iremos al men&uacute; <strong>Herramientas</strong> y pincharemos sobre <strong>Definir reglas de notificaci&oacute;n</strong>. </p>
+   <p align="center"><img class="imagenes" src="img/43-1.jpg" alt="C&oacute;mo activar las reglas de notificaci&oacute;n." width="273" height="280" border="0"></p>
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>En la ventana que se abre podremos definir que tipo de avisos queremos recibir, seleccionando cu&aacute;ndo y con qu&eacute; frecuencia queremos recibir las notificaciones. Finalizaremos haciendo clic en <strong>Guardar</strong>.</p>
+   <p align="center"><img class="imagenes" src="img/43-2.jpg" alt="Elecci&oacute;n de tipo de avisos." width="340" height="260" border="0"></p>
+  </div>
+  <!-- 3 -->
+  <div>
+   <p>Se abrir&aacute; un nuevo cuadro de di&aacute;logo reflejando un <strong>resumen</strong> de las reglas de notificaci&oacute;n elegidas. Podremos <strong>modificarlas o suprimirlas</strong> antes de guardar definitivamente los cambios. </p>
+   <p align="center"><img class="imagenes" src="img/43-3.jpg" alt="Ventana para definir las reglas de notificaci&oacute;n." width="340" height="260" border="0"></p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>Si estamos de acuerdo con lo definido pulsaremos en <strong>Finalizar</strong>. </p>
+   <p align="center"><img class="imagenes" src="img/43-4.jpg" alt="Ventana para definir las reglas de notificaci&oacute;n." width="357" height="273" border="0"></p>
+  </div>
+  <div> contenido_oculto </div>
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>

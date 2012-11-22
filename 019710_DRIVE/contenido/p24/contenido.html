@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>A&ntilde;adir Aplicaciones</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+ <link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../../js/noobs.js"></script>
+	
+	<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+<div class="primer_parrafo" id="encabezado">
+ <p>Las aplicaciones de <b>Google Drive</b> est&aacute;n disponibles en<b>&nbsp;Chrome Web Store</b>&nbsp;y puedes instalarlas para utilizarlas en <b>Google Drive</b> en la Web. La mayor&iacute;a de aplicaciones funcionan con los &uacute;ltimos navegadores, aunque es recomendable que utilices <strong>Google Chrome</strong> para obtener la mejor compatibilidad. </p>
+</div>
+
+
+<div id="caja_dinamica">
+	<div id="caja_pasos">
+	
+
+	<div id="handles4" class="buttons"> 
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Bot&oacute;n Crear</li> 
+   <li>Chrome Web Store</li> 
+   <li>Confirmar petici&oacute;n</li> 
+   <li>Permitir acceso</li> 
+   <li>Instalaci&oacute;n desde Chrome</li> 
+   <li>Aplicaci&oacute;n instalada</li>
+   </ul> 
+	</div>
+ </div>
+
+	<div class="mask3">
+		<div id="box">
+  
+  	<div>
+   	<div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+   </div>
+
+<!-- 1 -->
+   <div>
+    <p>Para comenzar a agregar aplicaciones debemos hacer clic sobre el bot&oacute;n <b>CREAR&nbsp;</b> y desplegaremos el men&uacute;<b> M&aacute;s</b>. Seleccionaremos entonces la opci&oacute;n <b>M&aacute;s aplicaciones</b>.</p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/1_max.jpg"), title:"Haremos clic sobre CREAR, la opci&oacute;n M&aacute;s y sobre M&aacute;s Aplicaciones "}); return false; ' title="Pincha para ampliar" href="#"><img src="img/1.jpg" alt="M&aacute;s Aplicaciones" width="400" height="217" border="0"></a></p>
+   </div>
+
+<!-- 2 -->   
+   
+  <div>
+    <p>Accederemos directamente al <b>Chrome Web Store</b>, en el apartado de<b> Google Drive</b>. Nos situaremos sobre la aplicaci&oacute;n que nos interese y haremos clic sobre <b>A&Ntilde;ADIR A CHROME</b>. </p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/2_max.jpg"), title:"Haremos clic sobre A&ntilde;adir a Chrome"}); return false; ' title="Pincha para ampliar" href="#"><img class="imagenes" src="img/2.jpg" alt="Chrome Web Store" width="450" height="196" border="0"></a></p>
+   
+   </div>
+   
+<!-- 3 -->   
+   <div>
+    <p>Una ventana emergente nos pedir&aacute; que confirmemos la petici&oacute;n de instalaci&oacute;n. Haremos clic sobre <b>A&ntilde;adir</b>. </p>
+    <p align="center"><img class="imagenes" src="img/3.jpg" alt="Confirmar nueva aplicaci&oacute;n" width="322" height="171" border="0"></p>
+   
+   </div>
+   
+ <!-- 4 -->   
+   <div>
+    
+    <p>Una nueva ventana aparecer&aacute; inform&aacute;ndonos de los permisos que requiere la aplicaci&oacute;n. Una vez le&iacute;dos, haremos clic sobre <b>Permitir acceso</b> si estamos conformes.</p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/4_max.jpg"), title:"Aceptaremos si estamos conformes con los permisos que la aplicaci&oacute;n solicita "}); return false; ' title="Pincha para ampliar" href="#"> <img class="imagenes" src="img/4.jpg" alt="Permitir acceso" width="450" height="210" border="0"></a></p>
+   </div>
+  
+  
+   <!-- 5 -->   
+   <div>
+    
+    <p>Si hemos realizado la operaci&oacute;n de instalaci&oacute;n desde <b>Chrome</b>, el navegador nos situar&aacute; en nuestra p&aacute;gina de inicio, donde se mostrar&aacute; un <a onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/5pop.jpg"), title:"Enlace directo hacia la aplicaci&oacute;n desde Chrome"}); return false;' href="#" title="Pincha para ampliar"><u>enlace directo</u></a> a la nueva aplicaci&oacute;n. Haremos clic sobre ella y aparecer&aacute; un mensaje inform&aacute;ndonos de que la aplicaci&oacute;n se ha instalado con &eacute;xito. Haremos clic en <b>Aceptar</b>. </p>
+    <p align="center"> <img class="imagenes" src="img/5.jpg" alt="Mensaje de instalaci&oacute;n exitosa" width="509" height="197" border="0"></p>
+    <p>Si la instalaci&oacute;n la hemos hecho desde otro navegador, el mensaje aparecer&aacute; la pr&oacute;xima vez que accedamos o actualicemos la vista de Drive.</p>
+   </div>
+   
+   
+   
+    <!-- 6 -->   
+   <div>
+    
+    <p>Por &uacute;ltimo la aplicaci&oacute;n se abrir&aacute; en una nueva pesta&ntilde;a. Ser&aacute; entonces cuando podamos comenzar a utilizarla y disfrutar de sus ventajas.</p>
+    <p align="center"><a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/6_max.jpg"), title:"Aplicaci&oacute;n abierta y lista para su uso "}); return false; ' title="Pincha para ampliar" href="#"> <img class="imagenes" src="img/6.jpg" alt="Aplicaci&oacute;n abierta" width="462" height="206" border="0"></a></p>
+   </div>
+  
+   
+   <div>
+   contenido_oculto
+   </div>
+   
+   
+   
+   
+   
+   
+
+	 </div>
+  
+  
+  <div style="clear:both"></div>
+	</div>
+ 
+	
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>&Iacute;ndices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+	
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado"> Un &iacute;ndice es muy &uacute;til para organizar el contenido y permitir una navegaci&oacute;n sencilla por el documento. Cada elemento del &iacute;ndice est&aacute; enlazado con las secciones tituladas del documento que emplean los estilos de t&iacute;tulo.</div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Seleccionar t&iacute;tulo</li>
+   <li>Insertar &iacute;ndice</li>
+   <li> Cambiar &iacute;ndice</li>
+   <li> Modificar enlace</li>
+   
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>Para a&ntilde;adir t&iacute;tulos al documento, haremos clic en <strong>Formato</strong> de la barra de herramientas, despu&eacute;s en <strong>Estilos de p&aacute;rrafo</strong> y seleccionaremos un <strong>t&iacute;tulo</strong>.</p>
+   <p align="center"> <a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/paso1_max.jpg"), title:"Comenzaremos a&ntilde;adiendo t&iacute;tulos al documento "}); return false; ' title="Pincha para ampliar" href="#"><img src="img/paso1_min.jpg" alt="Estilos de p&aacute;rrafo" width="439" height="262" border="0"></a> </p>
+   
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>Colocaremos el cursor en el lugar donde queramos que aparezca el &iacute;ndice y haremos clic en &Iacute;ndice del men&uacute; <strong>Insertar</strong>. </p>
+   
+   <p align="center"> <a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/paso2_max.jpg"), title:"Elegiremos donde colocarlo y haremos clic en &Iacute;ndice "}); return false; ' title="Pincha para ampliar" href="#"><img src="img/paso2_min.jpg" alt="&Iacute;ndice" width="273" height="271" border="0"></a> </p>
+  
+  
+  
+  </div>
+  
+  <!-- 3 -->
+  <div>
+   <p>Se pueden <strong>a&ntilde;adir m&aacute;s t&iacute;tulos</strong> al documento o <strong>cambiar</strong> los que hemos a&ntilde;adido. Sin embargo, si queremos que un cambio se incluya en el &iacute;ndice, primero deberemos pinchar en este &uacute;ltimo y, a continuaci&oacute;n, en la opci&oacute;n<strong> Cambiar</strong>.</strong>. 
+   </p>
+   
+   <p align="center"> <a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/paso3_max.jpg"), title:"Esta es la ventana que se muestra para modificar el enlace "}); return false; ' title="Pincha para ampliar" href="#"><img src="img/paso3_min.jpg" alt="Enlace cambiar" width="430" height="89" border="0"></a> </p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>Aparecer&aacute; un cuadro de texto en el que podremos modificar el <strong>nombre del &iacute;ndice</strong> y su <strong>URL</strong>. Una vez efectuados los cambios pincharemos en <strong>Aceptar</strong>. </p>
+   <p align="center"> <a class="enlace_imagen" onclick='parent.$.colorbox({href:parent.enlaces_pop(window.location.pathname,"img/paso4_max.jpg"), title:" Podemos modificar el nombre del &iacute;ndice y su URL "}); return false; ' title="Pincha para ampliar" href="#"><img src="img/paso4_min.jpg" alt="Ventana enlace" width="469" height="165" border="0"></a> </p>
+  </div>
+  
+  
+  
+  <div>contenido_oculto</div>
+  
+  
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>

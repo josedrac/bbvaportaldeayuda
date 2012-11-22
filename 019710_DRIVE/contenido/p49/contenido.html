@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>A&ntilde;adir gr&aacute;ficos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	
+	
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado">
+ <p>Cuando trabajamos con una hoja de c&aacute;lculo podemos a&ntilde;adir gr&aacute;ficos de l&iacute;neas, de barras y de mapas. Otra posibilidad es guardar un gr&aacute;fico como imagen e insertarla en una hoja de c&aacute;lculo. Veremos c&oacute;mo hacerlo a continuaci&oacute;n:</p>
+ </div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li>
+   <li>Seleccionar las celdas</li>
+   <li>Icono Gr&aacute;fico</li>
+   <li>Editor de gr&aacute;ficos: Empezar</li>
+   <li>Editor de gr&aacute;ficos: Gr&aacute;ficos</li>
+   <li>Editor de gr&aacute;ficos: Personalizar</li>
+   <li>Insertar</li>
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>Para crear un gr&aacute;fico, seleccionaremos las celdas que contienen los datos a incluir en el gr&aacute;fico. </p>
+   <p align="center"><img class="imagenes" src="img/40-1.jpg" alt="Selecci&oacute;n de las celdas que contienen los datos a incluir en el gr&aacute;fico." width="318" height="261" border="0"></p>
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>Seleccionamos el icono <strong>Gr&aacute;fico</strong> de la barra del men&uacute; o <strong>Insertar > Gr&aacute;fico</strong>. A continuaci&oacute;n, se abre el cuadro de di&aacute;logo para gr&aacute;ficos.</p>
+   <p align="center"><img class="imagenes" src="img/40-2.jpg" alt="Pasos a seguir para insertar un gr&aacute;fico." width="222" height="271" border="0"></p>
+  </div>
+  <!-- 3 -->
+  <div>
+   <p>En la pesta&ntilde;a <strong>Empezar</strong>, podemos modificar el intervalo de celdas que se incluir&aacute; en el gr&aacute;fico. </p>
+   <p align="center"><img class="imagenes" src="img/40-3.jpg" alt="C&oacute;mo modificar el intervalo de celdas." width="398" height="286" border="0"></p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>Si seleccionamos una configuraci&oacute;n de dise&ntilde;o b&aacute;sica pincharemos en la pesta&ntilde;a <strong>Gr&aacute;ficos</strong> y observaremos los gr&aacute;ficos recomendados. </p>
+   <p align="center"><img class="imagenes" src="img/40-4.jpg" alt="Gr&aacute;ficos recomendados." width="398" height="286" border="0"></p>
+  </div>
+  <!-- 5 -->
+  <div>
+   <p>Podemos personalizar nuestro gr&aacute;fico completando los campos de la pesta&ntilde;a <strong>Personalizar</strong>.</p>
+   <p align="center"><img class="imagenes" src="img/40-5.jpg" alt="Personalizaci&oacute;n del gr&aacute;fico." width="398" height="286" border="0"></p>
+  </div>
+  <!-- 6 -->
+  <div>
+   <p>Al hacer clic en <strong>Insertar</strong> el gr&aacute;fico aparecer&aacute; en la hoja de c&aacute;lculo. Si deseamos volver a modificar la hoja de c&aacute;lculo sin insertar ning&uacute;n gr&aacute;fico, haremos clic en <strong>Cancelar</strong>. </p>
+   <p align="center"><img class="imagenes" src="img/40-6.jpg" alt="Insertar o cancelar." width="171" height="39" border="0"></p>
+  </div>
+  <div> contenido_oculto </div>
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>

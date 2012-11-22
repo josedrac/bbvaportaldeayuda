@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Marcadores</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../css/estilos_paginas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="../../js/noobs.js"></script>
+<script type="text/javascript">
+	parent.pagina_cargada(document.title);
+	
+	window.onunload = parent.pagina_descargada;
+	
+	window.addEvent('load', function() {
+
+		window.addEvent('domready',function(){
+
+			var nS4 = new noobSlide({
+				box: $('box'),
+				items: $$('#box div'),
+				size: 580,
+				handles: $$('#handles4 li'),
+				onWalk: function(currentItem,currentHandle){
+					this.handles.removeClass('active');
+					currentHandle.addClass('active');
+				}
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="contenedor_contenido">
+ <div class="primer_parrafo" id="encabezado">
+ <p>Los marcadores son accesos directos a ubicaciones concretas de un documento. Pueden resultar muy &uacute;tiles para realizar una tabla de contenido o si queremos pasar de una parte a otra de un documento largo sin desplazarnos por &eacute;l.</p>
+ </div>
+ <div id="caja_dinamica">
+ <div id="caja_pasos">
+  
+  <div id="handles4" class="buttons">
+  <ul>
+   <li style="display:none; height:1px; font-size:1px; padding:0px; margin:0px;">Instrucci&oacute;n</li> 
+   <li>Posicionar marcador</li>
+   <li>Insertar marcador</li>
+   <li>Crear enlace</li>
+   <li>Enlazar marcador</li>
+   <li>Modificar o eliminar enlace</li>
+
+  </ul>
+  </div>
+ </div>
+ <div class="mask3">
+  <div id="box">
+  
+  <div>
+   <div class="instruccion_dinamica">Pulsa sobre los enlaces de la izquierda</div>
+  </div>
+  <!-- 1 -->
+  <div>
+   <p>Para crear un marcador pincharemos en el lugar donde queramos colocar el marcador en el documento.</p>
+   <p align="center"> <img class="imagenes" src="img/27-1.jpg" alt="Colocaremos el cursor en donde queramos que aparezca el marcador." width="419" height="263" border="0"></p>
+   
+  </div>
+  <!-- 2 -->
+  <div>
+   <p>Luego pincharemos en el men&uacute; desplegable <strong>Insertar</strong> y seleccionaremos <strong>Marcador</strong>.</p>
+   
+   <p align="center"><img class="imagenes" src="img/27-2.jpg" alt="Pincharemos en Insertar y seleccionaremos Marcador." width="419" height="286" border="0"></p>
+    
+  </div>
+  
+  <!-- 3 -->
+  <div>
+   <p>Un marcador s&oacute;lo es &uacute;til si se le puede asociar un enlace. Para crear un enlace a un marcador seleccionaremos el texto al que queramos enlazarlo. Pincharemos en el men&uacute; desplegable <strong>Insertar</strong> y seleccionaremos <strong>Enlazar...</strong> o pincharemos en el icono del enlace en la barra de herramientas.</p>
+   
+   <p align="center"> <img class="imagenes"src="img/27-3.jpg" alt="Pincharemos en el men&uacute; desplegable Insertar y seleccionaremos Enlazar... " width="419" height="233" border="0"></a> </p>
+  </div>
+  <!-- 4 -->
+  <div>
+   <p>En la ventana "<strong>Modificar enlace</strong>", seleccionamos la opci&oacute;n "<strong>Marcador</strong>" para ver los marcadores creados. Haremos clic en el marcador que deseemos enlazar y aceptamos.</p>
+   <p align="center"> <img class="imagenes" src="img/27-4.jpg" alt="Enlazaremos el marcador." width="525" height="239" border="0"> </p>
+  </div>
+  <!-- 5 -->
+  <div>
+   <p>Para modificar o eliminar el enlace, haremos clic en &eacute;l para que aparezca la ventana "<strong>Ir a enlace</strong>". En esta ventana, veremos el marcador con el que estamos enlazando y los enlaces <strong>Cambiar</strong> y <strong>Suprimir</strong>.</p>
+   <p align="center"> <img class="imagenes" src="img/27-5.jpg" alt="Podremos modificar y eliminar el enlace." width="419" height="273" border="0"></a> </p>
+  </div>
+  
+  <div>contenido_oculto</div>
+  
+  
+  </div>
+  <div style="clear:both"></div>
+ </div>
+ </div>
+</div>
+</body>
+</html>
