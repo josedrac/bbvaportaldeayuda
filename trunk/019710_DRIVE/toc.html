@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indice</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script>
+	
+	elemento_indice = document.getElementById("indice_TOC");
+	var enlaces_indice = elemento_indice.getElementsByTagName("a");
+	
+	for(el=0; el< enlaces_indice.length; el++){
+		if(datos_pagina[el].charAt(0) != 3){
+			enlaces_indice[el].className="normal";
+		}else{
+			enlaces_indice[el].className="visto";
+		}
+		//alert(enlaces_indice[el]);
+	}
+	
+	enlaces_indice[contador].className="actual";
+	
+	//alert(enlaces_indice.length);
+	
+	function nip(numerolink){ //N&uacute;mero pulsado en el &iacute;ndice
+	
+		contador = numerolink;
+		carga_pagina();
+		$.colorbox.close();
+	
+	}
+
+</script>
+
+<style type="text/css">
+<!--
+
+.objeto_oculto{
+visibility:hidden;
+height:1px;
+}
+
+a.normal{
+color:#000000;
+}
+
+a.actual{
+color:#FF0000;
+}
+
+a.visto{
+color:#009900;
+}
+
+#indice_TOC a{
+text-decoration:none;
+}
+
+#indice_TOC a:hover{
+text-decoration:underline;
+cursor:pointer;
+}
+
+
+
+-->
+</style>
+</head>
+
+<body>
+<div style="height:300px; width:400px; padding:10px; overflow-x:hidden; overflow-y:scroll">Indice de contenidos:
+  <ul id="indice_TOC">
+    <div class="objeto_oculto"><a>OBJ0</a></div>
+      <li><a href="contenido/p1/contenido.html" target="contenido" onClick="nip(1)">Portada</a></li>
+      <li><a href="contenido/p2/contenido.html" target="contenido" onClick="nip(2)">Introducci&oacute;n</a></li>
+      <li><a href="contenido/p3/contenido.html" target="contenido" onClick="nip(3)">Instalar Google Drive</a></li>
+      <li><a href="contenido/p4/contenido.html" target="contenido" onClick="nip(4)">Descripci&oacute;n de la interfaz</a></li>
+      
+      <li><a href="contenido/p5/contenido.html" target="contenido" onClick="nip(5)">Archivos</a>
+        <ul>
+          <li><a href="contenido/p6/contenido.html" target="contenido" onClick="nip(6)">Tipo de archivos</a></li>
+          <li><a href="contenido/p7/contenido.html" target="contenido" onClick="nip(7)">Crear archivos</a></li>
+          <li><a href="contenido/p8/contenido.html" target="contenido" onClick="nip(8)">Abrir archivos</a></li>
+          <li><a href="contenido/p9/contenido.html" target="contenido" onClick="nip(9)">Subir archivos</a></li>
+          <li><a href="contenido/p10/contenido.html" target="contenido" onClick="nip(10)">Descargar archivos</a></li>
+          <li><a href="contenido/p11/contenido.html" target="contenido" onClick="nip(11)">Eliminar archivos</a></li>
+        </ul>
+      </li>
+      
+      <li>Carpetas
+        <ul>
+          <li><a href="contenido/p12/contenido.html" target="contenido" onClick="nip(12)">Crear carpetas</a></li>
+          <li><a href="contenido/p13/contenido.html" target="contenido" onClick="nip(13)">Organizar archivos en carpetas</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="contenido/p14/contenido.html" target="contenido" onClick="nip(14)">Destacados</a></li>
+      <li><a href="contenido/p15/contenido.html" target="contenido" onClick="nip(15)">B&uacute;squedas</a></li>
+            
+      <li>Compartir
+        <ul>
+          <li><a href="contenido/p16/contenido.html" target="contenido" onClick="nip(16)">Compartir archivos</a></li>
+          <li><a href="contenido/p17/contenido.html" target="contenido" onClick="nip(17)">Carpetas compartidas</a></li>
+          <li><a href="contenido/p18/contenido.html" target="contenido" onClick="nip(18)">Compartido conmigo</a></li>
+          <li><a href="contenido/p19/contenido.html" target="contenido" onClick="nip(19)">Colaboraciones</a></li>
+          <li><a href="contenido/p20/contenido.html" target="contenido" onClick="nip(20)">Revisiones</a></li>
+          <li><a href="contenido/p21/contenido.html" target="contenido" onClick="nip(21)">Dejar de compartir</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="contenido/p22/contenido.html" target="contenido" onClick="nip(22)">Configuraci&oacute;n</a></li>
+      
+      <li><a href="contenido/p23/contenido.html" target="contenido" onClick="nip(23)">Aplicaciones</a>
+        <ul>
+          <li><a href="contenido/p24/contenido.html" target="contenido" onClick="nip(24)">A&ntilde;adir aplicaciones</a></li>
+          <li><a href="contenido/p25/contenido.html" target="contenido" onClick="nip(25)">Crear archivos con aplicaciones</a></li>
+          <li><a href="contenido/p26/contenido.html" target="contenido" onClick="nip(26)">Abrir archivos con aplicaciones</a></li>
+          <li><a href="contenido/p27/contenido.html" target="contenido" onClick="nip(27)">Eliminar aplicaciones</a></li>
+        </ul>
+      </li>
+      
+      
+      <li>Documentos de texto</li>
+    <ul>
+      <li><a href="contenido/p28/contenido.html" target="contenido" onClick="nip(28)">Portada</a></li>
+      <li><a href="contenido/p29/contenido.html" target="contenido" onClick="nip(29)">Introducci&oacute;n</a></li>
+      <li><a href="contenido/p30/contenido.html" target="contenido" onClick="nip(30)">Descripci&oacute;n de la Interfaz gr&aacute;fica</a></li>
+      <li><a href="contenido/p31/contenido.html" target="contenido" onClick="nip(31)">Barra de herramientas</a></li>
+      <li><a href="contenido/p32/contenido.html" target="contenido" onClick="nip(32)">Nuevo documento</a></li>
+      <li><a href="contenido/p33/contenido.html" target="contenido" onClick="nip(33)">Abrir documentos de texto</a></li>
+      <li><a href="contenido/p34/contenido.html" target="contenido" onClick="nip(34)">Revisar ortograf&iacute;a</a></li>
+      <li><a href="contenido/p35/contenido.html" target="contenido" onClick="nip(35)">Traducir</a></li>
+      <li><a href="contenido/p36/contenido.html" target="contenido" onClick="nip(36)">Marcadores</a></li>
+      <li><a href="contenido/p37/contenido.html" target="contenido" onClick="nip(37)">&Iacute;ndices</a></li>
+      <li><a href="contenido/p38/contenido.html" target="contenido" onClick="nip(38)">Trabajo colaborativo</a></li>
+      <li><a href="contenido/p39/contenido.html" target="contenido" onClick="nip(39)">Comentarios</a></li>
+      <li><a href="contenido/p40/contenido.html" target="contenido" onClick="nip(40)">Debates</a></li>
+    </ul>
+    <li>Hojas de C&aacute;lculo</li>
+    <ul>
+      <li><a href="contenido/p41/contenido.html" target="contenido" onClick="nip(41)">Portada</a></li>
+      <li><a href="contenido/p42/contenido.html" target="contenido" onClick="nip(42)">Introducci&oacute;n</a></li>
+      <li><a href="contenido/p43/contenido.html" target="contenido" onClick="nip(43)">Trabajar con hojas de C&aacute;lculo</a></li>
+      <li><a href="contenido/p44/contenido.html" target="contenido" onClick="nip(44)">Descripci&oacute;n de la Interfaz gr&aacute;fica</a></li>
+      <li><a href="contenido/p45/contenido.html" target="contenido" onClick="nip(45)">Barra de Herramientas</a></li>
+      <li><a href="contenido/p46/contenido.html" target="contenido" onClick="nip(46)">Crear hojas</a></li>
+      <li><a href="contenido/p47/contenido.html" target="contenido" onClick="nip(47)">Insertar funciones</a></li>
+      <li><a href="contenido/p48/contenido.html" target="contenido" onClick="nip(48)">Vista de lista</a></li>
+      <li><a href="contenido/p49/contenido.html" target="contenido" onClick="nip(49)">A&ntilde;adir gr&aacute;ficos</a></li>
+      <li><a href="contenido/p50/contenido.html" target="contenido" onClick="nip(50)">Gadgets</a></li>
+      <li><a href="contenido/p51/contenido.html" target="contenido" onClick="nip(51)">Trabajo colaborativo</a></li>
+      <li><a href="contenido/p52/contenido.html" target="contenido" onClick="nip(52)">Reglas notificaci&oacute;n</a></li>
+      <li><a href="contenido/p53/contenido.html" target="contenido" onClick="nip(53)">Comentarios</a></li>
+    </ul>
+    
+     <li>Presentaciones</li>
+    <ul>
+      <li><a href="contenido/p54/contenido.html" target="contenido" onClick="nip(54)">Portada</a></li>
+      <li><a href="contenido/p55/contenido.html" target="contenido" onClick="nip(55)">Introducci&oacute;n</a></li>
+      <li><a href="contenido/p56/contenido.html" target="contenido" onClick="nip(56)">Descripci&oacute;n de la Interfaz gr&aacute;fica</a></li>
+      <li><a href="contenido/p57/contenido.html" target="contenido" onClick="nip(57)">Barra de herramientas</a></li>
+      <li><a href="contenido/p58/contenido.html" target="contenido" onClick="nip(58)">Crear diapositivas</a></li>
+      <li><a href="contenido/p59/contenido.html" target="contenido" onClick="nip(59)">Temas</a></li>
+      <li><a href="contenido/p60/contenido.html" target="contenido" onClick="nip(60)">Fondo</a></li>
+      <li><a href="contenido/p61/contenido.html" target="contenido" onClick="nip(61)">Orden diapositivas</a></li>
+      <li><a href="contenido/p62/contenido.html" target="contenido" onClick="nip(62)">Importar diapositivas</a></li>
+      <li><a href="contenido/p63/contenido.html" target="contenido" onClick="nip(63)">Insertar imagen</a></li>
+      <li><a href="contenido/p64/contenido.html" target="contenido" onClick="nip(64)">Insertar v&iacute;deo</a></li>
+      <li><a href="contenido/p65/contenido.html" target="contenido" onClick="nip(65)">Notas</a></li>
+      <li><a href="contenido/p66/contenido.html" target="contenido" onClick="nip(66)">Iniciar presentaci&oacute;n</a></li>
+      <li><a href="contenido/p67/contenido.html" target="contenido" onClick="nip(67)">Trabajo colaborativo</a></li>
+      <li><a href="contenido/p68/contenido.html" target="contenido" onClick="nip(68)">Enviar por correo electr&oacute;nico</a></li>
+    </ul>
+    
+    <li><a href="contenido/p69/contenido.html" target="contenido" onClick="nip(69)">Final</a></li>
+  </ul>
+</div>
+</body>
+</html>
