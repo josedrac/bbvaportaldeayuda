@@ -219,7 +219,7 @@
 	 var urlCurso = prefs.getString("urlCurso");
 	 var title ="Curso";
 	 var stylesW = "width=500,height=500";
-	 document.getElementById('cursos').innerHTML = '<a href="#" onclick="window.parent.open('+urlCurso+','+title+','+stylesW+')" target="_blank">019710_DRIVE</a>';
+	 document.getElementById('cursos').innerHTML = '<a href="#" onclick="window.parent.location('+urlCurso+')" target="_blank">019710_DRIVE</a>';
 	 
 	/*
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
