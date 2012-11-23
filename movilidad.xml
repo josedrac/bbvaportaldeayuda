@@ -242,8 +242,8 @@
 				
 				
 				for(var i=0;i<filas;i++){
-				    alert(data.getValue(i,0));
-				    document.getElementById('paises').innerHTML = "<option value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
+				   // alert(data.getValue(i,0));
+				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
 					
 				}
 			}
