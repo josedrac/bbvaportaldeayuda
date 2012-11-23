@@ -248,7 +248,7 @@ font-family: BBVA Web Light;
 }	
 	</style>
 <div id="content"><div id="titleHome">Movilidad</div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />	
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />	
 <div id="movilidad">País: <select  selected="País" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
 <div id="textMovilidad">Guías de configuración, según dispositivo, para: </div>
 <div id="dispositivos"></div></div>	
