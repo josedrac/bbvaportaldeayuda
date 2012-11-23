@@ -251,7 +251,7 @@ margin-top:10px;
 margin-bottom:5px;
 }	
 	</style>
-<div id="content"><div id="titleHome">Movilidad</div>
+<div id="content"><div id="titleHome"><h2>Movilidad</h2></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />	
 <div id="movilidad">País: <select  selected="País" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
 <div id="textMovilidad">Guías de configuración, según dispositivo, para: </div>
