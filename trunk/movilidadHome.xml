@@ -247,10 +247,10 @@ font-family: BBVA Web Light;
 color:#0078D2;
 }
 .linedowntitle{
-	margin-bottom:36px;
+	margin-bottom:41px;
 	width:298px;
 	display:block;
-	margin-top:-10px;
+	margin-top:-15px;
 	height:4px;
 	}
 #content{
