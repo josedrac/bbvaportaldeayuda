@@ -238,7 +238,7 @@
 	 function handleQueryResponse(response) {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
-				
+				alert(filas);
 				
 				
 				for(var i=0;i<filas;i++){
