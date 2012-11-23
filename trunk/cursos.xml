@@ -223,7 +223,7 @@
 	 
 	 
 	 function openCurso(){
-	  window.open(urlCurso,'_blank','width=500,height=500');
+	  window.open('https://bbvaportaldeayuda.googlecode.com/svn/trunk/019710_DRIVE/index.html','_blank','width=500,height=500');
 	 }
 	/*
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
