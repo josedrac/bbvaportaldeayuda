@@ -64,12 +64,13 @@
 		<div id="infoVideo">	
 			<div id="tagVideo"/>
 			<div id="titleVideo"/>
-	        <button type="button" id="urlLink" />
+	        <button type="button" id="urlLink"/>
 	    </div>
 	</div>
 	 
 	
 	<script type="text/javascript">
+		alert("Hola");
 		var gadgetHelper = null;
 		var prefs = new gadgets.Prefs();
 	 
