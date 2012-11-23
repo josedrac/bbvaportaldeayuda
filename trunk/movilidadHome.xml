@@ -239,12 +239,18 @@ color:#0078D2;
 	}
 #content{
 float:right;
+width:330px;
 }	
-	
+#textMovilidad{
+color:#434A58;
+font-size:12px;
+font-family: BBVA Web Light;
+}	
 	</style>
 <div id="content"><div id="titleHome">Movilidad</div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />	
-<div id="movilidad">Guías de configuración, según dispositivo, para: <select  selected="País" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
+<div id="movilidad">País: <select  selected="País" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
+<div id="textMovilidad">Guías de configuración, según dispositivo, para: </div>
 <div id="dispositivos"></div></div>	
    <script type="text/javascript">
 	 var gadgetHelper = null;
