@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="singlevideo.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+	<Require feature="dynamic-height"/>   
+	<Require feature="setprefs" />   
+  </ModulePrefs>
+
+<UserPref name="tagVideo" display_name="Tag Video" required="true" />  
+<UserPref name="titleVideo" display_name="Title Video" required="true" />
+<UserPref name="urlLink" display_name="Text Video" required="true" />
+<UserPref name="urlVideo" display_name="Url Video" required="true" />
+	
+<Content type="html">
+    <![CDATA[
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	
+	<style type="text/css">
+		#video-container {
+			float:left;
+			width:668px;
+			height:271px;
+		}
+	  	#urlVideo {
+			float:left;
+	    	width:282px;
+			height:160px;
+			margin-left:20px;
+	  	}
+	  	#TagVideo {
+	    	color:#FF7800;
+	  	}
+      	#titleVideo {
+			color:#0064B9;
+			margin-bottom:20px;
+	  	}
+		#infoVideo {
+			float:left;
+			width:325px;
+			height:160px;
+			margin-left:20px;
+		}
+		#urlLink {
+			border-radius: .2em;
+			height: 2em;
+			padding-left: 1.4em;
+			padding-right: 2.4em;
+			float: left;
+			margin-left: 10px;
+			width: 90px;
+			margin-top: 25px;
+		}
+		hr {
+	    	margin-top:-5px;
+		}
+	</style>
+    
+	
+	<div id="video-container">
+		<div id="urlVideo"/>
+		<div id="infoVideo">	
+			<div id="tagVideo"/>
+			<div id="titleVideo"/>
+	        <button type="button" id="urlLink" />
+	    </div>
+	</div>
+	 
+	
+	<script type="text/javascript">
+		var gadgetHelper = null;
+		var prefs = new gadgets.Prefs();
+	 
+		var titleVideo = prefs.getString("titleVideo");
+		var urlLink = prefs.getString("urlLink");
+		var urlVideo = prefs.getString("urlVideo");
+		var tagVideo = prefs.getString("tagVideo");
+	 
+		document.getElementById("tagVideo").innerHTML = tagVideo;
+		document.getElementById("titleVideo").innerHTML = titleVideo;
+		document.getElementById("urlLink").innerHTML = <a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal=" + urlVideo + "'>Saber más</a>;
+		document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
+  	</script>
+    ]]>
+  </Content>
+  <Content type="html" view="configuration" preferred_height="480">
+
+<![CDATA[
+	<style type="text/css">
+	    input#VarrootSite {
+        	width: 300px;
+		}
+		table td {
+			color: #000;
+			font-size: 11px;
+			font-weight: bold;
+		}
+	</style>
+	<table width="100%" border="0" id="tablaconfig">  
+		<tr>       
+        	<td>
+            	Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__" onchange="registra('tagVideo')"/>                   
+			</td>
+		</tr>
+		<tr>       
+			<td>
+				Title - Video: <input type="text" size="100" id="titleVideo" value="__UP_titleVideo__" onchange="registra('titleVideo')"/>                   
+			</td>
+		</tr>
+		<tr>       
+			<td>
+				Url to Video: <input type="text" size="100" id="urlVideo" value="__UP_urlVideo__" onchange="registra('urlVideo')"/>
+			</td>
+		</tr>
+		<tr>       
+			<td>
+				Url link: <input type="text" size="100" id="urlLink" value="__UP_urlLink__" onchange="registra('urlLink')"/>
+			</td>
+		</tr>
+	</table>	
+
+    <script type="text/javascript">           
+		//Get userprefs
+		var prefs = new gadgets.Prefs();           
+		function registra(variable)
+		{	
+			prefs.set(variable,document.getElementById(variable).value);
+		} 
+		gadgets.window.adjustHeight();
+    </script>   	
+ ]]>	
+
+ </Content>
+</Module>
