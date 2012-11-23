@@ -217,6 +217,9 @@ font-family: Stag;
 #movilidad select{
 width:190px;
 height:30px;
+color:#0065B7;
+font-size:12px;
+font-family: Stag;
 }
 #dispositivos{
 color:#0065B7;
