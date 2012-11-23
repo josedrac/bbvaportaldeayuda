@@ -81,7 +81,7 @@
 	 
 		document.getElementById("tagVideo").innerHTML = tagVideo;
 		document.getElementById("titleVideo").innerHTML = titleVideo;
-		document.getElementById("urlLink").innerHTML = <a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal=" + urlVideo + "'>Saber más</a>;
+		document.getElementById("urlLink").innerHTML = '<a target="/_parent"/ href="/https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="/' + urlVideo + '"/>Saber más</a>';
 		document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
   	</script>
     ]]>
