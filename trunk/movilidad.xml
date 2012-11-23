@@ -209,9 +209,9 @@
 		display: block;
 }
 #movilidad{
-color:#434A58;
+color:#0065B7;
 font-size:12px;
-font-family: BBVA Web Light;
+font-family: Stag;
 }
 
 #movilidad select{
@@ -221,7 +221,7 @@ height:30px;
 #dispositivos{
 color:#0065B7;
 font-size:12px;
-font-family: BBVA Web Light;
+font-family: Stag;
 margin-top:15px;
 }
 	
