@@ -60,10 +60,10 @@
     
 	
 	<div id="video-container">
-		<div id="urlVideo"/>
+		<div id="urlVideo"></div>
 		<div id="infoVideo">	
-			<div id="tagVideo"/>
-			<div id="titleVideo"/>
+			<div id="tagVideo"></div>
+			<div id="titleVideo"></div>
 	        <button type="button" id="urlLink"/>
 	    </div>
 	</div>
