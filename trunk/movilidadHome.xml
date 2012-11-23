@@ -234,6 +234,11 @@ font-size:22px;
 font-family: BBVA Web Light;
 color:#0078D2;
 }
+#titleHome h2{
+font-size:22px;
+font-family: BBVA Web Light;
+color:#0078D2;
+}
 .linedowntitle{
 	margin-bottom:40px;
 	width:298px;
