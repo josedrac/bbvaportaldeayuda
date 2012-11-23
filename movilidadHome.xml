@@ -212,6 +212,7 @@
 color:#434A58;
 font-size:12px;
 font-family: Stag;
+margin-right:10px;
 }
 
 #movilidad select{
