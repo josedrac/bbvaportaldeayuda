@@ -257,7 +257,7 @@
 	   
 
 	 }
-	 function handleQueryResponseDC{
+	 function handleQueryResponseDC(response){
 	 
 	   dataDC = response.getDataTable();
 	   var filas = dataDC.getNumberOfRows();
