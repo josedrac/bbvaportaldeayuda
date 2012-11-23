@@ -243,8 +243,11 @@
 				
 				for(var i=0;i<filas;i++){
 				   // alert(data.getValue(i,0));
+				   if(data.getValue(i,0) == 'País'){
+				   document.getElementById('paises').innerHTML += "<option selected="selected" value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
+				   }else{
 				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
-					
+				   }
 				}
 			}
 		
