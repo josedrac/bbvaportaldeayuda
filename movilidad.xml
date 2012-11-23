@@ -220,6 +220,7 @@ height:30px;
 color:#0065B7;
 font-size:12px;
 font-family: BBVA Web Medium;
+margin-left:10px;
 }
 #dispositivos{
 color:#0065B7;
