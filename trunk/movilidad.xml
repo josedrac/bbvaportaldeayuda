@@ -268,9 +268,12 @@
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
+	   if(data.getValue(i,0) != 'País'){
 	   html += dataDC.getValue(i,1)+"<br/>";
 	   }
+	  }
 	   document.getElementById('dispositivos').innerHTML = html;
+	   
 	 }
 	 
    </script>
