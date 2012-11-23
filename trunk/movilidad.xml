@@ -211,7 +211,7 @@
 	
 	</style>
 	
-<div id="movilidad">Guías de configuración, según dispositivo, para: <select selected="---País---" onload="loadVisualizationAPI()" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
+<div id="movilidad">Guías de configuración, según dispositivo, para: <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
 <div id="dispositivos"></div>	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -245,10 +245,7 @@
 				    document.getElementById('paises').innerHTML = "<option value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
 					
 				}
-				
-		
-	
-		}
+			}
 		
 	 function devicesCountry(pais){
 	   gadgetHelper = new google.visualization.GadgetHelper();
