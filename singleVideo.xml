@@ -71,12 +71,22 @@
 			font: 22px BBVA Web Light;
 	  	}
 		#urlLink {
+			border-radius: .2em;
+			height: 2em;
+			padding-left: 1.4em;
+			padding-right: 2.4em;
+			float: left;
+			margin-left: 10px;
+			width: 90px;
+			margin-top: 25px;
+		}
+		#urlLink a{
 			float: left;
 			position: relative;
 			top: -1px;
 			margin-right: 0;
 			text-decoration: none;
-			color: #FFFFFF;
+			color: white;
 			font: 12px BBVA Web Medium;
 			margin-left: -16px;
 			width: 90px;
