@@ -229,6 +229,13 @@ font-size:12px;
 font-family: Stag;
 margin-top:15px;
 }
+#dispositivos a{
+color:#0065B7;
+font-size:12px;
+font-family: Stag;
+margin-top:15px;
+text-decoration:none;
+}
 #titleHome{
 font-size:22px;
 font-family: BBVA Web Light;
