@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="lateraletiquetas.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+	<Require feature="dynamic-height"/>   
+	<Require feature="setprefs" />   
+  </ModulePrefs>
+<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="titlebox" display_name="Title of Tag Box" required="true" />  
+<UserPref name="titlemedium" display_name="Title of Medium Level" required="true" />  
+<UserPref name="urlmedium" display_name="Url of Medium Level" required="true" />  
+<UserPref name="titlelow" display_name="Title of Low Level" required="true" />  
+<UserPref name="urllow" display_name="Url of Low Level" required="true" />  
+<UserPref name="titlehigh" display_name="Title of High Level" required="true" />
+<UserPref name="urlhigh" display_name="Url of High Level" required="true" />    
+
+ <Content type="html">
+    <![CDATA[
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	
+	<style type="text/css">
+	  /* @group fonts */
+@font-face {
+	font-family: 'BBVA Web Light';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'BBVA Web Book';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'BBVA Web Medium';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+@font-face {
+	font-family: 'BBVA Office Light';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.svg#BBVA Office Light') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+@font-face {
+	font-family: 'BBVA Office Book';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.svg#BBVA Office Book') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*
+@font-face {
+	font-family: 'BBVA Office Book';
+    src: url('GrutchShaded-webfont.eot');
+    src: url('GrutchShaded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('GrutchShaded-webfont.woff') format('woff'),
+         url('GrutchShaded-webfont.ttf') format('truetype'),
+         url('GrutchShaded-webfont.svg#BBVA Office Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+	font-family: 'Stag Light';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.svg#Stag Light') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Stag';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.eot?#iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.svg#Stag') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Stag Medium';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.svg#Stag Medium') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* @end */
+	#content{
+	 width:300px;
+	}
+	#titlebox{
+	 color:#333333;
+	 font-size:16px;
+	 font-family:BBVA Web Office;
+	}
+	#mediumlevel{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
+	}
+	#mediumlevel a{
+	font-weight:bold;
+	font-size:12px;
+	color:#fff;
+	}
+	#lowlevel{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
+	}
+	#lowlevel a{
+	font-weight:bold;
+	font-size:12px;
+	color:#0072C9;
+	}
+	#highlevel{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	}
+	#highlevel a{
+	font-weight:bold;
+	font-size:12px;
+	color:#fff;
+	}
+	
+	</style>
+<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
+<div id="content"><div id="titlebox"></div>
+<div id="niveles"><div id="mediumlevel"></div><div id="lowlevel"></div>
+<div id="highlevel"></div>
+</div>
+<div id="tipos"></div>
+<div id="ayuda"></div><div id="exitos"></div>
+<div id="formatos"></div></div>
+	
+   <script type="text/javascript">
+	 var gadgetHelper = null;
+	 var prefs = new gadgets.Prefs();
+	 var urlTable = prefs.getString("_table_query_url");
+	 var titlebox = prefs.getString("titlebox");
+	 var titlemedium = prefs.getString("titlemedium");
+	 var urlmedium = prefs.getString("urlmedium");
+	 var titlelow = prefs.getString("titlelow");
+	 var urllow = prefs.getString("urllow");
+	 var titlehigh= prefs.getString("titlehigh");
+	 var urlhigh = prefs.getString("urlhigh");
+	 var contadorNivelBasico = 0;
+	 var contadorNivelMedio  = 0;
+	 var contadorNivelAvanzado = 0;
+	 
+	 function loadVisualizationAPI() 
+			{
+				google.load("visualization", "1", {"packages": ["table"]});
+				google.setOnLoadCallback(sendQuery);
+			}
+	 function sendQuery() 
+			{
+				gadgetHelper = new google.visualization.GadgetHelper();
+				var opts = {dataType:'jsonp'};		
+				var querybasico = new google.visualization.Query(urlTable, opts);	
+			    var querymedio = new google.visualization.Query(urlTable, opts);	
+				var queryavanzado = new google.visualization.Query(urlTable, opts);	
+				
+				
+			    
+				var querytosendbasico = "select count (*) where B like 'Básico'";
+				
+				var querytosendmedio = "select count(*) where B like 'Medio'";
+				
+				var querytosendavanzado = "select count(*) where B like 'Avanzado'";
+				
+				
+				querybasico.setQuery(querytosendbasico);	
+				querymedio.setQuery(querytosendmedio);
+				queryavanzado.setQuery(querytosendavanzado);	
+				
+				querybasico.send(handleQueryResponse1);
+				querymedio.send(handleQueryResponse2);
+				queryavanzado.send(handleQueryResponse3);
+				
+			}
+     function handleQueryResponse1(response) {
+			data = response.getDataTable();	
+			var filas = data.getNumberOfRows();
+			contadorNivelBasico = filas;
+		}
+	 function handleQueryResponse2(response) {
+			data = response.getDataTable();	
+			var filas = data.getNumberOfRows();
+            contadorNivelMedio = filas;
+		}
+	 function handleQueryResponse3(response) {
+			data = response.getDataTable();	
+			var filas = data.getNumberOfRows();
+		    contadorNivelAvanzado = filas;
+		}
+	 
+	 document.getElementById("titlebox").innerHTML = titlebox;
+	 document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+"("+contadorNivelMedio+")</a>";
+	 document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+"("+contadorNivelBasico+")</a>";
+	 document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+"("+contadorNivelAvanzado+")</a>";
+
+	 
+	 
+   </script>
+   
+    ]]>
+  </Content>
+  <Content type="html" view="configuration" preferred_height="480">
+
+<![CDATA[
+<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/editorbbcode.js"></script>
+<style type="text/css">
+    
+	table td {
+				color: #000;
+				font-size: 11px;
+				font-weight: bold;
+			}
+			table td input,
+			textarea {
+				color: #000;
+				font-size: 11px;				
+			}
+  </style>
+  <table width="100%" border="0" id="tablaconfig">  
+			<tr>       
+                <td>
+                    Title - Tag Box: <input type="text" size="100" id="titlebox" value="__UP_titlebox__"   onchange="registra('titlebox')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Title - Medium Level: <input type="text" size="100" id="titlemedium" value="__UP_titlemedium__"   onchange="registra('titlemedium')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - Medium Level: <input type="text" size="100" id="urlmedium" value="__UP_urlmedium__"   onchange="registra('urlmedium')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Title - Low Level: <input type="text" size="100" id="titlelow" value="__UP_titlelow__"   onchange="registra('titlelow')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - Low Level: <input type="text" size="100" id="urllow" value="__UP_urllow__"   onchange="registra('urllow')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Title - High Level: <input type="text" size="100" id="titlehigh" value="__UP_titlehigh__"   onchange="registra('titlehigh')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - High Level: <input type="text" size="100" id="urlhigh" value="__UP_urlhigh__"   onchange="registra('urlhigh')"/>                   
+                </td>
+            </tr>
+			
+			
+			</table>
+			
+			
+			
+	
+
+    <script type="text/javascript">           
+            // Get userprefs
+            var prefs = new gadgets.Prefs();           
+            function registra(variable)
+            {	
+				
+                prefs.set(variable,document.getElementById(variable).value);
+				
+			
+            } 
+			gadgets.window.adjustHeight();
+    </script>   	
+
+	  
+
+	 
+ ]]>	
+
+ </Content>
+</Module>
