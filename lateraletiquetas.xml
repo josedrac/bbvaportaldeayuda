@@ -8,7 +8,7 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTable" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 <UserPref name="titlebox" display_name="Title of Tag Box" required="true" />  
 <UserPref name="titlemedium" display_name="Title of Medium Level" required="true" />  
 <UserPref name="urlmedium" display_name="Url of Medium Level" required="true" />  
@@ -176,7 +176,7 @@
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
-	 var urlTable = prefs.getString("_table_query_url");
+	 var urlTable = prefs.getString("urlTable");
 	 var titlebox = prefs.getString("titlebox");
 	 var titlemedium = prefs.getString("titlemedium");
 	 var urlmedium = prefs.getString("urlmedium");
@@ -264,6 +264,11 @@
 			}
   </style>
   <table width="100%" border="0" id="tablaconfig">  
+			<tr>       
+                <td>
+                    Table - Url: <input type="text" size="100" id="urlTable" value="__UP_urlTable__"   onchange="registra('urlTable')"/>                   
+                </td>
+            </tr><tr/>
 			<tr>       
                 <td>
                     Title - Tag Box: <input type="text" size="100" id="titlebox" value="__UP_titlebox__"   onchange="registra('titlebox')"/>                   
