@@ -219,7 +219,7 @@
 				querybasico.send(handleQueryResponse1);
 				querymedio.send(handleQueryResponse2);
 				queryavanzado.send(handleQueryResponse3);
-				//var result = putTags();
+				putTags();
 			}
      function handleQueryResponse1(response) {
 	 alert("entro1");
@@ -241,13 +241,13 @@
 		}
 		
 		
-	
+	function putTags(){
 	 document.getElementById("titlebox").innerHTML = titlebox;
 	 document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+"("+contadorNivelMedio+")</a>";
 	 document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+"("+contadorNivelBasico+")</a>";
 	 document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+"("+contadorNivelAvanzado+")</a>";
 
-	 
+	 }
 	 
 	 
    </script>
