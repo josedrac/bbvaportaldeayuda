@@ -122,7 +122,7 @@
 /* @end */
 	
 	#nivel{
-	float:left;
+	
 	color:#0078D2;
 	font-family: BBVA Web Medium;
 	font-size:22px;
