@@ -184,9 +184,9 @@
 	 var urllow = prefs.getString("urllow");
 	 var titlehigh= prefs.getString("titlehigh");
 	 var urlhigh = prefs.getString("urlhigh");
-	 var contadorNivelBasico = 0;
-	 var contadorNivelMedio  = 0;
-	 var contadorNivelAvanzado = 0;
+	 var contadorNivelBasico;
+	 var contadorNivelMedio;
+	 var contadorNivelAvanzado;
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 
 	 function loadVisualizationAPI() 
@@ -242,6 +242,8 @@
 		
 		
 	function putTags(){
+	alert("entro en putTags");
+	alert(contadorNivelBasico);
 	 document.getElementById("titlebox").innerHTML = titlebox;
 	 document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+"("+contadorNivelMedio+")</a>";
 	 document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+"("+contadorNivelBasico+")</a>";
