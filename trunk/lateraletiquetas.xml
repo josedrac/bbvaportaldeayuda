@@ -205,11 +205,11 @@
 				
 				alert("llego");
 			    
-				var querytosendbasico = "select count (*) where B like 'Básico'";
+				var querytosendbasico = "select * where B like 'Básico'";
 				
-				var querytosendmedio = "select count(*) where B like 'Medio'";
+				var querytosendmedio = "select * where B like 'Medio'";
 				
-				var querytosendavanzado = "select count(*) where B like 'Avanzado'";
+				var querytosendavanzado = "select * where B like 'Avanzado'";
 				alert("llego1");
 				
 				querybasico.setQuery(querytosendbasico);	
