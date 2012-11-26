@@ -156,6 +156,8 @@
 	#textproduct{
 	color:#434A58;
 	font-size:14px;
+	font-family: BBVA Office Light;
+    width:618px;	
 	}
 	.lineproduct
 	margin-bottom:20px;
