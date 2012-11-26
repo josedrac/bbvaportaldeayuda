@@ -201,7 +201,7 @@
 			    var querymedio = new google.visualization.Query(urlTable, opts);	
 				var queryavanzado = new google.visualization.Query(urlTable, opts);	
 				
-				
+				alert("llego");
 			    
 				var querytosendbasico = "select count (*) where B like 'Básico'";
 				
