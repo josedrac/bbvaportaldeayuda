@@ -242,7 +242,7 @@ font-family: BBVA Web Light;
 color:#0078D2;
 }
 #titleHome h2{
-
+padding-left:10px;
 font:22px BBVA Web Light;
 color:#0078D2;
 margin-top:0px;
