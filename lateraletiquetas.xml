@@ -175,7 +175,7 @@
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
-	 var prefs = new gadgets.Prefs();
+	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("urlTable");
 	 var titlebox = prefs.getString("titlebox");
 	 var titlemedium = prefs.getString("titlemedium");
