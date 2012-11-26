@@ -255,7 +255,7 @@ color:#0078D2;
 	}
 #content{
 float:right;
-width:330px;
+width:300px;
 }	
 #textMovilidad{
 color:#434A58;
