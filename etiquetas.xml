@@ -196,8 +196,7 @@
 	
 <div id="nivel">Básico</div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="titleproduct"></div>
-<div id="textproduct"></div>	
+
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
