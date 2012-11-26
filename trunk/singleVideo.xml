@@ -57,18 +57,20 @@
 			height:271px;
 		}
 	  	#urlVideo {
-			float:left;
-	    	width:282px;
-			height:160px;
-			margin-left:20px;
+			padding: 20px 10px 20px 10px;
 	  	}
 	  	#TagVideo {
 	    	color: #0078D2;
 	    	font: 18px BBVA Web Book;
+	    	padding-left: 10px;
 	  	}
       	#titleVideo {
 			color: #0078D2;
 			font: 22px BBVA Web Light;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			border-bottom: 1px #D1D1D1 solid;
+			width: 298px;
 	  	}
 		#urlLink {
 			border-radius: .2em;
