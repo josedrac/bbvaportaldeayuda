@@ -53,8 +53,6 @@
 		/* Styles */
 		#video-container {
 			float:left;
-			width:668px;
-			height:271px;
 		}
 	  	#urlVideo {
 			padding: 20px 10px 20px 10px;
@@ -70,17 +68,17 @@
 			padding-bottom: 10px;
 			padding-left: 10px;
 			border-bottom: 1px #D1D1D1 solid;
-			width: 298px;
+			width: 312px;
 	  	}
 		#urlLink {
 			border-radius: .2em;
 			height: 2em;
 			padding-left: 1.4em;
 			padding-right: 2.4em;
-			float: left;
-			margin-left: 10px;
+			float: right;
+			margin-right: 10px;
 			width: 90px;
-			margin-top: 25px;
+			margin-top: 10px;
 		}
 		#urlLink a{
 			float: left;
