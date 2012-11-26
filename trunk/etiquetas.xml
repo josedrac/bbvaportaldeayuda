@@ -204,8 +204,7 @@
 	 var urlTable = prefs.getString("_table_query_url");
 	// var etiquetasnivel = gadgets.util.getUrlParameters()["parent"].split("=");
 	 
-	 document.getElementById("titlepage").innerHTML = titlepage;
-	 document.getElementById("textPage").innerHTML = textPage;
+
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
