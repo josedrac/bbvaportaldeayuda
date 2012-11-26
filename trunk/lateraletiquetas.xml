@@ -218,17 +218,17 @@
 			}
      function handleQueryResponse1(response) {
 			data = response.getDataTable();	
-			var filas = data.getNumberOfRows();
+			var filas = data.getValue(0,0);
 			contadorNivelBasico = filas;
 		}
 	 function handleQueryResponse2(response) {
 			data = response.getDataTable();	
-			var filas = data.getNumberOfRows();
+			var filas = data.getValue(0,0);
             contadorNivelMedio = filas;
 		}
 	 function handleQueryResponse3(response) {
 			data = response.getDataTable();	
-			var filas = data.getNumberOfRows();
+			var filas = data.getValue(0,0);
 		    contadorNivelAvanzado = filas;
 		}
 	 
