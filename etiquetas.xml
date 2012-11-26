@@ -127,14 +127,20 @@
 	font-family: BBVA Web Medium;
 	font-size:22px;
 	margin-bottom:6px;
-	padding-top:11px;
+	padding-top:23px;
 	height:30px;
 	margin-left:14px;
+	margin-top:-27px;
 	}
 	
 	.linedowntitle{
 	margin-bottom:20px;
 	width:939px;
+	display:block;
+	}
+	.linedowntitlenivel{
+	margin-bottom:20px;
+	width:619px;
 	display:block;
 	}
 	.linedownheadertable{
@@ -195,7 +201,7 @@
 	</style>
 	
 <div id="nivel">Básico</div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitlenivel" />
 <div id="etiquetas"></div>
 	
    <script type="text/javascript">
