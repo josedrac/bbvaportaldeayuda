@@ -184,9 +184,9 @@
 	 var urllow = prefs.getString("urllow");
 	 var titlehigh= prefs.getString("titlehigh");
 	 var urlhigh = prefs.getString("urlhigh");
-	 var contadorNivelBasico;
-	 var contadorNivelMedio;
-	 var contadorNivelAvanzado;
+	 var contadorNivelBasico =0;
+	 var contadorNivelMedio=0;
+	 var contadorNivelAvanzado=0;
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 
 	 function loadVisualizationAPI() 
@@ -219,7 +219,7 @@
 				querybasico.send(handleQueryResponse1);
 				querymedio.send(handleQueryResponse2);
 				queryavanzado.send(handleQueryResponse3);
-				putTags();
+				
 			}
      function handleQueryResponse1(response) {
 	 alert("entro1");
@@ -234,10 +234,11 @@
             contadorNivelMedio = filas;
 		}
 	 function handleQueryResponse3(response) {
-	 alert("entro3");	
+			alert("entro3");	
 			data3 = response.getDataTable();	
 			var filas = data3.getValue(0,0);
 		    contadorNivelAvanzado = filas;
+			putTags();
 		}
 		
 		
