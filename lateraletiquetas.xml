@@ -222,25 +222,28 @@
 				
 			}
      function handleQueryResponse1(response) {
-	 alert("entro1");
+	 
 	
 	        data1 = response.getDataTable();	
+			alert("entro1 " +data1);
 			 if(data1 !=""){
 			var filas = data1.getValue(0,0);
 			contadorNivelBasico = filas;
 			}
 		}
 	 function handleQueryResponse2(response) {
-	 alert("entro2");		
+			
 			data2 = response.getDataTable();
+			 alert("entro2 "+ data2);
            if(data2 !=""){			
 			var filas = data2.getValue(0,0);
             contadorNivelMedio = filas;
 			}
 		}
 	 function handleQueryResponse3(response) {
-			alert("entro3");	
+				
 			data3 = response.getDataTable();
+			alert("entro3 "+data3);
             if(data3 !=""){	
 			var filas = data3.getValue(0,0);
 		    contadorNivelAvanzado = filas;
