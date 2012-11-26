@@ -212,7 +212,7 @@
 color:#434A58;
 font-size:12px;
 font-family: Stag;
-
+padding-left:10px;
 }
 
 #movilidad select{
@@ -266,6 +266,7 @@ font-size:12px;
 font-family: BBVA Web Light;
 margin-top:10px;
 margin-bottom:5px;
+padding-left:10px;
 }	
 	</style>
 <div id="content"><div id="titleHome"><h2>Movilidad</h2></div>
