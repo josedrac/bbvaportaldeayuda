@@ -208,12 +208,12 @@
 				var querytosendmedio = "select count(*) where B like 'Medio'";
 				
 				var querytosendavanzado = "select count(*) where B like 'Avanzado'";
-				
+				alert("llego1");
 				
 				querybasico.setQuery(querytosendbasico);	
 				querymedio.setQuery(querytosendmedio);
 				queryavanzado.setQuery(querytosendavanzado);	
-				
+				alert("llego2");
 				querybasico.send(handleQueryResponse1);
 				querymedio.send(handleQueryResponse2);
 				queryavanzado.send(handleQueryResponse3);
