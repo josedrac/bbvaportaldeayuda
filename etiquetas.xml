@@ -219,7 +219,7 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	// var etiquetasnivel = gadgets.util.getUrlParameters()["parent"].split("=");
+	 var etiquetasnivel = gadgets.util.getUrlParameters()["parent"].split("=");
 	 
 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -234,6 +234,15 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
 				var querytosend = "select * where B like 'Básico'";
+				
+			    /*if(etiquetasnivel[1] == 'basico'){
+				var querytosend = "select * where B like 'Básico'";
+				}else if (etiquetasnivel[1] == 'medio'){
+				var querytosend = "select * where B like 'Medio'";
+				}else if(etiquetasnivel[1] == 'avanzado'){
+				var querytosend = "select * where B like 'Avanzado'";
+				}*/
+				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
