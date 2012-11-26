@@ -277,7 +277,7 @@
 				   
 			}
 				
-		document.getElementById('etiquetas').innerHTML += html;
+		document.getElementById('etiquetas').innerHTML = +html;
 	
 		}
 		
