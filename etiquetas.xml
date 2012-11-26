@@ -205,7 +205,9 @@
 			font-family: BBVA Office Book;
 			color:#0078D2;
         }
-	
+	#etiquetas{
+	width:620px;
+	}
 	
 	</style>
 	
