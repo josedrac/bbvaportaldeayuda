@@ -187,6 +187,7 @@
 	 var contadorNivelBasico = 0;
 	 var contadorNivelMedio  = 0;
 	 var contadorNivelAvanzado = 0;
+	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 
 	 function loadVisualizationAPI() 
 			{
