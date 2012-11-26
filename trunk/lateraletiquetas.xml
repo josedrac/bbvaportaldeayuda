@@ -196,7 +196,8 @@
 	 function sendQuery() 
 			{
 				gadgetHelper = new google.visualization.GadgetHelper();
-				var opts = {dataType:'jsonp'};		
+				var opts = {dataType:'jsonp'};
+					alert("llego aki");
 				var querybasico = new google.visualization.Query(urlTable, opts);	
 			    var querymedio = new google.visualization.Query(urlTable, opts);	
 				var queryavanzado = new google.visualization.Query(urlTable, opts);	
