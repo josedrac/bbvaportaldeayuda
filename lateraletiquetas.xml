@@ -195,7 +195,7 @@
 				google.setOnLoadCallback(sendQuery);
 			}
 	 function sendQuery() 
-			{
+			{   alert("eee");
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};
 					alert("llego aki");
