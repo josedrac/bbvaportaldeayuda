@@ -217,7 +217,7 @@
 				querybasico.send(handleQueryResponse1);
 				querymedio.send(handleQueryResponse2);
 				queryavanzado.send(handleQueryResponse3);
-				putTags();
+				var result = putTags();
 			}
      function handleQueryResponse1(response) {
 	 alert("entro1");
