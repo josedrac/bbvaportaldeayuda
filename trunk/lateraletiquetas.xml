@@ -243,7 +243,7 @@
 	}
 	#stepbystep{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 138px;
+	width: 152px;
 	height:25;
 	float:left;
 	text-align:center;
