@@ -443,11 +443,11 @@
                         var pagActualParaMostrar = pagActual+1;
                         var pagSiguiente = pagActualParaMostrar+1;
     				
-    				    if(i>2)
+    				/*    if(i>2)
                         {
     				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';    				      
-    				    }
-                    
+    				    }*/
+                        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';  
                         html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
                         html += '</div>';
                         html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
