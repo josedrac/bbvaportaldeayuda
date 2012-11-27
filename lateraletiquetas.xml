@@ -15,8 +15,14 @@
 <UserPref name="titlelow" display_name="Title of Low Level" required="true" />  
 <UserPref name="urllow" display_name="Url of Low Level" required="true" />  
 <UserPref name="titlehigh" display_name="Title of High Level" required="true" />
-<UserPref name="urlhigh" display_name="Url of High Level" required="true" />    
-
+<UserPref name="urlhigh" display_name="Url of High Level" required="true" />
+    
+<UserPref name="titletrucos" display_name="Title of Trick type" required="true" />
+<UserPref name="urltrucos" display_name="Url of Trick type" required="true" />    
+<UserPref name="titlestep" display_name="Title of Step by Step type" required="true" />
+<UserPref name="urlstep" display_name="Url  of Step by Step type" required="true" />    
+<UserPref name="titleref" display_name="Title of Reference" required="true" />
+<UserPref name="urlref" display_name="Url of Reference" required="true" />    
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -161,10 +167,13 @@
 	float:left;
 	width:298px;
 	padding-left:20px;
-	padding-top:20px
-	
-	
-						
+	padding-top:20px;
+	}
+	#tipos{
+	float:left;
+	width:298px;
+	padding-left:20px;
+	padding-top:20px;
 	}
 	#mediumlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
@@ -215,16 +224,58 @@
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
-	
+	}
+	#trucos{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
+	float:left;
+	width: 157px;
+	height:25;
+	}
+	#trucos a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#0072C9;
+	text-decoration:none;
+	}
+	#stepbystep{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+	width: 138px;
+	height:25;
+	float:left;
+	}
+	#stepbystep a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#0072C9;
+	text-decoration:none;
+	}
+	#referencia{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+	width: 100px;
+	height:25;
+	float:left;
+	}
+	#referencia a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#0072C9;
+	text-decoration:none;
 	}
 	
-	</style>
+</style>
+
+
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 <div id="content"><div id="titlebox"></div>
 <div id="niveles"><div id="mediumlevel"></div><div id="lowlevel"></div>
 <div id="highlevel"></div>
 </div>
-<div id="tipos"></div>
+<div id="tipos"><div id="trucos"></div>
+<div id="stepbystep"></div><div id="referencia"></div>
+</div>
 <div id="ayuda"></div><div id="exitos"></div>
 <div id="formatos"></div></div>
 	
@@ -239,9 +290,20 @@
 	 var urllow = prefs.getString("urllow");
 	 var titlehigh= prefs.getString("titlehigh");
 	 var urlhigh = prefs.getString("urlhigh");
+	 var titletrucos = prefs.getString("titletrucos");
+	 var urltrucos = prefs.getString("urltrucos");
+	 var titlestep = prefs.getString("titlestep");
+	 var urlstep = prefs.getString("urlstep");
+	 var titleref = prefs.getString("titleref");
+	 var urlref = prefs.getString("urlref");
+	 
 	 var contadorNivelBasico =0;
 	 var contadorNivelMedio=0;
 	 var contadorNivelAvanzado=0;
+	 var contadorTiposTrucos=0;
+	 var contadorTiposStep=0;
+	 var contadorTiposRef=0;
+	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("titlebox").innerHTML = titlebox;
 	 function loadVisualizationAPI() 
@@ -258,14 +320,17 @@
 			    var querymedio = new google.visualization.Query(urlTable, opts);	
 				var queryavanzado = new google.visualization.Query(urlTable, opts);	
 				
+				var querytruco = new google.visualization.Query(urlTable, opts);
+				var querystep = new google.visualization.Query(urlTable, opts);
+			    var queryref = new google.visualization.Query(urlTable, opts);
 				
-			    
 				var querytosendbasico = "select * where B like 'Básico'";
-				
 				var querytosendmedio = "select * where B like 'Medio'";
-				
 				var querytosendavanzado = "select * where B like 'Avanzado'";
 				
+				var querytipotruco = "select * where C like '%truco%' or C like '%consejo%'";
+				var querytipostep = "select * where C like '%paso%'";
+				var querytiporef = "select * where C like '%referencia%'";
 				
 				querybasico.setQuery(querytosendbasico);	
 				querymedio.setQuery(querytosendmedio);
@@ -275,13 +340,21 @@
 				querymedio.send(handleQueryResponse2);
 				queryavanzado.send(handleQueryResponse3);
 				
+				querytruco.setQuery(querytipotruco);	
+				querystep.setQuery(querytipostep);
+				queryref.setQuery(querytiporef);
+					
+				querytruco.send(handleQueryResponse4);
+				querystep.send(handleQueryResponse5);
+				queryref.send(handleQueryResponse6);	
+				
 			}
      function handleQueryResponse1(response) {
 	 
 	
 	        data1 = response.getDataTable();	
 			
-			 if(data1.getNumberOfRows() !=""){
+			if(data1.getNumberOfRows() !=""){
 			var filas = data1.getNumberOfRows();
 			contadorNivelBasico = filas;
 			
@@ -311,9 +384,42 @@
 			document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+" ("+contadorNivelAvanzado+")</a>";
 			
 		}
-		
-		
-	
+	 function handleQueryResponse4(response) {
+				
+			data4 = response.getDataTable();
+			
+            if(data4.getNumberOfRows() !=""){	
+			var filas = data4.getNumberOfRows();
+		    contadorTiposTrucos = filas;
+			
+			}
+			document.getElementById("trucos").innerHTML = "<a href='"+urltrucos+"'>"+titletrucos+" ("+contadorTiposTrucos+")</a>";
+			
+		}	
+	 function handleQueryResponse5(response) {
+				
+			data5 = response.getDataTable();
+			
+            if(data5.getNumberOfRows() !=""){	
+			var filas = data5.getNumberOfRows();
+		    contadorTiposStep = filas;
+			
+			}
+			document.getElementById("stepbystep").innerHTML = "<a href='"+urlstep+"'>"+titlestep+" ("+contadorTiposStep+")</a>";
+			
+		}	
+	 function handleQueryResponse6(response) {
+				
+			data6 = response.getDataTable();
+			
+            if(data6.getNumberOfRows() !=""){	
+			var filas = data6.getNumberOfRows();
+		    contadorTiposRef = filas;
+			
+			}
+			document.getElementById("referencia").innerHTML = "<a href='"+urlref+"'>"+titleref+" ("+contadorTiposRef+")</a>";
+			
+		}
 	 
 	 
    </script>
@@ -376,6 +482,36 @@
 			<tr>       
                 <td>
                     Url - High Level: <input type="text" size="100" id="urlhigh" value="__UP_urlhigh__"   onchange="registra('urlhigh')"/>                   
+                </td>
+            </tr><tr/><tr/>
+			<tr>       
+                <td>
+                    Title - Trick type: <input type="text" size="100" id="titletrucos" value="__UP_titletrucos__"   onchange="registra('titletrucos')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - Trick type: <input type="text" size="100" id="urltrucos" value="__UP_urltrucos__"   onchange="registra('urltrucos')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Title - Step type: <input type="text" size="100" id="titlestep" value="__UP_titlestep__"   onchange="registra('titlestep')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - Step type: <input type="text" size="100" id="urlstep" value="__UP_urlstep__"   onchange="registra('urlstep')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Title - Ref type: <input type="text" size="100" id="titleref" value="__UP_titleref__"   onchange="registra('titleref')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - Ref type: <input type="text" size="100" id="urlref" value="__UP_urlref__"   onchange="registra('urlref')"/>                   
                 </td>
             </tr>
 			
