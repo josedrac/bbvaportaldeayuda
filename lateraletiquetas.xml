@@ -284,8 +284,9 @@
 			 if(data1.getNumberOfRows() !=""){
 			var filas = data1.getNumberOfRows();
 			contadorNivelBasico = filas;
-			document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+" ("+contadorNivelBasico+")</a>";
+			
 			}
+		document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+" ("+contadorNivelBasico+")</a>";	
 		}
 	 function handleQueryResponse2(response) {
 			
@@ -294,8 +295,9 @@
            if(data2.getNumberOfRows() !=""){			
 			var filas = data2.getNumberOfRows();
 		    contadorNivelMedio = filas;
-			document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+" ("+contadorNivelMedio+")</a>";
+			
 			}
+			document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+" ("+contadorNivelMedio+")</a>";
 		}
 	 function handleQueryResponse3(response) {
 				
@@ -304,8 +306,9 @@
             if(data3.getNumberOfRows() !=""){	
 			var filas = data3.getNumberOfRows();
 		    contadorNivelAvanzado = filas;
-			document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+" ("+contadorNivelAvanzado+")</a>";
+			
 			}
+			document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+" ("+contadorNivelAvanzado+")</a>";
 			//putTags();
 		}
 		
