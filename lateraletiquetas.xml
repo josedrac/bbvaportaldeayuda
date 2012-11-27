@@ -178,6 +178,7 @@
 	height:25px;
 	text-align:center;
 	padding-top:4px;
+	float:left;
 	}
 	#highlevel a{
 	font-weight:bold;
