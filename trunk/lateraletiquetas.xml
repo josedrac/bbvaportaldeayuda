@@ -143,6 +143,7 @@
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
+	font-family:BBVA Web Light;
 	}
 	#lowlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
@@ -151,6 +152,7 @@
 	font-weight:bold;
 	font-size:12px;
 	color:#0072C9;
+	font-family:BBVA Web Light;
 	text-decoration:none;
 	}
 	#highlevel{
@@ -158,6 +160,7 @@
 	}
 	#highlevel a{
 	font-weight:bold;
+	font-family:BBVA Web Light;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
