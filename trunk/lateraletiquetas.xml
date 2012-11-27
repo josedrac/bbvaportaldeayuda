@@ -328,10 +328,11 @@
 	padding-left:20px;
 	padding-top:20px;
 	margin-bottom:-20px;
+	margin-top:-20px;
 	}
 	#formatTruco{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 180px;
+	width: 190px;
 	height:25;
 	float:left;
 	text-align:center;
@@ -346,7 +347,7 @@
 	}
 	#formatPaso{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 161px;
+	width: 175px;
 	height:25;
 	float:left;
 	text-align:center;
