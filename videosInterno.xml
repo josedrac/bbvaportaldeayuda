@@ -445,7 +445,7 @@
     				
     				    if(i>2)
                         {
-    				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">< Anterior</a></div>';    				      
+    				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';    				      
     				    }
                     
                         html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
