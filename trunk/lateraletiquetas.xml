@@ -138,6 +138,7 @@
             width: 298px;
             clear: both;
 			margin-top:15px;
+			height:296px;
 	}
 	#titlebox{
 	 	border-bottom: 1px solid  #DDE3EA;
