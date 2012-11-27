@@ -135,12 +135,17 @@
 	 font-size:16px;
 	 font-family:BBVA Web Office;
 	}
+	#niveles{
+	float:left;
+	width:300px;
+	}
 	#mediumlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
 	width:110px;
 	text-align:center;
 	padding-top:4px;
+	float:left;
 	}
 	#mediumlevel a{
 	font-weight:bold;
@@ -156,6 +161,7 @@
 	height:25px;
 	text-align:center;
 	padding-top:4px;
+	float:left;
 	}
 	#lowlevel a{
 	font-weight:bold;
@@ -163,6 +169,7 @@
 	color:#0072C9;
 	font-family:BBVA Web Light;
 	text-decoration:none;
+	float:left;
 
 	}
 	#highlevel{
