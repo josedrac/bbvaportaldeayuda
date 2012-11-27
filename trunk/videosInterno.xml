@@ -350,11 +350,12 @@
     .bloqueSiguiente{
             display:block;
             font-family: BBVA Office Book;
-            float:right;
+            align:center;
             margin-top:0px;
             margin-right:0px;
 			color:#0078D2;
 			width:64px;
+			background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png')no-repeat;
         }
 	p.text {	 
             font-size: 0.8em;
