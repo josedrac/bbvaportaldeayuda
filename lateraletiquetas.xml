@@ -431,7 +431,7 @@
 			contadorNivelBasico = filas;
 			
 			}
-		document.getElementById("lowlevel").innerHTML = "<a target="_parent" href='"+urllow+"'>"+titlelow+" ("+contadorNivelBasico+")</a>";	
+		document.getElementById("lowlevel").innerHTML = "<a target='_parent' href='"+urllow+"'>"+titlelow+" ("+contadorNivelBasico+")</a>";	
 		}
 	 function handleQueryResponse2(response) {
 			
@@ -442,7 +442,7 @@
 		    contadorNivelMedio = filas;
 			
 			}
-			document.getElementById("mediumlevel").innerHTML = "<a target="_parent" href='"+urlmedium+"'>"+titlemedium+" ("+contadorNivelMedio+")</a>";
+			document.getElementById("mediumlevel").innerHTML = "<a target='_parent' href='"+urlmedium+"'>"+titlemedium+" ("+contadorNivelMedio+")</a>";
 		}
 	 function handleQueryResponse3(response) {
 				
@@ -453,7 +453,7 @@
 		    contadorNivelAvanzado = filas;
 			
 			}
-			document.getElementById("highlevel").innerHTML = "<a target="_parent" href='"+urlhigh+"'>"+titlehigh+" ("+contadorNivelAvanzado+")</a>";
+			document.getElementById("highlevel").innerHTML = "<a target='_parent' href='"+urlhigh+"'>"+titlehigh+" ("+contadorNivelAvanzado+")</a>";
 			
 		}
 	 function handleQueryResponse4(response) {
@@ -465,7 +465,7 @@
 		    contadorTiposTrucos = filas;
 			
 			}
-			document.getElementById("trucos").innerHTML = "<a target="_parent" href='"+urltrucos+"'>"+titletrucos+" ("+contadorTiposTrucos+")</a>";
+			document.getElementById("trucos").innerHTML = "<a target='_parent' href='"+urltrucos+"'>"+titletrucos+" ("+contadorTiposTrucos+")</a>";
 			
 		}	
 	 function handleQueryResponse5(response) {
@@ -477,7 +477,7 @@
 		    contadorTiposStep = filas;
 			
 			}
-			document.getElementById("stepbystep").innerHTML = "<a target="_parent" href='"+urlstep+"'>"+titlestep+" ("+contadorTiposStep+")</a>";
+			document.getElementById("stepbystep").innerHTML = "<a target='_parent' href='"+urlstep+"'>"+titlestep+" ("+contadorTiposStep+")</a>";
 			
 		}	
 	 function handleQueryResponse6(response) {
@@ -489,7 +489,7 @@
 		    contadorTiposRef = filas;
 			
 			}
-			document.getElementById("referencia").innerHTML = "<a target="_parent" href='"+urlref+"'>"+titleref+" ("+contadorTiposRef+")</a>";
+			document.getElementById("referencia").innerHTML = "<a target='_parent' href='"+urlref+"'>"+titleref+" ("+contadorTiposRef+")</a>";
 			
 		}
 		 function handleQueryResponse7(response) {
@@ -501,7 +501,7 @@
 		    contadorHelp = filas;
 			
 			}
-			document.getElementById("ayuda").innerHTML = "<a target="_parent" href='"+urlhelp+"'>"+titlehelp+" ("+contadorHelp+")</a>";
+			document.getElementById("ayuda").innerHTML = "<a target='_parent' href='"+urlhelp+"'>"+titlehelp+" ("+contadorHelp+")</a>";
 			
 		}
 		 function handleQueryResponse8(response) {
@@ -513,7 +513,7 @@
 		    contadorExito = filas;
 			
 			}
-			document.getElementById("exitos").innerHTML = "<a target="_parent" href='"+urlexitos+"'>"+titleexitos+" ("+contadorExito+")</a>";
+			document.getElementById("exitos").innerHTML = "<a target='_parent' href='"+urlexitos+"'>"+titleexitos+" ("+contadorExito+")</a>";
 			
 		}
 	 
