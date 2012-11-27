@@ -137,6 +137,8 @@
 	}
 	#mediumlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
+	height:25px;
+	width:110px;
 	}
 	#mediumlevel a{
 	font-weight:bold;
@@ -147,6 +149,8 @@
 	}
 	#lowlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
+	width:109px;
+	height:25px;
 	}
 	#lowlevel a{
 	font-weight:bold;
@@ -157,6 +161,8 @@
 	}
 	#highlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	width:132px;
+	height:25px;
 	}
 	#highlevel a{
 	font-weight:bold;
