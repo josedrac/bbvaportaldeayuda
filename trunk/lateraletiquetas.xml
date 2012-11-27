@@ -179,7 +179,7 @@
 	#mediumlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
-	width:114px;
+	width:110px;
 	text-align:center;
 	padding-top:4px;
 	float:left;
@@ -195,7 +195,7 @@
 	}
 	#lowlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
-	width:112px;
+	width:109px;
 	height:25px;
 	text-align:center;
 	padding-top:4px;
