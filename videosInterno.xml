@@ -368,7 +368,16 @@
 			margin-left:260px;
 			padding-right:10px;
         }
-	
+	.checkpage a{
+	float:left;
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png')no-repeat;
+	padding:0px 5px;
+	}
+	.checkpage a:hover{
+	float:left;
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png')no-repeat;
+	padding:0px 5px;
+	}
 	</style>
 	
 <div id="listportales"></div>	
@@ -444,7 +453,10 @@
                         {
     				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';    				      
     				    }*/
-                        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';  
+                        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
+						for(var j=0;j<pagTotales;j++){
+					      html += '<div id="paginas" class="checkpage"><a href="javascript:anterior(\''+ j +'\');"></a></div>';
+						}
                         html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
                         html += '</div>';
                         html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
