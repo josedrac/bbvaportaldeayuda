@@ -195,27 +195,27 @@
 				google.setOnLoadCallback(sendQuery);
 			}
 	 function sendQuery() 
-			{   alert("eee");
+			{   
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};
-					alert("llego aki");
+					
 				var querybasico = new google.visualization.Query(urlTable, opts);	
 			    var querymedio = new google.visualization.Query(urlTable, opts);	
 				var queryavanzado = new google.visualization.Query(urlTable, opts);	
 				
-				alert("llego");
+				
 			    
 				var querytosendbasico = "select * where B like 'Básico'";
 				
 				var querytosendmedio = "select * where B like 'Medio'";
 				
 				var querytosendavanzado = "select * where B like 'Avanzado'";
-				alert("llego1");
+				
 				
 				querybasico.setQuery(querytosendbasico);	
 				querymedio.setQuery(querytosendmedio);
 				queryavanzado.setQuery(querytosendavanzado);	
-				alert("llego2");
+				
 				querybasico.send(handleQueryResponse1);
 				querymedio.send(handleQueryResponse2);
 				queryavanzado.send(handleQueryResponse3);
@@ -225,7 +225,7 @@
 	 
 	
 	        data1 = response.getDataTable();	
-			alert("entro1 " +data1);
+			
 			 if(data1.getNumberOfRows() !=""){
 			var filas = data1.getNumberOfRows();
 			contadorNivelBasico = filas;
@@ -234,7 +234,7 @@
 	 function handleQueryResponse2(response) {
 			
 			data2 = response.getDataTable();
-			 alert("entro2 "+ data2);
+			 
            if(data2.getNumberOfRows() !=""){			
 			var filas = data2.getNumberOfRows();
             contadorNivelMedio = filas;
@@ -243,7 +243,7 @@
 	 function handleQueryResponse3(response) {
 				
 			data3 = response.getDataTable();
-			alert("entro3 "+data3);
+			
             if(data3.getNumberOfRows() !=""){	
 			var filas = data3.getNumberOfRows();
 		    contadorNivelAvanzado = filas;
@@ -253,8 +253,7 @@
 		
 		
 	function putTags(){
-	alert("entro en putTags");
-	alert(contadorNivelBasico);
+	
 	 document.getElementById("titlebox").innerHTML = titlebox;
 	 document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+" ("+contadorNivelMedio+")</a>";
 	 document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+" ("+contadorNivelBasico+")</a>";
