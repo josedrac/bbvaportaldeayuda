@@ -229,7 +229,7 @@
 	#trucos{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
-	width: 157px;
+	width: 175px;
 	height:25;
 	}
 	#trucos a{
