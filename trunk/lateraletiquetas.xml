@@ -396,7 +396,7 @@
 	 var urlhelp = prefs.getString("urlhelp");
 	 var titleexitos = prefs.getString("titleexitos");
 	 var urlexitos = prefs.getString("urlexitos");
-	 var titleformatotruco= prefs.getString("titleformatotruco");
+	 var titleformatotruco = prefs.getString("titleformatotruco");
 	 var urlformatotruco = prefs.getString("urlformatotruco");
 	 var titleformatostep = prefs.getString("titleformatostep");
 	 var urlformatostep = prefs.getString("urlformatostep");
