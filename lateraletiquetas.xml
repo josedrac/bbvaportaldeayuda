@@ -146,6 +146,7 @@
 	color:#fff;
 	text-decoration:none;
 	font-family:BBVA Web Light;
+	text-align:center;
 	}
 	#lowlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
@@ -158,6 +159,7 @@
 	color:#0072C9;
 	font-family:BBVA Web Light;
 	text-decoration:none;
+	text-align:center;
 	}
 	#highlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
@@ -170,6 +172,7 @@
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
+	text-align:center;
 	}
 	
 	</style>
