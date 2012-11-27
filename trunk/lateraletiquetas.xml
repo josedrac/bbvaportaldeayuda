@@ -135,7 +135,7 @@
             -moz-border-radius: 2px;
             -webkit-border-radius: 2px;
             -khtml-border-radius: 2px;
-            width: 300px;
+            width: 298px;
             clear: both;
 			margin-top:15px;
 	}
@@ -152,13 +152,15 @@
 		font: 16px BBVA Web Book;
 		color: #333333;
 		padding-left: 18px;
-		padding-left: 18px;
+		padding-left: 20px;
 		padding-top: 14px;
 		padding-bottom: 15px;
 	}
 	#niveles{
 	float:left;
 	width:300px;
+	padding-left:20px;
+	padding-top:20px
 	}
 	#mediumlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
