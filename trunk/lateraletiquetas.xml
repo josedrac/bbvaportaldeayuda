@@ -139,6 +139,8 @@
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
 	width:110px;
+	text-align:center;
+	padding-top:4px;
 	}
 	#mediumlevel a{
 	font-weight:bold;
@@ -146,12 +148,14 @@
 	color:#fff;
 	text-decoration:none;
 	font-family:BBVA Web Light;
-	text-align:center;
+	
 	}
 	#lowlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
 	width:109px;
 	height:25px;
+	text-align:center;
+	padding-top:4px;
 	}
 	#lowlevel a{
 	font-weight:bold;
@@ -159,12 +163,14 @@
 	color:#0072C9;
 	font-family:BBVA Web Light;
 	text-decoration:none;
-	text-align:center;
+
 	}
 	#highlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
 	width:132px;
 	height:25px;
+	text-align:center;
+	padding-top:4px;
 	}
 	#highlevel a{
 	font-weight:bold;
@@ -172,7 +178,7 @@
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
-	text-align:center;
+	
 	}
 	
 	</style>
