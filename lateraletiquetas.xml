@@ -161,9 +161,8 @@
 	width:298px;
 	padding-left:20px;
 	padding-top:20px
-	list-style: none;
-	border-bottom: 1px solid #DDE3EA;
-	padding-bottom: 12px;
+	
+	
 						
 	}
 	#mediumlevel{
