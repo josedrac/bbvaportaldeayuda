@@ -259,7 +259,7 @@
 	}
 	#referencia{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 100px;
+	width: 105px;
 	height:25;
 	float:left;
 	text-align:center;
