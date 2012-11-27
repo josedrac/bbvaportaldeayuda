@@ -28,9 +28,13 @@
 
 <UserPref name="titlehelp" display_name="Title of Help" required="true" />
 <UserPref name="urlhelp" display_name="Url of Help" required="true" />  
-
 <UserPref name="titleexitos" display_name="Title of Success" required="true" />
-<UserPref name="urlexitos" display_name="Url of Success" required="true" />     
+<UserPref name="urlexitos" display_name="Url of Success" required="true" /> 
+
+<UserPref name="titleformatotruco" display_name="Title of Format Trick" required="true" />
+<UserPref name="urlformatotruco" display_name="Url of Format Trick" required="true" /> 
+<UserPref name="titleformatostep" display_name="Title of Format Step" required="true" />
+<UserPref name="urlformatostep" display_name="Url of Format Step" required="true" />     
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -330,7 +334,7 @@
 <div id="stepbystep"></div><div id="referencia"></div>
 </div>
 <div id="ayudaexito"><div id="ayuda"></div><div id="exitos"></div></div>
-<div id="formatos"></div></div>
+<div id="formatos"><div id="formatTruco"></div><div id="formatPaso"></div></div>
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -354,6 +358,10 @@
 	 var urlhelp = prefs.getString("urlhelp");
 	 var titleexitos = prefs.getString("titleexitos");
 	 var urlexitos = prefs.getString("urlexitos");
+	 var titleformatotruco= prefs.getString("titleformatotruco");
+	 var urlformatotruco = prefs.getString("urlformatotruco");
+	 var titleformatostep = prefs.getString("titleformatostep");
+	 var urlformatostep = prefs.getString("urlformatostep");
 	 
 	 var contadorNivelBasico =0;
 	 var contadorNivelMedio=0;
@@ -363,6 +371,8 @@
 	 var contadorTiposRef=0;
 	 var contadorHelp=0;
 	 var contadorExito=0;
+	 var contadorFormatTruco=0;
+	 var contadorFormatStep=0;
 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("titlebox").innerHTML = titlebox;
@@ -387,6 +397,9 @@
 				var queryhelp = new google.visualization.Query(urlTable2, opts);
 				var queryexito = new google.visualization.Query(urlTable2, opts); 
 				
+				var queryformattruco = new google.visualization.Query(urlTable, opts);
+				var queryformatstep =  new google.visualization.Query(urlTable, opts);
+				
 				var querytosendbasico = "select * where B like 'Básico'";
 				var querytosendmedio = "select * where B like 'Medio'";
 				var querytosendavanzado = "select * where B like 'Avanzado'";
@@ -397,6 +410,9 @@
 				
 				var querytohelp = "select * where F like '%Portales%'";
 				var querytoexito = "select * where F like '%casos%'";
+				
+				var querytoformattruco = "select * where F like '%truco%' or C like '%consejo%'";
+				var querytoformatstep = "select  * where F like '%paso%'";
 				
 				querybasico.setQuery(querytosendbasico);	
 				querymedio.setQuery(querytosendmedio);
@@ -420,6 +436,11 @@
 				queryhelp.send(handleQueryResponse7);
 				queryexito.send(handleQueryResponse8);
 				
+				queryformattruco.setQuery(querytoformattruco);
+				queryformatstep.setQuery(querytoformatstep);
+				
+				queryformattruco.send(handleQueryResponse9);
+				queryformatstep.send(handleQueryResponse10);
 				
 			}
      function handleQueryResponse1(response) {
@@ -515,6 +536,30 @@
 			
 			}
 			document.getElementById("exitos").innerHTML = "<a target='_parent' href='"+urlexitos+"'>"+titleexitos+" ("+contadorExito+")</a>";
+			
+		}
+		 function handleQueryResponse9(response) {
+				
+			data9 = response.getDataTable();
+			
+            if(data9.getNumberOfRows() !=""){	
+			var filas = data9.getNumberOfRows();
+		    contadorFormatTruco = filas;
+			
+			}
+			document.getElementById("formatTrucos").innerHTML = "<a target='_parent' href='"+urlformatotruco+"'>"+titleformatotruco+" ("+contadorFormatTruco+")</a>";
+			
+		}
+		 function handleQueryResponse10(response) {
+				
+			data10 = response.getDataTable();
+			
+            if(data10.getNumberOfRows() !=""){	
+			var filas = data10.getNumberOfRows();
+		    contadorFormatStep = filas;
+			
+			}
+			document.getElementById("formatPaso").innerHTML = "<a target='_parent' href='"+urlformatostep+"'>"+titleformatostep+" ("+contadorFormatStep+")</a>";
 			
 		}
 	 
@@ -635,7 +680,28 @@
                 <td>
                     Url - Exito: <input type="text" size="100" id="urlexitos" value="__UP_urlexitos__"   onchange="registra('urlexitos')"/>                   
                 </td>
+            </tr><tr/><tr/>
+			<tr>       
+                <td>
+                    Title - FormTruco: <input type="text" size="100" id="titleformatotruco" value="__UP_titleformatotruco__"   onchange="registra('titleformatotruco')"/>                   
+                </td>
             </tr>
+			<tr>       
+                <td>
+                    Url - FormTruco: <input type="text" size="100" id="urlformatotruco" value="__UP_urlformatotruco__"   onchange="registra('urlformatotruco')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Title - FormStep: <input type="text" size="100" id="titleformatostep" value="__UP_titleformatostep__"   onchange="registra('titleformatostep')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url - FormStep: <input type="text" size="100" id="urlexitos" value="__UP_urlformatostep__"   onchange="registra('urlformatostep')"/>                   
+                </td>
+            </tr>
+			
 			
 			</table>
 			
