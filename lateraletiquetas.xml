@@ -243,7 +243,7 @@
 	 var contadorNivelMedio=0;
 	 var contadorNivelAvanzado=0;
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
-	 
+	 document.getElementById("titlebox").innerHTML = titlebox;
 	 function loadVisualizationAPI() 
 			{
 				google.load("visualization", "1", {"packages": ["table"]});
