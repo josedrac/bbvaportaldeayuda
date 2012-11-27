@@ -396,7 +396,7 @@
 				var querytiporef = "select * where C like '%referencia%'";
 				
 				var querytohelp = "select * where F like '%Portales%'";
-				var querytoexito = "select * where F like '%Casos%'";
+				var querytoexito = "select * where F like '%casos%'";
 				
 				querybasico.setQuery(querytosendbasico);	
 				querymedio.setQuery(querytosendmedio);
