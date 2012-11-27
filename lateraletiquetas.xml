@@ -299,7 +299,7 @@
 	font-weight:bold;
 	font-family:BBVA Web Light;
 	font-size:12px;
-	color:#0072C9;
+	color:#fff;
 	text-decoration:none;
 	}
 	#exitos{
@@ -314,7 +314,7 @@
 	font-weight:bold;
 	font-family:BBVA Web Light;
 	font-size:12px;
-	color:#0072C9;
+	color:#fff;
 	text-decoration:none;
 	}
 </style>
