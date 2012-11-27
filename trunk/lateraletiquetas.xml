@@ -231,6 +231,8 @@
 	float:left;
 	width: 175px;
 	height:25;
+	text-align:center;
+	padding-top:4px;
 	}
 	#trucos a{
 	font-weight:bold;
@@ -244,6 +246,9 @@
 	width: 138px;
 	height:25;
 	float:left;
+	text-align:center;
+	padding-top:4px;
+	margin-right:10px;
 	}
 	#stepbystep a{
 	font-weight:bold;
@@ -257,6 +262,8 @@
 	width: 100px;
 	height:25;
 	float:left;
+	text-align:center;
+	padding-top:4px;
 	}
 	#referencia a{
 	font-weight:bold;
