@@ -128,7 +128,16 @@
 
 /* @end */
 	#content{
-	 width:300px;
+	
+	 		border: 1px solid #DDE3EA;
+            border-radius: 2px;
+            -ms-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            width: 300px;
+            clear: both;
+			margin-top:15px;
 	}
 	#titlebox{
 	 	border-bottom: 1px solid  #DDE3EA;
