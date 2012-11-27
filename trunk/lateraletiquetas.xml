@@ -332,7 +332,7 @@
 	}
 	#formatTruco{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 190px;
+	width: 200px;
 	height:25;
 	float:left;
 	text-align:center;
