@@ -256,9 +256,9 @@
 	alert("entro en putTags");
 	alert(contadorNivelBasico);
 	 document.getElementById("titlebox").innerHTML = titlebox;
-	 document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+"("+contadorNivelMedio+")</a>";
-	 document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+"("+contadorNivelBasico+")</a>";
-	 document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+"("+contadorNivelAvanzado+")</a>";
+	 document.getElementById("mediumlevel").innerHTML = "<a href='"+urlmedium+"'>"+titlemedium+" ("+contadorNivelMedio+")</a>";
+	 document.getElementById("lowlevel").innerHTML = "<a href='"+urllow+"'>"+titlelow+" ("+contadorNivelBasico+")</a>";
+	 document.getElementById("highlevel").innerHTML = "<a href='"+urlhigh+"'>"+titlehigh+" ("+contadorNivelAvanzado+")</a>";
 
 	 }
 	 
