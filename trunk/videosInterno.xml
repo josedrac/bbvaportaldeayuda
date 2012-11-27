@@ -365,8 +365,8 @@
     
     #bloqueEnlaces1 img{
             
-			margin-left:200px;
-			
+			margin-left:260px;
+			padding-right:10px;
         }
 	
 	</style>
