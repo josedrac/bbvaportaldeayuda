@@ -585,7 +585,7 @@
 		    contadorFormatTruco = filas;
 			
 			}
-			document.getElementById("formatTrucos").innerHTML = "<a target='_parent' href='"+urlformatotruco+"'>"+titleformatotruco+" ("+contadorFormatTruco+")</a>";
+			document.getElementById("formatTruco").innerHTML = "<a target='_parent' href='"+urlformatotruco+"'>"+titleformatotruco+" ("+contadorFormatTruco+")</a>";
 			
 		}
 		 function handleQueryResponse10(response) {
@@ -736,7 +736,7 @@
             </tr>
 			<tr>       
                 <td>
-                    Url - FormStep: <input type="text" size="100" id="urlexitos" value="__UP_urlformatostep__"   onchange="registra('urlformatostep')"/>                   
+                    Url - FormStep: <input type="text" size="100" id="urlformatostep" value="__UP_urlformatostep__"   onchange="registra('urlformatostep')"/>                   
                 </td>
             </tr>
 			
