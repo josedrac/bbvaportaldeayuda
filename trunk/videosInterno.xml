@@ -362,10 +362,10 @@
             color: #3B3B3B;
         }
 
-    #bloqueEnlaces img,
+    
     #bloqueEnlaces1 img{
             
-			align:center;
+			margin-left:200px;
 			
         }
 	
