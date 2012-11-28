@@ -151,7 +151,7 @@
 	        }
 	        return link;
         }
-		funciton insertHTML()
+		function insertHTML()
 		{
 			html += \"<header>'\" + titulo + '\"</header>"\;
 			insertarEnlace();
