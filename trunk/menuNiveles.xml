@@ -153,7 +153,7 @@
         }
 		function insertHTML()
 		{
-			html += \"<header>'\" + titulo + '\"</header>"\;
+			html += \"<header>'\" + titulo + '\"</header>\";
 			insertarEnlace();
 		}
 		
