@@ -222,7 +222,8 @@
 		table td input,
 		textarea {
 			color: #000;
-			font-size: 11px;				
+			font-size: 11px;	
+			width: 100px;			
 		}
   	</style>
   	
@@ -245,7 +246,7 @@
         </tr>
         <tr>       
         	<td>
-            	Título: <input type="text" size="100" id="title" onchange="registra('title')"/>                   
+            	Título: <input type="text" size="100" id="title" value="__UP_title__" onchange="registra('title')"/>                   
             </td>
         </tr>
 	</table>
