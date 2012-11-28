@@ -76,7 +76,9 @@
 			padding-bottom: 12px;
 			padding-top: 17px;
 		}
-		ul li a{
+		ul li a,
+		ul li a:hover, 
+		ul li a:visited {
             padding-left: 5px;
 			text-decoration: none;
 	        font: 14px BBVA Web Book;
