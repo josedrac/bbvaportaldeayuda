@@ -368,6 +368,9 @@
 			margin-left:260px;
 			padding-right:10px;
         }
+	.checkpage{
+    margin-top:-5px;
+	}	
 	.checkpage a{
 	height:9px;
 	float:left;
