@@ -191,7 +191,7 @@
 	<table width="100%" border="0" id="tablaconfig">  
 		<tr>       
         	<td>
-            	Table - Url: <input type="text" size="50" id="urlArray0"  onchange="registraArray('urlArray',0)"/>                   
+            	Table - Url: <input type="text" size="50" value="prefs.getArray("urlArray")[0]" id="urlArray0"  onchange="registraArray('urlArray',0)"/>                   
             </td>
             <td>
             	Table - Img: <input type="text" size="50" id="textoUrlArray0" onchange="registraArray('textoUrlArray',0)"/>                   
