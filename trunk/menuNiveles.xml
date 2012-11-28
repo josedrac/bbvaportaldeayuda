@@ -127,6 +127,42 @@
 			margin-top:15px;
 			height:296px;
 		}
+		header{
+			border-bottom: 1px solid  #DDE3EA;
+			font: 16px BBVA Web Book;
+			color: #333333;
+			padding-left: 18px;
+			padding-left: 18px;
+			padding-top: 14px;
+			padding-bottom: 15px;
+		}
+		ul li img {
+			background-image: 'https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png';
+		}
+		ul{
+			padding-left: 19px;
+			padding-right: 19px;
+			margin: 0;
+		}
+		ul li{
+			list-style: none;
+			border-bottom: 1px solid #DDE3EA;
+			padding-bottom: 12px;
+			padding-top: 17px;
+		}
+		ul li a{
+            padding-left: 2px;
+			vertical-align: 3px;
+			text-decoration: none;
+	        font: 12px Arial;
+	        font-weight: bold;
+			color: #0073C9;
+		}  
+		ul li:last-child{
+			border: 0;
+			padding-bottom: 11px;
+			padding-top: 17px;
+		}     
 	</style>
 	<div id="content">
 	</div>	
@@ -154,7 +190,9 @@
 		function insertHTML()
 		{
 			html += '<header>' + titulo + '</header>';
+			html += '<li id=\"botonera\">';
 			insertarEnlace();
+			html += '</li>';
 		}
 		
 		function insertarEnlace()
@@ -163,7 +201,7 @@
           		if ((urlArray[i] != "") && (textoUrlArray[i] != ""))
 	            {    
 	                var strLink = devuelveEnlace(urlArray[i]);
-	                html += '<li><a ' + strLink + ' title=\"' + textoUrlArray[i] + '\"  >' + textoUrlArray[i] + '</a></li>';
+	                html += '<li><img/><a ' + strLink + ' title=\"' + textoUrlArray[i] + '\"  >' + textoUrlArray[i] + '</a></li>';
 	            }
           	} 
         }    
@@ -175,7 +213,6 @@
 </Content>
 <Content type="html" view="configuration" preferred_height="480">
 <![CDATA[
-	<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/editorbbcode.js"></script>
 	<style type="text/css">
 		table td {
 			color: #000;
