@@ -57,6 +57,8 @@
 			border-left: 1px solid  #DDE3EA;
 			border-bottom: 1px solid  #DDE3EA;
 			border-bottom-left-radius: 5px;
+			position: relative;
+			bottom: 1px;
 		}
 		ul{
 			padding-left: 19px;
@@ -86,8 +88,7 @@
 			padding-top: 17px;
 		}     
 	</style>
-	<div id="superior">
-	</div>
+	<div id="superior">&nbsp;</div>
 	<div id="content">
 	</div>	
 
