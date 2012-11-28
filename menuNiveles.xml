@@ -137,7 +137,7 @@
 			padding-bottom: 15px;
 		}
 		ul li img {
-			background-image: 'https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png';
+			
 		}
 		ul{
 			padding-left: 19px;
@@ -201,7 +201,7 @@
           		if ((urlArray[i] != "") && (textoUrlArray[i] != ""))
 	            {    
 	                var strLink = devuelveEnlace(urlArray[i]);
-	                html += '<li><img/><a ' + strLink + ' title=\"' + textoUrlArray[i] + '\"  >' + textoUrlArray[i] + '</a></li>';
+	                html += '<li><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flechaInversa.png"/><a ' + strLink + ' title=\"' + textoUrlArray[i] + '\"  >' + textoUrlArray[i] + '</a></li>';
 	            }
           	} 
         }    
