@@ -117,9 +117,8 @@
 		/* @end */
 		header{
 			border-bottom: 1px solid  #DDE3EA;
-			font: 14px BBVA Web Light;
+			font: 14px BBVA Web Light bold;
 			color: #003F8C;
-			padding-left: 18px;
 			padding-left: 18px;
 			padding-top: 14px;
 			padding-bottom: 15px;
