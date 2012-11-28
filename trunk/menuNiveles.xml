@@ -53,13 +53,20 @@
 			position: relative;
 			top: 1px;
 		}
+		#superior {
+			border-left: 1px solid  #DDE3EA;
+			border-top: 1px solid  #DDE3EA;
+			border-bottom-left-radius: 5px;
+		}
 		ul{
 			padding-left: 19px;
 			padding-right: 19px;
 			margin: 0;
 			margin-right: 5px;
 			border-left: 1px solid  #DDE3EA;
+			border-top: 1px solid  #DDE3EA;
 			border-top-left-radius: 5px;
+		
 		}
 		ul li{
 			list-style: none;
@@ -79,6 +86,8 @@
 			padding-top: 17px;
 		}     
 	</style>
+	<div id="superior">
+	</div
 	<div id="content">
 	</div>	
 
