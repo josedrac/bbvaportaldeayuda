@@ -55,6 +55,8 @@
 			padding-left: 19px;
 			padding-right: 19px;
 			margin: 0;
+			border-left: solid 1px #DDE3EA;
+			border-radius: 5px;
 		}
 		ul li{
 			list-style: none;
