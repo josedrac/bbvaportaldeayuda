@@ -46,9 +46,9 @@
 			font: 14px BBVA Web Light bold;
 			color: #003F8C;
 			padding-left: 18px;
-			padding-top: 14px;
+			padding-top: 9px;
 			padding-right: 50px;
-			padding-bottom: 15px;
+			padding-bottom: 20px;
 			margin-left: 4px;
 			position: relative;
 			top: 1px;
@@ -61,7 +61,7 @@
 			bottom: -2px;
 		}
 		ul{
-			padding-left: 19px;
+			padding-left: 26px;
 			padding-right: 19px;
 			margin: 0;
 			margin-right: 5px;
@@ -167,6 +167,30 @@
             </td>
             <td>
             	Table - Texto: <input type="text" size="50" id="textoUrlArray1" onchange="registraArray('textoUrlArray',1)"/>                   
+            </td>
+        </tr>
+        <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray2"  onchange="registraArray('urlArray',2)"/>                   
+            </td>
+            <td>
+            	Table - Texto: <input type="text" size="50" id="textoUrlArray2" onchange="registraArray('textoUrlArray',2)"/>                   
+            </td>
+        </tr>
+        <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray3"  onchange="registraArray('urlArray',3)"/>                   
+            </td>
+            <td>
+            	Table - Texto: <input type="text" size="50" id="textoUrlArray3" onchange="registraArray('textoUrlArray',3)"/>                   
+            </td>
+        </tr>
+        <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray4"  onchange="registraArray('urlArray',4)"/>                   
+            </td>
+            <td>
+            	Table - Texto: <input type="text" size="50" id="textoUrlArray4" onchange="registraArray('textoUrlArray',4)"/>                   
             </td>
         </tr>
         <tr>       
