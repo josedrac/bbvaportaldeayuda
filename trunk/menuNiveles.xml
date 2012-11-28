@@ -190,9 +190,9 @@
 		function insertHTML()
 		{
 			html += '<header>' + titulo + '</header>';
-			html += '<li id=\"botonera\">';
+			html += '<ul>';
 			insertarEnlace();
-			html += '</li>';
+			html += '</ul>';
 		}
 		
 		function insertarEnlace()
