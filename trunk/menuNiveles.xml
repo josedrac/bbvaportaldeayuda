@@ -188,21 +188,22 @@
 			font-size: 11px;				
 		}
   	</style>
+  	
 	<table width="100%" border="0" id="tablaconfig">  
 		<tr>       
         	<td>
-            	Table - Url: <input type="text" size="50" value="prefs.getArray("urlArray")[0]" id="urlArray0"  onchange="registraArray('urlArray',0)"/>                   
+            	Table - Url: <input type="text" size="50" id="urlArray0"  onchange="registraArray('urlArray',0)"/>                   
             </td>
             <td>
-            	Table - Img: <input type="text" size="50" id="textoUrlArray0" onchange="registraArray('textoUrlArray',0)"/>                   
-            </td>
+            	Table - Texto: <input type="text" size="50" id="textoUrlArray0" onchange="registraArray('textoUrlArray',0)"/>                   
+            </td
         </tr>
         <tr>       
         	<td>
             	Table - Url: <input type="text" size="50" id="urlArray1"  onchange="registraArray('urlArray',1)"/>                   
             </td>
             <td>
-            	Table - Img: <input type="text" size="50" id="textoUrlArray1" onchange="registraArray('textoUrlArray',1)"/>                   
+            	Table - Texto: <input type="text" size="50" id="textoUrlArray1" onchange="registraArray('textoUrlArray',1)"/>                   
             </td>
         </tr>
         <tr>       
@@ -214,7 +215,19 @@
 			
     <script type="text/javascript">           
     	// Get userprefs
-    	var prefs = new gadgets.Prefs();           
+    	var prefs = new gadgets.Prefs();    
+    	
+    	var arrayUrl = prefs.getArray('urlArray');
+    	var arrayTxt = prefs.getArray('textoUrlArray');
+			
+		for (i = 0;i < arrayUrl.length;i++){
+			document.getElementById('urlArray' + i).value = arrayUrl[i];
+		}   
+		
+		for (i = 0;i < textoUrlArray.length;i++){
+			document.getElementById('textoUrlArray' + i).value = textoUrlArray[i];
+		}   
+		 	       
         function registraArray(variable,pos)
         {	
             var elementos = prefs.getArray(variable);
