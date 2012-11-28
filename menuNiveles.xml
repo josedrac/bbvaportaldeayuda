@@ -55,7 +55,7 @@
 		}
 		#superior {
 			border-left: 1px solid  #DDE3EA;
-			border-top: 1px solid  #DDE3EA;
+			border-bottom: 1px solid  #DDE3EA;
 			border-bottom-left-radius: 5px;
 		}
 		ul{
