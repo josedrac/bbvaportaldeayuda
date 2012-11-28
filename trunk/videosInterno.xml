@@ -461,7 +461,7 @@
     				    }*/
                         html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
 						for(var j=0;j<pagTotales;j++){
-					      html += '<div id="paginas" class="checkpage"><a href="javascript:anterior(\''+ j +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png"/></a></div>';
+					      html += '<div id="paginas" class="checkpage"><a href="javascript:changePage(\''+ j +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png"/></a></div>';
 						}
                         html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
                         html += '</div>';
@@ -520,7 +520,13 @@
             document.getElementById(bloque).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
     	}	
-	
+	    function changePage(num){
+		    var bloque = "pagina"+num;
+			var numInt = parseInt(num)-1;
+			var bloque_anterior = "pagina"+ numInt;
+		    document.getElementById(bloque).style.display='none';
+            document.getElementById(bloque_anterior).style.display='block';
+		}
 
   </script>
     ]]>
