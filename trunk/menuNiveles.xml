@@ -58,7 +58,7 @@
 			border-bottom: 1px solid  #DDE3EA;
 			border-bottom-left-radius: 5px;
 			position: relative;
-			bottom: 1px;
+			bottom: -2px;
 		}
 		ul{
 			padding-left: 19px;
