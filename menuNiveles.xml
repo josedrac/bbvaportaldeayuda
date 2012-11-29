@@ -41,15 +41,15 @@
 			border-bottom: 1px solid  #DDE3EA;
 			border-top: 1px solid  #DDE3EA;
 			border-right: 1px solid  #DDE3EA;
-			border-bottom-right-radius: 5px;
-			border-top-right-radius: 5px;
+			border-bottom-right-radius: 8px;
+			border-top-right-radius: 8px;
 			font: 14px BBVA Web Light bold;
 			color: #003F8C;
-			padding-left: 23px;
+			padding-left: 22px;
 			padding-top: 10px;
 			padding-right: 45px;
 			padding-bottom: 29px;
-			margin-left: 4px;
+			margin-left: 5px;
 			position: relative;
 			top: 7px;
 			width: 225px;
@@ -57,26 +57,25 @@
 		#superior {
 			border-left: 1px solid  #DDE3EA;
 			border-bottom: 1px solid  #DDE3EA;
-			border-bottom-left-radius: 5px;
+			border-bottom-left-radius: 8px;
 			position: relative;
 			bottom: -5px;
 			padding-bottom: 3px;
 		}
 		ul{
 			padding-left: 20px;
-			padding-right: 0px;
 			margin: 0;
 			margin-right: 5px;
 			border-left: 1px solid  #DDE3EA;
 			border-top: 1px solid  #DDE3EA;
-			border-top-left-radius: 5px;
+			border-top-left-radius: 8px;
 			top: 6px;
 			position: relative;
 		}
 		ul li{
 			list-style: none;
 			border-bottom: 1px solid #DDE3EA;
-			padding-bottom: 10px;
+			padding-bottom: 11px;
 			padding-top: 9px;
 		}
 		ul li img {
@@ -96,7 +95,7 @@
 			padding-top: 14px;
 		}     
 	</style>
-	<span id="superior">&nbsp;</span>
+	<div id="superior">&nbsp;</div>
 	<div id="content">
 	</div>	
 
