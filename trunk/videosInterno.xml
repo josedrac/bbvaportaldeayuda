@@ -506,8 +506,7 @@
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';
 			
-			document.getElementById('pagination'+numInt).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
-		    document.getElementById('pagination'+num).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+		
         }
 
     	function anterior(num)
@@ -525,8 +524,7 @@
             document.getElementById(bloque_actual).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
 			
-			document.getElementById('pagination'+numInt).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
-		    document.getElementById('pagination'+numInt2).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+			
         }
 
     	function anteriorUltima(num,ant)
@@ -537,8 +535,7 @@
             document.getElementById(bloque).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
 			
-			document.getElementById('pagination'+num).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
-		    document.getElementById('pagination'+numInt2).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+		
 			
     	}	
 	    function changePage(num,pag){
