@@ -548,6 +548,8 @@
             document.getElementById(bloque_anterior).style.display='block';
 		}
 		function changeImage(pagina,old){
+		alert("pagina "+pagina);
+		alert("pagina "+old);
 		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}
