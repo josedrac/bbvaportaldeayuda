@@ -355,6 +355,7 @@
             padding-left:10px;
 			color:#0078D2;
 			width:64px;
+			float:right;
 			
         }
 	p.text {	 
