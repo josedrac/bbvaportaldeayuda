@@ -118,6 +118,10 @@
 			position: relative;
 			overflow: visible;
 		}
+		
+		#video-container:hover{
+			background: #004C99;
+		}
 	</style>
     
 	
