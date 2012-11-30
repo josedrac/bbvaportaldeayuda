@@ -240,15 +240,15 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select * where B like 'Básico'";
+				//var querytosend = "select * where B like 'Básico'";
 				
-			    /*if(etiquetasnivel[1] == 'basico'){
+			    if(etiquetasnivel.indexOf('basico')!=-1){
 				var querytosend = "select * where B like 'Básico'";
-				}else if (etiquetasnivel[1] == 'medio'){
+				}else if (etiquetasnivel.indexOf('medio')!=-1){
 				var querytosend = "select * where B like 'Medio'";
-				}else if(etiquetasnivel[1] == 'avanzado'){
+				}else{
 				var querytosend = "select * where B like 'Avanzado'";
-				}*/
+				}
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
