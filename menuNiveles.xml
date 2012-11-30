@@ -13,6 +13,9 @@
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	<style type="text/css">
+	body{
+	padding-top:4px;
+	}
 	  	/* @group fonts */
 		@font-face {
 			font-family: 'BBVA Web Light';
