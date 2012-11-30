@@ -211,7 +211,7 @@
 	
 	</style>
 	
-<div id="nivel">Básico</div>
+<div id="nivel"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitlenivel" />
 <div id="etiquetas"></div>
 	
@@ -219,9 +219,16 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	 var etiquetasnivel = gadgets.util.getUrlParameters()["parent"].split("=");
-	 
-
+	 var etiquetasnivel = gadgets.util.getUrlParameters()["parent"];
+	 if (etiquetasnivel.indexOf('basico')!=-1){
+	 document.getElementById('nivel').innerHTML = "Básico";
+	 }
+     else if (etiquetasnivel.indexOf('medio')!=-1){
+	 document.getElementById('nivel').innerHTML = "Medio";
+	 }
+	 else{
+	 document.getElementById('nivel').innerHTML = "Avanzado";
+	 }
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
