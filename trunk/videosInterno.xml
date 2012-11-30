@@ -356,7 +356,7 @@
             padding-left:10px;
 			color:#0078D2;
 			width:64px;
-			float:right;
+			
 			
         }
 	p.text {	 
@@ -477,8 +477,9 @@
                     {    			
 				        //console.debug('ANTERIOR>');
 				        pagActual--;
+						html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
 						html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
-				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
+				        
 						html += '</div>';
 				    }			
                 }	   
