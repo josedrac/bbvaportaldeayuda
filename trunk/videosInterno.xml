@@ -541,8 +541,8 @@
 		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}
 		function changeImage2(pagina,old){
-		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
-		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+		    document.getElementById('pagination2'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
+		    document.getElementById('pagination2'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}
 
   </script>
