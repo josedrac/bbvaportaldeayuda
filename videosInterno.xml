@@ -536,6 +536,10 @@
             var bloque_anterior = "pagina"+ numInt;
             document.getElementById(bloque).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
+			
+			document.getElementById('pagination'+num).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
+		    document.getElementById('pagination'+numInt2).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+			
     	}	
 	    function changePage(num,pag){
 		
