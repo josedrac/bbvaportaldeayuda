@@ -119,9 +119,10 @@
 			overflow: visible;
 		}
 		
-		button:hover{
+		button:hover {
 			background: #004C99;
 		}
+		
 	</style>
     
 	
