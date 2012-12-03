@@ -478,9 +478,7 @@
                         html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
 					     
 					    pagActual++;
-                    }
-        			else if(i==filas-1)
-                    {   			
+                    }else if(i==filas-1){   			
 				        //console.debug('ANTERIOR>');
 						var pagActualOld = pagActual; 
 				        pagActual--;
@@ -495,8 +493,7 @@
 						html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
 				        
 						html += '</div>';
-				    }	
-					else if((i!=3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
+				    }else if((i!=3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
 					   
 						var pagActualParaMostrar = pagActual+1;
                         var pagSiguiente = pagActualParaMostrar+1;
@@ -521,7 +518,7 @@
 				
 				document.getElementById('listportales').innerHTML += html;
 				
-			}
+		}
 		 function continuacion(num)
         {           
             var bloque = "pagina"+num;
