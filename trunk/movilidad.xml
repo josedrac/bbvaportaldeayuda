@@ -258,7 +258,7 @@ margin-left:10px;
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,max(B),max(C) group by A";
+				var querytosend = "select A,max(B),max(C),D group by A";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -271,11 +271,11 @@ margin-left:10px;
 				
 				
 				for(var i=0;i<filas;i++){
-				   // alert(data.getValue(i,0));
-				   if(data.getValue(i,0) == 'País'){
-				   document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
+				   // alert(data.getValue(i,));
+				   if(data.getValue(i,1) == 'País'){
+				   document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }else{
-				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
+				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }
 				}
 			}
