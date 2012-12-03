@@ -418,8 +418,8 @@
 				var str = 'https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+subject;
 				//window.parent.location.href = str;
 				
-				window.open(str,'_parent','send mail');
-				window.parent.location.href = aux;
+				window.open(str,'_blank','send mail');
+				//window.parent.location.href = aux;
 				//window.parent.location.href = aux;
 				//window.parent.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
 				//window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
