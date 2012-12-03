@@ -498,7 +498,7 @@
 				        
 						html += '</div>';
 				    }	
-					else if((i!=3*pagActual-1) && (i!=filas-1) && (i%2==0)){
+					else if((i!=3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
 						var pagActualParaMostrar = pagActual+1;
                         var pagSiguiente = pagActualParaMostrar+1;
 						for(var j=1;j<=pagTotales;j++){
