@@ -283,8 +283,9 @@ margin-left:10px;
 	 function devicesCountry(pais){
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
-	   var queryDC = new google.visualization.Query(urlTable, opts);	
-	   var queryDCtosend = "select A,max(B),C,D where B like '"+pais+"' group by A,C,D";
+	   var queryDC = new google.visualization.Query(urlTable, opts);
+	   alert(pais);	   
+	   var queryDCtosend = "select *  where B like '"+pais+"' group by A";
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
 	   
