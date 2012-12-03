@@ -475,7 +475,7 @@
 					     
 					    pagActual++;
 						
-                    }else if((i==3*pagActual-1) && (i==filas-1) && (pagActual%2==0)){
+                    }else if((i==3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
 					   alert('entro')
 						//var pagActualParaMostrar = pagActual+1;
                         //var pagSiguiente = pagActualParaMostrar+1;
