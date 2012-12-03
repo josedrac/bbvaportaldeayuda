@@ -258,7 +258,7 @@ margin-left:10px;
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,B,max(C),max(D) group by A,B";
+				var querytosend = "select max(A),B,max(C),max(D) group by B";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -284,7 +284,7 @@ margin-left:10px;
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);	
-	   var queryDCtosend = "select max(A),B,C,D where B like '"+pais+"' group by B,C,D";
+	   var queryDCtosend = "select A,B,C,D where B like '"+pais+"' group by A,B,C,D";
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
 	   
