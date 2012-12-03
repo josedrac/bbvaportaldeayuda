@@ -503,7 +503,7 @@
 					      html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActualOld +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActualOld +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
 							}
 						}
-						html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
+						html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualOld +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
 				        
 						html += '</div>';
 						
