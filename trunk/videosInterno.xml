@@ -463,7 +463,7 @@
     				
                         html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
 						for(var j=1;j<=pagTotales;j++){
-						  if(j==1){
+						  if((j==1)&& (pagActualParaMostrar==1){
 						    html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
 
 						  }else if((j==1) && (j=pagActual)){
@@ -499,6 +499,7 @@
 						html += '</div>';
 				    }	
 					else if((i!=3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
+					   
 						var pagActualParaMostrar = pagActual+1;
                         var pagSiguiente = pagActualParaMostrar+1;
 						for(var j=1;j<=pagTotales;j++){
