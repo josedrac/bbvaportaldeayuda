@@ -301,7 +301,9 @@ margin-left:10px;
 	   for(var i=0;i<filas;i++){
 	   if(data.getValue(0,1) != 'País'){
 	   //html += dataDC.getValue(i,1)+"<br/>";
-	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+data.getValue((i-1),0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
+	   alert("eo "+data.getValue(i,0));
+	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+data.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
+		
 	   }
 	  }
 	   document.getElementById('dispositivos').innerHTML = html;
