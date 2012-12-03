@@ -366,6 +366,7 @@
 	 var urlTable = prefs.getString("_table_query_url");
 	 var emailTo = prefs.getString("emailTo");
 	 var dispositivo = gadgets.util.getUrlParameters()["parent"].split("=");
+	 var aux = gadgets.util.getUrlParameters()["parent"];
 	 
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -418,6 +419,7 @@
 				//window.parent.location.href = str;
 				
 				window.open(str,'_parent','send mail');
+				window.parent.location.href = aux;
 				//window.parent.location.href = aux;
 				//window.parent.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
 				//window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
