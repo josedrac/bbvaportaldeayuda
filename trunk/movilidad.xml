@@ -294,6 +294,8 @@ margin-left:10px;
 	 
 	   dataDC = response.getDataTable();
 	   var filas = dataDC.getNumberOfRows();
+	   alert(data.getValue(0,0));
+	   alert(filas);
 	   var html= "";
 	   
 	   for(var i=1;i<=filas;i++){
