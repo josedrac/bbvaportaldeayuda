@@ -297,7 +297,7 @@ margin-left:10px;
 	   alert(data.getValue(0,0));
 	   alert("filas "+filas);
 	   alert("filas1 "+data.getValue(0,0));
-	   alert("filas1 "+data.getValue(1,0));
+	   alert("filas2 "+data.getValue(1,0));
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
