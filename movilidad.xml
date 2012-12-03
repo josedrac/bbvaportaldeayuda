@@ -295,16 +295,16 @@ margin-left:10px;
 	 
 	   dataDC = response.getDataTable();
 	   var filas = dataDC.getNumberOfRows();
-	   alert(data.getValue(0,0));
 	   alert("filas "+filas);
-	   alert("filas1 "+data.getValue(0,0));
-	   alert("filas2 "+data.getValue(1,0));
+	   alert("filas0 "+data.getValue(0,0));
+	   alert("filas1 "+data.getValue(1,0));
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
 	   if(data.getValue(0,1) != 'País'){
 	   //html += dataDC.getValue(i,1)+"<br/>";
-	   alert("eo "+data.getValue(i,0));
+	    alert("i "+i);
+		alert("data.getValue(i,0) "+data.getValue(i,0));
 	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+data.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
 		
 	   }
