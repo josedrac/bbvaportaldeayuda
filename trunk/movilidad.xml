@@ -299,7 +299,7 @@ margin-left:10px;
 	   var html= "";
 	   
 	   for(var i=1;i<=filas;i++){
-	   if(data.getValue(i,1) != 'País'){
+	   if(data.getValue(0,1) != 'País'){
 	   //html += dataDC.getValue(i,1)+"<br/>";
 	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+data.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
 	   }
