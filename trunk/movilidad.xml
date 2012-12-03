@@ -285,7 +285,7 @@ margin-left:10px;
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);
 	   alert(pais);	   
-	   var queryDCtosend = "select A,B,C,D  where B like '"+pais+"' group by A,B,C,D";
+	   var queryDCtosend = "select A where B like '"+pais+"' ";
 	   alert("queryDCtosend "+queryDCtosend);
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
@@ -296,7 +296,7 @@ margin-left:10px;
 	 
 	   dataDC = response.getDataTable();
 	   var filas = dataDC.getNumberOfRows();
-	 
+	 alert(data.getValue(0,0));
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
