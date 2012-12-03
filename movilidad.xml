@@ -284,7 +284,7 @@ margin-left:10px;
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);	
-	   var queryDCtosend = "select max(A),B,C,D where A like '"+pais+"' group by B,C,D";
+	   var queryDCtosend = "select max(A),B,C,D where B like '"+pais+"' group by B,C,D";
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
 	   
