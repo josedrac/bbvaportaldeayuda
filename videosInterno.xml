@@ -452,12 +452,11 @@
 			   if(pagTotales>1)
                 {
 				var aux =3*pagActual-1; 
-				 alert(aux);
-				 alert(i);
+				
                     if ( (i==3*pagActual-1) )
                     {   
 					  
-    				  alert('entro');
+    				  
                         var pagActualParaMostrar = pagActual+1;
                         var pagSiguiente = pagActualParaMostrar+1;
     				
@@ -483,7 +482,7 @@
     				    pagActual++;
                     }
         			else if(i==filas-1)
-                    {   alert('entro1'); 			
+                    {   			
 				        //console.debug('ANTERIOR>');
 						var pagActualOld = pagActual; 
 				        pagActual--;
@@ -499,7 +498,7 @@
 				        
 						html += '</div>';
 				    }	
-					else if((i!=3*pagActual-1) && (i!=filas-1)){
+					else if((i!=3*pagActual-1) && (i!=filas-1) && (i==2){
 						for(var j=1;j<=pagTotales;j++){
 						  if(j==1){
 						    html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
