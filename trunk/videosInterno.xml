@@ -477,7 +477,7 @@
 					     
 					    pagActual++;
 						
-                    }else if((i!=3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
+                    }else if((i==3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
 					    
 						for(var j=1;j<=pagTotales;j++){
 						 if((j==pagActual)){
