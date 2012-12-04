@@ -399,7 +399,7 @@
             </tr>
 			<tr>       
                 <td>
-                    Link3 -Block3: <input type="text" size="100" id="link1Block3" value="__UP_link3Block3__"   onchange="registra('link3Block3')"/>                   
+                    Link3 -Block3: <input type="text" size="100" id="link3Block3" value="__UP_link3Block3__"   onchange="registra('link3Block3')"/>                   
                 </td>
             </tr>
 			<tr/><tr/>
