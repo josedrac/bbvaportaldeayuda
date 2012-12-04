@@ -17,7 +17,7 @@
 <UserPref name="link3Block1" display_name="Title of Link3 Block1" required="true" />
 <UserPref name="text4Block1" display_name="Text of Link4 Block1" required="true" />
 <UserPref name="link4Block1" display_name="Title of Link4 Block1" required="true" />
-
+<UserPref name="titleBlock4" display_name="Title of Block4" required="true" /> 
 
 <UserPref name="titleBlock2" display_name="Title of Block2" required="true" /> 
 <UserPref name="text1Block2" display_name="Text of Link1 Block2" required="true" /> 
@@ -39,7 +39,7 @@
 <UserPref name="text4Block3" display_name="Text of Link4 Block3" required="true" />
 <UserPref name="link4Block3" display_name="Title of Link4 Block3" required="true" />
 
-<UserPref name="titleBlock4" display_name="Title of Block4" required="true" /> 
+
 <UserPref name="text1Block4" display_name="Text of Link1 Block4" required="true" /> 
 <UserPref name="link1Block4" display_name="Title of Link1 Block4" required="true" />
 <UserPref name="text2Block4" display_name="Text of Link2 Block4" required="true" /> 
