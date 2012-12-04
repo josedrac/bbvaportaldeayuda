@@ -254,15 +254,18 @@
 	 
 	 
 	 document.getElementsByClassName("op3")[0].innerHTML += "<h2>LINKS DE INTERÉS</h2>";
-	 document.getElementsByClassName("op3")[0].innerHTML += "<ul><li><a href='"+link1Block3+"'>"+text1Block3+"</a></li>";
-	 document.getElementsByClassName("op3")[0].innerHTML += "<li><a href='"+link2Block3+"'>"+text2Block3+"</a></li>";
-	 document.getElementsByClassName("op3")[0].innerHTML += "<li><a href='"+link3Block3+"'>"+text3Block3+"</a></li></ul>";
+	 var html1="";
+	 html1 += "<ul><li><a href='"+link1Block3+"'>"+text1Block3+"</a></li>";
+	 html1 += "<li><a href='"+link2Block3+"'>"+text2Block3+"</a></li>";
+	 html1 += "<li><a href='"+link3Block3+"'>"+text3Block3+"</a></li></ul>";
+	 document.getElementsByClassName("op3")[0].innerHTML += html1;
 	
 	 document.getElementsByClassName("last op4")[0].innerHTML += "<h2>BBVA EN REDES SOCIALES</h2>";
-	 document.getElementsByClassName("last op4")[0].innerHTML += "<ul class='redes-sociales'>";
-	 document.getElementsByClassName("last op4")[0].innerHTML += "<li><a href='"+link1Block4+"'>"+text1Block4+"</a></li>";
-	 document.getElementsByClassName("last op4")[0].innerHTML += "<li><a href='"+link2Block4+"'>"+text2Block4+"</a></li>";
-	 document.getElementsByClassName("last op4")[0].innerHTML += "</ul>";
+	 var html2="";
+	 html2 += "<ul class='redes-sociales'>";
+	 html2 += "<li><a href='"+link1Block4+"'>"+text1Block4+"</a></li>";
+	 html2 += "<li><a href='"+link2Block4+"'>"+text2Block4+"</a></li></ul>";
+	 document.getElementsByClassName("last op4")[0].innerHTML += html2;
 	 
 	 
 	
