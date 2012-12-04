@@ -8,7 +8,7 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="titleBlock1" display_name="Title of Block1" required="true" /> 
+
 <UserPref name="text1Block1" display_name="Text of Link1 Block1" required="true" /> 
 <UserPref name="link1Block1" display_name="Title of Link1 Block1" required="true" />
 <UserPref name="text2Block1" display_name="Text of Link2 Block1" required="true" /> 
@@ -19,7 +19,7 @@
 <UserPref name="link4Block1" display_name="Title of Link4 Block1" required="true" />
 
 
-<UserPref name="titleBlock2" display_name="Title of Block2" required="true" /> 
+
 <UserPref name="text1Block2" display_name="Text of Link1 Block2" required="true" /> 
 <UserPref name="link1Block2" display_name="Title of Link1 Block2" required="true" />
 <UserPref name="text2Block2" display_name="Text of Link2 Block2" required="true" /> 
@@ -29,25 +29,21 @@
 <UserPref name="text4Block2" display_name="Text of Link4 Block2" required="true" />
 <UserPref name="link4Block2" display_name="Title of Link4 Block2" required="true" />
 
-<UserPref name="titleBlock3" display_name="Title of Block3" required="true" /> 
+
 <UserPref name="text1Block3" display_name="Text of Link1 Block3" required="true" /> 
 <UserPref name="link1Block3" display_name="Title of Link1 Block3" required="true" />
 <UserPref name="text2Block3" display_name="Text of Link2 Block3" required="true" /> 
 <UserPref name="link2Block3" display_name="Title of Link2 Block3" required="true" />
 <UserPref name="text3Block3" display_name="Text of Link3 Block3" required="true" />
 <UserPref name="link3Block3" display_name="Title of Link3 Block3" required="true" />
-<UserPref name="text4Block3" display_name="Text of Link4 Block3" required="true" />
-<UserPref name="link4Block3" display_name="Title of Link4 Block3" required="true" />
 
-<UserPref name="titleBlock4" display_name="Title of Block4" required="true" /> 
+
+
 <UserPref name="text1Block4" display_name="Text of Link1 Block4" required="true" /> 
 <UserPref name="link1Block4" display_name="Title of Link1 Block4" required="true" />
 <UserPref name="text2Block4" display_name="Text of Link2 Block4" required="true" /> 
 <UserPref name="link2Block4" display_name="Title of Link2 Block4" required="true" />
-<UserPref name="text3Block4" display_name="Text of Link3 Block4" required="true" />
-<UserPref name="link3Block4" display_name="Title of Link3 Block4" required="true" />
-<UserPref name="text4Block4" display_name="Text of Link4 Block4" required="true" />
-<UserPref name="link4Block4" display_name="Title of Link4 Block4" required="true" />
+
 
  <Content type="html">
     <![CDATA[
@@ -245,7 +241,7 @@
 	 
 	 
 	 
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<h2>"+titleBlock1+"</h2>";
+	 document.getElementsByClassName("first op1")[0].innerHTML += "<h2>CENTRO DE AYUDA</h2>";
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul class=''>";
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<li><a href='"+link1Block1+"'>"+text1Block1+"</a></li>";
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<li><a href='"+link2Block1+"'>"+text2Block1+"</a></li>";
@@ -253,7 +249,7 @@
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<li><a href='"+link4Block1+"'>"+text4Block1+"</a></li>";
 	 document.getElementsByClassName("first op1")[0].innerHTML += "</ul>";
 	 
-	 document.getElementsByClassName("op2")[0].innerHTML += "<h2>"+titleBlock2+"</h2>";
+	 document.getElementsByClassName("op2")[0].innerHTML += "<h2>INFORMACIÓN CORPORATIVA</h2>";
 	 document.getElementsByClassName("op2")[0].innerHTML += "<ul class=''>";
 	 document.getElementsByClassName("op2")[0].innerHTML += "<li><a href='"+link1Block2+"'>"+text1Block2+"</a></li>";
 	 document.getElementsByClassName("op2")[0].innerHTML += "<li><a href='"+link2Block2+"'>"+text2Block2+"</a></li>";
@@ -261,20 +257,19 @@
 	 document.getElementsByClassName("op2")[0].innerHTML += "<li><a href='"+link4Block2+"'>"+text4Block2+"</a></li>";
 	 document.getElementsByClassName("op2")[0].innerHTML += "</ul>";
 	 
-	 document.getElementsByClassName("op3")[0].innerHTML += "<h2>"+titleBlock3+"</h2>";
+	 document.getElementsByClassName("op3")[0].innerHTML += "<h2>LINKS DE INTERÉS</h2>";
 	 document.getElementsByClassName("op3")[0].innerHTML += "<ul class=''>";
 	 document.getElementsByClassName("op3")[0].innerHTML += "<li><a href='"+link1Block3+"'>"+text1Block3+"</a></li>";
 	 document.getElementsByClassName("op3")[0].innerHTML += "<li><a href='"+link2Block3+"'>"+text2Block3+"</a></li>";
 	 document.getElementsByClassName("op3")[0].innerHTML += "<li><a href='"+link3Block3+"'>"+text3Block3+"</a></li>";
-	 document.getElementsByClassName("op3")[0].innerHTML += "<li><a href='"+link4Block3+"'>"+text4Block3+"</a></li>";
+	 
 	 document.getElementsByClassName("op3")[0].innerHTML += "</ul>";
 	 
-	 document.getElementsByClassName("last op4")[0].innerHTML += "<h2>"+titleBlock4+"</h2>";
+	 document.getElementsByClassName("last op4")[0].innerHTML += "<h2>BBVA EN REDES SOCIALES</h2>";
 	 document.getElementsByClassName("last op4")[0].innerHTML += "<ul class='redes-sociales'>";
 	 document.getElementsByClassName("last op4")[0].innerHTML += "<li><a href='"+link1Block4+"'>"+text1Block4+"</a></li>";
 	 document.getElementsByClassName("last op4")[0].innerHTML += "<li><a href='"+link2Block4+"'>"+text2Block4+"</a></li>";
-	 document.getElementsByClassName("last op4")[0].innerHTML += "<li><a href='"+link3Block4+"'>"+text3Block4+"</a></li>";
-	 document.getElementsByClassName("last op4")[0].innerHTML += "<li><a href='"+link4Block4+"'>"+text4Block4+"</a></li>";
+	 
 	 document.getElementsByClassName("last op4")[0].innerHTML += "</ul>";
 	 
 	 
@@ -295,11 +290,7 @@
 			}
   </style>
   <table width="100%" border="0" id="tablaconfig">  
-			<tr>       
-                <td>
-                    Title -Block1: <input type="text" size="100" id="titleBlock1" value="__UP_titleBlock1__"   onchange="registra('titleBlock1')"/>                   
-                </td>
-            </tr>
+		
 			<tr>       
                 <td>
                     Text1 -Block1: <input type="text" size="100" id="text1Block1" value="__UP_text1Block1__"   onchange="registra('text1Block1')"/>                   
@@ -341,11 +332,7 @@
                 </td>
             </tr><tr/><tr/>
 			
-			<tr>       
-                <td>
-                    Title -Block2: <input type="text" size="100" id="titleBlock2" value="__UP_titleBlock2__"   onchange="registra('titleBlock2')"/>                   
-                </td>
-            </tr>
+			
 			<tr>       
                 <td>
                     Text1 -Block2: <input type="text" size="100" id="text1Block2" value="__UP_text1Block2__"   onchange="registra('text1Block2')"/>                   
@@ -387,11 +374,7 @@
                 </td>
             </tr><tr/><tr/>
 			
-			<tr>       
-                <td>
-                    Title -Block3: <input type="text" size="100" id="titleBlock3" value="__UP_titleBlock3__"   onchange="registra('titleBlock3')"/>                   
-                </td>
-            </tr>
+		
 			<tr>       
                 <td>
                     Text1 -Block3: <input type="text" size="100" id="text1Block3" value="__UP_text1Block3__"   onchange="registra('text1Block3')"/>                   
@@ -433,11 +416,7 @@
                 </td>
             </tr><tr/><tr/>
 			
-			<tr>       
-                <td>
-                    Title -Block4: <input type="text" size="100" id="titleBlock4" value="__UP_titleBlock4__"   onchange="registra('titleBlock4')"/>                   
-                </td>
-            </tr>
+			
 			<tr>       
                 <td>
                     Text1 -Block4: <input type="text" size="100" id="text1Block4" value="__UP_text1Block4__"   onchange="registra('text1Block4')"/>                   
