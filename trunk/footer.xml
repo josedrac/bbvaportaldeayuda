@@ -189,6 +189,20 @@
 		</ul>	
 	</aside>
 </div>
+<footer class="footer-bottom">
+		<ul>
+			<li>
+				<a href="#" title="Seguridad">Seguridad</a>
+			</li>
+			<li>
+				<a href="#" title="Aviso legal">Aviso Legal</a>
+			</li>
+			<li>
+				<a href="#" title="Tarifas y Comisiones"><span>Tarifas y Comisiones</span></a>
+			</li>
+		</ul>
+		<span class="copyright">Banco Bilbao Vizcaya Argentaria S.A.</span>
+</footer>
 	
    <script type="text/javascript">
   
