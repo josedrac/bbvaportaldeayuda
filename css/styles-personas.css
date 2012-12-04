@@ -1348,6 +1348,11 @@ aside.footer {
 			border-right: 1px solid #DCDCDC;
 		}
 		
+		aside.footer ul li ul li {
+
+			border-right: none;
+		}
+		
 		aside.footer ul li.op1,		
 		aside.footer ul li.op2,
 		aside.footer ul li.op3,
