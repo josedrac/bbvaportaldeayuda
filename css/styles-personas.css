@@ -1352,6 +1352,10 @@ aside.footer {
 
 			border-right: none;
 		}
+		aside.footer ul li ul li a{
+
+			border-right: none;
+		}
 		
 		aside.footer ul li.op1,		
 		aside.footer ul li.op2,
