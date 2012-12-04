@@ -194,7 +194,7 @@
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
-	 var titleBlock1 = prefs.getString("titleBlock1");
+	 
 	 var text1Block1 = prefs.getString("text1Block1");
 	 var link1Block1 = prefs.getString("link1Block1");
 	 var text2Block1 = prefs.getString("text2Block1");
@@ -205,7 +205,7 @@
 	 var link4Block1 = prefs.getString("link4Block1");
 	 
 	 
-	 var titleBlock2 = prefs.getString("titleBlock2");
+	 
 	 var text1Block2 = prefs.getString("text1Block2");
 	 var link1Block2 = prefs.getString("link1Block2");
 	 var text2Block2 = prefs.getString("text2Block2");
@@ -216,25 +216,21 @@
 	 var link4Block2 = prefs.getString("link4Block2");
 	 
 	 
-	 var titleBlock3 = prefs.getString("titleBlock3");
+	 
 	 var text1Block3 = prefs.getString("text1Block3");
 	 var link1Block3 = prefs.getString("link1Block3");
 	 var text2Block3 = prefs.getString("text2Block3");
 	 var link2Block3 = prefs.getString("link2Block3");
 	 var text3Block3 = prefs.getString("text3Block3");
 	 var link3Block3 = prefs.getString("link3Block3");
-	 var text4Block3 = prefs.getString("text4Block3");
-	 var link4Block3 = prefs.getString("link4Block3");
 	 
-	 var titleBlock4 = prefs.getString("titleBlock4");
+	 
+	
 	 var text1Block4 = prefs.getString("text1Block4");
 	 var link1Block4 = prefs.getString("link1Block4");
 	 var text2Block4 = prefs.getString("text2Block4");
 	 var link2Block4 = prefs.getString("link2Block4");
-	 var text3Block4 = prefs.getString("text3Block4");
-	 var link3Block4 = prefs.getString("link3Block4");
-	 var text4Block4 = prefs.getString("text4Block4");
-	 var link4Block4 = prefs.getString("link4Block4");
+	 
 	 
 	
 	 
