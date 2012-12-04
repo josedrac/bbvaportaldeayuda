@@ -406,16 +406,7 @@
                     Link3 -Block3: <input type="text" size="100" id="link1Block3" value="__UP_link3Block3__"   onchange="registra('link3Block3')"/>                   
                 </td>
             </tr>
-			<tr>       
-                <td>
-                    Text4 -Block3: <input type="text" size="100" id="text4Block3" value="__UP_text4Block3__"   onchange="registra('text4Block3')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Link4 -Block3: <input type="text" size="100" id="link4Block3" value="__UP_link4Block3__"   onchange="registra('link4Block3')"/>                   
-                </td>
-            </tr><tr/><tr/>
+			<tr/><tr/>
 			
 			
 			<tr>       
@@ -438,26 +429,7 @@
                     Link2 -Block4: <input type="text" size="100" id="link2Block4" value="__UP_link2Block4__"   onchange="registra('link2Block4')"/>                   
                 </td>
             </tr>
-			<tr>       
-                <td>
-                    Text3 -Block4: <input type="text" size="100" id="text3Block4" value="__UP_text3Block4__"   onchange="registra('text3Block4')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Link3 -Block4: <input type="text" size="100" id="link1Block4" value="__UP_link3Block4__"   onchange="registra('link3Block4')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Text4 -Block4: <input type="text" size="100" id="text4Block4" value="__UP_text4Block4__"   onchange="registra('text4Block4')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Link4 -Block4: <input type="text" size="100" id="link4Block4" value="__UP_link4Block4__"   onchange="registra('link4Block4')"/>                   
-                </td>
-            </tr><tr/><tr/>
+			<tr/><tr/>
 			
 			
 			
