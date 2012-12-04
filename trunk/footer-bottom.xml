@@ -162,9 +162,9 @@
 	 	 
 	 
 	 var html="";
-	 html += "<ul><li><a href='"+linkSeguridad+"'>"+titleSeguridad+"</a></li>";
-	 html += "<li><a href='"+linkAviso+"'>"+titleAviso+"</a></li>";
-	 html += "<li><a href='"+linkTarifas+"'>"+titleTarifas+"</a></li></ul>";
+	 html += "<ul><li><a href='"+linkSeguridad+"'><span>"+titleSeguridad+"</span></a></li>";
+	 html += "<li><a href='"+linkAviso+"'><span>"+titleAviso+"</span></a></li>";
+	 html += "<li><a href='"+linkTarifas+"'><span>"+titleTarifas+"</span></a></li></ul>";
 	 document.getElementsByClassName("footer-bottom")[0].innerHTML += html;
 	 
 
