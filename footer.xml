@@ -192,6 +192,7 @@
 </div>
 	
    <script type="text/javascript">
+   alert("version 1");
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 
