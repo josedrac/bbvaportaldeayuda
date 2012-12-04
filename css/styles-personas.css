@@ -1352,11 +1352,18 @@ aside.footer {
 
 			border-right: none;
 		}
-		aside.footer ul li ul li a{
+		aside.footer ul li ul li.op2{
 
 			border-right: none;
 		}
-		
+		aside.footer ul li ul li.op3{
+
+			border-right: none;
+		}
+		aside.footer ul li ul li.op4{
+
+			border-right: none;
+		}
 		aside.footer ul li.op1,		
 		aside.footer ul li.op2,
 		aside.footer ul li.op3,
