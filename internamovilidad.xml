@@ -387,7 +387,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,B,C,D,E,F,G where A like '%"+dispositivo[1]+"%' group by A,B,C,D,E,F,G";
+				var querytosend = "select * where A like '%"+dispositivo[1]+"%' ";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
