@@ -192,7 +192,7 @@
 </div>
 	
    <script type="text/javascript">
-   alert("version 1");
+   alert("version 2");
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 
@@ -245,11 +245,12 @@
 	 
 	 
 	 document.getElementsByClassName("op2")[0].innerHTML += "<h2>INFORMACIÓN CORPORATIVA</h2>";
-	 
-	 document.getElementsByClassName("op2")[0].innerHTML += "<ul><li><a href='"+link1Block2+"'>"+text1Block2+"</a></li>";
-	 document.getElementsByClassName("op2")[0].innerHTML += "<li><a href='"+link2Block2+"'>"+text2Block2+"</a></li>";
-	 document.getElementsByClassName("op2")[0].innerHTML += "<li><a href='"+link3Block2+"'>"+text3Block2+"</a></li>";
-	 document.getElementsByClassName("op2")[0].innerHTML += "<li><a href='"+link4Block2+"'>"+text4Block2+"</a></li></ul>";
+	 var html="";
+	 html += "<ul><li><a href='"+link1Block2+"'>"+text1Block2+"</a></li>";
+	 html += "<li><a href='"+link2Block2+"'>"+text2Block2+"</a></li>";
+	 html += "<li><a href='"+link3Block2+"'>"+text3Block2+"</a></li>";
+	 html += "<li><a href='"+link4Block2+"'>"+text4Block2+"</a></li></ul>";
+	 document.getElementsByClassName("op2")[0].innerHTML += html;
 	 
 	 
 	 document.getElementsByClassName("op3")[0].innerHTML += "<h2>LINKS DE INTERÉS</h2>";
