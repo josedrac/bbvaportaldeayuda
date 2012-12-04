@@ -241,7 +241,7 @@
 	 
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<h2>CENTRO DE AYUDA</h2>";
 	 
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul><li><a href='"+link1Block1+"'>"+text1Block1+"</a></li><li><a href='"+link2Block1+"'>"+text2Block1+"</a></li><li><a href='"+link4Block1+"'>"+text4Block1+"</a></li></ul>";
+	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul><li><a href='"+link1Block1+"'>"+text1Block1+"</a></li><li><a href='"+link2Block1+"'>"+text2Block1+"</a></li><li><a href='"+link3Block1+"'>"+text3Block1+"</a></li><li><a href='"+link4Block1+"'>"+text4Block1+"</a></li></ul>";
 	 
 	 
 	 document.getElementsByClassName("op2")[0].innerHTML += "<h2>INFORMACIÓN CORPORATIVA</h2>";
@@ -313,7 +313,7 @@
             </tr>
 			<tr>       
                 <td>
-                    Link3 -Block1: <input type="text" size="100" id="link1Block1" value="__UP_link3Block1__"   onchange="registra('link3Block1')"/>                   
+                    Link3 -Block1: <input type="text" size="100" id="link3Block1" value="__UP_link3Block1__"   onchange="registra('link3Block1')"/>                   
                 </td>
             </tr>
 			<tr>       
