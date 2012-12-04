@@ -481,7 +481,7 @@
 					    pagActual++;
 						
                     }else if((i==3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
-					    
+					    alert("pagActual "+pagActual);
 						for(var j=1;j<=pagTotales;j++){
 						 if((j==pagActual)){
 						  	html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActualParaMostrar +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
