@@ -291,7 +291,7 @@ padding-left:10px;
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,max(B),max(C) group by A";
+				var querytosend = "select max(A),B,max(C),max(D) group by B";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -305,10 +305,10 @@ padding-left:10px;
 				
 				for(var i=0;i<filas;i++){
 				   // alert(data.getValue(i,0));
-				   if(data.getValue(i,0) == 'País'){
-				   document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
+				   if(data.getValue(i,1) == 'País'){
+				   document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }else{
-				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,0)+"'>"+data.getValue(i,0)+"</option>";
+				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }
 				}
 			}
@@ -317,7 +317,7 @@ padding-left:10px;
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);	
-	   var queryDCtosend = "select max(A),B,C where A like '"+pais+"' group by B,C";
+	   var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"' group by A,C,D,E";
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
 	   
@@ -330,9 +330,9 @@ padding-left:10px;
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
-	   if(data.getValue(i,0) != 'País'){
-	   html +="<a href='"+dataDC.getValue(i,2)+"' target='_parent'>"+dataDC.getValue(i,1)+"</a><br/>";
-	   }
+	   //if(data.getValue(i,0) != 'País'){
+	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
+	   //}
 	  }
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
