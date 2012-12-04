@@ -487,7 +487,7 @@
             var prefs = new gadgets.Prefs();           
             function registra(variable)
             {	
-				
+				alert(variable);
                 prefs.set(variable,document.getElementById(variable).value);
 				
 			
