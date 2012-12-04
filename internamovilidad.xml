@@ -353,6 +353,11 @@
 	font-family:BBVA Office Book;
 	color:#0065B7;
 	}
+	.guias{
+	font-size:12px;
+	font-family:BBVA Office Book;
+	color:#0078D2;
+	}
 	</style>
 	
 <div id="listportales"></div>	
@@ -382,7 +387,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select * where A like '%"+dispositivo[1]+"%' ";
+				var querytosend = "select * where A like '%"+dispositivo[1]+"%' group by A,F,G";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -391,6 +396,7 @@
 		function handleQueryResponse(response) {
 		
 			   data = response.getDataTable();	
+			   var filas = data.getNumberOfRows();
 			   var html = "";
 			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,2)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
@@ -399,6 +405,12 @@
 			   html += "<div id='textVideo'>"+data.getValue(0,4)+"</div>";
 			   html += "<div id='urlVideo'>";
 			   html += "<embed src='"+data.getValue(0,3)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'</embed></div>";
+			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
+			   html += "<ul class='guias'>";
+			   for(var i=0; i<filas; i++){
+			   html +="<li><a href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"</a></li>";
+			   }
+			   html +="</ul>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
 			   
