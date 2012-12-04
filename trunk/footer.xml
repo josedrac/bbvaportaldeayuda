@@ -240,10 +240,7 @@
 	 
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<h2>CENTRO DE AYUDA</h2>";
 	 
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul><li><a href='"+link1Block1+"'>"+text1Block1+"</a></li>";
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<li><a href='"+link2Block1+"'>"+text2Block1+"</a></li>";
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<li><a href='"+link3Block1+"'>"+text3Block1+"</a></li>";
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<li><a href='"+link4Block1+"'>"+text4Block1+"</a></li></ul>";
+	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul><li><a href='"+link1Block1+"'>"+text1Block1+"</a></li><li><a href='"+link2Block1+"'>"+text2Block1+"</a></li><li><a href='"+link4Block1+"'>"+text4Block1+"</a></li></ul>";
 	 
 	 
 	 document.getElementsByClassName("op2")[0].innerHTML += "<h2>INFORMACIÓN CORPORATIVA</h2>";
