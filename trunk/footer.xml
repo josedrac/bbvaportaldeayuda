@@ -239,6 +239,8 @@
 	 var text4Block4 = prefs.getString("text4Block4");
 	 var link4Block4 = prefs.getString("link4Block4");
 	 
+	 alert("titleBlock4 "+titleBlock4);
+	 
 	 
 	 
 	 
