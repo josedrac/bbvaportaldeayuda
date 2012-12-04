@@ -165,7 +165,7 @@
 	 html += "<ul><li><a href='"+linkSeguridad+"'>"+titleSeguridad+"</a></li>";
 	 html += "<li><a href='"+linkAviso+"'>"+titleAviso+"</a></li>";
 	 html += "<li><a href='"+linkTarifas+"'>"+titleTarifas+"</a></li></ul>";
-	 document.getElementsByClassName("footer-bottom")[0].innerHTML = html;
+	 document.getElementsByClassName("footer-bottom")[0].innerHTML += html;
 	 
 
 	 
