@@ -41,8 +41,7 @@
 
 <UserPref name="text1Block4" display_name="Text of Link1 Block4" required="true" /> 
 <UserPref name="link1Block4" display_name="Title of Link1 Block4" required="true" />
-<UserPref name="text2Block4" display_name="Text of Link2 Block4" required="true" /> 
-<UserPref name="link2Block4" display_name="Title of Link2 Block4" required="true" />
+
 
 
  <Content type="html">
@@ -192,7 +191,7 @@
 </div>
 	
    <script type="text/javascript">
-   alert("version 2");
+  
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 
@@ -229,8 +228,7 @@
 	
 	 var text1Block4 = prefs.getString("text1Block4");
 	 var link1Block4 = prefs.getString("link1Block4");
-	 var text2Block4 = prefs.getString("text2Block4");
-	 var link2Block4 = prefs.getString("link2Block4");
+	 
 	 
 	 
 	
@@ -264,7 +262,7 @@
 	 var html2="";
 	 html2 += "<ul class='redes-sociales'>";
 	 html2 += "<li><a href='"+link1Block4+"'>"+text1Block4+"</a></li>";
-	 html2 += "<li><a href='"+link2Block4+"'>"+text2Block4+"</a></li></ul>";
+	// html2 += "<li><a href='"+link2Block4+"'>"+text2Block4+"</a></li></ul>";
 	 document.getElementsByClassName("last op4")[0].innerHTML += html2;
 	 
 	 
@@ -413,16 +411,7 @@
                     Link1 -Block4: <input type="text" size="100" id="link1Block4" value="__UP_link1Block4__"   onchange="registra('link1Block4')"/>                   
                 </td>
             </tr>
-			<tr>       
-                <td>
-                    Text2 -Block4: <input type="text" size="100" id="text2Block4" value="__UP_text2Block4__"   onchange="registra('text2Block4')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Link2 -Block4: <input type="text" size="100" id="link2Block4" value="__UP_link2Block4__"   onchange="registra('link2Block4')"/>                   
-                </td>
-            </tr>
+			
 			<tr/><tr/>
 			
 			
