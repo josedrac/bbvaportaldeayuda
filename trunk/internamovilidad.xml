@@ -365,13 +365,14 @@
 	color:#0078D2;
 	text-decoration:none;
 	}
-	</style>
 	.titleguia{
 	font-size:16px;
 	font-family:BBVA Office Book;
 	color:#00529B;
 	margin-bottom:15px;
 	}
+	</style>
+	
 	
 <div id="listportales"></div>	
 	
