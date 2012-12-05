@@ -357,6 +357,13 @@
 	font-size:12px;
 	font-family:BBVA Office Book;
 	color:#0078D2;
+	text-decoration:none;
+	}
+	.guias li a{
+	font-size:12px;
+	font-family:BBVA Office Book;
+	color:#0078D2;
+	text-decoration:none;
 	}
 	</style>
 	
