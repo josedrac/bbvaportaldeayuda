@@ -282,13 +282,13 @@ margin-bottom:15px;
 	 function handleQueryResponse(response){
 	 
 	   data = response.getDataTable();
-	   var filas = dataDC.getNumberOfRows();
+	   var filas = data.getNumberOfRows();
 	
 	   var html= "";
 	   html +="<span class="title">Trucos</span>";
 	   for(var i=0;i<filas;i++){
 			
-        html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+dataDC.getValue(i,0)+"</a><br/>";	
+        html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a><br/>";	
 	 
 	  }
 	   document.getElementById('trucos').innerHTML = html;
@@ -298,13 +298,13 @@ margin-bottom:15px;
 	 function handleQueryResponse1(response){
 	 
 	   data = response.getDataTable();
-	   var filas = dataDC.getNumberOfRows();
+	   var filas = data.getNumberOfRows();
 	
 	   var html= "";
 	   html +="<span class="title">Consejos</span>";
 	   for(var i=0;i<filas;i++){
 			
-	    html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+dataDC.getValue(i,0)+"</a><br/>";
+	    html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a><br/>";
 	
 	 
 	  }
