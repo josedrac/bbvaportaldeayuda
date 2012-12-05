@@ -243,6 +243,9 @@ font-family:BBVA Office Book;
 color:#00529B;
 margin-bottom:15px;
 }	
+.trucos li {
+color:#00529B;
+}
 .trucos li a{
 font-size:12px;
 font-family:BBVA Office Book;
