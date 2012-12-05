@@ -285,7 +285,7 @@ margin-bottom:15px;
 	   var filas = data.getNumberOfRows();
 	
 	   var html= "";
-	   html +="<span class="title">Trucos</span>";
+	   html +="<span class='title'>Trucos</span>";
 	   for(var i=0;i<filas;i++){
 			
         html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a><br/>";	
@@ -301,7 +301,7 @@ margin-bottom:15px;
 	   var filas = data.getNumberOfRows();
 	
 	   var html= "";
-	   html +="<span class="title">Consejos</span>";
+	   html +="<span class='title'>Consejos</span>";
 	   for(var i=0;i<filas;i++){
 			
 	    html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a><br/>";
