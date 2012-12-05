@@ -250,6 +250,12 @@ color:#00529B;
 text-decoration:none;
 
 }
+#trucos{
+margin-left:15px;
+}
+#consejos{
+margin-left:15px;
+}
 	</style>
 	
 <div id="trucos"></div>	
