@@ -255,14 +255,25 @@ text-decoration:none;
 }
 #trucos{
 margin-left:15px;
+float:left;
 }
 #consejos{
 margin-left:15px;
+float:left;
+}
+#content{
+float:left;
+width:650px;
+}
+#content img{
+float:left
+}
 }
 	</style>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/img_trucos.png" class="imgTrucos"/>	
+<div id="content">	
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/img_trucos.png" />	
 <div id="trucos"></div>	
-<div id="consejos"></div>
+<div id="consejos"></div></div>
 
    <script type="text/javascript">
 	 var gadgetHelper = null;
