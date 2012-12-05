@@ -269,8 +269,8 @@ margin-bottom:15px;
 	   var queryTrucos = new google.visualization.Query(urlTable, opts);
 	   var queryConsejos = new google.visualization.Query(urlTable, opts);
 	   
-	   var queryTrucostosend = "select max(A),C,G where C like 'truco' group by A,C,G";
-	   var queryConsejostosend = "select max(A),C,G where C like 'consejo' group by A,C,G";
+	   var queryTrucostosend = "select max(A),C,G where C like 'truco' group by C,G";
+	   var queryConsejostosend = "select max(A),C,G where C like 'consejo' group by C,G";
 	   
 	   queryTrucos.setQuery(queryTrucostosend);			  
 	   queryTrucos.send(handleQueryResponse);
