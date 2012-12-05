@@ -420,7 +420,7 @@
 			   html += "<div id='urlVideo'>";
 			   html += "<embed src='"+data.getValue(0,3)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'</embed></div>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-			   html +="<span class="titleguia">Índice de esta guía</span>";
+			   html +="<span class='titleguia'>Índice de esta guía</span>";
 			   html += "<ul class='guias'>";
 			   for(var i=0; i<filas; i++){
 			   html +="<li><a target='_parent' href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"</a></li>";
