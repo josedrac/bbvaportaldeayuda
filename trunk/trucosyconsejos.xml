@@ -254,11 +254,11 @@ text-decoration:none;
 
 }
 #trucos{
-margin-left:15px;
+margin-left:40px;
 float:left;
 }
 #consejos{
-margin-left:15px;
+margin-left:40px;
 float:left;
 }
 #content{
