@@ -238,12 +238,18 @@ text-decoration:none;
 margin-left:10px;
 }
 .title{
-
 font-size:16px;
 font-family:BBVA Office Book;
 color:#00529B;
 margin-bottom:15px;
 }	
+.trucos li a{
+font-size:12px;
+font-family:BBVA Office Book;
+color:#00529B;
+text-decoration:none;
+
+}
 	</style>
 	
 <div id="trucos"></div>	
@@ -286,12 +292,13 @@ margin-bottom:15px;
 	   var filas = data.getNumberOfRows();
 	
 	   var html= "";
-	   html +="<span class='title'>Trucos</span>";
+	   html +="<span class='title'>Trucos</span><ul class="trucos">";
 	   for(var i=0;i<filas;i++){
 			
-        html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a><br/>";	
+        html +="<li><a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a></li>";	
 	 
 	  }
+	   html="</ul>";
 	   document.getElementById('trucos').innerHTML = html;
 	   
 	 }
@@ -302,13 +309,14 @@ margin-bottom:15px;
 	   var filas = data.getNumberOfRows();
 	
 	   var html= "";
-	   html +="<span class='title'>Consejos</span>";
+	   html +="<span class='title'>Consejos</span><ul class="trucos">";
 	   for(var i=0;i<filas;i++){
 			
-	    html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a><br/>";
+	    html +="<a href='"+data.getValue(i,2)+"' target='_parent'>"+data.getValue(i,0)+"</a>";
 	
 	 
 	  }
+	   html="</ul>";
 	   document.getElementById('consejos').innerHTML = html;
 	   
 	 }
