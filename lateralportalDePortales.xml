@@ -146,7 +146,7 @@ background-repeat:no-repeat;
 	 var urlportalesbbva = prefs.getString("urlportalesbbva");
 	 
 	 document.getElementById('titulo').innerHTML = "<span class='title'>"+titleportalesbbva+"</span>";
-	 document.getElementById('portalesbbva').innerHTML = "<span class='urlportales'>Encuentra otros sites de BBVA en el <a target="_parent" href='"+urlportalesbbva+"'>Portal de portales</a></span>" ;
+	 document.getElementById('portalesbbva').innerHTML = "<span class='urlportales'>Encuentra otros sites de BBVA en el <a target='_parent' href='"+urlportalesbbva+"'>Portal de portales</a></span>" ;
 	 
 	 
    </script>
