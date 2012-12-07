@@ -141,7 +141,7 @@ text-decoration:underline;
 
 #titulo{
 color:#333333;
-
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
 font: 16px BBVA Web Book;
 padding-left:30px;
 padding-top:15px;
