@@ -123,6 +123,8 @@
 #content{
 background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lateralportaldeportales.png');
 background-repeat:no-repeat;
+width:300px;
+height:400px;
 }	
 .urlportales{
 
