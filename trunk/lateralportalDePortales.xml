@@ -128,7 +128,7 @@ height:116px;
 font-family: BBVA Web Book;
 }	
 
-#portalesbbva{
+#portalesbbva span{
 color:#333333;
 font-size:12px;
 font-family: BBVA Web Book;
@@ -141,7 +141,7 @@ text-decoration:underline;
 
 }
 
-#titulo{
+#titulo span{
 color:#333333;
 font-size: 16px;
 font-family: BBVA Web Book;
