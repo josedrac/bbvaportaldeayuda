@@ -142,8 +142,8 @@ font-family: BBVA Office Book;
 
 #titulo{
 color:#333333;
-font-size:16px;
-font-family: BBVA Office Book;
+
+font: 16px BBVA Web Book;
 padding-left:30px;
 padding-top:15px;
 }
