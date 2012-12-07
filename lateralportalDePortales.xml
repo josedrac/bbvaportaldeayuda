@@ -124,13 +124,25 @@
 background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lateralportaldeportales.png');
 background-repeat:no-repeat;
 width:300px;
-height:400px;
+height:116px;
 }	
+
 .urlportales{
-
+color:#333333;
+font-size:12px;
+font-family: BBVA Office Book;
 }
-.title{
+.urlportales a{
+color:#0065B7;
+font-size:12px;
+text-decoration:underline;
+font-family: BBVA Office Book;
+}
 
+.title{
+color:#333333;
+font-size:16px;
+font-family: BBVA Office Book;
 }
 	
 	</style>
