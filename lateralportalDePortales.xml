@@ -134,9 +134,9 @@ padding:30px;
 }
 #portalesbbva a{
 color:#0065B7;
-font-size:12px;
+font:12px BBVA Web Book;
 text-decoration:underline;
-font-family: BBVA Office Book;
+
 }
 
 #titulo{
