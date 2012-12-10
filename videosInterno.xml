@@ -482,11 +482,7 @@
 					}
 					
 					for(var j=1;j<=pagTotales;j++){
-					  if((j==pagActual) && (j==1)){
-					    html += '<div id="paginas1" class="checkpage1"><a href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
-
-					   }
-					else   if(j==pagActual){
+					  if(j==pagActual){
 					    html += '<div id="paginas" class="checkpage"><a href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
 					  }else{
 					    html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
