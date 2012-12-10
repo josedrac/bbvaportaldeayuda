@@ -451,78 +451,58 @@
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
 			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(i,0)+"'>Saber más</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
-			  
-			   if(pagTotales>1)
-                {
-			      if ( (i==3*pagActual-1) )
-                    {   
-					    var pagActualParaMostrar = pagActual+1;
-                        var pagSiguiente = pagActualParaMostrar+1;
-    				
-    				
-                        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
-						
-						for(var j=1;j<=pagTotales;j++){
-						  if((pagActual==1)&&(j==1)){
-						  
-						    html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
-
-						  }else{
-					        html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
-						  }
-						}
-						if(i!=filas-1){
-                        html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
-						}else{
-						html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
-
-						}
-                        html += '</div>';
-                        html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
-					     
-					    pagActual++;
-						
-                    }else if((i==3*pagActual-1) && (i!=filas-1) && (pagActual%2==0)){
-					    alert("pagActual "+pagActual);
-						for(var j=1;j<=pagTotales;j++){
-						 if((j==pagActual)){
-						  	html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActualParaMostrar +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
-
-						  }else{
-					        html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
-						  }
-						  
-						}
-						//pagActual++;
+			
+			
+			
+			//desde aquí  
+			   if(pagTotales>1){
+			     
+				  if (i==3*pagActual-1){
+				  
+				    var pagActualParaMostrar = pagActual+1;
+                    var pagSiguiente = pagActualParaMostrar+1;
+					
+					if(i>2){
+					 html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
 					}
-					else if(i==filas-1){   			
-				        
-						var pagActualOld = pagActual; 
+					for(var j=1;j<=pagTotales;j++){
+					  if(j=pagActualParaMostrar){
+					    html += '<div id="paginas" class="checkpage"><a href="javascript:changePage(\''+ j +'\',\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
+					  }else{
+					    html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
+
+					  }
+					}
+					
+					html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
+                    html += '</div>';
+                    html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+			   
+			        pagActual++;
+					
+					else if(i==filas-1)
+                    {    			
+				        //console.debug('ANTERIOR>');
 				        pagActual--;
-						
-						html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
-						
-						for(var j=1;j<=pagTotales;j++){
-							if(j==pagActualOld){
-								html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActualParaMostrar +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActualOld +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
-							}else{
-					      html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActualOld +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActualOld +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
-							}
-						}
-						html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
-				        
+				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
 						html += '</div>';
-						
-				    }	
+				    }			
                 }	   
 			   
+			}
+			   
+			   
+			   
+			   //-------hasta aquí
 			}
 				
 				
 				document.getElementById('listportales').innerHTML += html;
 				
 		}
-		 function continuacion(num)
+		
+		
+		function continuacion(num)
         {           
             var bloque = "pagina"+num;
             var numInt = parseInt(num)-1;
