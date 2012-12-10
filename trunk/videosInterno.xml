@@ -553,7 +553,8 @@
             var bloque_anterior = "pagina"+ numInt2;
             document.getElementById(bloque_actual).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
-			
+			document.getElementById('pagination'+numInt).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
+		    document.getElementById('pagination'+numInt2).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 			
         }
 
