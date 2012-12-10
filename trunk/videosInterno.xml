@@ -468,7 +468,7 @@
 					if(i>2){
 					 html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
 					}else if(pagActual==1){
-					 html += '<div id="bloqueEnlaces1"></div>';
+					 html += '<div id="bloqueEnlaces1"> </div>';
 					}
 					
 					for(var j=1;j<=pagTotales;j++){
