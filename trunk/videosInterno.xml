@@ -461,7 +461,7 @@
 				  
 				    var pagActualParaMostrar = pagActual+1;
                     var pagSiguiente = pagActualParaMostrar+1;
-					
+					alert(i);
 					if(i>2){
 					 html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
 					}else if(i==1){
