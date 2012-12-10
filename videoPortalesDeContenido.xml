@@ -369,8 +369,8 @@
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-	 document.getElementById("allcontent").innerHTML = '<a onclick="window.parent.location.href='+Urlall+'" href="'+Urlall+'" target="_parent" >Ver todos</a>';
-	 
+	 document.getElementById("allcontent").innerHTML = '<a  href="'+Urlall+'" target="_parent" >Ver todos</a>';
+	 document.getElementById("allcontent").onclick="window.parent.location.href='"+Urlall+"'";
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
 	 document.getElementById("textVideo").innerHTML = textVideo;
