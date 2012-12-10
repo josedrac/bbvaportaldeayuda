@@ -144,7 +144,7 @@
 	.linedowntitle{
 	margin-bottom:20px;
 	width:619px;
-	display:block;
+	display:-moz-stack;
 	}
 	
 	#textapp{
