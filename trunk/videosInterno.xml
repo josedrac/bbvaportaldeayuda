@@ -141,12 +141,12 @@
       #video-container{
    	    float:left;
 		width:607px;
-		height:219px;
+		height:230px;
 		}
 	  #video-container2{
 	    float:left;
 		width:607px;
-		height:219px;
+		height:230px;
 	  }
 	  
 	  #urlVideo{
