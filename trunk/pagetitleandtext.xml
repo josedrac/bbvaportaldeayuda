@@ -135,7 +135,7 @@
 	.linedowntitle{
 	margin-bottom:20px;
 	width:939px;
-	display:block;
+	display:-moz-stack;
 	}
 	
 	#textPage{
