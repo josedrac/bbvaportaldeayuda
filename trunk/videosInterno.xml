@@ -492,7 +492,7 @@
 							if(j==pagActual){
 								html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png" id="pagination'+j+'"/></a></div>';
 							}else{
-								html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActualOld +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActualOld +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
+								html += '<div id="paginas" class="checkpage"><a onclick="javascript:changeImage(\''+ j +'\',\''+ pagActual +'\')" href="javascript:changePage(\''+ j +'\',\''+ pagActual +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png" id="pagination'+j+'"/></a></div>';
 							}
 						}
 						html += '</div>';
