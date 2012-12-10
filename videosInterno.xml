@@ -470,7 +470,7 @@
 			   if(pagTotales>1){
 			     
 				  if (i==3*pagActual-1){
-				    alert(pagActual);
+				    
 				    var pagActualParaMostrar = pagActual+1;
                     var pagSiguiente = pagActualParaMostrar+1;
 					
