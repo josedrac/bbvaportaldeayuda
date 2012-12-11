@@ -399,7 +399,7 @@
 			   html += "<div id='urlVideo'>";
 			   html += "<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'</embed></div>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-			   html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  target="_parent" href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
+			   html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  target='_parent' href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
 			   
 			
 				
