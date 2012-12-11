@@ -173,7 +173,7 @@
 				
 				}
 
-             document.getElementById('contenido').innerHtml += html;
+             document.getElementById('contenido').innerHTML += html;
 			 
 			 var query1 = new google.visualization.Query(urlTable, opts);
 			 var querytosend1 = "select * "; 
