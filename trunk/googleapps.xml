@@ -188,7 +188,7 @@
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
 
-<div id="textapp" class="text"></div>
+
 <div id="titleguia" class="titleguia" ></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textguia" class="text"></div>
 <div id="titletrucos" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
