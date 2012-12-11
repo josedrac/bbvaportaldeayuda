@@ -457,8 +457,8 @@
 			  
 			   html += "<embed src='"+data.getValue(i,2)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='302' height='201'</embed></div>";
 			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
-			   html += "<div id='dateVideo'>"+data.getValue(i,7).toString()+" - </div>";
-			   html += "<div id='userVideo'> "+data.getValue(i,8)+"</div>";
+			   html += "<div id='dateVideo'>"+data.getValue(i,8).toString()+" - </div>";
+			   html += "<div id='userVideo'> "+data.getValue(i,9)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
 			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/portal-de-contenido?portal="+data.getValue(i,0)+"'>Saber más</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
