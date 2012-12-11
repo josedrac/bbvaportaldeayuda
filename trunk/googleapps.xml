@@ -184,10 +184,11 @@
 	        {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
+				
 				var html="";
 				
 				for(var i=0;i<filas;i++){
-				
+				     
 				    document.getElementById('subsection'+data.getValue(i,2)).innerHTML +="<a href='"+data.getValue(i,6)+"'>"+data.getValue(i,3)+"</a>";
 					
 					}
