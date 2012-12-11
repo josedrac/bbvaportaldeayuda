@@ -136,7 +136,7 @@
 
 	
 	
-   <script type="text/javascript">
+  <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -173,7 +173,8 @@
 				
 				}
 
-             document.getElementById('contenido').innerHtml +=html;
+             document.getElementById('contenido').innerHtml += html;
+			 
 			 var query1 = new google.visualization.Query(urlTable, opts);
 			 var querytosend1 = "select * "; 
 			 query1.setQuery(querytosend1);			  
@@ -185,7 +186,7 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				
-				var html="";
+				
 				
 				for(var i=0;i<filas;i++){
 				     
@@ -193,7 +194,7 @@
 					
 					}
 				
-				
+				return false;
 
 
 
