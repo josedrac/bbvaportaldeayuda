@@ -149,7 +149,7 @@
 	}
 	
 	</style>
-	
+<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>	
 <div id="titlepage"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textPage"></div>
@@ -162,7 +162,7 @@
 	 var textPage = prefs.getString("textPage");
 	 
 	 document.getElementById("titlepage").innerHTML = titlepage;
-	 document.getElementById("textPage").innerHTML = textPage;
+	 document.getElementById("textPage").innerHTML = bbcode2html(textPage);
 	
    </script>
    
