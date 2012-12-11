@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 
-
+<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 <UserPref name="titleguia" display_name="Title guide Google App" required="true" /> 
 <UserPref name="textguia" display_name="Text of guide Google App" required="true" /> 
 <UserPref name="titletrucos" display_name="Title of trick" required="true" /> 
@@ -129,100 +129,71 @@
 
 /* @end */
 	
-	#titleapp{
-	float:left;
-	color:#0078D2;
-	font-family: BBVA Web Light;
-	font-size:22px;
-	margin-bottom:6px;
-	padding-top:0px;
-	margin-top:-4px;
-	height:30px;
-	margin-left:13px;
-	}
 	
-	.linedowntitle{
-	margin-bottom:20px;
-	width:619px;
-	display:-moz-stack;
-	}
-	
-	#textapp{
-	margin-bottom:22px;
-	width:616px;
-	height:57px;
-	font-family: BBVA Web Light;
-	font-size:12px;
-	color:#71777F;	
-	margin-left:9px;
-	}
-	.title{
-	color:#000;
-	font-size: 18px;
-	font-family: BBVA Web Light;
-	margin-left:22px;
-	margin-top:72px;
-	}
-	.titleapp{
-	color:#000;
-	font-size: 18px;
-	font-family: BBVA Web Light;
-	margin-left:11px;
-	}
-	.titleguia{
-	color:#000;
-	font-size: 18px;
-	font-family: BBVA Web Light;
-	margin-left:22px;
-	margin-top:-4px;
-	}
-	.text{
-	color:#0065B7;
-	font-size: 12px;
-	font-family: BBVA Web Medium;
-	margin-left:22px;
-	padding-top:4px;
-	}
 	
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
+<div id="subseccion"></div>
 
 
-<div id="titleguia" class="titleguia" ></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textguia" class="text"></div>
-<div id="titletrucos" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textTrucos" class="text"></div>
-<div id="titleAvanzado" class="title"></div></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textAvanzado"class="text"></div>
-<div id="titleAyuda" class="title"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textAyuda" class="text"></div>
 	
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
-	 var prefs = new gadgets.Prefs();
+	 var prefs = new _IG_Prefs();
+	 var urlTable = prefs.getString("_table_query_url");
 	 
-	 
-	 var titleguia = prefs.getString("titleguia");
-	 var textguia = prefs.getString("textguia");
-	 var titletrucos = prefs.getString("titletrucos");
-	 var textTrucos = prefs.getString("textTrucos");
-	 var titleAvanzado = prefs.getString("titleAvanzado");
-	 var textAvanzado = prefs.getString("textAvanzado");
-	 var titleAyuda = prefs.getString("titleAyuda");
-	 var textAyuda = prefs.getString("textAyuda");
-	 
-	 document.getElementById("titleapp").innerHTML = titleapp;
-	 document.getElementById("textapp").innerHTML = bbcode2html(textapp);
-	 document.getElementById("titleguia").innerHTML = titleguia;
-	 document.getElementById("textguia").innerHTML = bbcode2html(textguia);
-	 document.getElementById("titletrucos").innerHTML = titletrucos;
-	 document.getElementById("textTrucos").innerHTML = bbcode2html(textTrucos);
-	 document.getElementById("titleAvanzado").innerHTML = titleAvanzado;
-	 document.getElementById("textAvanzado").innerHTML = bbcode2html(textAvanzado);
-	 document.getElementById("titleAyuda").innerHTML = titleAyuda;
-	 document.getElementById("textAyuda").innerHTML = bbcode2html(textAyuda);
+	  function loadVisualizationAPI() 
+			{
+				google.load("visualization", "1", {"packages": ["table"]});
+				google.setOnLoadCallback(sendQuery);
+			}
+	  function sendQuery() 
+			{
+				gadgetHelper = new google.visualization.GadgetHelper();
+				var opts = {dataType:'jsonp'};		
+				var query = new google.visualization.Query(urlTable, opts);	
+				var query1 = new google.visualization.Query(urlTable, opts);
+				var querytosend = "select max(A),C group by C";
+				var querytosend1 = "select * "; //A,max(B),max(C),D,max(E),max(F),max(G),max(H) group by A,D";
+				query.setQuery(querytosend);			  
+				query.send(handleQueryResponse);
+				query1.setQuery(querytosend1);			  
+				query1.send(handleQueryResponse1);
+				
+			}
+	  function handleQueryResponse(response)
+	        {
+				data = response.getDataTable();	
+				var filas = data.getNumberOfRows();
+				var html="";
+				
+				for(var i=0;i<filas;i++){
+				
+				    html +="<div id='subsection"+i+"'>"+data.getValue(i,2)+"</div>";
+				
+				}
+
+             document.getElementById('subseccion').innerHtml +=html;
+
+			}
+	  function handleQueryResponse1(response)
+	        {
+				data = response.getDataTable();	
+				var filas = data.getNumberOfRows();
+				var html="";
+				
+				for(var i=0;i<filas;i++){
+				
+				    html +="<div id='subsection"+i+"'>"+data.getValue(i,3)+"</div>";
+				
+				}
+
+
+
+			}
+
    </script>
    
     ]]>
