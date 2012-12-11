@@ -122,7 +122,11 @@
 
 /* @end */
 	
-	
+	.linedowntitle{
+	margin-bottom:20px;
+	width:619px;
+	display:-moz-stack;
+	}
 	
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
@@ -147,13 +151,12 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var query1 = new google.visualization.Query(urlTable, opts);
+				
 				var querytosend = "select max(A),C group by C";
-				var querytosend1 = "select * "; 
+				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
-				query1.setQuery(querytosend1);			  
-				query1.send(handleQueryResponse1);
+				
 				
 			}
 	  function handleQueryResponse(response)
@@ -165,13 +168,17 @@
 				for(var i=0;i<filas;i++){
 				
 				    html +="<div id='subsection"+data.getValue(i,2)+"'>"+data.getValue(i,2)+"</div>";
-					
+					html +="<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />";
 					
 				
 				}
 
              document.getElementById('contenido').innerHtml +=html;
-			 	
+			 var query1 = new google.visualization.Query(urlTable, opts);
+			 var querytosend1 = "select * "; 
+			 query1.setQuery(querytosend1);			  
+			 query1.send(handleQueryResponse1);
+			 
 			}
 	  function handleQueryResponse1(response)
 	        {
