@@ -134,7 +134,7 @@
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
-<div id="subseccion"></div>
+<div id="contenido"></div>
 
 
 	
@@ -156,7 +156,7 @@
 				var query = new google.visualization.Query(urlTable, opts);	
 				var query1 = new google.visualization.Query(urlTable, opts);
 				var querytosend = "select max(A),C group by C";
-				var querytosend1 = "select * "; //A,max(B),max(C),D,max(E),max(F),max(G),max(H) group by A,D";
+				var querytosend1 = "select * "; 
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				query1.setQuery(querytosend1);			  
@@ -171,12 +171,14 @@
 				
 				for(var i=0;i<filas;i++){
 				
-				    html +="<div id='subsection"+i+"'>"+data.getValue(i,2)+"</div>";
+				    html +="<div id='subsection"+data.getValue(i,2)+"'>"+data.getValue(i,2)+"</div>";
+					
+					
 				
 				}
 
-             document.getElementById('subseccion').innerHtml +=html;
-
+             document.getElementById('contenido').innerHtml +=html;
+			 	
 			}
 	  function handleQueryResponse1(response)
 	        {
@@ -186,9 +188,11 @@
 				
 				for(var i=0;i<filas;i++){
 				
-				    html +="<div id='subsection"+i+"'>"+data.getValue(i,3)+"</div>";
+				    document.getElementById('subsection'+data.getValue(i,2)).innerHTML +="<a href='"+data.getValue(i,6)+"'>"+data.getValue(i,3)+"</a>";
+					
+					}
 				
-				}
+				
 
 
 
@@ -198,116 +202,5 @@
    
     ]]>
   </Content>
-  <Content type="html" view="configuration" preferred_height="480">
-
-<![CDATA[
-<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/editorbbcode.js"></script>
-<style type="text/css">
-    
-	table td {
-				color: #000;
-				font-size: 11px;
-				font-weight: bold;
-			}
-			table td input,
-			textarea {
-				color: #000;
-				font-size: 11px;				
-			}
-  </style>
-
-			<table width="100%" border="0" id="tablaconfig">
-			<tr>       
-                <td>
-					Title - Gu&iacute;a App: <input type="text" size="100" id="titleguia" value="__UP_titleguia__"   onchange="registra('titleguia')"/>
-				</td>
-            </tr></table>
-				<table width="100%" height="170px;" border="0" id="tablaconfig">
-				<tr>       
-                <td>
-					Text - Gu&iacute;a App: 
-					<script language="Javascript">
-					<!--
-						editor_para("textguia");
-					//-->
-					</script>
-					<textarea id="textguia" style="height: 245px; width: 100%" onchange="registra('textguia')" >__UP_textguia__</textarea>
-				</td>
-            </tr></table>
-			<table width="100%" border="0" id="tablaconfig">
-			<tr>       
-                <td>
-					Title - Trucos: <input type="text" size="100" id="titletrucos" value="__UP_titletrucos__"   onchange="registra('titletrucos')"/>
-				</td>
-            </tr></table>
-			<table width="100%" height="170px;" border="0" id="tablaconfig">
-			  <tr>       
-                <td>
-					Text - Trucos: 
-					<script language="Javascript">
-					<!--
-						editor_para("textTrucos");
-					//-->
-					</script>
-					<textarea id="textTrucos" style="height: 245px; width: 100%" onchange="registra('textTrucos')" >__UP_textTrucos__</textarea>
-				</td>
-            </tr></table>
-			<table width="100%" border="0" id="tablaconfig">
-			<tr>       
-                <td>
-					Title - Avanzado: <input type="text" size="100" id="titleAvanzado" value="__UP_titleAvanzado__"   onchange="registra('titleAvanzado')"/>
-				</td>
-            </tr></table>
-			<table width="100%" height="170px;" border="0" id="tablaconfig">
-			<tr>       
-                <td>
-					Text - Avanzado: 
-					<script language="Javascript">
-					<!--
-						editor_para("textAvanzado");
-					//-->
-					</script>
-					<textarea id="textAvanzado" style="height: 245px; width: 100%" onchange="registra('textAvanzado')" >__UP_textAvanzado__</textarea>
-				</td>
-            </tr></table>
-			<table width="100%" border="0" id="tablaconfig">
-			<tr>       
-                <td>
-					Title - Ayuda Oficial: <input type="text" size="100" id="titleAyuda" value="__UP_titleAyuda__"   onchange="registra('titleAyuda')"/>
-				</td>
-            </tr></table>
-			<table width="100%" height="170px;" border="0" id="tablaconfig"><tr>       
-                <td>
-					Text - Ayuda Oficial: 
-					<script language="Javascript">
-					<!--
-						editor_para("textAyuda");
-					//-->
-					</script>
-					<textarea id="textAyuda" style="height: 245px; width: 100%" onchange="registra('textAyuda')" >__UP_textAyuda__</textarea>
-				</td>
-            </tr></table>
-			
-			
-	</table>	
-
-    <script type="text/javascript">           
-            // Get userprefs
-            var prefs = new gadgets.Prefs();           
-            function registra(variable)
-            {	
-				
-                prefs.set(variable,document.getElementById(variable).value);
-				
-			
-            } 
-			gadgets.window.adjustHeight();
-    </script>   	
-
-	  
-
-	 
- ]]>	
-
- </Content>
+  
 </Module>
