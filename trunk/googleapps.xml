@@ -8,8 +8,8 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="titleapp" display_name="Title of Google App" required="true" />  
-<UserPref name="textapp" display_name="Text of page" required="true" />
+
+
 <UserPref name="titleguia" display_name="Title guide Google App" required="true" /> 
 <UserPref name="textguia" display_name="Text of guide Google App" required="true" /> 
 <UserPref name="titletrucos" display_name="Title of trick" required="true" /> 
@@ -187,8 +187,7 @@
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
-<div id="titleapp" class="titleapp"></div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
+
 <div id="textapp" class="text"></div>
 <div id="titleguia" class="titleguia" ></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
 <div id="textguia" class="text"></div>
@@ -203,8 +202,8 @@
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
-	 var titleapp = prefs.getString("titleapp");
-	 var textapp = prefs.getString("textapp");
+	 
+	 
 	 var titleguia = prefs.getString("titleguia");
 	 var textguia = prefs.getString("textguia");
 	 var titletrucos = prefs.getString("titletrucos");
@@ -245,25 +244,7 @@
 				font-size: 11px;				
 			}
   </style>
-  <table width="100%" border="0" id="tablaconfig">  
-			<tr>       
-                <td>
-                    Title - App: <input type="text" size="100" id="titleapp" value="__UP_titleapp__"   onchange="registra('titleapp')"/>                   
-                </td>
-            </tr></table>
-			<table width="100%" height="170px;" border="0" id="tablaconfig">	
-			<tr>       
-                <td>
-					Text - App: 
-					<script language="Javascript">
-					<!--
-						editor_para("textapp");
-					//-->
-					</script>
-					<textarea id="textapp" style="height: 245px; width: 100%" onchange="registra('textapp')" >__UP_textapp__</textarea>
-				</td>
-            </tr>
-			</table>
+
 			<table width="100%" border="0" id="tablaconfig">
 			<tr>       
                 <td>
