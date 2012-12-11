@@ -166,7 +166,7 @@
 				var filas = data.getNumberOfRows();
 				var html="";
 				
-				for(var i=1;i<filas;i++){
+				for(var i=0;i<filas;i++){
 				
 				    html +="<div id='subsection"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</div>";
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
