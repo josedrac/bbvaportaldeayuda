@@ -10,14 +10,7 @@
   </ModulePrefs>
 
 <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="titleguia" display_name="Title guide Google App" required="true" /> 
-<UserPref name="textguia" display_name="Text of guide Google App" required="true" /> 
-<UserPref name="titletrucos" display_name="Title of trick" required="true" /> 
-<UserPref name="textTrucos" display_name="Text of page" required="true" /> 
-<UserPref name="titleAvanzado" display_name="Title Advanced" required="true" /> 
-<UserPref name="textAvanzado" display_name="Text Advanced" required="true" />  
-<UserPref name="titleAyuda" display_name="Title of Help" required="true" /> 
-<UserPref name="textAyuda" display_name="Text of Help" required="true" />  
+ 
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
