@@ -168,7 +168,7 @@
 				for(var i=0;i<filas;i++){
 				
 				    html +="<div id='subsection"+data.getValue(i,2)+"'>"+data.getValue(i,2)+"</div>";
-					html +="<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />";
+					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
 					
 				
 				}
