@@ -187,7 +187,13 @@
             </tr></table>
 			<table width="100%" height="170px;" border="0" id="tablaconfig"><tr>       
                 <td>
-					Text - Page: <textarea id="textPage" style="height: 245px; width: 100%" onchange="registra('textPage')" >__UP_textPage__</textarea>
+					Text - Page: 
+					<script language="Javascript">
+					<!--
+						editor_para("textPage");
+					//-->
+					</script>
+					<textarea id="textPage" style="height: 245px; width: 100%" onchange="registra('textPage')" >__UP_textPage__</textarea>
 				</td>
             </tr></table>
 			
