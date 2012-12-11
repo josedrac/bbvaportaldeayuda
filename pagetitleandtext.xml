@@ -171,12 +171,18 @@
   <Content type="html" view="configuration" preferred_height="480">
 
 <![CDATA[
+<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/editorbbcode.js"></script>
 <style type="text/css">
     
-	table td {
+table td {
 				color: #000;
 				font-size: 11px;
 				font-weight: bold;
+			}
+			table td input,
+			textarea {
+				color: #000;
+				font-size: 11px;				
 			}
   </style>
   <table width="100%" border="0" id="tablaconfig">  
