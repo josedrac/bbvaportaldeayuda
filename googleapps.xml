@@ -144,6 +144,7 @@
 	margin-left:22px;
 	padding-top:4px;
 	text-decoration:none;
+	list-style:none;
 	}
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
