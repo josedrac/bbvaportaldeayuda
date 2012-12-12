@@ -255,15 +255,15 @@ text-decoration:none;
 }
 #trucos{
 margin-left:40px;
-float:left;
+
 }
 #consejos{
 margin-left:40px;
-float:left;
+
 }
 #content{
-float:left;
-width:650px;
+
+width:300px;
 }
 #content img{
 float:left
