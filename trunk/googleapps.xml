@@ -134,6 +134,13 @@
 	margin-left:22px;
 	margin-top:72px;
 	}
+	.title li a{
+	color:#0065B7;
+	font-size: 12px;
+	font-family: BBVA Web Medium;
+	margin-left:22px;
+	padding-top:4px;
+	}
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
@@ -174,9 +181,8 @@
 				
 				for(var i=0;i<filas;i++){
 				    if(data.getValue(i,1)!= 'Subsección'){
-				    html +="<div id='subsection"+data.getValue(i,1)+"' class='title'>"+data.getValue(i,1);
+				    html +="<div id='subsection"+data.getValue(i,1)+"' class='title'>"+data.getValue(i,1)+"</div>";
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
-					html +="</div>";
 					}
 				
 				}
