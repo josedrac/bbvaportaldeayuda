@@ -167,10 +167,10 @@
 				var html="";
 				
 				for(var i=0;i<filas;i++){
-				
+				    if(data.getValue(i,1)!= 'Subsección'){
 				    html +="<div id='subsection"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</div>";
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
-					
+					}
 				
 				}
 
