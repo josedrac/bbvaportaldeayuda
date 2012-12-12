@@ -132,7 +132,8 @@
 	font-size: 18px;
 	font-family: BBVA Web Light;
 	margin-left:22px;
-	margin-top:72px;
+	margin-top:0px;
+	margin-bottom:15px;
 	}
 	.title li{
 	list-style:none;
@@ -141,7 +142,7 @@
 	color:#0065B7;
 	font-size: 12px;
 	font-family: BBVA Web Medium;
-	margin-left:22px;
+	margin-left:2px;
 	padding-top:4px;
 	text-decoration:none;
 	list-style:none;
