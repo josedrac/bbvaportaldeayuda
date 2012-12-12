@@ -134,12 +134,16 @@
 	margin-left:22px;
 	margin-top:72px;
 	}
+	.title li{
+	list-style:none;
+	}
 	.title li a{
 	color:#0065B7;
 	font-size: 12px;
 	font-family: BBVA Web Medium;
 	margin-left:22px;
 	padding-top:4px;
+	text-decoration:none;
 	}
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
