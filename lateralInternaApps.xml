@@ -19,6 +19,7 @@
     </ModulePrefs>
     <UserPref name="tablequeryurl" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
     <UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/>
+	
     <Content type="html" view="home"><![CDATA[
         <style>
           @font-face {
