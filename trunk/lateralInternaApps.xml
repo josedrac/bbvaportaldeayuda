@@ -13,6 +13,9 @@
         author_location="Asturias, Spain"
         scaling="false">
         <Require feature="setprefs"/>
+		<Require feature="idi"/>
+        <Require feature="locked-domain" />
+	    <Require feature="dynamic-height"/> 
     </ModulePrefs>
     <UserPref name="tablequeryurl" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
     <UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/>
