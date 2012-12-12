@@ -121,7 +121,7 @@
 	        {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
-				alert(filas);
+				
 				var html= "";
 				html +='<div class=\"titulo\">' + subseccion + '</div>';
 				html +='<ul id=\"botonera\">'; 
