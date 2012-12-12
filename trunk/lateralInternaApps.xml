@@ -21,6 +21,7 @@
     <UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/>
 	
     <Content type="html" view="home"><![CDATA[
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
         <style>
           @font-face {
              font-family: 'BBVA Web Book';
