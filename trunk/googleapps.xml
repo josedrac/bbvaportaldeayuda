@@ -189,7 +189,7 @@
 				    if(data.getValue(i,1)!= 'Subsección'){
 					html +="<div id='titleSubsection' class='title'>"+data.getValue(i,1)+"</div>";
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
-				    html +="<div id='subsection"+data.getValue(i,1)+"'></div>";
+				    html +="<div id='subsection"+data.getValue(i,1)+"'class='title'"></div>";
 					
 					}
 				
