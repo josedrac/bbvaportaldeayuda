@@ -217,7 +217,7 @@
 				
 				for(var i=1;i<=filas;i++){
 				     
-				    document.getElementById('subsection'+data.getValue(i,2)).innerHTML +="<li><a target='_parent' href='"+data.getValue(i,6)+"'>"+data.getValue(i,3)+"</a></li>";
+				    document.getElementById('subsection'+data.getValue(i,2)).innerHTML +="<li><a target='_parent' href='"+data.getValue(i,7)+"'>"+data.getValue(i,3)+"</a></li>";
 					
 					}
 				
