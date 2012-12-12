@@ -136,7 +136,7 @@
 	margin-bottom:15px;
 	}
 	.subseccion{
-	margin-bottom:20px;
+	margin-bottom:30px;
 	}
 	.subseccion li{
 	list-style:none;
@@ -145,7 +145,7 @@
 	color:#0065B7;
 	font-size: 12px;
 	font-family: BBVA Web Medium;
-	margin-left:2px;
+	margin-left:24px;
 	padding-top:4px;
 	text-decoration:none;
 	list-style:none;
