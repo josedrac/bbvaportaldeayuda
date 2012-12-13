@@ -331,9 +331,9 @@ padding-left:10px;
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
-	   //if(data.getValue(i,0) != 'País'){
+	   if(data.getValue(i,2) != 'Dispositivo'){
 	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
-	   //}
+	   }
 	  }
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
