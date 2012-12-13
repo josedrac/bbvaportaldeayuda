@@ -228,7 +228,6 @@ color:#0065B7;
 font-size:12px;
 font-family: Stag;
 margin-top:15px;
-width:100px;
 }
 #dispositivos a{
 color:#0065B7;
@@ -237,7 +236,7 @@ font-family: Stag;
 margin-top:15px;
 text-decoration:none;
 margin-left:10px;
-width:100px;
+
 }
 
 	
@@ -304,7 +303,7 @@ width:100px;
 	   
 	   for(var i=0;i<filas;i++){
 			//if(dataDC.getValue(i,0) != 'País'){
-	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a>";
+	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
 	//	}
 	 
 	  }
