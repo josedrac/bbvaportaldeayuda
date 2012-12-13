@@ -287,7 +287,7 @@ line-height:30px;
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);
 	     
-	   var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"' group by A,C,D,E";
+	   var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'  group by A,C,D,E";
 	   
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
@@ -302,7 +302,7 @@ line-height:30px;
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
-		if(dataDC.getValue(i,0) != 'País'){
+		if(dataDC.getValue(i,0) != 'Dispositivo'){
 	    html +="<a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
 		}
 	 
