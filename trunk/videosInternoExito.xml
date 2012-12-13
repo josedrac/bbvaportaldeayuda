@@ -369,7 +369,32 @@
 			font-family: BBVA Office Book;
 			color:#0078D2;
         }
-	
+	#bloqueEnlaces1 img{
+            
+			margin-left:260px;
+			padding-right:10px;
+        }
+	.checkpage{
+    margin-top:-5px;
+	}	
+	.checkpage1{
+    margin-top:-5px;
+	margin-left:260px;
+	}	
+	.checkpage a{
+	height:9px;
+	float:left;
+	padding-top:4px;
+	padding-left:2px;
+	padding-right:2px;
+	}
+	.checkpage1 a{
+	height:9px;
+	float:left;
+	padding-top:4px;
+	padding-left:2px;
+	padding-right:2px;
+	}
 	</style>
 	
 <div id="listportales"></div>	
