@@ -186,9 +186,9 @@
     .bloqueSiguiente{
             display:block;
             font-family: BBVA Office Book;
-            float:right;
+            float:left;
             margin-top:0px;
-            margin-right:0px;
+            padding-left:10px;
 			color:#0078D2;
 			width:64px;
         }
