@@ -236,7 +236,7 @@ font-family: Stag;
 margin-top:15px;
 text-decoration:none;
 padding-left:10px;
-line-height:5px;
+
 }
 #titleHome{
 font-size:22px;
