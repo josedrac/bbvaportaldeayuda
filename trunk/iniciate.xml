@@ -242,9 +242,11 @@
 				html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'/>";
 				
 				for(var i=0;i<filas;i++){
-				
+				    if(data.getValue(i,3)!=''){
 					html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/inicio?iniciate="+data.getValue(i,0)+"'>"+data.getValue(i,1)+"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 					html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
+				
+					}
 				}
 				
 		document.getElementById('iniciate').innerHTML += html;
