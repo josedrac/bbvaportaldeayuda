@@ -240,30 +240,30 @@
 	 
 	 document.getElementsByClassName("first op1")[0].innerHTML += "<h2>CENTRO DE AYUDA</h2>";
 	 
-	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul><li><a href='"+link1Block1+"'>"+text1Block1+"</a></li><li><a href='"+link2Block1+"'>"+text2Block1+"</a></li><li><a href='"+link3Block1+"'>"+text3Block1+"</a></li><li><a href='"+link4Block1+"'>"+text4Block1+"</a></li></ul>";
+	 document.getElementsByClassName("first op1")[0].innerHTML += "<ul><li><a target='_blank' href='"+link1Block1+"'>"+text1Block1+"</a></li><li><a target='_blank' href='"+link2Block1+"'>"+text2Block1+"</a></li><li><a target='_blank' href='"+link3Block1+"'>"+text3Block1+"</a></li><li><a target='_blank' href='"+link4Block1+"'>"+text4Block1+"</a></li></ul>";
 	 
 	 
 	 document.getElementsByClassName("op2")[0].innerHTML += "<h2>INFORMACIÓN CORPORATIVA</h2>";
 	 var html="";
-	 html += "<ul><li><a href='"+link1Block2+"'>"+text1Block2+"</a></li>";
-	 html += "<li><a href='"+link2Block2+"'>"+text2Block2+"</a></li>";
-	 html += "<li><a href='"+link3Block2+"'>"+text3Block2+"</a></li>";
-	 html += "<li><a href='"+link4Block2+"'>"+text4Block2+"</a></li></ul>";
+	 html += "<ul><li><a target='_blank' href='"+link1Block2+"'>"+text1Block2+"</a></li>";
+	 html += "<li><a target='_blank' href='"+link2Block2+"'>"+text2Block2+"</a></li>";
+	 html += "<li><a target='_blank' href='"+link3Block2+"'>"+text3Block2+"</a></li>";
+	 html += "<li><a target='_blank' href='"+link4Block2+"'>"+text4Block2+"</a></li></ul>";
 	 document.getElementsByClassName("op2")[0].innerHTML += html;
 	 
 	 
 	 document.getElementsByClassName("op3")[0].innerHTML += "<h2>LINKS DE INTERÉS</h2>";
 	 var html1="";
-	 html1 += "<ul><li><a href='"+link1Block3+"'>"+text1Block3+"</a></li>";
-	 html1 += "<li><a href='"+link2Block3+"'>"+text2Block3+"</a></li>";
-	 html1 += "<li><a href='"+link3Block3+"'>"+text3Block3+"</a></li></ul>";
+	 html1 += "<ul><li><a target='_blank' href='"+link1Block3+"'>"+text1Block3+"</a></li>";
+	 html1 += "<li><a target='_blank' href='"+link2Block3+"'>"+text2Block3+"</a></li>";
+	 html1 += "<li><a target='_blank' href='"+link3Block3+"'>"+text3Block3+"</a></li></ul>";
 	 document.getElementsByClassName("op3")[0].innerHTML += html1;
 	
 	 document.getElementsByClassName("last op4")[0].innerHTML += "<h2>BBVA EN REDES SOCIALES</h2>";
 	 var html2="";
 	 html2 += "<ul class='redes-sociales'>";
-	 html2 += "<li><a href='"+link1Block4+"'>"+text1Block4+"</a></li>";
-	// html2 += "<li><a href='"+link2Block4+"'>"+text2Block4+"</a></li></ul>";
+	 html2 += "<li><a target='_blank' href='"+link1Block4+"'>"+text1Block4+"</a></li>";
+	// html2 += "<li><a target='_blank' href='"+link2Block4+"'>"+text2Block4+"</a></li></ul>";
 	 document.getElementsByClassName("last op4")[0].innerHTML += html2;
 	 
 	 
