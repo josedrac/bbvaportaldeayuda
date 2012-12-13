@@ -302,9 +302,9 @@ line-height:30px;
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
-			//if(dataDC.getValue(i,0) != 'País'){
+		if(dataDC.getValue(i,0) != 'País'){
 	    html +="<a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
-	//	}
+		}
 	 
 	  }
 	   document.getElementById('dispositivos').innerHTML = html;
