@@ -238,7 +238,7 @@ text-decoration:none;
 margin-left:10px;
 
 }
-.linkdispositivos{
+.linkdispositivos a{
 padding-top:10px;
 }
 	
