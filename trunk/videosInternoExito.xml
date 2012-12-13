@@ -361,14 +361,7 @@
             color: #3B3B3B;
         }
 
-    #bloqueEnlaces a,
-    #bloqueEnlaces1 a{
-            font-size: 0.8em;
-            text-decoration: none;
-            font-weight: normal;
-			font-family: BBVA Office Book;
-			color:#0078D2;
-        }
+    
 	#bloqueEnlaces1 img{
             
 			margin-left:260px;
@@ -536,6 +529,8 @@
             var bloque_anterior = "pagina"+ numInt2;
             document.getElementById(bloque_actual).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
+			document.getElementById('pagination'+numInt).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
+		    document.getElementById('pagination'+numInt2).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
         }
 
     	function anteriorUltima(num)
@@ -545,7 +540,24 @@
             var bloque_anterior = "pagina"+ numInt;
             document.getElementById(bloque).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
-    	}	
+			document.getElementById('pagination'+num).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
+		    document.getElementById('pagination'+numInt).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+    	}
+		function changePage(num,pag){
+		
+		    var bloque = "pagina"+pag;
+			//var numInt = parseInt(num)-1;
+			var bloque_anterior = "pagina"+ num;
+			
+		    document.getElementById(bloque).style.display='none';
+            document.getElementById(bloque_anterior).style.display='block';
+		}
+		function changeImage(pagina,old){
+		//alert("pagina "+pagina);
+		//alert("pagina "+old);
+		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
+		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
+		}	
 	
 
   </script>
