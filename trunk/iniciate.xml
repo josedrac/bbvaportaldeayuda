@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-
+<UserPref name="seccion" display_name="Sección:" default_value="" required="true"/>
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -217,7 +217,7 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	
+	 var seccion = prefs.getString("seccion");
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
@@ -229,7 +229,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select A,B,C,G "; //,F where F like '%Iniciate en tu Net%' ";
+				var querytosend = "select A,B,C,G,F where F like '+seccion+' ";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
