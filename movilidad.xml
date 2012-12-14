@@ -249,7 +249,7 @@ line-height:30px;
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	
+	devicesCountry('España');
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
@@ -310,8 +310,9 @@ line-height:30px;
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
 	 }
-	 var gadgetHelper = null; 
+	 if(window.onload()){
 	 devicesCountry('España');
+	 }
    </script>
    
     ]]>
