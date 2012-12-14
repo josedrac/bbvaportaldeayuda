@@ -277,7 +277,7 @@ line-height:30px;
 				   if(data.getValue(i,1) == 'País'){
 				   document.getElementById('paises').innerHTML += "<option selected='España' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }else{
-				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
+				    document.getElementById('paises').innerHTML += "<option selected='España' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }
 				}
 			}
