@@ -310,7 +310,7 @@ line-height:30px;
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
 	 }
-	  
+	 var gadgetHelper = null; 
 	 devicesCountry('España');
    </script>
    
