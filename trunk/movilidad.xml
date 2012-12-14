@@ -269,7 +269,7 @@ line-height:30px;
 	 function handleQueryResponse(response) {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
-				//alert(filas);
+				alert(filas);
 				
 				
 				for(var i=1;i<=filas;i++){
