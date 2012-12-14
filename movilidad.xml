@@ -310,7 +310,7 @@ line-height:30px;
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
 	 }
-	 if(window.parent.onload()){ 
+	 if(window.onload()){ 
 	 devicesCountry('España');
 	 }
    </script>
