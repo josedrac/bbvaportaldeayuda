@@ -241,9 +241,10 @@ line-height:30px;
 
 	
 	</style>
-	
+<body onload="cargaCompleta()">	
 <div id="movilidad">Guías de configuración, según dispositivo, para: <select  selected="España"  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
 <div id="dispositivos"></div>	
+</body>
    <script type="text/javascript">
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
@@ -309,8 +310,12 @@ line-height:30px;
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
 	 }
+	 function cargaCompleta(){
 	 
 	 devicesCountry('España');
+	 }
+	 
+	 
 	 
    </script>
    
