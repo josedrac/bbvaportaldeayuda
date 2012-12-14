@@ -245,11 +245,11 @@ line-height:30px;
 <div id="movilidad">Guías de configuración, según dispositivo, para: <select  selected="España"  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
 <div id="dispositivos"></div>	
    <script type="text/javascript">
-     console.debug('Versión 1');
+   
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	devicesCountry('España');
+	
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
@@ -310,9 +310,9 @@ line-height:30px;
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
 	 }
-	/* if(window.onload()){
+	 if(window.parent.onload()){ 
 	 devicesCountry('España');
-	 }*/
+	 }
    </script>
    
     ]]>
