@@ -275,13 +275,14 @@ line-height:30px;
 				for(var i=0;i<filas;i++){
 				   // alert(data.getValue(i,1));
 				   if(data.getValue(i,1) != 'País'){
-				    alert("entro");
+				    
 				    document.getElementById('paises').innerHTML += "<option selected='España' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }
 				}
 			}
 		
 	 function devicesCountry(pais){
+	  alert(pais);
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);
