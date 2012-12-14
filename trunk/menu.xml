@@ -266,12 +266,12 @@ margin-top:-19px;
   </ul>    
 </div>
 <script type="text/javascript">
-/*
-document.getElementById('home').onclick =  Go('home');
-document.getElementById('inicio').onclick = Go('inicio');
-document.getElementById('googleapps').onclick = Go('googleapps');
-document.getElementById('movilidad').onclick = Go('movilidad');
-document.getElementById('exito').onclick = Go('exito');*/
+
+document.getElementById('home').onclick = function(){ Go('home');};
+document.getElementById('inicio').onclick = function() {Go('inicio');};
+document.getElementById('googleapps').onclick = function() {Go('googleapps');};
+document.getElementById('movilidad').onclick = function() {Go('movilidad');};
+document.getElementById('exito').onclick = function (){Go('exito');};
 
 function Go(destination){
 
