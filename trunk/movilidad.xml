@@ -282,7 +282,7 @@ line-height:30px;
 			}
 		
 	 function devicesCountry(pais){
-	  alert(pais);
+	  
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);
