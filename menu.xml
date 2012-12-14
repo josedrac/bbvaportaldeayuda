@@ -258,14 +258,32 @@ margin-top:-19px;
 <div class="cabeceramenu">
   <ul> 
   
-	<li class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></li>
-	<li class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate"  target="_parent">Iníciate en tu NET</a></span></span></li>
-	<li class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps"  target="_parent">Google Apps</a></span></span></li>
-	<li class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">Movilidad</a></span></span></li> 
-	<li class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
+	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></li>
+	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate"  target="_parent">Iníciate en tu NET</a></span></span></li>
+	<li id="googleapps" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps"  target="_parent">Google Apps</a></span></span></li>
+	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">Movilidad</a></span></span></li> 
+	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
 <script type="text/javascript">
+
+document.getElementById('home').onclick =  Go('home');
+document.getElementById('inicio').onclick = Go('inicio');
+document.getElementById('googleapps').onclick = Go('googleapps');
+document.getElementById('movilidad').onclick = Go('movilidad');
+document.getElementById('exito').onclick = Go('exito');
+
+function Go(destination){
+
+if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/home";}
+else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
+else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
+else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
+else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
+
+
+}
+
 function redirect(){
 
 return false;
