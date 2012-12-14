@@ -281,7 +281,7 @@ else if(destination=='googleapps'){window.parent.location.href="https://sites.go
 else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
 else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
 
-
+return false;
 }
 
 function redirect(){
