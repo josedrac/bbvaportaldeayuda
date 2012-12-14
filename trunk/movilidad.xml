@@ -242,7 +242,7 @@ line-height:30px;
 	
 	</style>
 <body onload="cargaCompleta()">	
-<div id="movilidad">Guías de configuración, según dispositivo, para: <select  selected="España"  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
+<div id="movilidad">Guías de configuración, según dispositivo, para: <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
 <div id="dispositivos"></div>	
 </body>
    <script type="text/javascript">
@@ -275,7 +275,9 @@ line-height:30px;
 				
 				for(var i=0;i<filas;i++){
 				    alert(data.getValue(i,1));
-				   if(data.getValue(i,1) != 'País'){
+				 if(data.getValue(i,1) != 'España'){
+					document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
+					} else if(data.getValue(i,1) != 'País'){
 				    
 				    document.getElementById('paises').innerHTML += "<option  value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 				   }
