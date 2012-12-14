@@ -309,7 +309,8 @@ line-height:30px;
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
 	 }
-	 document.getElementById('dispositivos').innerHTML = devicesCountry('España');
+	  
+	 devicesCountry('España');
    </script>
    
     ]]>
