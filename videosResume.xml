@@ -476,8 +476,8 @@
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
 	 document.getElementById("textVideo").innerHTML = textVideo;
-	
-	 document.getElementById("urlVideo").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';//'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
+	 console.debug("aqui"+urlVideo);
+	 document.getElementById("urlVideo").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 	
 	 
 	 document.getElementById("tagVideo2").innerHTML = tagVideo2;
