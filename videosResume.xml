@@ -330,9 +330,9 @@
 	}
 	</style>
 	
-	
-<div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 <body onload="cargaCompleta()">
+<div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
+
 <div id="comboVideo">
 	<div id="video-container">
 		<div id="tagVideo"></div>
