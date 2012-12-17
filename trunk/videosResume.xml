@@ -18,7 +18,106 @@
 <UserPref name="titleVideo2" display_name="Title Video" required="true" />
 <UserPref name="textVideo2" display_name="Text Video" required="true" />
 <UserPref name="urlVideo2" display_name="Url Video" required="true" />	
- <Content type="html">
+
+  <Content type="html" view="configuration" preferred_height="480">
+
+<![CDATA[
+<style type="text/css">
+    input#VarrootSite {
+           width: 300px;
+          }
+	table td {
+				color: #000;
+				font-size: 11px;
+				font-weight: bold;
+			}
+  </style>
+  <table width="100%" border="0" id="tablaconfig">  
+			<tr>       
+                <td>
+                    Url -Page All Videos: <input type="text" size="100" id="Urlall" value="__UP_Urlall__"   onchange="registra('Urlall')"/>                   
+                </td>
+            </tr>
+			<tr/>
+			<tr>       
+                <td>
+                    Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
+                </td>
+            </tr>
+			<tr/>
+			<tr>       
+                <td>
+                    Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
+                </td>
+            </tr>
+	 
+	 
+				<tr>       
+                <td>
+                    Title - Video: <input type="text" size="100" id="titleVideo" value="__UP_titleVideo__"   onchange="registra('titleVideo')"/>                   
+                </td>
+            </tr>
+			 <tr>       
+                <td>
+				 Url to Video: <input type="text" size="100" id="urlVideo" value="__UP_urlVideo__"   onchange="registra('urlVideo')"/>   
+
+					
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
+               
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Tag - Video2: <input type="text" size="100" id="tagVideo2" value="__UP_tagVideo2__"   onchange="registra('tagVideo2')"/>                   
+                </td>
+            </tr>
+	 
+	 
+				<tr>       
+                <td>
+                    Title - Video2: <input type="text" size="100" id="titleVideo2" value="__UP_titleVideo2__"   onchange="registra('titleVideo2')"/>                   
+                </td>
+            </tr>
+			 <tr>       
+                <td>
+				 Url to Video2: <input type="text" size="100" id="urlVideo2" value="__UP_urlVideo2__"   onchange="registra('urlVideo2')"/>   
+
+					
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                Text - Video2: <textarea id="textVideo2" style="height: 245px; width: 100%" onchange="registra('textVideo2')" >__UP_textVideo2__</textarea>
+               
+                </td>
+            </tr>
+			
+	</table>	
+
+    <script type="text/javascript">           
+            // Get userprefs
+            var prefs = new gadgets.Prefs();           
+            function registra(variable)
+            {	
+				
+                prefs.set(variable,document.getElementById(variable).value);
+				
+			
+            } 
+			gadgets.window.adjustHeight();
+    </script>   	
+
+	  
+
+	 
+ ]]>	
+
+ </Content>
+  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
@@ -391,102 +490,4 @@
   </script>
     ]]>
   </Content>
-  <Content type="html" view="configuration" preferred_height="480">
-
-<![CDATA[
-<style type="text/css">
-    input#VarrootSite {
-           width: 300px;
-          }
-	table td {
-				color: #000;
-				font-size: 11px;
-				font-weight: bold;
-			}
-  </style>
-  <table width="100%" border="0" id="tablaconfig">  
-			<tr>       
-                <td>
-                    Url -Page All Videos: <input type="text" size="100" id="Urlall" value="__UP_Urlall__"   onchange="registra('Urlall')"/>                   
-                </td>
-            </tr>
-			<tr/>
-			<tr>       
-                <td>
-                    Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
-                </td>
-            </tr>
-			<tr/>
-			<tr>       
-                <td>
-                    Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
-                </td>
-            </tr>
-	 
-	 
-				<tr>       
-                <td>
-                    Title - Video: <input type="text" size="100" id="titleVideo" value="__UP_titleVideo__"   onchange="registra('titleVideo')"/>                   
-                </td>
-            </tr>
-			 <tr>       
-                <td>
-				 Url to Video: <input type="text" size="100" id="urlVideo" value="__UP_urlVideo__"   onchange="registra('urlVideo')"/>   
-
-					
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
-               
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Tag - Video2: <input type="text" size="100" id="tagVideo2" value="__UP_tagVideo2__"   onchange="registra('tagVideo2')"/>                   
-                </td>
-            </tr>
-	 
-	 
-				<tr>       
-                <td>
-                    Title - Video2: <input type="text" size="100" id="titleVideo2" value="__UP_titleVideo2__"   onchange="registra('titleVideo2')"/>                   
-                </td>
-            </tr>
-			 <tr>       
-                <td>
-				 Url to Video2: <input type="text" size="100" id="urlVideo2" value="__UP_urlVideo2__"   onchange="registra('urlVideo2')"/>   
-
-					
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                Text - Video2: <textarea id="textVideo2" style="height: 245px; width: 100%" onchange="registra('textVideo2')" >__UP_textVideo2__</textarea>
-               
-                </td>
-            </tr>
-			
-	</table>	
-
-    <script type="text/javascript">           
-            // Get userprefs
-            var prefs = new gadgets.Prefs();           
-            function registra(variable)
-            {	
-				
-                prefs.set(variable,document.getElementById(variable).value);
-				
-			
-            } 
-			gadgets.window.adjustHeight();
-    </script>   	
-
-	  
-
-	 
- ]]>	
-
- </Content>
 </Module>
