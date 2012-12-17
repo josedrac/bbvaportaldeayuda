@@ -466,7 +466,7 @@
 	 var textVideo2 = prefs.getString("textVideo2");
 	 var urlVideo2 = prefs.getString("urlVideo2");
 	 var tagVideo2 = prefs.getString("tagVideo2");
-	 if(window.onload()){
+	
 	 
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 	 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
@@ -484,7 +484,7 @@
 	 
 	 document.getElementById("urlVideo2").innerHTML = '<embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 	 
-	}
+	
 	
 
   </script>
