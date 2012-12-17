@@ -330,7 +330,7 @@
 	}
 	</style>
 	
-<body onload="cargaCompleta()">
+
 <div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 
 <div id="comboVideo">
@@ -350,11 +350,11 @@
 	 </div>
 	 <button type="button" id="allcontent"></button>
 </div>
-</body>	
+
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
-	 var prefs = new gadgets.Prefs();
+	 var prefs = new _IG_Prefs(); 
 	 
 	 var titlecomboVideo = prefs.getString("titlecomboVideo");
 	 var Urlall = prefs.getString("Urlall");
@@ -368,6 +368,8 @@
 	 var textVideo2 = prefs.getString("textVideo2");
 	 var urlVideo2 = prefs.getString("urlVideo2");
 	 var tagVideo2 = prefs.getString("tagVideo2");
+	 _IG_RegisterOnloadHandler(cargaCompleta);
+	 
 	 function cargaCompleta(){
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 	 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
