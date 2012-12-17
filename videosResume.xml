@@ -453,7 +453,7 @@
 </body>
 	
    <script type="text/javascript">
-   console.debug("pruebas 2");
+  
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 
@@ -478,7 +478,7 @@
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
 	 document.getElementById("textVideo").innerHTML = textVideo;
-	 console.debug("aqui"+urlVideo);
+	 console.debug("urlVideo "+urlVideo);
 	 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 	
 	 
