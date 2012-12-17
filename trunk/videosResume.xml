@@ -262,6 +262,7 @@
 		height:201px;
 		margin-right:4px;
 		margin-top:5px;
+		display:block;
 	  }
 	  #urlVideo2{
 		float:right;
@@ -269,6 +270,7 @@
 		height:201px;
 		margin-right:4px;
 		margin-top:5px;
+		display:block;
 	  }
 	  
 	  #TagVideo{
