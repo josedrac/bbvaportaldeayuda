@@ -451,7 +451,7 @@
 </body>
 	
    <script type="text/javascript">
-   console.debug("pruebas 1");
+   console.debug("pruebas 2");
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 	 
