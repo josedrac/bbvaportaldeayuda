@@ -429,7 +429,7 @@
 	}
 	</style>
 	
-
+<body onload="function cargaCompleta()">
 <div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 <div id="comboVideo">
 	<div id="video-container">
@@ -448,7 +448,7 @@
 	 </div>
 	 <button type="button" id="allcontent"></button>
 </div>
-
+</body>
 	
    <script type="text/javascript">
    console.debug("pruebas 1");
@@ -468,7 +468,7 @@
 	 var urlVideo2 = prefs.getString("urlVideo2");
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	
-	 
+	 function cargaCompleta(){
 	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 	 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
 	 
@@ -485,7 +485,7 @@
 	 
 	 document.getElementById("urlVideo2").innerHTML = '<embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 	 
-	
+	}
 	
 
   </script>
