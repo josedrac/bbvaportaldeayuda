@@ -429,7 +429,7 @@
 	}
 	</style>
 	
-<body onload="function cargaCompleta()">
+<body onload="cargaCompleta()">
 <div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 <div id="comboVideo">
 	<div id="video-container">
