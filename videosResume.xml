@@ -376,7 +376,7 @@
 	 document.getElementById("textVideo").innerHTML = textVideo;
 	 //document.getElementById("urlVideo").innerHTML = '<EMBED SRC="'+urlVideo+'" HEIGHT=189 WIDTH=284 type="application/x-shockwave-flash" AUTOSTART=TRUE LOOP=FALSE/>';
 	 //alert(urlVideo);
-	 document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
+	 document.getElementById("urlVideo").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';
 	 //<Embed> <object style="height: 189px; width: 284px; float:left;"><param name="movie" value="'+urlVideo+'"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always">
      //alert(document.getElementById("urlVideo"));
 	 
