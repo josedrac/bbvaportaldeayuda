@@ -375,11 +375,9 @@
 	 document.getElementById("tagVideo").innerHTML = tagVideo;
 	 document.getElementById("titleVideo").innerHTML = titleVideo;
 	 document.getElementById("textVideo").innerHTML = textVideo;
-	 //document.getElementById("urlVideo").innerHTML = '<EMBED SRC="'+urlVideo+'" HEIGHT=189 WIDTH=284 type="application/x-shockwave-flash" AUTOSTART=TRUE LOOP=FALSE/>';
-	 //alert(urlVideo);
+	
 	 document.getElementById("urlVideo").innerHTML = '<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
-	 //<Embed> <object style="height: 189px; width: 284px; float:left;"><param name="movie" value="'+urlVideo+'"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always">
-     //alert(document.getElementById("urlVideo"));
+	
 	 
 	 document.getElementById("tagVideo2").innerHTML = tagVideo2;
 	 document.getElementById("titleVideo2").innerHTML = titleVideo2;
