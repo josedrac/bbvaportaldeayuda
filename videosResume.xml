@@ -384,7 +384,7 @@
 	 document.getElementById("titleVideo2").innerHTML = titleVideo2;
 	 document.getElementById("textVideo2").innerHTML = textVideo2;
 	 
-	 document.getElementById("urlVideo2").innerHTML = '<embed src="'+urlVideo2+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" > </embed>';
+	 document.getElementById("urlVideo2").innerHTML = '<embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 	 
 	
 	
