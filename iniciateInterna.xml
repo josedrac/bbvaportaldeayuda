@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="portalcontenido.xml"
+  <ModulePrefs title="iniciateInterna.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -361,6 +361,7 @@
 	
 	
    <script type="text/javascript">
+   console.debug('');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
@@ -397,6 +398,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
 			   html += "<div id='urlVideo'>";
+			   console.debug('data.getValue(0,2) '+data.getValue(0,2));
 			   html += '<iframe frameborder="0" style="border:1px solid #AAA; width:620px; height:427px;" src="'+data.getValue(0,2)+'"></iframe>'; //"<embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  target='_parent' href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
