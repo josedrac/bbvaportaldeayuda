@@ -216,7 +216,7 @@
 				
 				//alert(filas);
 				
-				for(var i=0;i<(filas-1);i++){
+				for(var i=0;i<=(filas-1);i++){
 				  //  if(data.getValue(i,7)!=''){ 
 				    document.getElementById('subsection'+subseccion).innerHTML +="<li><a target='_parent' href='"+data.getValue(i,7)+"'>"+data.getValue(i,3)+"</a></li>";
 					//}
