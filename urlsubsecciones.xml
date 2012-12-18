@@ -214,7 +214,7 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				
-				alert(filas);
+				//alert(filas);
 				
 				for(var i=0;i<filas;i++){
 				  //  if(data.getValue(i,7)!=''){ 
