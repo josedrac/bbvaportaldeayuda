@@ -176,7 +176,7 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
 				
-				var querytosend = "select max(A),C where C like '%"+subseccion+"%'group by C";
+				var querytosend = "select max(A),C where C like '%"+subseccion+"%' group by C";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
@@ -190,7 +190,7 @@
 				var html="";
 				
 				for(var i=0;i<filas;i++){
-				    if(subseccion!= 'Subsección'){
+				    if(subseccion != 'Subsección'){
 					html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
 				    html +="<div id='subsection"+subseccion+"' class='subseccion'></div>";
