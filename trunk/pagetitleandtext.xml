@@ -147,6 +147,9 @@
 	color:#434A58;	
 	margin-left:15px;
 	}
+	#textPage a{
+	color:#0078D2;
+	}
 	
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>	
