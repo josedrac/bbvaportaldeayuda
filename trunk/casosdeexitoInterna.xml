@@ -295,7 +295,7 @@
 	font-size:small;
 	font-style:italic;
 	margin-bottom:15px;
-	width:620px;
+	width:615px;
 	}
 	#autorydpt{
 	font-size:small;
@@ -405,7 +405,7 @@
 			   if(data.getValue(i,10)!=''){
 			   html +="<div id='video'>"
 			   html +="<span class='titlesection'>Video:</span>";
-			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:620px; height:427px; '></iframe>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:575px; height:427px; '></iframe>";
 			   html +="</div>";
 			   }
 			   
