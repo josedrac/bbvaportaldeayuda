@@ -277,6 +277,20 @@
 	font-family:BBVA Web Book;
 	color:#0065B7;
 	}
+	/*aqui*/
+	#userBBVA{
+		float:left;
+		margin-left:28px;
+	}
+	#userBBVA img{
+	    float:left;
+	}
+	#citaAutor{
+	float:left;
+	}
+	#autorydpt{
+	float:left;
+	}
 	</style>
 	
 <div id="listportales"></div>	
