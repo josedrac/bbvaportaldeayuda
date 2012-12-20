@@ -239,7 +239,9 @@ margin-left:10px;
 line-height:30px;
 }
 
-	
+	.linkMov {
+line-height: 20px;
+}
 	</style>
 <body onload="cargaCompleta()">	
 <div id="movilidad">Guías de configuración, según dispositivo:
@@ -306,9 +308,11 @@ line-height:30px;
 	 
 	   var html= "";
 	   
-	   for(var i=0;i<filas;i++){
-		if(dataDC.getValue(i,2) != 'Dispositivo'){
-	    html +="<a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
+	   for(var i=0;i<filas;i++)
+	   {
+		if(dataDC.getValue(i,2) != 'Dispositivo')
+		{
+	    html +="<a class='linkMov' href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
 		}
 	 
 	  }
