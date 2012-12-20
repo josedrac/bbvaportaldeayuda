@@ -425,7 +425,7 @@
 			var pagTotales = Math.ceil(filas/3);
 			var pagActual = 1;
 			var html = "";
-			alert(filas);
+			
 			 if(filas<1)
             {
     			html += '<p class="text">No hay ningún contenido referente a Portales.</p>';
@@ -438,7 +438,7 @@
 			
 			html += "<div id='titlecomboVideo'><h2>"+titlecomboVideo+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
-			 for(var i=1;i<=filas;i++){
+			 for(var i=1;i<filas;i++){
 			 
 			   html += "<div id='comboVideo'>";
 			   html += "<div id='video-container'><div id='infoVideo'>";
