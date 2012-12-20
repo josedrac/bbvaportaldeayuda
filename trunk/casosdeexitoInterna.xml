@@ -372,7 +372,7 @@
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
 			   html +="<div id='reto'><span class='titlesection'>Reto:</span>"+data.getValue(i,8)+"</div>";
-			   html +="<span class='titlesection'>Resultados:</span>";
+			   html +="<span class='titlesection' style='margin-top:20px;'>Resultados:</span>";
 			   html +="<div id='resultados'>";
 			   html +="<ul>";
 				for(var j=0;j<resultados.length;j++){
