@@ -281,7 +281,7 @@
 	#userBBVA{
 		float:left;
 		margin-left:15px;
-		width:620px;
+		width:600px;
 	}
 	#userBBVA img{
 	    float:left;
@@ -302,11 +302,11 @@
 	color:#666;
 	font-style:italic;
 	font-weight:bold;
-	width:620px;
+	width:600px;
 	
 	}
 	#listportales{
-	width:620;
+	width:600;
 	}
 	.titlesection{
 	font-size:small;
@@ -330,7 +330,7 @@
 	margin-bottom:10px;
 	}
 	#video iframe{
-	margin:25px 0px 0px 55px;
+	margin:25px 0px 0px 35px;
 	}
 	</style>
 	
