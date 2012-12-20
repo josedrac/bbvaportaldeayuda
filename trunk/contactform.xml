@@ -53,12 +53,9 @@
 					text-decoration:none;
 					font:16px BBVA Web Book;
 					background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/contacto.png')no-repeat;
+					padding-left:40px;
 					}
-					.titulo a img{
-					margin-right:10px;
-					color:#333;
-					text-decoration:none;
-					}
+				
 					.caja{
 						border: 1px solid #DDE3EA;
             border-radius: 2px;
