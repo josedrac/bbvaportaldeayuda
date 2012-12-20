@@ -2,8 +2,8 @@
 <Module>
   <ModulePrefs title="singleVideoGoogleDrive.xml"
     description=""
-    height="345"
-    width="640"
+    height="430"
+    width="660"
     author_affiliation="Capgemini">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
