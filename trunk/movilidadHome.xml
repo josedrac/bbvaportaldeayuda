@@ -60,6 +60,7 @@
 	padding-top:11px;
 	height:30px;
 	margin-left:11px;
+	font-weight: normal;
 	}
 		
 	.linedownheadertable{
@@ -77,6 +78,7 @@
 	color:#434A58;	
 	margin-left:9px;
 	padding-top:11px;
+	font-weight: normal;
 	}
 	
 	.tablasoporte{
@@ -167,6 +169,7 @@
 	font-size:22px;
 	font-family: BBVA Web Light;
 	color:#0078D2;
+	font-weight: normal;
 	}
 	
 	#titleHome h2{
@@ -196,6 +199,7 @@
 	margin-top:10px;
 	margin-bottom:5px;
 	padding-left:10px;
+	font-weight: normal;
 	}	
 	
 	.linkMov {
