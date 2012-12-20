@@ -110,7 +110,7 @@
           
                         
             
-            html+='<div class=\"titulo\"><a href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
+            html+='<div class=\"titulo\"><a target="_parent" href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
              
             
             document.getElementById("content_div").innerHTML = html;
