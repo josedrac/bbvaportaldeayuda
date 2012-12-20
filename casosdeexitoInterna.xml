@@ -285,7 +285,7 @@
 	}
 	#userBBVA img{
 	    float:left;
-		margin:3px 10px 0 0;
+		margin:3px 10px 5px 0;
 	}
 	#citaAutor{
 	
@@ -316,6 +316,7 @@
 	#reto{
 	font-size:small;
 	color:#3D85C6;
+	margin-bottom:15px;
 	}
 	</style>
 	
@@ -372,7 +373,7 @@
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
 			   html +="<div id='reto'><span class='titlesection'>Reto:</span>"+data.getValue(i,8)+"</div>";
-			   html +="<span class='titlesection' style='margin-top:20px;'>Resultados:</span>";
+			   html +="<span class='titlesection' >Resultados:</span>";
 			   html +="<div id='resultados'>";
 			   html +="<ul>";
 				for(var j=0;j<resultados.length;j++){
