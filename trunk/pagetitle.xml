@@ -2,7 +2,8 @@
 <Module>
   <ModulePrefs title="titlepage.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="Capgemini"
+    height ="50">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
