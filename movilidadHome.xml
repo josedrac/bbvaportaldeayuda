@@ -270,12 +270,19 @@ margin-top:10px;
 margin-bottom:5px;
 padding-left:10px;
 }	
+.linkMov {
+line-height: 20px;
+}
 	</style>
 <div id="content"><div id="titleHome"><h2>Movilidad</h2></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />	
+
+<!--
 <div id="movilidad">País: <select  selected="País" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
+-->
 <div id="textMovilidad">Guías de configuración, según dispositivo, para: </div>
 <div id="dispositivos"></div></div>	
+  
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
@@ -287,6 +294,7 @@ padding-left:10px;
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
 			}
+			
 	 function sendQuery() 
 			{
 				gadgetHelper = new google.visualization.GadgetHelper();
@@ -298,41 +306,43 @@ padding-left:10px;
 				
 				
 			}
-	 function handleQueryResponse(response) {
-				data = response.getDataTable();	
-				var filas = data.getNumberOfRows();
-				//alert(filas);
-				
-				
-				for(var i=0;i<filas;i++){
-				   // alert(data.getValue(i,0));
-				   if(data.getValue(i,1) == 'País'){
-				   document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-				   }else{
-				    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-				   }
-				}
-			}
+			
+	 function handleQueryResponse(response) 
+	 {
+		data = response.getDataTable();	
+		var filas = data.getNumberOfRows();
+	
+	/*	for(var i=0;i<filas;i++)
+		{
+		   // alert(data.getValue(i,0));
+		   if(data.getValue(i,1) == 'País'){
+		   document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
+		   }else{
+		    document.getElementById('paises').innerHTML += "<option value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
+		   }
+		}*/
+	}
 		
-	 function devicesCountry(pais){
+	function devicesCountry(pais)
+	{
 	   gadgetHelper = new google.visualization.GadgetHelper();
 	   var opts = {dataType:'jsonp'};
 	   var queryDC = new google.visualization.Query(urlTable, opts);	
 	   var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"' group by A,C,D,E";
 	   queryDC.setQuery(queryDCtosend);			  
 	   queryDC.send(handleQueryResponseDC);
-	   
-
 	 }
-	 function handleQueryResponseDC(response){
 	 
+	 function handleQueryResponseDC(response)
+	 {	 
 	   dataDC = response.getDataTable();
 	   var filas = dataDC.getNumberOfRows();
 	   var html= "";
 	   
 	   for(var i=0;i<filas;i++){
-	   if(dataDC.getValue(i,2) != 'Dispositivo'){
-	    html +="<a href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
+	   if(dataDC.getValue(i,2) != 'Dispositivo')
+	   {
+	    	html +="<a class='linkMov' href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a><br/>";
 	   }
 	  }
 	   document.getElementById('dispositivos').innerHTML = html;
