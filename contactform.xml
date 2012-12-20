@@ -50,6 +50,7 @@
 					.titulo a{
 					color:#333;
 					text-decoration:none;
+					font:16px BBVA Web Book;
 					}
 					.titulo a img{
 					margin-right:10px;
