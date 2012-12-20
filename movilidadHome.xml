@@ -72,7 +72,7 @@
 	margin-bottom:90px;
 	width:675px;
 	height:57px;
-	font-family: BBVA Office Light;
+	font-family: BBVA Web Light;
 	font-size:14px;
 	color:#434A58;	
 	margin-left:9px;
@@ -122,8 +122,7 @@
 	
 	.iniciateline{
 		width: 619px;
-		margin-bottom:10px;
-		
+		margin-bottom:10px;		
 	}
 	
 	.lineitem{
@@ -132,71 +131,76 @@
 		margin-top:10px;
 	}
 
-#movilidad{
-color:#434A58;
-font-size:12px;
-font-family: Stag;
-padding-left:10px;
-}
+	#movilidad{
+	color:#434A58;
+	font-size:12px;
+	font-family: Arial;
+	padding-left:10px;
+	}
 
-#movilidad select{
-width:190px;
-height:30px;
-color:#0065B7;
-font-size:12px;
-font-family: BBVA Web Medium;
-margin-left:10px;
-}
-#dispositivos{
-color:#0065B7;
-font-size:12px;
-font-family: Stag;
-margin-top:15px;
-}
-#dispositivos a{
-color:#0065B7;
-font-size:12px;
-font-family: Stag;
-margin-top:15px;
-text-decoration:none;
-padding-left:10px;
-
-}
-#titleHome{
-font-size:22px;
-font-family: BBVA Web Light;
-color:#0078D2;
-}
-#titleHome h2{
-padding-left:10px;
-font:22px BBVA Web Light;
-color:#0078D2;
-margin-top:0px;
-padding-bottom:5px;
-
-}
-.linedowntitle{	
+	#movilidad select{
+	width:190px;
+	height:30px;
+	color:#0065B7;
+	font-size:12px;
+	font-family: BBVA Web Medium;
+	margin-left:10px;
+	}
+	
+	#dispositivos{
+	color:#0065B7;
+	font-size:12px;
+	font-family: Arial;
+	margin-top:15px;
+	}
+	
+	#dispositivos a{
+	color:#0065B7;
+	font-size:12px;
+	font-family: Arial;
+	margin-top:15px;
+	text-decoration:none;
+	padding-left:10px;
+	}
+	
+	#titleHome{
+	font-size:22px;
+	font-family: BBVA Web Light;
+	color:#0078D2;
+	}
+	
+	#titleHome h2{
+	padding-left:10px;
+	font:22px BBVA Web Light;
+	color:#0078D2;
+	margin-top:0px;
+	padding-bottom:5px;
+	}
+	
+	.linedowntitle{	
 	width:298px;
 	display:block;
 	margin-top:-15px;
 	height:4px;
 	}
 	
-#content{
-float:right;
-width:300px;
-}	
-#textMovilidad{
-color:#434A58;
-font-size:12px;
-font-family: BBVA Web Light;
-margin-top:10px;
-margin-bottom:5px;
-padding-left:10px;
-}	
-.linkMov {
-line-height: 20px;
-}
+	#content{
+	float:right;
+	width:300px;
+	}	
+	
+	#textMovilidad{
+	color:#434A58;
+	font-size:12px;
+	font-family: BBVA Web Light;
+	margin-top:10px;
+	margin-bottom:5px;
+	padding-left:10px;
+	}	
+	
+	.linkMov {
+	line-height: 20px;
+	}
 	</style>
 	<body onload="cargaCompleta()">	
 <div id="content">
