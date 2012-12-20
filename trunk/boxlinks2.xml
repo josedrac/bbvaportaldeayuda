@@ -118,7 +118,7 @@
             var html="";
             // Obtener userprefs
             var prefs = new gadgets.Prefs();            
-            
+            var prefs2 = new gadgets.Prefs();  
             var VarTituloVentana=prefs.getString("VarTituloVentana");
             var VarEnlace1Texto=prefs.getString("VarEnlace1Texto");
             var VarEnlace1URL=prefs.getString("VarEnlace1URL");
@@ -144,12 +144,12 @@
             var VarEnlace8Texto=prefs.getString("VarEnlace8Texto");
             var VarEnlace8URL=prefs.getString("VarEnlace8URL");
             var VarEnlace8ImgURL=prefs.getString("VarEnlace8ImgURL");
-            var VarEnlace9Texto=prefs.getString("VarEnlace9Texto");
-            var VarEnlace9URL=prefs.getString("VarEnlace9URL");
-            var VarEnlace9ImgURL=prefs.getString("VarEnlace9ImgURL");
-            var VarEnlace10Texto=prefs.getString("VarEnlace10Texto");
-            var VarEnlace10URL=prefs.getString("VarEnlace10URL");
-            var VarEnlace10ImgURL=prefs.getString("VarEnlace10ImgURL");
+            var VarEnlace9Texto=prefs2.getString("VarEnlace9Texto");
+            var VarEnlace9URL=prefs2.getString("VarEnlace9URL");
+            var VarEnlace9ImgURL=prefs2.getString("VarEnlace9ImgURL");
+            var VarEnlace10Texto=prefs2.getString("VarEnlace10Texto");
+            var VarEnlace10URL=prefs2.getString("VarEnlace10URL");
+            var VarEnlace10ImgURL=prefs2.getString("VarEnlace10ImgURL");
             
             function devuelveEnlace(varEnlace)
             {
@@ -390,26 +390,31 @@
             </tr>
             <tr>        
                 <td class="separador">
-                		Enlace 9 - Imagen: <input type="text" id="VarEnlace9ImgURL" class="btnImg" value="__UP_VarEnlace9ImgURL__" onchange="registra('VarEnlace9ImgURL')"><br/>       
-                    Enlace 9 - Texto: <input type="text" id="VarEnlace9Texto" class="btnTexto" value="__UP_VarEnlace9Texto__" onchange="registra('VarEnlace9Texto')"><br/>        
-                    Enlace 9 - URL: <input type="text" id="VarEnlace9URL" class="btnURL" value="__UP_VarEnlace9URL__" onchange="registra('VarEnlace9URL')"><br/>                    
+                		Enlace 9 - Imagen: <input type="text" id="VarEnlace9ImgURL" class="btnImg" value="__UP_VarEnlace9ImgURL__" onchange="registra2('VarEnlace9ImgURL')"><br/>       
+                    Enlace 9 - Texto: <input type="text" id="VarEnlace9Texto" class="btnTexto" value="__UP_VarEnlace9Texto__" onchange="registra2('VarEnlace9Texto')"><br/>        
+                    Enlace 9 - URL: <input type="text" id="VarEnlace9URL" class="btnURL" value="__UP_VarEnlace9URL__" onchange="registra2('VarEnlace9URL')"><br/>                    
                 </td>
             </tr>
             <tr>        
                 <td>
-                		Enlace 10 - Imagen: <input type="text" id="VarEnlace10ImgURL" class="btnImg" value="__UP_VarEnlace10ImgURL__" onchange="registra('VarEnlace10ImgURL')"><br/>       
-                    Enlace 10 - Texto: <input type="text" id="VarEnlace10Texto" class="btnTexto" value="__UP_VarEnlace10Texto__" onchange="registra('VarEnlace10Texto')"><br/>        
-                    Enlace 10 - URL: <input type="text" id="VarEnlace10URL" class="btnURL" value="__UP_VarEnlace10URL__" onchange="registra('VarEnlace10URL')"><br/>   
+                	Enlace 10 - Imagen: <input type="text" id="VarEnlace10ImgURL" class="btnImg" value="__UP_VarEnlace10ImgURL__" onchange="registra2('VarEnlace10ImgURL')"><br/>       
+                    Enlace 10 - Texto: <input type="text" id="VarEnlace10Texto" class="btnTexto" value="__UP_VarEnlace10Texto__" onchange="registra2('VarEnlace10Texto')"><br/>        
+                    Enlace 10 - URL: <input type="text" id="VarEnlace10URL" class="btnURL" value="__UP_VarEnlace10URL__" onchange="registra2('VarEnlace10URL')"><br/>   
                 </td>
             </tr>
             
         </table>        
         <script type="text/javascript">    
-            var prefs = new gadgets.Prefs();            
+            var prefs = new gadgets.Prefs();
+			var prefs2 = new gadgets.Prefs();              
             function registra(variable)
             {
                 prefs.set(variable,document.getElementById(variable).value);
-            }    
+            } 
+            function registra2(variable)
+            {
+                prefs2.set(variable,document.getElementById(variable).value);
+            } 			
             gadgets.window.adjustHeight();
         </script>   
     ]]>
