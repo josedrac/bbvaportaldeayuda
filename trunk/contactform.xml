@@ -53,6 +53,8 @@
 					}
 					.titulo a img{
 					margin-right:10px;
+					color:##333
+					text-decoration:none;
 					}
 					.caja{
 						border: 1px solid #DDE3EA;
@@ -107,7 +109,7 @@
           
                         
             
-            html+='<div class=\"titulo\"><a href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'">' + VarEnlace1Texto + '</img></a></div>';
+            html+='<div class=\"titulo\"><a href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
              
             
             document.getElementById("content_div").innerHTML = html;
