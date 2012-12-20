@@ -281,6 +281,7 @@
 	#userBBVA{
 		float:left;
 		margin-left:15px;
+		width:620px;
 	}
 	#userBBVA img{
 	    float:left;
@@ -292,12 +293,14 @@
 	font-size:small;
 	font-style:italic;
 	margin-bottom:15px;
+	width:400px;
 	}
 	#autorydpt{
 	font-size:small;
 	color:#666;
 	font-style:italic;
 	font-weight:bold;
+	width:400px;
 	
 	}
 	</style>
