@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-    <ModulePrefs title="Cajetin botones2"
+    <ModulePrefs title="Cajetin botones"
         title_url=""
         height=""
         width="300"
@@ -35,7 +35,8 @@
     <UserPref name="VarEnlace9URL" display_name="enlace 9:" default_value=""/>
     <UserPref name="VarEnlace10Texto" display_name="Texto enlace 10:" default_value=""/>
     <UserPref name="VarEnlace10URL" display_name="enlace 10:" default_value=""/>
-    <Content type="html" view="home"><![CDATA[
+    <Content type="html" view="home">
+    <![CDATA[
         <style>
           @font-face {
              font-family: 'BBVA Web Book';
@@ -46,60 +47,66 @@
                 url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
              font-style: normal;
              font-weight: normal;
-          }        
-					.titulo{
-						border-bottom: 1px solid  #DDE3EA;
-						background: #ffffff;
-						background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
-						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7f8));
-						background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
-						background: -o-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
-						background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
-						background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
-						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
-						font: 16px BBVA Web Book;
-						color: #333333;
-						padding-left: 18px;
-						padding-left: 18px;
-						padding-top: 14px;
-						padding-bottom: 15px;
-					}
-					.caja{
-						border: 1px solid #DDE3EA;
-            border-radius: 2px;
-            -ms-border-radius: 2px;
-            -moz-border-radius: 2px;
-            -webkit-border-radius: 2px;
-            -khtml-border-radius: 2px;
-            width: 298px;
-            clear: both;
+          }    
+              
+		.titulo{
+			border-bottom: 1px solid  #DDE3EA;
+			background: #ffffff;
+			background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7f8));
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+			background: -o-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+			background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+			background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
+			font: 16px BBVA Web Book;
+			color: #333333;
+			padding-left: 18px;
+			padding-left: 18px;
+			padding-top: 14px;
+			padding-bottom: 15px;
+		}
+		
+		.caja{
+			border: 1px solid #DDE3EA;
+	         border-radius: 2px;
+	         -ms-border-radius: 2px;
+	         -moz-border-radius: 2px;
+	         -webkit-border-radius: 2px;
+	         -khtml-border-radius: 2px;
+	         width: 298px;
+	         clear: both;
 			margin-top:15px;
-					}
-					ul{
-						padding-left: 19px;
-						padding-right: 19px;
-						margin: 0;
-					}
-					ul li{
-						list-style: none;
-						border-bottom: 1px solid #DDE3EA;
-						padding-bottom: 12px;
-						padding-top: 17px;
-						cursor:hand;
-					}
-          ul li:last-child{
-						border: 0;
-						padding-bottom: 11px;
-						padding-top: 17px;
-					}     
-					ul li a{
+		}
+		
+		ul{
+			padding-left: 19px;
+			padding-right: 19px;
+			margin: 0;
+		}
+		
+		ul li{
+			list-style: none;
+			border-bottom: 1px solid #DDE3EA;
+			padding-bottom: 12px;
+			padding-top: 17px;
+			cursor:hand;
+		}
+					
+        ul li:last-child{
+			border: 0;
+			padding-bottom: 11px;
+			padding-top: 17px;
+		}   
+		  
+		ul li a{
             padding-left: 2px;
-						vertical-align: 3px;
-						text-decoration: none;
-            font: 12px Arial;
-            font-weight: bold;
-						color: #0073C9;
-					}  
+			vertical-align: 3px;
+			text-decoration: none;
+			font: 12px Arial;
+			font-weight: bold;
+			color: #0073C9;
+		}  
                
         </style>
     
@@ -141,10 +148,10 @@
             var VarEnlace10Texto=prefs.getString("VarEnlace10Texto");
             var VarEnlace10URL=prefs.getString("VarEnlace10URL");
            
-            function Go(destination){
-
-			window.parent.location.href = destination;
-			return false;
+            function Go(destination)
+            {
+				window.parent.location.href = destination;
+				return false;
 			} 
 			
             function devuelveEnlace(varEnlace)
@@ -159,8 +166,7 @@
                     var link = 'href=\"'+ varEnlace +'\"  target=\"_parent\" ';
                 }
                 return link;
-            }
-		
+            }		
                         
             function insertarEnlace()
             {
@@ -281,7 +287,7 @@
     <Content type="html" view="configuration"  preferred_height="300">
     <![CDATA[        
         <style>
-						table td {
+			table td {
                 color: #000;
                 font-size: 11px;
                 font-weight: bold;
@@ -387,17 +393,16 @@
                     Enlace 10 - Texto: <input type="text" id="VarEnlace10Texto" class="btnTexto" value="__UP_VarEnlace10Texto__" onchange="registra('VarEnlace10Texto')"><br/>        
                     Enlace 10 - URL: <input type="text" id="VarEnlace10URL" class="btnURL" value="__UP_VarEnlace10URL__" onchange="registra('VarEnlace10URL')"><br/>   
                 </td>
-            </tr>
+            </tr>            
+        </table>    
             
-        </table>        
         <script type="text/javascript">    
             var prefs = new gadgets.Prefs();
 			             
             function registra(variable)
             {
                 prefs.set(variable,document.getElementById(variable).value);
-            } 
-            
+            }             
         </script>   
     ]]>
     </Content>
