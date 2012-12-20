@@ -348,7 +348,7 @@
 			   html +="</ul>"; 	
 			   if(data.getValue(i,10)!=''){
 			   html +="<span class='titlesection'>Video:</span>";
-			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width=620px; height=427;'></iframe>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:620px; height:427px;'></iframe>";
 
 			   }
 			   
