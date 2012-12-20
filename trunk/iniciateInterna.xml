@@ -108,7 +108,7 @@
 		margin-top: 0px;		
 	  }
 	  
-      #titleVideo{
+      #titleVideo,  #titleVideo2{
 	  color:#0078D2;
 	  font-family:BBVA Web Book;
 	  font-size:18px;
@@ -116,17 +116,10 @@
 	  width:238px;
 	  margin-left:7px;
 	  margin-top:5px;
+	  font-weight: normal;
 	  
 	  }
-	  #titleVideo2{
-		color:#0078D2;
-		font-size:18px;
-	    font-family:BBVA Web Book;
-		margin-bottom:20px;
-		width:238px;
-		margin-left:7px;
-		margin-top:5px;
-	  }
+	  
 	  #textVideo{
 	    color:#0065B7;
 		font-size:11px;

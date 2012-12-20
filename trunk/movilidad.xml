@@ -59,6 +59,7 @@
 	padding-top:11px;
 	height:30px;
 	margin-left:11px;
+	font-weight: normal;
 	}
 	
 	.linedowntitle{
