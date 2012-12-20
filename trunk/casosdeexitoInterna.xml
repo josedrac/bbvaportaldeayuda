@@ -313,11 +313,16 @@
 			}
 		function handleQueryResponse(response) {
 		
-			   data = response.getDataTable();	
+			   data = response.getDataTable();
+			   var filas = data.getNumberOfRows(); 			   
 			   var html = "";
+			   
+			   
+			   
+			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
+			   for(var i=0; i<filas;i++){
 			   var resultados = data.getValue(i,9).split(",");
 			   alert(resultados);
-			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			   html +="<div id='userBBVA'>";
 			   if(data.getValue(i,6)!=''){
 			   html +="<img src='"+data.getValue(i,6)+"'/>";
@@ -331,10 +336,12 @@
 			  // html +="<ul id='resultados'>";
 			   
 
-			   document.getElementById('listportales').innerHTML = html;
+			   
 			}	    
-
-				/*function SendGmail(){
+				document.getElementById('listportales').innerHTML = html;
+		}	
+		
+		/*function SendGmail(){
 				
 				//window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
 				var to = emailTo;
