@@ -107,16 +107,16 @@
             var VarEnlace1Texto=prefs.getString("VarEnlace1Texto");
             var VarEnlace1URL=prefs.getString("VarEnlace1URL");
             var VarEnlace1ImgURL=prefs.getString("VarEnlace1ImgURL");
-            
-          
-                        
-            
-            html+='<div class=\"titulo\" onclick="function(){Go('+VarEnlace1URL+');}"><a target="_parent" href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
             function Go(destination){
 
 			window.parent.location.href = destination;
 			return false;
 			} 
+          
+                        
+            
+            html+='<div class=\"titulo\" onclick="function(){Go('+VarEnlace1URL+');}"><a target="_parent" href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
+           
             
             document.getElementById("content_div").innerHTML = html;
             gadgets.window.adjustHeight();
