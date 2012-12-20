@@ -318,6 +318,11 @@
 	color:#3D85C6;
 	margin-bottom:15px;
 	}
+	#resultados,
+	#beneficios ul li{
+	font-size:small;
+	color:#666;
+	}
 	</style>
 	
 <div id="listportales"></div>	
