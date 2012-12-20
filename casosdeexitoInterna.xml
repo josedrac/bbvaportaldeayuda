@@ -381,7 +381,7 @@
 			   }else{
 			   html +="<img src='"+data.getValue(i,11)+"'/>";
 			   }
-			   html +="<div id='citaAutor'>"+data.getValue(i,4)+"</div>";
+			   html +='<div id="citaAutor">"'+data.getValue(i,4)+'"</div>';
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
 			   html +="<div id='reto'><span class='titlesection'>Reto:</span>"+data.getValue(i,8)+"</div>";
