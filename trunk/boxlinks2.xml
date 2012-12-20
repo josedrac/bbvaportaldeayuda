@@ -118,7 +118,7 @@
             var html="";
             // Obtener userprefs
             var prefs = new gadgets.Prefs();            
-            var prefs2 = new gadgets.Prefs();  
+            var prefs2 = new _IG_Prefs();
             var VarTituloVentana=prefs.getString("VarTituloVentana");
             var VarEnlace1Texto=prefs.getString("VarEnlace1Texto");
             var VarEnlace1URL=prefs.getString("VarEnlace1URL");
@@ -406,7 +406,7 @@
         </table>        
         <script type="text/javascript">    
             var prefs = new gadgets.Prefs();
-			var prefs2 = new gadgets.Prefs();              
+			var prefs2 = new _IG_Prefs();             
             function registra(variable)
             {
                 prefs.set(variable,document.getElementById(variable).value);
