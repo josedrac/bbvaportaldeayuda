@@ -444,7 +444,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			  
-			   html += "<embed src='"+data.getValue(i,10)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='302' height='201'</embed></div>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  allowfullscreen='true' allowScriptAccess='always' width='302' height='201'/></div>";
 			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
