@@ -285,7 +285,7 @@
 	}
 	#userBBVA img{
 	    float:left;
-		margin:3px 10px 5px 0;
+		margin:3px 10px 15px 0;
 	}
 	#citaAutor{
 	
@@ -324,7 +324,7 @@
 	color:#666;
 	margin-left:30px;
 	}
-	#video .titlesection span{
+	 .titlesection #video span{
 	margin-bottom:10px;
 	}
 	#video iframe{
