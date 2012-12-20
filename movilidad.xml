@@ -242,12 +242,21 @@ line-height:30px;
 	.linkMov {
 line-height: 20px;
 }
+#textMovilidad{
+color:#434A58;
+font-size:12px;
+font-family: BBVA Web Light;
+margin-top:10px;
+margin-bottom:5px;
+padding-left:10px;
+}
 	</style>
 <body onload="cargaCompleta()">	
-<div id="movilidad">Guías de configuración, según dispositivo:
-<!-- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
--->
-</div>
+<div id="textMovilidad">Guías de configuración, según dispositivo: </div>
+<!--<div id="movilidad">Guías de configuración, según dispositivo:
+ <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
+
+</div>-->
 <div id="dispositivos"></div>	
 </body>
    <script type="text/javascript">
