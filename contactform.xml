@@ -110,8 +110,12 @@
           
                         
             
-            html+='<div class=\"titulo\"><a target="_parent" href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
-             
+            html+='<div class=\"titulo\" onclick="function(){Go('+VarEnlace1URL+');}"><a target="_parent" href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
+            function Go(destination){
+
+			window.parent.location.href = destination;
+
+			} 
             
             document.getElementById("content_div").innerHTML = html;
             gadgets.window.adjustHeight();
