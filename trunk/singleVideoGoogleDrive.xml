@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="singlevideo.xml"
+  <ModulePrefs title="singleVideoGoogleDrive.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
