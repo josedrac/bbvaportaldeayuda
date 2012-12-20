@@ -303,6 +303,9 @@
 	width:400px;
 	
 	}
+	#listportales{
+	width:620;
+	}
 	</style>
 	
 <div id="listportales"></div>	
