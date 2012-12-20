@@ -30,7 +30,7 @@
              font-style: normal;
              font-weight: normal;
           }        
-					.titulo{
+					.titulo a{
 						border-bottom: 1px solid  #DDE3EA;
 						background: #ffffff;
 						background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
