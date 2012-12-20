@@ -31,24 +31,26 @@
 
 	#titlepage{
 	background-attachment: scroll;
-	background-clip: border-box;
-	background-color: transparent;
-	background-image: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/bg-separador-doble.png");
-	background-origin: padding-box;
-	background-position: left bottom;
-	background-repeat: repeat-x;
-	background-size: auto auto;
-	width: 100%;
-	float:left;
-	color:#0078D2;
-	font-family: BBVA Web Light;
-	font-size:30px;
-	margin:0px;
-	padding:0px;
-	height:40px;
-	margin-left:11px;
-	font-weight: normal;
-	line-height:20px;
+background-clip: border-box;
+background-color: transparent;
+background-image: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/bg-separador-doble.png");
+background-origin: padding-box;
+background-position: left bottom;
+background-repeat: repeat-x;
+background-size: auto auto;
+width: 100%;
+float: left;
+color: #0078D2;
+font-family: BBVA Web Light;
+font-size: 30px;
+margin: 0px;
+padding: 0px;
+height: 40px;
+margin-left: 11px;
+font-weight: normal;
+line-height: 20px;
+clear: both;
+margin-bottom: 10px;
 	}
 	
 	</style>
