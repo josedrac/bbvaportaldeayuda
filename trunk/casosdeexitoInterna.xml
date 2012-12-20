@@ -290,11 +290,15 @@
 	
 	color:#3D85C6;
 	font-size:small;
+	font-style:italic;
+	margin-bottom:15px;
 	}
 	#autorydpt{
-	
+	font-size:small;
 	color:#666;
-	font-style:italix;
+	font-style:italic;
+	font-weight:bold;
+	
 	}
 	</style>
 	
