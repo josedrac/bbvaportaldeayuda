@@ -17,7 +17,7 @@
     <!--<UserPref name="VarTituloVentana" display_name="Título ventana:" default_value="" required="true"/>-->
     <UserPref name="VarEnlace1Texto" display_name="Texto enlace 1:" default_value="" required="true"/>
     <UserPref name="VarEnlace1URL" display_name="enlace 1:" default_value="" required="true"/>
-    <UserPref name="VarEnlace1ImgURL" display_name="imagen 1:" default_value="" required="true"/>
+    <!--<UserPref name="VarEnlace1ImgURL" display_name="imagen 1:" default_value="" required="true"/>-->
     <Content type="html" view="home"><![CDATA[
         <style>
           @font-face {
@@ -52,6 +52,7 @@
 					color:#333;
 					text-decoration:none;
 					font:16px BBVA Web Book;
+					background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/contacto.png')no-repeat;
 					}
 					.titulo a img{
 					margin-right:10px;
@@ -106,7 +107,7 @@
             // var VarTituloVentana=prefs.getString("VarTituloVentana");
             var VarEnlace1Texto=prefs.getString("VarEnlace1Texto");
             var VarEnlace1URL=prefs.getString("VarEnlace1URL");
-            var VarEnlace1ImgURL=prefs.getString("VarEnlace1ImgURL");
+            //var VarEnlace1ImgURL=prefs.getString("VarEnlace1ImgURL");
             function Go(destination){
 
 			window.parent.location.href = destination;
@@ -115,7 +116,7 @@
           
                         
             
-            html+='<div class=\"titulo\" onclick="Go(\''+VarEnlace1URL+'\');"><a target="_parent" href="'+VarEnlace1URL+'"><img src="'+VarEnlace1ImgURL+'"/>' + VarEnlace1Texto + '</a></div>';
+            html+='<div class=\"titulo\" onclick="Go(\''+VarEnlace1URL+'\');"><a target="_parent" href="'+VarEnlace1URL+'">' + VarEnlace1Texto + '</a></div>';
            
             
             document.getElementById("content_div").innerHTML = html;
