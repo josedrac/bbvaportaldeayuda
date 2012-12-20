@@ -178,6 +178,7 @@
 	color:#0078D2;
 	margin-top:0px;
 	padding-bottom:5px;
+	font-weight: normal;
 	}
 	
 	.linedowntitle{	
