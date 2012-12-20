@@ -30,7 +30,7 @@
              font-style: normal;
              font-weight: normal;
           }        
-					.titulo a{
+					.titulo{
 						border-bottom: 1px solid  #DDE3EA;
 						background: #ffffff;
 						background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
@@ -46,6 +46,13 @@
 						padding-left: 18px;
 						padding-top: 14px;
 						padding-bottom: 15px;
+					}
+					.titulo a{
+					color:##333
+					text-decoration:none;
+					}
+					.titulo a img{
+					margin-right:10px;
 					}
 					.caja{
 						border: 1px solid #DDE3EA;
