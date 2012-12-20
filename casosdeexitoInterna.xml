@@ -405,7 +405,7 @@
 			   if(data.getValue(i,10)!=''){
 			   html +="<div id='video'>"
 			   html +="<span class='titlesection'>Video:</span>";
-			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:620px; height:427px; '></iframe>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:600px; height:427px; '></iframe>";
 			   html +="</div>";
 			   }
 			   
