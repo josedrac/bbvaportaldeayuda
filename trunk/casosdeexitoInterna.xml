@@ -284,7 +284,7 @@
 	}
 	#userBBVA img{
 	    float:left;
-		margin:5px 10px 0 0;
+		margin:3px 10px 0 0;
 	}
 	#citaAutor{
 	
@@ -356,21 +356,25 @@
 			   html +="</div>";
 			   html +="<div id='reto'>"+data.getValue(i,8)+"</div>";
 			   html +="<span class='titlesection'>Resultados:</span>";
-			   html +="<ul id='resultados'>";
+			   html +="<div id='resultados'>";
+			   html +="<ul>";
 				for(var j=0;j<resultados.length;j++){
 				  html +="<li>"+resultados[j]+"</li>";
 				 }
 			   html +="</ul>";
+			   html +="</div>";
 			   html +="<span class='titlesection'>Beneficios:</span>";
-			   html +="<ul id='beneficios'>";
+			   html +="<div id='beneficios'>";
+			   html +="<ul>";
 				for(var x=0;x<beneficios.length;x++){
 				  html +="<li>"+beneficios[x]+"</li>";
 				 }
-			   html +="</ul>"; 	
+			   html +="</ul></div>"; 	
 			   if(data.getValue(i,10)!=''){
+			   html +="<div id='video'>"
 			   html +="<span class='titlesection'>Video:</span>";
 			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:620px; height:427px;'></iframe>";
-
+			   html +="</div>";
 			   }
 			   
 			}	    
