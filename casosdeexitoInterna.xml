@@ -320,6 +320,7 @@
 			   
 			for(var i=0; i<filas;i++){
 			   var resultados = data.getValue(i,9).split(",");
+			   var beneficios = data.getValue(i,12).split(",");
 			   alert(resultados);
 			   alert(resultados.length);
 			   alert(resultados[1]);
@@ -333,8 +334,18 @@
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
 			   html +="<div id='reto'>"+data.getValue(i,8)+"</div>";
-			  // html +="<ul id='resultados'>";
-			   
+			   html +="Resultados:";
+			   html +="<ul id='resultados'>";
+				for(var j=0;j<resultados.length;j++){
+				  html +="<li>"+resultados[j]+"</li>";
+				 }
+			   html +="</ul>";
+			   html +="Beneficios:";
+			   html +="<ul id='beneficios'>";
+				for(var x=0;x<beneficios.length;x++){
+				  html +="<li>"+beneficios[x]+"</li>";
+				 }
+			   html +="</ul>"; 	
 
 			   
 			}	    
