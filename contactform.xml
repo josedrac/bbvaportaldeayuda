@@ -114,7 +114,7 @@
             function Go(destination){
 
 			window.parent.location.href = destination;
-
+			return false;
 			} 
             
             document.getElementById("content_div").innerHTML = html;
