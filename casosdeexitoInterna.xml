@@ -316,13 +316,12 @@
 			   data = response.getDataTable();
 			   var filas = data.getNumberOfRows(); 			   
 			   var html = "";
-			   
-			   
-			   
 			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-			   for(var i=0; i<filas;i++){
+			   
+			for(var i=0; i<filas;i++){
 			   var resultados = data.getValue(i,9).split(",");
 			   alert(resultados);
+			   aleert(resultados.length);
 			   html +="<div id='userBBVA'>";
 			   if(data.getValue(i,6)!=''){
 			   html +="<img src='"+data.getValue(i,6)+"'/>";
