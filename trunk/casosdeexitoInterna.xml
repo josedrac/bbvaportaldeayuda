@@ -280,7 +280,7 @@
 	/*aqui*/
 	#userBBVA{
 		float:left;
-		margin-left:28px;
+		margin-left:15px;
 	}
 	#userBBVA img{
 	    float:left;
