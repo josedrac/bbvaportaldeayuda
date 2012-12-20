@@ -108,61 +108,61 @@
 			color: #0073C9;
 		}  
         
-        .op1 {
+        ul li.op1 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op2 {
+        ul li.op2 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op3 {
+        ul li.op3 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op4 {
+        ul li.op4 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op5 {
+        ul li.op5 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op6 {
+        ul li.op6 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op7 {
+        ul li.op7 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op8 {
+        ul li.op8 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op9 {
+        ul li.op9 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
-        .op10 {
+        ul li.op10 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
