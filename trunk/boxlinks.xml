@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-    <ModulePrefs title="Cajetin botones2"
+    <ModulePrefs title="Cajetin botones"
         title_url=""
         height=""
         width="300"
@@ -100,6 +100,69 @@
             font-weight: bold;
 						color: #0073C9;
 					}  
+					
+					
+					        
+        ul li.op1 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op2 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op3 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op4 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op5 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op6 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op7 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op8 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op9 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        ul li.op10 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
                
         </style>
     
