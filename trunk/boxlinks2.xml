@@ -134,11 +134,11 @@
             var VarEnlace8Texto=prefs.getString("VarEnlace8Texto");
             var VarEnlace8URL=prefs.getString("VarEnlace8URL");
             
-            var VarEnlace9Texto=prefs2.getString("VarEnlace9Texto");
-            var VarEnlace9URL=prefs2.getString("VarEnlace9URL");
+            var VarEnlace9Texto=prefs.getString("VarEnlace9Texto");
+            var VarEnlace9URL=prefs.getString("VarEnlace9URL");
             
-            var VarEnlace10Texto=prefs2.getString("VarEnlace10Texto");
-            var VarEnlace10URL=prefs2.getString("VarEnlace10URL");
+            var VarEnlace10Texto=prefs.getString("VarEnlace10Texto");
+            var VarEnlace10URL=prefs.getString("VarEnlace10URL");
            
             function Go(destination){
 
