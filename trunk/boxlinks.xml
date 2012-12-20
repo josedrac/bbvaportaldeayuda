@@ -36,15 +36,7 @@
     <UserPref name="VarEnlace7Texto" display_name="Texto enlace 7:" default_value=""/>
     <UserPref name="VarEnlace7URL" display_name="enlace 7:" default_value=""/>
     <UserPref name="VarEnlace7ImgURL" display_name="imagen 7:" default_value=""/>
-    <UserPref name="VarEnlace8Texto" display_name="Texto enlace 8:" default_value=""/>
-    <UserPref name="VarEnlace8URL" display_name="enlace 8:" default_value=""/>
-    <UserPref name="VarEnlace8ImgURL" display_name="imagen 8:" default_value=""/>
-    <UserPref name="VarEnlace9Texto" display_name="Texto enlace 9:" default_value=""/>
-    <UserPref name="VarEnlace9URL" display_name="enlace 9:" default_value=""/>
-    <UserPref name="VarEnlace9ImgURL" display_name="imagen 9:" default_value=""/>
-    <UserPref name="VarEnlace10Texto" display_name="Texto enlace 10:" default_value=""/>
-    <UserPref name="VarEnlace10URL" display_name="enlace 10:" default_value=""/>
-    <UserPref name="VarEnlace10ImgURL" display_name="imagen 10:" default_value=""/>
+    
     <Content type="html" view="home"><![CDATA[
         <style>
           @font-face {
@@ -141,15 +133,7 @@
             var VarEnlace7Texto=prefs.getString("VarEnlace7Texto");
             var VarEnlace7URL=prefs.getString("VarEnlace7URL");
             var VarEnlace7ImgURL=prefs.getString("VarEnlace7ImgURL");
-            var VarEnlace8Texto=prefs.getString("VarEnlace8Texto");
-            var VarEnlace8URL=prefs.getString("VarEnlace8URL");
-            var VarEnlace8ImgURL=prefs.getString("VarEnlace8ImgURL");
-            var VarEnlace9Texto=prefs.getString("VarEnlace9Texto");
-            var VarEnlace9URL=prefs.getString("VarEnlace9URL");
-            var VarEnlace9ImgURL=prefs.getString("VarEnlace9ImgURL");
-            var VarEnlace10Texto=prefs.getString("VarEnlace10Texto");
-            var VarEnlace10URL=prefs.getString("VarEnlace10URL");
-            var VarEnlace10ImgURL=prefs.getString("VarEnlace10ImgURL");
+        
             
             function devuelveEnlace(varEnlace)
             {
