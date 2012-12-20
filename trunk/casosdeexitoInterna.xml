@@ -293,14 +293,14 @@
 	font-size:small;
 	font-style:italic;
 	margin-bottom:15px;
-	width:400px;
+	width:620px;
 	}
 	#autorydpt{
 	font-size:small;
 	color:#666;
 	font-style:italic;
 	font-weight:bold;
-	width:400px;
+	width:620px;
 	
 	}
 	#listportales{
@@ -360,7 +360,7 @@
 			   html +="<div id='citaAutor'>"+data.getValue(i,4)+"</div>";
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
-			   html +="<div id='reto'>"+data.getValue(i,8)+"</div>";
+			   html +="<div id='reto'><span class='titlesection'>Reto:</span>"+data.getValue(i,8)+"</div>";
 			   html +="<span class='titlesection'>Resultados:</span>";
 			   html +="<div id='resultados'>";
 			   html +="<ul>";
