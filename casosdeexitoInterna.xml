@@ -324,6 +324,12 @@
 	color:#666;
 	margin-left:30px;
 	}
+	#video span{
+	margin-bottom:10px;
+	}
+	#video iframe{
+	margin-left:30px;
+	}
 	</style>
 	
 <div id="listportales"></div>	
