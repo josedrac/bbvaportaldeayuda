@@ -334,19 +334,23 @@
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
 			   html +="<div id='reto'>"+data.getValue(i,8)+"</div>";
-			   html +="Resultados:";
+			   html +="<span class='titlesection'>Resultados:</span>";
 			   html +="<ul id='resultados'>";
 				for(var j=0;j<resultados.length;j++){
 				  html +="<li>"+resultados[j]+"</li>";
 				 }
 			   html +="</ul>";
-			   html +="Beneficios:";
+			   html +="<span class='titlesection'>Beneficios:</span>";
 			   html +="<ul id='beneficios'>";
 				for(var x=0;x<beneficios.length;x++){
 				  html +="<li>"+beneficios[x]+"</li>";
 				 }
 			   html +="</ul>"; 	
+			   if(data.getValue(i,10)!=''){
+			   html +="<span class='titlesection'>Video:</span>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  frameborder="0" allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width=620px; height=427;'></iframe></div>";
 
+			   }
 			   
 			}	    
 				document.getElementById('listportales').innerHTML = html;
