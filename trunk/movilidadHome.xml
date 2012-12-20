@@ -274,14 +274,14 @@ padding-left:10px;
 line-height: 20px;
 }
 	</style>
-<div id="content"><div id="titleHome"><h2>Movilidad</h2></div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />	
-
-<!--
-<div id="movilidad">País: <select  selected="País" onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
--->
+	<body onload="cargaCompleta()">	
+<div id="content">
+<div id="titleHome"><h2>Movilidad</h2></div>
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />
 <div id="textMovilidad">Guías de configuración, según dispositivo, para: </div>
-<div id="dispositivos"></div></div>	
+<div id="dispositivos"></div>
+</div>		
+</body>
   
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -347,6 +347,11 @@ line-height: 20px;
 	  }
 	   document.getElementById('dispositivos').innerHTML = html;
 	   
+	 }
+	 
+	  function cargaCompleta(){
+	 
+	 devicesCountry('España');
 	 }
 	 
    </script>
