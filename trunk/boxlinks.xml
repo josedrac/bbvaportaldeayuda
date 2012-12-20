@@ -46,26 +46,28 @@
                 url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
              font-style: normal;
              font-weight: normal;
-          }        
-					.titulo{
-						border-bottom: 1px solid  #DDE3EA;
-						background: #ffffff;
-						background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
-						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7f8));
-						background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
-						background: -o-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
-						background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
-						background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
-						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
-						font: 16px BBVA Web Book;
-						color: #333333;
-						padding-left: 18px;
-						padding-left: 18px;
-						padding-top: 14px;
-						padding-bottom: 15px;
-					}
-					.caja{
-						border: 1px solid #DDE3EA;
+          }   
+               
+		.titulo{
+			border-bottom: 1px solid  #DDE3EA;
+			background: #ffffff;
+			background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7f8));
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+			background: -o-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+			background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+			background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
+			font: 16px BBVA Web Book;
+			color: #333333;
+			padding-left: 18px;
+			padding-left: 18px;
+			padding-top: 14px;
+			padding-bottom: 15px;
+		}
+		
+		.caja{
+			border: 1px solid #DDE3EA;
             border-radius: 2px;
             -ms-border-radius: 2px;
             -moz-border-radius: 2px;
@@ -74,96 +76,77 @@
             width: 298px;
             clear: both;
 			margin-top:15px;
-					}
-					ul{
-						padding-left: 19px;
-						padding-right: 19px;
-						margin: 0;
-					}
-					ul li{
-						list-style: none;
-						border-bottom: 1px solid #DDE3EA;
-						padding-bottom: 12px;
-						padding-top: 17px;
-						cursor:hand;
-					}
-          ul li:last-child{
-						border: 0;
-						padding-bottom: 11px;
-						padding-top: 17px;
-					}     
-					ul li a{
-            padding-left: 2px;
-						vertical-align: 3px;
-						text-decoration: none;
-            font: 12px Arial;
-            font-weight: bold;
-						color: #0073C9;
-					}  
-					
-					
-					        
+		}
+		
+		ul{
+			padding-left: 19px;
+			padding-right: 19px;
+			margin: 0;
+		}
+		
+		ul li{
+			list-style: none;
+			border-bottom: 1px solid #DDE3EA;
+			padding-bottom: 12px;
+			padding-top: 17px;
+			cursor:hand;
+		}
+       
+       ul li:last-child{
+			border: 0;
+			padding-bottom: 11px;
+			padding-top: 17px;
+		} 
+		    
+		ul li a{
+         padding-left: 2px;
+			vertical-align: 3px;
+			text-decoration: none;
+         font: 12px Arial;
+         font-weight: bold;
+			color: #0073C9;
+		}  
+				        
         ul li.op1 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op2 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op3 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op4 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op5 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op6 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op7 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op8 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op9 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
         }
         ul li.op10 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
-        	width: 23px; 
-        	height: 23px;
-        }
-               
+        }               
         </style>
     
         <div id="content_div" class="caja"></div>
