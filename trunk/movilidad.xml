@@ -242,7 +242,10 @@ line-height:30px;
 	
 	</style>
 <body onload="cargaCompleta()">	
-<div id="movilidad">Guías de configuración, según dispositivo, para: <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select></div>
+<div id="movilidad">Guías de configuración, según dispositivo:
+<!-- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
+-->
+</div>
 <div id="dispositivos"></div>	
 </body>
    <script type="text/javascript">
