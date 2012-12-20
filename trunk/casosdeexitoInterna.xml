@@ -306,6 +306,13 @@
 	#listportales{
 	width:620;
 	}
+	.titlesection{
+	font-size:small;
+	margin-right: 10px;
+	margin-left: 5%;
+	margin-top: 2%;
+	color:#0B5394;
+	}
 	</style>
 	
 <div id="listportales"></div>	
