@@ -340,9 +340,7 @@
 			for(var i=0; i<filas;i++){
 			   var resultados = data.getValue(i,9).split(",");
 			   var beneficios = data.getValue(i,12).split(",");
-			   alert(resultados);
-			   alert(resultados.length);
-			   alert(resultados[1]);
+			  
 			   html +="<div id='userBBVA'>";
 			   if(data.getValue(i,6)!=''){
 			   html +="<img src='"+data.getValue(i,6)+"'/>";
