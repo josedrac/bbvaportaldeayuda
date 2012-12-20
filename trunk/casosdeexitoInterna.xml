@@ -321,7 +321,7 @@
 			for(var i=0; i<filas;i++){
 			   var resultados = data.getValue(i,9).split(",");
 			   alert(resultados);
-			   aleert(resultados.length);
+			   alert(resultados.length);
 			   html +="<div id='userBBVA'>";
 			   if(data.getValue(i,6)!=''){
 			   html +="<img src='"+data.getValue(i,6)+"'/>";
