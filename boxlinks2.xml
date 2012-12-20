@@ -109,7 +109,61 @@
 		}  
         
         .op1 {
-        	background: url('spriteIcons.png');        	
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op2 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op3 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op4 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op5 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op6 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op7 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op8 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op9 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background-position: -0px -0px; 
+        	width: 23px; 
+        	height: 23px;
+        }
+        .op10 {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
