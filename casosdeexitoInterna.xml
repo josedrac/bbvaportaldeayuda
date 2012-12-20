@@ -286,12 +286,12 @@
 	    float:left;
 	}
 	#citaAutor{
-	float:left;
+	
 	color:#3D85C6;
 	font-size:small;
 	}
 	#autorydpt{
-	float:left;
+	
 	color:#666;
 	font-style:italix;
 	}
