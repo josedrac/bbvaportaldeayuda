@@ -169,8 +169,8 @@
         <table width="100%" border="0" id="tablaconfig">
            
             <tr>        
-                <td class="separador">
-                		Enlace 1 - Imagen: <input type="text" id="VarEnlace1ImgURL" class="btnImg" value="__UP_VarEnlace1ImgURL__" onchange="registra('VarEnlace1ImgURL')"><br/>       
+                <td>
+                		   
                     Enlace 1 - Texto: <input type="text" id="VarEnlace1Texto" class="btnTexto" value="__UP_VarEnlace1Texto__" onchange="registra('VarEnlace1Texto')"><br/>        
                     Enlace 1 - URL: <input type="text" id="VarEnlace1URL" class="btnURL" value="__UP_VarEnlace1URL__" onchange="registra('VarEnlace1URL')"><br/>        
                 </td>
