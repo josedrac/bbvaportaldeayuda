@@ -313,6 +313,10 @@
 	margin-top: 2%;
 	color:#0B5394;
 	}
+	#reto{
+	font-size:small;
+	color:#3D85C6;
+	}
 	</style>
 	
 <div id="listportales"></div>	
