@@ -205,7 +205,7 @@
 			 gadgetHelper = new google.visualization.GadgetHelper();
 			 var opts = {dataType:'jsonp'};	
 			 var query1 = new google.visualization.Query(urlTable, opts);
-			 var querytosend1 = "select * "; 
+			 var querytosend1 = "select * where I like '%"+etiqueta+"%'"; 
 			 query1.setQuery(querytosend1);			  
 			 query1.send(handleQueryResponse1);
 			 
