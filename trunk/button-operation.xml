@@ -226,14 +226,14 @@ margin-top: .4em;
 			<ul>
 					
 				<li>
-					<div id="accionImprimirFacturas" class="btn white large icon">
+					<div id="" class="btn white large icon">
 						<i class="icon-right arrow-right"></i>
 						<span>Contacta con nosotros</span>
 					</div>
 				</li>
 				
 				<li>
-					<div id="accionImprimirFacturas" class="btn white large icon">
+					<div id="" class="btn white large icon">
 						<i class="icon-right arrow-right"></i>
 						<span>Curso Google Drive</span>
 					</div>
