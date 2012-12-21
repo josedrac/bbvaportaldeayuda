@@ -482,9 +482,10 @@
 		}	
 		
 	function mostrar(){	
+	var muestra="";
 	 for (var y=0; y<html.length; y++){
 	 
-		var muestra="";
+		
 		muestra += aux[y]+" ("+html[y]+")";
 	 
 	 }
