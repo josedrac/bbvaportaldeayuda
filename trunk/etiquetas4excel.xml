@@ -343,8 +343,8 @@
 </style>
 
 
-
-<div id="content">1</div>
+<div id="titlebox"></div>
+<div id="content"></div>
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
