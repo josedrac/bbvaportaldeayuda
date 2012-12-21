@@ -293,12 +293,7 @@
 	margin-bottom:15px;
 	}
 	
-	.savePDF img:hover {
-top: -6480px;
-width: 1.6em;
-position: absolute;
-cursor: pointer;
-}
+	
 	</style>
 	
 <div id="listportales"></div>	
@@ -347,7 +342,7 @@ cursor: pointer;
 			   html +="<span class='titleguia'>Índice de esta guía</span>";
 			   html += "<ul class='guias'>";
 			   for(var i=0; i<filas; i++){
-			   html +="<li><a target='_blank' href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"</a><img alt='Descargar PDF' title='Descargar PDF' src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-spriteAccion16.png'></li>";
+			   html +="<li><a target='_blank' href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"</a><img alt='Descargar PDF' title='Descargar PDF' src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png'></li>";
 			   }
 			   html +="</ul>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
