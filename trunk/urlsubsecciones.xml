@@ -53,7 +53,7 @@
 /* @end */
 	
 	.linedowntitle{
-	margin-bottom:10px;
+	margin-bottom:25px;
 	width:619px;
 	display:-moz-stack;
 	}
@@ -63,7 +63,7 @@
 	font-family: BBVA Web Light;
 	margin-left:22px;
 	margin-top:0px;
-	margin-bottom:15px;
+	margin-bottom:10px;
 	}
 	.subseccion{
 	margin-bottom:30px;
