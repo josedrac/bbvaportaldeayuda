@@ -387,10 +387,10 @@
 			
      function handleQueryResponse1(response) {
 	        var opts = {dataType:'jsonp'};
-	        alert("handleQueryResponse1");
+	        
 	        data1 = response.getDataTable();
 			var filas = data1.getNumberOfRows();
-			
+			alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data1.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
@@ -412,7 +412,7 @@
 		
 	 function handleQueryResponse2(response) {
 	        var opts = {dataType:'jsonp'};
-			alert("handleQueryResponse2");
+			alert("handleQueryResponse2 "+filas);
 			data2 = response.getDataTable();
 			var filas = data2.getNumberOfRows();
 			
@@ -436,10 +436,10 @@
 		}
 	 function handleQueryResponse3(response) {
 	        var opts = {dataType:'jsonp'};
-			alert("handleQueryResponse3");	
+				
 			data3 = response.getDataTable();
 			var filas = data3.getNumberOfRows();
-			
+			alert("handleQueryResponse3 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
@@ -460,10 +460,11 @@
 			
 		}
 	 function handleQueryResponse4(response) {
-			alert("handleQueryResponse4");	
+				
+		
 			data4 = response.getDataTable();
 			var filas = data4.getNumberOfRows();
-			
+			alert("handleQueryResponse4 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
