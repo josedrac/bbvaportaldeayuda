@@ -400,6 +400,7 @@
 					        aux[etiquetas[j]]= etiquetas[j];
 							html[etiquetas[j]]=1;
 						}else{
+						alert(entro1);
 						    html[etiquetas[j]]++;
 						}
 					
