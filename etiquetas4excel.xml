@@ -386,6 +386,7 @@
 			}
 			
      function handleQueryResponse1(response) {
+	        var opts = {dataType:'jsonp'};
 	        alert("handleQueryResponse1");
 	        data1 = response.getDataTable();
 			var filas = data1.getNumberOfRows();
@@ -410,6 +411,7 @@
 		}
 		
 	 function handleQueryResponse2(response) {
+	        var opts = {dataType:'jsonp'};
 			alert("handleQueryResponse2");
 			data2 = response.getDataTable();
 			var filas = data2.getNumberOfRows();
@@ -433,6 +435,7 @@
 			queryexitos.send(handleQueryResponse3);
 		}
 	 function handleQueryResponse3(response) {
+	        var opts = {dataType:'jsonp'};
 			alert("handleQueryResponse3");	
 			data3 = response.getDataTable();
 			var filas = data3.getNumberOfRows();
