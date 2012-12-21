@@ -224,12 +224,7 @@ margin-top: .4em;
         
         <div class="c-aside-otrasOperaciones">
 			<ul>
-				<li>
-					<button id="accionImprimirFacturas" class="btn white large icon">
-						<i class="icon-right arrow-right"></i>
-						<span>Impresión de facturas</span>
-					</button>
-				</li>		
+					
 				<li>
 					<span id="accionImprimirFacturas" class="btn white large icon">
 						<i class="icon-right arrow-right"></i>
