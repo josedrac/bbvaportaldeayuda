@@ -14,10 +14,10 @@
         scaling="false">
         <Require feature="setprefs"/>
     </ModulePrefs>
-    <UserPref name="VarEnlace1Texto" display_name="Texto enlace 1:" default_value="" required="true"/>
-    <UserPref name="VarEnlace1URL" display_name="enlace 1:" default_value="" required="true"/>
-     <UserPref name="VarEnlace2Texto" display_name="Texto enlace 2:" default_value="" required="true"/>
-    <UserPref name="VarEnlace2URL" display_name="enlace 2:" default_value="" required="true"/>        
+    <UserPref name="VarEnlace1Texto" display_name="Texto enlace 1:" default_value=""/>
+    <UserPref name="VarEnlace1URL" display_name="enlace 1:" default_value=""/>
+     <UserPref name="VarEnlace2Texto" display_name="Texto enlace 2:" default_value=""/>
+    <UserPref name="VarEnlace2URL" display_name="enlace 2:" default_value="" />        
     <Content type="html" view="home"><![CDATA[
         <style>
        @font-face {
