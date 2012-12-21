@@ -331,7 +331,8 @@ top: 2px;
 				
 				
 			}
-		function handleQueryResponse(response) {
+		function handleQueryResponse(response)
+		{
 		
 			   data = response.getDataTable();	
 			   var filas = data.getNumberOfRows();
@@ -351,29 +352,9 @@ top: 2px;
 			   }
 			   html +="</ul>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-			//   html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
-			   
+			   //html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
 			   document.getElementById('listportales').innerHTML = html;				
 			}
-	    
-/*
-				function SendGmail(){
-				
-				//window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
-				var to = emailTo;
-				var subject ='Error en Movilidad';
-				var str = 'https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+subject;
-				//window.parent.location.href = str;
-				
-				window.open(str,'_blank','send mail');
-				//window.parent.location.href = aux;
-				//window.parent.location.href = aux;
-				//window.parent.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
-				//window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
-				return false;
-				
-				}
-*/
 
   </script>
     ]]>
