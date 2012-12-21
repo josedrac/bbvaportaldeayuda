@@ -1328,16 +1328,16 @@ section.athird-large.last {
 
 /* @group aside footer */
 
-aside.footer {
+.footer {
 	padding-left: 16px;
 	padding-bottom: 186px;
 }
 
-	aside.footer ul {
+	.footer ul {
 		display: inline;
 	}
 
-		aside.footer ul li {
+		.footer ul li {
 			background: none repeat scroll 0 0 transparent;
 			float: left;
 			margin: 0;
@@ -1348,30 +1348,30 @@ aside.footer {
 			border-right: 1px solid #DCDCDC;
 		}
 		
-		aside.footer ul li ul li {
+		.footer ul li ul li {
 
 			border-right: none;
 		}
-		aside.footer ul li ul li.op2{
+		.footer ul li ul li.op2{
 
 			border-right: none;
 		}
-		aside.footer ul li ul li.op3{
+		.footer ul li ul li.op3{
 
 			border-right: none;
 		}
-		aside.footer ul li ul li.op4{
+		.footer ul li ul li.op4{
 
 			border-right: none;
 		}
-		aside.footer ul li.op1,		
-		aside.footer ul li.op2,
-		aside.footer ul li.op3,
-		aside.footer ul li.op4 {
+		.footer ul li.op1,		
+		.footer ul li.op2,
+		.footer ul li.op3,
+		.footer ul li.op4 {
 			min-height: 12em;
 		}
 		
-		aside.footer ul li ul li {
+		.footer ul li ul li {
 			display: block;
 			float: none;
 			color: #8C9299;
@@ -1379,54 +1379,54 @@ aside.footer {
 			padding: 0;
 		}
 		
-		aside.footer ul li h2{
+		.footer ul li h2{
 			color: #434A58;
 			font-size: 1.1em;
 			font-family: BBVA Web Book;
 			padding-bottom: 10px;
 		}
 
-		aside.footer ul li.first {
+		.footer ul li.first {
 			padding: 0 9px 0 12px;			
 			width: 20em;
 		}
 		
-		aside.footer ul li.last {
+		.footer ul li.last {
 			padding: 0 0 0 19px;
 			border: none;
 		}
 
-		aside.footer ul li a {
+		.footer ul li a {
 			color: #8C9299;
 			font-size: 1.1em;
 			font-weight: normal;
 			text-align: left!important;
 		}
 		
-		aside.footer ul li ul li a {
+		.footer ul li ul li a {
 			color: #8C9299;
 			font-weight: normal;
 			line-height: 2em;
 		}
 		
-		aside.footer ul li ul.redes-sociales li a{
+		.footer ul li ul.redes-sociales li a{
 			line-height: 2.4em;
 			padding: 3px;
 		}
 		
-		aside.footer ul li ul.redes-sociales li a.face{
+		.footer ul li ul.redes-sociales li a.face{
 			background: url('../img/ico-face.png') no-repeat left top;
 		}
 		
-		aside.footer ul li ul.redes-sociales li a.rss{
+		.footer ul li ul.redes-sociales li a.rss{
 			background: url('../img/ico-rss.png') no-repeat left top;
 		}
 		
-		aside.footer ul li ul.redes-sociales li a.tw{
+		.footer ul li ul.redes-sociales li a.tw{
 			background: url('../img/ico-tw.png') no-repeat left top;
 		}
 		
-		aside.footer ul li ul.redes-sociales li span {
+		.footer ul li ul.redes-sociales li span {
 			padding-left: 20px;
 		}
 
@@ -1434,7 +1434,7 @@ aside.footer {
 
 /* @group grid_20.foofer footer */
 
-footer.footer-bottom {
+.footer-bottom {
 	border-top: 1px solid #DBDCDF;
 	border-bottom: 1px solid #DBDCDF;
 	height: 3em;
@@ -1443,26 +1443,26 @@ footer.footer-bottom {
 	width: 99.9%;
 }
 
-footer.footer-bottom ul{
+.footer-bottom ul{
 	margin-left: auto;
 	margin-right: auto;
 	width: 96em;
 	margin: 0pt auto;
 }
 
-footer.footer-bottom ul li {	
+.footer-bottom ul li {	
 	float: left;
 	padding: 0 9px 0 20px;	
 }
 
-footer.footer-bottom ul li a {
+.footer-bottom ul li a {
 	color: #8C9299;
 	font-size: 1.1em;
 	font-weight: normal;
 	text-align: left!important;
 }
 
-footer.footer-bottom span.copyright {
+.footer-bottom span.copyright {
 	color: #8C9299;
 	font-size: 1.1em;
 	font-weight: normal;
