@@ -480,7 +480,8 @@
 			}
 			mostrar();
 		}	
-		
+		alert("html "+html);
+		alert("aux "+aux);
 	function mostrar(){	
 	var muestra="";
 	 for (var y=0; y<html.length; y++){
