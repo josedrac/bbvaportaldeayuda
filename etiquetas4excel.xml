@@ -476,9 +476,10 @@
 			}
 			mostrar();
 		}	
-		alert("html "+html);
-		alert("aux "+aux);
-	function mostrar(){	
+		
+	function mostrar(){
+    alert("html "+html);
+    alert("aux "+aux);	
 	var muestra="";
 	 for (var y=0; y<html.length; y++){
 	 
