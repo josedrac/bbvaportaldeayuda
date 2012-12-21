@@ -279,6 +279,11 @@
 	text-decoration:none;
 	}
 	
+	
+	.guias li {
+	color:#0065b7;
+	}
+	
 	.guias li a{
 	font-size:12px;
 	font-family:BBVA Web Book;
