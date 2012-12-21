@@ -102,18 +102,11 @@
             // Get userprefs
             var prefs = new gadgets.Prefs();           
             function registra(variable)
-            {	
-				
-                prefs.set(variable,document.getElementById(variable).value);
-				
-			
+            {					
+                prefs.set(variable,document.getElementById(variable).value);				
             } 
 			gadgets.window.adjustHeight();
     </script>   	
-
-	  
-
-	 
  ]]>	
 
  </Content>
@@ -210,14 +203,16 @@
 	   margin-bottom:11px;
 	   margin-left:11px;
 	   margin-top:-7px;
-		//font-weight:bold;
+		font-family: 'BBVA Web Light';
+		font-weight: normal;
 	  }
 	  #TagVideo2{
 	    color:#000;
 		margin-bottom:11px;
 		margin-left: 11px;
 		margin-top: -13px;
-		//font-weight:bold;
+		font-family: 'BBVA Web Light';
+		font-weight: normal;
 	  }
 	  
       #titleVideo{
