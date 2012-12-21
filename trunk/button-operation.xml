@@ -91,8 +91,8 @@
 			margin-top:15px;
 					}
 					ul{
-						padding-left: 19px;
-						padding-right: 19px;
+						padding-left: 11px;
+						padding-right: 11px;
 						margin: 0;
 					}
 					ul li{
@@ -118,7 +118,7 @@
 					
 		/***************/
 		.c-aside-otrasOperaciones {
-width: 300px;
+width: 276px;
 padding: 10px;
 margin: 0em 0em 10px 0em;
 -webkit-border-radius: 2px;
