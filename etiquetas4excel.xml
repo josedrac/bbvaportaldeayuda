@@ -402,7 +402,7 @@
 			}
 			
      function handleQueryResponse1(response) {
-	 
+	        alert("handleQueryResponse1");
 	        data1 = response.getDataTable();
 			var filas = data1.getNumberOfRows();
 			
@@ -423,7 +423,7 @@
 		}
 		
 	 function handleQueryResponse2(response) {
-			
+			alert("handleQueryResponse2");
 			data2 = response.getDataTable();
 			var filas = data2.getNumberOfRows();
 			
@@ -442,7 +442,7 @@
 			}
 		}
 	 function handleQueryResponse3(response) {
-				
+			alert("handleQueryResponse3");	
 			data3 = response.getDataTable();
 			var filas = data3.getNumberOfRows();
 			
@@ -461,7 +461,7 @@
 			}
 		}
 	 function handleQueryResponse4(response) {
-				
+			alert("handleQueryResponse4");	
 			data4 = response.getDataTable();
 			var filas = data4.getNumberOfRows();
 			
