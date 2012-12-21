@@ -115,7 +115,7 @@
 	}
 	#iniciate a{
 	font-size:16px;
-	font-family: BBVA Web Medium;
+	font-family: BBVA Web Book;
 	color:#0065B7;
 	text-decoration:none;
 	padding:10px 0px;
@@ -133,8 +133,8 @@
 	}
 	.lineitem{
 		width: 619px;
-		margin-bottom:10px;
-		margin-top:10px;
+		margin-bottom:20px;
+		margin-top:20px;
 	}
 	.linedowntitle {
 		margin-bottom: 20px;
