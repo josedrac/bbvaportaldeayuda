@@ -50,18 +50,6 @@
 }
 
 
-@font-face {
-	font-family: 'BBVA Office Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.svg#BBVA Office Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
-
-
 /* @end */
 	
 	#titlecomboVideo{
@@ -113,14 +101,16 @@
 	   margin-bottom:11px;
 	   margin-left:11px;
 	   margin-top:-7px;
-		//font-weight:bold;
+			font-family: 'BBVA Web Light';
+		font-weight: normal;
 	  }
 	  #TagVideo2{
 	    color:#000;
 		margin-bottom:11px;
 		margin-left: 11px;
 		margin-top: 0px;
-		//font-weight:bold;
+			font-family: 'BBVA Web Light';
+		font-weight: normal;
 	  }
 	  
       #titleVideo{
@@ -183,13 +173,7 @@
 	color:#DCDCDC;
 	}	
 	#allcontent{
-	/*float:right;
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/botonHome.png')no-repeat;
-	width:89px;
-	height:40px;
-	margin-right:70px;
-	margin-top:21px;*/
-	*/
+	
 	-webkit-border-radius: .2em;
 	-moz-border-radius: .2em;
 	border-radius: .2em;
