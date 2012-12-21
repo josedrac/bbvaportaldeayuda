@@ -292,6 +292,13 @@
 	color:#00529B;
 	margin-bottom:15px;
 	}
+	
+	.savePDF img:hover {
+top: -6480px;
+width: 1.6em;
+position: absolute;
+cursor: pointer;
+}
 	</style>
 	
 <div id="listportales"></div>	
