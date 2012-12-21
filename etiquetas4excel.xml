@@ -354,8 +354,8 @@
 	 var urlTableexitos = prefs.getString("urlTableexitos");
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
-	 var html = new Array();
-	 var aux = new Array();
+	 var html = new Array[];
+	 var aux = new Array[];
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("titlebox").innerHTML = titlebox;
@@ -412,10 +412,10 @@
 		
 	 function handleQueryResponse2(response) {
 	        var opts = {dataType:'jsonp'};
-			alert("handleQueryResponse2 "+filas);
+			
 			data2 = response.getDataTable();
 			var filas = data2.getNumberOfRows();
-			
+			alert("handleQueryResponse2 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
