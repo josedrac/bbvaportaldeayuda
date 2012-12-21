@@ -174,7 +174,7 @@
         <div id="content_div" class="caja"></div>
 
         <script type="text/javascript">
-       alert('version 1');
+       //alert('version 1');
             var html="";
             // Obtener userprefs
             var prefs = new gadgets.Prefs();            
