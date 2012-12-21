@@ -373,29 +373,13 @@
 				var opts = {dataType:'jsonp'};
 					
 				var queryguias = new google.visualization.Query(urlTableguias, opts);	
-			    var querytosendguias = "select I where I <> 'Etiquetas' and I <> ''";
-				
-				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
-				
-				var queryexitos = new google.visualization.Query(urlTableexitos, opts);	
-			    var querytosendexitos = "select N where N <> 'Etiquetas' and N <> ''";
-				
-				var querymovilidad = new google.visualization.Query(urlTablemovilidad, opts);	
-			    var querytosendmovilidad = "select H where H <> 'Etiquetas' and H <> ''";
+			    var querytosendguias = "select I where I <> 'Etiquetas' and I <> ''";				
 								
 				
 				queryguias.setQuery(querytosendguias);	
 				queryguias.send(handleQueryResponse1);
 				
-				querycontenidos.setQuery(querytosendcontenidos);	
-				querycontenidos.send(handleQueryResponse2);
 				
-				queryexitos.setQuery(querytosendexitos);	
-				queryexitos.send(handleQueryResponse3);
-				
-				querymovilidad.setQuery(querytosendmovilidad);	
-				querymovilidad.send(handleQueryResponse4);
 					
 				
 				
@@ -419,7 +403,10 @@
 				}
 			
 			}
-
+				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
+			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
+				querycontenidos.setQuery(querytosendcontenidos);	
+				querycontenidos.send(handleQueryResponse2);
 		}
 		
 	 function handleQueryResponse2(response) {
@@ -440,6 +427,10 @@
 				}
 			
 			}
+			var queryexitos = new google.visualization.Query(urlTableexitos, opts);	
+			var querytosendexitos = "select N where N <> 'Etiquetas' and N <> ''";
+			queryexitos.setQuery(querytosendexitos);	
+			queryexitos.send(handleQueryResponse3);
 		}
 	 function handleQueryResponse3(response) {
 			alert("handleQueryResponse3");	
@@ -459,6 +450,11 @@
 				}
 			
 			}
+			var querymovilidad = new google.visualization.Query(urlTablemovilidad, opts);	
+			var querytosendmovilidad = "select H where H <> 'Etiquetas' and H <> ''";
+			querymovilidad.setQuery(querytosendmovilidad);	
+			querymovilidad.send(handleQueryResponse4);
+			
 		}
 	 function handleQueryResponse4(response) {
 			alert("handleQueryResponse4");	
