@@ -133,7 +133,7 @@ list-style: none outside none;
 }
 
 .c-aside-otrasOperaciones ul li .btn {
-width: 233px;
+width: 260px;
 padding: 10px;
 height: 20px;
 }
