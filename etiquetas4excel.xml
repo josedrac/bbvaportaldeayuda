@@ -408,6 +408,8 @@
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
+				alert("1 "+aux);
+				alert("1 "html);
 		}
 		
 	 function handleQueryResponse2(response) {
