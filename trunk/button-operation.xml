@@ -15,7 +15,9 @@
         <Require feature="setprefs"/>
     </ModulePrefs>
     <UserPref name="VarEnlace1Texto" display_name="Texto enlace 1:" default_value="" required="true"/>
-    <UserPref name="VarEnlace1URL" display_name="enlace 1:" default_value="" required="true"/>    
+    <UserPref name="VarEnlace1URL" display_name="enlace 1:" default_value="" required="true"/>
+     <UserPref name="VarEnlace2Texto" display_name="Texto enlace 2:" default_value="" required="true"/>
+    <UserPref name="VarEnlace2URL" display_name="enlace 2:" default_value="" required="true"/>        
     <Content type="html" view="home"><![CDATA[
         <style>
        @font-face {
@@ -96,13 +98,13 @@
 					ul li{
 						list-style: none;
 						border-bottom: 1px solid #DDE3EA;
-						padding-bottom: 12px;
-						padding-top: 17px;
+						padding-bottom: 10px;
+						padding-top: 10px;
 					}
           ul li:last-child{
 						border: 0;
-						padding-bottom: 11px;
-						padding-top: 17px;
+						padding-bottom: 10px;
+						padding-top: 10px;
 					}     
 					ul li a{
             padding-left: 2px;
@@ -223,7 +225,7 @@ margin-top: .4em;
         
         
         <div class="c-aside-otrasOperaciones">
-			<ul>
+			<ul id="content_div">
 					
 				<li>
 					<div id="" class="btn white large icon">
@@ -247,23 +249,31 @@ margin-top: .4em;
             // Obtener userprefs
             var prefs = new gadgets.Prefs();            
             
-            // var VarTituloVentana=prefs.getString("VarTituloVentana");
             var VarEnlace1Texto=prefs.getString("VarEnlace1Texto");
             var VarEnlace1URL=prefs.getString("VarEnlace1URL");
-            //var VarEnlace1ImgURL=prefs.getString("VarEnlace1ImgURL");
-            function Go(destination){
-
-			window.parent.location.href = destination;
-			return false;
-			} 
-          
+            
+            var VarEnlace2Texto=prefs.getString("VarEnlace2Texto");
+            var VarEnlace2URL=prefs.getString("VarEnlace2URL");
                         
+            function Go(destination)
+            {
+				window.parent.location.href = destination;
+				return false;
+			}               
             
-            html+='<div class=\"titulo\" onclick="Go(\''+VarEnlace1URL+'\');"><a target="_parent" href="'+VarEnlace1URL+'">' + VarEnlace1Texto + '</a></div>';
-           
-            
+			//html+='<div class=\"titulo\" onclick="Go(\''+VarEnlace1URL+'\');"><a target="_parent" href="'+VarEnlace1URL+'">' + VarEnlace1Texto + '</a></div>';
+           	if (VarEnlace1Texto!="")
+           	{
+           		html+='<li><div class=\"btn white large icon\" onclick="Go(\''+VarEnlace1URL+'\');"><i class="icon-right arrow-right"></i><span>' + VarEnlace1Texto + '</span></div></li>';
+            }
+            if (VarEnlace2Texto!="")
+           	{
+           		html+='<li><div class=\"btn white large icon\" onclick="Go(\''+VarEnlace2URL+'\');"><i class="icon-right arrow-right"></i><span>' + VarEnlace2Texto + '</span></div></li>';
+            }
             document.getElementById("content_div").innerHTML = html;
+            
             gadgets.window.adjustHeight();
+            
         </script>
     ]]>  
     </Content>  
