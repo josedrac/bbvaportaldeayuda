@@ -212,7 +212,7 @@ margin-right: 0;
 }
 	
 .btn.white i.arrow-right, .btn.info i.arrow-right {
-background: url("../img/buttons-icon.png") no-repeat -26px -50px;
+background: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/buttons-icon.png") no-repeat -26px -50px;
 width: .7em;
 height: 1.2em;
 margin-top: .4em;
