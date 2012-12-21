@@ -354,8 +354,8 @@
 	 var urlTableexitos = prefs.getString("urlTableexitos");
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
-	 var html = new Array[];
-	 var aux = new Array[];
+	 var html = new Array();
+	 var aux = new Array();
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("titlebox").innerHTML = titlebox;
