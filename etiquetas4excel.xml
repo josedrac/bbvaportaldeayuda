@@ -394,7 +394,7 @@
 			for (var i=0;i<filas;i++){
 				var etiquetas = data1.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
-					  alert()
+					  
 					  if((html[etiquetas[j]]=='undefined')){            
 					       
 					        aux[etiquetas[j]]= etiquetas[j];
