@@ -344,7 +344,7 @@
 
 
 
-<div id="content"></div>
+<div id="content">1</div>
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -491,6 +491,8 @@
 	 
 	 }
 	document.getElementById('content').innerHTML = muestra; 
+	document.getElementById('listportales').innerHTML = html;
+
 	} 
 	 
    </script>
