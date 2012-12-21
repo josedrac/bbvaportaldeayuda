@@ -217,7 +217,7 @@
 				
 				//alert(filas);
 				
-				for(var i=1;i<=filas;i++){
+				for(var i=0;i<filas;i++){
 				  //  if(data.getValue(i,7)!=''){ 
 				    document.getElementById('subsection'+data.getValue(i,2)).innerHTML +="<li><a target='_parent' href='"+data.getValue(i,7)+"'>"+data.getValue(i,3)+"</a></li>";
 					//}
