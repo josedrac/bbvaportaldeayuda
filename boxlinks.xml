@@ -126,10 +126,12 @@
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png') no-repeat -0px -63px;  
         }
         ul li.op7 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png') no-repeat 1px -419px;  
-        }
+        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png') no-repeat 1px -638px; 
+                }
         ul li.op8 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png') no-repeat 1px -638px; 
+        	
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png') no-repeat 1px -419px;  
+
         }
         ul li.op9 {
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png') no-repeat -0px -273px;  
