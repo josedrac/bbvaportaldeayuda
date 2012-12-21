@@ -91,8 +91,8 @@
 			margin-top:15px;
 					}
 					ul{
-						padding-left: 11px;
-						padding-right: 11px;
+						padding-left: 0px;
+						padding-right: 0px;
 						margin: 0;
 					}
 					ul li{
@@ -119,16 +119,8 @@
 		/***************/
 		.c-aside-otrasOperaciones {
 width: 276px;
-padding: 10px;
+padding: 0px;
 margin: 0em 0em 10px 0em;
-/*-webkit-border-radius: 2px;
--moz-border-radius: 2px;
--ms-border-radius: 2px;
--o-border-radius: 2px;
-border-radius: 2px;
-
-background-color: #F3F5F7;
-border: 1px solid #DDE3EA;*/
 }
 
 ul {
@@ -136,7 +128,7 @@ list-style: none outside none;
 }
 
 .c-aside-otrasOperaciones ul li .btn {
-width: 230px;
+width: 276px;
 padding: 10px;
 height: 20px;
 }
