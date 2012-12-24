@@ -176,7 +176,8 @@
 	   	    float:left;
 			width:607px;
 			height:234px;
-			}
+			margin-bottom: 10px;
+		}
 		
 		  #urlVideo,
 		  #urlVideo2 {
@@ -316,68 +317,73 @@
 	</style>
 	
 <body onload="cargaCompleta()">
-<div id="titlecomboVideo"></div><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
+<div id="titlecomboVideo"></div>
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 <div id="comboVideo">
 	<div id="video-container">
 		<div id="tagVideo"></div>
-	<div id="infoVideo">	
-		<div id="urlVideo"></div>
-		<div id="titleVideo"></div>
-        <div id="textVideo"></div></div></div>
+		<div id="infoVideo">	
+			<div id="urlVideo"></div>
+			<div id="titleVideo"></div>
+        	<div id="textVideo"></div>
+        </div>
+     </div>
 	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideo"/>
 	 <div id="video-container2">
 	    <div id="tagVideo2"></div>
-	<div id="infoVideo2">	
-		<div id="urlVideo2"></div>
-		<div id="titleVideo2"></div>
-        <div id="textVideo2"></div></div>
+		<div id="infoVideo2">	
+			<div id="urlVideo2"></div>
+			<div id="titleVideo2"></div>
+        	<div id="textVideo2"></div>
+        </div>      
 	 </div>
+	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideo"/>
 	 <button type="button" id="allcontent"></button>
 </div>
 </body>
 	
-   <script type="text/javascript">
-  
-	 var gadgetHelper = null;
-	 var prefs = new gadgets.Prefs();
-	 
-	 var titlecomboVideo = prefs.getString("titlecomboVideo");
-	 var Urlall = prefs.getString("Urlall");
-	 
-	 var titleVideo = prefs.getString("titleVideo");
-	 var textVideo = prefs.getString("textVideo");
-	 var urlVideo = prefs.getString("urlVideo");
-	 var tagVideo = prefs.getString("tagVideo");
-	 
-	 var titleVideo2 = prefs.getString("titleVideo2");
-	 var textVideo2 = prefs.getString("textVideo2");
-	 var urlVideo2 = prefs.getString("urlVideo2");
-	 var tagVideo2 = prefs.getString("tagVideo2");
-	
-	
-	 function cargaVideo(){
-	 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-	 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
-	 
-	 document.getElementById("tagVideo").innerHTML = tagVideo;
-	 document.getElementById("titleVideo").innerHTML = titleVideo;
-	 document.getElementById("textVideo").innerHTML = textVideo;
-	 console.debug("urlVideo "+urlVideo);
-	 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
-	
-	 
-	 document.getElementById("tagVideo2").innerHTML = tagVideo2;
-	 document.getElementById("titleVideo2").innerHTML = titleVideo2;
-	 document.getElementById("textVideo2").innerHTML = textVideo2;
-	 
-	 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
-	 return false;
-	}
-	function cargaCompleta(){
-	cargaVideo();
-	}
+ <script type="text/javascript">
+ 
+ var gadgetHelper = null;
+ var prefs = new gadgets.Prefs();
+ 
+ var titlecomboVideo = prefs.getString("titlecomboVideo");
+ var Urlall = prefs.getString("Urlall");
+ 
+ var titleVideo = prefs.getString("titleVideo");
+ var textVideo = prefs.getString("textVideo");
+ var urlVideo = prefs.getString("urlVideo");
+ var tagVideo = prefs.getString("tagVideo");
+ 
+ var titleVideo2 = prefs.getString("titleVideo2");
+ var textVideo2 = prefs.getString("textVideo2");
+ var urlVideo2 = prefs.getString("urlVideo2");
+ var tagVideo2 = prefs.getString("tagVideo2");
 
-  </script>
+
+ function cargaVideo(){
+ document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
+ document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
+ 
+ document.getElementById("tagVideo").innerHTML = tagVideo;
+ document.getElementById("titleVideo").innerHTML = titleVideo;
+ document.getElementById("textVideo").innerHTML = textVideo;
+ console.debug("urlVideo "+urlVideo);
+ document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
+
+ 
+ document.getElementById("tagVideo2").innerHTML = tagVideo2;
+ document.getElementById("titleVideo2").innerHTML = titleVideo2;
+ document.getElementById("textVideo2").innerHTML = textVideo2;
+ 
+ document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
+ return false;
+}
+function cargaCompleta(){
+cargaVideo();
+}
+
+ </script>
     ]]>
   </Content>
 </Module>
