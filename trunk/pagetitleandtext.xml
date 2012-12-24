@@ -47,7 +47,7 @@
 		font-weight: normal;
 		line-height: 20px;
 		clear: both;
-		margin: 5px 0px 30px 11px;
+		margin: 5px 0px 25px 11px;
 	}
 		
 	#textPage{
