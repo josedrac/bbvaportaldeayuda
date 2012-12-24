@@ -16,77 +16,67 @@
 	
 	<style type="text/css">
 	  /* @group fonts */
-@font-face {
-	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'BBVA Web Book';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
-
-/* @end */
-	
-	#titlecomboVideo{
-	margin-top:-9px;
-	margin-left:-15px;
-	
-	}
-	#titlecomboVideo h2{
-	float:left;
-	color:#0078D2;
-	font-family:BBVA Web Light;
-	font-size:22px;
-	margin:31px 0px 10px 35px;
-	font-weight: normal;
-	}
-	
-	#comboVideo{
-	width:620px;
-	float:left;
-	}
-      #video-container{
-   	    float:left;
-		width:607px;
-		height:219px;
+		@font-face {
+			font-family: 'BBVA Web Light';
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+			font-style: normal;
+			font-weight: normal;
 		}
-	  #video-container2{
+		
+		@font-face {
+			font-family: 'BBVA Web Book';
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+			font-style: normal;
+			font-weight: normal;
+		}
+		
+		@font-face {
+			font-family: 'BBVA Web Medium';
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+			font-style: normal;
+			font-weight: normal;
+		}
+		
+		/* @end */
+	
+		#titlecomboVideo{
+		margin-top:-9px;
+		margin-left:-15px;
+		
+		}
+		#titlecomboVideo h2{
+		float:left;
+		color:#0078D2;
+		font-family:BBVA Web Light;
+		font-size:22px;
+		margin:31px 0px 10px 35px;
+		font-weight: normal;
+		}
+		
+		#comboVideo{
+		width:620px;
+		float:left;
+		}
+      #video-container,
+	  #video-container2 {
 	    float:left;
 		width:607px;
 		height:219px;
 	  }
 	  
-	  #urlVideo{
-		float:right;
-	    width:313px;
-		height:201px;
-		margin-right:4px;
-		margin-top:5px;
-	  }
+	  #urlVideo,
 	  #urlVideo2{
 		float:right;
 	    width:313px;
@@ -100,14 +90,12 @@
 	   margin-bottom:11px;
 	   margin-left:11px;
 	   margin-top:-7px;
-		//font-weight:bold;
 	  }
 	  #TagVideo2{
 	    color:#000;
 		margin-bottom:11px;
 		margin-left: 11px;
 		margin-top: 0px;
-		//font-weight:bold;
 	  }
 	  
       #titleVideo, 
@@ -115,23 +103,12 @@
 	  color:#0078D2;
 	  font-family:BBVA Web Book;
 	  font-size:18px;
-	  margin-bottom:20px;
 	  width:238px;
-	  margin-left:7px;
-	  margin-top:9px;
+	  margin: 0 0 20px 7px;
 	  font-weight: normal;	  
 	  }
 	  
-	  #textVideo{
-	    color:#434A58;
-		font-size:12px;
-		font-family:arial;
-		height:100px;
-		width:269px;
-		margin-top: 15px;
-		margin-left: 7px;
-		float:left;
-	  }
+	  #textVideo,
 	  #textVideo2{
 		color:#434A58;
 		font-size:12px;
@@ -142,13 +119,7 @@
 		margin-left: 7px;
 		float:left;
 	    }
-	#infoVideo{
-	float:left;
-		width:600px;
-		height:160px;
-		margin-left:15px;
-		margin-top:-9px;
-	}
+	#infoVideo,
 	#infoVideo2{
 		float:left;
 		width:600px;
@@ -362,7 +333,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			  
-			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width=302px; height=201px;'></iframe></div>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
 			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
