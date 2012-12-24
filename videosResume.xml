@@ -184,7 +184,7 @@
 		    width:302px;
 			height:201px;
 			margin-right:4px;
-			margin-top:10px;
+			margin-top:5px;
 			display:block;
 		  }
 		  
@@ -231,8 +231,7 @@
 			float:left;
 			width:600px;
 			height:160px;
-			margin-left:15px;
-			margin-top:-9px;
+			margin-left:12px;
 		}
 		
 		hr{
