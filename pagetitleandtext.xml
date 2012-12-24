@@ -62,6 +62,7 @@
 	}
 	#textPage a{
 		color:#0078D2;
+		text-decoration: none;
 	}
 	
 	</style>
