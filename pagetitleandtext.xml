@@ -51,12 +51,11 @@
 	}
 		
 	#textPage{
-		margin: 0 0 40px 15px;
+		margin: 0 0 0 15px;
 		display: block;
 		width:618px;
 		clear:left;
-		line-height:15px;
-		min-height:57px;
+		line-height:17px;
 		font-family: Arial;
 		font-size:12px;
 		color:#71777f;	
