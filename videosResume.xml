@@ -184,7 +184,7 @@
 		    width:302px;
 			height:201px;
 			margin-right:4px;
-			margin-top:5px;
+			margin-top:10px;
 			display:block;
 		  }
 		  
@@ -208,48 +208,33 @@
 		  
 	      #titleVideo,
 	      #titleVideo2 {
-		  color:#0078D2;
-		  font-family:BBVA Web Book;
-		  font-size:18px;
-		  margin-bottom:20px;
-		  width:248px;
-		  margin-left:-4px;		  
+			  color:#0078D2;
+			  font-family:BBVA Web Book;
+			  font-size:18px;
+			  width:248px;
+			  margin: 5px 0 20px 4px;  
 		  }
 		 
-		  #textVideo{
+		  #textVideo,
+		  #textVideo2 {
 		    color:#434A58;
 			font-size:12px;
 			font-family:arial;
 			height:100px;
 			width:269px;
-			margin-top: 33px;
+			margin-top: 20px;
 			margin-left: -3px;
 		  }
-		  #textVideo2{
-			color:#434A58;
-			font-size:12px;
-			font-family:arial;
-			height:100px;
-			width:269px;
-			margin-top: 33px;
-			margin-left: -3px;
-		    }
 		    
-		#infoVideo{
+		#infoVideo,
+		#infoVideo2 {
 			float:left;
 			width:600px;
 			height:160px;
 			margin-left:15px;
 			margin-top:-9px;
 		}
-		#infoVideo2{
-			float:left;
-			width:600px;
-			height:160px;
-			margin-left:15px;
-			margin-top:-9px;
-			}
-			
+		
 		hr{
 		    width:610px;
 			margin-bottom:20px;
