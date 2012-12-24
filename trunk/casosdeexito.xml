@@ -69,47 +69,30 @@
 		width:620px;
 		float:left;
 		}
-	      #video-container{
+	      #video-container,
+	      #video-container2{
 	   	    float:left;
 			width:607px;
 			height:219px;
 			}
-		  #video-container2{
-		    float:left;
-			width:607px;
-			height:219px;
-		  }
-		  
-		  #urlVideo{
+				  
+		  #urlVideo,
+		  #urlVideo2 {
 			float:right;
 		    width:313px;
 			height:201px;
 			margin-right:4px;
 			margin-top:5px;
 		  }
-		  #urlVideo2{
-			float:right;
-		    width:313px;
-			height:201px;
-			margin-right:4px;
-			margin-top:5px;
-		  }
-		  
-		  #TagVideo{
+				  
+		  #TagVideo,
+		   #TagVideo2{
 		   color:#000;
 		   margin-bottom:11px;
 		   margin-left:11px;
-		   margin-top:-7px;
-			//font-weight:bold;
+		   margin-top:0px;
 		  }
-		  #TagVideo2{
-		    color:#000;
-			margin-bottom:11px;
-			margin-left: 11px;
-			margin-top: 0px;
-			//font-weight:bold;
-		  }
-		  
+		 
 	      #titleVideo, 
 	      #titleVideo2 {
 		  color:#0078D2;
@@ -122,46 +105,34 @@
 		  font-weight: normal;	  
 		  }
 		  
-		  #textVideo{
+		  #textVideo,
+		   #textVideo2{
 		    color:#434A58;
 			font-size:12px;
 			font-family:arial;
-			height:100px;
+			height:73px;
 			width:269px;
 			margin-top: 15px;
 			margin-left: 7px;
 			float:left;
 		  }
-		  #textVideo2{
-			color:#434A58;
-			font-size:12px;
-			font-family:arial;
-			height:100px;
-			width:269px;
-			margin-top: 15px;
-			margin-left: 7px;
-			float:left;
-		    }
-		#infoVideo{
+		
+		#infoVideo,
+		#infoVideo2{
 		float:left;
 			width:600px;
 			height:160px;
 			margin-left:15px;
-			margin-top:-9px;
+			margin-top:0px;
 		}
-		#infoVideo2{
-			float:left;
-			width:600px;
-			height:160px;
-			margin-left:15px;
-			margin-top:-9px;
-			}
+		
 		hr{
 	    width:610px;
 		margin-bottom:20px;
 		margin-left:-1px;
 		color:#DCDCDC;
 		}	
+		
 		#allcontent{
 		
 		-webkit-border-radius: .2em;
@@ -173,12 +144,11 @@
 		float:left;
 		margin-left:10px;
 		width:90px;
-		margin-top:25px;
-		
+		margin-top:0px;		
 		}
-		 #allcontent a{
-		float:left;
 		
+		 #allcontent a{
+		float:left;		
 		position: relative;
 		top: -1px;
 		margin-right: 0;
@@ -214,10 +184,10 @@
 		position: relative;
 		overflow: visible;
 		}
+		
 		#allcontent:hover{
 		background: #004C99;
-		}
-		
+		}		
 		
 		.linetitle{
 		display:block;
@@ -232,6 +202,7 @@
 		display:block;
 		margin-bottom:23px;
 		}
+		
 		.sites-embed-align-left-wrapping-off{
 		display: block;
 		clear: both;
@@ -247,6 +218,7 @@
 		margin-top:-15px;
 		margin-left:8px;
 		}
+		
 		#userVideo{
 		color:#71777F;
 		font-size:11px;
@@ -274,38 +246,36 @@
 	            color:#0078D2;
 				width:64px;
 	        }
+	        
 		p.text {	 
 	            font-size: 0.8em;
 	            color: #3B3B3B;
 	        }
-	
-	    
+	        	    
 		#bloqueEnlaces1 img{
 	            
 				margin-left:260px;
 				padding-right:10px;
 	        }
+	        
 		.checkpage{
 	    margin-top:-5px;
 		}	
+		
 		.checkpage1{
 	    margin-top:-5px;
 		margin-left:260px;
 		}	
-		.checkpage a{
+		
+		.checkpage a,
+		.checkpage1 a {
 		height:9px;
 		float:left;
 		padding-top:4px;
 		padding-left:2px;
 		padding-right:2px;
 		}
-		.checkpage1 a{
-		height:9px;
-		float:left;
-		padding-top:4px;
-		padding-left:2px;
-		padding-right:2px;
-		}
+	
 	</style>
 	
 <div id="listportales"></div>	
@@ -420,13 +390,12 @@
 				    }			
                 }	   
 			   
-			}
+			}	
+			document.getElementById('listportales').innerHTML += html;
 				
-				
-				document.getElementById('listportales').innerHTML += html;
-				
-			}
-		 function continuacion(num)
+		}
+		
+		function continuacion(num)
         {           
             var bloque = "pagina"+num;
             var numInt = parseInt(num)-1;
@@ -463,6 +432,7 @@
 			document.getElementById('pagination'+num).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+numInt).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
     	}
+    	
 		function changePage(num,pag){
 		
 		    var bloque = "pagina"+pag;
@@ -472,14 +442,11 @@
 		    document.getElementById(bloque).style.display='none';
             document.getElementById(bloque_anterior).style.display='block';
 		}
+		
 		function changeImage(pagina,old){
-		//alert("pagina "+pagina);
-		//alert("pagina "+old);
 		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-	
-
   </script>
     ]]>
   </Content>
