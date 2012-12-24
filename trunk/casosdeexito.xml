@@ -73,7 +73,7 @@
 	  #video-container2 {
 	    float:left;
 		width:607px;
-		height:219px;
+		height:180px;
 	  }
 	  
 	  #urlVideo,
@@ -113,7 +113,7 @@
 		color:#434A58;
 		font-size:12px;
 		font-family:arial;
-		height:100px;
+		height:80px;
 		width:269px;
 		margin-top: 15px;
 		margin-left: 7px;
@@ -146,7 +146,7 @@
 			float:left;
 			margin-left:10px;
 			width:90px;
-			margin-top:25px;		
+			margin-top:0px;		
 		}
 		
 		 #allcontent a{
