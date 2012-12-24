@@ -73,7 +73,7 @@
 	      #video-container2{
 	   	    float:left;
 			width:607px;
-			height:219px;
+			height:190px;
 			}
 				  
 		  #urlVideo,
@@ -88,9 +88,7 @@
 		  #TagVideo,
 		   #TagVideo2{
 		   color:#000;
-		   margin-bottom:11px;
-		   margin-left:11px;
-		   margin-top:0px;
+		   margin: 0 0 11px 11px;
 		  }
 		 
 	      #titleVideo, 
@@ -98,10 +96,8 @@
 		  color:#0078D2;
 		  font-family:BBVA Web Book;
 		  font-size:18px;
-		  margin-bottom:20px;
 		  width:238px;
-		  margin-left:7px;
-		  margin-top:9px;
+		  margin: 0 0 20px 7px:
 		  font-weight: normal;	  
 		  }
 		  
@@ -110,7 +106,7 @@
 		    color:#434A58;
 			font-size:12px;
 			font-family:arial;
-			height:73px;
+			height:80px;
 			width:269px;
 			margin-top: 15px;
 			margin-left: 7px;
