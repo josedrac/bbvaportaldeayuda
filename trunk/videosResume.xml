@@ -307,6 +307,14 @@
 			display:block;
 			margin-bottom:26px;
 		}
+		
+		.linevideoLast{
+			width:613px;
+			height:4px;
+			display:block;
+			margin-bottom:10px;
+		}
+		
 		.sites-embed-align-left-wrapping-off{
 			display: block;
 			clear: both;
@@ -337,7 +345,7 @@
         	<div id="textVideo2"></div>
         </div>      
 	 </div>
-	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideo"/>
+	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideoLast"/>
 	 <button type="button" id="allcontent"></button>
 </div>
 </body>
