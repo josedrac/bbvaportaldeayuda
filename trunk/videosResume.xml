@@ -251,7 +251,7 @@
 			float:right;
 			margin-right:8px;
 			width:108px;
-			margin-top:20px;
+			margin-top:10px;
 		}
 		
 		 #allcontent a{		
