@@ -108,8 +108,7 @@
 	  font-weight: normal;	  
 	  }
 	  
-	  #textVideo,
-	  #textVideo2{
+	  #textVideo,#textVideo2{
 		color:#434A58;
 		font-size:12px;
 		font-family:arial;
@@ -119,7 +118,13 @@
 		margin-left: 7px;
 		float:left;
 	    }
-	#infoVideo,
+	#infoVideo{
+	float:left;
+		width:600px;
+		height:160px;
+		margin-left:15px;
+		margin-top:-9px;
+	}
 	#infoVideo2{
 		float:left;
 		width:600px;
@@ -333,7 +338,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			  
-			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' style="border:1px solid gray"></iframe></div>";
 			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
