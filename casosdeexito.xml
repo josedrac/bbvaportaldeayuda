@@ -364,7 +364,7 @@
 					
 					html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
                     html += '</div>';
-                    html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+                    html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px; margin-top:40px">';
 			   
 			        pagActual++;
 					
@@ -440,8 +440,7 @@
             document.getElementById(bloque_anterior).style.display='block';
 		}
 		function changeImage(pagina,old){
-		//alert("pagina "+pagina);
-		//alert("pagina "+old);
+
 		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
