@@ -174,34 +174,34 @@
 	}
 	
 	#titleHome h2{
-	padding-left:10px;
-	font:22px BBVA Web Light;
-	color:#0078D2;
-	margin-top:0px;
-	padding-bottom:5px;
-	font-weight: normal;
+		padding-left:10px;
+		font:22px BBVA Web Light;
+		color:#0078D2;
+		margin-top:0px;
+		padding-bottom:5px;
+		font-weight: normal;
 	}
 	
 	.linedowntitle{	
-	width:298px;
-	display:block;
-	margin-top:-15px;
-	height:4px;
+		width:298px;
+		display:block;
+		margin-top:-15px;
+		height:4px;
 	}
 	
 	#content{
-	float:right;
-	width:300px;
+		float:right;
+		width:300px;
 	}	
 	
 	#textMovilidad{
-	color:#434A58;
-	font-size:12px;
-	font-family: arial;
-	margin-top:10px;
-	margin-bottom:5px;
-	padding-left:15px;
-	font-weight: normal;
+		color:#434A58;
+		font-size:12px;
+		font-family: arial;
+		margin-top:10px;
+		margin-bottom:5px;
+		padding-left:15px;
+		font-weight: normal;
 	}	
 	
 	.linkMov {
