@@ -115,7 +115,7 @@
 		color:#0065B7;
 		text-decoration:none;
 		padding:10px 0px;
-		margin-left:10px;
+		margin-left:0px;
 		margin-bottom:10px;
 		}
 		
@@ -162,6 +162,7 @@
 		font-size:12px;
 		font-family: Arial;
 		margin-top:15px;
+		padding-left:15px;
 		}
 		
 		#dispositivos a{
@@ -184,7 +185,7 @@
 		font-family: Arial;
 		margin-top:10px;
 		margin-bottom:5px;
-		padding-left:10px;
+		padding-left:15px;
 		}
 		</style>
 <body onload="cargaCompleta()">	
