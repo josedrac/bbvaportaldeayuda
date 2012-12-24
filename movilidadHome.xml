@@ -154,6 +154,7 @@
 	font-size:12px;
 	font-family: Arial;
 	margin-top:15px;
+	padding-left: 15px;
 	}
 	
 	#dispositivos a{
@@ -196,10 +197,10 @@
 	#textMovilidad{
 	color:#434A58;
 	font-size:12px;
-	font-family: BBVA Web Light;
+	font-family: arial;
 	margin-top:10px;
 	margin-bottom:5px;
-	padding-left:10px;
+	padding-left:15px;
 	font-weight: normal;
 	}	
 	
