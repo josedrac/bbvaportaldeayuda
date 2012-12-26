@@ -209,15 +209,14 @@
 	</style>
 	<body onload="cargaCompleta()">	
 <div id="content">
-<div id="titleHome"><h2>Movilidad</h2></div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />
-<div id="textMovilidad">Guías de configuración, según dispositivo: </div>
-<div id="dispositivos"></div>
+	<div id="titleHome"><h2>Movilidad</h2></div>
+	<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />
+	<div id="textMovilidad">Guías de configuración, según dispositivo: </div>
+	<div id="dispositivos"></div>
 </div>		
 <!-- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
 -->
-</body>
-  
+</body>  
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
