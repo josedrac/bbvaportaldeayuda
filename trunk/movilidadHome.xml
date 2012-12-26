@@ -15,18 +15,7 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
 	<style type="text/css">
-	  /* @group fonts */@
-	  	font-face {
-			font-family: 'BBVA Web Light';
-			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
-			font-style: normal;
-			font-weight: normal;
-		}
-		
+	/* Fonts */
 		@font-face {
 			font-family: 'BBVA Web Book';
 			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
@@ -37,7 +26,16 @@
 			font-style: normal;
 			font-weight: normal;
 		}
-		
+		@font-face {
+			font-family: 'BBVA Web Light';
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+			font-style: normal;
+			font-weight: normal;
+		}
 		@font-face {
 			font-family: 'BBVA Web Medium';
 			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
@@ -48,7 +46,6 @@
 			font-style: normal;
 			font-weight: normal;
 		}
-	/* @end */
 	
 	#titlepage{
 	float:left;
@@ -117,8 +114,7 @@
 	}
 	
 	.flecha{
-	margin-left:15px;
-	
+	margin-left:15px;	
 	}
 	
 	.iniciateline{
@@ -165,13 +161,15 @@
 	padding-left:10px;
 	}
 	
-	#titleHome{
-	font-size:22px;
-	font-family: BBVA Web Light;
-	color:#0078D2;
-	font-weight: normal;
-	}
-	
+  	#titleVideo {
+		color: #0078D2;
+		font: 22px BBVA Web Light;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		border-bottom: 1px #D1D1D1 solid;
+		width: 312px;
+  	}
+	  	
 	#titleHome h2{
 		color: #0078D2;
 		font-size: 22px;
@@ -205,11 +203,13 @@
 	}	
 	
 	.linkMov {
-	line-height: 20px;
+		line-height: 20px;
 	}
+	
 	</style>
 	<body onload="cargaCompleta()">	
 <div id="content">
+<div id="titleVideo">Movilidad</div>
 <div id="titleHome"><h2>Movilidad</h2></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />
 <div id="textMovilidad">Guías de configuración, según dispositivo: </div>
