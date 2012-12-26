@@ -209,7 +209,6 @@
 	</style>
 	<body onload="cargaCompleta()">	
 <div id="content">
-<div id="titleVideo">Movilidad</div>
 <div id="titleHome"><h2>Movilidad</h2></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />
 <div id="textMovilidad">Guías de configuración, según dispositivo: </div>
