@@ -183,11 +183,23 @@ margin-top:-19px;
 	border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+
 .bloqueEnlaces {
-float:right;
+	text-align: right;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	color: #000000;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
 }
+
 .bloqueEnlaces a.enlaceMenu {
-text-decoration: none;
+	text-decoration: none;
+	color: #0065B7;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
 }
 </style>
 <div class="bloqueEnlaces">
