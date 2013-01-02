@@ -504,12 +504,15 @@
 	function mostrar(){
     alert("htmlmuestra "+html);
     alert("auxmuestra "+aux);	
+	alert("aux.length "+aux.length);
+	
 	var muestra="";
 	aux1 = aux.split(",");
-	 for (var y=0; y<aux.length; y++){
+	alert("aux1.length "+aux1.length);
+	 for (var y=0; y<aux1.length; y++){
 	    
 		alert(aux1[y]);
-		muestra += aux[y]+" ("+html[aux1[y]][contador]+")";
+		muestra += aux1[y]+" ("+html[aux1[y]][contador]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
