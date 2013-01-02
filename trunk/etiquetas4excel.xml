@@ -498,6 +498,7 @@
 				}
 			
 			}
+			alert(html);
 			mostrar();
 		}	
 		
@@ -508,7 +509,7 @@
 	var muestra="";
 	 for (var y=0; y<aux1.length; y++){
 	    
-		alert(aux1[y][contador]);
+		alert(aux1[y]);
 		muestra += aux1[y]+" ("+html[aux1[y]][contador]+")";
 	 
 	 }
