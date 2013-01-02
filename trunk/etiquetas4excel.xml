@@ -439,8 +439,9 @@
 				var etiquetas = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-					        aux += etiquetas[j]+" ,";
-							html[etiquetas[j]]= new Array(1);
+					        aux += etiquetas[j]+", ";
+							html[etiquetas[j]]= etiquetas[j];
+							html[etiquetas[j]][contador] = new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -464,8 +465,9 @@
 				var etiquetas = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-						    aux += etiquetas[j]+" ,";
-							html[etiquetas[j]]= new Array(1);
+						    aux += etiquetas[j]+", ";
+							html[etiquetas[j]]= etiquetas[j];
+							html[etiquetas[j]][contador] = new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -490,8 +492,9 @@
 				var etiquetas = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-					        aux += etiquetas[j]+" ,";
-							html[etiquetas[j]]= new Array(1);
+					        aux += etiquetas[j]+", ";
+							html[etiquetas[j]]= etiquetas[j];
+							html[etiquetas[j]][contador] = new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
