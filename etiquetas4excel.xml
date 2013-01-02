@@ -400,7 +400,7 @@
 					  
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
-							aux += etiquetas[j];
+							aux += etiquetas[j]+", ";
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 							
@@ -437,7 +437,7 @@
 				var etiquetas = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-					        aux += etiquetas[j];
+					        aux += etiquetas[j]+", ";
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
@@ -462,7 +462,7 @@
 				var etiquetas = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-						    aux += etiquetas[j];
+						    aux += etiquetas[j]+", ";
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
@@ -488,7 +488,7 @@
 				var etiquetas = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-					        aux += etiquetas[j];
+					        aux += etiquetas[j]+", ";
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
@@ -507,7 +507,7 @@
 	var muestra="";
 	aux1 = aux.split(",");
 	 for (var y=0; y<aux.length; y++){
-	    alert(aux[0]);
+	    
 		alert(aux1[y]);
 		muestra += aux[y]+" ("+html[aux1[y]][contador]+")";
 	 
