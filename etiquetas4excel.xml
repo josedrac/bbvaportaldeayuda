@@ -401,25 +401,25 @@
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
 							aux += etiquetas[j]+", ";
-							html += etiquetas[j];
+							html[etiquetas[j]] = contador+1;
 							
-							html[etiquetas[j]][contador] = 1;
+							
 							
 							
 						}else{
 						
-						    html[etiquetas[j]][contador]++;
+						    html[etiquetas[j]]++;
 						}
 					
 				}
 			
 			}   
 			
-			    alert(html[etiquetas[0]][contador]); 
-				alert(html[etiquetas[1]][contador]); 
-				alert(html[etiquetas[2]][contador]); 
-				alert(html[etiquetas[3]][contador]); 
-				alert(html[etiquetas[4]][contador]); 
+			    alert(html[etiquetas[0]]); 
+				alert(html[etiquetas[1]]); 
+				alert(html[etiquetas[2]]); 
+				alert(html[etiquetas[3]]); 
+				alert(html[etiquetas[4]]); 
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
