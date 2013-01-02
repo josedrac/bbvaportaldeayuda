@@ -401,7 +401,8 @@
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
 							aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= new Array();
+							html += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 							
 							
@@ -438,7 +439,8 @@
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 					        aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= new Array();
+							html += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -463,7 +465,8 @@
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 						    aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= new Array();
+							html += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -489,7 +492,8 @@
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 					        aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= new Array();
+							html += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -517,6 +521,7 @@
 	 }
 	//document.getElementById('content') = muestra;  
 	document.getElementById('content').innerHTML = muestra; 
+	//document.getElementById('content').value = muestra;
 	//document.getElementById('listportales').innerHTML = html;
 
 	} 
