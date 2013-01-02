@@ -491,19 +491,19 @@
 				}
 			
 			}
-			alert(html);
+			
 			mostrar();
 		}	
 		
 	function mostrar(){
-    alert("htmlmuestra "+html);
-    alert("auxmuestra "+aux);
+    alert(aux);
     var aux1 = 	aux.split(",");
+	alert(aux1.length);
 	var muestra="";
 	 for (var y=0; y<aux1.length; y++){
 	    
 		alert(aux1[y]);
-		muestra += aux1[y]+" ("+html[aux1[y]][contador]+")";
+		muestra += aux1[y]+" ("+html[aux[y]][contador]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
