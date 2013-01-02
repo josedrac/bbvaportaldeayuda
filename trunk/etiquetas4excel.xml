@@ -404,7 +404,7 @@
 			}   
 			   // alert(etiquetas[0]);
 			   // alert(html[etiquetas[1]][contador]);  
-				//alert(html[basico][contador]);
+				alert(html[basico][contador]);
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
@@ -503,7 +503,7 @@
 	 for (var y=0; y<aux1.length; y++){
 	    
 		alert(aux1[y]);
-		muestra += aux1[y]+" ("+html[aux[y]][contador]+")";
+		muestra += aux1[y]+" ("+html[aux1[y]][contador]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
