@@ -404,7 +404,7 @@
 							alert("html[etiquetas[j]] "+ html[etiquetas[j]]);
 						}else{
 						
-						    html[etiquetas[j]]++;
+						    ++html[etiquetas[j]];
 						}
 					
 				}
