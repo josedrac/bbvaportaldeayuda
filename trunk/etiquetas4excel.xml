@@ -355,6 +355,7 @@
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
 	 var html = new Array();
+	 var aux = new Array();
 	 var contador = 0;
 	 
 	 	  
@@ -397,9 +398,9 @@
 				
 					for(var j=0;j<etiquetas.length;j++){
 					  
-					  if(html.indexOf(etiquetas[j])==-1){            
+					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
-							html += etiquetas[j];
+							aux += etiquetas[j];
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 							//alert("html[etiquetas[j]] "+html[etiquetas[j]]);
