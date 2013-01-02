@@ -392,7 +392,7 @@
 	        
 	        data1 = response.getDataTable();
 			var filas = data1.getNumberOfRows();
-			alert("handleQueryResponse1 "+filas);
+			//alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data1.getValue(i,0).split(",");
 				
@@ -413,9 +413,9 @@
 				}
 			
 			}   
-			    alert(etiquetas[0]);
-			    alert(html[etiquetas[0]][contador]);   
-				alert("html1 "+aux);
+			   // alert(etiquetas[0]);
+			   // alert(html[etiquetas[0]][contador]);   
+			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
