@@ -509,7 +509,7 @@
 	 for (var y=0; y<aux.length; y++){
 	 
 		alert(aux1[y]);
-		muestra += aux[y]+" ("+html[aux[y]][contador]+")";
+		muestra += aux[y]+" ("+html[aux1[y]][contador]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
