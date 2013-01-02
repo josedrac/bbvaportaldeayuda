@@ -400,7 +400,8 @@
 					        
 							html +=etiquetas[j];
 							html[etiquetas[j]]=1;
-					        
+					        alert("html[etiquetas[j]] "+html[etiquetas[j]]);
+							alert("html "+html);
 						}else{
 						
 						    html[etiquetas[j]]++;
