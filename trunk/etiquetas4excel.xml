@@ -398,13 +398,12 @@
 					  
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
-					        aux[etiquetas[j]]= etiquetas[j];
-							alert("aux[etiquetas[j]] "+aux[etiquetas[j]]);
-							html[etiquetas[j]]=1;
-							alert("html[etiquetas[j]] "+ html[etiquetas[j]]);
+							html +=etiquetas[j];
+							html[etiquetas[j]][0]=1;
+					        
 						}else{
 						
-						    ++html[etiquetas[j]];
+						    html[etiquetas[j]][0]++;
 						}
 					
 				}
