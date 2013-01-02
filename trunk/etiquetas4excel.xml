@@ -428,13 +428,13 @@
 			var filas = data2.getNumberOfRows();
 			//alert("handleQueryResponse2 "+filas);
 			for (var i=0;i<filas;i++){
-				var etiquetas = data2.getValue(i,0).split(",");
-					for(var j=0;j<etiquetas.length;j++){
-					  if(html.indexOf(etiquetas[j])==-1){
-					        aux[etiquetas[j]]= etiquetas[j];
-							html[etiquetas[j]]=1;
+				var etiquetas2 = data2.getValue(i,0).split(",");
+					for(var j=0;j<etiquetas2.length;j++){
+					  if(html.indexOf(etiquetas2[j])==-1){
+					        aux[etiquetas2[j]]= etiquetas2[j];
+							html[etiquetas2[j]]=1;
 						}else{
-						    html[etiquetas[j]]++;
+						    html[etiquetas2[j]]++;
 						}
 					
 				}
@@ -502,7 +502,8 @@
 		muestra += aux[y]+" ("+html[y]+")";
 	 
 	 }
-	document.getElementById('content').innerHTML = muestra; 
+	document.getElementById('content') = muestra;  
+	//document.getElementById('content').innerHTML = muestra; 
 	//document.getElementById('listportales').innerHTML = html;
 
 	} 
