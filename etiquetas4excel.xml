@@ -505,9 +505,10 @@
     alert("htmlmuestra "+html);
     alert("auxmuestra "+aux);	
 	var muestra="";
+	aux1 = aux.split(",");
 	 for (var y=0; y<aux.length; y++){
 	 
-		alert(aux[y]);
+		alert(aux1[y]);
 		muestra += aux[y]+" ("+html[aux[y]][contador]+")";
 	 
 	 }
