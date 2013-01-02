@@ -402,7 +402,7 @@
 					        
 							aux += etiquetas[j]+", ";
 							html += etiquetas[j];
-							html[etiquetas[j]]= new Array(1);
+							html[etiquetas[j]][contador] = new Array(1);
 							html[etiquetas[j]][contador] = 1;
 							
 							
