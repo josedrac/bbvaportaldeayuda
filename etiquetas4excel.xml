@@ -395,12 +395,12 @@
 				var etiquetas = data1.getValue(i,0).split(",");
 				alert(etiquetas);
 					for(var j=0;j<etiquetas.length;j++){
-					  
+					  alert("html[etiquetas[j]] "+html[etiquetas[j]]);
 					  if(!(html[etiquetas[j]])){            
 					        
 					        aux[etiquetas[j]]= etiquetas[j];
-							alert("aux[etiquetas[j]] "+aux[etiquetas[j]]);
 							html[etiquetas[j]]=1;
+							
 						}else{
 						
 						    html[etiquetas[j]]++;
