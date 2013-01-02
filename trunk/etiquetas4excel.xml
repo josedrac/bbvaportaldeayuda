@@ -398,10 +398,8 @@
 					  
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
-							html +=etiquetas[j];
-							html[etiquetas[j]][1]=1;
-					        alert("html[etiquetas[j]] "+html[etiquetas[j]][1]);
-							alert("html "+html);
+							html[etiquetas[j]] = 1;
+							alert("[etiquetas[j]] "+[etiquetas[j]]);
 						}else{
 						
 						    html[etiquetas[j]]++;
