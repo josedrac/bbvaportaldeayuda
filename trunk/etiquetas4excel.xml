@@ -414,7 +414,7 @@
 			
 			}   
 			   // alert(etiquetas[0]);
-			    alert(html[etiquetas[4]][contador]);  
+			    alert(html[etiquetas[1]][contador]);  
 				//alert(html[basico][contador]);
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
