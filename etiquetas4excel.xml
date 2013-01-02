@@ -380,13 +380,13 @@
 				queryguias.send(handleQueryResponse1);
 				
 				
+				
 					
 				
 				
 			}
 			
      function handleQueryResponse1(response) {
-	        var opts = {dataType:'jsonp'};
 	        
 	        data1 = response.getDataTable();
 			var filas = data1.getNumberOfRows();
@@ -409,6 +409,7 @@
 				}
 			
 			}
+				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
 				querycontenidos.setQuery(querytosendcontenidos);	
@@ -424,7 +425,7 @@
 			
 			data2 = response.getDataTable();
 			var filas = data2.getNumberOfRows();
-			alert("handleQueryResponse2 "+filas);
+			//alert("handleQueryResponse2 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
@@ -448,7 +449,7 @@
 				
 			data3 = response.getDataTable();
 			var filas = data3.getNumberOfRows();
-			alert("handleQueryResponse3 "+filas);
+			//alert("handleQueryResponse3 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
@@ -473,7 +474,7 @@
 		
 			data4 = response.getDataTable();
 			var filas = data4.getNumberOfRows();
-			alert("handleQueryResponse4 "+filas);
+			//alert("handleQueryResponse4 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
