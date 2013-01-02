@@ -403,7 +403,7 @@
 							aux += etiquetas[j]+", ";
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
-							alert(html[etiquetas[j]]);
+							alert("aqui "+html[etiquetas[j]]);
 							
 						}else{
 						
