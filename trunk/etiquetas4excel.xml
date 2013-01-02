@@ -420,7 +420,7 @@
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
 				
-				alert("html1 "+html);
+				alert("html1 "+aux);
 				
 			
 		}
