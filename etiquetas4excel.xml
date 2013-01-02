@@ -436,7 +436,7 @@
 			for (var i=0;i<filas;i++){
 				var etiquetas2 = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas2.length;j++){
-					  if(html.indexOf(etiquetas2[j])==-1){
+					  if(aux.indexOf(etiquetas2[j])==-1){
 					        aux += etiquetas[j];
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
@@ -461,7 +461,7 @@
 			for (var i=0;i<filas;i++){
 				var etiquetas = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
-					  if(html.indexOf(etiquetas[j])==-1){
+					  if(aux.indexOf(etiquetas[j])==-1){
 						    aux += etiquetas[j];
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
@@ -487,7 +487,7 @@
 			for (var i=0;i<filas;i++){
 				var etiquetas = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
-					  if(html.indexOf(etiquetas[j])==-1){
+					  if(aux.indexOf(etiquetas[j])==-1){
 					        aux += etiquetas[j];
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
