@@ -507,8 +507,8 @@
     var aux1 = 	aux.split(",");
 	var muestra="";
 	 for (var y=0; y<aux1.length; y++){
-	    alert(html[basico][contador]);
-		alert(aux1[y]);
+	    
+		alert(aux1[y][contador]);
 		muestra += aux1[y]+" ("+html[aux1[y]][contador]+")";
 	 
 	 }
