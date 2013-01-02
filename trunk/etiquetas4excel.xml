@@ -422,7 +422,7 @@
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
 				
-				
+				alert(html);
 				
 			
 		}
