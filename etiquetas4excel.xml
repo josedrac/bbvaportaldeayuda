@@ -399,7 +399,8 @@
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
 							html[etiquetas[j]] = 1;
-							alert("html[etiquetas[j]] "+html[etiquetas[j]]);
+							//alert("html[etiquetas[j]] "+html[etiquetas[j]]);
+							
 						}else{
 						
 						    html[etiquetas[j]]++;
@@ -408,16 +409,16 @@
 				}
 			
 			}
-			    alert(html['básico']);
+			    
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
-				alert("aux1 "+aux);
+				
 				alert("html1 "+html);
-				document.write(aux);
-				document.write(html);
+				
+			
 		}
 		
 	 function handleQueryResponse2(response) {
