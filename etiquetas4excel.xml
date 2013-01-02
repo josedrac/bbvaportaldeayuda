@@ -354,7 +354,8 @@
 	 var urlTableexitos = prefs.getString("urlTableexitos");
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
-	 var html = new Array(2);
+	 var html = new Array();
+	 var contador = 0;
 	 
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -398,19 +399,19 @@
 					  
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
-							html += etiquetas[j];
-							html[etiquetas[j]] = 1;
+							
+							html[etiquetas[j]][contador] = 1;
 							//alert("html[etiquetas[j]] "+html[etiquetas[j]]);
 							
 						}else{
 						
-						    html[etiquetas[j]] = html[etiquetas[j]]+1;
+						    html[etiquetas[j]][contador] = html[etiquetas[j]][contador]+1;
 						}
 					
 				}
 			
 			}
-			    alert(html[etiquetas[0]]);   
+			    alert(html[etiquetas[0]][contador]);   
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
