@@ -399,7 +399,7 @@
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
 							html[etiquetas[j]] = 1;
-							alert("[etiquetas[j]] "+[etiquetas[j]]);
+							alert("html[etiquetas[j]] "+html[etiquetas[j]]);
 						}else{
 						
 						    html[etiquetas[j]]++;
