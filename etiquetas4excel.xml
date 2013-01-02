@@ -505,10 +505,10 @@
     alert("htmlmuestra "+html);
     alert("auxmuestra "+aux);	
 	var muestra="";
-	 for (var y=0; y<html.length; y++){
+	 for (var y=0; y<aux.length; y++){
 	 
 		
-		muestra += aux[y]+" ("+html[y][contador]+")";
+		muestra += aux[y]+" ("+html[aux[y]][contador]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
