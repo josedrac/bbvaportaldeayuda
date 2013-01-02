@@ -125,7 +125,19 @@
 }
 
 /* @end */
-
+	#content{
+	
+	 		border: 1px solid #DDE3EA;
+            border-radius: 2px;
+            -ms-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            width: 298px;
+            clear: both;
+			margin-top:15px;
+			height:296px;
+	}
 	#titlebox{
 	 	border-bottom: 1px solid  #DDE3EA;
 		background: #ffffff;
@@ -388,12 +400,11 @@
 					  
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
-							aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= etiquetas[j];
-							html[etiquetas[j]][contador] = new Array(1);
+							aux += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
-							alert("aqui "+html[etiquetas[j]]);
-							alert("aqui contador "+html[etiquetas[j]][contador]);
+							
+							
 						}else{
 						
 						    html[etiquetas[j]][contador]++;
@@ -403,8 +414,7 @@
 			
 			}   
 			   // alert(etiquetas[0]);
-			   // alert(html[etiquetas[1]][contador]);  
-				//alert(html[3][contador]);
+			   // alert(html[etiquetas[0]][contador]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
@@ -412,7 +422,7 @@
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
 				
-				//alert(html);
+				
 				
 			
 		}
@@ -427,9 +437,8 @@
 				var etiquetas = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-					        aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= etiquetas[j];
-							html[etiquetas[j]][contador] = new Array(1);
+					        aux += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -453,9 +462,8 @@
 				var etiquetas = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-						    aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= etiquetas[j];
-							html[etiquetas[j]][contador] = new Array(1);
+						    aux += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -480,9 +488,8 @@
 				var etiquetas = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
-					        aux += etiquetas[j]+", ";
-							html[etiquetas[j]]= etiquetas[j];
-							html[etiquetas[j]][contador] = new Array(1);
+					        aux += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
 						}else{
 						    html[etiquetas[j]][contador]++;
@@ -491,23 +498,21 @@
 				}
 			
 			}
-			
 			mostrar();
 		}	
 		
 	function mostrar(){
-    alert(aux);
-    var aux1 = 	aux.split(",");
-	alert(aux1.length);
+    alert("htmlmuestra "+html);
+    alert("auxmuestra "+aux);	
 	var muestra="";
-	 for (var y=0; y<aux1.length; y++){
-	    
-		alert(aux1[y]);
-		muestra += aux1[y]+" ("+html[aux1[y]][contador]+")";
+	 for (var y=0; y<aux.length; y++){
+	 
+		alert(aux[y]);
+		muestra += aux[y]+" ("+html[aux[y]][contador]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
-	  document.getElementById('content').innerHTML = muestra; 
+	document.getElementById('content').innerHTML = muestra; 
 	//document.getElementById('listportales').innerHTML = html;
 
 	} 
