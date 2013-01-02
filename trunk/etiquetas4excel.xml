@@ -403,7 +403,7 @@
 							aux += etiquetas[j]+", ";
 							html[etiquetas[j]]= new Array(1);
 							html[etiquetas[j]][contador] = 1;
-							
+							alert(html[etiquetas[j]]);
 							
 						}else{
 						
@@ -415,7 +415,7 @@
 			}   
 			   // alert(etiquetas[0]);
 			    alert(html[etiquetas[4]][contador]);  
-				alert(html[basico][contador]);
+				//alert(html[basico][contador]);
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
