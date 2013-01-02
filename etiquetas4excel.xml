@@ -398,12 +398,13 @@
 					  
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
+							html += etiquetas[j];
 							html[etiquetas[j]] = 1;
 							//alert("html[etiquetas[j]] "+html[etiquetas[j]]);
 							
 						}else{
 						
-						    html[etiquetas[j]]++;
+						    html[etiquetas[j]] = html[etiquetas[j]]+1;
 						}
 					
 				}
