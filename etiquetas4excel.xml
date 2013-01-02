@@ -399,11 +399,11 @@
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
 							html +=etiquetas[j];
-							html[etiquetas[j]][0]=1;
+							html[etiquetas[j]]=1;
 					        
 						}else{
 						
-						    html[etiquetas[j]][0]++;
+						    html[etiquetas[j]]++;
 						}
 					
 				}
