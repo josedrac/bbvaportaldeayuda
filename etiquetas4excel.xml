@@ -393,7 +393,7 @@
 							html[etiquetas[j]][contador] = new Array(1);
 							html[etiquetas[j]][contador] = 1;
 							alert("aqui "+html[etiquetas[j]]);
-							
+							alert("aqui contador "+html[etiquetas[j]][contador]);
 						}else{
 						
 						    html[etiquetas[j]][contador]++;
@@ -404,7 +404,7 @@
 			}   
 			   // alert(etiquetas[0]);
 			   // alert(html[etiquetas[1]][contador]);  
-				alert(html[3][contador]);
+				//alert(html[3][contador]);
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
