@@ -393,14 +393,15 @@
 			alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data1.getValue(i,0).split(",");
+				alert(etiquetas);
 					for(var j=0;j<etiquetas.length;j++){
 					  
 					  if(!(html[etiquetas[j]])){            
-					        alert("entro");
+					        
 					        aux[etiquetas[j]]= etiquetas[j];
 							html[etiquetas[j]]=1;
 						}else{
-						alert("entro1");
+						
 						    html[etiquetas[j]]++;
 						}
 					
