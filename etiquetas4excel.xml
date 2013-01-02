@@ -393,13 +393,12 @@
 			alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
 				var etiquetas = data1.getValue(i,0).split(",");
-				alert(etiquetas);
+				
 					for(var j=0;j<etiquetas.length;j++){
 					  
 					  if(html.indexOf(etiquetas[j])==-1){            
 					        
 					        aux[etiquetas[j]]= etiquetas[j];
-							alert("aux[etiquetas[j]] "+aux[etiquetas[j]]);
 							html[etiquetas[j]]=1;
 							
 						}else{
@@ -414,8 +413,8 @@
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
-				alert("1 "+aux);
-				alert("1 "+html);
+				alert("aux1 "+aux);
+				alert("html1 "+html);
 		}
 		
 	 function handleQueryResponse2(response) {
