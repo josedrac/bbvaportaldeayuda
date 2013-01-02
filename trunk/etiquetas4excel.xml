@@ -399,6 +399,7 @@
 					  if(!(html[etiquetas[j]])){            
 					        
 					        aux[etiquetas[j]]= etiquetas[j];
+							alert("aux[etiquetas[j]] "+aux[etiquetas[j]]);
 							html[etiquetas[j]]=1;
 						}else{
 						
