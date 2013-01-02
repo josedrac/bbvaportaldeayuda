@@ -401,25 +401,21 @@
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
 							aux += etiquetas[j]+", ";
-							aux[etiquetas[j]] = contador+1;
-							
-							
+							html += etiquetas[j];
+							html[etiquetas[j]]= new Array(1);
+							html[etiquetas[j]][contador] = 1;
 							
 							
 						}else{
 						
-						    html[etiquetas[j]]++;
+						    html[etiquetas[j]][contador]++;
 						}
 					
 				}
 			
 			}   
-			
-			    alert(aux[etiquetas[0]]); 
-				alert(aux[etiquetas[1]]); 
-				alert(aux[etiquetas[2]]); 
-				alert(aux[etiquetas[3]]); 
-				alert(aux[etiquetas[4]]); 
+			   // alert(etiquetas[0]);
+			    alert(html[etiquetas[0]][contador]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
