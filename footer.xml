@@ -184,7 +184,7 @@
 <div class="grid_20 footer">	
 	<div class="footer">
 		<ul>
-			<li class="first op1">
+			<li class="firstop1">
 				<h2>CENTRO DE AYUDA</h2>
 				<ul>
 					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes">Preguntas frecuentes</a></li>
@@ -206,7 +206,7 @@
 					<li><a target="_blank" href="http://prensa.bbva.com/">Sala de prensa</a></li>					
 				</ul>
 			</li>
-			<li class="last op4">
+			<li class="lastop4">
 				<h2>BBVA EN REDES SOCIALES</h2>
 				<ul class="redes-sociales">
 					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es">Socialmedia</a></li>
