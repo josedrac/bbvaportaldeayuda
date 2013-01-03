@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
  <Module>
-  <ModulePrefs title="menu Ayuda"
+  <ModulePrefs title="menu Ayuda1"
   height="75">
   <Require feature="dynamic-height"/> 
 	<Require feature="idi"/>
