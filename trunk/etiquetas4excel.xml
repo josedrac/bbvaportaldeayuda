@@ -499,7 +499,7 @@
 		}	
 		
 	function mostrar(){
-    
+    alert("auxmuestra1 "+aux[basico]);
     alert("auxmuestra "+aux);	
 	alert("aux.length "+aux.length);
 	
@@ -509,7 +509,7 @@
 	 for (var y=0; y<aux1.length; y++){
 	    
 		alert(aux1[y]);
-		muestra += aux1[y]+" ("+aux[y]+")";
+		muestra += aux1[y]+" ("+aux[aux1[y]]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
