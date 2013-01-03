@@ -169,7 +169,7 @@
 	}
 	
 	.cabecera td{
-	font-family:Arial;
+	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
 	//padding-bottom:35px;
