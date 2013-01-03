@@ -414,7 +414,7 @@
 			
 			}   
 			    alert(aux);
-			    alert(aux[basico]);   
+			    alert(aux[0]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
