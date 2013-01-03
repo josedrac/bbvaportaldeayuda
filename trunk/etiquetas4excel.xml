@@ -413,7 +413,7 @@
 				}
 			
 			}   
-			   // alert(etiquetas[0]);
+			    alert(aux);
 			    alert(aux[basico]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
