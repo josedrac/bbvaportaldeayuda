@@ -149,10 +149,13 @@
 	width:675px;
 	height:57px;
 	font-family: Arial;
-	font-size:14px;
-	color:#434a45;	
+	font-size:12px;
+	color:#71777F;	
 	margin-left:9px;
 	padding-top:11px;
+	line-height:17px;
+	clear:left;
+	display:block;
 	}
 	.tablasoporte{
 	width:675px;
