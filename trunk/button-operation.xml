@@ -278,8 +278,8 @@ cursor: pointer;
                         
             function Go(destination)
             {
-				window.parent.location.href = destination;
-				//window.open(destination,'_blank');
+				//window.parent.location.href = destination;
+				window.open(destination,'_blank');
 				return false;
 			}
 			
