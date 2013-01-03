@@ -200,11 +200,11 @@ margin-top:-19px;
 	font-size: 12px;
 	font-family: BBVA Web Light;
 	font-weight: normal;
-	text-align: right;
+	
 }
 </style>
 <div class="bloqueEnlaces">
-Español | <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">English</a>
+<a class="enlaceMenu">Español</a> | <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">English</a>
 </div>
 <div class="cabeceramenu">
   <ul> 
