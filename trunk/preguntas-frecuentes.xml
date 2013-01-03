@@ -151,34 +151,34 @@
 	 
 	 var html="";
 	 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'/>";
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes-contactos'>"Contactos"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes-contactos'>Contactos</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	  
-     html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/como-puedo-ver-mis-carpetas-en-nokia'>"Cómo puedo ver mis carpetas en Nokia"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+     html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/como-puedo-ver-mis-carpetas-en-nokia'>Cómo puedo ver mis carpetas en Nokia</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/etiquetas-preguntas-frecuentes'>"Etiquetas"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/etiquetas-preguntas-frecuentes'>Etiquetas</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/gmail-preguntas-frecuentes'>"GMail"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/gmail-preguntas-frecuentes'>GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/google-calendar-preguntas-frecuentes'>"Google Calendar"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/google-calendar-preguntas-frecuentes'>Google Calendar</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/google-docs-preguntas-frecuentes'>"Google Docs"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/google-docs-preguntas-frecuentes'>Google Docs</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/interactuar-con-los-correos-preguntas-frecuentes'>"Interactuar con los correos"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/interactuar-con-los-correos-preguntas-frecuentes'>Interactuar con los correos</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/migracion-a-gmail-preguntas-frecuentes'>"Migración a GMail"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/migracion-a-gmail-preguntas-frecuentes'>Migración a GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/modo-de-funcionamiento-de-gmail'>"Modo de funcionamiento de GMail"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/modo-de-funcionamiento-de-gmail'>Modo de funcionamiento de GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/outlook-vs-gmail-preguntas-frecuentes'>"Outlook vs. GMail"</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/outlook-vs-gmail-preguntas-frecuentes'>Outlook vs. GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
 					
