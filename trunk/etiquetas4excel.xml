@@ -499,7 +499,7 @@
 		}	
 		
 	function mostrar(){
-    alert("auxmuestra1 "+aux[basico]);
+    //alert("auxmuestra1 "+aux[basico]);
     alert("auxmuestra "+aux);	
 	alert("aux.length "+aux.length);
 	
