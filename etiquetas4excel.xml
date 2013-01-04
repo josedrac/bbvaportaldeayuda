@@ -505,7 +505,7 @@
 	
 	var muestra="";
 	aux1 = aux.split(",");
-	alert("aux1.length "+aux1.length);
+	alert("aux1[0] "+aux1[0]);
 	 for (var y=0; y<aux1.length; y++){
 	    
 		alert(aux1[y]);
