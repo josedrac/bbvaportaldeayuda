@@ -53,7 +53,7 @@
 	#textPage{
 		margin: 0 0 0 15px;
 		display: block;
-		width:618px;
+		width:615px;
 		clear:left;
 		line-height:17px;
 		font-family: Arial;
