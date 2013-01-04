@@ -77,7 +77,7 @@
 			padding-right: 2.4em;
 			float: right;
 			margin-right: 25px;
-			width: 90px;
+			width: 70px;
 			margin-top: 10px;
 		}
 		#urlLink a{
@@ -87,8 +87,7 @@
 			text-decoration: none;
 			color: white;
 			font: 12px BBVA Web Medium;
-			margin-left: -11px;
-			width: 90px;
+			margin-left: 4px;
 		}
 		hr {
 	    	margin-top:-5px;
