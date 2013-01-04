@@ -354,9 +354,8 @@
 	 var urlTableexitos = prefs.getString("urlTableexitos");
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
-	 var html = new Array();
 	 var aux = new Array();
-	 var contador = 0;
+	 var contador = new Array();
 	 
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -401,20 +400,20 @@
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
 							aux += etiquetas[j]+",";
-							aux[etiquetas[j]]= 1;
+							contador[etiquetas[j]]= 1;
 							
 							
 							
 						}else{
 						
-						    aux[etiquetas[j]]++;
+						    contador[etiquetas[j]]++;
 						}
 					
 				}
 			
 			}   
 			    alert(aux);
-			    alert(aux[etiquetas[j]]);   
+			    alert(contador[etiquetas[j]]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
@@ -499,13 +498,11 @@
 		}	
 		
 	function mostrar(){
-    //alert("auxmuestra1 "+aux[basico]);
-    alert("auxmuestra "+aux);	
-	alert("aux.length "+aux.length);
+   
 	
 	var muestra="";
 	aux1 = aux.split(",");
-	alert("aux1[0] "+aux1[0]);
+	
 	 for (var y=0; y<aux1.length; y++){
 	    
 		alert(aux1[y]);
