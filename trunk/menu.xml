@@ -15,13 +15,13 @@
   /* @group fonts */
 @font-face {
 	font-family: 'BBVA Web Light';
-	src:url('https://sites.google.com/a/bbva.com/portaldeayuda/web-light.eot?attredirects=0&d=1');
-	src:url('https://sites.google.com/a/bbva.com/portaldeayuda/web-light.eot?attredirects=0&d=1?iefix') format("embedded-opentype"),
-		url('https://sites.google.com/a/bbva.com/portaldeayuda/web-light.woff?attredirects=0&d=1') format("woff"),
-		url('https://sites.google.com/a/bbva.com/portaldeayuda/web-light.ttf?attredirects=0&d=1') format("truetype"),
-		url('https://sites.google.com/a/bbva.com/portaldeayuda/web-light.svg?attredirects=0&d=1#BBVA Web Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+			font-style: normal;
+			font-weight: normal;
 }
 
 @font-face {
