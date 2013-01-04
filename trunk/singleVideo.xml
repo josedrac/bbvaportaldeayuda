@@ -130,7 +130,7 @@
 		<div id="titleVideo"></div>
 		<div id="urlVideo"></div>
 		<div id="tagVideo"></div>
-        <input id="urlLink"/>
+        <div id="urlLink"/>
 	</div>
 	 
 	
