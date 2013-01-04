@@ -204,6 +204,65 @@
             	Texto: <input type="text" size="50" id="textoUrlArray4" onchange="registraArray('textoUrlArray',4)"/>                   
             </td>
         </tr>
+		
+		 <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray5"  onchange="registraArray('urlArray',5)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray5" onchange="registraArray('textoUrlArray',5)"/>                   
+            </td>
+        </tr>
+		 <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray6"  onchange="registraArray('urlArray',6)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray6" onchange="registraArray('textoUrlArray',6)"/>                   
+            </td>
+        </tr>
+		 <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray7"  onchange="registraArray('urlArray',7)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray7" onchange="registraArray('textoUrlArray',7)"/>                   
+            </td>
+        </tr>
+		 <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray8"  onchange="registraArray('urlArray',8)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray8" onchange="registraArray('textoUrlArray',8)"/>                   
+            </td>
+        </tr>
+		 <tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray9"  onchange="registraArray('urlArray',9)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray9" onchange="registraArray('textoUrlArray',9)"/>                   
+            </td>
+        </tr>
+		<tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray10"  onchange="registraArray('urlArray',10)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray10" onchange="registraArray('textoUrlArray',10)"/>                   
+            </td>
+        </tr>
+		<tr>       
+        	<td>
+            	Table - Url: <input type="text" size="50" id="urlArray11"  onchange="registraArray('urlArray',11)"/>                   
+            </td>
+            <td>
+            	Texto: <input type="text" size="50" id="textoUrlArray11" onchange="registraArray('textoUrlArray',11)"/>                   
+            </td>
+        </tr>
+		
+		
         <tr>       
         	<td>
             	Título: <input type="text" size="100" id="title" value="__UP_title__" onchange="registra('title')"/>                   
