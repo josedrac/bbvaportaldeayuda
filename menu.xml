@@ -7,9 +7,14 @@
 	<Require feature="locked-domain" />	
 	<Require feature="setprefs" />  
   </ModulePrefs> 
+  <FilesMatch "\.(ttf|otf|eot)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
  <Content type="html">
  <![CDATA[ 
- 
+
   <style type="text/css" > 
   /* @group fonts */
 @font-face {
