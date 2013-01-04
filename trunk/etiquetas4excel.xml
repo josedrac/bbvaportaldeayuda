@@ -399,21 +399,21 @@
 					  
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
-							aux += etiquetas[j]+",";
-							contador[etiquetas[j]]= 1;
+							aux[i] = etiquetas[j];
+							aux[i][etiquetas[j]]= 1;
 							
 							
 							
 						}else{
 						
-						    contador[etiquetas[j]]++;
+						    aux[i][etiquetas[j]]++;
 						}
 					
 				}
 			
 			}   
 			    alert(aux);
-			    alert(contador[etiquetas[j]]);   
+			    alert(aux[0][etiquetas[0]]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
@@ -505,7 +505,7 @@
 	
 	 for (var y=0; y<aux1.length; y++){
 	    
-		alert(aux1[y]);
+		//alert(aux1[y]);
 		muestra += aux1[y]+" ("+aux[aux1[y]]+")";
 	 
 	 }
