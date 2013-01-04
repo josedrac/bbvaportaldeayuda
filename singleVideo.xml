@@ -83,12 +83,11 @@
 		#urlLink a{
 			float: left;
 			position: relative;
-			top: -1px;
 			margin-right: 0;
 			text-decoration: none;
 			color: white;
 			font: 12px BBVA Web Medium;
-			margin-left: -16px;
+			margin-left: -11px;
 			width: 90px;
 		}
 		hr {
@@ -103,13 +102,11 @@
 			background: -o-linear-gradient(top, #0079C1 0%,#00559D 100%);
 			background: -ms-linear-gradient(top, #0079C1 0%,#00559D 100%);
 			background: linear-gradient(to bottom, #0079C1 0%,#00559D 100%);
-			-webkit-border-radius: .3em;
-			-moz-border-radius: .3em;
-			border-radius: .3em;
+			border-radius: 2px;
 			font-size: 10px;
 			text-align: center;
 			vertical-align: middle;
-			height: 3em;
+			height: 18px;
 			padding-left: .9em;
 			padding-right: .9em;
 			border: .1em solid #00559D;
@@ -119,7 +116,7 @@
 			overflow: visible;
 		}
 		
-		urlLink:hover {
+		#urlLink:hover {
 			background: #004C99;
 		}
 		
