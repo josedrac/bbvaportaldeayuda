@@ -401,7 +401,7 @@
 					  if(aux.indexOf(etiquetas[j])==-1){            
 					        
 							aux += etiquetas[j]+",";
-							aux[etiquetas[j]][0]= 1;
+							aux[etiquetas[j]]= 1;
 							
 							
 							
@@ -414,7 +414,7 @@
 			
 			}   
 			    alert(aux);
-			    alert(aux[etiquetas[0][0]]);   
+			    alert(aux[etiquetas[j]]);   
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
