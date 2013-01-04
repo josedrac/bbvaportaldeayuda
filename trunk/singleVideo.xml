@@ -127,6 +127,7 @@
     
 	
 	<div id="video-container">
+		<a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos">Saber más</a>
 		<div id="titleVideo"></div>
 		<div id="urlVideo"></div>
 		<div id="tagVideo"></div>
