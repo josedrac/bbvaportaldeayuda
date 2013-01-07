@@ -505,22 +505,19 @@
 	function mostrar(){
 	
 	alert("auxMostrar "+aux);
-    alert(html[aux[0]]);
-	alert(html[aux[0][0]]); 
-	var muestra="";
+    var muestra="";
+	
 	aux1 = aux.split(",");
 	
-	
-	 for (var y=0; y<aux1.length; y++){
+	for (var i=0; i<aux.length; i++){
 	    
-		alert(aux1[y]);
-		muestra += aux1[y]+" ("+html[y]+")";
+		alert(aux1[i]);
+		muestra += aux[i]+" ("+html[aux[i]]+")";
 	 
 	 }
-	//document.getElementById('content') = muestra;  
+	 
 	  document.getElementById('content').innerHTML = muestra; 
-	//document.getElementById('content').value = muestra;
-	//document.getElementById('listportales').innerHTML = html;
+	
 
 	} 
 	 
