@@ -438,7 +438,7 @@
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data2.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[j])==-1){
+					  if(aux.indexOf(etiquetas[i][j])==-1){
 					       aux += etiquetas[i][j];
 						   html[etiquetas[i][j]] = 1;
 						}else{
@@ -462,7 +462,7 @@
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[j])==-1){
+					  if(aux.indexOf(etiquetas[i][j])==-1){
 						    aux += etiquetas[i][j];
 							html[etiquetas[i][j]] = 1;
 						}else{
@@ -487,7 +487,7 @@
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[j])==-1){
+					  if(aux.indexOf(etiquetas[i][j])==-1){
 							aux += etiquetas[i][j];
 							html[etiquetas[i][j]] = 1;
 						}else{
