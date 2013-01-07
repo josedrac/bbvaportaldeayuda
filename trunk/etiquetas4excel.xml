@@ -505,17 +505,16 @@
 	alert("llego a muestra");
 	alert(aux);
 	alert (aux.length);
-	alert (html.length);
     var muestra="";
 	var aux1= aux.split(",");
 	alert(aux1.length);
 	for (var i=0; i<aux1.length; i++){
-	    for(var j=0; j<html.length; j++){
-		//alert("aux[i][j] "+aux[i][j]);
+	    
+		alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
-		muestra += aux1[i][j]+" ("+html[aux1[i][j]]+")";
+		muestra += aux1[i]+" ("+html[aux1[i]]+")";
 	 
-	 }
+	 
 	} 
 	  document.getElementById('content').innerHTML = muestra; 
 	
