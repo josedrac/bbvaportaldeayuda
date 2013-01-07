@@ -398,7 +398,7 @@
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data1.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
-					  
+					  etiquetas[i][j] = data1.getValue(i,j).split(",");
 					  if(aux.indexOf(etiquetas[i][j])== -1){            
 					        alert(etiquetas[i][j]);
 							aux += etiquetas[i][j];
@@ -508,7 +508,8 @@
 	
 	for (var i=0; i<aux.length; i++){
 	    for(var j=0; j<html.length; j++){
-		
+		alert("aux[i][j] "+aux[i][j]);
+		alert("html[aux[i][j]] "+html[aux[i][j]]);
 		muestra += aux[i][j]+" ("+html[aux[i][j]]+")";
 	 
 	 }
