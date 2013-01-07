@@ -511,7 +511,7 @@
 	
 	for (var i=0; i<aux.length; i++){
 	    
-		alert(aux1[i]);
+		//alert(aux1[i]);
 		muestra += aux[i]+" ("+html[aux[i]]+")";
 	 
 	 }
