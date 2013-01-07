@@ -513,11 +513,11 @@
 		muestra += aux[i][j]+" ("+html[aux[i][j]]+")";
 	 
 	 }
-	 
+	} 
 	  document.getElementById('content').innerHTML = muestra; 
 	
 
-	} 
+	 
 	} 
    </script>
    
