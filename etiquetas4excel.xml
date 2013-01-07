@@ -412,10 +412,8 @@
 				}
 			
 			}   
-			    alert(aux);
-				alert("hola0 "+ aux['basico']);
-				alert("hola1 "+ aux[basico]); 				
-			   // alert("html1 "+aux);
+			    alert(aux[etiquetas[j]]);				
+			   
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
