@@ -505,7 +505,7 @@
 	 for (var y=0; y<aux1.length; y++){
 	    
 		//alert(aux1[y]);
-		muestra += aux1[y]+" ("+aux[aux1[y]]+")";
+		muestra += aux1[y]+" ("+aux[y]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
