@@ -357,7 +357,7 @@
 	 var aux = new Array(2);
 	 var html = new Array();
 	 var contador = new Array();
-	 var etiquetas = new Array();
+     //var etiquetas="";
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("titlebox").innerHTML = titlebox;
@@ -394,7 +394,7 @@
 			var filas = data1.getNumberOfRows();
 			//alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
-				 etiquetas += data1.getValue(i,0).split(",");
+				var etiquetas = data1.getValue(i,0).split(",");
 				
 					for(var j=0;j<etiquetas.length;j++){
 					  
@@ -438,9 +438,9 @@
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 					       aux += etiquetas[j];
-						   aux[etiquetas[j]]= 1;
+						   html[etiquetas[j]] = 1;
 						}else{
-						    aux[etiquetas[j]]++;
+						   html[etiquetas[j]]++;
 						}
 					
 				}
@@ -462,9 +462,9 @@
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 						    aux += etiquetas[j];
-							aux[etiquetas[j]]= 1;
+							html[etiquetas[j]] = 1;
 						}else{
-						    aux[etiquetas[j]]++;
+						    html[etiquetas[j]]++;
 						}
 					
 				}
@@ -487,9 +487,9 @@
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 							aux += etiquetas[j];
-							aux[etiquetas[j]]= 1;
+							html[etiquetas[j]] = 1;
 						}else{
-						    aux[etiquetas[j]]++;
+						    html[etiquetas[j]]++;
 						}
 					
 				}
@@ -503,11 +503,11 @@
 	
 	var muestra="";
 	aux1 = aux.split(",");
-	//alert(aux1);
+	alert(html);
 	 for (var y=0; y<aux1.length; y++){
 	    
 		//alert(aux1[y]);
-		muestra += aux1[y]+" ("+aux[aux1[y]]+")";
+		muestra += aux1[y]+" ("+html[aux1[y]]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
