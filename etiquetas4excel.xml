@@ -418,7 +418,7 @@
 			}  
 			  // alert(html); 			
 			   alert(etiquetas[0][1]);
-			   
+			   alert(html[etiquetas[0][0]]);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
