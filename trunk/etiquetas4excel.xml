@@ -405,7 +405,7 @@
 							
 							
 						}else{
-						
+						    alert("entro");
 						    aux[i][etiquetas[j]]++;
 						}
 					
