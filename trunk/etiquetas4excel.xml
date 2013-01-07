@@ -502,11 +502,11 @@
 	
 	var muestra="";
 	aux1 = aux.split(",");
-	alert(html);
+	alert(html[0]);
 	 for (var y=0; y<aux1.length; y++){
 	    
 		//alert(aux1[y]);
-		muestra += aux1[y]+" ("+html[aux1[y]]+")";
+		muestra += aux1[y]+" ("+html[y]+")";
 	 
 	 }
 	//document.getElementById('content') = muestra;  
