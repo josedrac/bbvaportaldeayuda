@@ -399,9 +399,8 @@
 					  
 					  if(aux.indexOf(etiquetas[j]==-1)){            
 					        
-							aux[i] = etiquetas[j];
-							aux[i][etiquetas[j]]= new Array(1);
-							aux[i][etiquetas[j]] = 1;
+							aux += etiquetas[j];
+							aux[etiquetas[j]]= 1;
 							
 							
 						}else{
