@@ -402,7 +402,7 @@
 					        
 							aux += etiquetas[j];
 							aux[etiquetas[j]]=new Array(1);
-							aux[etiquetas[j]][0]= 1;
+							aux[etiquetas[j]][1]= 1;
 							
 							
 						}else{
