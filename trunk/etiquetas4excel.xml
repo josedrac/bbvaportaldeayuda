@@ -400,8 +400,8 @@
 					  if(!(aux.indexOf(etiquetas[j]))){            
 					        
 							aux[i] = etiquetas[j];
-							aux[i][etiquetas[j]]= 1;
-							
+							aux[i][etiquetas[j]]= new Array(1);
+							aux[i][etiquetas[j]] = 1;
 							
 							
 						}else{
