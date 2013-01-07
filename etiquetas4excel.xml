@@ -355,6 +355,7 @@
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
 	 var aux = new Array();
+	 var html = new Array();
 	 var contador = new Array();
 	 
 	 	  
@@ -400,19 +401,19 @@
 					  if(aux.indexOf(etiquetas[j]==-1)){            
 					        
 							aux += etiquetas[j];
-							alert([etiquetas[j]]);
-							aux[etiquetas[j]]= 1;
+							
+							html[etiquetas[j]]= 1;
 							
 							
 						}else{
-						    alert("entro");
-						    aux[etiquetas[j]]++;
+						    
+						    html[etiquetas[j]]++;
 						}
 					
 				}
 			
 			}   
-			    alert(aux[etiquetas[j]]);				
+			    alert(html[etiquetas[j]]);				
 			   
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
