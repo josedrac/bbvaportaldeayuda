@@ -354,7 +354,7 @@
 	 var urlTableexitos = prefs.getString("urlTableexitos");
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
-	 var aux = new Array(2);
+	 var aux = new Array();
 	 var html = new Array();
 	 var contador = new Array();
 	 var ArrayDeEtiquetas = new Array();
