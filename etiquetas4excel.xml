@@ -503,6 +503,7 @@
 	function mostrar(){
 	
 	alert("llego a muestra");
+	alert(aux);
 	alert (aux.length);
 	alert (html.length);
     var muestra="";
