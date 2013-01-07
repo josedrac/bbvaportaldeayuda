@@ -357,7 +357,7 @@
 	 var aux = new Array(2);
 	 var html = new Array();
 	 var contador = new Array();
-	 
+	 var etiquetas = new Array();
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("titlebox").innerHTML = titlebox;
@@ -394,7 +394,7 @@
 			var filas = data1.getNumberOfRows();
 			//alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
-				var etiquetas += data1.getValue(i,0).split(",");
+				 etiquetas += data1.getValue(i,0).split(",");
 				
 					for(var j=0;j<etiquetas.length;j++){
 					  
