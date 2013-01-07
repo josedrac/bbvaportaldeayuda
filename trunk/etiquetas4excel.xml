@@ -503,11 +503,12 @@
 		}	
 		
 	function mostrar(){
+	alert("aux "+aux);
     alert(html[aux[0]]);
 	alert(html[aux[0][0]]); 
 	var muestra="";
 	aux1 = aux.split(",");
-	alert(aux1);
+	alert("aux1 "+aux1);
 	
 	 for (var y=0; y<aux1.length; y++){
 	    
