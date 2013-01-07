@@ -401,8 +401,8 @@
 					  if(aux.indexOf(etiquetas[j]==-1)){            
 					        
 							aux += etiquetas[j];
-							
-							html[etiquetas[j]]= 1;
+							aux[etiquetas[j]]=new Array(1);
+							aux[etiquetas[j]][0]= 1;
 							
 							
 						}else{
@@ -413,7 +413,7 @@
 				}
 			
 			}   
-			    alert(html[etiquetas[j]]);				
+			    alert(aux[etiquetas[j]][0]);				
 			   
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
