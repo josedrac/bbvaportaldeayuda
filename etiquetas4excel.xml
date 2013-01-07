@@ -400,7 +400,7 @@
 					  if(aux.indexOf(etiquetas[j]==-1)){            
 					        
 							aux += etiquetas[j];
-							alert[etiquetas[j]];
+							alert([etiquetas[j]]);
 							aux[etiquetas[j]]= 1;
 							
 							
