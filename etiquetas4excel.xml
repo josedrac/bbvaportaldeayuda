@@ -503,7 +503,8 @@
 		}	
 		
 	function mostrar(){
-	alert("aux "+aux);
+	
+	alert("auxMostrar "+aux);
     alert(html[aux[0]]);
 	alert(html[aux[0][0]]); 
 	var muestra="";
@@ -517,7 +518,7 @@
 	 
 	 }
 	//document.getElementById('content') = muestra;  
-	document.getElementById('content').innerHTML = muestra; 
+	  document.getElementById('content').innerHTML = muestra; 
 	//document.getElementById('content').value = muestra;
 	//document.getElementById('listportales').innerHTML = html;
 
