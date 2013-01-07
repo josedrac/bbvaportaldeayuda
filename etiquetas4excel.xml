@@ -457,12 +457,12 @@
 		}
 	 function handleQueryResponse3(response) {
 	        var opts = {dataType:'jsonp'};
-				
+			var etiquetas = new Array();	
 			data3 = response.getDataTable();
 			var filas = data3.getNumberOfRows();
 			//alert("handleQueryResponse3 "+filas);
 			for (var i=0;i<filas;i++){
-				var etiquetas = data3.getValue(i,0).split(",");
+				 etiquetas[i] = data3.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 						    aux += etiquetas[i][j];
@@ -482,12 +482,12 @@
 		}
 	 function handleQueryResponse4(response) {
 				
-		
+		    var etiquetas = new Array();
 			data4 = response.getDataTable();
 			var filas = data4.getNumberOfRows();
 			//alert("handleQueryResponse4 "+filas);
 			for (var i=0;i<filas;i++){
-				var etiquetas = data4.getValue(i,0).split(",");
+				 etiquetas[i] = data4.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas.length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 							aux += etiquetas[i][j];
