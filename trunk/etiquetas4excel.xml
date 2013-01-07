@@ -416,7 +416,7 @@
 				}
 			
 			}  
-			  // alert(html); 			
+			   alert(aux); 			
 			   alert(etiquetas[0][1]);
 			   alert(html[etiquetas[0][0]]);
 				var opts = {dataType:'jsonp'};
@@ -508,11 +508,11 @@
 	alert(html[aux[0][0]]); 
 	var muestra="";
 	aux1 = aux.split(",");
-	alert("aux1 "+aux1);
+	
 	
 	 for (var y=0; y<aux1.length; y++){
 	    
-		//alert(aux1[y]);
+		alert(aux1[y]);
 		muestra += aux1[y]+" ("+html[y]+")";
 	 
 	 }
