@@ -10,11 +10,7 @@
   
  <Content type="html">
  <![CDATA[ 
-<head><FilesMatch "\.(ttf|otf|eot|woff)$">
-  <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-  </IfModule>
-</FilesMatch></head>
+
   <style type="text/css" > 
   /* @group fonts */
 @font-face {
