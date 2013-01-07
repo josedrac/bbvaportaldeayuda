@@ -504,15 +504,13 @@
 		
 	function mostrar(){
 	
-	alert("auxMostrar "+aux);
+	
     var muestra="";
 	
-	aux1 = aux.split(",");
-	
 	for (var i=0; i<aux.length; i++){
-	    
-		//alert(aux1[i]);
-		muestra += aux[i]+" ("+html[aux[i]]+")";
+	    for(var j=0; j<html.length; j++){
+		
+		muestra += aux[i][j]+" ("+html[aux[i][j]]+")";
 	 
 	 }
 	 
