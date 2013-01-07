@@ -412,7 +412,8 @@
 			
 			}   
 			    alert(aux);
-				alert("hola "+ aux[basico]);   
+				alert("hola0 "+ aux['basico']);
+				alert("hola1 "+ aux[basico]); 				
 			   // alert("html1 "+aux);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
