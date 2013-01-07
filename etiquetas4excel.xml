@@ -512,8 +512,9 @@
 	    
 		alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
+		if(aux1[i]!=""){
 		muestra += aux1[i]+" ("+html[aux1[i]]+")";
-	 
+		}
 	 
 	} 
 	  document.getElementById('content').innerHTML = muestra; 
