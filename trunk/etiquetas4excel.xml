@@ -395,30 +395,29 @@
 			var filas = data1.getNumberOfRows();
 			//alert("handleQueryResponse1 "+filas);
 			for (var i=0;i<filas;i++){
-				var etiquetas = data1.getValue(i,0).split(",");
+				var etiquetas[i] = data1.getValue(i,0).split(",");
 				
 					for(var j=0;j<etiquetas.length;j++){
 					  
-					  if(aux.indexOf(etiquetas[j])== -1){            
+					  if(aux.indexOf(etiquetas[i][j])== -1){            
 					        
-							aux += etiquetas[j];
-							html[etiquetas[j]] = 1;
+							aux += etiquetas[i][j];
+							html[etiquetas[i][j]] = 1;
 							
 							
 							
 							
 						}else{
 						    
-						    html[etiquetas[j]]++;
+						    html[etiquetas[i][j]]++;
 						}
 					
 				}
 			
 			}  
-			   alert(html); 			
-			   alert(etiquetas[1]);
-			   alert(html[basico]);
-			   alert(html['basico']);
+			  // alert(html); 			
+			   alert(etiquetas[0][1]);
+			   
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
