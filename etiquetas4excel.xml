@@ -396,9 +396,8 @@
 			//alert("handleQueryResponse1 "+filas);
 			var etiquetas = new Array(); 
 			for (var i=0;i<filas;i++){
-			 for (var x=0;x<;x++)
 				 etiquetas[i] = data1.getValue(i,0).split(",");
-					for(var j=0;j<etiquetas.length;j++){
+					for(var j=0;j<etiquetas[i].length;j++){
 					  if(aux.indexOf(etiquetas[i])== -1){            
 					        etiquetas[i][j] = data1.getValue(i,0).split(",");
 							aux += etiquetas[i][j];
