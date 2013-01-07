@@ -437,7 +437,7 @@
 			var etiquetas = new Array();
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data2.getValue(i,0).split(",");
-					for(var j=0;j<etiquetas.length;j++){
+					for(var j=0;j<etiquetas[i].length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 					       aux += etiquetas[i];
 						   html[etiquetas[i][j]] = 1;
@@ -461,7 +461,7 @@
 			//alert("handleQueryResponse3 "+filas);
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data3.getValue(i,0).split(",");
-					for(var j=0;j<etiquetas.length;j++){
+					for(var j=0;j<etiquetas[i].length;j++){
 					  if(aux.indexOf(etiquetas[j])==-1){
 						    aux += etiquetas[i];
 							html[etiquetas[i][j]] = 1;
