@@ -405,7 +405,7 @@
 							
 						}else{
 						    alert("entro");
-						    aux[i][etiquetas[j]]++;
+						    aux[etiquetas[j]]++;
 						}
 					
 				}
@@ -501,7 +501,7 @@
 	
 	var muestra="";
 	aux1 = aux.split(",");
-	
+	alert(aux1);
 	 for (var y=0; y<aux1.length; y++){
 	    
 		//alert(aux1[y]);
