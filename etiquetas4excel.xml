@@ -397,11 +397,10 @@
 			var etiquetas = new Array(); 
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data1.getValue(i,0).split(",");
-				
 					for(var j=0;j<etiquetas.length;j++){
 					  
 					  if(aux.indexOf(etiquetas[i][j])== -1){            
-					        
+					        alert(etiquetas[i][j]);
 							aux += etiquetas[i][j];
 							html[etiquetas[i][j]] = 1;
 							
