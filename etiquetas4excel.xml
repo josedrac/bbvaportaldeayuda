@@ -394,8 +394,9 @@
 	        data1 = response.getDataTable();
 			var filas = data1.getNumberOfRows();
 			//alert("handleQueryResponse1 "+filas);
+			var etiquetas = new Array(); 
 			for (var i=0;i<filas;i++){
-				var etiquetas[i] = data1.getValue(i,0).split(",");
+				 etiquetas[i] = data1.getValue(i,0).split(",");
 				
 					for(var j=0;j<etiquetas.length;j++){
 					  
