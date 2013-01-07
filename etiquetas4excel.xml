@@ -502,7 +502,7 @@
 		
 	function mostrar(){
 	
-	
+	alert("llego a muestra");
     var muestra="";
 	
 	for (var i=0; i<aux.length; i++){
