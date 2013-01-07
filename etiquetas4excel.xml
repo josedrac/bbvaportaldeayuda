@@ -399,8 +399,8 @@
 				 etiquetas[i] = data1.getValue(i,0).split(",");
 					for(var j=0;j<etiquetas[i].length;j++){
 					  if(aux.indexOf(etiquetas[i])== -1){            
-					        etiquetas[i][j] = data1.getValue(i,0).split(",");
-							aux += etiquetas[i][j];
+					        
+							aux += etiquetas[i];
 							html[etiquetas[i][j]] = 1;
 							
 							
