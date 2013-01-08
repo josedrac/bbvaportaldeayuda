@@ -522,7 +522,7 @@
 			mostrar();
 		}	
 	function handleQueryResponse5(response) {
-				
+			var opts = {dataType:'jsonp'};	
 		    var etiquetas = new Array();
 			var formatos = new Array();
 			data5 = response.getDataTable();
