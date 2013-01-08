@@ -344,9 +344,12 @@
 
 
 <div id="titlebox"></div>
-<div id="content"></div>
+<div id="content">
+<div id="etiquetas"></div>
 <div id="tipos"></div>
 <div id="formatos"></div>
+</div>
+
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -599,7 +602,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content').innerHTML = muestra; 
+	  document.getElementById('etiquetas').innerHTML = muestra; 
 } 
 
 	function mostrarTipos(){
