@@ -345,6 +345,8 @@
 
 <div id="titlebox"></div>
 <div id="content"></div>
+<div id="tipos"></div>
+<div id="formatos"></div>
 	
    <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -356,6 +358,10 @@
 	 var titlebox = prefs.getString("titlebox");
 	 var aux = new Array();
 	 var html = new Array();
+	 var tipo = new Array();
+	 var contadorTipo = new Array();
+	 var formato = new Array();
+	 var contadorFormato = new Array();
 	 var contador = new Array();
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
@@ -368,6 +374,7 @@
 			{
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
+				google.setOnLoadCallback(sendQueryTipos);
 			}
 			
 	 function sendQuery() 
@@ -385,9 +392,24 @@
 				
 				
 					
-				
-				
 			}
+	function sendQueryTipos() 
+			{   
+				gadgetHelper = new google.visualization.GadgetHelper();
+				var opts = {dataType:'jsonp'};
+					
+				var querytipos = new google.visualization.Query(urlTableguias, opts);	
+			    var querytosendtipos = "select E,F";				
+								
+				
+				querytipos.setQuery(querytosendtipos);	
+				querytipos.send(handleQueryResponse5);
+				
+				
+				
+					
+			}		
+			
 			
      function handleQueryResponse1(response) {
 	        
@@ -499,6 +521,66 @@
 			}
 			mostrar();
 		}	
+	function handleQueryResponse5(response) {
+				
+		    var etiquetas = new Array();
+			var formatos = new Array();
+			data5 = response.getDataTable();
+			var filas = data5.getNumberOfRows();
+			
+			for (var i=0;i<filas;i++){
+				 etiquetas = data5.getValue(i,0);
+				 formatos  = data5.getValue(i,1);	
+					  if(tipo.indexOf(etiquetas)==-1){
+							tipo += etiquetas+",";
+							
+							contadorTipo[etiquetas] = 1;
+						}else{
+						    contadorTipo[etiquetas]++;
+						}
+					   if(formato.indexOf(formatos)==-1){
+							formato += formatos+",";
+							
+							contadorFormato[formatos] = 1;
+						}else{
+						    contadorFormato[formatos]++;
+						}
+				
+			
+			}
+			var querytiposcontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
+			var querytosendtiposcontenidos = "select K,L";
+			querytiposcontenidos.setQuery(querytosendtiposcontenidos);	
+			querytiposcontenidos.send(handleQueryResponse6);
+		}
+	function handleQueryResponse6(response) {
+				
+		    var etiquetas = new Array();
+			var formatos = new Array();
+			data6 = response.getDataTable();
+			var filas = data6.getNumberOfRows();
+			
+			for (var i=0;i<filas;i++){
+				 etiquetas = data6.getValue(i,0);
+				 formatos  = data6.getValue(i,1);	
+					  if(tipo.indexOf(etiquetas)==-1){
+							tipo += etiquetas+",";
+							contadorTipo[etiquetas] = 1;
+						}else{
+						    contadorTipo[etiquetas]++;
+						}
+					   if(formato.indexOf(formatos)==-1){
+							formato += formatos+",";
+							
+							contadorFormato[formatos] = 1;
+						}else{
+						    contadorFormato[formatos]++;
+						}
+				
+			
+			}
+			mostrarTipos();
+		}	
 		
 	function mostrar(){
 	
@@ -518,10 +600,41 @@
 	 
 	} 
 	  document.getElementById('content').innerHTML = muestra; 
-	
+} 
 
+	function mostrarTipos(){
+	
+	//alert("llego a muestra");
+	//alert(aux);
+	//alert (aux.length);
+    var muestra="";
+	var muestra2="";
+	var aux1= tipo.split(",");
+	var aux2= formato.split(",");
+	//alert(aux1.length);
+	for (var i=0; i<aux1.length; i++){
+	    
+		//alert(aux1[i]);
+		//alert("html[aux[i][j]] "+html[aux[i][j]]);
+		if(aux1[i]!=""){
+		muestra += "Tipo: "+aux1[i]+" ("+contadorTipo[aux1[i]]+")";
+		}
 	 
 	} 
+	  document.getElementById('tipos').innerHTML = muestra; 
+	 for (var i=0; i<aux2.length; i++){
+	    
+		//alert(aux1[i]);
+		//alert("html[aux[i][j]] "+html[aux[i][j]]);
+		if(aux2[i]!=""){
+		muestra2 += "Formato: "+aux2[i]+" ("+contadorFormato[aux2[i]]+")";
+		}
+	 
+	}  
+	 document.getElementById('formatos').innerHTML = muestra2;  
+} 
+
+
    </script>
    
     ]]>
