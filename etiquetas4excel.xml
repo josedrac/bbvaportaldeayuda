@@ -414,9 +414,9 @@
 				}
 			
 			}  
-			   alert(aux); 			
-			   alert(etiquetas[0][1]);
-			   alert(html[etiquetas[0][0]]);
+			   //alert(aux); 			
+			   //alert(etiquetas[0][1]);
+			   //alert(html[etiquetas[0][0]]);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
@@ -502,15 +502,15 @@
 		
 	function mostrar(){
 	
-	alert("llego a muestra");
-	alert(aux);
-	alert (aux.length);
+	//alert("llego a muestra");
+	//alert(aux);
+	//alert (aux.length);
     var muestra="";
 	var aux1= aux.split(",");
-	alert(aux1.length);
+	//alert(aux1.length);
 	for (var i=0; i<aux1.length; i++){
 	    
-		alert(aux1[i]);
+		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
 		muestra += aux1[i]+" ("+html[aux1[i]]+")";
