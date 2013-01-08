@@ -402,7 +402,7 @@
 				var opts = {dataType:'jsonp'};
 					
 				var querytipos = new google.visualization.Query(urlTableguias, opts);	
-			    var querytosendtipos = "select E,F";				
+			    var querytosendtipos = "select E,F where E<>'Tipo' and F<>'Formato'";				
 								
 				
 				querytipos.setQuery(querytosendtipos);	
@@ -552,7 +552,7 @@
 			
 			}
 			var querytiposcontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			var querytosendtiposcontenidos = "select K,L";
+			var querytosendtiposcontenidos = "select K,L where K<>'Tipo' and L<>'Formato'";
 			querytiposcontenidos.setQuery(querytosendtiposcontenidos);	
 			querytiposcontenidos.send(handleQueryResponse6);
 		}
