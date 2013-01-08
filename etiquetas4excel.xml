@@ -536,7 +536,7 @@
 			
 			for (var i=0;i<filas;i++){
 				 etiquetas = data5.getValue(i,0);
-				 formatos  = data5.getValue(i,1);	
+				 formatos[i] = data5.getValue(i,1).split(",");	
 					  if(tipo.indexOf(etiquetas)==-1){
 							tipo += etiquetas+",";
 							
@@ -544,15 +544,16 @@
 						}else{
 						    contadorTipo[etiquetas]++;
 						}
-					   if(formato.indexOf(formatos)==-1){
-							formato += formatos+",";
+					for(var j=0;j<formatos[i].length;j++){
+					  if(formato.indexOf(formatos[i][j])==-1){
+							formato += formatos[i][j]+",";
 							
-							contadorFormato[formatos] = 1;
+							contadorFormato[formatos[i][j]] = 1;
 						}else{
-						    contadorFormato[formatos]++;
+						    contadorFormato[formatos[i][j]]++;
 						}
 				
-			
+					}
 			}
 			var querytiposcontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
 			var querytosendtiposcontenidos = "select K,L where K<>'Tipo' and L<>'Formato'";
@@ -568,23 +569,24 @@
 			
 			for (var i=0;i<filas;i++){
 				 etiquetas = data6.getValue(i,0);
-				 formatos  = data6.getValue(i,1);	
+				 formatos[i] = data6.getValue(i,1).split(",");		
 					  if(tipo.indexOf(etiquetas)==-1){
 							tipo += etiquetas+",";
 							contadorTipo[etiquetas] = 1;
 						}else{
 						    contadorTipo[etiquetas]++;
 						}
-					   if(formato.indexOf(formatos)==-1){
-							formato += formatos+",";
+					   for(var j=0;j<formatos[i].length;j++){
+					  if(formato.indexOf(formatos[i][j])==-1){
+							formato += formatos[i][j]+",";
 							
-							contadorFormato[formatos] = 1;
+							contadorFormato[formatos[i][j]] = 1;
 						}else{
-						    contadorFormato[formatos]++;
+						    contadorFormato[formatos[i][j]]++;
 						}
 				
-			
-			}
+					}
+				}
 			mostrarTipos();
 		}	
 		
