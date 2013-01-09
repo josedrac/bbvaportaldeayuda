@@ -381,7 +381,7 @@
 			{
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
-				google.setOnLoadCallback(sendQueryTipos);
+				//google.setOnLoadCallback(sendQueryTipos);
 			}
 			
 	 function sendQuery() 
@@ -400,7 +400,7 @@
 				
 					
 			}
-	function sendQueryTipos() 
+	/*function sendQueryTipos() 
 			{   
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};
@@ -415,7 +415,7 @@
 				
 				
 					
-			}		
+			}*/		
 			
 			
      function handleQueryResponse1(response) {
@@ -508,7 +508,7 @@
 			
 		}
 	 function handleQueryResponse4(response) {
-				
+			var opts = {dataType:'jsonp'};	
 		    var etiquetas = new Array();
 			data4 = response.getDataTable();
 			var filas = data4.getNumberOfRows();
@@ -527,6 +527,10 @@
 			
 			}
 			mostrar();
+			var querytipos = new google.visualization.Query(urlTableguias, opts);	
+			var querytosendtipos = "select E,F where E<>'Tipo' and F<>'Formato'";				
+			querytipos.setQuery(querytosendtipos);	
+			querytipos.send(handleQueryResponse5);
 		}	
 	function handleQueryResponse5(response) {
 			var opts = {dataType:'jsonp'};	
