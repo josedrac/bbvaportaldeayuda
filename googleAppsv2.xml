@@ -136,12 +136,11 @@
 	
 	</style>
 	
-<div id="contenido" onload="googleApps()"></div>
+<div id="contenido"></div>
 
 	
    <script type="text/javascript">
-     function googleApps(){
-	 alert('entro');
+     
 	 var html='';
 	 html +='<div class="cabeceramenu">';
 	 html +='<ul class="listaGoogleApps">';
@@ -158,7 +157,7 @@
 	 html +='</ul></div>';
 	 alert('html');
 	 document.getElementById('contenido').innerHTML = html;	
-	}
+	
    </script>
    
     ]]>
