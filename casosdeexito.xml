@@ -329,8 +329,11 @@
 			   html += "<div id='comboVideo'>";
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
-			  
+			   if(data.getValue(i,10)!=""){
 			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
+			   }else{
+			   html += "<img src='"+data.getValue(i,11)+"'></img></div>";
+				}
 			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
