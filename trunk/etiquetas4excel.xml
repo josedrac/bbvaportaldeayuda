@@ -139,6 +139,7 @@
 			height:335px;
 			font-family:BBVA Web Light;
 			font-size:12px;
+			
 	}
 	.titulo{
 	 	border-bottom: 1px solid  #DDE3EA;
@@ -158,13 +159,28 @@
 		padding-bottom: 15px;
 		margin-bottom:30px;
 	}
-	.content a{
+	
+	.etiquetas{
 	text-decoration:none;
 	font-family:BBVA Web Light;
 	margin-top:30px;
 	font-size:12px;
+	padding:0px 10px 10px 10px;
 	}
-	
+	.tipos{
+	text-decoration:none;
+	font-family:BBVA Web Light;
+	margin-top:30px;
+	font-size:12px;
+	padding:0px 10px 10px 10px;
+	}
+	.formatos{
+	text-decoration:none;
+	font-family:BBVA Web Light;
+	margin-top:30px;
+	font-size:12px;
+	padding:0px 10px 10px 10px;
+	}
 	#niveles{
 	float:left;
 	width:298px;
@@ -624,7 +640,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML += muestra; 
+	  document.getElementById('content_div').innerHTML +="< div class='etiquetas'>"+muestra+"</div>"; 
 } 
 
 	function mostrarTipos(){
@@ -646,7 +662,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML += muestra; 
+	  document.getElementById('content_div').innerHTML += "< div class='tipos'>"+muestra+"</div>"; 
 	 for (var i=0; i<aux2.length; i++){
 	    
 		//alert(aux1[i]);
@@ -656,7 +672,7 @@
 		}
 	 
 	}  
-	 document.getElementById('content_div').innerHTML += muestra2;  
+	 document.getElementById('content_div').innerHTML += "< div class='formatos'>"+muestra2+"</div>";  
 } 
 
 
