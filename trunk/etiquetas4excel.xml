@@ -351,9 +351,7 @@
 
 <div id="content_div" class="content">
 
-<div id="etiquetas"></div>
-<div id="tipos"></div>
-<div id="formatos"></div>
+
 </div>
 
 	
@@ -614,7 +612,7 @@
 		}
 	 
 	} 
-	  document.getElementById('etiquetas').innerHTML = muestra; 
+	  document.getElementById('content_div').innerHTML = muestra; 
 } 
 
 	function mostrarTipos(){
@@ -636,7 +634,7 @@
 		}
 	 
 	} 
-	  document.getElementById('tipos').innerHTML = muestra; 
+	  document.getElementById('content_div').innerHTML = muestra; 
 	 for (var i=0; i<aux2.length; i++){
 	    
 		//alert(aux1[i]);
@@ -646,7 +644,7 @@
 		}
 	 
 	}  
-	 document.getElementById('formatos').innerHTML = muestra2;  
+	 document.getElementById('content_div').innerHTML = muestra2;  
 } 
 
 
