@@ -186,6 +186,8 @@
 	.tipos a,
 	.formatos a{
 	text-decoration:none;
+	color:#0078D2;
+	font-family:BBVA Web Light;
 	}
 	#niveles{
 	float:left;
