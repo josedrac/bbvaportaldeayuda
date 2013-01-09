@@ -143,7 +143,7 @@
      
 	 var html='';
 	 html +='<div class="cabeceramenu"><ul class="listaGoogleApps">';
-	 //html +='<ul class="listaGoogleApps">';
+	
 	 html +='<li id="gmail" class="gmail"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/gmail" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/gmail_google_apps_seccion.png?attredirects=0"><p>Gmail</p></a></li>';
 	 html +='<li id="contactos" class="contactos"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/contactos" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/contact_google_apps_seccion.png?attredirects=0"><p>Contactos</p></a></li>';
 	 html +='<li id="calendario" class="calendario" ><a href="https://sites.google.com/a/bbva.com/portaldeayuda/calendar" class="enlace" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/calendar_google_apps_seccion.png?attredirects=0"><p>Calendario</p></a></li>';
