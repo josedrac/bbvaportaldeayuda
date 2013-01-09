@@ -160,7 +160,7 @@
 	 html +='<li id="groups" class="groups"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/groups" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/groups_google_apps_seccion.png?attredirects=0"><p>Groups</p></a></li>';
 	 html +='<li id="sites" class="sites" ><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/sites" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/sites_google_apps_seccion.png?attredirects=0"><p>Sites</p></a></li>';
 	 html +='<li id="googleMas" class="googleMas"><a class="enlace" href="https://support.google.com/" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/gplus_google_apps_seccion.png?attredirects=0"><p>Google +</p></a></li>';
-	 html +='<li id="mas" class="mas"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/mas" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/mas_google_apps_seccion.png?attredirects=0"><p>Mas</p></a></li>';
+	 html +='<li id="mas" class="mas"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/mas" target="_parent"><img src="https://sites.google.com/a/bbva.com/portaldeayuda/mas_google_apps_seccion.png?attredirects=0"><p>Más</p></a></li>';
 	 html +='</ul></div>';
 	 alert('html');
 	 document.getElementById('contenido').innerHTML = html;	
