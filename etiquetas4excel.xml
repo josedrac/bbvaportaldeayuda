@@ -167,6 +167,7 @@
 	font-size:12px;
 	padding:0px 10px 0px 10px;
 	}
+	
 	.tipos{
 	text-decoration:none;
 	font-family:BBVA Web Light;
@@ -180,6 +181,11 @@
 	margin-top:30px;
 	font-size:12px;
 	padding:0px 10px 0px 10px;
+	}
+	.etiquetas a,
+	.tipos a,
+	.formatos a{
+	text-decoration:none;
 	}
 	#niveles{
 	float:left;
