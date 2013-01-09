@@ -640,7 +640,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML +="< div class='etiquetas'>"+muestra+"</div>"; 
+	  document.getElementById('content_div').innerHTML +="<div class='etiquetas'>"+muestra+"</div>"; 
 } 
 
 	function mostrarTipos(){
@@ -662,7 +662,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML += "< div class='tipos'>"+muestra+"</div>"; 
+	  document.getElementById('content_div').innerHTML += "<div class='tipos'>"+muestra+"</div>"; 
 	 for (var i=0; i<aux2.length; i++){
 	    
 		//alert(aux1[i]);
@@ -672,7 +672,7 @@
 		}
 	 
 	}  
-	 document.getElementById('content_div').innerHTML += "< div class='formatos'>"+muestra2+"</div>";  
+	 document.getElementById('content_div').innerHTML += "<div class='formatos'>"+muestra2+"</div>";  
 } 
 
 
