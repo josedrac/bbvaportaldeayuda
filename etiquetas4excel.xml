@@ -137,6 +137,8 @@
             clear: both;
 			margin-top:15px;
 			height:296px;
+			font-family:BBVA Web Light;
+			
 	}
 	.titulo{
 	 	border-bottom: 1px solid  #DDE3EA;
@@ -155,7 +157,11 @@
 		padding-top: 14px;
 		padding-bottom: 15px;
 	}
-	
+	.content a{
+	text-decoration:none;
+	font-family:BBVA Web Light;
+	margin-top:30px;
+	}
 	
 	#niveles{
 	float:left;
