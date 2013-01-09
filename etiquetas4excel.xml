@@ -612,7 +612,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML = muestra; 
+	  document.getElementById('content_div').innerHTML += muestra; 
 } 
 
 	function mostrarTipos(){
@@ -634,7 +634,7 @@
 		}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML = muestra; 
+	  document.getElementById('content_div').innerHTML += muestra; 
 	 for (var i=0; i<aux2.length; i++){
 	    
 		//alert(aux1[i]);
@@ -644,7 +644,7 @@
 		}
 	 
 	}  
-	 document.getElementById('content_div').innerHTML = muestra2;  
+	 document.getElementById('content_div').innerHTML += muestra2;  
 } 
 
 
