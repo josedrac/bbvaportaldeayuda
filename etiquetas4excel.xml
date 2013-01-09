@@ -376,7 +376,7 @@
      var filasTotales = 0;
 	 	  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
-	 document.getElementById("titlebox").innerHTML ='<div class=\"titulo\">'+ titlebox+'</div>';
+	 document.getElementById("content_div").innerHTML ='<div class=\"titulo\">'+ titlebox+'</div>';
 	 
 	 
 	 function loadVisualizationAPI() 
