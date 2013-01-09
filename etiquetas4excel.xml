@@ -638,7 +638,7 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-			if(aux1[i]=='basico'){
+			if(aux1[i]=='Nivel básico'){
 				muestra +="<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/etiquetas-basico'>"+aux1[i]+" ("+html[aux1[i]]+")</a>";
 			}else{
 				muestra += aux1[i]+" ("+html[aux1[i]]+") ";
