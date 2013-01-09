@@ -136,7 +136,7 @@
             width: 298px;
             clear: both;
 			margin-top:15px;
-			height:296px;
+			height:335px;
 			font-family:BBVA Web Light;
 			
 	}
@@ -156,6 +156,7 @@
 		padding-left: 20px;
 		padding-top: 14px;
 		padding-bottom: 15px;
+		margin-bottom:30px;
 	}
 	.content a{
 	text-decoration:none;
