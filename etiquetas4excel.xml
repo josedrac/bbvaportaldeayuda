@@ -155,6 +155,8 @@
 		padding-top: 14px;
 		padding-bottom: 15px;
 	}
+	
+	
 	#niveles{
 	float:left;
 	width:298px;
@@ -346,8 +348,9 @@
 </style>
 
 
+
+<div id="content_div" class="content">
 <div id="titlebox"></div>
-<div id="content">
 <div id="etiquetas"></div>
 <div id="tipos"></div>
 <div id="formatos"></div>
