@@ -133,6 +133,13 @@
 					width: 150px;
 					height:130px;
 				}
+	.listaGoogleApps a{
+					text-decoration:none;
+					color:#0073C9;
+					font-family:Arial;
+					font-weight:bold;
+					font-size:12px;
+				}			
 	
 	</style>
 	
