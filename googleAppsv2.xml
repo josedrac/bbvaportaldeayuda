@@ -128,7 +128,7 @@
 					text-align:center;
 				}
 				
-				li{
+	.listaGoogleApps li{
 					float: left;
 					width: 150px;
 					height:130px;
