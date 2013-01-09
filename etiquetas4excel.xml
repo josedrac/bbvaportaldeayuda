@@ -165,21 +165,21 @@
 	font-family:BBVA Web Light;
 	margin-top:30px;
 	font-size:12px;
-	padding:0px 10px 10px 10px;
+	padding:0px 10px 0px 10px;
 	}
 	.tipos{
 	text-decoration:none;
 	font-family:BBVA Web Light;
 	margin-top:30px;
 	font-size:12px;
-	padding:0px 10px 10px 10px;
+	padding:0px 10px 0px 10px;
 	}
 	.formatos{
 	text-decoration:none;
 	font-family:BBVA Web Light;
 	margin-top:30px;
 	font-size:12px;
-	padding:0px 10px 10px 10px;
+	padding:0px 10px 0px 10px;
 	}
 	#niveles{
 	float:left;
