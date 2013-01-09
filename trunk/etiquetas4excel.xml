@@ -638,7 +638,7 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-			if(aux1[i]=='Nivel básico'){
+			if(aux1[i]=='Nivel Básico'){
 				muestra +="<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/etiquetas-basico'>"+aux1[i]+" ("+html[aux1[i]]+") </a> ";
 			}else if(aux1[i]=='Nivel Medio'){
 			    muestra +="<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/etiquetas-medio'>"+aux1[i]+" ("+html[aux1[i]]+") </a> ";
