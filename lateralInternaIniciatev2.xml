@@ -96,7 +96,7 @@
   <script type="text/javascript">
   
 	 var gadgetHelper = null;
-	 var prefs = new _IG_Prefs();
+	 var prefs = new gadgets.Prefs();
 	 var title = prefs.getString("title");
 	 var titleiniciate = prefs.getString("titleiniciate");
 	 var urliniciate = prefs.getString("urliniciate"); 
@@ -111,6 +111,49 @@
   </script>
    
     ]]>
+	</Content>
+  <Content type="html" view="configuration" preferred_height="480">
+  
+  <![CDATA[
+	<style type="text/css">
+	    input#VarrootSite {
+        	width: 300px;
+		}
+		table td {
+			color: #000;
+			font-size: 11px;
+			font-weight: bold;
+		}
+	</style>
+	<table width="100%" border="0" id="tablaconfig">  
+		<tr>       
+        	<td>
+            	Título - Bloque: <input type="text" size="100" id="title" value="__UP_title__" onchange="registra('title')"/>                   
+			</td>
+		</tr>
+		<tr>       
+			<td>
+				Título sección íniciate: <input type="text" size="100" id="titleiniciate" value="__UP_titleiniciate__" onchange="registra('titleiniciate')"/>                   
+			</td>
+		</tr>
+		<tr>       
+			<td>
+				Url sección íniciate: <input type="text" size="100" id="urliniciate" value="__UP_urliniciate__" onchange="registra('urliniciate')"/>
+			</td>
+		</tr>
+		
+	</table>	
+
+    <script type="text/javascript">           
+		//Get userprefs
+		var prefs = new gadgets.Prefs();           
+		function registra(variable)
+		{	
+			prefs.set(variable,document.getElementById(variable).value);
+		} 
+		gadgets.window.adjustHeight();
+    </script>   	
+ ]]>	
   </Content>
   
 </Module>
