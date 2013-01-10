@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/styles-personas.css" media="all">
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/buttons.css" media="all">
 	<style type="text/css">
-.footer {
+	
+.footer2 {
 	border-top: 1px solid #DBDCDF;
 	border-bottom: 1px solid #DBDCDF;
 	height: 3em;
@@ -30,19 +31,19 @@
 	width: 99.9%;
 }
 
-.footer ul{
+.footer2 ul{
 	margin-left: auto;
 	margin-right: auto;
 	width: 96em;
 	margin: 0pt auto;
 }
 
-.footer ul li {	
+.footer2 ul li {	
 	float: left;
 	padding: 0 9px 0 20px;	
 }
 
-.footer ul li a {
+.footer2 ul li a {
 	color: #8C9299;
 	font-size: 1.1em;
 	font-weight: normal;
@@ -53,7 +54,7 @@
 	</head>
 
 <div class="grid_20 footer">	
-	<div class="footer">
+	<div class="footer2">
 		<ul>
 			<li class="first op1">
 				<h2>CENTRO DE AYUDA</h2>
