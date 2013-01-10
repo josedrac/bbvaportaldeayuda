@@ -9,9 +9,8 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 
-<UserPref name="title" display_name="Título Bloque:" default_value="" required="true"/>
-<UserPref name="titleiniciate" display_name="Título sección íniciate:" default_value="" required="true"/>
-<UserPref name="urliniciate" display_name="Url sección íniciate:" default_value="" required="true"/>   
+<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -96,64 +95,39 @@
   <script type="text/javascript">
   
 	 var gadgetHelper = null;
-	 var prefs = new gadgets.Prefs();
-	 var title = prefs.getString("title");
-	 var titleiniciate = prefs.getString("titleiniciate");
-	 var urliniciate = prefs.getString("urliniciate"); 
-	 var html = "";
-	 html +='<div class=\"titulo\">' + title + '</div>';
-	 html +='<ul id=\"botonera\">'; 
-	 html += "<li><a target='_parent' href='"+urliniciate+"'>"+titleiniciate+"</a></li>";
-	 html +='</ul>'; 
-	 document.getElementById('content_div').innerHTML += html;
+	 var prefs = new _IG_Prefs();
+	 var urlTable = prefs.getString("_table_query_url");
+	 var item = gadgets.util.getUrlParameters()["parent"].split("=");
+	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
+	 function loadVisualizationAPI() 
+			{
+				google.load("visualization", "1", {"packages": ["table"]});
+				google.setOnLoadCallback(sendQuery);
+			}
+	 function sendQuery() {	
+				gadgetHelper = new google.visualization.GadgetHelper();
+				var opts = {dataType:'jsonp'};		
+				var query = new google.visualization.Query(urlTable, opts);	
+				var querytosend = "select N,O,P where A like '"+item[1]+'";
+				query.setQuery(querytosend);			  
+				query.send(handleQueryResponse);
+
+	 }	 
+	function handleQueryResponse(response) {
+				data = response.getDataTable();	
+				var html = "";
+				html +='<div class=\"titulo\">' + data.getValue(0,0) + '</div>';
+				html +='<ul id=\"botonera\">'; 
+				html += "<li><a target='_parent' href='"+data.getValue(0,2)+"'>"+data.getValue(0,1)+"</a></li>";
+				html +='</ul>'; 
+				document.getElementById('content_div').innerHTML += html;
+	 }
 	 
 	  
   </script>
    
     ]]>
 	</Content>
-  <Content type="html" view="configuration" preferred_height="480">
-  
-  <![CDATA[
-	<style type="text/css">
-	    input#VarrootSite {
-        	width: 300px;
-		}
-		table td {
-			color: #000;
-			font-size: 11px;
-			font-weight: bold;
-		}
-	</style>
-	<table width="100%" border="0" id="tablaconfig">  
-		<tr>       
-        	<td>
-            	Título - Bloque: <input type="text" size="100" id="title" value="__UP_title__" onchange="registra('title')"/>                   
-			</td>
-		</tr>
-		<tr>       
-			<td>
-				Título sección íniciate: <input type="text" size="100" id="titleiniciate" value="__UP_titleiniciate__" onchange="registra('titleiniciate')"/>                   
-			</td>
-		</tr>
-		<tr>       
-			<td>
-				Url sección íniciate: <input type="text" size="100" id="urliniciate" value="__UP_urliniciate__" onchange="registra('urliniciate')"/>
-			</td>
-		</tr>
-		
-	</table>	
 
-    <script type="text/javascript">           
-		//Get userprefs
-		var prefs = new gadgets.Prefs();           
-		function registra(variable)
-		{	
-			prefs.set(variable,document.getElementById(variable).value);
-		} 
-		gadgets.window.adjustHeight();
-    </script>   	
- ]]>	
-  </Content>
   
 </Module>
