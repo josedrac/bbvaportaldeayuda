@@ -366,7 +366,9 @@
 		#allcontent:hover{
 			background: #004C99;
 		}
-				
+		#allcontent2:hover{
+			background: #004C99;
+		}		
 		.linetitle{
 			display:block;
 			width:613px;
