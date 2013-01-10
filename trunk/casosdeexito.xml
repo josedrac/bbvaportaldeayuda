@@ -108,7 +108,16 @@
 	  font-weight: normal;	  
 	  }
 	  
-	  #textVideo,
+	  #textVideo{
+	    color:#434A58;
+		font-size:12px;
+		font-family:arial;
+		height:80px;
+		width:269px;
+		margin-top: 15px;
+		margin-left: 7px;
+		float:left;
+	  }
 	  #textVideo2{
 		color:#434A58;
 		font-size:12px;
