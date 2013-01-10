@@ -368,6 +368,31 @@
 			margin: 5px auto 5px 0;
 			width: 650px;
 		}
+		#allcontent{
+			-webkit-border-radius: .2em;
+			-moz-border-radius: .2em;
+			border-radius: .2em;
+			height: 2em;
+			padding-left: 1.4em;
+			padding-right: 2.4em;
+			float:left;
+			margin-left:10px;
+			width:90px;
+			margin-top:0px;		
+		}
+		
+		 #allcontent a{
+			float:left;	
+			position: relative;
+			top: -1px;
+			margin-right: 0;
+			text-decoration:none;
+			color:#FFF;
+			font-family: BBVA Web Medium;
+			font-size:12px;
+			margin-left:-16px;
+			width:90px;
+		}
 	</style>
 	
 <body onload="cargaCompleta()">
@@ -429,7 +454,6 @@
 		 document.getElementById("titleVideo").innerHTML = titleVideo;
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  ="<button type='button' id='allcontent'><a target='_parent' href='"+urlsabermas+"'>Saber más</a></button>"
-		 console.debug("urlVideo "+urlVideo);
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
@@ -437,7 +461,6 @@
 		 document.getElementById("titleVideo2").innerHTML = titleVideo2;
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent'><a target='_parent' href='"+urlsabermas2+"'>Saber más</a></button>"
-
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
 		 return false;
 	}
