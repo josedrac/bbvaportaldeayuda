@@ -326,7 +326,7 @@
 		font-size: 10px;
 		text-align: center;
 		vertical-align: middle;
-		height: 3em;
+		height: 2em;
 		padding-left: .9em;
 		padding-right: .9em;
 		border: .1em solid #00559D;
