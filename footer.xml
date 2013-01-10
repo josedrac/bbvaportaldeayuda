@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/reset.css" media="all">
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/styles-personas.css" media="all">
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/buttons.css" media="all">
-	
+	<script type="text/javascript" src="js/modernizr.js"></script>
 	</head>
 	<style type="text/css">
 	  /* @group fonts */
