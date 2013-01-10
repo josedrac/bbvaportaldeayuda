@@ -9,7 +9,6 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 
-<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 <UserPref name="title" display_name="Título Bloque:" default_value="" required="true"/>
 <UserPref name="titleiniciate" display_name="Título sección íniciate:" default_value="" required="true"/>
 <UserPref name="urliniciate" display_name="Url sección íniciate:" default_value="" required="true"/>   
