@@ -368,31 +368,7 @@
 			margin: 5px auto 5px 0;
 			width: 650px;
 		}
-		#allcontent{
-			-webkit-border-radius: .2em;
-			-moz-border-radius: .2em;
-			border-radius: .2em;
-			height: 2em;
-			padding-left: 1.4em;
-			padding-right: 2.4em;
-			float:left;
-			margin-left:10px;
-			width:90px;
-			margin-top:0px;		
-		}
 		
-		 #allcontent a{
-			float:left;	
-			position: relative;
-			top: -1px;
-			margin-right: 0;
-			text-decoration:none;
-			color:#FFF;
-			font-family: BBVA Web Medium;
-			font-size:12px;
-			margin-left:-16px;
-			width:90px;
-		}
 	</style>
 	
 <body onload="cargaCompleta()">
