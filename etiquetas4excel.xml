@@ -162,7 +162,7 @@
 	
 	.etiquetas{
 	text-decoration:none;
-	font-family:BBVA Web Light;
+	font-family:Arial;
 	margin-top:30px;
 	font-size:12px;
 	padding:0px 10px 0px 10px;
@@ -170,14 +170,14 @@
 	
 	.tipos{
 	text-decoration:none;
-	font-family:BBVA Web Light;
+	font-family:Arial;
 	margin-top:30px;
 	font-size:12px;
 	padding:0px 10px 0px 10px;
 	}
 	.formatos{
 	text-decoration:none;
-	font-family:BBVA Web Light;
+	font-family:Arial;
 	margin-top:30px;
 	font-size:12px;
 	padding:0px 10px 0px 10px;
