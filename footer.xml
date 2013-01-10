@@ -63,11 +63,11 @@
 	font-size:9px;
 	font-family:Arial, Helvetica, sans-serif;
 	list-style: none;
-	width: 1000px;
+	width: 600px;
 }
 .footer li{
 	float: left;
-	width: 250px;
+	width: 150px;
 }
 
 	
