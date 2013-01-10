@@ -21,40 +21,73 @@
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/styles-personas.css" media="all">
 	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/buttons.css" media="all">
 	<style type="text/css">
-	
-.footer2 {
-	border-top: 1px solid #DBDCDF;
-	border-bottom: 1px solid #DBDCDF;
-	height: 3em;
-	padding: 2em 0 0 0;
-	background-color: #F4F6F3;
-	width: 99.9%;
-}
-
-.footer2 ul{
-	margin-left: auto;
-	margin-right: auto;
-	width: 96em;
-	margin: 0pt auto;
-}
-
-.footer2 ul li {	
-	float: left;
-	padding: 0 9px 0 20px;	
-}
-
-.footer2 ul li a {
-	color: #8C9299;
-	font-size: 1.1em;
+	  /* @group fonts */
+@font-face {
+	font-family: 'BBVA Web Light';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+	font-style: normal;
 	font-weight: normal;
-	text-align: left!important;
+}
+@font-face {
+	font-family: 'BBVA Web Book';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+	font-style: normal;
+	font-weight: normal;
 }
 
+@font-face {
+	font-family: 'BBVA Web Medium';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/*footer*/
+.footer {
+	padding-left: 16px;
+	padding-bottom: 186px;
+}
+
+	
+
+#titlepage{
+	float:left;
+	color:#0078D2;
+	font-family: BBVA Web Light;
+	font-size:30px;
+	margin-bottom:6px;
+	padding-top:5px;
+	height:30px;
+	margin-left:11px;
+	}
+	
+	.linedowntitle{
+	margin-bottom:40px;
+	width:939px;
+	display:block;
+	}
+	.container_20 .grid_20.footer {
+	padding-top: 17em;
+}
+	
 	</style>
 	</head>
 
 <div class="grid_20 footer">	
-	<div class="footer2">
+	<div class="footer">
 		<ul>
 			<li class="first op1">
 				<h2>CENTRO DE AYUDA</h2>
