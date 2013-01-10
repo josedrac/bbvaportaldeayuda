@@ -13,15 +13,16 @@
 <UserPref name="tagVideo" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo" display_name="Title Video" required="true" />
 <UserPref name="textVideo" display_name="Text Video" required="true" />
-<UserPref name="urlVideo" display_name="Url Video" required="true" />
 <UserPref name="urlsabermas" display_name="Url Saber más" required="true" />
+<UserPref name="urlVideo" display_name="Url Video" required="true" />
 <UserPref name="tagVideo2" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo2" display_name="Title Video" required="true" />
 <UserPref name="textVideo2" display_name="Text Video" required="true" />
-<UserPref name="urlVideo2" display_name="Url Video" required="true" />	
 <UserPref name="urlsabermas2" display_name="Url Saber más 2" required="true" />
+<UserPref name="urlVideo2" display_name="Url Video" required="true" />	
 
-  <Content type="html" view="configuration" preferred_height="480">
+
+ <Content type="html" view="configuration" preferred_height="480">
 
 <![CDATA[
 <style type="text/css">
@@ -68,6 +69,13 @@
             </tr>
 			<tr>       
                 <td>
+				 Url to Saber más: <input type="text" size="100" id="urlsabermas" value="__UP_urlsabermas__"   onchange="registra('urlsabermas')"/>   
+
+					
+                </td>
+            </tr>
+			<tr>       
+                <td>
                 Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
                
                 </td>
@@ -87,6 +95,13 @@
 			 <tr>       
                 <td>
 				 Url to Video2: <input type="text" size="100" id="urlVideo2" value="__UP_urlVideo2__"   onchange="registra('urlVideo2')"/>   
+
+					
+                </td>
+            </tr>
+			<tr>       
+                <td>
+				 Url to Saber más2: <input type="text" size="100" id="urlsabermas2" value="__UP_urlsabermas2__"   onchange="registra('urlsabermas2')"/>   
 
 					
                 </td>
