@@ -224,8 +224,8 @@
 			font-weight: normal;
 		  }
 		  
-	      #titleVideo,
-	      #titleVideo2 {
+	      #titleVideo a,
+	      #titleVideo2 a{
 			  color:#0078D2;
 			  font-family:BBVA Web Book;
 			  font-size:18px;
@@ -456,14 +456,14 @@
 		 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
 		 
 		 document.getElementById("tagVideo").innerHTML = tagVideo;
-		 document.getElementById("titleVideo").innerHTML = titleVideo;
+		 document.getElementById("titleVideo").innerHTML ="<a href='"+urlsabermas+"'>"+ titleVideo +"</a>";
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas+"'>Saber más</a></button>"
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
 		 document.getElementById("tagVideo2").innerHTML = tagVideo2;
-		 document.getElementById("titleVideo2").innerHTML = titleVideo2;
+		 document.getElementById("titleVideo2").innerHTML = "<a href='"+urlsabermas2+"'>"+ titleVideo2 +"</a>";
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas2+"'>Saber más</a></button>"
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
