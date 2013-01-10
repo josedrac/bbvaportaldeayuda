@@ -258,6 +258,29 @@
 			color:#DCDCDC;
 		}	
 		
+		#allcontent2{		
+			-webkit-border-radius: .4em;
+			-moz-border-radius: .4em;
+			border-radius: .4em;
+			height: 4em;
+			padding-left: 1.4em;
+			padding-right: 1.4em;
+			float:right;
+			margin-right:8px;
+			width:108px;
+			margin-top:10px;
+		}
+		
+		 #allcontent2 a{		
+			font-size: 1.4em;
+			position: relative;
+			top: -1px;
+			margin-right: 0;
+			text-decoration:none;
+			color:#FFF;
+			font-family: BBVA Web Medium;
+			font-size:14px;
+		}
 		#allcontent{
 			-webkit-border-radius: .2em;
 			-moz-border-radius: .2em;
