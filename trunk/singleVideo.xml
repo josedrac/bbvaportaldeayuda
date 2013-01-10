@@ -58,9 +58,13 @@
 			padding: 20px 10px 20px 10px;
 	  	}
 	  	#TagVideo {
-	    	color: #0078D2;
-	    	font: 18px BBVA Web Book;
-	    	padding-left: 10px;
+	    	color: #434A58;
+			font-size: 12px;
+			font-family: arial;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			padding-left: 15px;
+			font-weight: normal;
 	  	}
       	#titleVideo {
 			color: #0078D2;
@@ -162,7 +166,7 @@
 	<table width="100%" border="0" id="tablaconfig">  
 		<tr>       
         	<td>
-            	Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__" onchange="registra('tagVideo')"/>                   
+            	Texto - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__" onchange="registra('tagVideo')"/>                   
 			</td>
 		</tr>
 		<tr>       
