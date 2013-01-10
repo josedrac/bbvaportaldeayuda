@@ -57,7 +57,7 @@
 	  	#urlVideo {
 			padding: 20px 10px 20px 10px;
 	  	}
-	  	#TagVideo {
+	  	#tagVideo {
 	    	color: #434A58;
 			font-size: 12px;
 			font-family: arial;
