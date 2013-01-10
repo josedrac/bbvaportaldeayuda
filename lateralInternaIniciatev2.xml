@@ -101,7 +101,10 @@
 	 var titleiniciate = prefs.getString("titleiniciate");
 	 var urliniciate = prefs.getString("urliniciate"); 
 	 var html = "";
+	 html +='<div class=\"titulo\">' + title + '</div>';
+	 html +='<ul id=\"botonera\">'; 
 	 html += "<li><a target='_parent' href='"+urliniciate+"'>"+titleiniciate+"</a></li>";
+	 html +='</ul>'; 
 	 document.getElementById('content_div').innerHTML += html;
 	 
 	  
