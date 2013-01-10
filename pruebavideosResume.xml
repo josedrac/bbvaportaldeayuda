@@ -306,9 +306,11 @@
 			margin-left:-16px;
 			width:90px;
 		}
-		#sabermas,
+		#sabermas{
+		padding-top:20px;
+		}
 		#sabermas2{
-		
+		padding-top:40px;
 		}
 		#sabermas button,
 		#sabermas2 button{
