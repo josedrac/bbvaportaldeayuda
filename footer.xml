@@ -61,6 +61,7 @@
 	padding-left: 16px;
 	padding-bottom: 186px;
 	border:1px solid red;
+	font-size:10px !important;
 }
 
 	.footer ul {
