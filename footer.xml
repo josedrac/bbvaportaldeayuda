@@ -134,6 +134,12 @@
 			font-weight: normal;
 			text-align: left!important;
 		}
+		
+.footer ul li ul li a {
+			color: #8C9299;
+			font-weight: normal;
+			line-height: 2em;
+		}
 
 /* @end */
 .footer-bottom {
