@@ -30,7 +30,7 @@
 		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
 	font-style: normal;
 	font-weight: normal;
-	font-variant: normal;
+	font-size-adjust:!important;
 }
 
 @font-face {
@@ -42,7 +42,7 @@
 		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
 	font-style: normal;
 	font-weight: normal;
-	font-variant: normal;
+	font-size-adjust:!important;
 }
 
 @font-face {
@@ -54,7 +54,7 @@
 		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
 	font-style: normal;
 	font-weight: normal;
-	font-variant: normal;
+	font-size-adjust:!important;
 }
 
 
