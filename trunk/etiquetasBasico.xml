@@ -212,7 +212,7 @@
 	}	
 	.checkpage1{
     margin-top:-5px;
-	margin-left:260px;
+	//margin-left:260px;
 	}	
 	.checkpage a{
 	height:9px;
