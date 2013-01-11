@@ -151,7 +151,9 @@
 	width:690px;
 	display:block;
 	}
-	
+	#titleproduct{
+	margin-bottom:10px;
+	}
   
 	#titleproduct a{
 	color:#0078D2;
