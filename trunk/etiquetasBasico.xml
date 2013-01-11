@@ -317,7 +317,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTableexitos, opts);	
-			    var querytosendcontenidos = "select B,O,D where N <> like '%Básico%'";
+			    var querytosendcontenidos = "select B,O,D where N like '%Básico%'";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse3); 
 			}	
@@ -345,7 +345,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablemovilidad, opts);	
-			    var querytosendcontenidos = "select G,F,I where H <> like '%Básico%'";
+			    var querytosendcontenidos = "select G,F,I where H  like '%Básico%'";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse4); 
 			}		
