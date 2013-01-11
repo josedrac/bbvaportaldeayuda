@@ -387,7 +387,7 @@
 					{               
 						html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
 					}
-				for(var i=0;i<filas;i++){
+				for(var i=0;i<aux.length;i++){
 				 html +="<div id='titleproduct'>"+aux[i]+"</div>";  
 				 html +="<div id='textproduct'>"+aux[i][i]+"</div>";
 				 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineproduct' />";
