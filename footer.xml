@@ -158,6 +158,10 @@
 			background: url('../img/ico-tw.png') no-repeat left top;
 		}
 		
+.footer ul li ul.redes-sociales li span {
+			padding-left: 20px;
+		}
+		
 
 /* @end */
 .footer-bottom {
