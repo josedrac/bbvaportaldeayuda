@@ -140,6 +140,11 @@
 			font-weight: normal;
 			line-height: 2em;
 		}
+		
+.footer ul li ul.redes-sociales li a{
+			line-height: 2.4em;
+			padding: 3px;
+		}
 
 /* @end */
 .footer-bottom {
