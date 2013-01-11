@@ -75,7 +75,10 @@
 			border-right: 1px solid #DCDCDC;
 		}
 		
-		
+.footer ul li ul li {
+
+			border-right: none;
+		}		
 
 /* @end */
 .footer-bottom {
