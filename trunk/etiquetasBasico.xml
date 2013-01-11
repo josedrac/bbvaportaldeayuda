@@ -279,7 +279,7 @@
 				   texto[i]= data.getValue(i,2).split(",");
 				   url[i] = data.getValue(i,1).split(",");
 					  if(aux.indexOf(titulo[i])== -1){ 
-							aux += titulo[i];
+							aux += titulo[i]+",";
 							aux[titulo[i]]= new Array(2);
 							aux[titulo[i]] += texto[i];
 							aux[titulo[i]] += url[i];
@@ -308,7 +308,7 @@
 				   texto[i]= data.getValue(i,2).split(",");
 				   url[i] = data.getValue(i,1).split(",");
 					  if(aux.indexOf(titulo[i])== -1){ 
-							aux += titulo[i];
+							aux += titulo[i]+",";
 							aux[titulo[i]]= new Array(2);
 							aux[titulo[i]] += texto[i];
 							aux[titulo[i]] += url[i];
@@ -336,7 +336,7 @@
 				   texto[i]= data.getValue(i,2).split(",");
 				   url[i] = data.getValue(i,1).split(",");
 					  if(aux.indexOf(titulo[i])== -1){ 
-							aux += titulo[i];
+							aux += titulo[i]+",";
 							aux[titulo[i]]= new Array(2);
 							aux[titulo[i]] += texto[i];
 							aux[titulo[i]] += url[i];
@@ -364,7 +364,7 @@
 				   texto[i]= data.getValue(i,2).split(",");
 				   url[i] = data.getValue(i,1).split(",");
 					  if(aux.indexOf(titulo[i])== -1){ 
-							aux += titulo[i];
+							aux += titulo[i]+",";
 							aux[titulo[i]]= new Array(2);
 							aux[titulo[i]] += texto[i];
 							aux[titulo[i]] += url[i];
@@ -378,7 +378,7 @@
 				var pagTotales = Math.ceil(filas/3);
 				var pagActual = 1;
 				var html = "";
-				
+				var aux1= aux.split(",");
 				if(filas<1)
 					{
 						html += '<p class="text">No hay ningún contenido con este Nivel.</p>';
@@ -388,8 +388,8 @@
 						html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
 					}
 				for(var i=0;i<aux.length;i++){
-				 html +="<div id='titleproduct'>"+aux[i]+"</div>";  
-				 html +="<div id='textproduct'>"+aux[i][i]+"</div>";
+				 html +="<div id='titleproduct'>"+aux1[i]+"</div>";  
+				 html +="<div id='textproduct'>"+aux[aux1[i]][i]+"</div>";
 				 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineproduct' />";
 				   
 				   if(pagTotales>1){
