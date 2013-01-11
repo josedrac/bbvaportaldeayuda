@@ -251,6 +251,7 @@
 	 var aux = new Array();
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
+	 document.getElementById('nivel').innerHTML = "Básico";
 	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
