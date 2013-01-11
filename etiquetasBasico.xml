@@ -375,8 +375,9 @@
 				var pagActual = 1;
 				var html = "";
 				var aux1= aux.split(",");
-				alert(aux);
-				alert(aux1[0]);
+				//alert(aux);
+				//alert(aux1[0]);
+				alert(aux[aux1[0]]);
 				if(filas<1)
 					{
 						html += '<p class="text">No hay ningún contenido con este Nivel.</p>';
