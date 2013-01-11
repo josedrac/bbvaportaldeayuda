@@ -122,8 +122,8 @@
 					 if(subseccion=="Iníciate en tu Net"){
 					 html +="<div id='titleSubsection' class='title'>¿Qué puedes hacer?</div>";
 					 }
-					else{
-					html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
+					 else{
+					 html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
 					}
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
 				    html +="<div id='subsection"+subseccion+"' class='subseccion'></div>";
