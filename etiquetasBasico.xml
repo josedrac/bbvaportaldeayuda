@@ -373,12 +373,13 @@
 				mostrar()
 			}
 	function mostrar(){
-	alert(aux.length-1);
-	            var filas = TotalFilas;
+	            var aux1= aux.split(",");
+				alert(aux1.length);
+	            var filas = aux1.length;
 				var pagTotales = Math.ceil(filas/3);
 				var pagActual = 1;
 				var html = "";
-				var aux1= aux.split(",");
+				
 				
 				
 				if(filas<1)
@@ -389,7 +390,7 @@
 					{               
 						html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
 					}
-				for(var i=0;i<aux.length;i++){
+				for(var i=0;i<filas;i++){
 				 html +="<div id='titleproduct'>"+aux1[i]+"</div>";  
 				 html +="<div id='textproduct'>"+auxtexto[aux1[i]]+"</div>";
 				 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineproduct' />";
