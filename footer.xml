@@ -121,6 +121,11 @@
 .footer ul li.first {
 			padding: 0 9px 0 12px;			
 			width: 20em;
+		}
+		
+.footer ul li.last {
+			padding: 0 0 0 19px;
+			border: none;
 		}	
 
 /* @end */
