@@ -373,7 +373,8 @@
 				mostrar()
 			}
 	function mostrar(){
-	            var filas = aux.length-1;
+	alert(aux.length-1);
+	            var filas = TotalFilas;
 				var pagTotales = Math.ceil(filas/3);
 				var pagActual = 1;
 				var html = "";
