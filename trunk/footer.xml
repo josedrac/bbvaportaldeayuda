@@ -78,6 +78,11 @@
 .footer ul li ul li {
 
 			border-right: none;
+		}
+
+.footer ul li ul li.op2{
+
+			border-right: none;
 		}		
 
 /* @end */
