@@ -145,6 +145,11 @@
 			line-height: 2.4em;
 			padding: 3px;
 		}
+		
+.footer ul li ul.redes-sociales li a.face{
+			background: url('../img/ico-face.png') no-repeat left top;
+		}
+		
 
 /* @end */
 .footer-bottom {
