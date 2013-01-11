@@ -55,12 +55,12 @@
 
 
 /*footer*/
-.footer {
+.footer2 {
 	padding-left: 16px;
 	padding-bottom: 186px;
 }
 
-.footer ul {
+.footer2 ul {
 		display: inline;
 	}
 
@@ -130,7 +130,7 @@
 	</head>
 
 <div class="grid_20 footer">	
-	<div class="footer">
+	<div class="footer2">
 		<ul>
 			<li class="first op1">
 				<h2>CENTRO DE AYUDA</h2>
