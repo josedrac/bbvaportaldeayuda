@@ -213,6 +213,7 @@ Español | <a target="_parent" href="https://sites.google.com/a/bbva.com/help-si
 	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></li>
 	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate"  target="_parent">Iníciate en tu NET</a></span></span></li>
 	<li id="googleapps" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps"  target="_parent">Google Apps</a></span></span></li>
+	<li id="trucosyconsejos" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos"  target="_parent">Tips</a></span></span></li>
 	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">Movilidad</a></span></span></li> 
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
@@ -223,6 +224,7 @@ Español | <a target="_parent" href="https://sites.google.com/a/bbva.com/help-si
 	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
 	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
+	document.getElementById('trucosyconsejos').onclick = function() {Go('trucosyconsejos');};
 	document.getElementById('movilidad').onclick = function() {Go('movilidad');};
 	document.getElementById('exito').onclick = function (){Go('exito');};
 	
@@ -231,6 +233,7 @@ Español | <a target="_parent" href="https://sites.google.com/a/bbva.com/help-si
 		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/home";}
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
+		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
 		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
 		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
 		
