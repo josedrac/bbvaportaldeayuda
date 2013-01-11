@@ -152,13 +152,7 @@
 	display:block;
 	}
 	
-    #titleproduct{
-	color:#0078D2;
-	font-size:16px;
-	font-family: Stag;
-	margin-left:14px;
-	margin-bottom:10px;
-	}
+  
 	#titleproduct a{
 	color:#0078D2;
 	font-size:16px;
