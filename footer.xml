@@ -126,7 +126,14 @@
 .footer ul li.last {
 			padding: 0 0 0 19px;
 			border: none;
-		}	
+		}
+		
+.footer ul li a {
+			color: #8C9299;
+			font-size: 1.1em;
+			font-weight: normal;
+			text-align: left!important;
+		}
 
 /* @end */
 .footer-bottom {
