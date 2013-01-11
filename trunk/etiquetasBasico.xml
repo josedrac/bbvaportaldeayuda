@@ -201,7 +201,7 @@
 
   #bloqueEnlaces1 img{
             
-			margin-left:260px;
+			//margin-left:260px;
 			padding-right:10px;
         }
 	#etiquetas{
