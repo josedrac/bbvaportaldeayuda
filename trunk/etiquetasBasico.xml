@@ -245,6 +245,10 @@
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var TotalFilas = 0;
 	 var aux = new Array();
+	 var titulo = new Array();
+	 var texto = new Array(); 
+	 var url = new Array(); 
+	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
@@ -269,9 +273,7 @@
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
 				 
-				var titulo = new Array();
-				var texto = new Array(); 
-				var url = new Array(); 
+				
 				
 				for(var i=0;i<filas;i++){
 				   
@@ -298,9 +300,7 @@
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
 				 
-				var titulo = new Array();
-				var texto = new Array(); 
-				var url = new Array(); 
+				
 				
 				for(var i=0;i<filas;i++){
 				   
@@ -326,9 +326,7 @@
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
 				 
-				var titulo = new Array();
-				var texto = new Array(); 
-				var url = new Array(); 
+				
 				
 				for(var i=0;i<filas;i++){
 				   
@@ -354,9 +352,7 @@
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
 				 
-				var titulo = new Array();
-				var texto = new Array(); 
-				var url = new Array(); 
+				
 				
 				for(var i=0;i<filas;i++){
 				   
@@ -390,7 +386,7 @@
 					}
 				for(var i=0;i<aux.length;i++){
 				 html +="<div id='titleproduct'>"+aux1[i]+"</div>";  
-				 html +="<div id='textproduct'>"+aux[aux1[i]][i]+"</div>";
+				 html +="<div id='textproduct'>"+aux[aux1[i]][texto[i]]+"</div>";
 				 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineproduct' />";
 				   
 				   if(pagTotales>1){
