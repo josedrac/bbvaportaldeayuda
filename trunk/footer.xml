@@ -83,6 +83,16 @@
 .footer ul li ul li.op2{
 
 			border-right: none;
+		}
+		
+.footer ul li ul li.op3{
+
+			border-right: none;
+		}
+		
+.footer ul li ul li.op4{
+
+			border-right: none;
 		}		
 
 /* @end */
