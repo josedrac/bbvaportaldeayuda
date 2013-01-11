@@ -109,6 +109,13 @@
 			color: #8C9299;
 			border: none;
 			padding: 0;
+		}
+		
+.footer ul li h2{
+			color: #434A58;
+			font-size: 1.1em;
+			font-family: BBVA Web Book;
+			padding-bottom: 10px;
 		}	
 
 /* @end */
