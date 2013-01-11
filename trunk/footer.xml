@@ -116,6 +116,11 @@
 			font-size: 1.1em;
 			font-family: BBVA Web Book;
 			padding-bottom: 10px;
+		}
+		
+.footer ul li.first {
+			padding: 0 9px 0 12px;			
+			width: 20em;
 		}	
 
 /* @end */
