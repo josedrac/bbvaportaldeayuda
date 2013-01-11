@@ -245,9 +245,7 @@
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var TotalFilas = 0;
 	 var aux = new Array();
-	 var titulo = new Array();
-	 var texto = new Array(); 
-	 var url = new Array(); 
+	 
 	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
@@ -272,7 +270,9 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
-				 
+				var titulo = new Array();
+				var texto = new Array(); 
+				var url = new Array();  
 				
 				
 				for(var i=0;i<filas;i++){
@@ -299,7 +299,9 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
-				 
+				var titulo = new Array();
+				var texto = new Array(); 
+				var url = new Array(); 
 				
 				
 				for(var i=0;i<filas;i++){
@@ -325,7 +327,9 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
-				 
+				var titulo = new Array();
+				var texto = new Array(); 
+				var url = new Array();  
 				
 				
 				for(var i=0;i<filas;i++){
@@ -351,7 +355,9 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				TotalFilas +=filas;
-				 
+				var titulo = new Array();
+	            var texto = new Array(); 
+				var url = new Array();  
 				
 				
 				for(var i=0;i<filas;i++){
@@ -377,7 +383,7 @@
 				var aux1= aux.split(",");
 				//alert(aux);
 				//alert(aux1[0]);
-				alert(aux[titulo[0]]);
+				alert(aux[aux1[0]]);
 				if(filas<1)
 					{
 						html += '<p class="text">No hay ningún contenido con este Nivel.</p>';
