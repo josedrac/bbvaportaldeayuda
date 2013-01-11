@@ -93,6 +93,14 @@
 .footer ul li ul li.op4{
 
 			border-right: none;
+		}
+		
+.footer ul li.op1,		
+		.footer ul li.op2,
+		.footer ul li.op3,
+		.footer ul li.op4 {
+			min-height: 12em;
+			border: none;
 		}		
 
 /* @end */
