@@ -60,7 +60,9 @@
 	padding-bottom: 186px;
 }
 
-
+.footer ul {
+		display: inline;
+	}
 
 
 /* @end */
