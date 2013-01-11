@@ -154,6 +154,10 @@
 			background: url('../img/ico-rss.png') no-repeat left top;
 		}
 		
+.footer ul li ul.redes-sociales li a.tw{
+			background: url('../img/ico-tw.png') no-repeat left top;
+		}
+		
 
 /* @end */
 .footer-bottom {
