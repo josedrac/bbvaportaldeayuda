@@ -55,16 +55,16 @@
 
 
 /*footer*/
-.footer {
+.footer2 {
 	padding-left: 16px;
 	padding-bottom: 186px;
 }
 
-.footer ul {
+.footer2 ul {
 		display: inline;
 	}
 
-.footer ul li {
+.footer2 ul li {
 			background: none repeat scroll 0 0 transparent;
 			float: left;
 			margin: 0;
@@ -75,27 +75,27 @@
 			border-right: 1px solid #DCDCDC;
 		}
 		
-.footer ul li ul li {
+.footer2 ul li ul li {
 
 			border-right: none;
 		}
 
-.footer ul li ul li.op2{
-
-			border-right: none;
-		}
-		
-.footer ul li ul li.op3{
+.footer2 ul li ul li.op2{
 
 			border-right: none;
 		}
 		
-.footer ul li ul li.op4{
+.footer2 ul li ul li.op3{
 
 			border-right: none;
 		}
 		
-.footer ul li.op1,		
+.footer2 ul li ul li.op4{
+
+			border-right: none;
+		}
+		
+.footer2 ul li.op1,		
 		.footer ul li.op2,
 		.footer ul li.op3,
 		.footer ul li.op4 {
@@ -103,7 +103,7 @@
 			border: none;
 		}
 		
-.footer ul li ul li {
+.footer2 ul li ul li {
 			display: block;
 			float: none;
 			color: #8C9299;
@@ -111,54 +111,54 @@
 			padding: 0;
 		}
 		
-.footer ul li h2{
+.footer2 ul li h2{
 			color: #434A58;
 			font-size: 1.1em;
 			font-family: BBVA Web Book;
 			padding-bottom: 10px;
 		}
 		
-.footer ul li.first {
+.footer2 ul li.first {
 			padding: 0 9px 0 12px;			
 			width: 20em;
 		}
 		
-.footer ul li.last {
+.footer2 ul li.last {
 			padding: 0 0 0 19px;
 			border: none;
 		}
 		
-.footer ul li a {
+.footer2 ul li a {
 			color: #8C9299;
 			font-size: 1.1em;
 			font-weight: normal;
 			text-align: left!important;
 		}
 		
-.footer ul li ul li a {
+.footer2 ul li ul li a {
 			color: #8C9299;
 			font-weight: normal;
 			line-height: 2em;
 		}
 		
-.footer ul li ul.redes-sociales li a{
+.footer2 ul li ul.redes-sociales li a{
 			line-height: 2.4em;
 			padding: 3px;
 		}
 		
-.footer ul li ul.redes-sociales li a.face{
+.footer2 ul li ul.redes-sociales li a.face{
 			background: url('../img/ico-face.png') no-repeat left top;
 		}
 		
-.footer ul li ul.redes-sociales li a.rss{
+.footer2 ul li ul.redes-sociales li a.rss{
 			background: url('../img/ico-rss.png') no-repeat left top;
 		}
 		
-.footer ul li ul.redes-sociales li a.tw{
+.footer2 ul li ul.redes-sociales li a.tw{
 			background: url('../img/ico-tw.png') no-repeat left top;
 		}
 		
-.footer ul li ul.redes-sociales li span {
+.footer2 ul li ul.redes-sociales li span {
 			padding-left: 20px;
 		}
 		
@@ -228,7 +228,7 @@
 	</head>
 
 <div class="grid_20 footer">	
-	<div class="footer">
+	<div class="footer2">
 		<ul>
 			<li class="first op1">
 				<h2>CENTRO DE AYUDA</h2>
