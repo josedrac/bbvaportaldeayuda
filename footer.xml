@@ -101,7 +101,15 @@
 		.footer ul li.op4 {
 			min-height: 12em;
 			border: none;
-		}		
+		}
+		
+.footer ul li ul li {
+			display: block;
+			float: none;
+			color: #8C9299;
+			border: none;
+			padding: 0;
+		}	
 
 /* @end */
 .footer-bottom {
