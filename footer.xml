@@ -55,15 +55,27 @@
 
 
 /*footer*/
-.footer2 {
+.footer {
 	padding-left: 16px;
 	padding-bottom: 186px;
 }
 
-.footer2 ul {
+.footer ul {
 		display: inline;
 	}
 
+.footer ul li {
+			background: none repeat scroll 0 0 transparent;
+			float: left;
+			margin: 0;
+			padding: 0 9px 0 20px;
+			position: relative;
+			text-align: left;
+			width: 20em;
+			border-right: 1px solid #DCDCDC;
+		}
+		
+		
 
 /* @end */
 .footer-bottom {
@@ -130,7 +142,7 @@
 	</head>
 
 <div class="grid_20 footer">	
-	<div class="footer2">
+	<div class="footer">
 		<ul>
 			<li class="first op1">
 				<h2>CENTRO DE AYUDA</h2>
