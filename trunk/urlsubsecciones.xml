@@ -120,7 +120,7 @@
 				for(var i=0;i<filas;i++){
 				    if(subseccion != 'Subsección'){
 					 if(subseccion=="Iníciate en tu Net"){
-					 html +="<div id='titleSubsection' class='title'>"+¿Qué puedes hacer?+"</div>";
+					 html +="<div id='titleSubsection' class='title'>¿Qué puedes hacer?</div>";
 					 }
 					else{
 					html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
