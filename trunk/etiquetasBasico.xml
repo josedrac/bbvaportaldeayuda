@@ -12,7 +12,7 @@
 <UserPref name="urlTablecontenidos" default_value="" display_name="Data source url contenidos  (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 <UserPref name="urlTableexitos" default_value="" display_name="Data source url exitos (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 <UserPref name="urlTablemovilidad" default_value="" display_name="Data source url movilidad (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
- <Content type="html">
+ <Content type="html" charset="UTF-8">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
