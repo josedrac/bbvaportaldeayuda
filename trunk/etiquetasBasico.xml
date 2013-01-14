@@ -270,7 +270,7 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTableguias, opts);					
 			   
-				var querytosend = "select D,H,J where I like '%"+tagAux+"%'";
+				var querytosend = "select D,H,J where I like '%"+tagAux+"%' or E like '%"+tagAux+"%' ";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
