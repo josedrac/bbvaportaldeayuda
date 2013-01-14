@@ -220,6 +220,7 @@
 		  #TagVideo img,
 		  #TagVideo2 img{
 		   float:left;
+		   margin:-4px 10px 0px 0px;
 		  }
 		  #TagVideo{
 		   color:#000;
