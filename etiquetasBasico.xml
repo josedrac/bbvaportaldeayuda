@@ -253,6 +253,7 @@
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
 	 var tagAux = "";
+	 tag[1]=tag[1].replace(/\+/g,' ');
 	 tagAux = decodeURIComponent(tag[1]);
 	 tagAux.replace(/[+]/g,' ');
 	 tagAux.replace(/\+/g,'&nbsp;');
