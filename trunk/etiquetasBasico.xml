@@ -407,7 +407,7 @@
 				   
 				   if(pagTotales>1){
 			     
-				  if (i==3*pagActual-1){
+				  if (i==5*pagActual-1){
 				  
 				    var pagActualParaMostrar = pagActual+1;
                     var pagSiguiente = pagActualParaMostrar+1;
