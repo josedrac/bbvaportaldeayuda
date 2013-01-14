@@ -117,7 +117,7 @@
 .footer ul li h2{
 			color: #434A58;
 			font-size: 1.1em;
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book, Arial;
 			padding-bottom: 10px;
 		}
 		
