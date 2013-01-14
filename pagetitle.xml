@@ -16,6 +16,7 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
 	<style type="text/css">
+	
 	  	/* @group fonts */
 		@font-face {
 			font-family: 'BBVA Web Light';
@@ -50,6 +51,7 @@
 			line-height: 20px;
 			clear: both;
 		}	
+		
 	</style>
 	
 	<h1 id="titlepage"></h1>	
