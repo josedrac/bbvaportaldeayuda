@@ -110,7 +110,7 @@
 		
 .footer ul li ul li {
 			display: block;
-			float: none;
+			float: left;
 			color: #8C9299;
 			border: none;
 			padding: 0;
