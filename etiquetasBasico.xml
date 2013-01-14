@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
+<?xml version="1.0" ?> 
 <Module>
   <ModulePrefs title="etiquetasBasico.xml"
     description=""
@@ -253,8 +253,8 @@
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
 	 document.getElementById('nivel').innerHTML = tag[1];
-	 tag[1].replace(/+/g," ");
-	 alert(tag[1]);
+	 //tag[1].replace(/+/g," ");
+	 //alert(tag[1]);
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
@@ -391,7 +391,7 @@
 				
 				if(filas<1)
 					{
-						html += '<p class="text">No hay ningÃºn contenido con este Nivel.</p>';
+						html += '<p class="text">No hay ningún contenido con este Nivel.</p>';
 					}
 				else
 					{               
