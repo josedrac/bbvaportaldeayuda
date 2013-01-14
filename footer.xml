@@ -199,6 +199,11 @@
 	text-align: left!important;
 }
 
+.footer-bottom ul li ul { /*prueba*/
+	background-color: red;
+	padding-top: -10px;
+}
+
 .footer-bottom span.copyright {
 	color: #8C9299;
 	font-size: 1.1em;
@@ -225,9 +230,9 @@
 	width:939px;
 	display:block;
 	}
-	.container_20 .grid_20.footer {
+	/*.container_20 .grid_20.footer {
 	padding-top: 17em;
-}
+}*/
 	
 	</style>
 	</head>
