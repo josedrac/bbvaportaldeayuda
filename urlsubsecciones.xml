@@ -60,7 +60,7 @@
 	.title{
 	color:#000;
 	font-size: 18px;
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Light, BBVA Web, Arial, sans-serif;
 	margin-left:22px;
 	margin-top:0px;
 	margin-bottom:10px;
