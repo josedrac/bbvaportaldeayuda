@@ -255,7 +255,7 @@
 	 var tagAux = "";
 	 tagAux = decodeURIComponent(tag[1]);
 	 tagAux.replace(/[+]/g,' ');
-	 tagAux.replace(/[+]/g,'&nbsp;');
+	 tagAux.replace(/\+/g,'&nbsp;');
 	 alert(tagAux);
 	 document.getElementById('nivel').innerHTML = tagAux;
 	 
