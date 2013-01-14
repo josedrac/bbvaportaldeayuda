@@ -59,7 +59,7 @@
 		#titlecomboVideo h2{
 		float:left;
 		color:#0078D2;
-		font-family:BBVA Web Light;
+		font-family:BBVA Web Light, BBVA Web, Arial, sans serif;
 		font-size:22px;
 		margin:31px 0px 10px 35px;
 		font-weight: normal;
