@@ -252,7 +252,8 @@
 	 var aux = new Array();
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
-	 document.getElementById('nivel').innerHTML = "Básico";
+	 document.getElementById('nivel').innerHTML = tag[1];
+	 tag[1].replace('%20/g'," ");
 	 alert(tag[1]);
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
