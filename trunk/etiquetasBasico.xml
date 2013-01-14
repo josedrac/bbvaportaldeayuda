@@ -253,7 +253,7 @@
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
 	 tagAux = decodeURIComponent(tag[1]);
-	 tagAux.replace(/\+/g,'');
+	 tagAux.replace(/\+/g,'\s');
 	 alert(tagAux);
 	 document.getElementById('nivel').innerHTML = tagAux;
 	 
