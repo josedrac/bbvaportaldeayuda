@@ -252,6 +252,7 @@
 	 var aux = new Array();
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
+	 var auxsubsection = new Array();
 	 var tagAux = "";
 	 tag[1]=tag[1].replace(/\+/g,' ');
 	 tagAux = decodeURIComponent(tag[1]);
@@ -270,7 +271,7 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTableguias, opts);					
 			   
-				var querytosend = "select D,H,J where (I like '%"+tagAux+"%') or (E like '%"+tagAux+"%') or (F like '%"+tagAux+"%')";
+				var querytosend = "select D,H,J,C where (I like '%"+tagAux+"%') or (E like '%"+tagAux+"%') or (F like '%"+tagAux+"%')";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
@@ -284,18 +285,19 @@
 				var titulo = new Array();
 				var texto = new Array(); 
 				var url = new Array();  
-				
+				var subsection = new Array();
 				
 				for(var i=0;i<filas;i++){
 				   
 				   titulo[i] = data.getValue(i,0);
 				   texto[i]= data.getValue(i,2);
 				   url[i] = data.getValue(i,1);
-					  if(aux.indexOf(titulo[i])== -1){ 
+				   subsection[i] = data.getValue(i,3);
+					  if((aux.indexOf(titulo[i])== -1)&&(auxsubsection.indexOf(subsection[i])== -1)){ 
 							aux += titulo[i]+"|";
 							auxtexto[titulo[i]]= texto[i];
 							auxurl[titulo[i]]= url[i];
-						
+						    auxsubsection[i] += subsection[i];
 						}
 					 }
 				var opts = {dataType:'jsonp'};
