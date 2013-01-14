@@ -298,7 +298,7 @@
 							auxtexto[titulo[i]]= texto[i];
 							auxurl[titulo[i]]= url[i];
 						    aux[titulo[i]]= subsection;
-						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]=="")){
+						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
 							aux += titulo[i]+"|";
 							auxtexto[titulo[i]]= texto[i];
 							auxurl[titulo[i]]= url[i];
