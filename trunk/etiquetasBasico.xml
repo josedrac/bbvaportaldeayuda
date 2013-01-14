@@ -252,10 +252,10 @@
 	 var aux = new Array();
 	 var auxtexto = new Array();
 	 var auxurl = new Array();
+	 tagAux = decodeURIComponent(tag[1]));
+	 alert(tagAux);
 	 document.getElementById('nivel').innerHTML = tag[1];
-	 tag[1].replace("%C3%A1","U+00E1");
-	 tag[1].replace("+"," ");
-	 alert(tag[1]);
+	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
