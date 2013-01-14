@@ -151,15 +151,15 @@
 		}
 		
 .footer ul li ul.redes-sociales li a.face{
-			background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-face.png') no-repeat left top;
+			background: url('../img/ico-face.png') no-repeat left top;
 		}
 		
 .footer ul li ul.redes-sociales li a.rss{
-			background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-rss.png') no-repeat left top;
+			background: url('../img/ico-rss.png') no-repeat left top;
 		}
 		
 .footer ul li ul.redes-sociales li a.tw{
-			background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/ico-tw.png') no-repeat left top;
+			background: url('../img/ico-tw.png') no-repeat left top;
 		}
 		
 .footer ul li ul.redes-sociales li span {
