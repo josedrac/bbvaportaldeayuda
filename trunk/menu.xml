@@ -195,14 +195,14 @@ margin-top:-19px;
 	margin-right: 5px;
 	color: #003F8C;
 	font-size: 12px;
-	font-family: BBVA Web Book;
+	font-family: BBVA Web Book, BBVA Web, Arial, sans-serif;
 }
 
 .bloqueEnlaces a.enlaceMenu {
 	text-decoration: none;
 	color:  #8B9098;
 	font-size: 12px;
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Light, BBVA Web, Arial, sans-serif;
 	font-weight: normal;
 	
 }
