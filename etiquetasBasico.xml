@@ -254,7 +254,7 @@
 	 var auxurl = new Array();
 	 document.getElementById('nivel').innerHTML = tag[1];
 	 //tag[1].replace(/+/g," ");
-	 //alert(tag[1]);
+	 alert(tag[1]);
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
