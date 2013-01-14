@@ -270,7 +270,7 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTableguias, opts);					
 			   
-				var querytosend = "select D,H,J where I like '%"+tagAux+"%' or E like '%"+tagAux+"%' ";
+				var querytosend = "select D,H,J where (I like '%"+tagAux+"%') or (E like '%"+tagAux+"%') or (F like '%"+tagAux+"%')";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
@@ -300,7 +300,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			    var querytosendcontenidos = "select B,Q,D where E like '%"+tagAux+"%'";
+			    var querytosendcontenidos = "select B,Q,D where (E like '%"+tagAux+"%') or (K like '%"+tagAux+"%') or (L like '%"+tagAux+"%')";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2); 
 			}
