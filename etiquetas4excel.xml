@@ -674,7 +674,7 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux2[i]!=""){
-		muestra2 += "Formato: "+aux2[i]+" ("+contadorFormato[aux2[i]]+") ";
+		muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>Formato:' +aux2[i]+' ('+contadorFormato[aux2[i]]+') ';
 		}
 	 
 	}  
