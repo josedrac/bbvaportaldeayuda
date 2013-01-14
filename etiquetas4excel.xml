@@ -15,7 +15,7 @@
 
 <UserPref name="titlebox" display_name="Title of Tag Box" required="true" />  
     
- <Content type="html">
+ <Content type="html" charset="UTF-8">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
@@ -664,7 +664,7 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-		muestra += "Tipo: "+aux1[i]+" ("+contadorTipo[aux1[i]]+") ";
+		muestra += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') ';
 		}
 	 
 	} 
