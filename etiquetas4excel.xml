@@ -641,7 +641,7 @@
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
 			
-				muestra +="<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/etiquetas?etiqueta="+aux1[i]+"'>"+aux1[i]+" ("+html[aux1[i]]+") </a> ";
+				muestra +="<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag="+aux1[i]+"'>"+aux1[i]+" ("+html[aux1[i]]+") </a> ";
 			
 		}
 	 
