@@ -247,6 +247,7 @@
 	 var urlTablecontenidos = prefs.getString("urlTablecontenidos");
 	 var urlTableexitos = prefs.getString("urlTableexitos");
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
+	 var etiqueta = gadgets.util.getUrlParameters()["parent"].split("=");
 	 var TotalFilas = 0;
 	 var aux = new Array();
 	 var auxtexto = new Array();
@@ -265,7 +266,7 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTableguias, opts);					
 			   
-				var querytosend = "select D,H,J where I like '%Básico%'";
+				var querytosend = "select D,H,J where I like '%"+etiqueta[1]+"%'";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
@@ -295,7 +296,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			    var querytosendcontenidos = "select B,Q,D where E like '%Básico%'";
+			    var querytosendcontenidos = "select B,Q,D where E like '%"+etiqueta[1]+"%'";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2); 
 			}
@@ -323,7 +324,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTableexitos, opts);	
-			    var querytosendcontenidos = "select B,O,D where N like '%Básico%'";
+			    var querytosendcontenidos = "select B,O,D where N like '%"+etiqueta[1]+"%'";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse3); 
 			}	
@@ -350,7 +351,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablemovilidad, opts);	
-			    var querytosendcontenidos = "select G,F,I where H  like '%Básico%'";
+			    var querytosendcontenidos = "select G,F,I where H  like '%"+etiqueta[1]+"%'";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse4); 
 			}		
