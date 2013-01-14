@@ -254,7 +254,7 @@
 	 var auxurl = new Array();
 	 tagAux = decodeURIComponent(tag[1]);
 	 alert(tagAux);
-	 document.getElementById('nivel').innerHTML = tag[1];
+	 document.getElementById('nivel').innerHTML = tagAux;
 	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
