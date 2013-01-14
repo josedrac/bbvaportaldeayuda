@@ -114,30 +114,30 @@
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 55px; 
         }
         ul li.op3 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -58px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 68px;  
         }
         ul li.op4 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -88px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 88px; 
         }
         ul li.op5 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -123px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 123px; 
         }
         ul li.op6 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -153px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 153px;  
         }
         ul li.op7 {
-        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -185px; 
+        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px 185px; 
                 }
         ul li.op8 {
         	
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -216px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px 216px;  
 
         }
         ul li.op9 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -246px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 246px;  
         }
         ul li.op10 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -279px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 279px; 
         }               
         </style>
     
