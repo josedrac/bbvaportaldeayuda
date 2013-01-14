@@ -52,6 +52,11 @@
 			<tr/>
 			<tr>       
                 <td>
+                    Img - Tag: <input type="text" size="100" id="imgTag" value="__UP_imgTag__"   onchange="registra('imgTag')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
                     Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
                 </td>
             </tr>
@@ -80,6 +85,11 @@
                 <td>
                 Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
                
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Img - Tag2: <input type="text" size="100" id="imgTag2" value="__UP_imgTag2__"   onchange="registra('imgTag2')"/>                   
                 </td>
             </tr>
 			<tr>       
