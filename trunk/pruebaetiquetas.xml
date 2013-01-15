@@ -672,6 +672,7 @@
 			}else if(aux1[i] == "Nivel Avanzado"){
 				alert("Entrando nivel avanzado: " + aux1[i]);
 				muestra +='<div id="highLevel">';
+			}else if(aux1[i] == "BBVA GCS "){
 				alert("Entrando en BBVA GCS: " + aux1[i]);
 				muestra +='<div id="bbvaGcs">';
 			}
