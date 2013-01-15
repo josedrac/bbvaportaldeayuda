@@ -192,8 +192,10 @@
                 {
                     var link = 'href=\"#\" onclick=\"' + varEnlace + '\" ';
                 }
-                else
-                {
+                else if(varEnlace.indexOf('support')!=-1){
+                   
+				    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
+				}else{
                     var link = 'href=\"'+ varEnlace +'\"  target=\"_parent\" ';
                 }
                 return link;
