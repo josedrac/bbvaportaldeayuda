@@ -181,6 +181,7 @@
 	
 	*/
 	
+	/*Grupos de Etiquetas*/
 	.etiquetas{
 	float:left;
 	width:298px;
@@ -189,13 +190,25 @@
 	margin-bottom:-20px;
 	}
 	
-	#tipos{
+	.tipos{
 	float:left;
 	width:298px;
 	padding-left:20px;
 	padding-top:20px;
 	margin-bottom:-20px;
 	}
+	
+	.formatos{
+	float:left;
+	width:298px;
+	padding-left:20px;
+	padding-top:20px;
+	margin-bottom:-20px;
+	margin-top:-20px;
+	}
+	/*Fin Grupos de Etiquetas*/
+	
+	/*Etiquetas*/
 	#mediumLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
@@ -205,6 +218,7 @@
 	float:left;
 	margin-right:10px;
 	}
+	
 	#mediumLevel a{
 	font-weight:bold;
 	font-size:12px;
@@ -212,6 +226,7 @@
 	text-decoration:none;
 	font-family:BBVA Web Light;
 	}
+	
 	#lowLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
 	width:109px;
@@ -220,6 +235,7 @@
 	padding-top:4px;
 	float:left;
 	}
+	
 	#lowLevel a{
 	font-weight:bold;
 	font-size:12px;
@@ -229,6 +245,7 @@
 	float:left;
 	padding-left:5px;
 	}
+	
 	#highLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
 	width:132px;
@@ -237,6 +254,7 @@
 	padding-top:4px;
 	float:left;
 	}
+	
 	#highLevel a{
 	font-weight:bold;
 	font-family:BBVA Web Light;
@@ -244,6 +262,7 @@
 	color:#fff;
 	text-decoration:none;
 	}
+	
 	#bbvaGcs{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
 	width:109px;
@@ -262,37 +281,9 @@
 	float:left;
 	padding-left:5px;
 	}
-	#trucos{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
-	float:left;
-	width: 175px;
-	height:25;
-	text-align:center;
-	padding-top:4px;
-	}
-	#trucos a{
-	font-weight:bold;
-	font-family:BBVA Web Light;
-	font-size:12px;
-	color:#0072C9;
-	text-decoration:none;
-	}
-	#stepbystep{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 152px;
-	height:25;
-	float:left;
-	text-align:center;
-	padding-top:4px;
-	margin-right:10px;
-	}
-	#stepbystep a{
-	font-weight:bold;
-	font-family:BBVA Web Light;
-	font-size:12px;
-	color:#0072C9;
-	text-decoration:none;
-	}
+	/*Fin Etiquetas*/
+	
+	/*Tipos*/
 	#referencia{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 105px;
@@ -301,6 +292,7 @@
 	text-align:center;
 	padding-top:4px;
 	}
+	
 	#referencia a{
 	font-weight:bold;
 	font-family:BBVA Web Light;
@@ -308,28 +300,58 @@
 	color:#0072C9;
 	text-decoration:none;
 	}
-	#ayudaexito{
+	
+	#trucos{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
-	width:298px;
-	padding-left:20px;
-	padding-top:20px;
-	}
-	#ayuda{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
-	width: 81px;
+	width: 175px;
 	height:25;
-	float:left;
 	text-align:center;
 	padding-top:4px;
-	margin-right:10px;
 	}
-	#ayuda a{
+	
+	#trucos a{
 	font-weight:bold;
 	font-family:BBVA Web Light;
 	font-size:12px;
-	color:#fff;
+	color:#0072C9;
 	text-decoration:none;
 	}
+	
+	#como{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
+	float:left;
+	width: 175px;
+	height:25;
+	text-align:center;
+	padding-top:4px;
+	}
+	
+	#como a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#0072C9;
+	text-decoration:none;
+	}
+	
+	#casosDeUso{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
+	float:left;
+	width: 175px;
+	height:25;
+	text-align:center;
+	padding-top:4px;
+	}
+	
+	#casosDeUso a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#0072C9;
+	text-decoration:none;
+	}
+	
 	#exitos{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
 	width: 129px;
@@ -345,47 +367,111 @@
 	color:#fff;
 	text-decoration:none;
 	}
-	#formatos{
+	
+	#preguntasFrecuentes{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
-	width:298px;
-	padding-left:20px;
-	padding-top:20px;
-	margin-bottom:-20px;
-	margin-top:-20px;
-	}
-	#formatTruco{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 200px;
-	height:25;
-	float:left;
-	text-align:center;
-	padding-top:4px;
-	}
-	#formatTruco a{
-	font-weight:bold;
-	font-family:BBVA Web Light;
-	font-size:12px;
-	color:#0072C9;
-	text-decoration:none;
-	}
-	#formatPaso{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 175px;
 	height:25;
-	float:left;
 	text-align:center;
 	padding-top:4px;
 	}
-	#formatPaso a{
+	
+	#preguntasFrecuentes a{
 	font-weight:bold;
 	font-family:BBVA Web Light;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
 	}
-	#formatos{
-	margin-top:10px;
+	
+	#comoEmpiezo{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
+	float:left;
+	width: 175px;
+	height:25;
+	text-align:center;
+	padding-top:4px;
 	}
+	
+	#comoEmpiezo a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#0072C9;
+	text-decoration:none;
+	}
+	/*Fin Tipos*/
+	
+	/*Formatos*/
+	#texto{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	width: 129px;
+	height:25;
+	float:left;
+	text-align:center;
+	padding-top:4px;
+	}
+	
+	#texto a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+	#video{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	width: 129px;
+	height:25;
+	float:left;
+	text-align:center;
+	padding-top:4px;
+	}
+	
+	#video a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+	#pdf{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	width: 129px;
+	height:25;
+	float:left;
+	text-align:center;
+	padding-top:4px;
+	}
+	
+	#pdf a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+	#powerPoint{
+	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	width: 129px;
+	height:25;
+	float:left;
+	text-align:center;
+	padding-top:4px;
+	}
+	
+	#powerPoint a{
+	font-weight:bold;
+	font-family:BBVA Web Light;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	}
+
 </style>
 
 <div id="content_div" class="content">
