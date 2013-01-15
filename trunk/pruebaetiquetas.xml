@@ -672,7 +672,6 @@
 			}else if(aux1[i] == "Nivel Avanzado"){
 				alert("Entrando nivel avanzado: " + aux1[i]);
 				muestra +='<div id="highLevel">';
-			}else if(aux1[i] == "BBVA GCS"){
 				alert("Entrando en BBVA GCS: " + aux1[i]);
 				muestra +='<div id="bbvaGcs">';
 			}
@@ -749,22 +748,22 @@
 				if(aux2[i] == "Texto"){
 				
 					alert("Entrando en texto: " + aux2[i]);//falta estilo
-					muestra +='<div id="texto">';
+					muestra2 +='<div id="texto">';
 					
 				}else if(aux2[i] == "Vídeo"){
 				
 					alert("Entrando en video: " + aux2[i]);//falta estilo
-					muestra +='<div id="video">';
+					muestra2 +='<div id="video">';
 					
 				}else if(aux2[i] == "PDF"){
 				
 					alert("Entrando en PDF: " + aux2[i]);//falta estilo
-					muestra +='<div id="pdf">';
+					muestra2 +='<div id="pdf">';
 					
-				}else if(aux2[i] == "PPT"){
+				}else if(aux2[i] == "PPT "){
 				
 					alert("Entrando en PPT: " + aux2[i]);//falta estilo
-					muestra +='<div id="powerPoint">';
+					muestra2 +='<div id="powerPoint">';
 					
 				}
 		
