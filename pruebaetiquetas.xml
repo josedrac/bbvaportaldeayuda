@@ -151,7 +151,7 @@
 		background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
 		background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
-		font: 16px BBVA Web Book;
+		font: 16px BBVA Web Book, Arial, sans-serif;
 		color: #333333;
 		padding-left: 18px;
 		padding-left: 20px;
@@ -160,21 +160,9 @@
 		margin-bottom:30px;
 	}
 	
-	.etiquetas{
-	text-decoration:none;
-	font-family:Arial;
-	margin-top:30px;
-	font-size:12px;
-	padding:0px 10px 0px 10px;
-	}
-	
-	.tipos{
-	text-decoration:none;
-	font-family:Arial;
-	margin-top:30px;
-	font-size:12px;
-	padding:0px 10px 0px 10px;
-	}
+	/*
+	.etiquetas, 
+	.tipos,
 	.formatos{
 	text-decoration:none;
 	font-family:Arial;
@@ -182,6 +170,7 @@
 	font-size:12px;
 	padding:0px 10px 0px 10px;
 	}
+
 	.etiquetas a,
 	.tipos a,
 	.formatos a{
@@ -189,6 +178,9 @@
 	color:#0078D2;
 	font-family:Arial;
 	}
+	
+	*/
+	
 	#niveles{
 	float:left;
 	width:298px;
@@ -379,30 +371,9 @@
 	}
 </style>
 
-
-<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
-
 <div id="content_div" class="content">
 
-<div id="titlebox"></div>
-<div id="niveles">
-	<div id="mediumlevel">
-	</div><div id="lowlevel"></div>
-	<div id="highlevel"></div>
-</div>
-<div id="tipos">
-	<div id="trucos"></div>
-	<div id="stepbystep"></div>
-	<div id="referencia"></div>
-</div>
-<div id="ayudaexito">
-	<div id="ayuda"></div>
-	<div id="exitos"></div>
-</div>
-<div id="formatos">
-	<div id="formatTruco"></div>
-	<div id="formatPaso"></div>
-</div>
+
 
 </div>
 

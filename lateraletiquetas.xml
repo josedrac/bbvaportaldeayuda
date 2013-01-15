@@ -189,6 +189,7 @@
 	padding-top:20px;
 	margin-bottom:-20px;
 	}
+	
 	#mediumlevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
@@ -330,6 +331,7 @@
 	margin-bottom:-20px;
 	margin-top:-20px;
 	}
+	
 	#formatTruco{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 200px;
