@@ -464,19 +464,18 @@
 				  titulo[i] = data1.getValue(i,1);
 				   subsection = data1.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[i][j])== -1){            
+					  if(aux.indexOf(titulo[i])== -1){            
 					        
 							aux += etiquetas[i][j]+",";
-							titulos += titulo[i];
 							html[etiquetas[i][j]] = 1;
-							titulos[titulo[i]]= subsection;
+							aux[titulo[i]]= subsection;
 							
 							
 							
-						}else if((titulos.indexOf(titulo[i])!= -1)&&(titulos[titulo[i]]!=subsection)){
+						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
 						    
 						    html[etiquetas[i][j]]++;
-							titulos[titulo[i]]=subsection;
+							aux[titulo[i]]=subsection;
 						}
 					
 				}
@@ -510,14 +509,13 @@
 				 titulo[i] = data2.getValue(i,1);
 				   subsection = data2.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[i][j])==-1){
+					  if(aux.indexOf(titulo[i])==-1){
 					       aux += etiquetas[i][j]+",";
-						   titulos += titulo[i];
 						   html[etiquetas[i][j]] = 1;
-						   titulos[titulo[i]]= subsection;
-						}else if((titulos.indexOf(titulo[i])!= -1)&&(titulos[titulo[i]]!=subsection)){
+						   aux[titulo[i]]=subsection;
+						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
 						   html[etiquetas[i][j]]++;
-						   titulos[titulo[i]]=subsection;
+						   aux[titulo[i]]=subsection;
 						}
 					
 				}
