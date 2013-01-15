@@ -698,22 +698,38 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-		
-			alert("aux1[i]= " + aux1[i]);
-			if(aux1[i] == "Nivel Básico"){
-					//alert("Entrando nivel basico: " + aux1[i]);
-					muestra +='<div id="lowLevel">';
-				}else if(aux1[i] == "Nivel Medio"){
-					//alert("Entrando nivel medio: " + aux1[i]);
-					muestra +='<div id="mediumLevel">';
-				}else if(aux1[i] == "Nivel Avanzado"){
-					//alert("Entrando nivel avanzado: " + aux1[i]);
-					muestra +='<div id="highLevel">';
-				}else if(aux1[i] == "BBVA GCS"){
-					//alert("Entrando en BBVA GCS: " + aux1[i]);
-					muestra +='<div id="bbvaGcs">';
-				}
+
+			if(aux1[i] == "Referencia"){
+					alert("Entrando en Referencia: " + aux1[i]);
+					muestra +='<div id="referencia">';
+				}else if(aux1[i] == " Trucos y consejos"){
+					alert("Entrando en trucos: " + aux1[i]);
+					muestra +='<div id="trucos">';
+				}else if(aux1[i] == " Cómo"){
 				
+					alert("Entrando en como: " + aux1[i]);//falta estilo
+					muestra +='<div id="como">';
+					
+				}else if(aux1[i] == " Casos de uso"){
+				
+					alert("Entrando en Casos de uso: " + aux1[i]);//falta estilo
+					muestra +='<div id="casosDeUso">';
+					
+				}else if(aux1[i] == " Casos de éxito"){
+				
+					alert("Entrando en Casos de éxito: " + aux1[i]);
+					muestra +='<div id="exitos">';
+				}else if(aux1[i] == " Preguntas Frecuentes"){
+				
+					alert("Entrando en Preguntas Frecuentes: " + aux1[i]);//falta estilo
+					muestra +='<div id="preguntasFrecuentes">';
+					
+				}else if(aux1[i] == " Cómo empiezo"){
+				
+					alert("Entrando en Cómo empiezo: " + aux1[i]);//falta estilo
+					muestra +='<div id="comoEmpiezo">';
+				}
+
 				muestra += ' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') </a> </div>';			
 			
 			}
@@ -726,7 +742,42 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux2[i]!=""){
-		muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>Formato:' +aux2[i]+' ('+contadorFormato[aux2[i]]+') ';
+				
+				alert("aux1[i]= " + aux1[i]);
+				
+				if(aux1[i] == "Referencia"){
+					//alert("Entrando en Referencia: " + aux1[i]);
+					muestra +='<div id="referencia">';
+				}else if(aux1[i] == " Trucos y consejos"){
+					//alert("Entrando en trucos: " + aux1[i]);
+					muestra +='<div id="trucos">';
+				}else if(aux1[i] == " Cómo"){
+				
+					//alert("Entrando en como: " + aux1[i]);//falta estilo
+					muestra +='<div id="como">';
+					
+				}else if(aux1[i] == " Casos de uso"){
+				
+					//alert("Entrando en Casos de uso: " + aux1[i]);//falta estilo
+					muestra +='<div id="casosDeUso">';
+					
+				}else if(aux1[i] == " Casos de éxito"){
+				
+					//alert("Entrando en Casos de éxito: " + aux1[i]);
+					muestra +='<div id="exitos">';
+				}else if(aux1[i] == " Preguntas Frecuentes"){
+				
+					//alert("Entrando en Preguntas Frecuentes: " + aux1[i]);//falta estilo
+					muestra +='<div id="preguntasFrecuentes">';
+					
+				}else if(aux1[i] == " Cómo empiezo"){
+				
+					//alert("Entrando en Cómo empiezo: " + aux1[i]);//falta estilo
+					muestra +='<div id="comoEmpiezo">';
+				}
+		
+			muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>Formato:' +aux2[i]+' ('+contadorFormato[aux2[i]]+') </a> </div>';
+		
 		}
 	 
 	}  
