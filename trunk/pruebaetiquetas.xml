@@ -380,13 +380,32 @@
 </style>
 
 
+<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
 <div id="content_div" class="content">
 
+<div id="titlebox"></div>
+<div id="niveles">
+	<div id="mediumlevel">
+	</div><div id="lowlevel"></div>
+	<div id="highlevel"></div>
+</div>
+<div id="tipos">
+	<div id="trucos"></div>
+	<div id="stepbystep"></div>
+	<div id="referencia"></div>
+</div>
+<div id="ayudaexito">
+	<div id="ayuda"></div>
+	<div id="exitos"></div>
+</div>
+<div id="formatos">
+	<div id="formatTruco"></div>
+	<div id="formatPaso"></div>
+</div>
 
 </div>
 
-	
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
