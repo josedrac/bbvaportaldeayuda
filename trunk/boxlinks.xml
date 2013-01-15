@@ -184,6 +184,11 @@
 			window.parent.location.href = destination;
 			return false;
 			} 
+			 function Go2(destination){
+
+			window.open(destination,'_blank');
+			return false;
+			} 
 			
             function devuelveEnlace(varEnlace)
             {
@@ -294,8 +299,8 @@
 					VarEnlace9URL = urlbase+VarEnlace9URL;
 					var strLink = devuelveEnlace(VarEnlace9URL);
 					}
-                    //html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9" ' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
-					html += window.open(strLink,_blank);
+                    html+='<li class="op9" onclick="Go2(\''+strLink+'\')">&nbsp;&nbsp;<a class="link9" ' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
+					
                 }
                  if ((VarEnlace10Texto!="")&&(VarEnlace10URL!=""))
                 {    
