@@ -670,7 +670,7 @@
 			}else if(aux1[i] == "Nivel Avanzado"){
 				alert("Entrando nivel avanzado: " + aux1[i]);
 				muestra +='<div id="highLevel">';
-			}else if(aux1[i] == "BBVA GCS "){
+			}else if(aux1[i].trim() == "BBVA GCS"){
 				alert("Entrando en BBVA GCS: " + aux1[i]);
 				muestra +='<div id="bbvaGcs">';
 			}
@@ -760,7 +760,7 @@
 					alert("Entrando en PDF: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="pdf">';
 					
-				}else if(aux2[i] == " PPT "){
+				}else if(aux2[i].trim() == "PPT"){
 				
 					alert("Entrando en PPT: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="powerPoint">';
