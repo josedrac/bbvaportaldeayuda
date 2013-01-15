@@ -473,7 +473,7 @@
 							titulos[titulo]=subsection;
 							
 							
-						}else if((titulos.indexOf(titulo)==-1)&&(titulos[titulo]!=subsection)){
+						}else if((titulos.indexOf(titulo)!=-1)&&(titulos[titulo]!=subsection)){
 						    
 						    html[etiquetas[i][j]]++;
 							titulos +=titulo;
@@ -516,7 +516,7 @@
 						   html[etiquetas[i][j]] = 1;
 						   titulos +=titulo;
 						   titulos[titulo]=subsection;
-						}else if((titulos.indexOf(titulo)==-1)&&(titulos[titulo]!=subsection)){
+						}else if((titulos.indexOf(titulo)!=-1)&&(titulos[titulo]!=subsection)){
 						   html[etiquetas[i][j]]++;
 						   titulos +=titulo;
 						   titulos[titulo]=subsection;
