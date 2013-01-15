@@ -397,6 +397,7 @@
 	 var titlebox = prefs.getString("titlebox");
 	 var aux = new Array();
 	 var titulos = new Array();
+	 var auxsubsecciones = new Array();
 	 var html = new Array();
 	 var tipo = new Array();
 	 var contadorTipo = new Array();
@@ -423,7 +424,7 @@
 				var opts = {dataType:'jsonp'};
 					
 				var queryguias = new google.visualization.Query(urlTableguias, opts);	
-			    var querytosendguias = "select I,D where I <> 'Etiquetas' and I <> ''";				
+			    var querytosendguias = "select I,D,C where I <> 'Etiquetas' and I <> ''";				
 								
 				
 				queryguias.setQuery(querytosendguias);	
@@ -458,22 +459,25 @@
 			//alert("handleQueryResponse1 "+filas);
 			var etiquetas = new Array(); 
 			var titulo="";
+			var subsection="";
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data1.getValue(i,0).split(",");
 				 titulo = data1.getValue(i,1);
+				 subsection = data1.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
 					  if((aux.indexOf(etiquetas[i][j])== -1)&&(titulos.indexOf(titulo)==-1)){            
 					        
 							aux += etiquetas[i][j]+",";
 							html[etiquetas[i][j]] = 1;
 							titulos +=titulo;
+							titulos[titulo]=subsection;
 							
 							
-							
-						}else if(titulos.indexOf(titulo)==-1){
+						}else if((titulos.indexOf(titulo)==-1)&&(titulos[titulo]!=subsection)){
 						    
 						    html[etiquetas[i][j]]++;
 							titulos +=titulo;
+							titulos[titulo]=subsection;
 						}
 					
 				}
@@ -484,7 +488,7 @@
 			   //alert(html[etiquetas[0][0]]);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			    var querytosendcontenidos = "select E,B where E <> 'Etiquetas' and E <> ''";
+			    var querytosendcontenidos = "select E,B,G where E <> 'Etiquetas' and E <> ''";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
 				
@@ -500,17 +504,22 @@
 			var filas = data2.getNumberOfRows();
 			//alert("handleQueryResponse2 "+filas);
 			var etiquetas = new Array();
+			var titulo="";
+			var subsection="";
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data2.getValue(i,0).split(",");
 				 titulo = data2.getValue(i,1);
+				 subsection = data2.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
 					  if((aux.indexOf(etiquetas[i][j])==-1)&&(titulos.indexOf(titulo)==-1)){
 					       aux += etiquetas[i][j]+",";
 						   html[etiquetas[i][j]] = 1;
 						   titulos +=titulo;
-						}else if(titulos.indexOf(titulo)==-1){
+						   titulos[titulo]=subsection;
+						}else if((titulos.indexOf(titulo)==-1)&&(titulos[titulo]!=subsection)){
 						   html[etiquetas[i][j]]++;
 						   titulos +=titulo;
+						   titulos[titulo]=subsection;
 						}
 					
 				}
