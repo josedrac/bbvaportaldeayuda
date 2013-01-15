@@ -181,7 +181,7 @@
 	
 	*/
 	
-	#niveles{
+	.etiquetas{
 	float:left;
 	width:298px;
 	padding-left:20px;
@@ -643,7 +643,7 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-			
+			alert("aux1[i]" + aux1[i]);
 				muestra +='<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+html[aux1[i]]+') </a> ';
 			
 		}
