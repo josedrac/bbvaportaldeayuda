@@ -289,6 +289,7 @@
 	height:25;
 	text-align:center;
 	padding-top:4px;
+	margin-right:10px;
 	}
 	
 	#trucos a{
@@ -302,10 +303,11 @@
 	#como{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
-	width: 175px;
+	width: 105px;
 	height:25;
 	text-align:center;
 	padding-top:4px;
+	margin-right: 10px;
 	}
 	
 	#como a{
@@ -319,7 +321,7 @@
 	#casosDeUso{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
-	width: 175px;
+	width: 140px;
 	height:25;
 	text-align:center;
 	padding-top:4px;
@@ -335,12 +337,14 @@
 	
 	#exitos{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
-	width: 129px;
+	width: 135px;
 	height:25;
 	float:left;
 	text-align:center;
 	padding-top:4px;
+	margin-right:10px;
 	}
+	
 	#exitos a{
 	font-weight:bold;
 	font-family:BBVA Web Light;
@@ -356,6 +360,7 @@
 	height:25;
 	text-align:center;
 	padding-top:4px;
+	margin-right:10px;
 	}
 	
 	#preguntasFrecuentes a{
