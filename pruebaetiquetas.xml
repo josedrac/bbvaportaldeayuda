@@ -188,6 +188,7 @@
 	padding-top:20px;
 	margin-bottom:-20px;
 	}
+	
 	#tipos{
 	float:left;
 	width:298px;
@@ -195,7 +196,7 @@
 	padding-top:20px;
 	margin-bottom:-20px;
 	}
-	#mediumlevel{
+	#mediumLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
 	width:110px;
@@ -204,7 +205,7 @@
 	float:left;
 	margin-right:10px;
 	}
-	#mediumlevel a{
+	#mediumLevel a{
 	font-weight:bold;
 	font-size:12px;
 	color:#fff;
@@ -212,7 +213,7 @@
 	font-family:BBVA Web Light;
 	
 	}
-	#lowlevel{
+	#lowLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
 	width:109px;
 	height:25px;
@@ -220,7 +221,7 @@
 	padding-top:4px;
 	float:left;
 	}
-	#lowlevel a{
+	#lowLevel a{
 	font-weight:bold;
 	font-size:12px;
 	color:#0072C9;
@@ -230,7 +231,7 @@
 	padding-left:5px;
 
 	}
-	#highlevel{
+	#highLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
 	width:132px;
 	height:25px;
@@ -238,7 +239,7 @@
 	padding-top:4px;
 	float:left;
 	}
-	#highlevel a{
+	#highLevel a{
 	font-weight:bold;
 	font-family:BBVA Web Light;
 	font-size:12px;
@@ -643,8 +644,19 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-			alert("aux1[i]" + aux1[i]);
-				muestra +='<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+html[aux1[i]]+') </a> ';
+		
+			if(aux1[i] == "Nivel Básico"){
+				alert("Entrando nivel basico: " + aux1[i]);
+				muestra +='<div id="lowLevel">';
+			}else if(aux1[i] == "Nivel Medio"){
+				alert("Entrando nivel medio: " + aux1[i]);
+				muestra +='<div id="mediumLevel">';
+			}else if(aux1[i] == "Nivel Avanzado"){
+				alert("Entrando nivel avanzado: " + aux1[i]);
+				muestra +='<div id="highLevel">';
+			}
+			
+			muestra +=' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+html[aux1[i]]+') </a> </div>';
 			
 		}
 	 
