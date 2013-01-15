@@ -396,7 +396,6 @@
 	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
 	 var titlebox = prefs.getString("titlebox");
 	 var aux = new Array();
-	 var titulos = new Array();
 	 var html = new Array();
 	 var tipo = new Array();
 	 var contadorTipo = new Array();
@@ -423,7 +422,7 @@
 				var opts = {dataType:'jsonp'};
 					
 				var queryguias = new google.visualization.Query(urlTableguias, opts);	
-			    var querytosendguias = "select I,D,C where I <> 'Etiquetas' and I <> ''";				
+			    var querytosendguias = "select I where I <> 'Etiquetas' and I <> ''";				
 								
 				
 				queryguias.setQuery(querytosendguias);	
@@ -457,25 +456,20 @@
 			var filas = data1.getNumberOfRows();
 			//alert("handleQueryResponse1 "+filas);
 			var etiquetas = new Array(); 
-			var titulo = new Array();
-			var subsection="";
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data1.getValue(i,0).split(",");
-				  titulo[i] = data1.getValue(i,1);
-				   subsection = data1.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(titulo[i])== -1){            
+					  if(aux.indexOf(etiquetas[i][j])== -1){            
 					        
 							aux += etiquetas[i][j]+",";
 							html[etiquetas[i][j]] = 1;
-							aux[titulo[i]]= subsection;
 							
 							
 							
-						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
+							
+						}else{
 						    
 						    html[etiquetas[i][j]]++;
-							aux[titulo[i]]=subsection;
 						}
 					
 				}
@@ -486,7 +480,7 @@
 			   //alert(html[etiquetas[0][0]]);
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			    var querytosendcontenidos = "select E,B,G where E <> 'Etiquetas' and E <> ''";
+			    var querytosendcontenidos = "select E where E <> 'Etiquetas' and E <> ''";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2);
 				
@@ -502,20 +496,14 @@
 			var filas = data2.getNumberOfRows();
 			//alert("handleQueryResponse2 "+filas);
 			var etiquetas = new Array();
-			var titulo = new Array();
-			var subsection="";
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data2.getValue(i,0).split(",");
-				 titulo[i] = data2.getValue(i,1);
-				   subsection = data2.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(titulo[i])==-1){
+					  if(aux.indexOf(etiquetas[i][j])==-1){
 					       aux += etiquetas[i][j]+",";
 						   html[etiquetas[i][j]] = 1;
-						   aux[titulo[i]]=subsection;
-						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
+						}else{
 						   html[etiquetas[i][j]]++;
-						   aux[titulo[i]]=subsection;
 						}
 					
 				}
