@@ -183,7 +183,7 @@
 	padding-left:20px;
 	padding-top:20px;
 	margin-bottom:-20px;
-	margin-top:-20px;
+	/*margin-top:-20px;*/
 	}
 	/*Fin Grupos de Etiquetas*/
 	
@@ -266,7 +266,7 @@
 	/*Tipos*/
 	#referencia{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width:132px;
+	width:135px;
 	height:25px;
 	text-align:center;
 	padding-top:4px;
@@ -374,10 +374,11 @@
 	#comoEmpiezo{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
-	width: 175px;
+	width: 150px;
 	height:25;
 	text-align:center;
 	padding-top:4px;
+	margin-right: 10px;
 	}
 	
 	#comoEmpiezo a{
@@ -397,6 +398,7 @@
 	float:left;
 	text-align:center;
 	padding-top:4px;
+	margin-right: 10px;
 	}
 	
 	#texto a{
@@ -431,6 +433,7 @@
 	float:left;
 	text-align:center;
 	padding-top:4px;
+	margin-right: 10px;
 	}
 	
 	#pdf a{
