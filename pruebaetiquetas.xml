@@ -743,7 +743,7 @@
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux2[i]!=""){
 				
-				alert("aux1[i]= " + aux1[i]);
+				alert("aux2[i]= " + aux2[i]);
 				
 				if(aux1[i] == "Referencia"){
 					//alert("Entrando en Referencia: " + aux1[i]);
