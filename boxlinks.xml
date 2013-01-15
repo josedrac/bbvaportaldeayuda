@@ -294,7 +294,8 @@
 					VarEnlace9URL = urlbase+VarEnlace9URL;
 					var strLink = devuelveEnlace(VarEnlace9URL);
 					}
-                    html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9" ' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
+                    //html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9" ' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
+					html += window.open(strLink,_blank);
                 }
                  if ((VarEnlace10Texto!="")&&(VarEnlace10URL!=""))
                 {    
