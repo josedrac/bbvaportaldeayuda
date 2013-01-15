@@ -748,16 +748,16 @@
 		if(aux1[i]!=""){
 			
 			if(aux1[i] == "Nivel Básico"){
-				alert("Entrando nivel basico: " + aux1[i]);
+				//alert("Entrando nivel basico: " + aux1[i]);
 				muestra +='<div id="lowLevel">';
 			}else if(aux1[i] == "Nivel Medio"){
-				alert("Entrando nivel medio: " + aux1[i]);
+				//alert("Entrando nivel medio: " + aux1[i]);
 				muestra +='<div id="mediumLevel">';
 			}else if(aux1[i] == "Nivel Avanzado"){
-				alert("Entrando nivel avanzado: " + aux1[i]);
+				//alert("Entrando nivel avanzado: " + aux1[i]);
 				muestra +='<div id="highLevel">';
 			}else if(aux1[i].trim() == "BBVA GCS"){
-				alert("Entrando en BBVA GCS: " + aux1[i]);
+				//alert("Entrando en BBVA GCS: " + aux1[i]);
 				muestra +='<div id="bbvaGcs">';
 			}
 			
@@ -786,33 +786,33 @@
 		if(aux1[i]!=""){
 
 			if(aux1[i] == "Referencia"){
-				alert("Entrando en Referencia: " + aux1[i]);
+				//alert("Entrando en Referencia: " + aux1[i]);
 				muestra +='<div id="referencia">';
 			}else if(aux1[i] == "Trucos y consejos"){
-				alert("Entrando en trucos: " + aux1[i]);
+				//alert("Entrando en trucos: " + aux1[i]);
 				muestra +='<div id="trucos">';
 			}else if(aux1[i] == "Cómo"){
 				
-				alert("Entrando en como: " + aux1[i]);//falta estilo
+				//alert("Entrando en como: " + aux1[i]);//falta estilo
 				muestra +='<div id="como">';
 					
 			}else if(aux1[i] == "Casos de uso"){
 				
-				alert("Entrando en Casos de uso: " + aux1[i]);//falta estilo
+				//alert("Entrando en Casos de uso: " + aux1[i]);//falta estilo
 				muestra +='<div id="casosDeUso">';
 					
 			}else if(aux1[i] == "Casos de éxito"){
 				
-				alert("Entrando en Casos de éxito: " + aux1[i]);
+				//alert("Entrando en Casos de éxito: " + aux1[i]);
 				muestra +='<div id="exitos">';
 			}else if(aux1[i] == "Preguntas Frecuentes"){
 				
-				alert("Entrando en Preguntas Frecuentes: " + aux1[i]);//falta estilo
+				//alert("Entrando en Preguntas Frecuentes: " + aux1[i]);//falta estilo
 				muestra +='<div id="preguntasFrecuentes">';
 					
 			}else if(aux1[i] == "Cómo empiezo"){
 				
-				alert("Entrando en Cómo empiezo: " + aux1[i]);//falta estilo
+				//alert("Entrando en Cómo empiezo: " + aux1[i]);//falta estilo
 				muestra +='<div id="comoEmpiezo">';
 			}
 
@@ -829,26 +829,24 @@
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux2[i]!=""){
 				
-				alert("aux2[i]= " + aux2[i]);
-				
 				if(aux2[i] == "Texto"){
 				
-					alert("Entrando en texto: " + aux2[i]);//falta estilo
+					//alert("Entrando en texto: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="texto">';
 					
 				}else if(aux2[i] == "Vídeo"){
 				
-					alert("Entrando en video: " + aux2[i]);//falta estilo
+					//alert("Entrando en video: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="video">';
 					
 				}else if(aux2[i] == "PDF"){
 				
-					alert("Entrando en PDF: " + aux2[i]);//falta estilo
+					//alert("Entrando en PDF: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="pdf">';
 					
 				}else if(aux2[i].trim() == "PPT"){
 				
-					alert("Entrando en PPT: " + aux2[i]);//falta estilo
+					//alert("Entrando en PPT: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="powerPoint">';
 					
 				}
