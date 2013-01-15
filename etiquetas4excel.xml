@@ -388,7 +388,7 @@
 
 	
    <script type="text/javascript">
-   console.debug('version4');
+   console.debug('version5');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTableguias = prefs.getString("urlTableguias");
@@ -521,7 +521,7 @@
 						   html[etiquetas[i][j]] = 1;
 						   titulos +=titulo;
 						   titulos[titulo]=subsection;
-						}else if ((aux.indexOf(etiquetas[i][j])!= -1)&&(titulos.indexOf(titulo)==-1)&&(titulos[titulo]==subsection)){
+						}else if ((aux.indexOf(etiquetas[i][j])!= -1)&&(titulos.indexOf(titulo)!=-1)&&(titulos[titulo]==subsection)){
 						    html[etiquetas[i][j]]++;
 							titulos +=titulo;
 							titulos[titulo]=subsection;
