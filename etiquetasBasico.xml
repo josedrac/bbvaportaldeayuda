@@ -307,7 +307,7 @@
 					 }
 				var opts = {dataType:'jsonp'};
 				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
-			    var querytosendcontenidos = "select B,Q,D where (E like '%"+tagAux+"%') or (K like '%"+tagAux+"%') or (L like '%"+tagAux+"%')";
+			    var querytosendcontenidos = "select B,Q,D,G where (E like '%"+tagAux+"%') or (K like '%"+tagAux+"%') or (L like '%"+tagAux+"%')";
 				querycontenidos.setQuery(querytosendcontenidos);	
 				querycontenidos.send(handleQueryResponse2); 
 			}
@@ -319,18 +319,24 @@
 				var titulo = new Array();
 				var texto = new Array(); 
 				var url = new Array(); 
-				
+				var subsection="";
 				
 				for(var i=0;i<filas;i++){
 				   
 				   titulo[i] = data.getValue(i,0);
 				   texto[i]= data.getValue(i,2);
 				   url[i] = data.getValue(i,1);
+				   subsection = data.getValue(i,3);
 					  if(aux.indexOf(titulo[i])== -1){ 
 							aux += titulo[i]+"|";
 							auxtexto[titulo[i]]= texto[i];
 							auxurl[titulo[i]]= url[i];
-						
+						    aux[titulo[i]]= subsection;
+						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						    aux[titulo[i]]= subsection;
 						}
 					 }
 				var opts = {dataType:'jsonp'};
