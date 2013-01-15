@@ -507,8 +507,8 @@
 			var subsection="";
 			for (var i=0;i<filas;i++){
 				 etiquetas[i] = data2.getValue(i,0).split(",");
-				 titulo[i] = data.getValue(i,1);
-				   subsection = data.getValue(i,2);
+				 titulo[i] = data2.getValue(i,1);
+				   subsection = data2.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
 					  if(aux.indexOf(etiquetas[i][j])==-1){
 					       aux += etiquetas[i][j]+",";
