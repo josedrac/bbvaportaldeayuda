@@ -480,6 +480,7 @@
 							titulos[titulo]=subsection;
 						}else if ((aux.indexOf(etiquetas[i][j])!= -1)&&(titulos.indexOf(titulo)!=-1)&&(titulos[titulo]!=subsection)){
 						    html[etiquetas[i][j]]++;
+							titulos +=titulo;
 							titulos[titulo]=subsection;
 						}
 					
@@ -525,6 +526,7 @@
 						   titulos[titulo]=subsection;
 						}else if ((aux.indexOf(etiquetas[i][j])!= -1)&&(titulos.indexOf(titulo)!=-1)&&(titulos[titulo]!=subsection)){
 						    html[etiquetas[i][j]]++;
+							titulos +=titulo;
 							titulos[titulo]=subsection;
 						}
 					
