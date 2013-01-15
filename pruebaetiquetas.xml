@@ -661,8 +661,6 @@
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
 			
-			alert("aux1[i]= " + aux1[i]);
-			
 			if(aux1[i] == "Nivel Básico"){
 				alert("Entrando nivel basico: " + aux1[i]);
 				muestra +='<div id="lowLevel">';
@@ -745,7 +743,8 @@
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux2[i]!=""){
 				
-
+				alert("aux2[i]= " + aux2[i]);
+				
 				if(aux2[i] == "Texto"){
 				
 					alert("Entrando en texto: " + aux2[i]);//falta estilo
@@ -761,7 +760,7 @@
 					alert("Entrando en PDF: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="pdf">';
 					
-				}else if(aux2[i] == "PPT "){
+				}else if(aux2[i] == "PPT"){
 				
 					alert("Entrando en PPT: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="powerPoint">';
