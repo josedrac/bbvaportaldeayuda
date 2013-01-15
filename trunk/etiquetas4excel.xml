@@ -464,7 +464,7 @@
 				  titulo[i] = data1.getValue(i,1);
 				   subsection = data1.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[i][j])== -1){            
+					  if(titulos.indexOf(titulo[i])==-1){            
 					        
 							aux += etiquetas[i][j]+",";
 							titulos += titulo[i];
@@ -510,7 +510,7 @@
 				 titulo[i] = data2.getValue(i,1);
 				   subsection = data2.getValue(i,2);
 					for(var j=0;j<etiquetas[i].length;j++){
-					  if(aux.indexOf(etiquetas[i][j])==-1){
+					  if(titulos.indexOf(titulo[i])==-1){
 					       aux += etiquetas[i][j]+",";
 						   titulos += titulo[i];
 						   html[etiquetas[i][j]] = 1;
