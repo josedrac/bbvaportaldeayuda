@@ -473,7 +473,7 @@
 							
 							
 							
-						}else if((aux.indexOf(etiquetas[i][j])!= -1)&&(titulos[titulo[i]]!=subsection)){
+						}else if((titulos.indexOf(titulo[i])!= -1)&&(titulos[titulo[i]]!=subsection)){
 						    
 						    html[etiquetas[i][j]]++;
 							titulos[titulo[i]]=subsection;
@@ -514,7 +514,7 @@
 					       aux += etiquetas[i][j]+",";
 						   html[etiquetas[i][j]] = 1;
 						   titulos[titulo[i]]= subsection;
-						}else if((aux.indexOf(etiquetas[i][j])!= -1)&&(titulos[titulo[i]]!=subsection)){
+						}else if((titulos.indexOf(titulo[i])!= -1)&&(titulos[titulo[i]]!=subsection)){
 						   html[etiquetas[i][j]]++;
 						   titulos[titulo[i]]=subsection;
 						}
