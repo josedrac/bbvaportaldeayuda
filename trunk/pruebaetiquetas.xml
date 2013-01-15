@@ -205,7 +205,7 @@
 	font-family:BBVA Web Light;
 	text-decoration:none;
 	float:left;
-	padding-left:5px;
+	padding-left:9px;
 	}
 	
 	#mediumLevel{
@@ -232,6 +232,7 @@
 	text-align:center;
 	padding-top:4px;
 	float:left;
+	margin-right: 10px;
 	}
 	
 	#highLevel a{
@@ -258,18 +259,19 @@
 	font-family:BBVA Web Light;
 	text-decoration:none;
 	float:left;
-	padding-left:5px;
+	padding-left:14px;
 	}
 	/*Fin Etiquetas*/
 	
 	/*Tipos*/
 	#referencia{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-	width: 105px;
-	height:25;
-	float:left;
+	width:132px;
+	height:25px;
 	text-align:center;
 	padding-top:4px;
+	float:left;
+	margin-right: 10px;
 	}
 	
 	#referencia a{
