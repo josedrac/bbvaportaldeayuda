@@ -760,7 +760,7 @@
 					alert("Entrando en PDF: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="pdf">';
 					
-				}else if(aux2[i] == "PPT"){
+				}else if(aux2[i] == " PPT"){
 				
 					alert("Entrando en PPT: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="powerPoint">';
