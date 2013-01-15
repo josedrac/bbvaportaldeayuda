@@ -215,6 +215,7 @@
 	text-align:center;
 	padding-top:4px;
 	float:left;
+	margin-right:10px;
 	}
 	
 	#mediumLevel a{
@@ -250,6 +251,7 @@
 	text-align:center;
 	padding-top:4px;
 	float:left;
+	margin-right:10px;
 	}
 	
 	#bbvaGcs a{
@@ -325,6 +327,7 @@
 	height:25;
 	text-align:center;
 	padding-top:4px;
+	margin-right:10px;
 	}
 	
 	#casosDeUso a{
@@ -416,6 +419,7 @@
 	float:left;
 	text-align:center;
 	padding-top:4px;
+	margin-right:10px;
 	}
 	
 	#video a{
@@ -451,6 +455,7 @@
 	float:left;
 	text-align:center;
 	padding-top:4px;
+	margin-right:10px;
 	}
 	
 	#powerPoint a{
