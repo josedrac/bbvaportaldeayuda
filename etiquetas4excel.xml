@@ -473,7 +473,7 @@
 							titulos[titulo]=subsection;
 							
 							
-						}else if((titulos.indexOf(titulo)!=-1)&&(titulos[titulo]!=subsection)){
+						}else if((titulos.indexOf(titulo)!=-1)&&(titulos[titulo]==subsection)){
 						    
 						    html[etiquetas[i][j]]++;
 							titulos +=titulo;
