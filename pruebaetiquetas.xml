@@ -698,11 +698,29 @@
 		//alert(aux1[i]);
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux1[i]!=""){
-		muestra += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') ';
-		}
+		
+			alert("aux1[i]= " + aux1[i]);
+			if(aux1[i] == "Nivel Básico"){
+					//alert("Entrando nivel basico: " + aux1[i]);
+					muestra +='<div id="lowLevel">';
+				}else if(aux1[i] == "Nivel Medio"){
+					//alert("Entrando nivel medio: " + aux1[i]);
+					muestra +='<div id="mediumLevel">';
+				}else if(aux1[i] == "Nivel Avanzado"){
+					//alert("Entrando nivel avanzado: " + aux1[i]);
+					muestra +='<div id="highLevel">';
+				}else if(aux1[i] == "BBVA GCS"){
+					//alert("Entrando en BBVA GCS: " + aux1[i]);
+					muestra +='<div id="bbvaGcs">';
+				}
+				
+				muestra += ' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') </a> </div>';			
+			
+			}
 	 
 	} 
-	  document.getElementById('content_div').innerHTML += "<div class='tipos'>"+muestra+"</div>"; 
+	
+	 document.getElementById('content_div').innerHTML += "<div class='tipos'>"+muestra+"</div>"; 
 	 for (var i=0; i<aux2.length; i++){
 	    
 		//alert(aux1[i]);
