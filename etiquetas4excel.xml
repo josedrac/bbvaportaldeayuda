@@ -388,7 +388,7 @@
 
 	
    <script type="text/javascript">
-   console.debug('version17');
+   console.debug('version18');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTableguias = prefs.getString("urlTableguias");
@@ -619,7 +619,7 @@
 							titulos[titulo]=subsection;
 							}
 							
-						}else if((formato.indexOf(formatos[i][j])!=-1)&&(titulos.indexOf(titulo[i])==-1)&&(titulos[titulo[i]]!=subsection)){
+						}else if((formato.indexOf(formatos[i][j])!=-1)&&(titulos.indexOf(titulo[i])!=-1)&&(titulos[titulo[i]]!=subsection)){
 						    contadorFormato[formatos[i][j]]++;
 							titulos +=titulo;
 							titulos[titulo]=subsection;
@@ -663,7 +663,7 @@
 							titulos +=titulo;
 							titulos[titulo]=subsection;
 							}
-						}else if((formato.indexOf(formatos[i][j])!=-1)&&(titulos.indexOf(titulo[i])==-1)&&(titulos[titulo[i]]!=subsection)){
+						}else if((formato.indexOf(formatos[i][j])!=-1)&&(titulos.indexOf(titulo[i])!=-1)&&(titulos[titulo[i]]!=subsection)){
 						    contadorFormato[formatos[i][j]]++;
 							titulos +=titulo;
 							titulos[titulo]=subsection;
