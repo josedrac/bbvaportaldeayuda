@@ -148,13 +148,8 @@
             var VarEnlace10Texto=prefs.getString("VarEnlace10Texto");
             var VarEnlace10URL=prefs.getString("VarEnlace10URL");
            
-            function Go(destination){
-
-			//window.parent.location.href = destination;
-			window.open(destination,'_blank');
-			return false;
-			} 
-			 function Go2(destination){
+            
+			function Go2(destination){
 
 			window.open(destination,'_blank');
 			return false;
@@ -167,9 +162,7 @@
                 {
                     var link = 'href=\"#\" onclick=\"' + varEnlace + '\" ';
                 }
-                else{
-                    var link = 'href=\"#\"  target=\"_blank\" ';
-                }
+                
                 return link;
             }
 		
@@ -186,7 +179,7 @@
 					VarEnlace1URL = urlbase+VarEnlace1URL;
 					var strLink = devuelveEnlace(VarEnlace1URL);
 					}
-                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1" ' + strLink + ' title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
+                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1" href="#" title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
                 }
                 if ((VarEnlace2Texto!="")&&(VarEnlace2URL!=""))
                 {    
