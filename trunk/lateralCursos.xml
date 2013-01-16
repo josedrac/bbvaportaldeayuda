@@ -151,7 +151,7 @@
             function Go(destination){
 
 			//window.parent.location.href = destination;
-			window.open(destination,'_blank');
+			window.parent.open(destination,'_blank');
 			return false;
 			} 
 			 function Go2(destination){
