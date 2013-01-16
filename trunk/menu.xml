@@ -82,7 +82,7 @@ ol, ul {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#00529b',GradientType=0 );
 	*/
 	position: relative;
-	font-family: BBVA Web Medium, Arial, sans-serif;
+	font-family: BBVA Web Light, Arial, sans-serif;
 	font-weight: normal;
 	text-align: center;
 }
@@ -145,7 +145,7 @@ border-top-right-radius: 5px;
   color: #FFF;
   cursor: pointer;
   text-decoration:none;
-  font-family: BBVA Web Medium, Arial, sans-serif;
+  font-family: BBVA Web Light, Arial, sans-serif;
   font-size:14px;
   font-style:normal;
   font-weight: bold;
