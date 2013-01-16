@@ -99,7 +99,7 @@
 		} 
 		    
 		ul li a{
-         	padding-left: 30px;
+         	padding-left: 0px;
 			vertical-align: 3px;
 			text-decoration: none;
          	font: 12px Arial;
