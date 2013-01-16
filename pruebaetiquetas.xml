@@ -136,7 +136,7 @@
             width: 298px;
             clear: both;
 			margin-top:15px;
-			height:375px;
+			height:396px;
 			font-family:BBVA Web Light;
 			font-size:12px;
 			
@@ -157,7 +157,7 @@
 		padding-left: 20px;
 		padding-top: 14px;
 		padding-bottom: 15px;
-		/*margin-bottom:30px;*/
+		margin-bottom:10px;
 	}
 
 	/*Grupos de Etiquetas*/
@@ -202,7 +202,7 @@
 	font-weight:bold;
 	font-size:12px;
 	color:#0072C9;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	text-decoration:none;
 	float:left;
 	padding-left:9px;
@@ -223,7 +223,7 @@
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	}
 	
 	#highLevel{
@@ -238,7 +238,7 @@
 	
 	#highLevel a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
@@ -258,7 +258,7 @@
 	font-weight:bold;
 	font-size:12px;
 	color:#0072C9;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	text-decoration:none;
 	float:left;
 	padding-left:14px;
@@ -278,7 +278,7 @@
 	
 	#referencia a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
@@ -296,7 +296,7 @@
 	
 	#trucos a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
@@ -314,7 +314,7 @@
 	
 	#como a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
@@ -332,7 +332,7 @@
 	
 	#casosDeUso a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
@@ -350,7 +350,7 @@
 	
 	#exitos a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
@@ -368,7 +368,7 @@
 	
 	#preguntasFrecuentes a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
@@ -386,7 +386,7 @@
 	
 	#comoEmpiezo a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#0072C9;
 	text-decoration:none;
@@ -406,7 +406,7 @@
 	
 	#texto a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
@@ -424,7 +424,7 @@
 	
 	#video a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
@@ -442,7 +442,7 @@
 	
 	#pdf a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
@@ -460,7 +460,7 @@
 	
 	#powerPoint a{
 	font-weight:bold;
-	font-family:BBVA Web Light;
+	font-family:BBVA Web Light, Arial, sans-serif;
 	font-size:12px;
 	color:#fff;
 	text-decoration:none;
