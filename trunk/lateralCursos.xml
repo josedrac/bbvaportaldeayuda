@@ -168,7 +168,7 @@
                     var link = 'href=\"#\" onclick=\"' + varEnlace + '\" ';
                 }
                 else{
-                    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
+                    var link = 'href="#"  target=\"_blank\" ';
                 }
                 return link;
             }
