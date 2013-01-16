@@ -415,6 +415,16 @@
 			width: 650px;
 		}
 		
+		/* @group reset clearfix */
+.clearfix:before, div:before, article:before, section:before, nav:before, header:before, footer:before, .clearfix:after, div:after, article:after, section:after, nav:after, header:after, footer:after {
+	content: " ";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0pt;
+	height: 0pt;
+}
+		
 	</style>
 	
 <body onload="cargaCompleta()">
