@@ -248,7 +248,7 @@
 	
 	#bbvaGcs{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
-	width:109px;
+	width:105px;
 	height:25px;
 	text-align:center;
 	padding-top:4px;
@@ -263,7 +263,7 @@
 	font-family:BBVA Web Light, Arial, sans-serif;
 	text-decoration:none;
 	float:left;
-	padding-left:13px;
+	padding-left:11px;
 	}
 	/*Fin Etiquetas*/
 	
