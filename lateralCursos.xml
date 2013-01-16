@@ -169,9 +169,9 @@
                 }
                 else if(varEnlace.indexOf('support')!=-1){
                    
-				    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
+				    var link = 'href=\"'+ varEnlace +'\"   ';
 				}else{
-                    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
+                    var link = 'href=\"'+ varEnlace +'\"   ';
                 }
                 return link;
             }
