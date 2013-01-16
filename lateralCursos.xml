@@ -151,7 +151,7 @@
             function Go(destination){
 
 			//window.parent.location.href = destination;
-			window.parent.open(destination,'_blank');
+			window.open(destination,'_blank');
 			return false;
 			} 
 			 function Go2(destination){
@@ -169,9 +169,9 @@
                 }
                 else if(varEnlace.indexOf('support')!=-1){
                    
-				    var link = 'href=\"'+ varEnlace +'\"   ';
+				    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
 				}else{
-                    var link = 'href=\"'+ varEnlace +'\"   ';
+                    var link = 'href=\"'+ varEnlace +'\"  target=\"_parent\" ';
                 }
                 return link;
             }
@@ -189,7 +189,7 @@
 					VarEnlace1URL = urlbase+VarEnlace1URL;
 					var strLink = devuelveEnlace(VarEnlace1URL);
 					}
-                    html+='<li class="op1" onclick="Go(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1" ' + strLink + ' title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
+                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1" ' + strLink + ' title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
                 }
                 if ((VarEnlace2Texto!="")&&(VarEnlace2URL!=""))
                 {    
@@ -199,7 +199,7 @@
 					VarEnlace2URL = urlbase+VarEnlace2URL;
 					var strLink = devuelveEnlace(VarEnlace2URL);
 					}
-                    html+='<li class="op2" onclick="Go(\''+VarEnlace2URL+'\')">&nbsp;&nbsp;<a class="link2"' + strLink + ' title=\"' + VarEnlace2Texto + '\"  >' + VarEnlace2Texto + '</a></li>';
+                    html+='<li class="op2" onclick="Go2(\''+VarEnlace2URL+'\')">&nbsp;&nbsp;<a class="link2"' + strLink + ' title=\"' + VarEnlace2Texto + '\"  >' + VarEnlace2Texto + '</a></li>';
                 }
                 if ((VarEnlace3Texto!="")&&(VarEnlace3URL!=""))
                 {    
@@ -209,7 +209,7 @@
 					VarEnlace3URL = urlbase+VarEnlace3URL;
 					var strLink = devuelveEnlace(VarEnlace3URL);
 					}
-                    html+='<li class="op3" onclick="Go(\''+VarEnlace3URL+'\')">&nbsp;&nbsp;<a class="link3" ' + strLink + ' title=\"' + VarEnlace3Texto + '\"  >' + VarEnlace3Texto + '</a></li>';
+                    html+='<li class="op3" onclick="Go2(\''+VarEnlace3URL+'\')">&nbsp;&nbsp;<a class="link3" ' + strLink + ' title=\"' + VarEnlace3Texto + '\"  >' + VarEnlace3Texto + '</a></li>';
                 }
 				if ((VarEnlace4Texto!="")&&(VarEnlace4URL!=""))
                 {    
@@ -219,7 +219,7 @@
 					VarEnlace4URL = urlbase+VarEnlace4URL;
 					var strLink = devuelveEnlace(VarEnlace4URL);
 					}
-                    html+='<li class="op4" onclick="Go(\''+VarEnlace4URL+'\')">&nbsp;&nbsp;<a class="link4" ' + strLink + ' title=\"' + VarEnlace4Texto + '\"  >' + VarEnlace4Texto + '</a></li>';
+                    html+='<li class="op4" onclick="Go2(\''+VarEnlace4URL+'\')">&nbsp;&nbsp;<a class="link4" ' + strLink + ' title=\"' + VarEnlace4Texto + '\"  >' + VarEnlace4Texto + '</a></li>';
                 }
                  if ((VarEnlace5Texto!="")&&(VarEnlace5URL!=""))
                 {    
@@ -229,7 +229,7 @@
 					VarEnlace5URL = urlbase+VarEnlace5URL;
 					var strLink = devuelveEnlace(VarEnlace5URL);
 					}
-                    html+='<li class="op5" onclick="Go(\''+VarEnlace5URL+'\')">&nbsp;&nbsp;<a class="link5"' + strLink + ' title=\"' + VarEnlace5Texto + '\"  >' + VarEnlace5Texto + '</a></li>';
+                    html+='<li class="op5" onclick="Go2(\''+VarEnlace5URL+'\')">&nbsp;&nbsp;<a class="link5"' + strLink + ' title=\"' + VarEnlace5Texto + '\"  >' + VarEnlace5Texto + '</a></li>';
                 }
                  if ((VarEnlace6Texto!="")&&(VarEnlace6URL!=""))
                 {    
@@ -239,7 +239,7 @@
 					VarEnlace6URL = urlbase+VarEnlace6URL;
 					var strLink = devuelveEnlace(VarEnlace6URL);
 					}
-                    html+='<li class="op6" onclick="Go(\''+VarEnlace6URL+'\')">&nbsp;&nbsp;<a class="link6" ' + strLink + ' title=\"' + VarEnlace6Texto + '\"  >' + VarEnlace6Texto + '</a></li>';
+                    html+='<li class="op6" onclick="Go2(\''+VarEnlace6URL+'\')">&nbsp;&nbsp;<a class="link6" ' + strLink + ' title=\"' + VarEnlace6Texto + '\"  >' + VarEnlace6Texto + '</a></li>';
                 }
                  if ((VarEnlace7Texto!="")&&(VarEnlace7URL!=""))
                 {    
@@ -249,7 +249,7 @@
 					VarEnlace7URL = urlbase+VarEnlace7URL;
 					var strLink = devuelveEnlace(VarEnlace7URL);
 					}
-                    html+='<li class="op7" onclick="Go(\''+VarEnlace7URL+'\')">&nbsp;&nbsp;<a class="link7"' + strLink + ' title=\"' + VarEnlace7Texto + '\"  >' + VarEnlace7Texto + '</a></li>';
+                    html+='<li class="op7" onclick="Go2(\''+VarEnlace7URL+'\')">&nbsp;&nbsp;<a class="link7"' + strLink + ' title=\"' + VarEnlace7Texto + '\"  >' + VarEnlace7Texto + '</a></li>';
                 }
                  if ((VarEnlace8Texto!="")&&(VarEnlace8URL!=""))
                 {    
@@ -259,7 +259,7 @@
 					VarEnlace8URL = urlbase+VarEnlace8URL;
 					var strLink = devuelveEnlace(VarEnlace8URL);
 					}
-                    html+='<li class="op8" onclick="Go(\''+VarEnlace8URL+'\')">&nbsp;&nbsp;<a class="link8"' + strLink + ' title=\"' + VarEnlace8Texto + '\"  >' + VarEnlace8Texto + '</a></li>';
+                    html+='<li class="op8" onclick="Go2(\''+VarEnlace8URL+'\')">&nbsp;&nbsp;<a class="link8"' + strLink + ' title=\"' + VarEnlace8Texto + '\"  >' + VarEnlace8Texto + '</a></li>';
                 }
                  if ((VarEnlace9Texto!="")&&(VarEnlace9URL!=""))
                 {    
@@ -280,7 +280,7 @@
 					VarEnlace10URL = urlbase+VarEnlace10URL;
 					var strLink = devuelveEnlace(VarEnlace10URL);
 					}
-                    html+='<li class="op10" onclick="Go(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10" ' + strLink + ' title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
+                    html+='<li class="op10" onclick="Go2(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10" ' + strLink + ' title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
                 }
                 return html;
             }    
