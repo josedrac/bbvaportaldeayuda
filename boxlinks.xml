@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-    <ModulePrefs title="Cajetin botones"
+    <ModulePrefs title="boxlinks.xml Cajetin botones"
         title_url=""
         height=""
         width="300"
@@ -9,8 +9,7 @@
         description="Cajetin botones"
         screenshot=""
         thumbnail=""  
-        scrolling="false"
-        author_location="Asturias, Spain"
+        scrolling="false"       
         scaling="false">
         <Require feature="setprefs"/>
     </ModulePrefs>
