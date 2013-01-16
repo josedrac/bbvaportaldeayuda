@@ -331,6 +331,11 @@
 							auxtexto[titulo[i]]= texto[i];
 							auxurl[titulo[i]]= url[i];
 						
+						}else if((aux.indexOf(titulo[i])== -1)&&(aux[titulo[i]]!=subsection)){
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						    aux[titulo[i]]= subsection;
 						}
 					 }
 				var opts = {dataType:'jsonp'};
