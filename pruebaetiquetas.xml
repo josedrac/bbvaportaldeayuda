@@ -276,6 +276,7 @@
 	padding-top:4px;
 	float:left;
 	margin-right: 10px;
+	background-repeat: repeat-x;
 	}
 	
 	#referencia a{
@@ -406,6 +407,7 @@
 	text-align:center;
 	padding-top:4px;
 	margin-right: 10px;
+	background-repeat: repeat-x;
 	}
 	
 	#texto a{
