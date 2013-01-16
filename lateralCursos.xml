@@ -177,7 +177,7 @@
                     var strLink = devuelveEnlace(VarEnlace1URL);
 					}else{
 					VarEnlace1URL = urlbase+VarEnlace1URL;
-					var strLink = devuelveEnlace(VarEnlace1URL);
+					
 					}
                     html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1"  title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
                 }
@@ -187,7 +187,7 @@
                     var strLink = devuelveEnlace(VarEnlace2URL);
 					}else{
 					VarEnlace2URL = urlbase+VarEnlace2URL;
-					var strLink = devuelveEnlace(VarEnlace2URL);
+					
 					}
                     html+='<li class="op2" onclick="Go2(\''+VarEnlace2URL+'\')">&nbsp;&nbsp;<a class="link2" title=\"' + VarEnlace2Texto + '\"  >' + VarEnlace2Texto + '</a></li>';
                 }
@@ -207,7 +207,7 @@
                     var strLink = devuelveEnlace(VarEnlace4URL);
 					}else{
 					VarEnlace4URL = urlbase+VarEnlace4URL;
-					var strLink = devuelveEnlace(VarEnlace4URL);
+					
 					}
                     html+='<li class="op4" onclick="Go2(\''+VarEnlace4URL+'\')">&nbsp;&nbsp;<a class="link4"  title=\"' + VarEnlace4Texto + '\"  >' + VarEnlace4Texto + '</a></li>';
                 }
@@ -217,7 +217,7 @@
                     var strLink = devuelveEnlace(VarEnlace5URL);
 					}else{
 					VarEnlace5URL = urlbase+VarEnlace5URL;
-					var strLink = devuelveEnlace(VarEnlace5URL);
+					
 					}
                     html+='<li class="op5" onclick="Go2(\''+VarEnlace5URL+'\')">&nbsp;&nbsp;<a class="link5" title=\"' + VarEnlace5Texto + '\"  >' + VarEnlace5Texto + '</a></li>';
                 }
@@ -227,7 +227,7 @@
                     var strLink = devuelveEnlace(VarEnlace6URL);
 					}else{
 					VarEnlace6URL = urlbase+VarEnlace6URL;
-					var strLink = devuelveEnlace(VarEnlace6URL);
+					
 					}
                     html+='<li class="op6" onclick="Go2(\''+VarEnlace6URL+'\')">&nbsp;&nbsp;<a class="link6"  title=\"' + VarEnlace6Texto + '\"  >' + VarEnlace6Texto + '</a></li>';
                 }
@@ -237,7 +237,7 @@
                     var strLink = devuelveEnlace(VarEnlace7URL);
 					}else{
 					VarEnlace7URL = urlbase+VarEnlace7URL;
-					var strLink = devuelveEnlace(VarEnlace7URL);
+					
 					}
                     html+='<li class="op7" onclick="Go2(\''+VarEnlace7URL+'\')">&nbsp;&nbsp;<a class="link7" title=\"' + VarEnlace7Texto + '\"  >' + VarEnlace7Texto + '</a></li>';
                 }
@@ -247,7 +247,7 @@
                     var strLink = devuelveEnlace(VarEnlace8URL);
 					}else{
 					VarEnlace8URL = urlbase+VarEnlace8URL;
-					var strLink = devuelveEnlace(VarEnlace8URL);
+					
 					}
                     html+='<li class="op8" onclick="Go2(\''+VarEnlace8URL+'\')">&nbsp;&nbsp;<a class="link8" title=\"' + VarEnlace8Texto + '\"  >' + VarEnlace8Texto + '</a></li>';
                 }
@@ -257,9 +257,9 @@
                     var strLink = devuelveEnlace(VarEnlace9URL);
 					}else{
 					VarEnlace9URL = urlbase+VarEnlace9URL;
-					var strLink = devuelveEnlace(VarEnlace9URL);
+					
 					}
-                    html+='<li class="op9" onclick="Go2(\''+strLink+'\')">&nbsp;&nbsp;<a class="link9"  title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
+                    html+='<li class="op9" onclick="Go2(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9"  title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
 					
                 }
                  if ((VarEnlace10Texto!="")&&(VarEnlace10URL!=""))
@@ -268,7 +268,7 @@
                     var strLink = devuelveEnlace(VarEnlace10URL);
 					}else{
 					VarEnlace10URL = urlbase+VarEnlace10URL;
-					var strLink = devuelveEnlace(VarEnlace10URL);
+					
 					}
                     html+='<li class="op10" onclick="Go2(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10"  title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
                 }
