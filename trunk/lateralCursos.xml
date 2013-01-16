@@ -150,7 +150,8 @@
            
             function Go(destination){
 
-			window.parent.location.href = destination;
+			//window.parent.location.href = destination;
+			window.open(destination,'_blank');
 			return false;
 			} 
 			 function Go2(destination){
@@ -170,7 +171,7 @@
                    
 				    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
 				}else{
-                    var link = 'href=\"'+ varEnlace +'\"  target=\"_parent\" ';
+                    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
                 }
                 return link;
             }
