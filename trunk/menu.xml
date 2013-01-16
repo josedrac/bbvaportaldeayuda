@@ -147,7 +147,9 @@ border-top-right-radius: 5px;
   text-decoration:none;
   font-family: BBVA Web Medium, Arial, sans-serif;
   font-size:14px;
-  font-style:normal;  
+  font-style:normal;
+  font-weight: bold;
+    
 }
 
 .cabeceramenu ul li.home {
