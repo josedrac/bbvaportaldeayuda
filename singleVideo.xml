@@ -68,7 +68,7 @@
 	  	}
       	#titleVideo {
 			color: #0078D2;
-			font: 22px BBVA Web Light;
+			font: 22px BBVA Web Light, BBVA Web, Arial, sans-serif;
 			padding-bottom: 10px;
 			padding-left: 10px;
 			border-bottom: 1px #D1D1D1 solid;
@@ -90,7 +90,7 @@
 			margin-right: 0;
 			text-decoration: none;
 			color: white;
-			font: 12px BBVA Web Medium;
+			font: 12px BBVA Web Medium, Arial, sans-serif;
 			margin-left: 4px;
 		}
 		hr {
