@@ -388,7 +388,7 @@
 
 	
    <script type="text/javascript">
-   console.debug('version23');
+   //console.debug('version23');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTableguias = prefs.getString("urlTableguias");
