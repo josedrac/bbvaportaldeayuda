@@ -193,7 +193,7 @@ padding-left: 23px;
 line-height: 17px;
 }
 .btn span {
-font-family: BBVA Web Medium;
+font-family: BBVA Web Medium, Arial, sans-serif;
 font-size: 1.2em;
 display: inline-block;
 margin-left: -1px;
