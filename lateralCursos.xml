@@ -171,7 +171,7 @@
                    
 				    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
 				}else{
-                    var link = 'href=\"'+ varEnlace +'\"  target=\"_parent\" ';
+                    var link = 'href=\"'+ varEnlace +'\"  target=\"_blank\" ';
                 }
                 return link;
             }
