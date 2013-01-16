@@ -8,10 +8,10 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="urlTableguias" default_value="" display_name="Data source url guias(Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="urlTablecontenidos" default_value="" display_name="Data source url contenidos  (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="urlTableexitos" default_value="" display_name="Data source url exitos (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="urlTablemovilidad" default_value="" display_name="Data source url movilidad (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTableguias" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdFFtZ0NkZjM4MjVsVmxDS3o1VnpYdFE#gid=0" display_name="Data source url guias(Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTablecontenidos" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHMyNFVoWHpfR2piNzdyUkxEbVVtSmc#gid=0" display_name="Data source url contenidos  (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTableexitos" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdFZEa1dETzBYRFF0Y2NPN0ZHRTlWR0E#gid=0" display_name="Data source url exitos (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTablemovilidad" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHlMVGhUeHNBTFJhWkEyU0MyTlUyd1E#gid=0" display_name="Data source url movilidad (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 
 <UserPref name="titlebox" display_name="Title of Tag Box" required="true" />  
     
@@ -388,7 +388,7 @@
 
 	
    <script type="text/javascript">
-   console.debug('version20');
+   console.debug('version21');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTableguias = prefs.getString("urlTableguias");
