@@ -190,7 +190,7 @@
 	/*Etiquetas*/
 	#lowLevel{
 	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
-	width:110px;
+	width:125px;
 	height:25px;
 	text-align:center;
 	padding-top:4px;
@@ -206,7 +206,7 @@
 	font-family:BBVA Web Light, Arial, sans-serif;
 	text-decoration:none;
 	float:left;
-	padding-left:4px;
+	padding-left:12px;
 	}
 	
 	#mediumLevel{
@@ -263,7 +263,7 @@
 	font-family:BBVA Web Light, Arial, sans-serif;
 	text-decoration:none;
 	float:left;
-	padding-left:14px;
+	padding-left:13px;
 	}
 	/*Fin Etiquetas*/
 	
