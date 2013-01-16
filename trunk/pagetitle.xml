@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="titlepage.xml"
+  <ModulePrefs title="pagetitle.xml"
     description=""
     author_affiliation="Capgemini"
     height ="50">
