@@ -179,7 +179,7 @@
 					VarEnlace1URL = urlbase+VarEnlace1URL;
 					var strLink = devuelveEnlace(VarEnlace1URL);
 					}
-                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1" href="#" title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
+                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1"  title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
                 }
                 if ((VarEnlace2Texto!="")&&(VarEnlace2URL!=""))
                 {    
