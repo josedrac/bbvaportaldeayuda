@@ -165,8 +165,8 @@
 	margin-left:13px;
 	
 	}
-	.tablasoporte td{
-	width:250px;
+	.pais{
+	width:90px;
 	padding-bottom:2px;
 	color:#434A58;
 	}
@@ -219,9 +219,9 @@
 				var html= "";
 				html += "<table class='tablasoporte'>";
 				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr><tr/></table>";
-			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table class='tablasoporte'>";
+			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table>";
 				for(var i=1;i<filas;i++){
-					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
+					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
 				html += "</table>";
