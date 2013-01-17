@@ -189,19 +189,20 @@
 	}
 	.horario{
 	width:90px;
+	padding-left:35px
 	}
 	
 	.country{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:90px;
+	width:83px;
 	}
 	.correo{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:180px;
+	width:167px;
 	}
 	.telefono{
 	font-family:BBVA Web Light;
@@ -214,6 +215,7 @@
 	font-size:18px;
 	color:#434a45;
 	width:150px;
+	;
 	}
 	
 	</style>
