@@ -337,6 +337,7 @@ top: 2px;
 				
 				
 			}
+			
 		function handleQueryResponse(response)
 		{
 		
