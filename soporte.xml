@@ -182,7 +182,7 @@
 	width:90px;
 	}
 	.email{
-	width:150px;
+	width:175px;
 	}
 	.phone{
 	width:110px;
@@ -195,13 +195,13 @@
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:93px;
+	width:90px;
 	}
 	.correo{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:155px;
+	width:175px;
 	}
 	.telefono{
 	font-family:BBVA Web Light;
