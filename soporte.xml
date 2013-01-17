@@ -192,13 +192,29 @@
 	width:90px;
 	}
 	
-	.cabecera td{
+	.country{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
 	width:35px;
-	
-	
+	}
+	.correo{
+	font-family:BBVA Web Light;
+	font-size:18px;
+	color:#434a45;
+	width:35px;
+	}
+	.telefono{
+	font-family:BBVA Web Light;
+	font-size:18px;
+	color:#434a45;
+	width:35px;
+	}
+	.atencion{
+	font-family:BBVA Web Light;
+	font-size:18px;
+	color:#434a45;
+	width:35px;
 	}
 	
 	</style>
@@ -238,8 +254,8 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
 				var html= "";
-				html += "<table class='tablasoporte'>";
-				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr><tr/></table>";
+				html += "<table id='tablasoporte'>";
+				html += "<tr><td class='country'>Pa&iacute;s</td><td class='correo'>Correo</td><td class='telefono'>Tel&eacute;fono</td><td class='atencion'>Horario de atenci&oacute;n</td></tr><tr/></table>";
 			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table id='tabladatos'>";
 				for(var i=1;i<filas;i++){
 					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td class='email'>"+data.getValue(i,1)+"</td><td class='phone'>"+data.getValue(i,2)+"</td><td class='horario'>"+data.getValue(i,3)+"</td></tr>";
