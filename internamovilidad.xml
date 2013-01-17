@@ -85,6 +85,7 @@
 		height:427px;
 		margin-right:4px;
 		margin-top:5px;
+		text-align: center;
 	  }
 	  #urlVideo2{
 		float:right;
@@ -351,7 +352,7 @@ top: 2px;
 			   html += "<div id='textVideo'>"+data.getValue(0,4)+"</div>";
 			   html += "<div id='urlVideo'>";
 			   //html += "<embed src='"+data.getValue(0,3)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'></embed></div>";
-			   html += "<img src='"+data.getValue(0,3)+"' width='620' height='427' /></div>";
+			   html += "<img src='"+data.getValue(0,3)+"' width='360' height='427' /></div>";
 			   
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="<span class='titleguia'>Índice de esta guía</span>";
