@@ -334,6 +334,17 @@
 	margin-right:34px;
 	}
 	
+	
+	.blockTypes {
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+		float:left;
+		width: 150px;
+		height:25;
+		text-align:center;
+		padding-top:4px;
+		margin-right:34px;	
+	}
+	
 	#casosDeUso a{
 	font-weight:bold;
 	font-family:BBVA Web Light, Arial, sans-serif;
@@ -816,23 +827,18 @@
 }
 
 
-function mostrarTipos(){
-	
-	//alert("llego a muestra");
-	//alert(aux);
-	//alert (aux.length);
+function mostrarTipos()
+{
     var muestra="";
 	var muestra2="";
 	var aux1= tipo.split(",");
 	var aux2= formato.split(",");
-	//alert(aux1.length);
-	for (var i=0; i<aux1.length; i++){
-	    
-		//alert(aux1[i]);
-		//alert("html[aux[i][j]] "+html[aux[i][j]]);
-		if(aux1[i]!=""){
 
-			if(aux1[i] == "Referencia"){
+	for (var i=0; i<aux1.length; i++)
+	{
+		if(aux1[i]!="")
+		{
+			/*if(aux1[i] == "Referencia"){
 				//alert("Entrando en Referencia: " + aux1[i]);
 				muestra +='<div id="referencia">';
 			}else if(aux1[i] == "Trucos y consejos"){
@@ -861,12 +867,12 @@ function mostrarTipos(){
 				
 				//alert("Entrando en Cómo empiezo: " + aux1[i]);//falta estilo
 				muestra +='<div id="comoEmpiezo">';
-			}
-
-			muestra += ' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') </a> </div>';			
+			}*/
 			
-		}
-	 
+			muestra +='<div class="blockTypes">';
+			muestra += ' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') </a>';
+			muestra +='</div>';		
+		}	 
 	} 
 	
 	 document.getElementById('content_div').innerHTML += "<div class='tipos'>"+muestra+"</div>"; 
