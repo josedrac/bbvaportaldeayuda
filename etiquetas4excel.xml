@@ -133,6 +133,7 @@
 		color: #0072C9;
 		text-decoration: none;		
 		padding:0 5px;
+		font-weight: normal;
 	}
 	
 	.blockTypes a {		
