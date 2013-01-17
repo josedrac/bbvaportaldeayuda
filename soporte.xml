@@ -181,6 +181,15 @@
 	.pais{
 	width:90px;
 	}
+	.email{
+	width:90px;
+	}
+	.phone{
+	width:90px;
+	}
+	.horario{
+	width:90px;
+	}
 	
 	.cabecera td{
 	font-family:BBVA Web Light;
@@ -232,7 +241,7 @@
 				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr><tr/></table>";
 			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table id='tabladatos'>";
 				for(var i=1;i<filas;i++){
-					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
+					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td class='email'>"+data.getValue(i,1)+"</td><td class='phone'>"+data.getValue(i,2)+"</td><td class='horario'>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
 				html += "</table>";
