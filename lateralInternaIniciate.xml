@@ -128,7 +128,7 @@
 				for(var i=0;i<filas;i++){
 				    if(subseccion != 'Subsección'){
 					//html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
-					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
+					//html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
 				    html +="<div id='subsection"+subseccion+"' class='subseccion'></div>";
 					
 					}
