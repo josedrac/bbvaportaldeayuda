@@ -156,7 +156,7 @@
 	clear:left;
 	display:block;
 	}
-	#tablesoporte{
+	.tablasoporte{
 	width:675px;
 	font-family:Arial;
 	font-size:12px;
@@ -165,10 +165,21 @@
 	margin-left:13px;
 	
 	}
-	.pais{
-	width:90px;
+	.tablasoporte td{
+	width:250px;
 	padding-bottom:2px;
 	color:#434A58;
+	}
+	#tabladatos{
+	width:675px;
+	font-family:Arial;
+	font-size:12px;
+	color:#434a45;
+	margin-top:-22px;
+	margin-left:13px;
+	}
+	.pais{
+	width:90px;
 	}
 	
 	.cabecera td{
@@ -219,7 +230,7 @@
 				var html= "";
 				html += "<table class='tablasoporte'>";
 				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td>Correo</td><td>Tel&eacute;fono</td><td>Horario de atenci&oacute;n</td></tr><tr/></table>";
-			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table id='tablesoporte'>";
+			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table id='tabladatos'>";
 				for(var i=1;i<filas;i++){
 					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
 	
