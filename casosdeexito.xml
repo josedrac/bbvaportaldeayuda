@@ -248,7 +248,8 @@
 		margin-top:-2px;
       }
 	
-	.bloqueAnterior img{
+	.bloqueAnterior img,
+	.bloqueSiguiente img{
       		border: 0;
       }
       
@@ -260,10 +261,6 @@
 		padding-left:10px;
           color:#0078D2;
 		width:64px;
-      }
-      
-      .bloqueSiguiente img{
-      		border: 0;
       }
       
 	p.text {	 
@@ -293,8 +290,13 @@
 		padding-top:4px;
 		padding-left:2px;
 		padding-right:2px;
+	}
+	
+	.checkpage img,
+	.checkpage1 img{
 		border: 0;
 	}
+	
 	</style>
 	
 <div id="listportales"></div>	
