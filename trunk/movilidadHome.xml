@@ -180,24 +180,6 @@
 		font-weight: normal;
 	}
 	
-	<!--[if FF]>
-		.linedowntitle{	
-			width:298px;
-			display:block;
-			margin-top:-17px !important;
-			height:4px;
-		}
-	<![endif]-->
-	
-	<!--[if IE]>
-		.linedowntitle{	
-				width:298px;
-				display:block;
-				height:4px;
-			}
-		
-	<![endif]-->
-	
 	.linedowntitle{	
 				width:298px;
 				display:block;
