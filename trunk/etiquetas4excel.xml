@@ -488,29 +488,7 @@
 	
 	/******/
 	
-	.blockTypes 
-	{
-		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
-		float: left;
-		width: auto;
-		height: 25;
-		text-align: left;
-		padding-top: 4px;
-		margin-right: 34px;	
-		font-family:BBVA Web Light, Arial, sans-serif;
-	}
-	
-	.blockTypes a 
-	{
-		font-weight: bold;
-		font-family: BBVA Web Light, Arial, sans-serif;
-		font-size: 12px;
-		color: #0072C9;
-		text-decoration: none;		
-	}
-		
-	.blockLabels 
-	{
+	.blockLabels {
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 		float: left;
 		width: auto;
@@ -521,15 +499,47 @@
 		font-family:BBVA Web Light, Arial, sans-serif;
 	}
 	
+	.blockTypes {
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+		float: left;
+		width: auto;
+		height: 25;
+		text-align: left;
+		padding-top: 4px;
+		margin-right: 34px;	
+		font-family:BBVA Web Light, Arial, sans-serif;
+	}	
+		
+	.blockFormats {
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+		width: 132px;
+		height:25;
+		float:left;
+		text-align:center;
+		padding-top:4px;
+		margin-right:30px;
+	}
+	
 	.blockTypes a,
-	.blockLabels a
-	{
+	.blockLabels a,
+	.blockFormats a {
 		font-weight: bold;
 		font-family: BBVA Web Light, Arial, sans-serif;
 		font-size: 12px;
 		color: #0072C9;
 		text-decoration: none;		
 	}
+	
+	.blockTypes a {		
+		color: #0072C9;			
+	}
+	
+	.blockLabels a,
+	.blockFormats a {		
+		color: #fff;			
+	}
+	
+	
 	
 </style>
 
@@ -909,7 +919,7 @@ function mostrarTipos()
 		//alert("html[aux[i][j]] "+html[aux[i][j]]);
 		if(aux2[i]!=""){
 				
-				if(aux2[i] == "Texto"){
+			/*	if(aux2[i] == "Texto"){
 				
 					//alert("Entrando en texto: " + aux2[i]);//falta estilo
 					muestra2 +='<div id="texto">';
@@ -930,8 +940,11 @@ function mostrarTipos()
 					muestra2 +='<div id="powerPoint">';
 					
 				}
+				*/
 		
-				muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>Formato:' +aux2[i]+' ('+contadorFormato[aux2[i]]+') </a> </div>';
+				muestra2 +='<div id="blockFormats">';
+				muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>Formato:' +aux2[i]+' ('+contadorFormato[aux2[i]]+') </a>';
+				muestra2 += '</div>';
 		}
 	 
 	}  
