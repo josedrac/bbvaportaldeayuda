@@ -182,7 +182,8 @@
 	width:90px;
 	}
 	.email{
-	width:90px;
+	width:150px;
+	padding-left:11px;
 	}
 	.phone{
 	width:90px;
