@@ -33,8 +33,7 @@
     <UserPref name="VarEnlace8URL" display_name="enlace 8:" default_value=""/>
     <UserPref name="VarEnlace9Texto" display_name="Texto enlace 9:" default_value=""/>
     <UserPref name="VarEnlace9URL" display_name="enlace 9:" default_value=""/>
-    <UserPref name="VarEnlace10Texto" display_name="Texto enlace 10:" default_value=""/>
-    <UserPref name="VarEnlace10URL" display_name="enlace 10:" default_value=""/>
+   
     <Content type="html" view="home"><![CDATA[
         <style>
           @font-face {
@@ -145,8 +144,7 @@
             var VarEnlace9Texto=prefs.getString("VarEnlace9Texto");
             var VarEnlace9URL=prefs.getString("VarEnlace9URL");
             
-            var VarEnlace10Texto=prefs.getString("VarEnlace10Texto");
-            var VarEnlace10URL=prefs.getString("VarEnlace10URL");
+            
            
             
 			function Go2(destination){
@@ -262,16 +260,7 @@
                     html+='<li class="op9" onclick="Go2(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9"  title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
 					
                 }
-                 if ((VarEnlace10Texto!="")&&(VarEnlace10URL!=""))
-                {    
-                    if(VarEnlace10URL.indexOf('http')!= -1) {
-                    var strLink = devuelveEnlace(VarEnlace10URL);
-					}else{
-					VarEnlace10URL = urlbase+VarEnlace10URL;
-					
-					}
-                    html+='<li class="op10" onclick="Go2(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10"  title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
-                }
+                 
                 return html;
             }    
             html+='<div class=\"titulo\">' + VarTituloVentana + '</div>';
@@ -388,12 +377,7 @@
                     Enlace 9 - URL: <input type="text" id="VarEnlace9URL" class="btnURL" value="__UP_VarEnlace9URL__" onchange="registra('VarEnlace9URL')"><br/>                    
                 </td>
             </tr>
-            <tr>        
-                <td>
-                    Enlace 10 - Texto: <input type="text" id="VarEnlace10Texto" class="btnTexto" value="__UP_VarEnlace10Texto__" onchange="registra('VarEnlace10Texto')"><br/>        
-                    Enlace 10 - URL: <input type="text" id="VarEnlace10URL" class="btnURL" value="__UP_VarEnlace10URL__" onchange="registra('VarEnlace10URL')"><br/>   
-                </td>
-            </tr>
+            
             
         </table>        
         <script type="text/javascript">    
