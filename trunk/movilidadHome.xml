@@ -180,23 +180,6 @@
 		font-weight: normal;
 	}
 	
-	
-	
-	.linedowntitle{	
-		width:298px;
-		display:block;
-		margin-top:-15px;
-		height:4px;
-	}
-	
-	<!--[if IE]>
-		.linedowntitle{	
-			width:298px;
-			display:block;
-			height:4px;
-		}
-	<![endif]-->
-	
 	<!--[if FF]>
 		.linedowntitle{	
 			width:298px;
@@ -204,6 +187,22 @@
 			margin-top:-17px !important;
 			height:4px;
 		}
+		
+	<!--[else if IE]>
+		.linedowntitle{	
+				width:298px;
+				display:block;
+				height:4px;
+			}
+			
+	<!--[else]>
+		.linedowntitle{	
+				width:298px;
+				display:block;
+				margin-top:-15px;
+				height:4px;
+			}
+	<![endif]-->
 	<![endif]-->
 	
 	#content{
