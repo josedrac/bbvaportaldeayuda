@@ -58,7 +58,8 @@
             -moz-border-radius: 2px;
             -webkit-border-radius: 2px;
             -khtml-border-radius: 2px;
-            width: 298px;
+            width: 250px;
+			background-color:blue;
             clear: both;
 			margin-top:15px;
 					}
