@@ -91,7 +91,10 @@
 					font-family:Arial;
 					font-weight:bold;
 					font-size:12px;
-				}			
+				}
+	.listaGoogleApps img{
+					text-decoration:none;	
+	}			
 	
 	</style>
 	
