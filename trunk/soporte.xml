@@ -156,7 +156,7 @@
 	clear:left;
 	display:block;
 	}
-	#tablasoporte{
+	#tablesoporte{
 	width:675px;
 	font-family:Arial;
 	font-size:12px;
