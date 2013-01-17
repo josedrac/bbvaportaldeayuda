@@ -33,8 +33,7 @@
 		}
 		/* @end */
 
-	.content{
-	
+	.content{	
 	 		border: 1px solid #DDE3EA;
             border-radius: 2px;
             -ms-border-radius: 2px;
@@ -67,33 +66,16 @@
 		padding-bottom: 15px;
 		margin-bottom:10px;
 	}
-
-	/*Grupos de Etiquetas*/
-	.etiquetas{
-	float:left;
-	width:298px;
-	padding-left:20px;
-	padding-top:20px;
-	margin-bottom:-20px;
-	}
 	
-	.tipos{
-	float:left;
-	width:298px;
-	padding-left:20px;
-	padding-top:20px;
-	margin-bottom:-20px;
+	.etiquetas, 
+	.tipos, 
+	.formatos {
+		float:left;
+		width:280px;
+		padding-left:20px;
+		padding-top:20px;
+		margin-bottom:-20px;
 	}
-	
-	.formatos{
-	float:left;
-	width:298px;
-	padding-left:20px;
-	padding-top:20px;
-	margin-bottom:-20px;
-	/*margin-top:-20px;*/
-	}
-	/*Fin Grupos de Etiquetas*/
 		
 	.blockLabels {
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue1.png') repeat-x;
