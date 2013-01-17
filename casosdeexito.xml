@@ -256,6 +256,7 @@
 		padding-left:10px;
           color:#0078D2;
 		width:64px;
+		border: 0;
       }
       
 	p.text {	 
