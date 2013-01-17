@@ -186,7 +186,7 @@
 	padding-left:11px;
 	}
 	.phone{
-	width:90px;
+	width:110px;
 	}
 	.horario{
 	width:90px;
@@ -202,19 +202,19 @@
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:164px;
+	width:155px;
 	}
 	.telefono{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:35px;
+	width:140px;
 	}
 	.atencion{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
-	width:35px;
+	width:150px;
 	}
 	
 	</style>
