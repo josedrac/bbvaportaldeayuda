@@ -60,7 +60,7 @@
             -webkit-border-radius: 2px;
             -khtml-border-radius: 2px;
             width: 250px;
-			background-color:blue;
+			background-color:red;
             clear: both;
 			margin-top:15px;
 					}
