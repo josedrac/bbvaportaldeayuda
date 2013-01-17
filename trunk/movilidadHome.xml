@@ -187,22 +187,23 @@
 			margin-top:-17px !important;
 			height:4px;
 		}
-		
-	<!--[else if IE]>
+	<![endif]-->
+	
+	<!--[if IE]>
 		.linedowntitle{	
 				width:298px;
 				display:block;
 				height:4px;
 			}
-			
-	<!--[else]>
-		.linedowntitle{	
+		
+	<![endif]-->
+	
+	.linedowntitle{	
 				width:298px;
 				display:block;
 				margin-top:-15px;
 				height:4px;
 			}
-	<![endif]-->
 	
 	#content{
 		float:right;
