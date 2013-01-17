@@ -35,7 +35,15 @@
 /* @end */
 	
 .titulo{
-						border: 1px solid #DDE3EA;
+						border-bottom: 1px solid  #DDE3EA;
+						background: #ffffff;
+						background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7f8));
+						background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+						background: -o-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+						background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+						background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
 						font: 16px BBVA Web Book;
 						color: #333333;
 						padding-left: 18px;
@@ -51,8 +59,8 @@
             -moz-border-radius: 2px;
             -webkit-border-radius: 2px;
             -khtml-border-radius: 2px;
-            width: 100px;
-			background-color:red;
+            width: 298px;
+			//background-color:red;
             clear: both;
 			margin-top:15px;
 					}
