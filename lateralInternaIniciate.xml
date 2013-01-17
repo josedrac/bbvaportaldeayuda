@@ -50,6 +50,7 @@
 						padding-left: 18px;
 						padding-top: 14px;
 						padding-bottom: 15px;
+						width:250px;
 					}
 					.caja{
 						border: 1px solid #DDE3EA;
