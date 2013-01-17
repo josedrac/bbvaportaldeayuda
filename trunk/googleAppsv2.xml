@@ -93,7 +93,7 @@
 					font-size:12px;
 				}
 	.listaGoogleApps img{
-					text-decoration:none;	
+					border-image:none;	
 	}			
 	
 	</style>
