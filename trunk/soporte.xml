@@ -173,16 +173,16 @@
 	width:150px;
 	}
 	
-	.country{	
+	th.country{	
 	 width:83px;
 	}
-	.correo{
+	th.correo{
 	 width:167px;
 	}
-	.telefono{
+	th.telefono{
 	 width:140px;
 	}
-	.atencion{
+	th.atencion{
 	 width:150px;
 	
 	}
