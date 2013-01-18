@@ -1,4 +1,4 @@
-/* Fonts 
+/* Fonts */
 		@font-face {
 			font-family: 'BBVA Web Book';
 			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
@@ -30,7 +30,7 @@
 			font-weight: normal;
 		}
 
- End Fonts */
+ /*End Fonts */
 
 	#titlepage{
 		float:left;
