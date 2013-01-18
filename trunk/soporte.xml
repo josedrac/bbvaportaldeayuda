@@ -140,7 +140,7 @@
 	}
 	
 	.linedownheadertable{
-	 margin-bottom:45px;
+	 margin-bottom:25px;
 	 width:100%;
 	 display:block;
 	}
@@ -174,7 +174,7 @@
 	 width:150px;
 	
 	}
-	.datosfila{
+	#tablasoporte tr.datosfila{
 	margin-bottom:20px;
 	}
 	
