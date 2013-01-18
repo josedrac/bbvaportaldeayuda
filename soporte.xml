@@ -122,22 +122,7 @@
 
 /* @end */
 	
-	#titlepage{
-	float:left;
-	color:#0078D2;
-	font-family: BBVA Web Light;
-	font-size:30px;
-	margin-bottom:6px;
-	padding-top:11px;
-	height:30px;
-	margin-left:11px;
-	}
 	
-	.linedowntitle{
-	margin-bottom:20px;
-	width:939px;
-	display:block;
-	}
 	.linedownheadertable{
 	margin-bottom:45px;
 	width:690px;
