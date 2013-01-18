@@ -215,11 +215,13 @@
 		
 			<style type="text/css">
 			.linedowntitle{	
-				width:298px;
-				display:block;
+				/*width:298px;*/
+				/*display:block;*/
 				margin-top:3px;
-				height:4px;
-			}	
+				/*height:4px;*/
+			}
+			
+				
 			</style>
 			
 		<![endif]-->
