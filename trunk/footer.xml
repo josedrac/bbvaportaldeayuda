@@ -120,7 +120,7 @@
 						color: #434A58;
 						font-size: 11px;
 						font-family: BBVA Web Book, Arial, sans-serif;
-						/*padding-bottom: 10px;*/
+						padding-bottom: 10px;
 					}
 					
 			.footer ul li.first {
