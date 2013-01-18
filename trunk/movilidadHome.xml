@@ -184,10 +184,10 @@
 				width:298px;
 				display:block;
 				margin-top:-15px;
+				height:4px;
 				<!--[if IE]>
 				margin-top:3px;
-				<![endif]--> 
-				height:4px;
+				<![endif]-->
 			}
 	
 	#content{
