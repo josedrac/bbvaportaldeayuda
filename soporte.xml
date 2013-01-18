@@ -160,16 +160,16 @@
 	width:150px;
 	}
 	
-	th.country{	
+	.country{	
 	 width:83px;
 	}
-	th.correo{
+	.correo{
 	 width:167px;
 	}
-	th.telefono{
+	.telefono{
 	 width:140px;
 	}
-	th.atencion{
+	.atencion{
 	 width:150px;
 	
 	}
