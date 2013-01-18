@@ -185,10 +185,18 @@
 				display:block;
 				margin-top:-15px;
 				height:4px;
-				<!--[if IE]>
-				margin-top:3px;
-				<![endif]-->
 			}
+			
+		
+	<!--[if IE]>
+	.linedowntitle{	
+				width:298px;
+				display:block;
+				margin-top:3px;
+				height:4px;
+			}
+				
+	<![endif]-->
 	
 	#content{
 		float:right;
@@ -210,6 +218,16 @@
 	}
 	
 	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<body onload="cargaCompleta()">	
 <div id="content">
 	<div id="titleHome"><h2>Movilidad</h2></div>
