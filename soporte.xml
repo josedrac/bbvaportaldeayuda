@@ -211,13 +211,13 @@
 				var filas = data.getNumberOfRows();
 				var html= "";
 				html += "<table id='tablasoporte'>";
-				html += "<tr><th class='country'>Pa&iacute;s</th><th class='correo'>Correo</th><th class='telefono'>Tel&eacute;fono</th><th class='atencion'>Horario de atenci&oacute;n</th></tr>";
-			    html += "<tr><td class='image'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr>";
+				html += "<thead><tr><th class='col0'>Pa&iacute;s</th><th class='col1'>Correo</th><th class='col2'>Tel&eacute;fono</th><th class='col3'>Horario de atenci&oacute;n</th></tr>";
+			    html += "<tr><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></tr></thead><tbody>";
 				for(var i=1;i<filas;i++){
-					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td class='email'>"+data.getValue(i,1)+"</td><td class='phone'>"+data.getValue(i,2)+"</td><td class='horario'>"+data.getValue(i,3)+"</td></tr>";
+					html += "<tr><td class='dato0'>"+data.getValue(i,0)+"</td><td class='dato1'>"+data.getValue(i,1)+"</td><td class='dato2'>"+data.getValue(i,2)+"</td><td class='dato3'>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
-				html += "</table>";
+				html += "</tbody></table>";
 		document.getElementById('infosoporte').innerHTML += html;
 	
 		}
