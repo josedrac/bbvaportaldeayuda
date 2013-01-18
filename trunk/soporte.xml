@@ -128,27 +128,14 @@
 	display:block;
 	}
 	
-	#textPage{
-	margin:0 0 90px 15px;
-	width:675px;
-	height:57px;
-	font-family: Arial;
-	font-size:12px;
-	color:#71777F;	
-	padding-top:11px;
-	line-height:17px;
-	clear:left;
-	display:block;
-	}
-	
-	.tablasoporte{
+    #tablasoporte{
 	width:100%;
 	font-size:12px;
 	color:#434a45;
 	margin-top:-22px;
 	margin-left:13px;
 	}
-	.tablasoporte th{
+	#tablasoporte th{
 	font-family:BBVA Web Light;
 	font-size:18px;
 	color:#434a45;
