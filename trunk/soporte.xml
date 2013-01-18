@@ -210,7 +210,7 @@
 				var html= "";
 				html += "<table id='tablasoporte'>";
 				html += "<thead><tr><td><th class='col0'>Pa&iacute;s</th></td><td><th class='col1'>Correo</th></td><td><th class='col2'>Tel&eacute;fono</th></td><td><th class='col3'>Horario de atenci&oacute;n</th></td></tr>";
-			    html += "</thead><tbody><tr><td colspan='4'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr>";
+			    html += "<tr><td colspan='4'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr></thead><tbody>";
 				for(var i=1;i<filas;i++){
 					html += "<tr><td class='dato0'>"+data.getValue(i,0)+"</td><td class='dato1'>"+data.getValue(i,1)+"</td><td class='dato2'>"+data.getValue(i,2)+"</td><td class='dato3'>"+data.getValue(i,3)+"</td></tr>";
 	
