@@ -9,8 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="titlepage" display_name="Title of page" required="true" />  
-<UserPref name="textPage" display_name="Text of page" required="true" /> 
+
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -199,11 +198,9 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	 var titlepage = prefs.getString("titlepage");
-	 var textPage = prefs.getString("textPage");
 	 
-	 document.getElementById("titlepage").innerHTML = titlepage;
-	 document.getElementById("textPage").innerHTML = textPage;
+	 
+	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
