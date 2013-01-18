@@ -75,6 +75,7 @@
             width: 298px;
             clear: both;
 			margin-top:15px;
+			overflow: visible;
 		}
 		
 		ul{
