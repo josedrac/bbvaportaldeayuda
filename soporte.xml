@@ -134,6 +134,7 @@
 	 text-align:left;
 	 font-weight:normal;
 	}
+	
 	#tablasoporte td{
 	 font-family:Arial;
 	}
@@ -173,6 +174,9 @@
 	 width:150px;
 	
 	}
+	.datosfila{
+	margin-bottom:20px;
+	}
 	
 	</style>
 	
@@ -211,7 +215,7 @@
 				html += "<thead><tr><th class='col0'>Pa&iacute;s</th><th class='col1'>Correo</th><th class='col2'>Tel&eacute;fono</th><th class='col3'>Horario de atenci&oacute;n</th></tr></thead>";
 			    html += "<tbody><tr><td colspan='4'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr>";
 				for(var i=1;i<filas;i++){
-					html += "<tr><td class='dato0'>"+data.getValue(i,0)+"</td><td class='dato1'>"+data.getValue(i,1)+"</td><td class='dato2'>"+data.getValue(i,2)+"</td><td class='dato3'>"+data.getValue(i,3)+"</td></tr>";
+					html += "<tr class='datosfila'><td class='dato0'>"+data.getValue(i,0)+"</td><td class='dato1'>"+data.getValue(i,1)+"</td><td class='dato2'>"+data.getValue(i,2)+"</td><td class='dato3'>"+data.getValue(i,3)+"</td></tr>";
 	
 				}
 				html += "</tbody></table>";
