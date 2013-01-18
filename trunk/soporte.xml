@@ -175,7 +175,7 @@
 	
 	}
 	#tablasoporte tr.datosfila{
-	margin-bottom:20px;
+	height:50px;
 	}
 	
 	</style>
