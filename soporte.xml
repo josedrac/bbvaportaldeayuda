@@ -159,55 +159,48 @@
 	
 	.tablasoporte{
 	width:100%;
-	font-family:Arial;
 	font-size:12px;
 	color:#434a45;
 	margin-top:-22px;
 	margin-left:13px;
 	}
+	.tablasoporte th{
+	font-family:BBVA Web Light;
+	font-size:18px;
+	color:#434a45;
+	}
+	.tablasoporte td{
+	font-family:Arial;
+	}
 	
 	.pais{
 	width:83px;
-	font-family:BBVA Web Light;
+	
 	}
 	.email{
 	width:175px;
-	font-family:BBVA Web Light;
+	
 	}
 	.phone{
 	width:110px;
-	font-family:BBVA Web Light;
+
 	}
 	.horario{
 	width:150px;
-	padding-left:35px
-	font-family:BBVA Web Light;
 	}
 	
-	.country{
-	font-family:Arial;
-	font-size:18px;
-	color:#434a45;
-	width:83px;
+	.country{	
+	 width:83px;
 	}
 	.correo{
-	font-family:Arial;
-	font-size:18px;
-	color:#434a45;
-	width:167px;
+	 width:167px;
 	}
 	.telefono{
-	font-family:Arial;
-	font-size:18px;
-	color:#434a45;
-	width:140px;
+	 width:140px;
 	}
 	.atencion{
-	font-family:Arial;
-	font-size:18px;
-	color:#434a45;
-	width:150px;
-	;
+	 width:150px;
+	
 	}
 	
 	</style>
