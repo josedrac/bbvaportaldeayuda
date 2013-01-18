@@ -103,7 +103,7 @@
 	  color:#0078D2;
 	  font-family:BBVA Web Book;
 	  font-size:18px;
-	  width:238px;
+	  width:260px;
 	  margin: 0 0 20px 7px;
 	  font-weight: normal;	  
 	  }
@@ -112,7 +112,7 @@
 	  color:#0078D2;
 	  font-family:BBVA Web Book, Arial, sans-serif;
 	  font-size:18px;
-	  width:238px;
+	  width:260px;
 	  font-weight: normal;
 	  text-decoration:none;
 	  }
