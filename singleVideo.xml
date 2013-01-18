@@ -130,11 +130,12 @@
 				
 			<style type="text/css">
 				#urlLink a{
-					padding-top:1px;			
+					padding-top:2px;			
 				}
 			</style>
 			
 		<![endif]-->
+		
 	</head>
 	
 	<div id="video-container">
