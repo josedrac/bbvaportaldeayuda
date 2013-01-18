@@ -214,14 +214,10 @@
 		<!--[if IE]>
 		
 			<style type="text/css">
-			.linedowntitle{	
-				/*width:298px;*/
-				/*display:block;*/
-				margin-top:3px;
-				/*height:4px;*/
-			}
+				.linedowntitle{	
+					margin-top:3px;
+				}
 			
-				
 			</style>
 			
 		<![endif]-->

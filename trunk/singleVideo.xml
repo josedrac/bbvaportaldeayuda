@@ -124,7 +124,16 @@
 		}
 		
 	</style>
-    
+	
+	<!--[if IE]>
+			
+		<style type="text/css">
+			#urlLink a{
+				padding-top:1px;			
+			}
+		</style>
+		
+	<![endif]-->
 	
 	<div id="video-container">
 		<div id="titleVideo"></div>
