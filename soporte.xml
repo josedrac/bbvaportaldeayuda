@@ -147,32 +147,32 @@
 	 display:block;
 	}
 	
-	.pais{
+	.dato0{
 	width:83px;
 	
 	}
-	.email{
+	.dato1{
 	width:175px;
 	
 	}
-	.phone{
+	.dato2{
 	width:110px;
 
 	}
-	.horario{
+	.dato3{
 	width:150px;
 	}
 	
-	.country{	
+	.col0{	
 	 width:83px;
 	}
-	.correo{
+	.col1{
 	 width:167px;
 	}
-	.telefono{
+	.col2{
 	 width:140px;
 	}
-	.atencion{
+	.col3{
 	 width:150px;
 	
 	}
