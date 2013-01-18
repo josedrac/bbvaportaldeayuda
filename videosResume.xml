@@ -417,16 +417,6 @@
 			
 		</style>
 		
-		<!--[if IE]>
-				
-			<style type="text/css">
-			 	#allcontent2 a{
-					font-size:12px;
-				}
-			</style>
-			
-		<![endif]-->
-		
 	</head>
 	
 <body onload="cargaCompleta()">
