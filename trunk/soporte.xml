@@ -121,27 +121,25 @@
 
 /* @end */
 	
-	
-	.linedownheadertable{
-	margin-bottom:45px;
-	width:690px;
-	display:block;
-	}
-	
     #tablasoporte{
-	width:100%;
-	font-size:12px;
-	color:#434a45;
-	margin-top:-22px;
-	margin-left:13px;
+	 width:100%;
+	 font-size:12px;
+	 color:#434a45;
+	 margin-top:-22px;
+	 margin-left:13px;
 	}
 	#tablasoporte th{
-	font-family:BBVA Web Light;
-	font-size:18px;
-	color:#434a45;
+	 font-family:BBVA Web Light;
+	 font-size:18px;
+	 color:#434a45;
 	}
 	.tablasoporte td{
-	font-family:Arial;
+	 font-family:Arial;
+	}
+	.linedownheadertable{
+	 margin-bottom:45px;
+	 width:100%;
+	 display:block;
 	}
 	
 	.pais{
@@ -209,7 +207,7 @@
 				var html= "";
 				html += "<table id='tablasoporte'>";
 				html += "<tr><th class='country'>Pa&iacute;s</th><th class='correo'>Correo</th><th class='telefono'>Tel&eacute;fono</th><th class='atencion'>Horario de atenci&oacute;n</th></tr>";
-			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' />";
+			    html += "<tr><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></tr>";
 				for(var i=1;i<filas;i++){
 					html += "<tr><td class='pais'>"+data.getValue(i,0)+"</td><td class='email'>"+data.getValue(i,1)+"</td><td class='phone'>"+data.getValue(i,2)+"</td><td class='horario'>"+data.getValue(i,3)+"</td></tr>";
 	
