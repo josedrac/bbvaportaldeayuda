@@ -132,7 +132,7 @@
 	 font-size:18px;
 	 color:#434a45;
 	 text-align:left;
-	
+	 font-weight:normal;
 	}
 	#tablasoporte td{
 	 font-family:Arial;
