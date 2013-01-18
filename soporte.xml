@@ -137,11 +137,7 @@
 	#tablasoporte td{
 	 font-family:Arial;
 	}
-	#tablasoporte td.image{
-	 margin-bottom:45px;
-	 width:100%;
-	 display:block;
-	}
+	
 	.linedownheadertable{
 	 margin-bottom:45px;
 	 width:100%;
