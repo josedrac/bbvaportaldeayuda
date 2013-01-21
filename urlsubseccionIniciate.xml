@@ -72,7 +72,6 @@
 	list-style:none;
 	}
 	.subseccion li a{
-	font-size:16px;
 	font: 16px BBVA Web Book,BBVA Web, Arial, sans-serif;
 	color:#0065B7;
 	text-decoration:none;
