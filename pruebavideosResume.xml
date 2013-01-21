@@ -458,7 +458,7 @@
 		 document.getElementById("tagVideo").innerHTML = tagVideo;
 		 document.getElementById("titleVideo").innerHTML = titleVideo;
 		 document.getElementById("textVideo").innerHTML = textVideo;
-		 document.getElementById("sabermas").innerHTML  ="<input type='button' id='allcontent2' onclick='function{Go("+urlsabermas+");}' value='Saber más'/>";
+		 document.getElementById("sabermas").innerHTML  ="<input type='button' id='allcontent2' onclick='function(){Go("+urlsabermas+");}' value='Saber más'/>";
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
