@@ -424,7 +424,7 @@
         </div>      
 	 </div>
 	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideoLast"/>
-	 <button type="button" id="allcontent"></button>
+	 <input type="button" id="allcontent"/>
 </div>
 </body>
 	
@@ -458,14 +458,14 @@
 		 document.getElementById("tagVideo").innerHTML = tagVideo;
 		 document.getElementById("titleVideo").innerHTML = titleVideo;
 		 document.getElementById("textVideo").innerHTML = textVideo;
-		 document.getElementById("sabermas").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas+"'>Saber más</a></button>"
+		 document.getElementById("sabermas").innerHTML  ="<input type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas+"'>Saber más</a></input>"
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
 		 document.getElementById("tagVideo2").innerHTML = tagVideo2;
 		 document.getElementById("titleVideo2").innerHTML = titleVideo2;
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
-		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas2+"'>Saber más</a></button>"
+		 document.getElementById("sabermas2").innerHTML  ="<input type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas2+"'>Saber más</a></input>"
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
 		 return false;
 	}
