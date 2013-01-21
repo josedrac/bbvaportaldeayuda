@@ -105,6 +105,10 @@
          	font-weight: bold;
 			color: #0073C9;
 		}  
+		
+		iframe{
+			overflow: hidden !important;
+		}
 				        
   		              
         </style>
