@@ -271,7 +271,7 @@
 			margin-top:10px;
 		}
 		
-		 #allcontent input{		
+		 #allcontent input a{		
 			font-size: 1.4em;
 			position: relative;
 			top: -1px;
@@ -294,7 +294,7 @@
 			margin-top:0px;		
 		}
 		
-		 #allcontent2 input{
+		 #allcontent2 input a{
 			float:left;	
 			position: relative;
 			top: -1px;
