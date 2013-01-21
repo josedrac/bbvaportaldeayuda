@@ -128,12 +128,12 @@
 	.blockLabels a,
 	.blockFormats a {
 		font-weight: bold;
-		font-family: BBVA Web Light, Arial, sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 12px;
 		color: #0072C9;
 		text-decoration: none;		
 		padding:0 5px;
-		font-weight: normal;
+		font-weight: bold;
 	}
 	
 	.blockTypes a {		
