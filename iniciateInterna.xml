@@ -319,10 +319,10 @@
 		   //html += '<iframe frameborder="0" style="border:1px solid #AAA; width:620px; height:427px;" src="'+data.getValue(0,2)+'"></iframe>'; //"<embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";
 		   //html += "<embed src='"+data.getValue(0,2)+"'  width='620' height='427'></embed></div>";
 		   html += "<object width='356' height='480' classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95'>
-		   			<param name='FileName' value='"+data.getValue(0,2)+"'>	
-					<param name='loop' value='true'>	
-					<param name='quality' value='high'>	
-		   			</object>"
+		   			<param name='FileName' value='"+data.getValue(0,2)+"'>
+					<param name='loop' value='true'>
+					<param name='quality' value='high'>
+		   			</object>";
 		   // html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 		  // html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  target='_parent' href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";		   
 		   document.getElementById('listportales').innerHTML = html;				
