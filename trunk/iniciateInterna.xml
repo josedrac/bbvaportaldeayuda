@@ -318,7 +318,7 @@
 		   console.debug('data.getValue(0,2) '+data.getValue(0,2));
 		   //html += '<iframe frameborder="0" style="border:1px solid #AAA; width:620px; height:427px;" src="'+data.getValue(0,2)+'"></iframe>'; //"<embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";
 		   //html += "<embed src='"+data.getValue(0,2)+"'  width='620' height='427'></embed></div>";
-		   html += "<object width='620' height='427' classid='CLSID:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0'>" +
+		   html += "<object width='620' height='427' classid='6BF52A52-394A-11d3-B153-00C04F79FAA6'>" +
 		   			"<param name='FileName' value='"+data.getValue(0,2)+"'>" +
 		   			"<embed src='"+data.getValue(0,2)+"'  width='620' height='427'></embed>" +
 		   			"</object></div>";
