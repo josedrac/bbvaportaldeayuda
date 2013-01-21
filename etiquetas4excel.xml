@@ -453,7 +453,7 @@ function mostrarTipos()
 		if(aux1[i]!="")
 		{						
 			muestra +='<div class="blockTypes">';
-			muestra += ' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>Tipo:' +aux1[i]+' ('+contadorTipo[aux1[i]]+') </a>';
+			muestra += ' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>' +aux1[i]+' ('+contadorTipo[aux1[i]]+') </a>';
 			muestra +='</div>';		
 		}	 
 	} 
@@ -464,7 +464,7 @@ function mostrarTipos()
 		if(aux2[i]!=""){
 			
 				muestra2 +='<div class="blockFormats">';
-				muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>Formato:' +aux2[i]+' ('+contadorFormato[aux2[i]]+') </a>';
+				muestra2 += '<a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>' +aux2[i]+' ('+contadorFormato[aux2[i]]+') </a>';
 				muestra2 += '</div>';
 		}
 	 
