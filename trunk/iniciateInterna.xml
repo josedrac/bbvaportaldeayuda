@@ -318,9 +318,10 @@
 		   console.debug('data.getValue(0,2) '+data.getValue(0,2));
 		   //html += '<iframe frameborder="0" style="border:1px solid #AAA; width:620px; height:427px;" src="'+data.getValue(0,2)+'"></iframe>'; //"<embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";
 		   //html += "<embed src='"+data.getValue(0,2)+"'  width='620' height='427'></embed></div>";
-		   html += "<object width='620' height='427' type='application/x-shockwave-flash' data='"+data.getValue(0,2)+"'>" +
-		   			"<param name='wmode' value='"+data.getValue(0,2)+"'></param>" +
-		   			"<embed src='"+data.getValue(0,2)+"'  width='620' height='427' type='application/x-shockwave-flash'></embed>" +
+		   html += "<object width='620' height='427' data='"+data.getValue(0,2)+"'>" +
+		   			"<param name='video' value='"+data.getValue(0,2)+"'></param>" +
+		   			"<param name='wmode' value='transparent'></param>" + 
+		   			"<embed src='"+data.getValue(0,2)+"' type='application/x-shockwave-flash' wmode='transparent' width='620' height='427'></embed>" +
 		   			"</object></div>";
 		   // html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 		  // html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  target='_parent' href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";		   
