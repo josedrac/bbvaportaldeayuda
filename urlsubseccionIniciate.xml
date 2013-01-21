@@ -61,7 +61,7 @@
 	color:#000;
 	font-size: 18px;
 	font-family: BBVA Web Light, BBVA Web, Arial, sans-serif;
-	margin-left:22px;
+	margin-left:10px;
 	margin-top:0px;
 	margin-bottom:10px;
 	}
@@ -72,7 +72,7 @@
 	list-style:none;
 	}
 	.subseccion li a{
-	font-size:14px;
+	font-size:16px;
 	font-family: BBVA Web Book;
 	color:#0065B7;
 	text-decoration:none;
@@ -88,6 +88,11 @@
 	.flecha{
 	margin-left:15px;
 	
+	}
+	.iniciateline{
+		width: 619px;
+		margin-bottom:10px;
+		
 	}
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
@@ -127,13 +132,8 @@
 				
 				for(var i=0;i<filas;i++){
 				    if(subseccion != 'Subsección'){
-					 if(subseccion=="Iníciate en tu Net"){
-					 html +="<div id='titleSubsection' class='title'>¿Qué puedes hacer?</div>";
-					 }
-					 else{
-					 html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
-					}
-					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
+					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'/>";
+					//html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
 				    html +="<div id='subsection"+subseccion+"' class='subseccion'></div>";
 					
 					}
