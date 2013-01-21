@@ -122,21 +122,21 @@
         	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px; 
         }
         ul li.op6 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -340px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -410px;  
         }
         ul li.op7 {
-        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -410px; 
+        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px; 
                 }
         ul li.op8 {
         	
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;  
 
         }
         ul li.op9 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -552px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px;  
         }
         ul li.op10 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -700px; 
         }               
         </style>
     
