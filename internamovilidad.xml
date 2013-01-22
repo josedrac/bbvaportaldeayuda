@@ -363,6 +363,7 @@ top: 2px;
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   //html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
 			   document.getElementById('listportales').innerHTML = html;				
+			   alert("Url: " + data.getValue(0,3));
 		}
 
   </script>
