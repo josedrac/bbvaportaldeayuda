@@ -247,11 +247,6 @@
 		float:left;
 		margin-top:-2px;
       }
-	
-	.bloqueAnterior img,
-	.bloqueSiguiente img{
-      		border: 0;
-      }
       
     .bloqueSiguiente{
             display:block;
@@ -292,12 +287,22 @@
 		padding-right:2px;
 	}
 	
-	.checkpage img,
-	.checkpage1 img{
-		border: 0;
-	}
-	
 	</style>
+	
+	<!--[if IE]>
+		
+		<style type="text/css">
+		
+			.checkpage img,
+			.checkpage1 img,
+			.bloqueAnterior img,
+			.bloqueSiguiente img{
+				border: 0;
+			}	
+			
+		</style>
+			
+	<![endif]-->
 	
 <div id="listportales"></div>	
 		
