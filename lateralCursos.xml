@@ -108,16 +108,20 @@
 		         	font-weight: bold;
 					color: #0073C9;
 				}	        
-				
-		  		<!--[if IE]>
-		  		
-			  		.caja{
-			  			margin-top: 0px;
-			  		}
-			  		
-			  	<![endif]-->
 	  		              
 	        </style>
+	        
+	        <!--[if IE]>
+		  		
+		  		<style type="text/css">
+		  		
+		  			.caja{
+				  		margin-top: 0px;
+				  	}
+				  		
+			  	</style>
+			  		
+			<![endif]-->
 	        
     	<head>
     	
