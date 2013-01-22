@@ -75,7 +75,6 @@
             width: 298px;
             clear: both;
 			margin-top:15px;
-			overflow: hidden !important;
 		}
 		
 		ul{
@@ -106,6 +105,14 @@
          	font-weight: bold;
 			color: #0073C9;
 		}	        
+		
+  		<!--[if IE]>
+  		
+	  		.caja{
+	  			margin-top: 0px;
+	  		}
+	  		
+	  	<![endif]-->
   		              
         </style>
     
