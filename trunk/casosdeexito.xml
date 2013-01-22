@@ -355,13 +355,13 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			   if(data.getValue(i,10)!=""){
-			   //html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
 			   
-			   html += "<object width='620' height='427' data='"+data.getValue(i,10)+"'>" +
+			   /*html += "<object width='620' height='427' data='"+data.getValue(i,10)+"'>" +
 		   			   "<param name='video' value='"+data.getValue(i,10)+"'></param>" +
 		   			   "<param name='wmode' value='transparent'></param>" + 
 		   			   "<embed src='"+data.getValue(i,10)+"' type='application/x-shockwave-flash' wmode='transparent' width='620' height='427'></embed>" +
-		   			   "</object></div>";
+		   			   "</object></div>";*/
 			   
 			   }else{
 			   html += "<img src='"+data.getValue(i,11)+"'></img></div>";
