@@ -312,7 +312,7 @@
 		
 		<style type="text/css">
 			.savePDF{	
-				text-decoration: none;
+				border: 0;
 			}
 			
 		</style>
