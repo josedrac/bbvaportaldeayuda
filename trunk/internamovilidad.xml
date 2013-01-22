@@ -302,11 +302,22 @@
 	}
 	
 	.savePDF {
-	position: relative;
-top: 2px;
+		position: relative;
+		top: 2px;
 }
 	
 	</style>
+	
+	<!--[if IE]>
+		
+		<style type="text/css">
+			.savePDF{	
+				text-decoration: none;
+			}
+			
+		</style>
+			
+	<![endif]-->
 	
 <div id="listportales"></div>	
 
