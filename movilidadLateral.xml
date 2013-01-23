@@ -177,7 +177,7 @@
 	   {
 		if(dataDC.getValue(i,2) != 'Dispositivo')
 		{
-	    html +="<li><a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a></li>";
+	    html +="<li><a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a></li>";
 		}
 	 
 	  }
