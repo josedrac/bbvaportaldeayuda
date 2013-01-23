@@ -120,7 +120,7 @@
 		  document.getElementById("content_div").innerHTML = html;
 
 
-			}		
+					
             
 
         </script>
