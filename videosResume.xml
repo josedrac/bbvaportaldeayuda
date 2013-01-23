@@ -482,20 +482,24 @@
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
 		 document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
 		 document.getElementById("textVideo").innerHTML = textVideo;
-		 document.getElementById("sabermas").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas+"'>Saber más</a></button>"
+		 document.getElementById("sabermas").innerHTML  ="<button type='button' id='allcontent2' onclick='Go("+urlsabermas+")' value='Saber más'></button>"
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
 		 document.getElementById("titleVideo2").innerHTML = "<a target='_parent' href='"+urlsabermas2+"'>"+ titleVideo2 +"</a>";
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
-		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas2+"'>Saber más</a></button>"
+		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent2' onclick='Go("+urlsabermas2+")' value='Saber más'></button>"
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
 		 return false;
 	}
 	function cargaCompleta()
 	{
 		cargaVideo();
+	}
+	function Go(destination){
+	window.parent.location.href = destination;
+	return false;
 	}
 
  </script>
