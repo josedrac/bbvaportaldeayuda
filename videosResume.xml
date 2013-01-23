@@ -388,6 +388,7 @@
 			}		
 			.linetitle{
 				display:block;
+				display:-moz-stack;
 				width:613px;
 				height:4px;
 				margin-bottom:20px;
