@@ -311,7 +311,7 @@
 				font-size:12px;
 				margin-left:-16px;
 				width:90px;
-				height: 2em;
+				
 			}
 			 #allcontent3{
 				float:left;	
@@ -324,17 +324,17 @@
 				font-size:12px;
 				margin-left:-16px;
 				width:90px;
-				height: 2em;
+				
 			}
 			#sabermas{
 			padding-top:20px;
 			font-size:12px;
-			height:2em;
+			
 			}
 			#sabermas2{
 			padding-top:40px;
 			font-size:12px;
-			height: 2em;
+			
 			}
 			#sabermas button,
 			#sabermas2 button{
@@ -352,9 +352,10 @@
 			text-align: center;
 			font-size: 12px;
 			vertical-align: middle;
-			height: 2em;
+			height: 1.75em;
 			padding-left: .9em;
 			padding-right: .9em;
+			padding-bottom: 2px;
 			border: .1em solid #00559D;
 			color: white;
 			cursor: pointer;
