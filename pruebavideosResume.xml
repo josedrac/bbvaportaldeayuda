@@ -455,7 +455,7 @@
         </div>      
 	 </div>
 	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideoLast"/>
-	 <button type="button" id="allcontent"></button>
+	 <button type="button" id="allcontent">Ver todos</button>
 </div>
 </body>
 	
