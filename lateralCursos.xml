@@ -13,6 +13,9 @@
         author_location="Asturias, Spain"
         scaling="false">
         <Require feature="setprefs"/>
+		<Require feature="idi"/>
+		<Require feature="locked-domain" />
+		<Require feature="dynamic-height"/> 
     </ModulePrefs>
     <UserPref name="VarTituloVentana" display_name="Título ventana:" default_value="" required="true"/>
     <UserPref name="VarEnlace1Texto" display_name="Texto enlace 1:" default_value="" required="true"/>
