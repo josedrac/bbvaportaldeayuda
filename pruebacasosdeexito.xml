@@ -155,10 +155,7 @@
 			float:left;
 			margin-left:10px;
 			width:90px;
-			margin-top:0px;		
-		}
-		
-		 #allcontent a{
+			margin-top:0px;
 			float:left;	
 			position: relative;
 			top: -1px;
@@ -168,8 +165,10 @@
 			font-family: BBVA Web Medium, Arial, sans-serif;
 			font-size:12px;
 			margin-left:-16px;
-			width:90px;
+			width:90px;			
 		}
+		
+		 
 	
 	button{
 		background: #0079C1;
