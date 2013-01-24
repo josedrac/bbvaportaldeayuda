@@ -76,17 +76,18 @@
 				width: 312px;
 		  	}
 			#urlLink {
-				border-radius: .2em;
-				height: 2em;
-				padding-left: 1.4em;
-				padding-right: 2.4em;
-				float: right;
-				margin-right: 25px;
-				width: 70px;
-				margin-top: 10px;
-				font: 12px BBVA Web Medium, Arial, sans-serif;
-				margin-left: 4px;
-				color: white;
+			-webkit-border-radius: .2em;
+			-moz-border-radius: .2em;
+			border-radius: .2em;
+			height: 1.75em;
+			padding-left: .7em;
+			padding-bottom:2px;
+			float:left;
+			margin-left:10px;
+			width:90px;
+			margin-top:0px;
+			font-family: BBVA Web Medium, Arial, sans-serif;
+			font-size:12px;	
 			}
 			
 			hr {
