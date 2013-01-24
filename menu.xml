@@ -279,7 +279,7 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 			document.getElementsByClassName("trucos")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 		
 		}
-		if(parametros.indexOf("iniciate")!=-1){
+		if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){
 			document.getElementsByClassName("iniciate")[0].style.backgroundColor = "rgb(0, 80, 152)";
 			document.getElementsByClassName("iniciate")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 		
