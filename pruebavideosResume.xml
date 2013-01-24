@@ -279,7 +279,7 @@
 				-webkit-border-radius: .4em;
 				-moz-border-radius: .4em;
 				border-radius: .4em;
-				height: 4em;
+				height: 3em;
 				padding-left: 1.4em;
 				padding-right: 1.4em;
 				float:right;
