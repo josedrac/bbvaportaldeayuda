@@ -145,7 +145,10 @@
 		color: #fff;			
 	}
 	.titular{
-	
+	font-size:12px;
+	font-family:Arial;
+	color:#434A58;
+	margin-bottom:5px;
 	}
 </style>
 
