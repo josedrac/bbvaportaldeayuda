@@ -92,6 +92,7 @@
 					padding-bottom: 12px;
 					padding-top: 17px;
 					cursor:hand;
+					cursor:pointer;
 				}
 		       
 		       ul li:last-child{
