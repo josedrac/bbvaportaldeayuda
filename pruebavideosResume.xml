@@ -326,9 +326,11 @@
 			}
 			#sabermas{
 			padding-top:20px;
+			font-size:12px;
 			}
 			#sabermas2{
 			padding-top:40px;
+			font-size:12px;
 			}
 			#sabermas button,
 			#sabermas2 button{
@@ -343,7 +345,6 @@
 			-webkit-border-radius: .3em;
 			-moz-border-radius: .3em;
 			border-radius: .3em;
-			font-size: 10px;
 			font-family: BBVA Web Medium, Arial, sans-serif;
 			text-align: center;
 			vertical-align: middle;
