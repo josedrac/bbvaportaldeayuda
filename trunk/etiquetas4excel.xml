@@ -449,7 +449,7 @@ function mostrarTipos()
 	var muestra2="";
 	var aux1= tipo.split(",");
 	var aux2= formato.split(",");
-    muestra2 +="<div class='titular'>Por tipo de contenidos</div>";
+    muestra +="<div class='titular'>Por tipo de contenidos</div>";
 	for (var i=0; i<aux1.length; i++)
 	{
 		if(aux1[i]!="")
