@@ -343,7 +343,7 @@
 			-webkit-border-radius: .3em;
 			-moz-border-radius: .3em;
 			border-radius: .3em;
-			font-size: 12px;
+			font-size: 10px;
 			font-family: BBVA Web Medium, Arial, sans-serif;
 			text-align: center;
 			vertical-align: middle;
