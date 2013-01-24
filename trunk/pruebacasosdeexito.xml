@@ -151,6 +151,7 @@
 			border-radius: .2em;
 			height: 1.75em;
 			padding-left: .9em;
+			padding-bottom:2px;
 			float:left;
 			margin-left:10px;
 			width:90px;
