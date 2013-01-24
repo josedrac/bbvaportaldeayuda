@@ -482,7 +482,7 @@
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
 		 document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
 		 document.getElementById("textVideo").innerHTML = textVideo;
-		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2' onclick='Go("+urlsabermas+")'>Saber más</button>";
+		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2' onclick='function() {Go(\''"+urlsabermas+"'\');}'>Saber más</button>";
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
