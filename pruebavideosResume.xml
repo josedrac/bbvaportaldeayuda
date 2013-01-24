@@ -356,16 +356,7 @@
 			position: relative;
 			overflow: visible;
 			margin-left:10px;
-			float: left;
-position: relative;
-top: -1px;
-margin-right: 0;
-text-decoration: none;
-color: #FFF;
-font-family: BBVA Web Medium, Arial, sans-serif;
-font-size: 12px;
-margin-left: -16px;
-width: 90px;
+			
 			}
 			button{
 				background: #0079C1;
