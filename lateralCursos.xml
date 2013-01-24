@@ -37,7 +37,7 @@
     <UserPref name="VarEnlace9Texto" display_name="Texto enlace 9:" default_value=""/>
     <UserPref name="VarEnlace9URL" display_name="enlace 9:" default_value=""/>
    
-    <Content type="html"><![CDATA[
+    <Content type="html" view="home"><![CDATA[
 		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
         <head>
@@ -169,11 +169,7 @@
             
            
             
-			function Go2(destination){
-
-			window.open(destination,'_blank');
-			return true;
-			} 
+			
 			
             function devuelveEnlace(varEnlace)
             {
@@ -292,6 +288,12 @@
             
             document.getElementById("content_div").innerHTML = html;
             gadgets.window.adjustHeight();
+			
+			function Go2(destination){
+
+			window.open(destination,'_blank');
+			return false;
+			} 
         </script>
     ]]>  
     </Content>  
