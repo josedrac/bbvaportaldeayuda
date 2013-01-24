@@ -292,7 +292,7 @@
 			function Go2(destination){
 
 			//window.open(destination,'_blank');
-			self.opener(destination,'_blank');
+			window.opener(destination,'_blank');
 			} 
         </script>
     ]]>  
