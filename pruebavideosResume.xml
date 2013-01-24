@@ -354,7 +354,7 @@
 			cursor: pointer;
 			position: relative;
 			overflow: visible;
-			
+			margin-left:10px;
 			}
 			button{
 				background: #0079C1;
