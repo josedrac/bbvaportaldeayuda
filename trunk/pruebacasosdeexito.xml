@@ -155,7 +155,9 @@
 			float:left;
 			margin-left:10px;
 			width:90px;
-			margin-top:0px;		
+			margin-top:0px;
+			font-family: BBVA Web Medium, Arial, sans-serif;
+			font-size:12px;			
 		}
 		
 		
