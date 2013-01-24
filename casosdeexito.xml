@@ -149,27 +149,18 @@
 			-webkit-border-radius: .2em;
 			-moz-border-radius: .2em;
 			border-radius: .2em;
-			height: 2em;
-			padding-left: 1.4em;
-			padding-right: 2.4em;
+			height: 1.75em;
+			padding-left: .7em;
+			padding-bottom:2px;
 			float:left;
 			margin-left:10px;
 			width:90px;
-			margin-top:0px;		
+			margin-top:0px;
+			font-family: BBVA Web Medium, Arial, sans-serif;
+			font-size:12px;			
 		}
 		
-		 #allcontent a{
-			float:left;	
-			position: relative;
-			top: -1px;
-			margin-right: 0;
-			text-decoration:none;
-			color:#FFF;
-			font-family: BBVA Web Medium, Arial, sans-serif;
-			font-size:12px;
-			margin-left:-16px;
-			width:90px;
-		}
+		
 	
 	button{
 		background: #0079C1;
@@ -186,7 +177,7 @@
 		font-size: 10px;
 		text-align: center;
 		vertical-align: middle;
-		height: 3em;
+		height: 2em;
 		padding-left: .9em;
 		padding-right: .9em;
 		border: .1em solid #00559D;
@@ -339,7 +330,7 @@
 			
 			 if(filas<1)
             {
-    			html += '<p class="text">No hay ningún contenido referente a Portales.</p>';
+    			html += '<p class="text">No hay ning򮠣ontenido referente a Portales.</p>';
             }
             else
             {               
@@ -370,9 +361,10 @@
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
-			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito/caso-de-exito?exito="+data.getValue(i,0)+"'>Saber más</a></button>";
+			   var url = "https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito/caso-de-exito?exito="+data.getValue(i,0);
+			   html += '<button type="button" id="allcontent" onclick="javascript:Go(\''+url+'\')">Saber más</button>';
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
-			  
+			
 			   if(pagTotales>1){
 			     
 				  if (i==3*pagActual-1){
@@ -479,7 +471,10 @@
 		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-	
+	    function Go(destination){
+	    window.parent.location.href = destination;
+	    return false;
+		}
 
   </script>
     ]]>
