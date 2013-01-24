@@ -488,7 +488,7 @@
 	 function cargaVideo()
 	 {
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-		 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
+		 document.getElementById("allcontent").onclick = function(){ Go(Urlall);};
 		 
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
 		 document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
