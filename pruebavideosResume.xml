@@ -311,6 +311,7 @@
 				font-size:12px;
 				margin-left:-16px;
 				width:90px;
+				height: 2em;
 			}
 			 #allcontent3{
 				float:left;	
@@ -323,14 +324,17 @@
 				font-size:12px;
 				margin-left:-16px;
 				width:90px;
+				height: 2em;
 			}
 			#sabermas{
 			padding-top:20px;
 			font-size:12px;
+			height:2em;
 			}
 			#sabermas2{
 			padding-top:40px;
 			font-size:12px;
+			height: 2em;
 			}
 			#sabermas button,
 			#sabermas2 button{
