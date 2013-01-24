@@ -292,7 +292,7 @@
 			function Go2(destination){
 
 			window.open(destination,'_blank');
-			return false;
+			
 			} 
         </script>
     ]]>  
