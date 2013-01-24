@@ -291,8 +291,8 @@
 			
 			function Go2(destination){
 
-			window.open(destination,'_blank');
-			
+			//window.open(destination,'_blank');
+			window.parent.location.href=destination;
 			} 
         </script>
     ]]>  
