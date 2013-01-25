@@ -227,7 +227,7 @@
 			   margin-bottom:11px;
 			   margin-left:11px;
 			   margin-top:-7px;
-				font-family: 'BBVA Web Light', Arial, sans-serif;
+				font-family: BBVA Web Light, Arial, sans-serif;
 				font-weight: normal;
 			  }
 			  
@@ -236,7 +236,7 @@
 				margin-bottom:11px;
 				margin-left: 11px;
 				margin-top: -13px;
-				font-family: 'BBVA Web Light', Arial, sans-serif;
+				font-family: BBVA Web Light, Arial, sans-serif;
 				font-weight: normal;
 			  }
 			  
