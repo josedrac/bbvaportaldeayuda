@@ -288,10 +288,12 @@
             
             document.getElementById("content_div").innerHTML = html;
             gadgets.window.adjustHeight();
-			
+			function MM_openBrWindow(theURL,winName) { //v2.0
+				window.open(theURL,winName);
+			}
 			function Go2(destination){
 			    console.debug(destination);
-				window.open(destination,'_blank','width=790,height=580');
+				MM_openBrWindow(destination,'_blank');
 				return false;
 			} 
         </script>
