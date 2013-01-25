@@ -195,7 +195,7 @@
 					VarEnlace1URL = urlbase+VarEnlace1URL;
 					
 					}
-                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a class="link1"  title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
+                    html+='<li class="op1" onclick="Go2(\''+VarEnlace1URL+'\')">&nbsp;&nbsp;<a href="#" class="link1"  title=\"' + VarEnlace1Texto + '\"  >' + VarEnlace1Texto + '</a></li>';
                 }
                 if ((VarEnlace2Texto!="")&&(VarEnlace2URL!=""))
                 {    
@@ -291,7 +291,7 @@
 			
 			function Go2(destination){
 			    console.debug(destination);
-				window.open(destination,'_blank');
+				window.open(destination,'_blank','width=790,height=580');
 				return false;
 			} 
         </script>
