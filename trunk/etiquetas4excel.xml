@@ -89,7 +89,17 @@
 		margin-bottom:-20px;
 		
 	}
-		
+	.selected{
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backOrange.png') repeat-x;
+		float: left;
+		width: auto;
+		height: 25;
+		text-align: left;
+		padding-top: 4px;
+		margin-right: 10px;	
+		font-family:BBVA Web Light, Arial, sans-serif;
+		font-weight: normal;
+	}	
 	.blockLabels {
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue1.png') repeat-x;
 		float: left;
@@ -186,7 +196,7 @@
 	 var contador = new Array();
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
-	 	  
+	 var urlparameters	= gadgets.util.getUrlParameters()["parent"];  
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("content_div").innerHTML ='<div class="titulo">'+ titlebox+'</div>';
 	 
@@ -444,11 +454,15 @@
 	    
 	
 		if(aux1[i]!=""){
-		
+		    if(urlparameters.indexOf(aux1[i])!=-1){
+			muestra +='<div class="selected">';
+			muestra +=' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+html[aux1[i]]+') </a>';
+			muestra +='</div>';	
+			}else{
 			muestra +='<div class="blockLabels">';
 			muestra +=' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+html[aux1[i]]+') </a>';
 			muestra +='</div>';			
-			
+			}
 			
 		}
 	 
