@@ -37,7 +37,7 @@
     <UserPref name="VarEnlace9Texto" display_name="Texto enlace 9:" default_value=""/>
     <UserPref name="VarEnlace9URL" display_name="enlace 9:" default_value=""/>
    
-    <Content type="html" view="home"><![CDATA[
+    <Content type="html" view="home" charset="UTF-8"><![CDATA[
 		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
         <head>
