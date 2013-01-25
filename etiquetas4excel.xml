@@ -55,7 +55,7 @@
             clear: both;
 			margin-top:15px;
 			height:488px;
-			font-family:BBVA Web Light;
+			font-family:BBVA Web Light, Arial;
 			font-size:12px;
 			
 	}
