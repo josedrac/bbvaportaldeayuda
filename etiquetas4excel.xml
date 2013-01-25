@@ -204,10 +204,12 @@
 	 var contador = new Array();
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
+	 var auxiliar = gadgets.util.getUrlParameters()["parent"];
+	 if(auxiliar.indexOf('=')!=-1){
 	 var urlpadre = gadgets.util.getUrlParameters()["parent"].split("=");
 	 urlpadre[1]=urlpadre[1].replace(/\+/g,' ');
 	 urlparameters = decodeURIComponent(urlpadre[1]);
-	
+	 }
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("content_div").innerHTML ='<div class="titulo">'+ titlebox+'</div>';
 	 
@@ -464,9 +466,9 @@
 	//console.debug(urlparameters);
 	for (var i=0; i<aux1.length; i++){
 	    
-	
+	if(auxiliar.indexOf('=')!=-1){
 		if(aux1[i]!=""){
-		    if(urlparameters.indexOf(aux1[i])!=-1){
+		    if((auxiliar.indexOf('=')!=-1)&&(urlparameters.indexOf(aux1[i])!=-1)){
 			muestra +='<div class="selected">';
 			muestra +=' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+html[aux1[i]]+') </a>';
 			muestra +='</div>';	
@@ -493,7 +495,7 @@ function mostrarTipos()
 	for (var i=0; i<aux1.length; i++)
 	{
 		if(aux1[i]!="")
-		{	if(urlparameters.indexOf(aux1[i])!=-1){
+		{	if((auxiliar.indexOf('=')!=-1)&&(urlparameters.indexOf(aux1[i])!=-1)){
 			muestra +='<div class="selected">';
 			muestra +=' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux1[i]+'\'>'+aux1[i]+' ('+contadorTipo[aux1[i]]+') </a>';
 			muestra +='</div>';	
@@ -510,7 +512,7 @@ function mostrarTipos()
 	 for (var i=0; i<aux2.length; i++){
 	    
 		if(aux2[i]!=""){
-			    if(urlparameters.indexOf(aux2[i])!=-1){
+			    if((auxiliar.indexOf('=')!=-1)&&(urlparameters.indexOf(aux2[i])!=-1)){
 			      muestra2 +='<div class="selected">';
 			      muestra2 +=' <a target="_parent" href=\'https://sites.google.com/a/bbva.com/portaldeayuda/tags?tag='+aux2[i]+'\'>'+aux2[i]+' ('+contadorFormato[aux2[i]]+') </a>';
 			      muestra2 +='</div>';	
