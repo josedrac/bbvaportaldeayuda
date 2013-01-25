@@ -201,6 +201,7 @@
 	 urlparameters.replace(/[+]/g,' ');
 	 urlparameters.replace(/\+/g,'&nbsp;');
 	 urlparameters.replace(/[^a-zA-Z 0-9]+/g,' ');
+	 unescape(urlparameters);
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("content_div").innerHTML ='<div class="titulo">'+ titlebox+'</div>';
 	 
