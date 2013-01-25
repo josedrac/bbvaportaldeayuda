@@ -205,7 +205,9 @@
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
 	 var auxiliar = gadgets.util.getUrlParameters()["parent"];
+	 console.debug(auxiliar);
 	 if(auxiliar.indexOf('=')!=-1){
+	 console.debug('entro');
 	 var urlpadre = gadgets.util.getUrlParameters()["parent"].split("=");
 	 urlpadre[1]=urlpadre[1].replace(/\+/g,' ');
 	 urlparameters = decodeURIComponent(urlpadre[1]);
