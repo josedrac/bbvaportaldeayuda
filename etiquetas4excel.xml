@@ -90,7 +90,7 @@
 		
 	}
 	.selected{
-		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backOrange.png') repeat-x;
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backGreenLemon.png') repeat-x;
 		float: left;
 		width: auto;
 		height: 25;
@@ -139,7 +139,7 @@
 		font-weight: bold;
 		font-family: Arial, sans-serif;
 		font-size: 12px;
-		color: #0072C9;
+		color: #fff;
 		text-decoration: none;		
 		padding:0 5px;
 		font-weight: bold;
