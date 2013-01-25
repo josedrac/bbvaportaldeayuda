@@ -216,7 +216,7 @@
 			    html += "<tbody><tr><td colspan='4'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr>";
 				for(var i=1;i<filas;i++){
 					if (data.getValue(i,1) == "luis.mayorga@bbva.com")
-					{ var mail = "icono" }
+					{ var mail = "<img src='https://efd75d34-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/portaldeayuda/soporte/enviar_correo.png' />"; }
 					else
 					{
 						var mail=data.getValue(i,1);
