@@ -191,6 +191,7 @@ height: 1.6em;
 .c-aside-otrasOperaciones ul li .btn span {
 padding-left: 23px;
 line-height: 17px;
+font:bold 12px Arial;
 }
 .btn span {
 font-family: BBVA Web Medium, Arial, sans-serif;
