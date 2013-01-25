@@ -196,8 +196,8 @@
 	 var contador = new Array();
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
-	 var urlparameters	= gadgets.util.getUrlParameters()["parent"]; 
-	 urlparameters = decodeURIComponent(urlparameters); 
+	 var aux	= gadgets.util.getUrlParameters()["parent"]; 
+	 var urlparameters = decodeURIComponent(aux); 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("content_div").innerHTML ='<div class="titulo">'+ titlebox+'</div>';
 	 
