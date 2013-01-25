@@ -227,7 +227,7 @@
 			   margin-bottom:11px;
 			   margin-left:11px;
 			   margin-top:-7px;
-				font-family: 'BBVA Web Light, Arial, sans-serif';
+				font-family: BBVA Web Light, Arial, sans-serif;
 				font-weight: normal;
 			  }
 			  
@@ -236,14 +236,14 @@
 				margin-bottom:11px;
 				margin-left: 11px;
 				margin-top: -13px;
-				font-family: 'BBVA Web Light, Arial, sans-serif';
+				font-family: BBVA Web Light, Arial, sans-serif;
 				font-weight: normal;
 			  }
 			  
 		      #titleVideo a,
 		      #titleVideo2 a{
 				  color:#0078D2;
-				  font-family:'BBVA Web Book, Arial, sans-serif';
+				  font-family:BBVA Web Book, Arial, sans-serif;
 				  font-size:18px;
 				  width:248px;
 				  margin: 0 0 20px 0px;  
@@ -287,7 +287,7 @@
 				width:110px;
 				margin-top:10px;
 				font-size:14px;
-				font-family: 'BBVA Web Medium, Arial, sans-serif';
+				font-family: BBVA Web Medium, Arial, sans-serif;
 				color:#FFF;
 			}
 			
@@ -301,7 +301,7 @@
 				margin-right: 0;
 				text-decoration:none;
 				color:#FFF;
-				font-family: 'BBVA Web Medium, Arial, sans-serif';
+				font-family: BBVA Web Medium, Arial, sans-serif;
 				font-size:12px;
 				margin-left:-16px;
 				width:90px;
@@ -314,7 +314,7 @@
 				margin-right: 0;
 				text-decoration:none;
 				color:#FFF;
-				font-family: 'BBVA Web Medium, Arial, sans-serif';
+				font-family: BBVA Web Medium, Arial, sans-serif;
 				font-size:12px;
 				margin-left:-16px;
 				width:90px;
