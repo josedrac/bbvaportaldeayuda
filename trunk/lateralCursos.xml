@@ -290,7 +290,7 @@
             gadgets.window.adjustHeight();
 			
 			function Go2(destination){
-			
+			    console.debug(destination);
 				window.open(destination,'_blank');
 				return false;
 			} 
