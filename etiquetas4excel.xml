@@ -15,7 +15,7 @@
 
 <UserPref name="titlebox" display_name="Title of Tag Box" required="true" />  
     
- <Content type="html" charset="UTF-8">
+ <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	<head>
