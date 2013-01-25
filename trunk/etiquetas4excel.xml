@@ -468,7 +468,7 @@
 	//console.debug(urlparameters);
 	for (var i=0; i<aux1.length; i++){
 	    
-	if(auxiliar.indexOf('=')!=-1){
+	
 		if(aux1[i]!=""){
 		    if((auxiliar.indexOf('=')!=-1)&&(urlparameters.indexOf(aux1[i])!=-1)){
 			muestra +='<div class="selected">';
