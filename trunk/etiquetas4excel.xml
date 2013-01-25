@@ -18,8 +18,8 @@
  <Content type="html" charset="UTF-8">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-	
-	<style>
+	<head>
+	<style type="text/css">
 	  	
 		@font-face {
 			font-family: 'BBVA Web Light';
@@ -162,7 +162,7 @@
 	font-weight:bold
 	}
 </style>
-
+</head>
 <div id="content_div" class="content">
 </div>
 	
