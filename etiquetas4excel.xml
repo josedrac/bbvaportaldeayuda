@@ -20,7 +20,7 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	<head>
 	<style type="text/css">
-	  	
+	  	/* @group fonts */
 		@font-face {
 			font-family: 'BBVA Web Light';
 			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
@@ -42,7 +42,7 @@
              font-style: normal;
              font-weight: normal;
           } 
-		
+		/* @end */
 
 	.content{	
 	 		border: 1px solid #DDE3EA;
