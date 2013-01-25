@@ -196,12 +196,10 @@
 	 var contador = new Array();
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
-	 var rutapadre = gadgets.util.getUrlParameters()["parent"]; 
-	 var urlparameters = decodeURIComponent(rutapadre); 
-	 urlparameters.replace(/[+]/g,' ');
-	 urlparameters.replace(/\+/g,'&nbsp;');
-	 urlparameters.replace(/[^a-zA-Z 0-9]+/g,' ');
-	 unescape(urlparameters);
+	 var urlpadre = gadgets.util.getUrlParameters()["parent"].split("=");
+	 urlpadre[1]=urlpadre[1].replace(/\+/g,' ');
+	 urlparameters = decodeURIComponent(urlpadre[1]);
+	
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("content_div").innerHTML ='<div class="titulo">'+ titlebox+'</div>';
 	 
