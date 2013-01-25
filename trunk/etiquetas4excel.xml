@@ -450,6 +450,7 @@
     var muestra="";
 	var aux1= aux.split(",");
 	muestra +="<div class='titular'>Por nivel</div>";
+	console.debug(urlparameters);
 	for (var i=0; i<aux1.length; i++){
 	    
 	
