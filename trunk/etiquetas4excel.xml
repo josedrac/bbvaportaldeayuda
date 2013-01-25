@@ -198,7 +198,7 @@
      var filasTotales = 0;
 	 var rutapadre = gadgets.util.getUrlParameters()["parent"]; 
 	 var urlparameters = decodeURIComponent(rutapadre); 
-	 urlparameters.replace("+"," ");
+	 urlparameters.replace(/\+/g,"");
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 document.getElementById("content_div").innerHTML ='<div class="titulo">'+ titlebox+'</div>';
 	 
