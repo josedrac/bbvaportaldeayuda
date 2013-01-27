@@ -20,17 +20,7 @@
     <UserPref name="VarEnlace2URL" display_name="enlace 2:" default_value="" />        
     <Content type="html" view="home"><![CDATA[
         <style>
-       @font-face {
-	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
-
+     
 @font-face {
 	font-family: 'BBVA Web Book';
 	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
@@ -62,7 +52,8 @@
 						background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
 						background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
-						font: 16px BBVA Web Book;
+						font-size: 16px;
+						font-family: BBVA Web Book, Arial;
 						color: #333333;
 						padding-left: 18px;
 						padding-left: 18px;
@@ -73,7 +64,8 @@
 					.titulo a{
 					color:#333;
 					text-decoration:none;
-					font:16px BBVA Web Book;
+					font-size: 16px;
+			font-family: BBVA Web Book, Arial;
 					background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/contacto.png')no-repeat;
 					padding-left:40px;
 					background-position-y:2px;
@@ -110,7 +102,7 @@
             padding-left: 2px;
 						vertical-align: 3px;
 						text-decoration: none;
-            font: 12px Arial;
+            font-size: 12px; font-family: Arial; 
             font-weight: bold;
 						color: #0073C9;
 					}  
@@ -191,10 +183,12 @@ height: 1.6em;
 .c-aside-otrasOperaciones ul li .btn span {
 padding-left: 23px;
 line-height: 17px;
-font:bold 12px Arial;
+font-weight:bold;
+font-size: 12px;
+font-family: Arial;
 }
 .btn span {
-font-family: BBVA Web Medium, Arial, sans-serif;
+font-family: BBVA Web Medium, Arial;
 font-size: 1.2em;
 display: inline-block;
 margin-left: -1px;

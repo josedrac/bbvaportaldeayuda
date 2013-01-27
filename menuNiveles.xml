@@ -46,7 +46,7 @@
 			border-right: 1px solid  #DDE3EA;
 			border-bottom-right-radius: 8px;
 			border-top-right-radius: 8px;
-			font-family:BBVA Web Light;
+			font-family:BBVA Web Light, Arial;
 			font-weight:bold;
 			font-size:14px;
 			color: #003F8C;
@@ -94,7 +94,7 @@
             padding-left: 10px;
 			text-decoration: none;
 	        font-size:14px;
-			font-family:BBVA Web Book;
+			font-family:BBVA Web Book, Arial;
 			color: #0072C9;
 		}  
 		ul li:last-child{

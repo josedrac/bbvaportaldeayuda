@@ -67,7 +67,7 @@
 }
 
 .btn span {
-	font-family:BBVA Web Medium;
+	font-family:BBVA Web Medium,arial;
 	font-size:1.2em;
 	display:inline-block;
 	margin-left:-1px;
@@ -140,7 +140,7 @@
 }
 
 .btn.larger span{
-	font-family:BBVA Web Medium;
+	font-family:BBVA Web Medium,arial;
 }
 .btn.larger span.title {
 	display:block;
@@ -409,7 +409,7 @@
 /*** btn arrow left ***/
 
 .btn.white.arrow-left span{
-	font-family:BBVA Web Book;
+	font-family:BBVA Web Book,arial;
 	font-size:1.6em;
 	color:#0073C9;
 	position:relative;
@@ -423,18 +423,6 @@
 .btn.white.arrow-left:hover:before, .btn.white.arrow-left:hover span.arrow-ie , .btn.white.arrow-left.hover:before, .btn.white.arrow-left.hover span.arrow-ie{
 	background: url("../img/buttons-arrow.png") no-repeat -11px -144px;
 }
-
-/*.btn.white.arrow-left:active:before, .btn.white.arrow-left:active span.arrow-ie **, .btn.white.arrow-left.active:before,  .btn.white.arrow-left.active span.arrow-ie**{
-	background: url("../img/buttons-arrow.png") no-repeat -22px -144px;
-}*/
-
-/*
-.btn-white span {
-	font-family:BBVA Office Book;
-	font-size:1.4em;
-	font-weight:bold;
-	display:inline-block;
-}*/
 
 /*** *** *** *** *** *** *** *** EO WHITE BUTTONS *** *** *** *** *** *** *** ***/
 
@@ -633,7 +621,7 @@
 }
 
 .btn.info span{
-	font-family:BBVA Web Medium;
+	font-family:BBVA Web Medium,arial;
 }
 
 .btn.info.more-info{
@@ -1185,7 +1173,7 @@
 	display: inline-block;
 	zoom: 1;
 	font-weight: bold;
-	font-family: BBVA Office Light;
+	font-family: BBVA Web Light,arial;
 	color: white;
 	border: 1px solid #D5E2EE;
 	cursor: pointer;
@@ -1209,7 +1197,7 @@
 	display: inline-block;
 	zoom: 1;
 	font-weight: bold;
-	font-family: BBVA Office Light;
+	font-family: BBVA web Light,arial;
 	color: white;
 	border: 1px solid #6699C4;
 	text-align: center;
@@ -1274,92 +1262,5 @@
 
 /* @end */
 
-/* botonera operaciones */
-
-/*
-.c-widget-OperationsList {
-	padding: 1.9em 1.9em 1em 1.9em;
-}
-
-.c-widget-OperationsList li {
-	position: relative;	
-	width: 26.8em;
-	height: 2.8em;
-	margin-right: 2em;
-	margin-bottom: 10px;
-	line-height: 2.8em;
-	float: left;	
-}
-
-.c-widget-OperationsList li span {	
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-	border-radius: 4px;
-	display: inline-block;
-	zoom: 1;
-	font-weight: bold;	
-	cursor: pointer;
-	width: 17.8em;
-	text-align: left;
-	font-size: 1.2em;
-	height: 30px; 
-	line-height: 30px;
-	padding: 0 2.8em 0 1em;
-	width: 226px; 
-	background: white;
-	background: #ffffff;
-background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOGZhZmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
-background: -moz-linear-gradient(top,  #ffffff 0%, #f8fafa 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f8fafa)); 
-background: -webkit-linear-gradient(top,  #ffffff 0%,#f8fafa 100%); 
-background: -o-linear-gradient(top,  #ffffff 0%,#f8fafa 100%); 
-background: -ms-linear-gradient(top,  #ffffff 0%,#f8fafa 100%); 
-background: linear-gradient(to bottom,  #ffffff 0%,#f8fafa 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8fafa',GradientType=0 );
-	color: #0072C9;
-	border: 1px solid #D5E2EE;	
-	font-family: BBVA Web Medium;
-	font-weight: normal;
-}
-
-.c-widget-OperationsList li span:hover {
-	background: rgb(255,255,255);
-	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWYxZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(234,241,247,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(234,241,247,1)));
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,241,247,1) 100%);
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,241,247,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,241,247,1) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(234,241,247,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaf1f7',GradientType=0 );
-	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
-	border:.1em solid #B6CEEA;
-	color: #003F8C;
-	cursor:pointer;
-}
-
-.c-widget-OperationsList li span span.arrow-option {
-	background: url("../img/ico-flecha-azul-derecha.png") no-repeat;
-	width: 2.909em;
-	height: 2.909em;
-	top: -0.25em;
-	right: 0em;
-	padding: 0em;
-	background-position: 1.083em center;
-	position: absolute;
-	border: none;
-}
-
-.c-widget-OperationsList li span span.arrow-option:hover {	
-	border: none;
-	-webkit-box-shadow: 0px;
-	-moz-box-shadow: 0px;
-	box-shadow: 0px;
-}*/
-/* fin botonera operaciones */
 
 

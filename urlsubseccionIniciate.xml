@@ -39,17 +39,6 @@
 	font-weight: normal;
 }
 
-@font-face {
-	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
-
 /* @end */
 	
 	.linedowntitle{
@@ -60,7 +49,7 @@
 	.title{
 	color:#000;
 	font-size: 18px;
-	font-family: BBVA Web Light, BBVA Web, Arial, sans-serif;
+	font-family: BBVA Web Light, Arial;
 	margin-left:10px;
 	margin-top:0px;
 	margin-bottom:10px;
@@ -72,7 +61,8 @@
 	list-style:none;
 	}
 	.subseccion li a{
-	font: 16px BBVA Web Book,BBVA Web, Arial, sans-serif;
+	font-size: 16px;
+	font-family: BBVA Web Book, Arial;
 	color:#0065B7;
 	text-decoration:none;
 	padding:10px 0px;
