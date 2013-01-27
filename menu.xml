@@ -194,7 +194,7 @@ margin-top:-19px;
 	text-decoration: none;
 	color:  #8B9098;
 	font-size: 12px;
-	font-family: BBVA Web Light Arial;
+	font-family: BBVA Web Light, Arial;
 	font-weight: normal;
 	
 }
