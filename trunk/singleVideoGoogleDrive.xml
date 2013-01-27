@@ -61,12 +61,15 @@
 	  	}
 	  	#TagVideo {
 	    	color: #0078D2;
-	    	font: 18px BBVA Web Book;
+	    	font-size: 18px;
+			font-family: BBVA Web Book, Arial;
+	    	
 	    	padding-left: 10px;
 	  	}
       	#titleVideo {
 			color: #0078D2;
-			font: 22px BBVA Web Light;
+			font-size: 22px;
+			font-family: BBVA Web Light, Arial;
 			padding-bottom: 10px;
 			padding-left: 10px;
 			border-bottom: 1px #D1D1D1 solid;
@@ -89,7 +92,8 @@
 			margin-right: 0;
 			text-decoration: none;
 			color: white;
-			font: 12px BBVA Web Medium;
+			font-size: 16px;
+			font-family: BBVA Web Medium, Arial;
 			margin-left: -16px;
 			width: 90px;
 		}

@@ -79,7 +79,7 @@ body, html {
 
 body {
 	font-size: 0.5em;
-	font-family: Arial,sans-serif;
+	font-family: Arial;
 	color: rgb(0, 76, 153);
 	text-align: left;
 }
@@ -91,7 +91,7 @@ body, html {
 
 body {
 	font-size: 0.5em;
-	font-family: Arial,sans-serif;
+	font-family: Arial;
 	color: rgb(0, 76, 153);
 	text-align: left;
 	line-height: 1;
@@ -112,7 +112,7 @@ body, html {
 
 body {
 	font-size: 0.5em;
-	font-family: Arial,sans-serif;
+	font-family: Arial;
 	color: rgb(0, 76, 153);
 	text-align: left;
 }
@@ -429,7 +429,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', end
 .c-structural_header .logo_bbva .active {
 	font-size: 1.8em;
 	line-height: 120%;
-	font-family: BBVA Web Book;
+	font-family: BBVA Web Book,arial;
 	color: #003F8C;
 	float: left;
 	padding: 3.167em 0.722em 0 0.5em;
@@ -439,7 +439,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', end
 .c-structural_header .logo_bbva .active.last {
 	font-size: 1.8em;
 	line-height: 120%;
-	font-family: BBVA Web Book;
+	font-family: BBVA Web Book,arial;
 	color: #003F8C;
 	float: left;
 	padding: 3.167em 0.722em 0 0.5em;
@@ -449,7 +449,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', end
 .c-structural_header .logo_bbva .not-active {
 	font-size: 1.8em;
 	line-height: 120%;
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Light,arial;
 	float: left;
 	padding: 3.167em 0.722em 0 0.611em;
 	color: #8B9098;
@@ -460,7 +460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', end
 .c-structural_header .logo_bbva .not-active.first {
 	font-size: 1.8em;
 	line-height: 120%;
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Light,arial;
 	float: left;
 	padding: 3.167em 0.722em 0 0.611em;
 	color: #8B9098;
@@ -487,7 +487,7 @@ border-radius: 5px;
 	background: linear-gradient(to bottom,  #0079c1 0%,#00529b 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#00529b',GradientType=0 );
 	position: relative;
-	font-family: BBVA Web Medium;
+	font-family: BBVA Web Medium,arial;
 	font-weight: normal;
 	text-align: center;
 }
@@ -874,7 +874,7 @@ body.logged .c-estructural-navegacionPrincipal_R2 ul li.seguros {
 }
 
 .carousel-box .carousel-item .content .variable-text h2 {
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Light,arial;
 	font-size: 3em;
 	color: #0072C9;
 	padding-top: 19px;
@@ -886,7 +886,7 @@ body.logged .c-estructural-navegacionPrincipal_R2 ul li.seguros {
 }
 
 .carousel-box .carousel-item .content .variable-text p {
-	font-family: BBVA Web Book;
+	font-family: BBVA Web Book,arial;
 	color: #0065B7;
 	font-size: 1.5em;
 	line-height: 1.4em;
@@ -974,7 +974,7 @@ section.athird {
 
 		section.athird header h1 {
 			float: left;
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book,arial;
 			color: #0078D2;
 			font-size: 1.8em;
 			width: 7.9em;
@@ -1023,7 +1023,7 @@ section.ahalf {
 
 		section.ahalf header h1 {
 			float: left;
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book,arial;
 			color: #0078D2;
 			font-size: 1.8em;			
 			padding-top: 5px;
@@ -1112,7 +1112,7 @@ section.news {
 		section.news header h1 {
 			line-height:1.8em;
 			font-size: 1.8em;
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book,arial;
 			color: #0078D2;
 			
 		}
@@ -1174,24 +1174,6 @@ aside.links {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f5f7f8',GradientType=0 );
 		
 	}
-/*	
-		aside.links ul li span {
-			height: 2.8em;
-			padding: 1em 1.9em 1em 1.8em;
-			width:21.8em;
-			background: url('../img/BBVA-bg-link.png') no-repeat 20px center;
-			display: block;
-			cursor: pointer;
-		}
-		
-		aside.links ul li span h2{
-			padding-left: 60px;
-			padding-top: 7px;
-			font-family: BBVA Web Book;
-			font-size: 1.7em;
-			color: #0072C9;
-		}
-		*/
 		
 		aside.links ul li h2 {
 			height: 2.8em;
@@ -1205,7 +1187,7 @@ aside.links {
 		aside.links ul li h2 span{
 			padding-left: 60px;
 			line-height: 1.9em;
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book,arial;
 			font-size: 1.7em;
 			color: #0072C9;
 		}
@@ -1266,7 +1248,7 @@ section.athird-large.last {
 
 		section.athird-large header h1 {
 			/*float: left;*/
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book,arial;
 			color: #434A58;
 			font-size: 1.4em;
 			/*width: 7.9em;*/
@@ -1382,7 +1364,7 @@ section.athird-large.last {
 		.footer ul li h2{
 			color: #434A58;
 			font-size: 1.1em;
-			font-family: BBVA Web Book;
+			font-family: BBVA Web Book, Arial;
 			padding-bottom: 10px;
 		}
 

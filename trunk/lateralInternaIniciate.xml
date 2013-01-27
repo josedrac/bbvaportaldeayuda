@@ -44,7 +44,8 @@
 						background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
 						background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
-						font: 16px BBVA Web Book;
+						font-size: 16px;
+			font-family: BBVA Web Book, Arial;
 						color: #333333;
 						padding-left: 18px;
 						padding-left: 18px;
@@ -84,7 +85,7 @@
             padding-left: 2px;
 						vertical-align: 3px;
 						text-decoration: none;
-            font: 12px Arial;
+            font-size: 12px; font-family: Arial; 
             font-weight: bold;
 						color: #0073C9;
 					}  
