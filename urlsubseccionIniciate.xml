@@ -62,7 +62,7 @@
 	}
 	.subseccion li a{
 	font-size: 16px;
-	font-family: BBVA Web Book, Arial;
+	font-family: Arial;
 	color:#0065B7;
 	text-decoration:none;
 	padding:10px 0px;
