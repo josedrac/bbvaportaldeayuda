@@ -321,7 +321,7 @@
 				var pagTotales = Math.ceil(filas/5);
 				var pagActual = 1;
 				var html = "";
-				console.debug(filas);
+				
 				
 				
 				if(filas<1)
@@ -361,11 +361,11 @@
 
 					  }
 					}
-					
-					html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
+					if(pagActual!=pagTotales){
+					html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';}
                     html += '</div>';
                     html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
-			   
+			        
 			        pagActual++;
 					
 					}
