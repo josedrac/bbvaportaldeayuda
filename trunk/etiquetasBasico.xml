@@ -338,8 +338,7 @@
 				 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineproduct' />";
 				   
 				   if(pagTotales>1){
-			      var cap = 5*pagActual-1;
-				  console.debug(cap);
+			      
 				  if (i==5*pagActual-1){
 				  
 				    var pagActualParaMostrar = pagActual+1;
