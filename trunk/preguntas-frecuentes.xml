@@ -161,7 +161,7 @@
 	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/etiquetas-preguntas-frecuentes'>Etiquetas</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/gmail-preguntas-frecuentes'>GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/gmail-preguntas-frecuentes'>Gmail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
 	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/google-calendar-preguntas-frecuentes'>Google Calendar</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
@@ -176,10 +176,10 @@
 	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/migracion-a-gmail-preguntas-frecuentes'>Migración a Gmail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/modo-de-funcionamiento-de-gmail'>Modo de funcionamiento de GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/modo-de-funcionamiento-de-gmail'>Modo de funcionamiento de Gmail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/outlook-vs-gmail-preguntas-frecuentes'>Outlook vs. GMail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes/outlook-vs-gmail-preguntas-frecuentes'>Outlook vs. Gmail</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
 					
