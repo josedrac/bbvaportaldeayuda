@@ -128,7 +128,7 @@
 				
 				window.open(str,'_blank','send mail');
 			
-				return false;
+				
 				}
 				
 	 function handleQueryResponse(response) {
