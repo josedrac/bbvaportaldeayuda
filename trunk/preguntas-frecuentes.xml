@@ -114,7 +114,7 @@
 	}
 	#iniciate a{
 	font-size:14px;
-	font-family: BBVA Web Book, Arial;
+	font-family: Arial;
 	color:#0065B7;
 	text-decoration:none;
 	padding:10px 0px;
@@ -150,7 +150,8 @@
 	 var prefs = new _IG_Prefs();
 	 
 	 var html="";
-	 
+	 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/iniciateline.png' class='iniciateline'/>";
+
 	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes-contactos'>Contactos</a><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
 	 html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	  
