@@ -16,7 +16,26 @@
 
 <script type="text/javascript">
 
-document.getElementById('test').innerHTML = navigator.userAgent.toLowerCase();
+var userAgent = navigator.userAgent.toLowerCase();
+
+if (userAgent.indexOf('msie 8')>-1)
+{
+	var testValue = "Estas utilizando internet explorer 8 ->" + userAgent;
+}
+else if (userAgent.indexOf('msie 7')>-1)
+	{
+		var testValue = "Estas utilizando internet explorer 7 ->" + userAgent;
+	}
+	else if (userAgent.indexOf('msie 6')>-1)
+	{
+		var testValue = "Estas utilizando internet explorer 6 ->" + userAgent;
+	}
+	else
+	{
+		var testValue = "Estas utilizando ->" + userAgent;
+	}
+
+document.getElementById('test').innerHTML = testValue;
 
 
 </script>
