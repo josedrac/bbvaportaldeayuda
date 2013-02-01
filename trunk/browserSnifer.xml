@@ -21,22 +21,37 @@ var userAgent = navigator.userAgent.toLowerCase();
 if (userAgent.indexOf('msie 8')>-1)
 {
 	var testValue = "Estas utilizando internet explorer 8 ->" + userAgent;
+	var test = "msie 8";
 }
 else if (userAgent.indexOf('msie 7')>-1)
 	{
 		var testValue = "Estas utilizando internet explorer 7 ->" + userAgent;
+		var test = "msie 7";
 	}
 	else if (userAgent.indexOf('msie 6')>-1)
 	{
 		var testValue = "Estas utilizando internet explorer 6 ->" + userAgent;
+		var test = "msie 6";
 	}
 	else
 	{
 		var testValue = "Estas utilizando ->" + userAgent;
+		var test = userAgent;
 	}
 
 document.getElementById('test').innerHTML = testValue;
 
+
+function Go(test)
+	{
+		if(destination=='msie 6' || destination=='msie 7' || destination=='msie 8')
+		{
+			window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/navegador-no-compatible";
+		}
+		return false;
+	}
+
+Go(test);
 
 </script>
 
