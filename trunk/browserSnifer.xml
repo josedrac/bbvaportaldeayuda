@@ -9,14 +9,15 @@
   
  <Content type="html">
  <![CDATA[ 
-  
+  <body onload="redirect()">	
 <div id="test">
 	
 </div>
-
+</body>
 <script type="text/javascript">
 
 var userAgent = navigator.userAgent.toLowerCase();
+var test="";
 
 if (userAgent.indexOf('msie 8')>-1)
 {
@@ -39,19 +40,19 @@ else if (userAgent.indexOf('msie 7')>-1)
 		var test = userAgent;
 	}
 
-document.getElementById('test').innerHTML = testValue;
+document.getElementById('test').innerHTML = testValue + "||||||" + test;
 
 
-function go(test)
+function redirect()
 	{
-		if(destination=='msie 6' || destination=='msie 7' || destination=='msie 8')
+		if(test=='msie 6' || test=='msie 7' || test=='msie 8')
 		{
 			window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/navegador-no-compatible";
 		}
 		return false;
 	}
 
-window.onload(go(test));
+
 
 </script>
 
