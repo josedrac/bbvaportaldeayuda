@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="Iframe test"
+  directory_title="iframe test"
+  description="iframe"
+  author="Aslak Grinsted" author_email="rek@phunck.cmo"
+  author_link="http://www.glaciology.net"
+  scrolling="true"
+  category="funandgames"> 
+  </ModulePrefs>
+<Content type="url"  href="http://www.whatbrowser.org/intl/en_uk/"/>
+</Module>
