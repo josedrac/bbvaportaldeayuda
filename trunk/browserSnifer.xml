@@ -42,7 +42,7 @@ else if (userAgent.indexOf('msie 7')>-1)
 document.getElementById('test').innerHTML = testValue;
 
 
-function Go(test)
+function go(test)
 	{
 		if(destination=='msie 6' || destination=='msie 7' || destination=='msie 8')
 		{
@@ -51,7 +51,7 @@ function Go(test)
 		return false;
 	}
 
-Go(test);
+window.onload(go(test));
 
 </script>
 
