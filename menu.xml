@@ -237,11 +237,6 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 		return false;
 	}
 	
-	function redirect()
-	{
-		return false;
-	}
-
 	gadgets.util.registerOnLoadHandler(datospagina);
 	
 	function datospagina()
