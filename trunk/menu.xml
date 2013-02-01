@@ -200,7 +200,7 @@ margin-top:-19px;
 }
 
 </style>
-
+<body onload="redirect()">
 <div class="bloqueEnlaces">
 Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">| English</a>
 </div>
@@ -215,7 +215,7 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
-
+</body>
 <script type="text/javascript">
 
 	document.getElementById('home').onclick = function(){ Go('home');};
@@ -280,6 +280,42 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 		
 		}
 	}
+	
+	
+	
+var userAgent = navigator.userAgent.toLowerCase();
+var test="";
+
+if (userAgent.indexOf('msie 8')>-1)
+{
+	var testValue = "Estas utilizando internet explorer 8 ->" + userAgent;
+	var test = "msie 8";
+}
+else if (userAgent.indexOf('msie 7')>-1)
+	{
+		var testValue = "Estas utilizando internet explorer 7 ->" + userAgent;
+		var test = "msie 7";
+	}
+	else if (userAgent.indexOf('msie 6')>-1)
+	{
+		var testValue = "Estas utilizando internet explorer 6 ->" + userAgent;
+		var test = "msie 6";
+	}
+	else
+	{
+		var testValue = "Estas utilizando ->" + userAgent;
+		var test = userAgent;
+	}
+
+function redirect()
+	{
+		if(test=='msie 6' || test=='msie 7' || test=='msie 8')
+		{
+			window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/navegador-no-compatible";
+		}
+		return false;
+	}
+	
 	</script>
 
   ]]> 
