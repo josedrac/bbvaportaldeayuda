@@ -1351,6 +1351,7 @@ section.athird-large.last {
 		.footer ul li.op3,
 		.footer ul li.op4 {
 			min-height: 12em;
+			border: none;
 		}
 		
 		.footer ul li ul li {
