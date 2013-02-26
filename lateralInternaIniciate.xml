@@ -61,7 +61,6 @@
             -webkit-border-radius: 2px;
             -khtml-border-radius: 2px;
             width: 298px;
-			//background-color:red;
             clear: both;
 			margin-top:15px;
 					}
@@ -91,6 +90,30 @@
 					}  
 	
 	</style>
+	
+	<!--[if IE 7]>
+						
+		<style type="text/css"> 
+			.titulo{
+				background: #f5f7f8;	
+            }	
+				
+		</style>
+		
+	<![endif]-->
+	
+	<!--[if IE 8]>
+					
+		<style type="text/css"> 
+			
+			.titulo{
+				background: #f5f7f8;	
+            }	
+   		
+		</style>
+		
+	<![endif]-->
+	
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
 <div id="content_div" class="caja"></div>
