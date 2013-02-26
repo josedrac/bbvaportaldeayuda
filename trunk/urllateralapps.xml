@@ -88,7 +88,31 @@
 					}  
                
         </style>
-    
+    	
+    	<!--[if IE 7]>
+					
+			<style type="text/css"> 
+				
+				.titulo{
+					background: #F5F7F8
+	    		}
+					
+			</style>
+		
+		<![endif]-->
+		
+		<!--[if IE 8]>
+    					
+			<style type="text/css"> 
+				
+				.titulo{
+					background: #F5F7F8
+	    		}
+	   			
+			</style>
+			
+		<![endif]-->
+    	
         <div id="content_div" class="caja"></div>
 
         <script type="text/javascript">
