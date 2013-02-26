@@ -217,12 +217,12 @@
 				margin-top:5px;
 				display:block;
 			  }
-			  #TagVideo img,
-			  #TagVideo2 img{
+			  #tagVideo img,
+			  #tagVideo2 img{
 			   float:left;
 			   margin:-4px 10px 0px 0px;
 			  }
-			  #TagVideo{
+			  #tagVideo{
 			   color:#000;
 			   margin-bottom:11px;
 			   margin-left:11px;
@@ -231,7 +231,7 @@
 				font-weight: normal;
 			  }
 			  
-			  #TagVideo2{
+			  #tagVideo2{
 			    color:#000;
 				margin-bottom:11px;
 				margin-left: 11px;
@@ -291,9 +291,6 @@
 				color:#FFF;
 			}
 			
-			 
-			
-			
 			 #allcontent2{
 				float:left;	
 				position: relative;
@@ -304,7 +301,7 @@
 				font-family: BBVA Web Medium, Arial;
 				font-size:12px;
 				margin-left:-16px;
-				width:90px;
+				width:91px;
 				
 			}
 			 #allcontent3{
@@ -317,7 +314,7 @@
 				font-family: BBVA Web Medium, Arial;
 				font-size:12px;
 				margin-left:-16px;
-				width:90px;
+				width:91px;
 				
 			}
 			#sabermas{
@@ -422,8 +419,97 @@
 			}
 			
 		</style>
+		
+		<!--[if IE 7]>
+			
+			<style type="text/css">
+			
+				#allcontent button,
+				#sabermas button,
+				#sabermas2 button{
+					background: #0079C1; 
+				}
+				
+			  	button{
+					background: #0079C1;
+					
+				}
+				
+				#allcontent{
+					padding-bottom: 4px;
+				}
+				
+				#tagVideo,
+				#tagVideo2{
+					margin-top: 4px;
+				}
+				
+				.linetitle{
+					margin-bottom:3px;
+				}
+			
+				.linevideo{		
+					margin-bottom:4px;
+					margin-top: -12px;
+				}
+			
+				.linevideoLast{		
+					margin-bottom:3px;
+					margin-top: -12px;
+				}
+				
+				#titlecomboVideo h2{
+					margin-bottom: 5px;
+					margin-top: 5px;
+				}
+				
+			</style>
+		
+		<![endif]-->
+		
+		<!--[if IE 8]>
+		
+			<style type="text/css">
+			
+				#allcontent button,
+				#sabermas button,
+				#sabermas2 button{
+					background: #0079C1; 
+				}
+				
+			  	button{
+					background: #0079C1;
+				}
+				
+				#tagVideo,
+				#tagVideo2{
+					margin-top: 4px;
+				}
+				
+				.linetitle{
+					margin-bottom:3px;
+				}
+			
+				.linevideo{		
+					margin-bottom:4px;
+					margin-top: -12px;
+				}
+			
+				.linevideoLast{		
+					margin-bottom:3px;
+					margin-top: -12px;
+				}
+				
+				#titlecomboVideo h2{
+					margin-bottom: 5px;
+					margin-top: 5px;
+				}
+						
+			</style>
+		
+		<![endif]-->
+		
 		</head>
-	
 	
 <body onload="cargaCompleta()">
 <div id="titlecomboVideo"></div>
