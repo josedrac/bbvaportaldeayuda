@@ -290,10 +290,14 @@
 			.bloqueSiguiente img{
 				border: 0;
 			}	
-			
+			button{
+					background: #0079C1;
+				}	
 		</style>
 			
 	<![endif]-->
+	
+	
 	
 <div id="listportales"></div>	
 		
