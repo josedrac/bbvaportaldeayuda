@@ -54,6 +54,16 @@
 		
 	</style>
 	
+	<!--[if IE 7]>
+					
+		<style type="text/css"> 
+			#titlepage{	
+				padding-bottom: 6px;
+			}
+		</style>
+				
+	<![endif]-->
+	
 	<h1 id="titlepage"></h1>	
    	
    	<script type="text/javascript">
