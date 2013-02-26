@@ -116,12 +116,42 @@
 			
 		</style>
 		
-		<!--[if IE]>
+		<!--[if IE 7]>
+				
+			<style type="text/css">
+				button{
+					background: #0079C1;
+				}
+				#titleVideo{
+					padding-bottom: 26px;
+				}
+				#urlLink{
+					padding-left: 0.8em;
+				}
+			</style>
+			
+		<![endif]-->
+		
+		<!--[if IE 8]>
+				
+			<style type="text/css">
+				button{
+					background: #0079C1;
+				}
+				#titleVideo{
+					padding-bottom: 25px;
+				}
+			</style>
+			
+		<![endif]-->
+		
+		<!--[if IE 9]>
 				
 			<style type="text/css">
 				#urlLink a{
 					padding-top:2px;			
 				}
+				
 			</style>
 			
 		<![endif]-->
