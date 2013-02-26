@@ -203,7 +203,7 @@
 		
 		</style>
 		
-		<!--[if IE]>
+		<!--[if IE 9]>
 		
 			<style type="text/css">
 				.linedowntitle{	
