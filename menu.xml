@@ -212,7 +212,7 @@ margin-top:-19px;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-		background-image: url('https://bbvaportaldeayuda-testsie.googlecode.com/svn/trunk/img/fondo-menu.png');
+		background-image: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/fondo-menu.png');
 		position: relative;
 		font-family: BBVA Web Light, Arial;
 		font-weight: normal;
