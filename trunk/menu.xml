@@ -200,7 +200,42 @@ margin-top:-19px;
 }
 
 </style>
-<body onload="redirect()">
+<!--[if IE]>
+		
+	<style type="text/css">
+	
+	.cabeceramenu{
+		color: #fff;
+		width: 96em;
+		height: 5.1em;
+		margin-top: 0px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background-image: url('https://bbvaportaldeayuda-testsie.googlecode.com/svn/trunk/img/fondo-menu.png');
+		position: relative;
+		font-family: BBVA Web Light, Arial;
+		font-weight: normal;
+		text-align: center;
+		}
+	
+	#googleapps a,
+	#inicio a,
+	#trucosyconsejos a,
+	#movilidad a,
+	#exito a{
+	 color:#fff;
+	}
+	
+	
+</style>
+		
+<![endif]-->
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+
+
 <div class="bloqueEnlaces">
 Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">| English</a>
 </div>
@@ -215,9 +250,47 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
-</body>
+
 <script type="text/javascript">
 
+function getElementsByClassName(className) {
+	if (document.getElementsByClassName) { 
+		return document.getElementsByClassName(className); }
+	else { return document.querySelectorAll('.' + className); } 
+
+	}
+if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+        "use strict";
+        if (this == null) {
+            throw new TypeError();
+        }
+        var t = Object(this);
+        var len = t.length >>> 0;
+        if (len === 0) {
+            return -1;
+        }
+        var n = 0;
+        if (arguments.length > 0) {
+            n = Number(arguments[1]);
+            if (n != n) { // shortcut for verifying if it's NaN
+                n = 0;
+            } else if (n != 0 && n != Infinity && n != -Infinity) {
+                n = (n > 0 || -1) * Math.floor(Math.abs(n));
+            }
+        }
+        if (n >= len) {
+            return -1;
+        }
+        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+        for (; k < len; k++) {
+            if (k in t && t[k] === searchElement) {
+                return k;
+            }
+        }
+        return -1;
+    }
+} 	
 	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
 	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
@@ -245,71 +318,55 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 		var parametros = gadgets.util.getUrlParameters()["parent"];
 	
 		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
-		{   			
-			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("homefirst")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";	
+		{   
+			var tabhomefirst = getElementsByClassName('homefirst');
+			tabhomefirst[0].style['border-bottom-left-radius']="5px";
+			tabhomefirst[0].style['border-top-left-radius']="5px";
+			tabhomefirst[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabhomefirst[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";			
+			
 		}
 		if(parametros.indexOf("casos-de-exito")!=-1){
-			document.getElementsByClassName("exito")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("exito")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			var tabexito = getElementsByClassName('exito');
+			tabexito[0].style['border-bottom-right-radius']="5px";
+			tabexito[0].style['border-top-right-radius']="5px";
+			tabexito[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabexito[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 		if(parametros.indexOf("google-apps")!=-1){
-			document.getElementsByClassName("apps")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("apps")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+		    var tabapps = getElementsByClassName('apps');
+			tabapps[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabapps[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 		if(parametros.indexOf("trucosyconsejos")!=-1){
-			document.getElementsByClassName("trucos")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("trucos")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			var tabtrucos = getElementsByClassName('trucos');
+			tabtrucos[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 		if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){
-			document.getElementsByClassName("iniciate")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("iniciate")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			var tabiniciate = getElementsByClassName('iniciate');
+			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 		
 		}
 		if(parametros.indexOf("movilidad")!=-1){
-			document.getElementsByClassName("movilidad")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("movilidad")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+		    var tabmovilidad = getElementsByClassName('movilidad');
+			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 	}
 	
 	
 	
-var userAgent = navigator.userAgent.toLowerCase();
-var test="";
 
-if (userAgent.indexOf('msie 8')>-1)
-{
-	var testValue = "Estas utilizando internet explorer 8 ->" + userAgent;
-	var test = "msie 8";
-}
-else if (userAgent.indexOf('msie 7')>-1)
-	{
-		var testValue = "Estas utilizando internet explorer 7 ->" + userAgent;
-		var test = "msie 7";
-	}
-	else if (userAgent.indexOf('msie 6')>-1)
-	{
-		var testValue = "Estas utilizando internet explorer 6 ->" + userAgent;
-		var test = "msie 6";
-	}
-	else
-	{
-		var testValue = "Estas utilizando ->" + userAgent;
-		var test = userAgent;
-	}
-
-function redirect()
-	{
-		if(test=='msie 6' || test=='msie 7' || test=='msie 8')
-		{
-			window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/navegador-no-compatible";
-		}
-		return false;
-	}
 	
 	</script>
 
