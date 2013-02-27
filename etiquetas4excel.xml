@@ -93,7 +93,7 @@
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backGreenLemon.png') repeat-x;
 		float: left;
 		width: auto;
-		height: 25;
+		height: 25px;
 		text-align: left;
 		padding-top: 4px;
 		margin-right: 10px;	
@@ -104,7 +104,7 @@
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue1.png') repeat-x;
 		float: left;
 		width: auto;
-		height: 25;
+		height: 25px;
 		text-align: left;
 		padding-top: 4px;
 		margin-right: 10px;	
@@ -116,7 +116,7 @@
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue2.png') repeat-x;
 		float: left;
 		width: auto;
-		height: 25;
+		height: 25px;
 		text-align: left;
 		padding-top: 4px;
 		margin-right: 10px;	
@@ -127,7 +127,7 @@
 	.blockFormats {
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue3.png') repeat-x;
 		width: auto;
-		height:25;
+		height:25px;
 		float:left;
 		text-align:center;
 		padding-top:4px;
@@ -171,7 +171,7 @@
 	margin-bottom:10px;
 	font-weight:bold;
 	}
-	.titular1{
+	#titular1{
 	font-size:12px;
 	font-family:Arial;
 	color:#434A58;
@@ -180,12 +180,126 @@
 	font-weight:bold
 	}
 </style>
+<!--[if IE]>
+		
+	<style type="text/css">
+		.content{
+			width: 298px;
+            clear: both;
+			margin-top:15px;
+			height:488px;
+			font-family:BBVA Web Light, Arial;
+			font-size:12px;
+			border: 1px solid #DDE3EA;
+            border-radius: 2px;
+		   
+		}
+		.titulo{
+			font-size: 16px;
+			font-family:BBVA Web Book, Arial;
+			color: #333333;
+			padding-left: 18px;
+			padding-left: 20px;
+			padding-top: 14px;
+			padding-bottom: 15px;
+			margin-bottom:10px;
+	}
+	    .selected{
+				float: left;
+				width: auto;
+				height: 25px;
+				text-align: left;
+				padding-top: 4px;
+				margin-right: 10px;	
+				font-family:BBVA Web Light, Arial;
+				font-weight: normal;
+		}
+	
+	.blockTypes {
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue2.png') repeat-x;
+		float: left;
+		width: 120px;
+		height: 30px;
+		text-align: left;
+		padding-top: 4px;
+		margin-right: 10px;	
+		font-family:BBVA Web Light, Arial;
+		font-weight: normal;
+		margin-top:4px;
+	}	
+	
+	.blockTypes a{
+		width: 120px;
+		height: 30px;
+		font-weight: bold;
+		font-family: Arial;
+		font-size: 12px;
+		color: #0072C9;
+		text-decoration: none;		
+		padding:0 5px;
+		font-weight: bold;
+	}
+	.etiquetas, 
+	.tipos, 
+	.formatos {
+		float:left;
+		width:280px;
+		padding-left:20px;
+		padding-top:20px;
+		
+		
+	}
+	#titular1{
+		margin-top:30px;
+	}
+	.blockLabels {
+		margin-bottom:5px;
+		display:inline-block;
+	}
+	.blockLabels a{
+		display:inline-block;
+	}
+	</style>
+		
+<![endif]-->
 </head>
 <div id="content_div" class="content">
 </div>
 	
    <script type="text/javascript">
    //console.debug('version23');
+    if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+        "use strict";
+        if (this == null) {
+            throw new TypeError();
+        }
+        var t = Object(this);
+        var len = t.length >>> 0;
+        if (len === 0) {
+            return -1;
+        }
+        var n = 0;
+        if (arguments.length > 0) {
+            n = Number(arguments[1]);
+            if (n != n) { // shortcut for verifying if it's NaN
+                n = 0;
+            } else if (n != 0 && n != Infinity && n != -Infinity) {
+                n = (n > 0 || -1) * Math.floor(Math.abs(n));
+            }
+        }
+        if (n >= len) {
+            return -1;
+        }
+        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+        for (; k < len; k++) {
+            if (k in t && t[k] === searchElement) {
+                return k;
+            }
+        }
+        return -1;
+    }
+} 
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTableguias = prefs.getString("urlTableguias");
@@ -205,9 +319,9 @@
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
 	 var auxiliar = gadgets.util.getUrlParameters()["parent"];
-	 console.debug(auxiliar);
+	 //console.debug(auxiliar);
 	 if(auxiliar.indexOf('=')!=-1){
-	 console.debug('entro');
+	 //console.debug('entro');
 	 var urlpadre = gadgets.util.getUrlParameters()["parent"].split("=");
 	 urlpadre[1]=urlpadre[1].replace(/\+/g,' ');
 	 urlparameters = decodeURIComponent(urlpadre[1]);
@@ -493,7 +607,7 @@ function mostrarTipos()
 	var muestra2="";
 	var aux1= tipo.split(",");
 	var aux2= formato.split(",");
-    muestra +="<div class='titular1'>Por tipo de contenidos</div>";
+    muestra +="<div id='titular1'>Por tipo de contenidos</div>";
 	for (var i=0; i<aux1.length; i++)
 	{
 		if(aux1[i]!="")
@@ -510,7 +624,7 @@ function mostrarTipos()
 	} 
 	
 	 document.getElementById('content_div').innerHTML += "<div class='tipos'>"+muestra+"</div>"; 
-	 muestra2 +="<div class='titular1'>Por formato</div>";
+	 muestra2 +="<div id='titular1'>Por formato</div>";
 	 for (var i=0; i<aux2.length; i++){
 	    
 		if(aux2[i]!=""){
