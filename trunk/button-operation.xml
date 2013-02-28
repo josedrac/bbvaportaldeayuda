@@ -242,7 +242,7 @@ cursor: pointer;
 
 			<style type="text/css"> 
 						
-				.titulo{
+				.btn.white{
 					background: #F5F7F8
 			    }
 							
@@ -254,7 +254,7 @@ cursor: pointer;
 		    	
 			<style type="text/css">  
 						
-				.titulo{
+				.btn.white{
 					background: #F5F7F8
 			    }
 			   			
