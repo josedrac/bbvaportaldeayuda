@@ -88,6 +88,10 @@
 	height:50px;
 	}
 	
+	.sobreMail{
+		border: 0px;
+	}
+	
 	</style>
 	
 
@@ -141,7 +145,7 @@
 				for(var i=1;i<filas;i++){
 					if (data.getValue(i,1) == "luis.mayorga@bbva.com")
 					{ 
-					var mail = "<a href=\"javascript:sendGmail('"+data.getValue(i,1)+"')\"><img src='https://efd75d34-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/portaldeayuda/soporte/enviar_correo.png' /></a>"; }
+					var mail = "<a href=\"javascript:sendGmail('"+data.getValue(i,1)+"')\"><img src='https://efd75d34-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/portaldeayuda/soporte/enviar_correo.png' class='sobreMail'/></a>"; }
 					else
 					{
 						var mail= "<a href=\"javascript:sendGmail('"+data.getValue(i,1)+"')\">"+data.getValue(i,1)+"</a>";
