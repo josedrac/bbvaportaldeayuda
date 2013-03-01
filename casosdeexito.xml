@@ -395,6 +395,8 @@
 					
 					html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/siguiente.png" /> </a></div>';
                     html += '</div>';
+                    
+                    alert("pagina nueva");
                     html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px; margin-top:40px">';
 			   
 			        pagActual++;
