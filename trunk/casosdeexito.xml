@@ -292,7 +292,14 @@
 			}	
 			button{
 					background: #0079C1;
-				}	
+				}
+	#userVideo{
+				color:#71777F;
+				font-size:11px;
+				float:left;
+				margin-left:0px;
+				margin-top:-15px;
+			}					
 		</style>
 			
 	<![endif]-->
