@@ -406,7 +406,7 @@
                     alert("pagina nueva1");
                     html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:block; width: auto;height: 660px; margin-top:40px">';
 			   
-			        pagActual++;
+			        pagActual++; 
 					
 					}
 					else if(i==filas-1)
