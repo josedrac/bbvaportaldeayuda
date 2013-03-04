@@ -218,7 +218,7 @@
 	.blockTypes {
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue2.png') repeat-x;
 		float: left;
-		width: auto;
+		width: 275px;
 		margin-bottom:5px;
 		text-align: left;
 		padding-top: 4px;
