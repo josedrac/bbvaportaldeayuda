@@ -166,7 +166,10 @@
 	padding-left:2px;
 	padding-right:2px;
 	}
-	
+	img{
+	border:0px;
+	text-decoration:none;
+	}
 	</style>
 <!--[if IE]>
 <style type="text/css">
