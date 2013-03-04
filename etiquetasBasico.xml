@@ -107,6 +107,9 @@
 			color:#0078D2;
 			float:left;
 			margin-top:-2px;
+			border:none;
+			outline: none;
+			text-decoration:none;
         }
 
     .bloqueSiguiente{
@@ -117,6 +120,9 @@
             padding-left:10px;
 			color:#0078D2;
 			width:64px;
+			border:none;
+			outline: none;
+			text-decoration:none;
         }
 	p.text {	 
             font-size: 0.8em;
@@ -125,19 +131,27 @@
 
   #bloqueEnlaces1 img{
             
-			//margin-left:260px;
+			
 			padding-right:10px;
+			border:none;
+			outline: none;
+			text-decoration:none;
         }
 	#etiquetas{
 	width:651px;
 	}
 	.checkpage{
     margin-top:-5px;
+	border:none;
+	outline: none;
+	text-decoration:none;
 	}	
 	.checkpage1{
     margin-top:-5px;
-	//margin-left:260px;
-	}	
+	border:none;
+	outline: none;
+	text-decoration:none;
+	}		
 	.checkpage a{
 	height:9px;
 	float:left;
@@ -154,7 +168,23 @@
 	}
 	
 	</style>
-	
+<!--[if IE]>
+<style type="text/css">
+.bloqueAnterior{
+            clear:both;
+            display:block;
+            margin-left:15px;
+			margin-top:-5px;
+            font-family: BBVA Web Book;
+			color:#0078D2;
+			float:left;
+			border:none;
+			outline: none;
+			text-decoration:none;
+			margin-right:10px;
+        }
+		</style>
+<![endif]-->		
 <div id="nivel"></div>
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitlenivel" />
 <div id="etiquetas"></div>
