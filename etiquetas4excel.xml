@@ -229,7 +229,7 @@
 	}	
 	
 	.blockTypes a{
-		width:auto;
+		width: 120px;
 		height: 25px;
 		font-weight: bold;
 		font-family: Arial;
