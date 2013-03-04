@@ -226,6 +226,7 @@
 		font-family:BBVA Web Light, Arial;
 		font-weight: normal;
 		margin-top:0px;
+		
 	}	
 	
 	.blockTypes a{
@@ -238,6 +239,7 @@
 		text-decoration: none;		
 		padding:0 5px;
 		font-weight: bold;
+		display:inline-block;
 	}
 	.blockFormats{
 	margin-bottom:5px;
