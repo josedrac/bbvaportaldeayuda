@@ -218,7 +218,7 @@
 	.blockTypes {
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue2.png') repeat-x;
 		float: left;
-		width: 120px;
+		width: auto;
 		height: 30px;
 		text-align: left;
 		padding-top: 4px;
@@ -229,7 +229,7 @@
 	}	
 	
 	.blockTypes a{
-		width: 120px;
+		width: auto;
 		height: 30px;
 		font-weight: bold;
 		font-family: Arial;
@@ -243,7 +243,7 @@
 	.tipos, 
 	.formatos {
 		float:left;
-		width:280px;
+		width:auto;
 		padding-left:20px;
 		padding-top:20px;
 		
