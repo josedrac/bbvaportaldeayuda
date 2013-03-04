@@ -221,11 +221,11 @@
 		width: 120px;
 		height: 30px;
 		text-align: left;
-		padding-top: 4px;
+		padding-top: 0px;
 		margin-right: 10px;	
 		font-family:BBVA Web Light, Arial;
 		font-weight: normal;
-		margin-top:4px;
+		margin-top:0px;
 	}	
 	
 	.blockTypes a{
@@ -238,6 +238,9 @@
 		text-decoration: none;		
 		padding:0 5px;
 		font-weight: bold;
+	}
+	.blockFormats{
+	margin-bottom:5px;
 	}
 	.etiquetas, 
 	.tipos, 
