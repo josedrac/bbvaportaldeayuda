@@ -219,7 +219,7 @@
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue2.png') repeat-x;
 		float: left;
 		width: 120px;
-		height: 30px;
+		height: 35px;
 		text-align: left;
 		padding-top: 0px;
 		margin-right: 10px;	
@@ -230,13 +230,13 @@
 	
 	.blockTypes a{
 		width: 120px;
-		height: 30px;
+		height: 5px;
 		font-weight: bold;
 		font-family: Arial;
 		font-size: 12px;
 		color: #0072C9;
 		text-decoration: none;		
-		padding:0 2px;
+		padding:0 5px;
 		font-weight: bold;
 	}
 	.blockFormats{
