@@ -299,11 +299,21 @@
 				float:left;
 				margin-left:0px;
 				margin-top:-15px;
-			}					
+			}	
 		</style>
 			
 	<![endif]-->
 	
+	<!--[if IE 9]>
+		
+		<style type="text/css">
+
+			#userVideo{
+				margin-left:72px;
+			}	
+		</style>
+			
+	<![endif]-->
 	
 	
 <div id="listportales"></div>	
