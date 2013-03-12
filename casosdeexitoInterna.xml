@@ -338,19 +338,10 @@
 	
 	<!--[if IE 8]>
 		
-		<style type="text/css">		
-			
-			#userBBVA img{
-			    float:left;
-				margin:3px 10px 15px 0;
-				width:80px;
-				height:310px;
-			}
-						
-		</style>
+		
 		
 		<script type="text/javascript">
-			alert("Embed 4");
+			alert("Embed 5");
 		</script> 
 		
 	<![endif]-->
