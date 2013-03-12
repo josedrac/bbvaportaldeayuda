@@ -335,6 +335,22 @@
 	}
 	</style>
 	
+	
+	<!--[if IE 8]>
+	
+		<style type="text/css">		
+			
+			#userBBVA img{
+			    float:left;
+				margin:3px 10px 15px 0;
+				width:80px;
+				height:110px;
+			}
+						
+		</style>
+		
+	<![endif]-->
+	
 <div id="listportales"></div>	
 	
 
@@ -405,7 +421,7 @@
 			   if(data.getValue(i,10)!=''){
 			   html +="<div id='video'>"
 			   html +="<span class='titlesection'>Video:</span>";
-			   //alert("Embed 1"); 
+			   alert("Embed 2"); 
 			   html += "<iframe src='"+data.getValue(i,10)+"'   allowfullscreen='true' allowScriptAccess='always' style='border:1px solid #AAA; width:575px; height:427px; '></iframe>";
 			   //html += "<embed src='"+data.getValue(i,10)+"'></embed>";
 			   //html += "<object width='575' height='427'><param name=movie value='"+data.getValue(i,10)+"'><embed src='"+data.getValue(i,10)+"' width='575' height='575'></embed></object>";
