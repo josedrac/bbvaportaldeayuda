@@ -344,13 +344,13 @@
 			    float:left;
 				margin:3px 10px 15px 0;
 				width:80px;
-				height:110px;
+				height:310px;
 			}
 						
 		</style>
 		
 		<script type="text/javascript">
-			alert("Embed 3");
+			alert("Embed 4");
 		</script> 
 		
 	<![endif]-->
