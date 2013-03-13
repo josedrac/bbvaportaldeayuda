@@ -264,7 +264,6 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 </div>
 
 <script type="text/javascript">
-alert("cambios cogidos");
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
         var sels = sel.split(","),
