@@ -36,6 +36,18 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: 'BBVA Web Medium';
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* @end */
 
 body, html {
 	font-size: 125%;
@@ -135,7 +147,7 @@ border-top-right-radius: 5px;
   color: #FFF;
   cursor: pointer;
   text-decoration:none;
-  font-family: BBVA Web Light, Arial;
+  font-family: BBVA Web Medium, Arial;
   font-size:14px;
   font-style:normal;
   font-weight: bold;
@@ -252,6 +264,7 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 </div>
 
 <script type="text/javascript">
+alert("cambios cogidos");
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
         var sels = sel.split(","),
