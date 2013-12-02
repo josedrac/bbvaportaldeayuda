@@ -144,7 +144,7 @@
 	function handleQueryResponse(response) {
 		data = response.getDataTable();	
 		var filas = data.getNumberOfRows();
-		//alert(filas);
+		alert(filas);
 		
 		
 		for(var i=0;i<filas;i++){
@@ -179,7 +179,6 @@
 			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+getId(row);
 		}
 		this.getNumberOfRows = function(){
-			console.log(dataDC);
 			return dataDC.getNumberOfRows();
 		}
 		this.getName = function(row){
@@ -198,7 +197,7 @@
 	function handleQueryResponseDC(response){
 	 	var dataDC = new DataTable(response);
 		var filas = dataDC.getNumberOfRows();
-	 
+	 	console.log('rows', filas);
 	   	var html= "";
 		html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
