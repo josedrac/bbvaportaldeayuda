@@ -183,10 +183,10 @@
 			return dataDC.getNumberOfRows();
 		}
 		this.getName = function(row){
-			return dataDC.getValue(i,2);
+			return dataDC.getValue(row,2);
 		}		
 		this.getImage = function(row){
-			return dataDC.getValue(i,3);
+			return dataDC.getValue(row,3);
 		}
 
 		this.isNotDevice = function(row){
