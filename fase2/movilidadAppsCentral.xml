@@ -142,20 +142,7 @@
 	}
 
 	function handleQueryResponse(response) {
-		data = response.getDataTable();	
-		var filas = data.getNumberOfRows();
-		alert(filas);
-		
-		
-		for(var i=0;i<filas;i++){
-		    
-		 if(data.getValue(i,1) == 'España'){
-			document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,100)+"'>"+data.getValue(i,1)+"</option>";
-			} else if(data.getValue(i,1) != 'País'){
-		    
-		    document.getElementById('paises').innerHTML += "<option  value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-		   }
-		}
+
 	}
 		
 	function devicesCountry(pais){
