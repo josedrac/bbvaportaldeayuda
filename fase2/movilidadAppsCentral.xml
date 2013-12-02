@@ -126,75 +126,96 @@
 	 var urlTable = prefs.getString("_table_query_url");
 	 var subseccion = prefs.getString("subseccion"); 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
-	 function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
-	 function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				var opts = {dataType:'jsonp'};		
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(A),B,max(C),max(D) group by B";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
-	 function handleQueryResponse(response) {
-				data = response.getDataTable();	
-				var filas = data.getNumberOfRows();
-				//alert(filas);
-				
-				
-				for(var i=0;i<filas;i++){
-				    
-				 if(data.getValue(i,1) == 'España'){
-					document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-					} else if(data.getValue(i,1) != 'País'){
-				    
-				    document.getElementById('paises').innerHTML += "<option  value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-				   }
-				}
-			}
-		
-	 function devicesCountry(pais){
-	   var gadgetHelper = new google.visualization.GadgetHelper();
-	   var opts = {dataType:'jsonp'};
-	   var queryDC = new google.visualization.Query(urlTable, opts);
-	     
-	   var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
-	   
-	   queryDC.setQuery(queryDCtosend);			  
-	   queryDC.send(handleQueryResponseDC);
-	   
 
-	 }
-	 function handleQueryResponseDC(response){
-	 
-	   dataDC = response.getDataTable();
-	   var filas = dataDC.getNumberOfRows();
-	 
-	   var html= "";
-	   html +='<div class=\"titulo\">' + subseccion + '</div>';
-	   html +='<ul id=\"botonera\">'; 
-	   for(var i=0;i<filas;i++)
-	   {
-		if(dataDC.getValue(i,2) != 'Dispositivo')
-		{
-	    html +="<li><a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a></li>";
+	 function loadVisualizationAPI() {
+		google.load("visualization", "1", {"packages": ["table"]});
+		google.setOnLoadCallback(sendQuery);
+	}
+
+	function sendQuery() {
+		gadgetHelper = new google.visualization.GadgetHelper();
+		var opts = {dataType:'jsonp'};		
+		var query = new google.visualization.Query(urlTable, opts);	
+		var querytosend = "select max(A),B,max(C),max(D) group by B";
+		query.setQuery(querytosend);			  
+		query.send(handleQueryResponse);
+	}
+
+	function handleQueryResponse(response) {
+		data = response.getDataTable();	
+		var filas = data.getNumberOfRows();
+		//alert(filas);
+		
+		
+		for(var i=0;i<filas;i++){
+		    
+		 if(data.getValue(i,1) == 'España'){
+			document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,100)+"'>"+data.getValue(i,1)+"</option>";
+			} else if(data.getValue(i,1) != 'País'){
+		    
+		    document.getElementById('paises').innerHTML += "<option  value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
+		   }
 		}
+	}
+		
+	function devicesCountry(pais){
+		var gadgetHelper = new google.visualization.GadgetHelper();
+		var opts = {dataType:'jsonp'};
+		var queryDC = new google.visualization.Query(urlTable, opts);
+		 
+		var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
+
+		queryDC.setQuery(queryDCtosend);			  
+		queryDC.send(handleQueryResponseDC);
+   
+	}
+
+	var DataTable= function(response){
+		var dataDC = response.getDataTable();
+		var getId = function(row){
+			return dataDC.getValue(row,0);
+		}
+		this.getHref = function(row){
+			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+getId(row);
+		}
+		this.getNumberOfRows = function(){
+			return dataDC.getNumberOfRows();
+		}
+		this.getName = function(row){
+			return dataDC.getValue(i,2);
+		}		
+		this.getImage = function(row){
+			return dataDC.getValue(i,3);
+		}
+
+		this.isNotDevice = function(row){
+			return (dataDC.getValue(row,2) != 'Dispositivo');
+		}
+
+	}
+
+	function handleQueryResponseDC(response){
+	 	var dataDC = new DataTable(response);
+		var filas = dataDC.getNumberOfRows();
 	 
-	  }
-	   html +='</ul>';
-	   document.getElementById('content_div').innerHTML = html;
-	   
-	 }
-	 function cargaCompleta(){
+	   	var html= "";
+		html +='<div class=\"titulo\">' + subseccion + '</div>';
+	   	html +='<ul id=\"botonera\">'; 
+   		for(var row=0;row<filas;row++){
+			if(dataDC.isNotDevice(row)){
+				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">"'+
+				'<img src="'+dataDC.getImage+'"/>'+dataDC.getName(row)+'</a></li>';
+			}
+	  	}
+
+		html +='</ul>';
+		document.getElementById('content_div').innerHTML = html;
 	 
-	 devicesCountry('España');
-	 }
+	}
+
+	function cargaCompleta(){
+		devicesCountry('España');
+	}
 	 
 	 
 	 
