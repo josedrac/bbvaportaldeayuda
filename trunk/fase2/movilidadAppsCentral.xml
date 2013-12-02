@@ -171,7 +171,7 @@
 	}
 
 	var DataTable= function(response){
-		var dataDC = response.getDataTable();
+		var dataDC = response.getDataTable(response);
 		var getId = function(row){
 			return dataDC.getValue(row,0);
 		}
