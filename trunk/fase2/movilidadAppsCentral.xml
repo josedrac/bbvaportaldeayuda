@@ -143,8 +143,8 @@
    
 	}
 
-	var DataTable= function(response){
-		var dataDC = response.getDataTable(response);
+	var DataTable= function(data){
+		var dataDC = data;
 		var getId = function(row){
 			return dataDC.getValue(row,0);
 		}
@@ -168,7 +168,7 @@
 	}
 
 	function handleQueryResponseDC(response){
-	 	var dataDC = new DataTable(response);
+	 	var dataDC = new DataTable(response.getDataTable());
 		var filas = dataDC.getNumberOfRows();
 	 	console.log('rows', filas);
 	   	var html= "";
