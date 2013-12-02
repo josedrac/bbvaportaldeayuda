@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="movilidadLateral.xml"
+  <ModulePrefs title="movilidadAppsCentral.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="Sopra">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
