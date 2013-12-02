@@ -179,6 +179,7 @@
 			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+getId(row);
 		}
 		this.getNumberOfRows = function(){
+			console.log(dataDC);
 			return dataDC.getNumberOfRows();
 		}
 		this.getName = function(row){
