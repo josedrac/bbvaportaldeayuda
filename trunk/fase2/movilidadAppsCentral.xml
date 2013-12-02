@@ -158,7 +158,8 @@
 			return dataDC.getValue(row,2);
 		}		
 		this.getImage = function(row){
-			return dataDC.getValue(row,3);
+			//return dataDC.getValue(row,3);
+			return  'https://sites.google.com/a/bbva.com/portaldeayuda/iphone-4-.jpg';
 		}
 
 		this.isNotDevice = function(row){
@@ -176,7 +177,7 @@
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=0;row<filas;row++){
 			if(dataDC.isNotDevice(row)){
-				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">"'+
+				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
 				'<img src="'+dataDC.getImage+'"/>'+dataDC.getName(row)+'</a></li>';
 			}
 	  	}
