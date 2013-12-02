@@ -129,20 +129,6 @@
 
 	 function loadVisualizationAPI() {
 		google.load("visualization", "1", {"packages": ["table"]});
-		google.setOnLoadCallback(sendQuery);
-	}
-
-	function sendQuery() {
-		gadgetHelper = new google.visualization.GadgetHelper();
-		var opts = {dataType:'jsonp'};		
-		var query = new google.visualization.Query(urlTable, opts);	
-		var querytosend = "select max(A),B,max(C),max(D) group by B";
-		query.setQuery(querytosend);			  
-		query.send(handleQueryResponse);
-	}
-
-	function handleQueryResponse(response) {
-
 	}
 		
 	function devicesCountry(pais){
