@@ -111,7 +111,7 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
                 var opts = {dataType:'jsonp'};
                 var queryDC = new google.visualization.Query(urlTable, opts);
                  
-                var queryDCtosend = "select A,B,C,D,E,F group by A,B";
+                var queryDCtosend = "select A,B,C,D,E,F order by A";
 
                 queryDC.setQuery(queryDCtosend);                          
                 queryDC.send(handleQueryResponseDC);
