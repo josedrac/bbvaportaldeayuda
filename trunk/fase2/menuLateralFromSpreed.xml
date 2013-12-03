@@ -128,10 +128,10 @@
         function loadVisualizationAPI() {
           google.load("visualization", "1", {"packages": ["table"]});
           console.log('loading');
-          google.setOnLoadCallback(handleQueryResponse);
+          google.setOnLoadCallback(getData);
         }
           
-        function getData(callback){
+        function getData(){
           var gadgetHelper = new google.visualization.GadgetHelper();
           var opts = {dataType:'jsonp'};
           var queryDC = new google.visualization.Query(urlTable, opts);
@@ -139,7 +139,7 @@
           var queryDCtosend = "select *";
         
           queryDC.setQuery(queryDCtosend);			  
-          queryDC.send(callback);
+          queryDC.send(handleQueryResponse);
         
         }
         
