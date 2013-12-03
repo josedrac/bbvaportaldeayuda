@@ -140,7 +140,7 @@
         
         }
         
-        var DataTable= function(data,url_detail){
+        this.DataTable= function(data,url_detail){
           var HEADER_ROW = 0;
           this.fields= {
              id : 0,
@@ -173,7 +173,7 @@
         
         function handleQueryResponse(response){
            console.log(response);
-           var dataDC = new DataTable(response.getDataTable(), self.url_detail);
+           var dataDC = new self.DataTable(response.getDataTable(), self.url_detail);
            dataDc.fields = self.fields;
           var filas = dataDC.getNumberOfRows();
         
