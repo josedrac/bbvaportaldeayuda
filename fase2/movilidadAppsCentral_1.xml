@@ -10,10 +10,10 @@
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c)" required="true" />
  <Content type="html">
-    <![CDATA[
+  <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
-	<style type="text/css">
+ <style type="text/css">
 .container { max-width: 600px; width: 100%;}
 .row { clear: both; width: 100%; display: inline-block; }
 .article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid black; }
@@ -93,27 +93,9 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
                 <li><span>item 2 - lorem ipsum</span></li>
                 <li><span>item 3 - lorem ipsum</span></li>
             </ul>
-        </div> 
-        <div class="article">
-            <div class="articleimg">
-                <img src="img/Directorio.png">
-            </div>
-            <h2>article BBVA</h2>
-            <ul class="oslist">
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-            </ul>
-            <ul class="features">
-                <li><span>item 1 - lorem ipsum</span></li>
-                <li><span>item 2 - lorem ipsum</span></li>
-                <li><span>item 3 - lorem ipsum</span></li>
-            </ul>
         </div>        
     </div>
-</div>	
-
-</body>
+</div> 
 <script type="text/javascript">
      var gadgetHelper = null;
          var prefs = new _IG_Prefs();
@@ -189,7 +171,9 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
                 devicesCountry('España');
         }
  
-   </script>
+</script>
+</body>
+
    
     ]]>
   </Content>  
