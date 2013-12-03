@@ -172,7 +172,6 @@
         
         var dataDC = new DataTable();
         dataDC.url_detail = url_detail;
-        dataDc.fields = fields;
         
         function handleQueryResponse(response){
            console.log(response);
