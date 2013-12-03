@@ -189,7 +189,7 @@
    		for(var row=0;row<filas;row++){
 			if(! dataDC.isHeaderTable(row)){
 				html +='<li class=""><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
-				'<img src="'+dataDC.getImage(row)+'"/>'+dataDC.getName(row)+'</a></li>';
+				'<img src="'+dataDC.getImage(row)+'"/><div class="label">'+dataDC.getName(row)+'</div></a></li>';
 			}
 	  	}
 
