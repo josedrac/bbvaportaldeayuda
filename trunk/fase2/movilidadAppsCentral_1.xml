@@ -64,7 +64,6 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
 <!--<div id="movilidad">Guías de configuración, según dispositivo:
  <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
 </div>-->
-<div id="content_div" class="caja"></div>
 <div class="container">
     <div class="row">
         <div class="article">
@@ -117,6 +116,8 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
         </div>        
     </div>
 </div>	
+<div id="content_div" class="caja"></div>
+
 </body>
 <script type="text/javascript">
      var gadgetHelper = null;
