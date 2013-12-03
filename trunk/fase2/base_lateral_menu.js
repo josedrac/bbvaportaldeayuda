@@ -1,4 +1,4 @@
-var sidebar = function(options){
+var Sidebar = function(options){
   var url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/detalle_app?app_id=';
   var fields = options.fields || { id : 0, name: 1,image: 3 } ;
   var template = options.template || function(dataDCm, subseccion){
