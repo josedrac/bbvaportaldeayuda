@@ -191,7 +191,7 @@
    			console.log(row);
 			if(! dataDC.isHeaderTable(row)){
 				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
-				'<img src="'+dataDC.getImage()+'"/>'+dataDC.getName(row)+'</a></li>';
+				'<img src="'+dataDC.getImage(row)+'"/>'+dataDC.getName(row)+'</a></li>';
 			}
 	  	}
 
