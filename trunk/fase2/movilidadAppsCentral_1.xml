@@ -56,26 +56,8 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
 		</style>		
 <![endif]-->
 		
-<body onload="cargaCompleta()"> 
-
-<div id="content_div" class="caja"></div>
-<div id="container" class="container">
-        <div class="article">
-            <div class="articleimg">
-                <img src="img/Directorio.png">
-            </div>
-            <h2>article BBVA</h2>
-            <ul class="oslist">
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-            </ul>
-            <ul class="features">
-                <li><span>item 1 - lorem ipsum</span></li>
-                <li><span>item 2 - lorem ipsum</span></li>
-                <li><span>item 3 - lorem ipsum</span></li>
-            </ul>
-        </div>   
+<body onload="cargaCompleta()">
+<div id="container" class="container">        
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
@@ -87,7 +69,7 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
-        function devicesCountry(pais){
+        function reload(){
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
                 var queryDC = new google.visualization.Query(urlTable, opts);
@@ -161,7 +143,7 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
         }
 
         function cargaCompleta(){
-                devicesCountry('España');
+                reload();
         }
  
 </script>
