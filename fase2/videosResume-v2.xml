@@ -168,11 +168,7 @@
             font-style: normal;
             font-weight: normal;
         }
-        .titlecomboVideo{
-           /* margin-top:-9px;
-            margin-left:-15px;*/
-        }
-        .titlecomboVideo h2{
+        h2{
             float:left;
             color:#0078D2;
             font-family: BBVA Web Light, Arial;
@@ -198,8 +194,8 @@
             display:block;
         }
         .tagVideo img {
-                float:left;
-                margin:-4px 10px 0px 0px;
+            float:left;
+            margin:-4px 10px 0px 0px;
         }
         .tagVideo{
             color:#000;
@@ -326,33 +322,33 @@
         #allcontent:hover,
         #allcontent2:hover,
         #allcontent3:hover {
-                background: #004C99;
+            background: #004C99;
         }
         .linetitle{
-                display:block;
-                display:-moz-stack;
-                width:613px;
-                height:4px;
-                margin-bottom:20px;
+            display:block;
+            display:-moz-stack;
+            width:613px;
+            height:4px;
+            margin-bottom:20px;
         }
         .linevideo{
-                width:613px;
-                height:4px;
-                display:block;
-                margin-bottom:26px;
+            width:613px;
+            height:4px;
+            display:block;
+            margin-bottom:26px;
         }
         .linevideoLast{
-                width:613px;
-                height:4px;
-                display:block;
-                margin-bottom:10px;
+            width:613px;
+            height:4px;
+            display:block;
+            margin-bottom:10px;
         }
         .sites-embed-align-left-wrapping-off{
-                display: block;
-                clear: both;
-                text-align: left;
-                margin: 5px auto 5px 0;
-                width: 650px;
+            display: block;
+            clear: both;
+            text-align: left;
+            margin: 5px auto 5px 0;
+            width: 650px;
         }
     </style>
 
@@ -424,11 +420,8 @@
 
 <body onload="cargaCompleta()">
 
-<!--
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
--->
-
 <h2 id="header"></h2>
+<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 
 <div class="comboVideo">
 
@@ -448,7 +441,7 @@
 
 <script type="text/javascript">
 
-    console.debug('v10 - videosResume-v2.xml');
+    console.debug('v11 - videosResume-v2.xml');
 
     var gadgetHelper = null;
     var prefs = new gadgets.Prefs();
