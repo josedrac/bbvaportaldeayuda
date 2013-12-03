@@ -101,9 +101,9 @@
       var Sidebar = function(options){
         console.log('sidebar');
         var options = options || {};
-        var url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/detalle_app?app_id=';
-        var fields = options.fields || { id : 0, name: 1,image: 3 } ;
-        var template = options.template || function(dataDCm, subseccion){
+        this.url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/detalle_app?app_id=';
+        this.fields = options.fields || { id : 0, name: 1,image: 3 } ;
+        this.template = options.template || function(dataDCm, subseccion){
              var html= "";
              html +='<div class=\"titulo\">' + subseccion + '</div>';
                html +='<ul id=\"botonera\">'; 
@@ -122,7 +122,8 @@
         var gadgetHelper = null;
         var prefs = new _IG_Prefs();
         var urlTable = prefs.getString("_table_query_url");
-        var subseccion = prefs.getString("subseccion"); 
+        var subseccion = prefs.getString("subseccion");
+        var self = this;
         getData(); 
          
          
@@ -173,11 +174,11 @@
         function handleQueryResponse(response){
            console.log(response);
            var dataDC = new DataTable(response.getDataTable(), self.url_detail);
-           dataDc.fields = fields;
+           dataDc.fields = self.fields;
           var filas = dataDC.getNumberOfRows();
         
       
-          document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
+          document.getElementById('content_div').innerHTML = self.template(dataDC, subseccion);
         
         }
         
