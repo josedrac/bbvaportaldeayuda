@@ -15,16 +15,15 @@
 	
  <style type="text/css">
 .container { max-width: 600px; width: 100%;}
-.row { clear: both; width: 100%; display: inline-block; }
-.article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid black; }
+.article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid grey; }
 .article .articleimg { text-align: center; }
 .article .articleimg img { margin: auto; width: 60px; }
 .article h2 { text-align: center; }
 .article ul.oslist { text-align: center; padding: 0; }
 .article ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
 .article ul.oslist li .oslogo { width: 32px; }
-.article ul.features { text-align: left; padding-left: 20px; }
-.article ul.features li .oslogo { width: 32px; }
+.article div.short { text-align: left; padding: 10px; }
+
 
 
 
@@ -61,7 +60,6 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
 
 <div id="content_div" class="caja"></div>
 <div id="container" class="container">
-    <div class="row">
         <div class="article">
             <div class="articleimg">
                 <img src="img/Directorio.png">
@@ -77,24 +75,7 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
                 <li><span>item 2 - lorem ipsum</span></li>
                 <li><span>item 3 - lorem ipsum</span></li>
             </ul>
-        </div>
-        <div class="article">
-            <div class="articleimg">
-                <img src="img/Directorio.png">
-            </div>
-            <h2>article BBVA</h2>
-            <ul class="oslist">
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-            </ul>
-            <ul class="features">
-                <li><span>item 1 - lorem ipsum</span></li>
-                <li><span>item 2 - lorem ipsum</span></li>
-                <li><span>item 3 - lorem ipsum</span></li>
-            </ul>
-        </div>        
-    </div>
+        </div>   
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
@@ -130,17 +111,26 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
                 };
 
                 var dataDC = data;
-                this.getId = function(row){
-                        return dataDC.getValue(row, FIELDS.id);
-                }
                 this.getNumberOfRows = function(){
                         return dataDC.getNumberOfRows();
                 }
+                this.getId = function(row){
+                        return dataDC.getValue(row, FIELDS.id);
+                }                
                 this.getTitle = function(row){
                         return dataDC.getValue(row, FIELDS.title);
                 }               
                 this.getImage = function(row){
                         return dataDC.getValue(row, FIELDS.image);
+                }
+                this.getType= function(row){
+                        return dataDC.getValue(row, FIELDS.type);
+                }
+                this.getShort= function(row){
+                        return dataDC.getValue(row, FIELDS.short);
+                }
+                this.getLong= function(row){
+                        return dataDC.getValue(row, FIELDS.long);
                 }
 
                 this.isHeaderTable = function(row){
@@ -152,17 +142,33 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
         function handleQueryResponseDC(response){
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();
+                <div class="articleimg">
+                <img src="img/Directorio.png">
+            </div>
+            <h2>article BBVA</h2>
+            <ul class="oslist">
+                <li><img class"oslogo" src="img/ios.png"></li>
+                <li><img class"oslogo" src="img/ios.png"></li>
+                <li><img class"oslogo" src="img/ios.png"></li>
+            </ul>
+            <div class="short">
+                <span>shortcontent</span>
+            </div>
 
                 var html= "";
-                html +='<<ul id=\"botonera\">'; 
                 for(var row=0;row<filas;row++){
-                        if(! dataDC.isHeaderTable(row)){
-                                html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
-                                "<img src='"+dataDC.getImage(row)+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
+                        if(! dataDC.isHeaderTable(row))
+                        {
+                                html +="<div class=\"article\"><a href=\'+dataDC.getId(row)+\'>";
+                                html +="<div class="articleimg"><img src='"+dataDC.getImage(row)+"'></div>";
+                                html +="<h2>"+dataDC.getTitle(row)+"</h2>";
+                                html +="<ul class="oslist">"+dataDC.getType(row)+"</ul>";
+                                html +="<div class="short"><span>"+dataDC.getType(row)+"<span></div>";
+                                html +="</a></div>";
                         }
                 }
 
-                html +='</ul>';
+                
                 document.getElementById('container').innerHTML = html;
          
         }
