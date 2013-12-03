@@ -461,7 +461,7 @@
 
 <script type="text/javascript">
 
-	console.debug('v7 - videosResume-v2.xm');
+	console.debug('v8 - videosResume-v2.xm');
 
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
@@ -504,7 +504,7 @@
 				 				"<a target='_parent' href='" + urlsabermas + "'>" + titleVideo + "</a>" +
 				 			"</div>" +
 				 			"<div id='textVideo' class='textVideo'>" + textVideo + "</div>" +
-				 			"<div id='sabermas'><button type='button' id='allcontent2' onclick='Go(\"" + urlsabermas + \"")'>Saber más</button></div>" +
+				 			"<div id='sabermas'><button type='button' id='allcontent2' onclick='Go("+ '"' + urlsabermas + '"'+")'>Saber más</button></div>" +
 				 		"</div>";
 			//document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
 			document.getElementById('video-container').innerHTML = htmlvid;
