@@ -428,7 +428,7 @@
 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 -->
 
-<div id="header"></div>
+<h2 id="header"></h2>
 
 <div class="comboVideo">
 
@@ -448,7 +448,7 @@
 
 <script type="text/javascript">
 
-    console.debug('v9 - videosResume-v2.xml');
+    console.debug('v10 - videosResume-v2.xml');
 
     var gadgetHelper = null;
     var prefs = new gadgets.Prefs();
@@ -472,8 +472,7 @@
 
     function cargaVideo()
     {
-        htmlHeader = '<h2>'+titlecomboVideo+'</h2>';
-        document.getElementById('header').innerHTML = htmlHeader;
+        document.getElementById('header').innerHTML = titlecomboVideo;
 
         if (Urlall!="")
         {
