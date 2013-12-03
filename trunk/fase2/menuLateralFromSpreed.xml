@@ -149,19 +149,19 @@
           this.data = {};
           this.url_detail = '';
           this.getId = function(row){
-             return dataDC.getValue(row, this.fields.id);
+             return this.data.getValue(row, this.fields.id);
           }
           this.getHref = function(row){
              return this.url_detail+this.getId(row);
           }
           this.getNumberOfRows = function(){
-             return dataDC.getNumberOfRows();
+             return this.data.getNumberOfRows();
           }
           this.getName = function(row){
-             return dataDC.getValue(row, this.fields.name);
+             return this.data.getValue(row, this.fields.name);
           }		
           this.getImage = function(row){
-             return dataDC.getValue(row, this.fields.image);
+             return this.data.getValue(row, this.fields.image);
           }
         
           this.validateRow = function(row){
