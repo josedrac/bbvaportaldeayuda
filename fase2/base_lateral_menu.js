@@ -28,7 +28,7 @@ var Sidebar = function(options){
     google.load("visualization", "1", {"packages": ["table"]});
   }
     
-  function devicesCountry(pais){
+  function getData(callback){
     var gadgetHelper = new google.visualization.GadgetHelper();
     var opts = {dataType:'jsonp'};
     var queryDC = new google.visualization.Query(urlTable, opts);
@@ -36,7 +36,7 @@ var Sidebar = function(options){
     var queryDCtosend = "select *";
   
     queryDC.setQuery(queryDCtosend);			  
-    queryDC.send(handleQueryResponseDC);
+    queryDC.send(callback);
   
   }
   
@@ -80,4 +80,6 @@ var Sidebar = function(options){
     document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
   
   }
+  
+  getData(handleQueryResponseDC);
 }
