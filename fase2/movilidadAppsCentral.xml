@@ -121,7 +121,7 @@
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
-   	 console.log('3', 'entrando');
+   	 console.log(Math.random());
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -179,7 +179,7 @@
 	function handleQueryResponseDC(response){
 	 	var dataDC = new DataTable(response.getDataTable());
 		var filas = dataDC.getNumberOfRows();
-	 	console.log('rows', filas);
+
 	   	var html= "";
 		html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
