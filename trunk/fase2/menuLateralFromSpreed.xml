@@ -9,9 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="subseccion" display_name="SubsecciÃ³n:" default_value="" required="true"/> 
-<UserPref name="label_field"  default_value="" required="true" display_name="number of label field Ej:2"/>
-<UserPref name="href_field" default_value="" required="true" display_name="number of href field Ej:3"/>
+<UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/> 
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
