@@ -167,7 +167,7 @@
 			return dataDC.getValue(row, FIELDS.image);
 		}
 
-		this.isHeaderTable = function(row){
+		this.validateRow = function(row){
 			return ( row == HEADER_ROW);
 		}
 
@@ -181,7 +181,7 @@
        html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=0;row<filas;row++){
-           if(! dataDC.isHeaderTable(row)){
+           if( dataDC.validateRow(row)){
               html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
               dataDC.getName(row)+"</a></li>";
            }
