@@ -155,18 +155,22 @@
 		var dataDC = data;
 	 	console.log('dataDC', dataDC);
 		this.getId = function(row){
+ 			console.log('getId');
 			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
+ 			console.log('getHREF');
 			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+this.getId(row);
 		}
 		this.getNumberOfRows = function(){
 			return dataDC.getNumberOfRows();
 		}
 		this.getName = function(row){
+ 			console.log('getName');
 			return dataDC.getValue(row, FIELDS.name);
 		}		
 		this.getImage = function(row){
+ 			console.log('getImage');
 			return dataDC.getValue(row, FIELDS.image);
 		}
 
