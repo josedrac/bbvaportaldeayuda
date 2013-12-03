@@ -103,9 +103,9 @@
                 {
                   var URLICONS =
                               {
-                              "Android":"url1",
-                              "Iphone":"url2",
-                              "Ipad":"url3"
+                              "Android":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/android.png",
+                              "Iphone":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/iphone.png",
+                              "Ipad":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/ipad.png"
                               };
                               
                   var iconshtml="";
