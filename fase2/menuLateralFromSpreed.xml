@@ -168,7 +168,7 @@
 		}
 
 		this.validateRow = function(row){
-			return ( row == HEADER_ROW);
+			return true;
 		}
 
 	}
