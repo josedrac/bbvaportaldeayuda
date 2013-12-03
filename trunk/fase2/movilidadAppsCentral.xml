@@ -121,7 +121,7 @@
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
-   	 console.log('1', 'entrando');
+   	 console.log('2', 'entrando');
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -176,6 +176,7 @@
 		html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=0;row<filas;row++){
+   			console.log(row);
 			if(dataDC.isNotDevice(row)){
 				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
 				'<img src="'+dataDC.getImage()+'"/>'+dataDC.getName(row)+'</a></li>';
@@ -190,9 +191,7 @@
 	function cargaCompleta(){
 		devicesCountry('España');
 	}
-	 
-	 
-	 
+ 
    </script>
    
     ]]>
