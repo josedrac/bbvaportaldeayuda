@@ -113,7 +113,7 @@
                   {                                
                    iconshtml += "<li class=\"oslist\"><img src=\"'+URLICONS[types[n]]'\"></li>";                  
                   }    
-                  return iconsrendered;
+                  return iconshtml;
                 }
                 for(var row=0;row<filas;row++){
                         if(! dataDC.isHeaderTable(row))
