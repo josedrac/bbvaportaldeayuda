@@ -110,7 +110,10 @@
 			</style>
 			
 		<![endif]-->
-		
+		<script type="javascript">
+     var sidebar = new Sidebar();
+    </script>
+      
 <body onload="cargaCompleta()">	
 <!--<div id="textMovilidad">GuÃ­as de configuraciÃ³n, segÃºn dispositivo: </div>-->
 <!--<div id="movilidad">GuÃ­as de configuraciÃ³n, segÃºn dispositivo:
