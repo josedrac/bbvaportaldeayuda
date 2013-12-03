@@ -146,7 +146,7 @@
              image: 3
           };
         
-          this.data = data;
+          this.data = {};
           this.url_detail = '';
           this.getId = function(row){
              return dataDC.getValue(row, this.fields.id);
