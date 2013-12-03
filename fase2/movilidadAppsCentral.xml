@@ -154,11 +154,11 @@
 
 		var dataDC = data;
 	 	console.log('dataDC', dataDC);
-		var getId = function(row){
+		this.getId = function(row){
 			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+getId(row);
+			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+this.getId(row);
 		}
 		this.getNumberOfRows = function(){
 			return dataDC.getNumberOfRows();
@@ -184,7 +184,8 @@
 		html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=1;row<filas;row++){
-			if(!dataDC.isHeaderTable(row)){
+   			console.log(row);
+			if(! dataDC.isHeaderTable(row)){
 				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
 				'<img src="'+dataDC.getImage()+'"/>'+dataDC.getName(row)+'</a></li>';
 			}
