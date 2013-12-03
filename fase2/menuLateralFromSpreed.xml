@@ -110,7 +110,7 @@
 			</style>
 			
 		<![endif]-->
-		<script type="javascript">
+		<script type="text/javascript">
       var cargaCompleta = function(){
          var sidebar = new Sidebar();
       }
