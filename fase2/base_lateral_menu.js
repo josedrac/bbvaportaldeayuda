@@ -26,6 +26,7 @@ var Sidebar = function(options){
   
   function loadVisualizationAPI() {
     google.load("visualization", "1", {"packages": ["table"]});
+    google.setOnLoadCallback(handleQueryResponse);
   }
     
   function getData(callback){
@@ -71,7 +72,7 @@ var Sidebar = function(options){
   
   }
   
-  function handleQueryResponseDC(response){
+  function handleQueryResponse(response){
      var dataDC = new DataTable(response.getDataTable(), self.url_detail);
      dataDc.fields = fields;
     var filas = dataDC.getNumberOfRows();
@@ -80,6 +81,5 @@ var Sidebar = function(options){
     document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
   
   }
-  
-  getData(handleQueryResponseDC);
+
 }
