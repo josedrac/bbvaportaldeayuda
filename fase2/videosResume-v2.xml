@@ -169,11 +169,10 @@
             font-weight: normal;
         }
         h2{
-            float:left;
             color:#0078D2;
             font-family: BBVA Web Light, Arial;
             font-size:22px;
-            margin:15px 0px 10px 22px;
+            margin:15px 0px 10px 10px;
             font-weight: normal;
         }
         .comboVideo{
@@ -441,7 +440,7 @@
 
 <script type="text/javascript">
 
-    console.debug('v12 - videosResume-v2.xml');
+    console.debug('v13 - videosResume-v2.xml');
 
     var gadgetHelper = null;
     var prefs = new gadgets.Prefs();
@@ -477,9 +476,9 @@
         {
                 htmlvid =       "<div id='tagVideo' class='tagVideo'><img src='" + imgTag + "'/>" + tagVideo + "</div>" +
                                         "<div id='infoVideo'>" +
-                                            //    "<div class='video'>" +
-                                           //             "<iframe allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width:302px; height:201px;' src='" + urlVideo + "'></iframe>" +
-                                          //      "</div>" +
+                                                "<div class='video'>" +
+                                                        "<iframe allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width:302px; height:201px;' src='" + urlVideo + "'></iframe>" +
+                                                "</div>" +
                                                 "<div id='titleVideo' class='titleVideo'>" +
                                                         "<a target='_parent' href='" + urlsabermas + "'>" + titleVideo + "</a>" +
                                                 "</div>" +
