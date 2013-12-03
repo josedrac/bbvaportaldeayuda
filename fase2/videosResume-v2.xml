@@ -206,68 +206,48 @@
 				height:234px;
 				margin-bottom: 10px;
 			}
-
 			.video {
 				float:right;
 			    width:302px;
 				height:201px;
-				margin:5px;
+				margin: 5px 5px 5px 10px;
 				display:block;
 			}
-
-			  #tagVideo img,
-			  #tagVideo2 img{
-			   float:left;
-			   margin:-4px 10px 0px 0px;
-			  }
-
-			  #tagVideo{
-			   color:#000;
-			   margin-bottom:11px;
-			   margin-left:11px;
-			   margin-top:-7px;
+		  	.tagVideo img {
+		   		float:left;
+		   		margin:-4px 10px 0px 0px;
+		  	}
+			.tagVideo{
+			   	color:#000;
+			   	margin-bottom:11px;
+			   	margin-left:11px;
+			   	margin-top:-7px;
 				font-family: BBVA Web Light, Arial;
 				font-weight: normal;
-			  }
-
-			  #tagVideo2{
-			    color:#000;
-				margin-bottom:11px;
-				margin-left: 11px;
-				margin-top: -13px;
-				font-family: BBVA Web Light, Arial;
-				font-weight: normal;
-			  }
-
-		      #titleVideo a,
-		      #titleVideo2 a{
-				  color:#0078D2;
-				  font-family:BBVA Web Book, Arial;
-				  font-size:18px;
-				  width:248px;
-				  margin: 0 0 20px 0px;
-				  text-decoration:none;
-			  }
-
-			  #textVideo,
-			  #textVideo2 {
+			}
+		    .titleVideo a {
+				color:#0078D2;
+				font-family:BBVA Web Book, Arial;
+				font-size:18px;
+				width:248px;
+				margin: 0 0 20px 0px;
+				text-decoration:none;
+			}
+			.textVideo {
 			    color:#434A58;
 				font-size:12px;
 				font-family:arial;
 				height:100px;
 				width:269px;
 				margin-top: 20px;
-			  }
-
-			#infoVideo,
-			#infoVideo2 {
+			}
+			.infoVideo {
 				float:left;
 				width:600px;
 				height:160px;
 				margin-left:12px;
 			}
-
-			hr{
+			hr {
 			    width:610px;
 				margin-bottom:20px;
 				margin-left:-1px;
@@ -303,6 +283,7 @@
 				width:91px;
 
 			}
+
 			 #allcontent3{
 				float:left;
 				position: relative;
@@ -316,6 +297,7 @@
 				width:91px;
 
 			}
+
 			#sabermas{
 			padding-top:20px;
 			font-size:12px;
@@ -438,8 +420,7 @@
 					padding-bottom: 4px;
 				}
 
-				#tagVideo,
-				#tagVideo2{
+				.tagVideo {
 					margin-top: 4px;
 				}
 
@@ -480,8 +461,7 @@
 					background: #0079C1;
 				}
 
-				#tagVideo,
-				#tagVideo2{
+				.tagVideo {
 					margin-top: 4px;
 				}
 
@@ -534,7 +514,7 @@
 
 	<script type="text/javascript">
 
-		console.debug('v1 - videosResume-v2.xm');
+		console.debug('v2 - videosResume-v2.xm');
 
 		var gadgetHelper = null;
 		var prefs = new gadgets.Prefs();
@@ -568,12 +548,12 @@
 
 			if (titleVideo!="")
 			{
-				htmlvid =	"<div id='tagVideo'><img src='" + imgTag + "'/>" + tagVideo + "</div>" +
+				htmlvid =	"<div id='tagVideo' class='tagVideo'><img src='" + imgTag + "'/>" + tagVideo + "</div>" +
 					 		"<div id='infoVideo'>" +
 					 			"<div class='video'>" +
 					 				"<iframe allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width:302px; height:201px;' src='" + urlVideo + "'></iframe>" +
 					 			"</div>" +
-					 			"<div id='titleVideo'>" +
+					 			"<div id='titleVideo' class='titleVideo'>" +
 					 				"<a target='_parent' href='" + urlsabermas + "'>" + titleVideo + "</a>" +
 					 			"</div>" +
 					 			"<div id='textVideo'>" + textVideo + "</div>" +
@@ -584,15 +564,15 @@
 
 			if (titleVideo2!="")
 			{
-				htmlvid2 =	"<div id='tagVideo2'><img src='" + imgTag2 + "'/>" + tagVideo2 + "</div>" +
+				htmlvid2 =	"<div id='tagVideo2' class='tagVideo'><img src='" + imgTag2 + "'/>" + tagVideo2 + "</div>" +
 					 		"<div id='infoVideo2'>" +
 					 			"<div class='video'>" +
 					 				"<iframe allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width:302px; height:201px;' src='" + urlVideo2 + "'></iframe>" +
 					 			"</div>" +
-					 			"<div id='titleVideo2'>" +
+					 			"<div id='titleVideo2' class='titleVideo'>" +
 					 				"<a target='_parent' href='" + urlsabermas2 + "'>" + titleVideo2 + "</a>" +
 					 			"</div>" +
-					 			"<div id='textVideo2'>" + textVideo2 + "</div>" +
+					 			"<div id='textVideo2' class='textVideo'>" + textVideo2 + "</div>" +
 					 			"<div id='sabermas2'><button type='button' id='allcontent3'>Saber más</button></div>" +
 					 		"</div>";
  				document.getElementById('video-container2').innerHTML = htmlvid2;
