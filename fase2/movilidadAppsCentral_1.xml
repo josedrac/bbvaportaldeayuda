@@ -99,7 +99,7 @@
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
-                function renderIcons(types)
+                var renderIcons = function(types)
                 {
                   var URLICONS =
                               {
