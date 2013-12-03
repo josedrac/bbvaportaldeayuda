@@ -138,7 +138,7 @@
         
         }
         
-        var DataTable= function(data,url_detail){
+        var DataTable= function(){
           var HEADER_ROW = 0;
           this.fields= {
              id : 0,
@@ -146,12 +146,13 @@
              image: 3
           };
         
-          var dataDC = data;
+          this.data = data;
+          this.url_detail = '';
           this.getId = function(row){
              return dataDC.getValue(row, this.fields.id);
           }
           this.getHref = function(row){
-             return url_detail+this.getId(row);
+             return this.url_detail+this.getId(row);
           }
           this.getNumberOfRows = function(){
              return dataDC.getNumberOfRows();
@@ -169,11 +170,14 @@
         
         }
         
+        var dataDC = new DataTable();
+        dataDC.url_detail = url_detail;
+        dataDc.fields = fields;
+        
         function handleQueryResponse(response){
            console.log(response);
-           var dataDC = new DataTable(response.getDataTable(), self.url_detail);
-           dataDc.fields = fields;
-          var filas = dataDC.getNumberOfRows();
+           dataDC.data = response.getDataTable();
+           var filas = dataDC.getNumberOfRows();
         
       
           document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
