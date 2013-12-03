@@ -97,7 +97,7 @@ h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/tr
                 }
                 
                 this.getUrlDetalle= function(row){
-                        return URL_DETALLE+dataDC.getValue(row, FIELDS.id);
+                        return URL_DETAIL+dataDC.getValue(row, FIELDS.id);
                 }
 
                 this.isHeaderTable = function(row){
