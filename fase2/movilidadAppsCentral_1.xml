@@ -111,7 +111,7 @@
                   var iconshtml="";
                   for(n in types)
                   {                                
-                   iconhtml += "<li class=\"oslist\"><img src=\"'+URLICONS[types[n]]'\"></li>";                  
+                   iconshtml += "<li class=\"oslist\"><img src=\"'+URLICONS[types[n]]'\"></li>";                  
                   }    
                   return iconsrendered;
                 }
