@@ -461,7 +461,7 @@
 
 <script type="text/javascript">
 
-	console.debug('v5 - videosResume-v2.xm');
+	console.debug('v6 - videosResume-v2.xm');
 
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
@@ -489,8 +489,8 @@
 
 		if (Urlall!="")
 		{
-			document.getElementById('video-container2').innerHTML = '<button type="button" id="allcontent">Ver todos</button>';
-			document.getElementById("allcontent").onclick = function(){ Go(Urlall);};
+			document.getElementById('video-container2').innerHTML = "<button type='button' id='allcontent'> onclick='Go(" + Urlall + ")'Ver todos</button>";
+			//document.getElementById("allcontent").onclick = function(){ Go(Urlall);};
 		}
 
 		if (titleVideo!="")
@@ -504,10 +504,10 @@
 				 				"<a target='_parent' href='" + urlsabermas + "'>" + titleVideo + "</a>" +
 				 			"</div>" +
 				 			"<div id='textVideo' class='textVideo'>" + textVideo + "</div>" +
-				 			"<div id='sabermas'><button type='button' id='allcontent2'>Saber más</button></div>" +
+				 			"<div id='sabermas'><button type='button' id='allcontent2' onclick='Go(" + urlsabermas + ")'>Saber más</button></div>" +
 				 		"</div>";
-				document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
-				document.getElementById('video-container').innerHTML = htmlvid;
+			//document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
+			document.getElementById('video-container').innerHTML = htmlvid;
  		}
 
 		if (titleVideo2!="")
@@ -521,10 +521,10 @@
 				 				"<a target='_parent' href='" + urlsabermas2 + "'>" + titleVideo2 + "</a>" +
 				 			"</div>" +
 				 			"<div id='textVideo2' class='textVideo'>" + textVideo2 + "</div>" +
-				 			"<div id='sabermas2'><button type='button' id='allcontent3'>Saber más</button></div>" +
+				 			"<div id='sabermas'><button type='button' id='allcontent3' onclick='Go(" + urlsabermas2 + ")'>Saber más</button></div>" +
 				 		"</div>";
-				document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
-				document.getElementById('video-container2').innerHTML = htmlvid2;
+			//document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
+			document.getElementById('video-container2').innerHTML = htmlvid2;
  		}
 
 		return false;
