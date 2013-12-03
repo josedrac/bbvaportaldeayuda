@@ -189,7 +189,7 @@
           console.log('loading');
           google.setOnLoadCallback(function(){
             new Sidebar();
-          );
+          });
         }
       }
     </script>
