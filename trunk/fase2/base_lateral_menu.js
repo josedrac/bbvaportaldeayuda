@@ -1,4 +1,5 @@
 var Sidebar = function(options){
+  var options = options || {};
   var url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/detalle_app?app_id=';
   var fields = options.fields || { id : 0, name: 1,image: 3 } ;
   var template = options.template || function(dataDCm, subseccion){
@@ -71,7 +72,7 @@ var Sidebar = function(options){
   }
   
   function handleQueryResponseDC(response){
-     var dataDC = new DataTable(response.getDataTable(), url_detail);
+     var dataDC = new DataTable(response.getDataTable(), self.url_detail);
      dataDc.fields = fields;
     var filas = dataDC.getNumberOfRows();
   
