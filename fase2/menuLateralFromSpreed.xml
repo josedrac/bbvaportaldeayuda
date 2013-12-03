@@ -132,6 +132,7 @@
         }
           
         function getData(){
+          console.log('getData');
           var gadgetHelper = new google.visualization.GadgetHelper();
           var opts = {dataType:'jsonp'};
           var queryDC = new google.visualization.Query(urlTable, opts);
