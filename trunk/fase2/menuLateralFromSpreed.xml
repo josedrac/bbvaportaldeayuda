@@ -128,7 +128,6 @@
         function loadVisualizationAPI() {
           google.load("visualization", "1", {"packages": ["table"]});
           console.log('loading');
-          google.setOnLoadCallback(getData);
         }
           
         function getData(){
@@ -185,7 +184,8 @@
           document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
         
         }
-      
+        
+      getData();
       }
       var cargaCompleta = function(){
         console.log('entra carga');
