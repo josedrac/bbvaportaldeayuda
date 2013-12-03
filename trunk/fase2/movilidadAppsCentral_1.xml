@@ -97,20 +97,31 @@
 
         function handleQueryResponseDC(response){
                 var dataDC = new DataTable(response.getDataTable());
-                var filas = dataDC.getNumberOfRows();
-                var URLICONS ={
+                var filas = dataDC.getNumberOfRows();               
+                var html= "";
+                function renderIcons(types)
+                {
+                  var URLICONS =
+                              {
                               "Android":"url1",
                               "Iphone":"url2",
                               "Ipad":"url3"
                               };
-                var html= "";
+                              
+                  var iconshtml="";
+                  for(n in types)
+                  {                                
+                   iconhtml += "<li class=\"oslist\"><img src=\"'+URLICONS[types[n]]'\"></li>";                  
+                  }    
+                  return iconsrendered;
+                }
                 for(var row=0;row<filas;row++){
                         if(! dataDC.isHeaderTable(row))
                         {
                                 html +="<div class=\"article\"><a class=\"enlace\" href=\"+dataDC.getId(row)+\" >";
                                 html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
                                 html +="<h2>"+dataDC.getTitle(row)+"</h2>";
-                                html +="<ul class=\"oslist\">"+for(n in dataDC.getType(row)){dataDC.getType(row)[n]}+"</ul>";
+                                html +="<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul>";
                                 html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
                                 html +="</a></div>";
                         }
