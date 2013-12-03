@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="movilidadLateral.xml"
+  <ModulePrefs title="movilidadConfCorreoCentral.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="Sopra">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="_table_query_url" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHlMVGhUeHNBTFJhWkEyU0MyTlUyd1E#gid=0" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 <UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/> 
 
  <Content type="html">
@@ -121,83 +121,83 @@
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
+   	 console.log(5);
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
 	 var subseccion = prefs.getString("subseccion"); 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
-	 function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
-	 function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				var opts = {dataType:'jsonp'};		
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(A),B,max(C),max(D) group by B";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
-	 function handleQueryResponse(response) {
-				data = response.getDataTable();	
-				var filas = data.getNumberOfRows();
-				//alert(filas);
-				
-				
-				for(var i=0;i<filas;i++){
-				    
-				 if(data.getValue(i,1) == 'España'){
-					document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-					} else if(data.getValue(i,1) != 'País'){
-				    
-				    document.getElementById('paises').innerHTML += "<option  value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
-				   }
-				}
-			}
-		
-	 function devicesCountry(pais){
-	   var gadgetHelper = new google.visualization.GadgetHelper();
-	   var opts = {dataType:'jsonp'};
-	   var queryDC = new google.visualization.Query(urlTable, opts);
-	     
-	   var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
-	   
-	   queryDC.setQuery(queryDCtosend);			  
-	   queryDC.send(handleQueryResponseDC);
-	   
 
-	 }
-	 function handleQueryResponseDC(response){
-	 
-	   dataDC = response.getDataTable();
-	   var filas = dataDC.getNumberOfRows();
-	 
-	   var html= "";
-	   html +='<div class=\"titulo\">' + subseccion + '</div>';
-	   html +='<ul id=\"botonera\">'; 
-	   for(var i=0;i<filas;i++)
-	   {
-		if(dataDC.getValue(i,2) != 'Dispositivo')
-		{
-	    html +="<li><a  href='https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="+dataDC.getValue(i,0)+"' target='_parent'>"+dataDC.getValue(i,2)+"</a></li>";
+	 function loadVisualizationAPI() {
+		google.load("visualization", "1", {"packages": ["table"]});
+	}
+		
+	function devicesCountry(pais){
+		var gadgetHelper = new google.visualization.GadgetHelper();
+		var opts = {dataType:'jsonp'};
+		var queryDC = new google.visualization.Query(urlTable, opts);
+		 
+		var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
+
+		queryDC.setQuery(queryDCtosend);			  
+		queryDC.send(handleQueryResponseDC);
+   
+	}
+
+	var DataTable= function(data){
+		var HEADER_ROW = 0;
+		var FIELDS = {
+			id : 0,
+			name: 2,
+			image: 3
+		};
+
+		var dataDC = data;
+		this.getId = function(row){
+			return dataDC.getValue(row, FIELDS.id);
 		}
+		this.getHref = function(row){
+			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+this.getId(row);
+		}
+		this.getNumberOfRows = function(){
+			return dataDC.getNumberOfRows();
+		}
+		this.getName = function(row){
+			return dataDC.getValue(row, FIELDS.name);
+		}		
+		this.getImage = function(row){
+			return dataDC.getValue(row, FIELDS.image);
+		}
+
+		this.isHeaderTable = function(row){
+			return ( row == HEADER_ROW);
+		}
+
+	}
+
+	function handleQueryResponseDC(response){
+	 	var dataDC = new DataTable(response.getDataTable());
+		var filas = dataDC.getNumberOfRows();
+
+	   	var html= "";
+		html +='<div class=\"titulo\">' + subseccion + '</div>';
+	   	html +='<ul id=\"botonera\">'; 
+   		for(var row=0;row<filas;row++){
+			if(! dataDC.isHeaderTable(row)){
+				html +='<li class=""><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
+				'<img src="'+dataDC.getImage(row)+'"/>'+dataDC.getName(row)+'</a></li>';
+			}
+	  	}
+
+		html +='</ul>';
+		document.getElementById('content_div').innerHTML = html;
 	 
-	  }
-	   html +='</ul>';
-	   document.getElementById('content_div').innerHTML = html;
-	   
-	 }
-	 function cargaCompleta(){
-	 
-	 devicesCountry('España');
-	 }
-	 
-	 
-	 
+	}
+
+	function cargaCompleta(){
+		devicesCountry('España');
+	}
+ 
    </script>
    
     ]]>
