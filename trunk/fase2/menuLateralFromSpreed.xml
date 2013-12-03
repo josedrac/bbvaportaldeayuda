@@ -123,6 +123,7 @@
         var prefs = new _IG_Prefs();
         var urlTable = prefs.getString("_table_query_url");
         var subseccion = prefs.getString("subseccion"); 
+        getData();
           
         function getData(){
           console.log('getData');
