@@ -15,7 +15,7 @@
 	
  <style type="text/css">
 .container { max-width: 600px; width: 100%;}
-.article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid grey; }
+.article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid grey; vertical-align: top;}
 .article .articleimg { text-align: center; }
 .article .articleimg img { margin: auto; width: 60px; }
 .article h2 { text-align: center; }
