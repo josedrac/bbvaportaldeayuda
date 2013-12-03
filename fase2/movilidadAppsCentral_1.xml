@@ -58,6 +58,8 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
 <![endif]-->
 		
 <body onload="cargaCompleta()"> 
+
+<div id="content_div" class="caja"></div>
 <div id="container" class="container">
     <div class="row">
         <div class="article">
@@ -110,7 +112,6 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
         </div>        
     </div>
 </div>	
-<div id="content_div" class="caja"></div>
 
 </body>
 script type="text/javascript">
