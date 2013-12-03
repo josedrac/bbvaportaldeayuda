@@ -14,9 +14,10 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
  <style type="text/css">
-h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/legend.png); background-position: top right; background-repeat: no-repeat; background-size: 10%; background-color: white; }
+h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/legend.png); background-position: top right; background-repeat: no-repeat; background-size: 140px; background-color: none; }
+
 .container { max-width: 605px; margin: auto; width: 100%; font-family: 'BBVA Web Book'; }
-.container .article { padding: 15px 5px 10px 5px; max-width: 185px; min-height: 280px; width: 31%; display: inline-block; border: 1px solid grey; vertical-align: top; }
+.container .article { padding: 15px 5px 10px 5px; max-width: 174px; min-height: 280px; width: 31%; display: inline-block; border: 1px solid grey; vertical-align: top; margin: 5px; }
 .container .article .enlace { color: black; text-decoration: none; font-size: 1em; }
 .container .article .enlace .articleimg { text-align: center; }
 .container .article .enlace .articleimg img { margin: auto; width: 70px; }
