@@ -440,7 +440,7 @@
 
 <script type="text/javascript">
 
-    console.debug('v13 - videosResume-v2.xml');
+    console.debug('v14 - videosResume-v2.xml');
 
     var gadgetHelper = null;
     var prefs = new gadgets.Prefs();
@@ -475,7 +475,7 @@
         if (titleVideo!="")
         {
                 htmlvid =       "<div id='tagVideo' class='tagVideo'><img src='" + imgTag + "'/>" + tagVideo + "</div>" +
-                                        "<div id='infoVideo'>" +
+                                        "<div class='infoVideo'>" +
                                                 "<div class='video'>" +
                                                         "<iframe allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width:302px; height:201px;' src='" + urlVideo + "'></iframe>" +
                                                 "</div>" +
@@ -493,7 +493,7 @@
         if (titleVideo2!="")
         {
                 htmlvid2 =      "<div id='tagVideo2' class='tagVideo'><img src='" + imgTag2 + "'/>" + tagVideo2 + "</div>" +
-                                        "<div id='infoVideo2'>" +
+                                        "<div class='infoVideo2'>" +
                                                 "<div class='video'>" +
                                                         "<iframe allowScriptAccess='always' frameborder='0' style='border:1px solid #AAA; width:302px; height:201px;' src='" + urlVideo2 + "'></iframe>" +
                                                 "</div>" +
