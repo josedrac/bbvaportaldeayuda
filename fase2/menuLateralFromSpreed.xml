@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="subseccion" display_name="SubsecciÃƒÂ³n:" default_value="" required="true"/> 
+<UserPref name="subseccion" display_name="SubsecciÃƒÆ’Ã‚Â³n:" default_value="" required="true"/> 
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -101,9 +101,9 @@
       var Sidebar = function(options){
         console.log('sidebar');
         var options = options || {};
-        this.url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/detalle_app?app_id=';
-        this.fields = options.fields || { id : 0, name: 1,image: 3 } ;
-        this.template = options.template || function(dataDCm, subseccion){
+        var url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/detalle_app?app_id=';
+        var fields = options.fields || { id : 0, name: 1,image: 3 } ;
+        var template = options.template || function(dataDCm, subseccion){
              var html= "";
              html +='<div class=\"titulo\">' + subseccion + '</div>';
                html +='<ul id=\"botonera\">'; 
@@ -122,11 +122,8 @@
         var gadgetHelper = null;
         var prefs = new _IG_Prefs();
         var urlTable = prefs.getString("_table_query_url");
-        var subseccion = prefs.getString("subseccion");
-        var self = this;
-        getData(); 
-         
-         
+        var subseccion = prefs.getString("subseccion"); 
+          
         function getData(){
           console.log('getData');
           var gadgetHelper = new google.visualization.GadgetHelper();
@@ -140,7 +137,7 @@
         
         }
         
-        this.DataTable= function(data,url_detail){
+        var DataTable= function(data,url_detail){
           var HEADER_ROW = 0;
           this.fields= {
              id : 0,
@@ -173,17 +170,17 @@
         
         function handleQueryResponse(response){
            console.log(response);
-           var dataDC = new self.DataTable(response.getDataTable(), self.url_detail);
-           dataDc.fields = self.fields;
+           var dataDC = new DataTable(response.getDataTable(), self.url_detail);
+           dataDc.fields = fields;
           var filas = dataDC.getNumberOfRows();
         
       
-          document.getElementById('content_div').innerHTML = self.template(dataDC, subseccion);
+          document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
         
         }
         
       }
-
+      var cargaCompleta = function(){
         console.log('entra carga');
         _IG_RegisterOnloadHandler(loadVisualizationAPI);  
         
@@ -194,12 +191,12 @@
             new Sidebar();
           });
         }
-      
+      }
     </script>
       
-<body>	
-<!--<div id="textMovilidad">GuÃ­as de configuraciÃ³n, segÃºn dispositivo: </div>-->
-<!--<div id="movilidad">GuÃ­as de configuraciÃ³n, segÃºn dispositivo:
+<body onload="cargaCompleta()">	
+<!--<div id="textMovilidad">GuÃƒÂ­as de configuraciÃƒÂ³n, segÃƒÂºn dispositivo: </div>-->
+<!--<div id="movilidad">GuÃƒÂ­as de configuraciÃƒÂ³n, segÃƒÂºn dispositivo:
  <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
 </div>-->
 <div id="content_div" class="caja"></div>	
