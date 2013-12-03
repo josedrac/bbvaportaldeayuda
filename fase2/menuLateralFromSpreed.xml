@@ -111,7 +111,9 @@
 			
 		<![endif]-->
 		<script type="javascript">
-     var sidebar = new Sidebar();
+      var cargaCompleta = function(){
+         var sidebar = new Sidebar();
+      }
     </script>
       
 <body onload="cargaCompleta()">	
