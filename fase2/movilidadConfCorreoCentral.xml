@@ -53,14 +53,13 @@
 			padding-bottom: 15px;
 		}
 		.caja{
-			border: 1px solid #DDE3EA;
-            border-radius: 2px;
-            -ms-border-radius: 2px;
-            -moz-border-radius: 2px;
-            -webkit-border-radius: 2px;
-            -khtml-border-radius: 2px;
-            width: 100%;
-            clear: both;
+      border-radius: 2px;
+      -ms-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -khtml-border-radius: 2px;
+      width: 100%;
+      clear: both;
 			margin-top:15px;
 		}		
 		ul{
