@@ -8,15 +8,13 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="_table_query_url" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHlMVGhUeHNBTFJhWkEyU0MyTlUyd1E#gid=0" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/> 
-
+<UserPref name="_table_query_url" default_value="https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c)" required="true" />
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
 	<style type="text/css">
-.container { max-width: 600px; width: 100%; border: 1px solid blue; }
+.container { max-width: 600px; width: 100%;}
 .row { clear: both; width: 100%; display: inline-block; }
 .article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid black; }
 .article .articleimg { text-align: center; }
@@ -59,12 +57,8 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
 		</style>		
 <![endif]-->
 		
-<body onload="cargaCompleta()">	
-<!--<div id="textMovilidad">Guías de configuración, según dispositivo: </div>-->
-<!--<div id="movilidad">Guías de configuración, según dispositivo:
- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
-</div>-->
-<div class="container">
+<body onload="cargaCompleta()"> 
+<div id="container" class="container">
     <div class="row">
         <div class="article">
             <div class="articleimg">
@@ -119,82 +113,80 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
 <div id="content_div" class="caja"></div>
 
 </body>
-<script type="text/javascript">
+script type="text/javascript">
      var gadgetHelper = null;
-	 var prefs = new _IG_Prefs();
-	 var urlTable = prefs.getString("_table_query_url");
-	 var subseccion = prefs.getString("subseccion"); 
-	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
+         var prefs = new _IG_Prefs();
+         var urlTable = prefs.getString("_table_query_url");
+         _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
-	 function loadVisualizationAPI() {
-		google.load("visualization", "1", {"packages": ["table"]});
-	}
-		
-	function devicesCountry(pais){
-		var gadgetHelper = new google.visualization.GadgetHelper();
-		var opts = {dataType:'jsonp'};
-		var queryDC = new google.visualization.Query(urlTable, opts);
-		 
-		var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
+         function loadVisualizationAPI() {
+                google.load("visualization", "1", {"packages": ["table"]});
+        }
+                
+        function devicesCountry(pais){
+                var gadgetHelper = new google.visualization.GadgetHelper();
+                var opts = {dataType:'jsonp'};
+                var queryDC = new google.visualization.Query(urlTable, opts);
+                 
+                var queryDCtosend = "select A,B,C,D,E,F group by A,B";
 
-		queryDC.setQuery(queryDCtosend);			  
-		queryDC.send(handleQueryResponseDC);
+                queryDC.setQuery(queryDCtosend);                          
+                queryDC.send(handleQueryResponseDC);
    
-	}
+        }
 
-	var DataTable= function(data){
-		var HEADER_ROW = 0;
-		var FIELDS = {
-			id : 0,
-			name: 2,
-			image: 3
-		};
+        var DataTable= function(data){
+                var HEADER_ROW = 0;
+                var FIELDS = {
+                        id : 0,
+                        title : 1,
+                        type: 2,
+                        image: 3,
+                        short: 4,
+                        long:5
+                };
 
-		var dataDC = data;
-		this.getId = function(row){
-			return dataDC.getValue(row, FIELDS.id);
-		}
-		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+this.getId(row);
-		}
-		this.getNumberOfRows = function(){
-			return dataDC.getNumberOfRows();
-		}
-		this.getName = function(row){
-			return dataDC.getValue(row, FIELDS.name);
-		}		
-		this.getImage = function(row){
-			return dataDC.getValue(row, FIELDS.image);
-		}
+                var dataDC = data;
+                this.getId = function(row){
+                        return dataDC.getValue(row, FIELDS.id);
+                }
+                this.getNumberOfRows = function(){
+                        return dataDC.getNumberOfRows();
+                }
+                this.getTitle = function(row){
+                        return dataDC.getValue(row, FIELDS.title);
+                }               
+                this.getImage = function(row){
+                        return dataDC.getValue(row, FIELDS.image);
+                }
 
-		this.isHeaderTable = function(row){
-			return ( row == HEADER_ROW);
-		}
+                this.isHeaderTable = function(row){
+                        return ( row == HEADER_ROW);
+                }
 
-	}
+        }
 
-	function handleQueryResponseDC(response){
-	 	var dataDC = new DataTable(response.getDataTable());
-		var filas = dataDC.getNumberOfRows();
+        function handleQueryResponseDC(response){
+                var dataDC = new DataTable(response.getDataTable());
+                var filas = dataDC.getNumberOfRows();
 
-	   	var html= "";
-		html +='<div class=\"titulo\">' + subseccion + '</div>';
-	   	html +='<ul id=\"botonera\">'; 
-   		for(var row=0;row<filas;row++){
-			if(! dataDC.isHeaderTable(row)){
-				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
-				'<img src="'+dataDC.getImage(row)+'"/>'+dataDC.getName(row)+'</a></li>';
-			}
-	  	}
+                var html= "";
+                html +='<<ul id=\"botonera\">'; 
+                for(var row=0;row<filas;row++){
+                        if(! dataDC.isHeaderTable(row)){
+                                html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
+                                "<img src='"+dataDC.getImage(row)+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
+                        }
+                }
 
-		html +='</ul>';
-		document.getElementById('content_div').innerHTML = html;
-	 
-	}
+                html +='</ul>';
+                document.getElementById('container').innerHTML = html;
+         
+        }
 
-	function cargaCompleta(){
-		devicesCountry('España');
-	}
+        function cargaCompleta(){
+                devicesCountry('España');
+        }
  
    </script>
    
