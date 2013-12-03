@@ -181,7 +181,7 @@
         }
         
       }
-      var cargaCompleta = function(){
+
         console.log('entra carga');
         _IG_RegisterOnloadHandler(loadVisualizationAPI);  
         
@@ -192,10 +192,10 @@
             new Sidebar();
           });
         }
-      }
+
     </script>
       
-<body onload="cargaCompleta()">	
+<body>	
 <!--<div id="textMovilidad">GuÃƒÂ­as de configuraciÃƒÂ³n, segÃƒÂºn dispositivo: </div>-->
 <!--<div id="movilidad">GuÃƒÂ­as de configuraciÃƒÂ³n, segÃƒÂºn dispositivo:
  <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
