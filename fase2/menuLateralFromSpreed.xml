@@ -135,7 +135,7 @@
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,B,C,D,E";
+		var queryDCtosend = "select A,B,C,D,E group by A,B,C,D,E,F";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
