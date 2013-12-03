@@ -171,6 +171,8 @@
 		}
 
 		this.isNotDevice = function(row){
+	 		console.log('row', row);
+	 		console.log('isNotDevice', ( row == HEADER_ROW));
 			return ( row == HEADER_ROW);
 		}
 
