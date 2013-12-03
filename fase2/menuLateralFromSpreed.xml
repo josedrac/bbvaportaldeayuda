@@ -146,7 +146,7 @@
 		var HEADER_ROW = 0;
 		var FIELDS = {
 			id : 0,
-			name: 2,
+			name: 1,
 			image: 3
 		};
 
