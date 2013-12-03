@@ -145,10 +145,17 @@
 	}
 
 	var DataTable= function(data){
+		var HEADER_ROW = 0;
+		var FIELDS = {
+			id : 0,
+			name: 2,
+			image: 3
+		};
+
 		var dataDC = data;
 	 	console.log('dataDC', dataDC);
 		var getId = function(row){
-			return dataDC.getValue(row,0);
+			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
 			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+getId(row);
@@ -157,14 +164,14 @@
 			return dataDC.getNumberOfRows();
 		}
 		this.getName = function(row){
-			return dataDC.getValue(row,2);
+			return dataDC.getValue(row, FIELDS.name);
 		}		
 		this.getImage = function(row){
-			return dataDC.getValue(row,3);
+			return dataDC.getValue(row, FIELDS.image);
 		}
 
 		this.isNotDevice = function(row){
-			return (dataDC.getValue(row,2) != 'Dispositivo');
+			return ( row == HEADER_ROW);
 		}
 
 	}
@@ -176,8 +183,7 @@
 	   	var html= "";
 		html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
-   		for(var row=0;row<filas;row++){
-   			console.log(row);
+   		for(var row=1;row<filas;row++){
 			if(dataDC.isNotDevice(row)){
 				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
 				'<img src="'+dataDC.getImage()+'"/>'+dataDC.getName(row)+'</a></li>';
