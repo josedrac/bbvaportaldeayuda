@@ -142,19 +142,6 @@ ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-si
         function handleQueryResponseDC(response){
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();
-                <div class="articleimg">
-                <img src="img/Directorio.png">
-            </div>
-            <h2>article BBVA</h2>
-            <ul class="oslist">
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-                <li><img class"oslogo" src="img/ios.png"></li>
-            </ul>
-            <div class="short">
-                <span>shortcontent</span>
-            </div>
-
                 var html= "";
                 for(var row=0;row<filas;row++){
                         if(! dataDC.isHeaderTable(row))
