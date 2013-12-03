@@ -119,7 +119,7 @@
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
-   	 console.log(6);
+   	 console.log(7);
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -135,7 +135,7 @@
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,B,C,D,E group by A,B,C,D,E,F";
+		var queryDCtosend = "select *";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
