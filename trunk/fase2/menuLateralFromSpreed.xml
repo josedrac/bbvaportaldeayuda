@@ -119,7 +119,7 @@
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
-   	 console.log(5);
+   	 console.log(6);
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -181,10 +181,10 @@
        html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=0;row<filas;row++){
-			if(! dataDC.isHeaderTable(row)){
-				html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
-				"<img src='"+dataDC.getImage(row)+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
-			}
+           if(! dataDC.isHeaderTable(row)){
+              html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
+              dataDC.getName(row)+"</a></li>";
+           }
 	  	}
 
 		html +='</ul>';
