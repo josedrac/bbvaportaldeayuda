@@ -121,7 +121,7 @@
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
-   	 console.log(Math.random());
+   	 console.log(4);
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -187,7 +187,7 @@
 	   	var html= "";
 		html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   	html +='<ul id=\"botonera\">'; 
-   		for(var row=1;row<filas;row++){
+   		for(var row=0;row<filas;row++){
    			console.log(row);
 			if(! dataDC.isHeaderTable(row)){
 				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
