@@ -194,7 +194,7 @@
           console.log('loading');
           google.setOnLoadCallback(function(){
             var dataTable = new DataTable();
-            new Sidebar({datatable:dataTable});
+            new Sidebar({dataTable:dataTable});
           });
         }
 
