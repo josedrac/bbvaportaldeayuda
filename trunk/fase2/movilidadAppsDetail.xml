@@ -54,11 +54,8 @@
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
-   console.log(urlTable);
 	 var dispositivo = gadgets.util.getUrlParameters()["parent"].split("=");
-   console.log(dispositivo);
-	 var aux = gadgets.util.getUrlParameters()["parent"];	 
-   console.log(aux);
+	 var aux = gadgets.util.getUrlParameters()["parent"];	
 	 var situation = gadgets.util.getUrlParameters()["parent"];
    console.log(situation);
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -74,9 +71,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-        console.log(query);
 				var querytosend = "select * where A like '%"+dispositivo[1]+"%' ";
-        console.log(querytosend);
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -166,9 +161,9 @@
         }
 
         function handleQueryResponse(response){
-                console('response');        
-                console(response);
-                console('end response');        
+                console.log('response');        
+                console.log(response);
+                console.log('end response');        
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();
                 console.log('num Filas'+filas);               
