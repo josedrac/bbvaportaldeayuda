@@ -169,9 +169,11 @@
                 }
                 var existManual = function(manual)
                 {
+                  console.log(manual.title);
+                  console.log(manual.manual);
                   if (manual.title == "" && manual.url) 
                   {
-                  return false;
+                  return 'no pintes nada';
                   } 
                   else 
                   {                 
