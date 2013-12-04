@@ -160,7 +160,7 @@
 		      #video-container2 {
 		   	    float:left;
 				width:607px;
-				height:248px;
+				height:234px;
 				margin-bottom: 10px;
 			}
 
