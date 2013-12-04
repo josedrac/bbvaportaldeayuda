@@ -190,8 +190,8 @@
           google.load("visualization", "1", {"packages": ["table"]});
           console.log('loading');
           google.setOnLoadCallback(function(){
-            var dataDC = new DataTable();
-            new Sidebar({datatable:dataDc});
+            var dataTable = new DataTable();
+            new Sidebar({datatable:dataTable});
           });
         }
 
