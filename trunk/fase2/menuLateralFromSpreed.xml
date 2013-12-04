@@ -181,13 +181,15 @@
         
         }
         
-        var dataDC = new DataTable();
+        
         _IG_RegisterOnloadHandler(loadVisualizationAPI);  
         
         function loadVisualizationAPI() {
+          
           google.load("visualization", "1", {"packages": ["table"]});
           console.log('loading');
           google.setOnLoadCallback(function(){
+            var dataDC = new DataTable();
             new Sidebar({datatable:dataDc});
           });
         }
