@@ -165,7 +165,23 @@
 
 		<![endif]-->
 
-        <div id="content_div" class="caja"></div>
+        <div id="content_div" class="caja">
+            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+            </li>
+            <li class="op1" onclick="Go2('https://support.google.com/plus/?hl=es')">
+                <a class="link1" title="Ir a página de ayuda de Google+ [abre en ventana nueva]">Google+</a>
+            </li>
+            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+            </li>
+            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+            </li>
+            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+            </li>
+        </div>
 
         <script type="text/javascript">
 			if (!Array.prototype.indexOf) {
