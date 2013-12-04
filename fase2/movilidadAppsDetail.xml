@@ -126,7 +126,7 @@
                         return dataDC.getValue(row, FIELDS.manual_title_1);
                 }
                 this.getManualUrl1= function(row){
-                        return dataDC.getValue(row, FIELDS.manual_url_1;
+                        return dataDC.getValue(row, FIELDS.manual_url_1);
                 }
                 this.getManualTitle2= function(row){
                         return dataDC.getValue(row, FIELDS.manual_title_2);
