@@ -169,10 +169,11 @@
                 }
                 var renderManual = function(manual)
                 {
-                  console.log(manual.title);
-                  console.log(manual.manual);
+                  console.log(manual);
+                  console.log("title: "+manual.title);
+                  console.log("url: "+manual.url);
                   var html_manual = '<hr>';
-                  if((typeof(manual.title) != 'undefined' && manual.title != null) && (typeof(manual.url) != 'undefined' && manual.url!= null))
+                  if(((typeof(manual.title) != 'undefined') && (manual.title != "")) && ((typeof(manual.url) != 'undefined') && (manual.url != "")))
                   {
                       html_manual += '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
                       html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';  
