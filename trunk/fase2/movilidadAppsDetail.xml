@@ -178,7 +178,7 @@
                   return  html_manual;
                 } 
                 
-               var renderManuals = function(manuales){
+               var renderManuals = function(manuals){
                  var html ='';
                  for(key in manuals){                   
                    html += existManual(manuals[key]);
