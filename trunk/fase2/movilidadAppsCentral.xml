@@ -50,7 +50,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
 				<span>Android</span></li>
 			</ul>
  </div>
-<div id="render"><div>
+<div id="render" class="render"><div>
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
