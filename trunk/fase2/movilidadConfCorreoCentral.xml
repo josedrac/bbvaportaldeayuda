@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHlMVGhUeHNBTFJhWkEyU0MyTlUyd1E#gid=0" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/> 
+<UserPref name="title" display_name="Title:" default_value="" required="true"/> 
 
  <Content type="html">
     <![CDATA[
@@ -132,7 +132,7 @@
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	 var subseccion = prefs.getString("subseccion"); 
+	 var title= prefs.getString("title"); 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
@@ -187,6 +187,7 @@
 		var filas = dataDC.getNumberOfRows();
 
 	   	var html= "";
+       html +='<h2>'+title+'</h2>'; 
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=0;row<filas;row++){
 			if( dataDC.validateRow(row)){
