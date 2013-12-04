@@ -99,20 +99,19 @@
 		<![endif]-->
 		<script type="text/javascript">
       var Sidebar = function(options){
-        console.log('sidebar');
+
         var options = options || {};
-        var url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?app_id=';
         var fields = options.fields || { id : 0, name: 1,image: 3 } ;
-        var template = options.template || function(dataDCm, subseccion){
+        var template = options.template || function(dataTable, subseccion){
         
-             var filas = dataDC.getNumberOfRows();
+             var filas = dataTable.getNumberOfRows();
              var html= "";
              html +='<div class=\"titulo\">' + subseccion + '</div>';
                html +='<ul id=\"botonera\">'; 
                for(var row=0;row<filas;row++){
-                 if( dataDC.validateRow(row)){
-                    html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
-                    dataDC.getName(row)+"</a></li>";
+                 if( dataTable.validateRow(row)){
+                    html +="<li><a  href='"+dataTable.getHref(row)+"' target='_parent'>"+
+                    dataTable.getName(row)+"</a></li>";
                  }
               }
           
@@ -120,6 +119,7 @@
             return html;
         }
         
+        var dataTable = options.dataTable;
         
         var gadgetHelper = null;
         var prefs = new _IG_Prefs();
@@ -128,7 +128,7 @@
         getData();
           
         function getData(){
-          console.log('getData');
+
           var gadgetHelper = new google.visualization.GadgetHelper();
           var opts = {dataType:'jsonp'};
           var queryDC = new google.visualization.Query(urlTable, opts);
@@ -140,7 +140,16 @@
         
         }
         
-        var DataTable= function(){
+        
+        function handleQueryResponse(response){
+          dataTable.data = response.getDataTable();
+          document.getElementById('content_div').innerHTML = template(dataTable, subseccion);
+        }
+      }
+
+        
+        var DataTable= function(options){
+          var options = options || {};
           var HEADER_ROW = 0;
           this.fields= {
              id : 0,
@@ -148,8 +157,8 @@
              image: 3
           };
         
-          this.data = {};
-          this.url_detail = '';
+          this.data = options.data || {};
+          this.url_detail = options.url_detail || 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?app_id=';
           this.getId = function(row){
              return this.data.getValue(row, this.fields.id);
           }
@@ -173,26 +182,13 @@
         }
         
         var dataDC = new DataTable();
-        dataDC.url_detail = url_detail;
-        
-        function handleQueryResponse(response){
-           console.log(response);
-           dataDC.data = response.getDataTable();
-        
-          document.getElementById('content_div').innerHTML = template(dataDC, subseccion);
-        
-        }
-        
-      }
-
-        console.log('entra carga');
         _IG_RegisterOnloadHandler(loadVisualizationAPI);  
         
         function loadVisualizationAPI() {
           google.load("visualization", "1", {"packages": ["table"]});
           console.log('loading');
           google.setOnLoadCallback(function(){
-            new Sidebar();
+            new Sidebar({datatable:dataDc});
           });
         }
 
