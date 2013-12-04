@@ -83,7 +83,7 @@
             </tr>
             	<tr>
                 <td>
-				 Url to button 2: <input type="text" size="100" id="urlbutton1" value="__UP_urlbutton2__"   onchange="registra('urlbutton2')"/>
+				 Url to button 2: <input type="text" size="100" id="urlbutton2" value="__UP_urlbutton2__"   onchange="registra('urlbutton2')"/>
                 </td>
             </tr>
 			<tr>
@@ -512,7 +512,7 @@ font-weight: normal;
 </body>
 
  <script type="text/javascript">
-console.debug('v6 - videosResume-v2r.xml');
+console.debug('v7 - videosResume-v2r.xml');
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 
@@ -559,7 +559,10 @@ console.debug('urlbutton2:'+urlbutton2);
 	}
 	function Go(destination){
 	window.parent.location.href = destination;
+	alert(destination);
 	return false;
+
+
 	}
 
  </script>
