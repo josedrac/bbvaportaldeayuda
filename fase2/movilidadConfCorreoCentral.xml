@@ -63,8 +63,8 @@
 			margin-top:15px;
 		}		
 		ul{
-			padding-left: 19px;
-			padding-right: 19px;
+			padding-left: 0px;
+			padding-right: 0px;
 			margin: 0;
 		}
 		ul li{
@@ -73,7 +73,7 @@
 			padding-bottom: 12px;
 			padding-top: 17px;
 			display: inline-block;
-			width: 155px;
+			width: 162px;
 			margin: 13px;
 			height: 148;
 			text-align: center;
