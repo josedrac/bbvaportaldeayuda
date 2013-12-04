@@ -84,6 +84,14 @@
          	 font-size: 12px; font-family: Arial;
          	font-weight: bold;
 			color: #0073C9;
+
+            padding-left: 30px;
+            vertical-align: 3px;
+            text-decoration: none;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: bold;
+            color: #0073C9;
 		}
 
   		ul li.op5 {
@@ -143,23 +151,25 @@
 			</style>
 
 		<![endif]-->
-        <h2 class="titulo">Google Apps</h2>
         <div id="content_div" class="caja">
-            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
-            </li>
-            <li class="op1" onclick="Go2('https://support.google.com/plus/?hl=es')">
-                <a class="link1" title="Ir a página de ayuda de Google+ [abre en ventana nueva]">Google+</a>
-            </li>
-            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
-            </li>
-            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
-            </li>
-            <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
-            </li>
+            <div class="titulo">Google Apps</div>
+            <ul>
+                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                </li>
+                <li class="op1" onclick="Go2('https://support.google.com/plus/?hl=es')">
+                    <a class="link1" title="Ir a página de ayuda de Google+ [abre en ventana nueva]">Google+</a>
+                </li>
+                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                </li>
+                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                </li>
+                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                </li>
+            </ul>
         </div>
 
         <script type="text/javascript">
