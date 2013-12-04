@@ -163,7 +163,7 @@
                   var iconshtml="";
                   for(n in types)
                   {                                
-                   iconshtml += "<li><img src=\""+URLICONS[types[n]]+"\"><span>"+types[n]+"</span></li>";                  
+                   iconshtml += "<li><img src=\""+URLICONS[types[n]]+"><span>"+types[n]+"</span></li>";                  
                   }    
                   return iconshtml;
                 }
