@@ -391,7 +391,7 @@ if (!Array.prototype.indexOf) {
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
 		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
-		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
+		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movilidad-apps";}
 		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
 
 		return false;
