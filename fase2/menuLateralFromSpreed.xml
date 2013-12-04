@@ -149,6 +149,7 @@
 
         
         var DataTable= function(options){
+          console.log('dentro de DataTable');
           var options = options || {};
           var HEADER_ROW = 0;
           this.fields= {
