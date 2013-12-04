@@ -117,7 +117,7 @@
         ul li.gmail {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px;
         }
-        
+
         ul li.contactos {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;
         }
@@ -128,15 +128,23 @@
 
         ul li.gplus {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/gplus-56.png') no-repeat;
+            background-size: 24px;
+            background-position: 0px;
         }
         ul li.groups {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/groups-56.png') no-repeat;
+            background-size: 24px;
+            background-position: 0px;
         }
         ul li.hangouts {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/hangouts-56.png') no-repeat;
+            background-size: 24px;
+            background-position: 0px;            
         }
         ul li.sites {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/sites-56.png') no-repeat;
+            background-size: 24px;
+            background-position: 0px;            
         }
 
         </style>
@@ -174,22 +182,22 @@
                     <a class="link1" title="Ir a página de ayuda de Google+ [abre en ventana nueva]">Google+</a>
                 </li>
                 <li class="hangouts" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                    <a class="link1" title="Ir a página de ayuda de hangOuts [abre en ventana nueva]">Drive</a>
+                    <a class="link1" title="Ir a página de ayuda de hangOuts [abre en ventana nueva]">HangOuts</a>
                 </li>
                 <li class="groups" onclick="Go2('https://support.google.com/groups/#topic=9216')">
-                    <a class="link1" title="Ir a página de ayuda de Groups [abre en ventana nueva]">Drive</a>
+                    <a class="link1" title="Ir a página de ayuda de Groups [abre en ventana nueva]">Groups</a>
                 </li>
                 <li class="sites" onclick="Go2('https://support.google.com/sites/#topic=1689606')">
-                    <a class="link1" title="Ir a página de ayuda de Sites [abre en ventana nueva]">Drive</a>
+                    <a class="link1" title="Ir a página de ayuda de Sites [abre en ventana nueva]">Sites</a>
                 </li>
                 <li class="calendar" onclick="Go2('https://support.google.com/calendar/#topic=3417969')">
-                    <a class="link1" title="Ir a página de ayuda de Calendar [abre en ventana nueva]">Drive</a>
+                    <a class="link1" title="Ir a página de ayuda de Calendar [abre en ventana nueva]">Calendar</a>
                 </li>
                 <li class="gmail" onclick="Go2('https://support.google.com/mail/#topic=3394144')">
-                    <a class="link1" title="Ir a página de ayuda de Gmail [abre en ventana nueva]">Drive</a>
+                    <a class="link1" title="Ir a página de ayuda de Gmail [abre en ventana nueva]">Gmail</a>
                 </li>
                 <li class="contactos" onclick="Go2('https://support.google.com/mail/?hl=es#topic=3394152')">
-                    <a class="link1" title="Ir a página de ayuda de Contactos [abre en ventana nueva]">Drive</a>
+                    <a class="link1" title="Ir a página de ayuda de Contactos [abre en ventana nueva]">Contactos</a>
                 </li>
             </ul>
         </div>
