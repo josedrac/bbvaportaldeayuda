@@ -94,38 +94,51 @@
             color: #0073C9;
 		}
 
-  		ul li.op5 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 15px;
-        }
         ul li.op8 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -55px;
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -55px;
         }
-        ul li.op4 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -125px;
-        }
+
         ul li.op6 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -195px;
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -195px;
         }
         ul li.op7 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px;
-        }
-        ul li.op3 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -410px;
-        }
-        ul li.op1 {
-        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px;
-                }
-        ul li.op2 {
-
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;
-
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px;
         }
         ul li.op9 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px;
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px;
         }
         ul li.op10 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -700px;
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -700px;
         }
+        ul li.calendar {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -410px;
+        }
+
+        ul li.gmail {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px;
+        }
+        
+        ul li.contactos {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;
+        }
+
+  		ul li.drive {
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 15px;
+        }
+
+        ul li.gplus {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/gplus-56.png') no-repeat;
+        }
+        ul li.groups {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/groups-56.png') no-repeat;
+        }
+        ul li.hangouts {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/hangouts-56.png') no-repeat;
+        }
+        ul li.sites {
+            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/sites-56.png') no-repeat;
+        }
+
         </style>
 
     	<!--[if IE 7]>
@@ -154,20 +167,29 @@
         <div id="content_div" class="caja">
             <div class="titulo">Google Apps</div>
             <ul>
-                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                <li class="drive" onclick="Go2(' https://support.google.com/drive/#topic=14940')">
                     <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
                 </li>
-                <li class="op1" onclick="Go2('https://support.google.com/plus/?hl=es')">
+                <li class="gplus" onclick="Go2('https://support.google.com/plus/#topic=3049661')">
                     <a class="link1" title="Ir a página de ayuda de Google+ [abre en ventana nueva]">Google+</a>
                 </li>
-                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                <li class="hangouts" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                    <a class="link1" title="Ir a página de ayuda de hangOuts [abre en ventana nueva]">Drive</a>
                 </li>
-                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                <li class="groups" onclick="Go2('https://support.google.com/groups/#topic=9216')">
+                    <a class="link1" title="Ir a página de ayuda de Groups [abre en ventana nueva]">Drive</a>
                 </li>
-                <li class="op1" onclick="Go2('https://support.google.com/drive/?hl=es')">
-                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                <li class="sites" onclick="Go2('https://support.google.com/sites/#topic=1689606')">
+                    <a class="link1" title="Ir a página de ayuda de Sites [abre en ventana nueva]">Drive</a>
+                </li>
+                <li class="calendar" onclick="Go2('https://support.google.com/calendar/#topic=3417969')">
+                    <a class="link1" title="Ir a página de ayuda de Calendar [abre en ventana nueva]">Drive</a>
+                </li>
+                <li class="gmail" onclick="Go2('https://support.google.com/mail/#topic=3394144')">
+                    <a class="link1" title="Ir a página de ayuda de Gmail [abre en ventana nueva]">Drive</a>
+                </li>
+                <li class="contactos" onclick="Go2('https://support.google.com/mail/?hl=es#topic=3394152')">
+                    <a class="link1" title="Ir a página de ayuda de Contactos [abre en ventana nueva]">Drive</a>
                 </li>
             </ul>
         </div>
