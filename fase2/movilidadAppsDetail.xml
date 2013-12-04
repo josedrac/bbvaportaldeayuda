@@ -167,27 +167,23 @@
                   }    
                   return iconshtml;
                 }
-                var existManual = function(manual)
+                var renderManual = function(manual)
                 {
                   console.log(manual.title);
                   console.log(manual.manual);
-                  if ((typeof manual.title == "undefined" || manual.title=="") || (typeof manual.url== "undefined" || manual.url==""))  
+                  var html_manual = '<hr>';
+                  if((typeof(manual.title) != 'undefined' && manual.title != null) && (typeof(manual.url) != 'undefined' && manual.url!= null))
                   {
-                  return 'no pintes nada';
-                  } 
-                  else 
-                  {                 
-                  var html_manual  = '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
-                      html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';
-                  
-                  return  html_manual;
-                  }
+                      html_manual += '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
+                      html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';  
+                  }                  
+                  return  html_manual;                  
                 } 
                 
                var renderManuals = function(manuals){
                  var html ='';
                  for(key in manuals){                   
-                   html += existManual(manuals[key]);
+                   html += renderManual(manuals[key]);
                   } 
                  return html;
               }
