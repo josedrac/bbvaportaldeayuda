@@ -124,7 +124,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
         function handleQueryResponseDC(response){
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();               
-                var html= "<h1 class=\"title\">Apps de BBVA</h1><";
+                var html= "";
                 var renderIcons = function(types)
                 {
                   var URLICONS =
