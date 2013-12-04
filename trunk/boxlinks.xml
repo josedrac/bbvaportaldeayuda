@@ -175,8 +175,8 @@
         <div id="content_div" class="caja">
             <div class="titulo">Google Apps</div>
             <ul>
-                <li class="drive" onclick="Go2(' https://support.google.com/drive/#topic=14940')">
-                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
+                <li class="drive" onclick="Go2('https://support.google.com/mail/#topic=3394144')"> 
+                    <a class="link1" title="Ir a página de ayuda de Gmail [abre en ventana nueva]">Gmail</a>
                 </li>
                 <li class="gplus" onclick="Go2('https://support.google.com/plus/#topic=3049661')">
                     <a class="link1" title="Ir a página de ayuda de Google+ [abre en ventana nueva]">Google+</a>
@@ -193,8 +193,8 @@
                 <li class="calendar" onclick="Go2('https://support.google.com/calendar/#topic=3417969')">
                     <a class="link1" title="Ir a página de ayuda de Calendar [abre en ventana nueva]">Calendar</a>
                 </li>
-                <li class="gmail" onclick="Go2('https://support.google.com/mail/#topic=3394144')">
-                    <a class="link1" title="Ir a página de ayuda de Gmail [abre en ventana nueva]">Gmail</a>
+                <li class="gmail" onclick="Go2(' https://support.google.com/drive/#topic=14940')">
+                    <a class="link1" title="Ir a página de ayuda de Drive [abre en ventana nueva]">Drive</a>
                 </li>
                 <li class="contactos" onclick="Go2('https://support.google.com/mail/?hl=es#topic=3394152')">
                     <a class="link1" title="Ir a página de ayuda de Contactos [abre en ventana nueva]">Contactos</a>
