@@ -512,7 +512,7 @@ font-weight: normal;
 </body>
 
  <script type="text/javascript">
-console.debug('v10 - videosResume-v2r.xml');
+console.debug('v11 - videosResume-v2r.xml');
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 
@@ -529,10 +529,6 @@ console.debug('v10 - videosResume-v2r.xml');
 		var textbutton2 = prefs.getString("textbutton2");
 	 var imgTag = prefs.getString("imgTag");
 
-
-	 console.debug('urlbutton1:'+urlbutton1);
-
-console.debug('urlbutton2:'+urlbutton2);
 
 	 function cargaVideo()
 	 {
@@ -568,7 +564,7 @@ console.debug('urlbutton2:'+urlbutton2);
 	function Go(destination)
 	{
 		window.parent.location.href = destination;
-		alert(destination);
+
 		return false;
 	}
 
