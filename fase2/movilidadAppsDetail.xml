@@ -185,11 +185,13 @@
 
                 {
 					
-					for(n in 4)
-					{
-					 var manual_title_+(n+1) = dataDC.getManualTitle+(n+1)(row);
-					 console.debug(manual_title_+(n+1));
-					}
+					
+					 var manual_title_1 = dataDC.getManualTitle1(row);
+					 console.debug(manual_title_1);
+                
+           var manual_title_5 = dataDC.getManualTitle5(row);
+					 console.debug(manual_title_5);
+				  
 
 					return 'estamos trabajando en ello';
                 }
