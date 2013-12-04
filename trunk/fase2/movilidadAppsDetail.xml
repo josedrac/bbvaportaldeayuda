@@ -163,7 +163,7 @@
                   var iconshtml="";
                   for(n in types)
                   {                                
-                   iconshtml += "<li><img src=\""+URLICONS[types[n]]+"\"></li>";                  
+                   iconshtml += "<li><img src=\""+URLICONS[types[n]]+"\"><span></span>types[n]</li>";                  
                   }    
                   return iconshtml;
                 }
@@ -193,9 +193,10 @@
                 html +="</div>";
                 html +="<div class=\"description\">";
 	                html +="<h2>Descripción de la App</h2>";
-	                html +="<p class=\"long\">"+dataDC.getShort(row)+"</p>";
+	                html +="<p class=\"long\">"+dataDC.getLong(row)+"</p>";
                 html +="</div>";
-                html +="<div class=\"manuals\"><ul class=\"guias\">"+renderManuals(dataDC.getManuals(row))+"</ul></div>";                
+                html +="<div class=\"manuals\"><h2>Acceso a Manuales</h2>";
+                html +="<ul class=\"guias\">"+renderManuals(dataDC.getManuals(row))+"</ul></div>";                
                 html +="</div>";
                 
                 document.getElementById('container').innerHTML = html;
