@@ -14,7 +14,10 @@
 <UserPref name="tagVideo" display_name="Tag Video" required="true" />
 <UserPref name="titleVideo" display_name="Title Video" required="true" />
 <UserPref name="textVideo" display_name="Text Video" required="true" />
-<UserPref name="urlsabermas" display_name="Url Saber más" required="true" />
+<UserPref name="textbutton1" display_name="Text, button 1" required="true" />
+<UserPref name="urlbutton1" display_name="Url, button 1" required="true" />
+<UserPref name="textbutton2" display_name="Text, button 2" required="true" />
+<UserPref name="urlbutton2" display_name="Url, button 2" required="true" />
 <UserPref name="urlVideo" display_name="Url Video" required="true" />
 
 
@@ -61,15 +64,26 @@
 			 <tr>
                 <td>
 				 Url to Video: <input type="text" size="100" id="urlVideo" value="__UP_urlVideo__"   onchange="registra('urlVideo')"/>
-
-
                 </td>
             </tr>
 			<tr>
                 <td>
-				 Url to Saber más: <input type="text" size="100" id="urlsabermas" value="__UP_urlsabermas__"   onchange="registra('urlsabermas')"/>
-
-
+				 Text to button 1: <input type="text" size="100" id="textbutton1" value="__UP_textbutton1__"   onchange="registra('textbutton1')"/>
+                </td>
+            </tr>
+            	<tr>
+                <td>
+				 Url to button 1: <input type="text" size="100" id="urlbutton1" value="__UP_urlbutton1__"   onchange="registra('urlbutton1')"/>
+                </td>
+            </tr>
+            	<tr>
+                <td>
+				 Text to button 2: <input type="text" size="100" id="textbutton2" value="__UP_textbutton2__"   onchange="registra('textbutton2')"/>
+                </td>
+            </tr>
+            	<tr>
+                <td>
+				 Url to button 2: <input type="text" size="100" id="urlbutton1" value="__UP_urlbutton2__"   onchange="registra('urlbutton2')"/>
                 </td>
             </tr>
 			<tr>
@@ -273,18 +287,18 @@
 				width:91px;
 
 			}
-			#sabermas{
+			#buttons{
 			padding-top:20px;
 			font-size:12px;
 
 			}
-			#sabermas2{
+			#buttons2{
 			padding-top:40px;
 			font-size:12px;
 
 			}
-			#sabermas button,
-			#sabermas2 button{
+			#buttons button,
+			#buttons2 button{
 			background: #0079C1;
 			background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzljMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU1OWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
 			background: -moz-linear-gradient(top, #0079C1 0%, #00559D 100%);
@@ -381,8 +395,8 @@
 			<style type="text/css">
 
 				#allcontent button,
-				#sabermas button,
-				#sabermas2 button{
+				#buttons button,
+				#buttons2 button{
 					background: #0079C1;
 				}
 
@@ -428,8 +442,8 @@
 			<style type="text/css">
 
 				#allcontent button,
-				#sabermas button,
-				#sabermas2 button{
+				#buttons button,
+				#buttons2 button{
 					background: #0079C1;
 				}
 
@@ -477,7 +491,7 @@
 			<div id="urlVideo"></div>
 			<div id="titleVideo"></div>
         	<div id="textVideo"></div>
-			<div id="sabermas"></div>
+			<div id="buttons"></div>
         </div>
      </div>
 	 <img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linevideo"/>
@@ -486,7 +500,7 @@
 </body>
 
  <script type="text/javascript">
-console.debug('v1 - videosResume-v2r.xml');
+console.debug('v2 - videosResume-v2r.xml');
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 
@@ -497,7 +511,10 @@ console.debug('v1 - videosResume-v2r.xml');
 	 var textVideo = prefs.getString("textVideo");
 	 var urlVideo = prefs.getString("urlVideo");
 	 var tagVideo = prefs.getString("tagVideo");
-	 var urlsabermas = prefs.getString("urlsabermas");
+		var urlbutton1 = prefs.getString("urlbutton1");
+		var textbutton1 = prefs.getString("textbutton1");
+		var urlbutton2 = prefs.getString("urlbutton2");
+		var textbutton2 = prefs.getString("textbutton2");
 	 var imgTag = prefs.getString("imgTag");
 
 
@@ -513,8 +530,10 @@ console.debug('v1 - videosResume-v2r.xml');
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
 		 document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
 		 document.getElementById("textVideo").innerHTML = textVideo;
-		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Saber más</button>";
-		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
+		 document.getElementById("buttons").innerHTML  = "<button type='button' id='allcontent2'>" + textbutton1 + "</button>";
+		 document.getElementById("allcontent2").onclick = function(){ Go(urlbutton1);};
+		 document.getElementById("buttons").innerHTML  += "<button type='button' id='allcontent3'>" + textbutton2 + "</button>";
+		 document.getElementById("allcontent3").onclick = function(){ Go(urlbutton2);};
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 
 
