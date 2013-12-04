@@ -167,7 +167,9 @@
 
         function handleQueryResponse(response){
                 var dataDC = new DataTable(response.getDataTable());
-                var filas = dataDC.getNumberOfRows();               
+                console.log(dataDC);
+                var filas = dataDC.getNumberOfRows();
+                console.log(filas);               
                 var html= "";  
                 //One element              
                 row=0;
