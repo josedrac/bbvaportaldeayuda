@@ -53,7 +53,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 .container .manuals .guias li a .savePDF { position: relative; top: 2px; }
 
 .linetitle { display: block; width: 632px; height: 4px; margin-bottom: 20px; }
-
+#manualsection{display:none}
 
 
 </style>
