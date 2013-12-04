@@ -170,9 +170,7 @@
                 var renderManual = function(manual)
                 {
                   console.log(manual);
-                  console.log("title: "+manual.title);
-                  console.log("url: "+manual.url);
-                  var html_manual = '<hr>';
+                  var html_manual = '';
                   if(((typeof(manual.title) != 'undefined') && (manual.title != "")) && ((typeof(manual.url) != 'undefined') && (manual.url != "")))
                   {
                       html_manual += '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
