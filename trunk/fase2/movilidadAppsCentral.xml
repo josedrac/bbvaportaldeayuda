@@ -5,150 +5,152 @@
     author_affiliation="Sopra">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
-	<Require feature="dynamic-height"/>   
-	<Require feature="setprefs" />   
+﻿  <Require feature="dynamic-height"/>   
+﻿  <Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="_table_query_url" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHlMVGhUeHNBTFJhWkEyU0MyTlUyd1E#gid=0" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="subseccion" display_name="Subsección:" default_value="" required="true"/> 
-
+<UserPref name="_table_query_url" default_value="https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c)" required="true" />
  <Content type="html">
-    <![CDATA[
-	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-	
-	<style type="text/css">
-.container { max-width: 600px; width: 100%; border: 1px solid blue; }
-.row { clear: both; width: 100%; display: inline-block; }
-.article { padding: 10px 5px; max-width: 195px; min-height: 250px; width: 30%; display: inline-block; border: 1px solid black; }
-.article .articleimg { text-align: center; }
-.article .articleimg img { margin: auto; width: 60px; }
-.article h2 { text-align: center; }
-.article ul.oslist { text-align: center; padding: 0; }
-.article ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
-.article ul.oslist li .oslogo { width: 32px; }
-.article ul.features { text-align: left; padding-left: 20px; }
-.article ul.features li .oslogo { width: 32px; }
+  <![CDATA[
+﻿  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+﻿  
+ <style type="text/css">
+h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/legend.png); background-position: top right; background-repeat: no-repeat; background-size: 140px; background-color: none; }
 
-
+.container { max-width: 605px; margin: auto; width: 100%; font-family: 'BBVA Web Book'; }
+.container .article { padding: 15px 5px 10px 5px; max-width: 174px; min-height: 280px; width: 31%; display: inline-block; border: 1px solid grey; vertical-align: top; margin: 5px; }
+.container .article .enlace { color: black; text-decoration: none; font-size: 1em; }
+.container .article .enlace .articleimg { text-align: center; }
+.container .article .enlace .articleimg img { margin: auto; width: 70px; }
+.container .article .enlace h2 { text-align: center; font-size: 1.1em; }
+.container .article .enlace ul.oslist { text-align: center; padding: 0; }
+.container .article .enlace ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
+.container .article .enlace ul.oslist li .oslogo { width: 32px; }
+.container .article .enlace div.short { text-align: left; padding: 10px; font-size: 0.8em; }
 
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book") format("svg"); font-style: normal; font-weight: normal; }
 
-                                                                     /*
-@end */
-/*modificado 08/01/2013*/
-.titulo { border-bottom: 1px solid #DDE3EA; background: #ffffff; background: -moz-linear-gradient(top, white 0%, #f5f7f8 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f5f7f8)); background: -webkit-linear-gradient(top, white 0%, #f5f7f8 100%); background: -o-linear-gradient(top, white 0%, #f5f7f8 100%); background: -ms-linear-gradient(top, white 0%, #f5f7f8 100%); background: linear-gradient(to bottom, #ffffff 0%, #f5f7f8 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 ); font-size: 16px; font-family: BBVA Web Book, Arial; color: #333333; padding-left: 18px; padding-left: 18px; padding-top: 14px; padding-bottom: 15px; }
 
-.caja { border: 1px solid #DDE3EA; border-radius: 2px; -ms-border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; width: 298px; clear: both; margin-top: 15px; }
-ul { padding-left: 19px; padding-right: 19px; margin: 0; }
-ul li { list-style: none; border-bottom: 1px solid #DDE3EA; padding-bottom: 12px; padding-top: 17px; }
-ul li:last-child { border: 0; padding-bottom: 11px; padding-top: 17px; }
-ul li a { padding-left: 2px; vertical-align: 3px; text-decoration: none; font-size: 12px; font-family: Arial; font-weight: bold; color: #0073C9; }	
-	  
-	</style>
-		
-	<!--[if IE 7]>
-		<style type="text/css"> 			
-			.titulo{
-				background: #F5F7F8
-    		}				
-		</style>	
-	<![endif]-->	
-	<!--[if IE 8]>	
-		<style type="text/css">  			
-			.titulo{
-				background: #F5F7F8
-    		}   			
-		</style>		
-	<![endif]-->
-		
-<body onload="cargaCompleta()">	
-<!--<div id="textMovilidad">Guías de configuración, según dispositivo: </div>-->
-<!--<div id="movilidad">Guías de configuración, según dispositivo:
- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
-</div>-->
-<div id="content_div" class="caja"></div>	
-</body>
-   <script type="text/javascript">
-   	 console.log(5);
+
+</style>
+<body onload="cargaCompleta()">
+<h1 class="title">Apps de BBVA</h1>
+<div id="container" class="container">  
+</div> 
+<script type="text/javascript">
      var gadgetHelper = null;
-	 var prefs = new _IG_Prefs();
-	 var urlTable = prefs.getString("_table_query_url");
-	 var subseccion = prefs.getString("subseccion"); 
-	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
+         var prefs = new _IG_Prefs();
+         var urlTable = prefs.getString("_table_query_url");
+         _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
-	 function loadVisualizationAPI() {
-		google.load("visualization", "1", {"packages": ["table"]});
-	}
-		
-	function devicesCountry(pais){
-		var gadgetHelper = new google.visualization.GadgetHelper();
-		var opts = {dataType:'jsonp'};
-		var queryDC = new google.visualization.Query(urlTable, opts);
-		 
-		var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
+         function loadVisualizationAPI() {
+                google.load("visualization", "1", {"packages": ["table"]});
+        }
+                
+        function reload(){
+                var gadgetHelper = new google.visualization.GadgetHelper();
+                var opts = {dataType:'jsonp'};
+                var queryDC = new google.visualization.Query(urlTable, opts);
+                 
+                var queryDCtosend = "select A,B,C,D,E,F order by A";
 
-		queryDC.setQuery(queryDCtosend);			  
-		queryDC.send(handleQueryResponseDC);
+                queryDC.setQuery(queryDCtosend);                          
+                queryDC.send(handleQueryResponseDC);
    
-	}
+        }
 
-	var DataTable= function(data){
-		var HEADER_ROW = 0;
-		var FIELDS = {
-			id : 0,
-			name: 2,
-			image: 3
-		};
+        var DataTable= function(data){
+                var HEADER_ROW = 0;
+                var FIELDS = {
+                        id : 0,
+                        title : 1,
+                        type: 2,
+                        image: 3,
+                        short: 4,
+                        long:5
+                };
+                
+                var URL_DETAIL = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?DetalleAppId=";
 
-		var dataDC = data;
-		this.getId = function(row){
-			return dataDC.getValue(row, FIELDS.id);
-		}
-		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo="'+this.getId(row);
-		}
-		this.getNumberOfRows = function(){
-			return dataDC.getNumberOfRows();
-		}
-		this.getName = function(row){
-			return dataDC.getValue(row, FIELDS.name);
-		}		
-		this.getImage = function(row){
-			return dataDC.getValue(row, FIELDS.image);
-		}
+                var dataDC = data;
+                this.getNumberOfRows = function(){
+                        return dataDC.getNumberOfRows();
+                }
+                this.getId = function(row){
+                        return dataDC.getValue(row, FIELDS.id);
+                }                
+                this.getTitle = function(row){
+                        return dataDC.getValue(row, FIELDS.title);
+                }               
+                this.getImage = function(row){
+                        return dataDC.getValue(row, FIELDS.image);
+                }
+                this.getType= function(row){
+                        var icons = (dataDC.getValue(row, FIELDS.type)).split(/[ ,]+/);
+                        return icons;
+                }
+                this.getShort= function(row){
+                        return dataDC.getValue(row, FIELDS.short);
+                }
+                this.getLong= function(row){
+                        return dataDC.getValue(row, FIELDS.long);
+                }
+                
+                this.getUrlDetalle= function(row){
+                        return URL_DETAIL+this.getId(row);
+                }
 
-		this.isHeaderTable = function(row){
-			return ( row == HEADER_ROW);
-		}
+                this.isHeaderTable = function(row){
+                        return ( row == HEADER_ROW);
+                }
 
-	}
+        }
 
-	function handleQueryResponseDC(response){
-	 	var dataDC = new DataTable(response.getDataTable());
-		var filas = dataDC.getNumberOfRows();
+        function handleQueryResponseDC(response){
+                var dataDC = new DataTable(response.getDataTable());
+                var filas = dataDC.getNumberOfRows();               
+                var html= "";
+                var renderIcons = function(types)
+                {
+                  var URLICONS =
+                              {
+                              "Android":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/android.png",
+                              "Iphone":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/iphone.png",
+                              "Ipad":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/ipad.png"
+                              };
+                              
+                  var iconshtml="";
+                  for(n in types)
+                  {                                
+                   iconshtml += "<li class=\"oslist\"><img src=\""+URLICONS[types[n]]+"\"></li>";                  
+                  }    
+                  return iconshtml;
+                }
+                for(var row=0;row<filas;row++){
+                        if(! dataDC.isHeaderTable(row))
+                        {
+                                html +="<div class=\"article\"><a class=\"enlace\" target=\"_parent\" href=\""+dataDC.getUrlDetalle(row)+"\">";
+                                html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
+                                html +="<h2>"+dataDC.getTitle(row)+"</h2>";
+                                html +="<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul>";
+                                html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
+                                html +="</a></div>";
+                        }
+                }
 
-	   	var html= "";
-		html +='<div class=\"titulo\">' + subseccion + '</div>';
-	   	html +='<ul id=\"botonera\">'; 
-   		for(var row=0;row<filas;row++){
-			if(! dataDC.isHeaderTable(row)){
-				html +='<li><a  href="'+dataDC.getHref(row)+'" target="_parent">'+
-				'<img src="'+dataDC.getImage(row)+'"/>'+dataDC.getName(row)+'</a></li>';
-			}
-	  	}
+                
+                document.getElementById('container').innerHTML = html;
+         
+        }
 
-		html +='</ul>';
-		document.getElementById('content_div').innerHTML = html;
-	 
-	}
-
-	function cargaCompleta(){
-		devicesCountry('España');
-	}
+        function cargaCompleta(){
+                reload();
+        }
  
-   </script>
+</script>
+</body>
+
    
     ]]>
-  </Content>
-  
+  </Content>  
 </Module>
