@@ -221,11 +221,12 @@
 			  }
 
 			  h3 {
-			    color:#0078D2;
-				  font-family:BBVA Web Book, Arial;
-				  font-size:18px;
-				  width:248px;
-				  margin: 0 0 20px 0px;
+			    color: #0078D2;
+font-family: BBVA Web Book, Arial;
+font-size: 18px;
+width: 248px;
+margin: 0 0 20px 0px;
+font-weight: normal;
 			  }
 
 			  #textVideo,
@@ -511,7 +512,7 @@
 </body>
 
  <script type="text/javascript">
-console.debug('v5 - videosResume-v2r.xml');
+console.debug('v6 - videosResume-v2r.xml');
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 
@@ -529,9 +530,9 @@ console.debug('v5 - videosResume-v2r.xml');
 	 var imgTag = prefs.getString("imgTag");
 
 
+	 console.debug('urlbutton1:'+urlbutton1);
 
-
-
+console.debug('urlbutton2:'+urlbutton2);
 
 	 function cargaVideo()
 	 {
