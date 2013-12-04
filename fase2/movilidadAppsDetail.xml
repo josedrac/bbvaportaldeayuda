@@ -53,7 +53,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 .container .manuals .guias li a .savePDF { position: relative; top: 2px; }
 
 .linetitle { display: block; width: 632px; height: 4px; margin-bottom: 20px; }
-#manualsection{display:none}
+#manualsection{visibility:hidden}
 
 
 </style>
@@ -193,7 +193,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
                   {
                       html_manual += '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
                       html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';
-                      document.getElementById('manualsection').style.display = 'block';  
+                      document.getElementById('manualsection').style.visibility = 'visible';  
                   }                  
                   return  html_manual;                  
                 } 
