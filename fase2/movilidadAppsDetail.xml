@@ -132,7 +132,7 @@
                         return dataDC.getValue(row, FIELDS.manual_title_2);
                 }
                 this.getManualUrl2= function(row){
-                        return dataDC.getValue(row, FIELDS.manual_url_2;
+                        return dataDC.getValue(row, FIELDS.manual_url_2);
                 }
                 this.getManualTitle3= function(row){
                         return dataDC.getValue(row, FIELDS.manual_title_3);
@@ -144,13 +144,13 @@
                         return dataDC.getValue(row, FIELDS.manual_title_4);
                 }
                 this.getManualUrl4= function(row){
-                        return dataDC.getValue(row, FIELDS.manual_url_4;
+                        return dataDC.getValue(row, FIELDS.manual_url_4);
                 }
                 this.getManualTitle5= function(row){
                         return dataDC.getValue(row, FIELDS.manual_title_5);
                 }
                 this.getManualUrl5= function(row){
-                        return dataDC.getValue(row, FIELDS.manual_url_5;
+                        return dataDC.getValue(row, FIELDS.manual_url_5);
                 }
 
                 this.isHeaderTable = function(row){
