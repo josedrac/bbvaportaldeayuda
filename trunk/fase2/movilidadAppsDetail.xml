@@ -213,7 +213,6 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 	              html +="<h3>Descripción de la App</h3>";
 	              html +="<p class=\"long\">"+dataDC.getLong(row)+"</p>";
                 html +="</div>";
-                console.log(renderManuals(dataDC.getManuals(row)));
                 if(renderManuals(dataDC.getManuals(row))!= '')
                 {
                 html +="<div class=\"manuals\"><h3>Acceso a Manuales</h3>";
