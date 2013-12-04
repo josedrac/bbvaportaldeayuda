@@ -104,7 +104,7 @@
         ul li.op7 {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px;
         }
-        ul li.op9 {
+        ul li.moreinfo {
             background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px;
         }
         ul li.op10 {
@@ -198,6 +198,9 @@
                 </li>
                 <li class="contactos" onclick="Go2('https://support.google.com/mail/?hl=es#topic=3394152')">
                     <a class="link1" title="Ir a página de ayuda de Contactos [abre en ventana nueva]">Contactos</a>
+                </li>
+                <li class="moreinfo" onclick="Go2('https://support.google.com')">
+                    <a class="link1" title="Ir a página de ayuda de Contactos [abre en ventana nueva]">Más</a>
                 </li>
             </ul>
         </div>
