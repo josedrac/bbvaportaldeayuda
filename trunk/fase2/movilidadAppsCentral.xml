@@ -11,10 +11,9 @@
   <script src="https://www.google.com/jsapi" type="text/javascript"></script>
   
  <style type="text/css">
-h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/legend.png); background-position: top right; background-repeat: no-repeat; background-size: 140px; background-color: none; }
-
 .container { max-width: 605px; margin: auto; width: 100%; font-family: 'BBVA Web Book'; }
-.container .article { padding: 15px 5px 10px 5px; max-width: 174px; min-height: 280px; width: 31%; display: inline-block; border: 1px solid grey; vertical-align: top; margin: 5px; }
+.container h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/legend.png); background-position: top right; background-repeat: no-repeat; background-size: 140px; background-color: none; }
+.container .article { padding: 15px 5px 10px 5px; max-width: 174px; min-height: 280px; width: 31%; display: inline-block; vertical-align: top; margin: 5px; border: 1px solid  #DDE3EA; background: #ffffff; background: -moz-linear-gradient(top, white 0%, #f5f7f8 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f5f7f8)); background: -webkit-linear-gradient(top, white 0%, #f5f7f8 100%); background: -o-linear-gradient(top, white 0%, #f5f7f8 100%); background: -ms-linear-gradient(top, white 0%, #f5f7f8 100%); background: linear-gradient(to bottom, #ffffff 0%, #f5f7f8 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 ); }
 .container .article .enlace { color: black; text-decoration: none; font-size: 1em; }
 .container .article .enlace .articleimg { text-align: center; }
 .container .article .enlace .articleimg img { margin: auto; width: 70px; }
@@ -22,10 +21,12 @@ h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/tr
 .container .article .enlace ul.oslist { text-align: center; padding: 0; }
 .container .article .enlace ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
 .container .article .enlace ul.oslist li .oslogo { width: 32px; }
-.container .article .enlace div.short { text-align: left; padding: 10px; font-size: 0.8em; }
+.container .article .enlace div.short { text-align: left; padding: 10px; font-size: 0.7em; }
 
 /* @group fonts */
-@font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book") format("svg"); font-style: normal; font-weight: normal; }
+@font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
+src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), 
+url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book") format("svg"); font-style: normal; font-weight: normal; }
 
 
 
@@ -124,15 +125,15 @@ h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/tr
                   return iconshtml;
                 }
                 for(var row=0;row<filas;row++){
-                        if(! dataDC.isHeaderTable(row))
-                        {
+                        //if(! dataDC.isHeaderTable(row))
+                        //{
                                 html +="<div class=\"article\"><a class=\"enlace\" target=\"_parent\" href=\""+dataDC.getUrlDetalle(row)+"\">";
                                 html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
                                 html +="<h2>"+dataDC.getTitle(row)+"</h2>";
                                 html +="<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul>";
                                 html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
                                 html +="</a></div>";
-                        }
+                       //}
                 }
 
                 
