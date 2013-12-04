@@ -220,22 +220,26 @@
 				  text-decoration:none;
 			  }
 
+			  h3 {
+			    color:#0078D2;
+				  font-family:BBVA Web Book, Arial;
+				  font-size:18px;
+				  width:248px;
+				  margin: 0 0 20px 0px;
+			  }
+
 			  #textVideo,
 			  #textVideo2 {
-
-
-
+ color:#434A58;
+				font-size:12px;
+				font-family:arial;
 				height:100px;
 				width:269px;
 				margin-top: 20px;
 
-				  color:#0078D2;
-				  font-family:BBVA Web Book, Arial;
-				  font-size:18px;
-
-				  margin: 0 0 20px 0px;
-
 			  }
+
+
 
 			#infoVideo,
 			#infoVideo2 {
@@ -507,7 +511,7 @@
 </body>
 
  <script type="text/javascript">
-console.debug('v4 - videosResume-v2r.xml');
+console.debug('v5 - videosResume-v2r.xml');
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 
@@ -535,8 +539,8 @@ console.debug('v4 - videosResume-v2r.xml');
 
 
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
-		 //document.getElementById("titleVideo").innerHTML = titleVideo;
-		 document.getElementById("titleVideo").innerHTML = titleVideo;
+		 //document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
+		 document.getElementById("titleVideo").innerHTML = "<h3>"+titleVideo+"</h3>";
 
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("buttons").innerHTML  = "<button type='button' id='allcontent2'>" + textbutton1 + "</button>";
