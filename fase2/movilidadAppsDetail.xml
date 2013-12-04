@@ -135,7 +135,7 @@
                 this.getManualUrl2= function(row){
                         return dataDC.getValue(row, FIELDS.manual_url_2);
                 }
-                /*this.getManualTitle3= function(row){
+                this.getManualTitle3= function(row){
                         return dataDC.getValue(row, FIELDS.manual_title_3);
                 }
                 this.getManualUrl3= function(row){
@@ -152,7 +152,7 @@
                 }
                 this.getManualUrl5= function(row){
                         return dataDC.getValue(row, FIELDS.manual_url_5);
-                }*/
+                }
 
                 this.isHeaderTable = function(row){
                         return ( row == HEADER_ROW);
