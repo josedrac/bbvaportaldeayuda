@@ -585,7 +585,7 @@
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
 
-		 if(urlVideo1 === undefined || urlVideo1 == "" ) document.getElementById("urlVideo").style.display='none';
+		 if(urlVideo === undefined || urlVideo == "" ) document.getElementById("urlVideo").style.display='none';
 		 if(urlVideo2 === undefined || urlVideo2 == "" ) document.getElementById("urlVideo2").style.display='none';
 		 return false;
 	}
