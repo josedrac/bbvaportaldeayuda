@@ -139,6 +139,7 @@
 			#titlecomboVideo{
 				margin-top:-9px;
 				margin-left:-15px;
+				height: 43px;
 			}
 
 			#titlecomboVideo h2{
