@@ -33,7 +33,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium") format("svg"); font-style: normal; font-weight: normal; }
 
 .container { max-width: 605px; font-family: 'BBVA Web Book'; padding: 10px; min-height: 300px; width: 100%; display: inline-block; }
-.container .title { margin-top: 0; padding-top: 0; font-weight: normal; color: #0078D2; font-family: BBVA Web Light, BBVA Web, Arial; font-size: 22px; margin: 9px 0px 10px 0px; }
+.container .title { margin-top: 0; padding-top: 0; font-weight: normal; color: #0078D2; font-family: BBVA Web Light, BBVA Web, Arial; font-size: 22px; margin: 15px 0px 12px 0px; }
 .container h3 { font-size: 16px; font-family: BBVA Web Light, Arial; color: #000; margin-bottom: 15px; font-weight: normal; }
 .container .graphics { display: inline; width: 100%; }
 .container .graphics .articleimg { text-align: left; display: inline; }
@@ -51,8 +51,8 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 .container .manuals .guias li { color: #0065b7; }
 .container .manuals .guias li a { font-size: 12px; font-family: BBVA Web Book, Arial, sans-serif; color: #0065b7; text-decoration: none; line-height: 25px; }
 .container .manuals .guias li a .savePDF { position: relative; top: 2px; }
-.linetitle { display: block; width: 632px; height: 4px; margin-bottom: 20px; }
 
+.linetitle { display: block; width: 632px; height: 4px; margin-bottom: 20px; }
 
 
 
