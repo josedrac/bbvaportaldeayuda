@@ -350,7 +350,7 @@
 			}
 			function Go2(destination){
 			    //console.debug(destination);
-				MM_openBrWindow(destination,'_blank');
+				MM_openBrWindow(destination,'_parent');
 				return false;
 			} 
         </script>
