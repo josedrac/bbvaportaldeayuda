@@ -171,7 +171,7 @@
                 {
                   console.log(manual.title);
                   console.log(manual.manual);
-                  if (typeof manual.title == "undefined" || manual.title=="") || (typeof manual.url== "undefined" || manual.url==""))  
+                  if ((typeof manual.title == "undefined" || manual.title=="") || (typeof manual.url== "undefined" || manual.url==""))  
                   {
                   return 'no pintes nada';
                   } 
