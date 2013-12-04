@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="internoMovilidad.xml"
+  <ModulePrefs title="movilidadAppsDetail.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="SopraGroup">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
@@ -15,7 +15,13 @@
  <script src="https://www.google.com/jsapi" type="text/javascript"></script>	
  <style type="text/css">
 .container { max-width: 605px; font-family: 'BBVA Web Book'; padding: 10px; min-height: 300px; width: 100%; display: inline-block; }
-.container .title { margin-top: 0; padding-top: 0; }
+.container .title { margin-top: 0; padding-top: 0; 
+font-weight: normal;
+color: #0078D2;
+font-family: BBVA Web Light, BBVA Web, Arial;
+font-size: 22px;
+margin: 9px 0px 10px 28px;
+}
 .container .graphics { display: inline; width: 100%; }
 .container .graphics .articleimg { text-align: left; display: inline; }
 .container .graphics .articleimg img { margin: auto; width: 120px; }
@@ -39,6 +45,9 @@
 @font-face { font-family: 'BBVA Web Light'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light") format("svg"); font-style: normal; font-weight: normal; }
 
 @font-face { font-family: 'BBVA Web Medium'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium") format("svg"); font-style: normal; font-weight: normal; }
+
+
+
 </style>
 <!--[if IE]>
 <style type="text/css">
@@ -186,7 +195,8 @@
                   } 
                  return html;
               }
-                html +="<h1 class=\"title\">"+dataDC.getTitle(row)+"</h1>";
+                html +="<h2 class=\"title\">"+dataDC.getTitle(row)+"</h2>";
+                html +="<img src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png\" class=\"linetitle\">;
                 html +="<div class=\"graphics\">";
 	              html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
 	              html +="<div class=\"compatibility\">Disponible para:<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
