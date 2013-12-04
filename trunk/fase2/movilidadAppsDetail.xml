@@ -193,7 +193,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
                   {
                       html_manual += '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
                       html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';
-                      document.getElementById('manualsection').display = 'block';  
+                      document.getElementById('manualsection').style.display = 'block';  
                   }                  
                   return  html_manual;                  
                 } 
