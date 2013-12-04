@@ -196,7 +196,7 @@ margin: 9px 0px 10px 28px;
                  return html;
               }
                 html +="<h2 class=\"title\">"+dataDC.getTitle(row)+"</h2>";
-                html +="<img src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png\" class=\"linetitle\">;
+               // html +="<img src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png\" class=\"linetitle\">;
                 html +="<div class=\"graphics\">";
 	              html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
 	              html +="<div class=\"compatibility\">Disponible para:<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
