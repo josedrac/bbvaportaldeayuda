@@ -160,7 +160,8 @@
 	
 	<div id="video-container">
 		<div id="titleVideo"></div>
-		<div id="urlVideo"></div>
+		<div id="containerVideo"></div>
+		
 		<div id="tagVideo"></div>
         <div id="boton"/>
 	</div>
@@ -178,8 +179,10 @@
 		document.getElementById("tagVideo").innerHTML = tagVideo;
 		document.getElementById("titleVideo").innerHTML = titleVideo;
 		document.getElementById("boton").innerHTML = '<button type="button" id="urlLink" onclick="javascript:Go(\''+urlLink+'\')">Saber más</button>';   //'<a target="_parent" href="' + urlLink + '">Saber más</a>';
-		document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';   //'<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
-  	    
+		if (urlVideo!="")
+		{
+			document.getElementById("containerVideo").innerHTML = '<div id="urlVideo"><iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';   //'<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed></div>';
+  	    }
 		function Go(destination){
 	    window.parent.location.href = destination;
 	    return false;
