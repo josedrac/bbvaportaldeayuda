@@ -15,320 +15,47 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
 	<style type="text/css">
-	  /* @group fonts */
-@font-face {
-	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
+.container { max-width: 605px; font-family: 'BBVA Web Book'; padding: 10px; min-height: 300px; width: 100%; display: inline-block; }
+.container .graphics { display: inline; width: 100%; }
+.container .graphics .articleimg { text-align: left; display: inline; }
+.container .graphics .articleimg img { margin: auto; width: 120px; }
+.container .graphics .compatibility { display: inline-block; padding-left: 20px; }
+.container .graphics .compatibility ul.oslist { text-align: center; padding: 0; }
+.container .graphics .compatibility ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
+.container .graphics .compatibility ul.oslist li .oslogo { width: 32px; display: inline-block; }
+.container .graphics .compatibility ul.oslist li span { display: inline-block; vertical-align: super; }
+.container .description h2 { text-align: left; font-size: 1.1em; }
+.container .description p.long { text-align: left; padding: 10px; font-size: 0.8em; }
+.container .manuals .titleguia { font-size: 16px; font-family: BBVA Web Light, Arial; color: #000; margin-bottom: 15px; font-weight: normal; }
+.container .manuals .guias { font-size: 12px; font-family: BBVA Web Book, Arial; color: #0078D2; text-decoration: none; }
+.container .manuals .guias li { color: #0065b7; }
+.container .manuals .guias li a { font-size: 12px; font-family: BBVA Web Book, Arial, sans-serif; color: #0065b7; text-decoration: none; line-height: 25px; }
+.container .manuals .guias li a .savePDF { position: relative; top: 2px; }
 
-@font-face {
-	font-family: 'BBVA Web Book';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
+/* @group fonts */
+@font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book") format("svg"); font-style: normal; font-weight: normal; }
 
-@font-face {
-	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
+@font-face { font-family: 'BBVA Web Light'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light") format("svg"); font-style: normal; font-weight: normal; }
 
-/* @end */
-	
-	#titlecomboVideo{
-	margin-top:-9px;
-	margin-left:-15px;
-	
-	}
-	#titlecomboVideo h2{
-	font-weight: normal;
-	color:#0078D2;
-	font-family:BBVA Web Light, BBVA Web, Arial;
-	font-size:22px;
-	margin:9px 0px 10px 28px;
-	}
-	
-	#comboVideo{
-	width:620px;
-	float:left;
-	}
-      #video-container{
-   	    float:left;
-		width:607px;
-		height:504px;
-		}
-	  #video-container2{
-	    float:left;
-		width:607px;
-		height:504px;
-	  }
-	  
-	  #urlVideo{
-		float:right;
-	    width:640px;
-		height:427px;
-		margin-right:4px;
-		margin-top:5px;
-		text-align: center;
-	  }
-	  #urlVideo2{
-		float:right;
-	    width:640px;
-		height:427px;
-		margin-right:4px;
-		margin-top:5px;
-	  }
-	  
-	  #TagVideo{
-	   color:#000;
-	   margin-bottom:11px;
-	   margin-left:11px;
-	   margin-top:-7px;
-		//font-weight:bold;
-	  }
-	  #TagVideo2{
-	    color:#000;
-		margin-bottom:11px;
-		margin-left: 11px;
-		margin-top: 0px;
-		//font-weight:bold;
-	  }
-	  
-      #titleVideo,  
-      #titleVideo2{
-	  color:#0078D2;
-	  font-family:BBVA Web Book, Arial;
-	  font-size:18px;
-	  margin-bottom:20px;
-	  width:238px;
-	  margin-left:7px;
-	  margin-top:5px;
-	  
-	  }
-	  
-	  #textVideo{
-	    color:#0065B7;
-		font-size:11px;
-		font-family:BBVA Web Medium, Arial;
-		height:40px;
-		width:620px;
-		margin-top: 15px;
-		margin-left: -5px;
-		padding:5px 5px;
-		float:left;
-		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
-	  }
-	  #textVideo2{
-		color:#0065B7;
-		font-size:11px;
-		font-family:BBVA Web Medium, Arial;
-		height:40px;
-		width:620px;
-		margin-top: 15px;
-		margin-left: 7px;
-		float:left;
-		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
-	    }
-	#infoVideo{
-	float:left;
-		width:640px;
-		height:427px;
-		margin-left:15px;
-		margin-top:-9px;
-	}
-	#infoVideo2{
-		float:left;
-		width:600px;
-		height:160px;
-		margin-left:15px;
-		margin-top:-9px;
-		}
-	hr{
-    width:610px;
-	margin-bottom:20px;
-	margin-left:-1px;
-	color:#DCDCDC;
-	}	
-	#allcontent{
-	-webkit-border-radius: .2em;
-	-moz-border-radius: .2em;
-	border-radius: .2em;
-	height: 2em;
-	padding-left: 1.4em;
-	padding-right: 2.4em;
-	float:left;
-	margin-left:10px;
-	width:90px;
-	margin-top:25px;
-	
-	}
-	 #allcontent a{
-	float:left;
-	
-	position: relative;
-	top: -1px;
-	margin-right: 0;
-	text-decoration:none;
-	color:#FFF;
-	font-family: BBVA Web Medium, Arial;
-	font-size:12px;
-	margin-left:-16px;
-	width:90px;
-	}
-	
-	button{
-	background: #0079C1;
-	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzljMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU1OWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
-	background: -moz-linear-gradient(top, #0079C1 0%, #00559D 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0079C1), color-stop(100%,#00559D));
-	background: -webkit-linear-gradient(top, #0079C1 0%,#00559D 100%);
-	background: -o-linear-gradient(top, #0079C1 0%,#00559D 100%);
-	background: -ms-linear-gradient(top, #0079C1 0%,#00559D 100%);
-	background: linear-gradient(to bottom, #0079C1 0%,#00559D 100%);
-	-webkit-border-radius: .3em;
-	-moz-border-radius: .3em;
-	border-radius: .3em;
-	font-size: 10px;
-	text-align: center;
-	vertical-align: middle;
-	height: 3em;
-	padding-left: .9em;
-	padding-right: .9em;
-	border: .1em solid #00559D;
-	color: white;
-	cursor: pointer;
-	position: relative;
-	overflow: visible;
-	}
-	#allcontent:hover{
-	background: #004C99;
-	}
-		
-	.linetitle{
-	display:block;
-	width:632px;
-	height:4px;
-	margin-bottom:20px;
-	}
-	
-	.linevideo{
-	width:632px;
-	height:4px;
-	display:block;
-	margin-bottom:23px;
-	}
-	
-	.sites-embed-align-left-wrapping-off{
-	display: block;
-	clear: both;
-	text-align: left;
-	margin: 5px auto 5px 0;
-	width: 650px;
-	}
-	
-	#dateVideo{
-	color:#71777F;
-	font-size:11px;
-	float:left;
-	margin-top:-15px;
-	margin-left:8px;
-	}
-	
-	#userVideo{
-	color:#71777F;
-	font-size:11px;
-	float:left;
-	margin-left:72px;
-	margin-top:-15px;
-	}
-	
-    #emailTo{
-	width:607px;
-	height:32px;
-	font-size:12px;
-	font-family:BBVA Web Book, Arial;
-	margin-left:10px;
-	color:#71777F;
-	
-	}
-	#emailTo a{
-	font-size:12px;
-	font-family:BBVA Web Book, Arial;
-	color:#0065B7;
-	}
-	
-	.guias{
-	font-size:12px;
-	font-family:BBVA Web Book, Arial;
-	color:#0078D2;
-	text-decoration:none;
-	}
-	
-	
-	.guias li {
-	color:#0065b7;
-	}
-	
-	.guias li a{
-	font-size:12px;
-	font-family:BBVA Web Book, Arial, sans-serif;
-	color:#0065b7;
-	text-decoration:none;
-	line-height: 25px;
-	}
-	
-	.titleguia{
-	font-size:16px;
-	font-family:BBVA Web Light, Arial;
-	color:#000;
-	margin-bottom:15px;
-	font-weight: normal;
-	}
-	
-	.savePDF {
-		position: relative;
-		top: 2px;
-}
-	
-	</style>
-	
-	<!--[if IE]>
-		
-		<style type="text/css">
-			.savePDF{	
+@font-face { font-family: 'BBVA Web Medium'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium") format("svg"); font-style: normal; font-weight: normal; }
+</style>
+<!--[if IE]>
+<style type="text/css">
+			.savePDF
+			{	
 				border: 0;
-			}
-			
-		</style>
-			
-	<![endif]-->
-	
-<div id="listportales"></div>	
+			}			
+</style>			
+<![endif]-->
+
+<div class="container" id="container"></div>	
 
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
-	 var emailTo = prefs.getString("emailTo");
 	 var dispositivo = gadgets.util.getUrlParameters()["parent"].split("=");
-	 var aux = gadgets.util.getUrlParameters()["parent"];
-	 
+	 var aux = gadgets.util.getUrlParameters()["parent"];	 
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 
@@ -350,31 +77,137 @@
 				
 			}
 			
-		function handleQueryResponse(response)
-		{
-		
-			   data = response.getDataTable();	
-			   var filas = data.getNumberOfRows();
-			   var html = "";
-			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,2)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-			
-			   html += "<div id='comboVideo'>";
-			   html += "<div id='video-container'><div id='infoVideo'>";
-			   html += "<div id='textVideo'>"+data.getValue(0,4)+"</div>";
-			   html += "<div id='urlVideo'>";
-			   //html += "<embed src='"+data.getValue(0,3)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'></embed></div>";
-			   html += "<img src='"+data.getValue(0,3)+"' width='360' height='427' /></div>";
-			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-			   html +="<span class='titleguia'>Índice de esta guía</span>";
-			   html += "<ul class='guias'>";
-			   for(var i=0; i<filas; i++){
-			   html +="<li><a target='_blank' href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"  <img class='savePDF' alt='Descargar PDF' title='Descargar PDF' src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png'></a></li>";
-			   }
-			   html +="</ul>";
-			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-			   //html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
-			   document.getElementById('listportales').innerHTML = html;				
-		}
+		var DataTable= function(data){
+                var HEADER_ROW = 0;
+                var FIELDS = {
+                        id : 0,
+                        title : 1,
+                        type: 2,
+                        image: 3,
+                        short: 4,
+                        long:  5,
+                        manual_title_1: 6,
+                        manual_url_1:7,
+                        manual_title_2: 8,
+                        manual_url_2:9,
+                        manual_title_3: 10,
+                        manual_url_3:11,
+                        manual_title_4: 12,
+                        manual_url_4:13,
+                        manual_title_5: 14,
+                        manual_url_5:15
+                };
+
+                var dataDC = data;
+                this.getNumberOfRows = function(){
+                        return dataDC.getNumberOfRows();
+                }
+                this.getId = function(row){
+                        return dataDC.getValue(row, FIELDS.id);
+                }                
+                this.getTitle = function(row){
+                        return dataDC.getValue(row, FIELDS.title);
+                }               
+                this.getImage = function(row){
+                        return dataDC.getValue(row, FIELDS.image);
+                }
+                this.getType= function(row){
+                        var icons = (dataDC.getValue(row, FIELDS.type)).split(/[ ,]+/);
+                        return icons;
+                }
+                this.getShort= function(row){
+                        return dataDC.getValue(row, FIELDS.short);
+                }
+                this.getLong= function(row){
+                        return dataDC.getValue(row, FIELDS.long);
+                }
+
+                this.getManualTitle1= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_title_1);
+                }
+                this.getManualUrl1= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_url_1;
+                }
+                this.getManualTitle2= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_title_2);
+                }
+                this.getManualUrl2= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_url_2;
+                }
+                this.getManualTitle3= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_title_3);
+                }
+                this.getManualUrl3= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_url_3;
+                }
+                this.getManualTitle4= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_title_4);
+                }
+                this.getManualUrl4= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_url_4;
+                }
+                this.getManualTitle5= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_title_5);
+                }
+                this.getManualUrl5= function(row){
+                        return dataDC.getValue(row, FIELDS.manual_url_5;
+                }
+
+                this.isHeaderTable = function(row){
+                        return ( row == HEADER_ROW);
+                }
+
+        }
+
+        function handleQueryResponseDC(response){
+                var dataDC = new DataTable(response.getDataTable());
+                var filas = dataDC.getNumberOfRows();               
+                var html= "";  
+                //One element              
+                row=0;
+                var renderIcons = function(types)
+                {
+                  var URLICONS =
+                              {
+                              "Android":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/android.png",
+                              "Iphone":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/iphone.png",
+                              "Ipad":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/ipad.png"
+                              };
+                              
+                  var iconshtml="";
+                  for(n in types)
+                  {                                
+                   iconshtml += "<li><img src=\""+URLICONS[types[n]]+"\"></li>";                  
+                  }    
+                  return iconshtml;
+                }
+                var renderManuals = function()              
+
+                {
+					
+					for(n in 4)
+					{
+					 var manual_title_+(n+1) = dataDC.getManualTitle+(n+1)(row);
+					 console.debug(manual_title_+(n+1));
+					}
+
+					return 'estamos trabajando en ello';
+                }
+                html +="<h1 class=\"title\">"+dataDC.getTitle(row)+"</h1>";
+                html +="<div class=\"graphics\">";
+	                html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
+	                html +="<div class=\"compatibility\"><ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
+                html +="</div>";
+                html +="<div class=\"description\">";
+	                html +="<h2>Descripción de la App</h2>";
+	                html +="<p class=\"long\">"+dataDC.getShort(row)+"</p>";
+                html +="</div>";
+                html +="<div class=\"manuals\"><ul class=\"guias\">"+renderManuals()+"</ul></div>";                
+                html +="</div>";
+                
+                document.getElementById('container').innerHTML = html;
+         
+        }
 
   </script>
     ]]>
