@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="movilidadAppsCentral.xml"
-    description=""
-    author_affiliation="Sopra">
-    <Require feature="idi"/>
-    <Require feature="locked-domain" />
-﻿  <Require feature="dynamic-height"/>   
-﻿  <Require feature="setprefs" />   
-  </ModulePrefs>
-<UserPref name="_table_query_url" default_value="https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c)" required="true" />
- <Content type="html">
-  <![CDATA[
-﻿  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-﻿  
+<ModulePrefs title="movilidadAppsCentral.xml" description="" author_affiliation="Sopra">
+<Require feature="idi"/>
+<Require feature="locked-domain"/>
+<Require feature="dynamic-height"/>
+<Require feature="setprefs"/>
+</ModulePrefs>
+<UserPref name="_table_query_url" default_value="https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdGdxMFFLY2JFWlc0REpyNUFaRFA3c2c)" required="true"/>
+<Content type="html"><![CDATA[
+  
+  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  
  <style type="text/css">
 h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/legend.png); background-position: top right; background-repeat: no-repeat; background-size: 140px; background-color: none; }
 
@@ -151,6 +148,6 @@ h1.title { background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/tr
 </body>
 
    
-    ]]>
-  </Content>  
+    
+  ]]></Content>
 </Module>
