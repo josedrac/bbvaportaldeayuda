@@ -27,7 +27,7 @@ font-weight: normal;
 color: #0078D2;
 font-family: BBVA Web Light, BBVA Web, Arial;
 font-size: 22px;
-margin: 9px 0px 10px 28px;
+margin: 9px 0px 10px 0px;
 }
 .container .graphics { display: inline; width: 100%; }
 .container .graphics .articleimg { text-align: left; display: inline; }
@@ -63,7 +63,7 @@ margin: 9px 0px 10px 28px;
 <div class="container" id="container"></div>	
 
    <script type="text/javascript">
-   console.log('v2 movilidadAppsDetail.xml');
+   console.log('v3 movilidadAppsDetail.xml');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
@@ -199,7 +199,7 @@ margin: 9px 0px 10px 28px;
                  return html;
               }
                 html +="<h2 class=\"title\">"+dataDC.getTitle(row)+"</h2>";
-               // html +="<img src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png\" class=\"linetitle\">;
+                html +="<img src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png\" class=\"linetitle\">";
                 html +="<div class=\"graphics\">";
 	              html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
 	              html +="<div class=\"compatibility\">Disponible para:<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
