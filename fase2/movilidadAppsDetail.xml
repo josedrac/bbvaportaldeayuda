@@ -161,12 +161,12 @@
         }
 
         function handleQueryResponse(response){
-                console.log('response');        
+                console.log('respuesta');        
                 console.log(response);
-                console.log('end response');        
+                console.log('end respuesta');        
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();
-                console.log('num Filas'+filas);               
+                console.log('num Filas :'+filas);               
                 var html= "";  
                 //One element              
                 row=0;
