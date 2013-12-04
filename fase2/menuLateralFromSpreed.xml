@@ -143,6 +143,8 @@
         
         function handleQueryResponse(response){
           console.log(response.getDataTable());
+          console.log('options', options);
+          console.log('dataTable',dataTable);
           dataTable.data = response.getDataTable();
           document.getElementById('content_div').innerHTML = template(dataTable, subseccion);
         }
