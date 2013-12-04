@@ -12,10 +12,10 @@
 	
  <Content type="html">
     <![CDATA[
-	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-	
-	<style type="text/css">
+ <script src="https://www.google.com/jsapi" type="text/javascript"></script>	
+ <style type="text/css">
 .container { max-width: 605px; font-family: 'BBVA Web Book'; padding: 10px; min-height: 300px; width: 100%; display: inline-block; }
+.container .title { margin-top: 0; padding-top: 0; }
 .container .graphics { display: inline; width: 100%; }
 .container .graphics .articleimg { text-align: left; display: inline; }
 .container .graphics .articleimg img { margin: auto; width: 120px; }
@@ -38,6 +38,7 @@
 @font-face { font-family: 'BBVA Web Light'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light") format("svg"); font-style: normal; font-weight: normal; }
 
 @font-face { font-family: 'BBVA Web Medium'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot"); src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix") format("embedded-opentype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium") format("svg"); font-style: normal; font-weight: normal; }
+
 </style>
 <!--[if IE]>
 <style type="text/css">
@@ -168,11 +169,17 @@
                 }
                 var existManual = function(manual)
                 {
-                  if (manual.title == "" && manual.url) return false;                  
+                  if (manual.title == "" && manual.url) 
+                  {
+                  return false;
+                  } 
+                  else 
+                  {                 
                   var html_manual  = '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
                       html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';
                   
                   return  html_manual;
+                  }
                 } 
                 
                var renderManuals = function(manuals){
