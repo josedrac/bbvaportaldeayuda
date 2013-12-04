@@ -189,7 +189,7 @@
                 html +="<h1 class=\"title\">"+dataDC.getTitle(row)+"</h1>";
                 html +="<div class=\"graphics\">";
 	              html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
-	              html +="<div class=\"compatibility\"><ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
+	              html +="<div class=\"compatibility\">Disponible para:<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
                 html +="</div>";
                 html +="<div class=\"description\">";
 	              html +="<h2>Descripción de la App</h2>";
