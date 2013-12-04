@@ -159,7 +159,7 @@
 
         }
 
-        function handleQueryResponseDC(response){
+        function handleQueryResponse(response){
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";  
