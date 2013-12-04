@@ -29,6 +29,15 @@ font-family: BBVA Web Light, BBVA Web, Arial;
 font-size: 22px;
 margin: 9px 0px 10px 0px;
 }
+h3 {
+
+font-size: 16px;
+font-family: BBVA Web Light, Arial;
+color: #000;
+margin-bottom: 15px;
+font-weight: normal;
+
+}
 .container .graphics { display: inline; width: 100%; }
 .container .graphics .articleimg { text-align: left; display: inline; }
 .container .graphics .articleimg img { margin: auto; width: 120px; }
@@ -205,11 +214,11 @@ margin: 9px 0px 10px 0px;
 	              html +="<div class=\"compatibility\">Disponible para:<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul></div>";
                 html +="</div>";
                 html +="<div class=\"description\">";
-	              html +="<h2>Descripción de la App</h2>";
+	              html +="<h3>Descripción de la App</h3>";
 	              html +="<p class=\"long\">"+dataDC.getLong(row)+"</p>";
                 html +="</div>";
-                html +="<div class=\"manuals\"><h2>Acceso a Manuales</h2>";
-                html +="<ul class=\"guias\">"+renderManuals(dataDC.getManuals(row))+"</ul></div>";                
+                html +="<div class=\"manuals\"><h3>Acceso a Manuales</h3>";
+                html +="<ul class=\"guias\">"+renderManuals(dataDC.getManuals(row))+"</ul>";                
                 html +="</div>";
                 
                 document.getElementById('container').innerHTML = html;
