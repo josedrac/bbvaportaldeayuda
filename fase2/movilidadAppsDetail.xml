@@ -166,12 +166,9 @@
                   }    
                   return iconshtml;
                 }
-                var existManual = function(manual){
-                  console.log(manual);
-                  console.log(manual.title);
-                  console.log(manual.url);
-                  if (manual.title) return false;
-                  
+                var existManual = function(manual)
+                {
+                  if (manual.title == "" && manual.url) return false;                  
                   var html_manual  = '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
                       html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';
                   
