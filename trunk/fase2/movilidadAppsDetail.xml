@@ -191,8 +191,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
                   if(((typeof(manual.title) != 'undefined') && (manual.title != "")) && ((typeof(manual.url) != 'undefined') && (manual.url != "")))
                   {
                       html_manual += '<li><a target=\"_blank\" href=\"'+manual.url+'\">'+manual.title;
-                      html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';
-                      document.getElementById('manualsection').style.visibility = 'visible';  
+                      html_manual += '<img class=\"savePDF\" alt=\"Descargar PDF\" title=\"Descargar PDF\" src=\"https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png\"></a></li>';  
                   }                  
                   return  html_manual;                  
                 } 
