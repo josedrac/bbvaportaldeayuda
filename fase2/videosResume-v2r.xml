@@ -512,7 +512,7 @@ font-weight: normal;
 </body>
 
  <script type="text/javascript">
-console.debug('v11 - videosResume-v2r.xml');
+//console.debug('v11 - videosResume-v2r.xml');
 	 var gadgetHelper = null;
 	 var prefs = new gadgets.Prefs();
 
