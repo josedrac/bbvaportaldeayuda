@@ -37,15 +37,10 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
 
 
 <!--[if lt IE 9]>
-  .container .render .article 
-  { 
-  max-width: 180px; 
-  height: 300px; 
-  width: 32%; 
-  display: inline; 
-  vertical-align: top;
-  }
-
+.container .render .article 
+{ 
+max-width: 180px;  height: 300px;   width: 32%;   display: inline;   vertical-align: top;
+}
 <![endif]-->
 </style>
 <body onload="cargaCompleta()">
