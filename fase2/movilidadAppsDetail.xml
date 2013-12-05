@@ -56,12 +56,10 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 
 
 </style>
-<!--[if IE]>
-<style type="text/css">
-			.savePDF
-			{
-				border: 0;
-			}
+<!--[if lt IE 9]>
+<style>
+.container .graphics .compatibility { display: inline;}
+.savePDF { border: 0;}
 </style>
 <![endif]-->
 
