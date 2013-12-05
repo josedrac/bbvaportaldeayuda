@@ -579,8 +579,9 @@
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
-		 
+		 if(imgTag2  != ''){
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
+		 }
 		 document.getElementById("titleVideo2").innerHTML = "<a target='_parent' href='"+urlsabermas2+"'>"+ titleVideo2 +"</a>";
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Saber más</button>";
