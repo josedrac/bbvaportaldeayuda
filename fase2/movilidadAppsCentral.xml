@@ -34,15 +34,15 @@
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
 src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), 
 url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book") format("svg"); font-style: normal; font-weight: normal; }
-
-
+</style>
 <!--[if lt IE 9]>
+<style>
 .article_ie 
 { 
-max-width: 180px;  height: 300px;   width: 32%;   display: inline;   vertical-align: top;
+max-width: 180px;  height: 280px;   width: 32%;   display: inline;   vertical-align: top;
 }
-<![endif]-->
 </style>
+<![endif]-->
 <body onload="cargaCompleta()">
 <div class="container">
 <div class="header">
