@@ -37,7 +37,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
 
 
 <!--[if lt IE 9]>
-.container .render .article 
+.article_ie 
 { 
 max-width: 180px;  height: 300px;   width: 32%;   display: inline;   vertical-align: top;
 }
@@ -149,12 +149,12 @@ max-width: 180px;  height: 300px;   width: 32%;   display: inline;   vertical-al
                 }
                 for(var row=0;row<filas;row++){
                        
-                                html +="<div class=\"article\"><a class=\"enlace\" target=\"_parent\" href=\""+dataDC.getUrlDetalle(row)+"\">";
-                                html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
-                                html +="<h2>"+dataDC.getTitle(row)+"</h2>";
-                                html +="<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul>";
-                                html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
-                                html +="</a></div>";
+                    html +="<div class=\"article article_ie\"><a class=\"enlace\" target=\"_parent\" href=\""+dataDC.getUrlDetalle(row)+"\">";
+                    html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
+                    html +="<h2>"+dataDC.getTitle(row)+"</h2>";
+                    html +="<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul>";
+                    html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
+                    html +="</a></div>";
                      
                 }
 
