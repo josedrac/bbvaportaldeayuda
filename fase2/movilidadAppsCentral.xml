@@ -37,7 +37,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
 </style>
 <!--[if lt IE 9]>
 <style>
-.article_ie 
+.container .render .article_ie 
 { 
 max-width: 180px;  height: 280px;   width: 32%;   display: inline;   vertical-align: top;
 }
