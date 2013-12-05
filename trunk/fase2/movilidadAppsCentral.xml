@@ -14,7 +14,7 @@
 .container { max-width: 620px; margin: 0; padding: 0; width: 100%; font-family: 'BBVA Web Book'; }
 .container .header { display: inline-block; width: 100%; }
 .container .header h1.title { margin-top: 0; padding-left: 5px; font-weight: normal; color: #0078D2; font-family: BBVA Web Light, BBVA Web, Arial; font-size: 22px; margin: 16px 0px 16px 0px; display: inline-block; }
-.container .header ul.oslist { float: right; text-align: center; padding-right: 10px; }
+.container .header ul.oslist { float: right; text-align: center; padding-right: 15px; }
 .container .header ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
 .container .header ul.oslist li img { width: 24px; display: inline-block; }
 .container .header ul.oslist li span { display: inline-block; padding-left: 5px; vertical-align: super; font-size: 0.9em; }
