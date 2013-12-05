@@ -570,7 +570,9 @@
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 		 document.getElementById("allcontent").onclick = function(){ Go(Urlall);};
 		 
+		 if(imgTag  != ''){
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
+		 }
 		 document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Saber más</button>";
