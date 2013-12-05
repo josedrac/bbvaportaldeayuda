@@ -1,5 +1,5 @@
 <Module>
-<ModulePrefs title="movilidadAppsCentral.xml" description="" author_affiliation="Sopra">
+<ModulePrefs title="movilidadAppsCentral.xml" description="" author_affiliation="SopraGroup-UX">
 <Require feature="idi"/>
 <Require feature="locked-domain"/>
 <Require feature="dynamic-height"/>
