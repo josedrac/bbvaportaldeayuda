@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="menuLateralFromSpread.xml"
     description=""
-    author_affiliation="Sopra">
+    author_affiliation="SopraGroup-UX">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   

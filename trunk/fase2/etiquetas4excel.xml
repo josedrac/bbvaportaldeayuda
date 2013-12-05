@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="etiquetas4excel.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="SopraGroup-UX">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
