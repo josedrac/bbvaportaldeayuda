@@ -37,10 +37,10 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
 </style>
 <!--[if lt IE 9]>
 <style>
+img {border:none;}
+.container .render .article .enlace ul.oslist { text-align: none; margin:0; padding: 0; }
 .container .render .article_ie 
-{ 
-max-width: 180px;  height: 280px;   width: 32%;   display: inline;   vertical-align: top;
-}
+{ max-width: 180px;height: 320px;width: 32%;display: inline;}
 </style>
 <![endif]-->
 <body onload="cargaCompleta()">
