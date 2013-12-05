@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="menuLateral.xml"
+  <ModulePrefs title="menuLateralFromSpread.xml"
     description=""
     author_affiliation="Sopra">
     <Require feature="idi"/>
@@ -9,7 +9,7 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="subseccion" display_name="SubsecciÃƒÆ’Ã‚Â³n:" default_value="" required="true"/> 
+<UserPref name="subseccion" display_name="subseccion:" default_value="" required="true"/> 
  <Content type="html">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
@@ -102,8 +102,7 @@
 
         var options = options || {};
         var fields = options.fields || { id : 0, name: 1,image: 3 } ;
-        var template = options.template || function(dataTable, subseccion){
-        
+        var template = options.template || function(dataTable, subseccion){             
              var filas = dataTable.getNumberOfRows();
              var html= "";
              html +='<div class=\"titulo\">' + subseccion + '</div>';
@@ -196,10 +195,7 @@
     </script>
       
 <body>	
-<!--<div id="textMovilidad">GuÃƒÂ­as de configuraciÃƒÂ³n, segÃƒÂºn dispositivo: </div>-->
-<!--<div id="movilidad">GuÃƒÂ­as de configuraciÃƒÂ³n, segÃƒÂºn dispositivo:
- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
-</div>-->
+
 <div id="content_div" class="caja"></div>	
 </body>
 
