@@ -36,7 +36,17 @@ src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-
 url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff") format("woff"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf") format("truetype"), url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book") format("svg"); font-style: normal; font-weight: normal; }
 
 
+<!--[if lt IE 9]>
+  .container .render .article 
+  { 
+  max-width: 180px; 
+  height: 300px; 
+  width: 32%; 
+  display: inline; 
+  vertical-align: top;
+  }
 
+<![endif]-->
 </style>
 <body onload="cargaCompleta()">
 <div class="container">
