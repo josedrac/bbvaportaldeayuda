@@ -37,6 +37,9 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.
 </style>
 <!--[if lt IE 9]>
 <style>
+.container .header{padding-bottom:15px;}
+.container .header h1.title { margin:0; display: inline; }
+.container .header ul.oslist{ position:absolute; right:0; top:0; margin:0; display: inline; }
 img {border:none;}
 .container .render .article .enlace ul.oslist { text-align: none; margin:0; padding: 0; }
 .container .render .article_ie 
