@@ -440,7 +440,7 @@
 
 <script type="text/javascript">
 
-    console.debug('v14 - videosResume-v2.xml');
+    //console.debug('v14 - videosResume-v2.xml');
 
     var gadgetHelper = null;
     var prefs = new gadgets.Prefs();
