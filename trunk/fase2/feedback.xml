@@ -84,22 +84,19 @@
          var prefs = new _IG_Prefs();
          // https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE
          var urlTable = "https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE";
+         var fullurl = gadgets.util.getUrlParameters()["parent"];
         
         jQuery( document ).ready(function() {
       console.log('ladecima010');
-      console.log(window.parent.location.pathname);
+      console.log(fullurl);
       console.log('ladecima020');
-      console.log(window.parent.location.href);
-      console.log('ladecima030');
-      console.log(window.location.pathname);    
+      console.log(document.referrer);
           
     jQuery("input[name='quality']").change(function(){
       console.log('ladecima0100');
-      console.log(window.parent.location.pathname);
+      console.log(fullurl);
       console.log('ladecima0200');
-      console.log(window.parent.location.href);
-      console.log('ladecima0300');
-      console.log(window.location.pathname);     
+      console.log(document.referrer);    
     
       if (jQuery(this).val() < 3)
       {
