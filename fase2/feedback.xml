@@ -83,7 +83,8 @@
 <script type="text/javascript">
      var gadgetHelper = null;
          var prefs = new _IG_Prefs();
-         var urlTable = prefs.getString("_table_query_url");
+         // https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE&usp=sharing
+         var urlTable = https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE;
          _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
          function loadVisualizationAPI() {
@@ -103,94 +104,14 @@
         }
 
         var DataTable= function(data){
-                var HEADER_ROW = 0;
-                var FIELDS = {
-                        id : 0,
-                        title : 1,
-                        type: 2,
-                        image: 3,
-                        short: 4,
-                        long:5
-                };
-                
-                var URL_DETAIL = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?DetalleAppId=";
-
-                var dataDC = data;
-                this.getNumberOfRows = function(){
-                        return dataDC.getNumberOfRows();
-                }
-                this.getId = function(row){
-                        return dataDC.getValue(row, FIELDS.id);
-                }                
-                this.getTitle = function(row){
-                        return dataDC.getValue(row, FIELDS.title);
-                }               
-                this.getImage = function(row){
-                        return dataDC.getValue(row, FIELDS.image);
-                }
-                this.getType= function(row){
-                        var icons = (dataDC.getValue(row, FIELDS.type)).split(/[ ,]+/);
-                        return icons;
-                }
-                this.getShort= function(row){
-                        return dataDC.getValue(row, FIELDS.short);
-                }
-                this.getLong= function(row){
-                        return dataDC.getValue(row, FIELDS.long);
-                }
-                
-                this.getUrlDetalle= function(row){
-                        return URL_DETAIL+this.getId(row);
-                }
-
-                this.isHeaderTable = function(row){
-                        return ( row == HEADER_ROW);
-                }
-
+                //
         }
 
         function handleQueryResponseDC(response){
                 var dataDC = new DataTable(response.getDataTable());
-                var filas = dataDC.getNumberOfRows();               
-                var html= "";
-                var renderIcons = function(types)
-                {
-                  var URLICONS =
-                              {
-                              "Android":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/android.png",
-                              "Iphone":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/iphone.png",
-                              "Ipad":"https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/ipad.png"
-                              };
-                              
-                  var iconshtml="";
-                  for(n in types)
-                  {                                
-                   iconshtml += "<li class=\"oslist\"><img src=\""+URLICONS[types[n]]+"\"></li>";                  
-                  }    
-                  return iconshtml;
-                }
-                for(var row=0;row<filas;row++){
-                       
-                    html +="<div class=\"article article_ie\"><a class=\"enlace\" target=\"_parent\" href=\""+dataDC.getUrlDetalle(row)+"\">";
-                    html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
-                    html +="<h2>"+dataDC.getTitle(row)+"</h2>";
-                    html +="<ul class=\"oslist\">"+renderIcons(dataDC.getType(row))+"</ul>";
-                    html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
-                    html +="</a></div>";
-                     
-                }
-
-                
-                document.getElementById('render').innerHTML = html;
-         
         }
 
-        function cargaCompleta(){
-                reload();
-        }
-        
         jQuery( document ).ready(function() {
-          reload();
           jQuery("input[name='quality']").change(function(){
             console.log(jQuery(this).val());
             if (jQuery(this).val() < 3)
