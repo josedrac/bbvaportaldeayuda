@@ -9,25 +9,13 @@
 <Content type="html"><![CDATA[
   
   <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   
  <style type="text/css">
-.container { max-width: 620px; margin: 0; padding: 0; width: 100%; font-family: 'BBVA Web Book'; }
-.container .header { display: inline-block; width: 100%; }
-.container .header h1.title { margin-top: 0; padding-left: 5px; font-weight: normal; color: #0078D2; font-family: BBVA Web Light, BBVA Web, Arial; font-size: 22px; margin: 16px 0px 16px 0px; display: inline-block; }
-.container .header ul.oslist { float: right; text-align: center; padding-right: 15px; }
-.container .header ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
-.container .header ul.oslist li img { width: 24px; display: inline-block; }
-.container .header ul.oslist li span { display: inline-block; padding-left: 5px; vertical-align: super; font-size: 0.9em; }
-.container .render .article { padding: 15px 5px 10px 5px; max-width: 184px; min-height: 280px; width: 32%; display: inline-block; vertical-align: top; margin: 5px; border: 1px solid  #DDE3EA; background: #ffffff; background: -moz-linear-gradient(top, white 0%, #f5f7f8 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f5f7f8)); background: -webkit-linear-gradient(top, white 0%, #f5f7f8 100%); background: -o-linear-gradient(top, white 0%, #f5f7f8 100%); background: -ms-linear-gradient(top, white 0%, #f5f7f8 100%); background: linear-gradient(to bottom, #ffffff 0%, #f5f7f8 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 ); }
-.container .render .article .enlace { color: black; text-decoration: none; font-size: 1em; }
-.container .render .article .enlace .articleimg { text-align: center; }
-.container .render .article .enlace .articleimg img { margin: auto; width: 70px; }
-.container .render .article .enlace h2 { text-align: center; font-size: 1em; font-family: 'BBVA Web Book'; }
-.container .render .article .enlace ul.oslist { text-align: center; padding: 0; }
-.container .render .article .enlace ul.oslist li { display: inline; list-style-type: none; padding-right: 10px; }
-.container .render .article .enlace ul.oslist li .oslogo { width: 32px; }
-.container .render .article .enlace div.short { text-align: left; padding: 10px; font-size: 11px; }
-.container .render .article .enlace div.short span { color: #434A58; }
+.container { max-width: 910px; font-family: 'BBVA Web Book'; padding: 10px; min-height: 150px; width: 100%; display: inline-block; border: 1px solid  #DDE3EA; background: #ffffff; background: -moz-linear-gradient(top, white 0%, #f5f7f8 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f5f7f8)); background: -webkit-linear-gradient(top, white 0%, #f5f7f8 100%); background: -o-linear-gradient(top, white 0%, #f5f7f8 100%); background: -ms-linear-gradient(top, white 0%, #f5f7f8 100%); background: linear-gradient(to bottom, #ffffff 0%, #f5f7f8 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 ); }
+.container .title { margin-top: 0; padding-top: 0; font-weight: normal; color: #0078D2; font-family: BBVA Web Light, BBVA Web, Arial; font-size: 22px; margin: 15px 0px 12px 0px; background-image: url(https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png); background-position: bottom; background-repeat: repeat-x; padding-bottom: 10px; }
+.container .survey { font-family: 'BBVA Web Book'; padding-bottom: 20px; }
+.container .survey form { display: inline-block; }
 
 
 
@@ -46,29 +34,28 @@
 </style>
 <!--[if lt IE 9]>
 <style>
-.container .header{padding-bottom:15px;}
-.container .header h1.title { margin:0; display: inline; }
-.container .header ul.oslist{ position:absolute; right:0; top:0; margin:0; display: inline; }
-img {border:none;}
-.container .render .article .enlace ul.oslist { text-align: none; margin:0; padding: 0; }
-.container .render .article_ie 
-{ max-width: 180px;height: 300px;width: 32%;display: inline;}
 </style>
 <![endif]-->
 <body onload="cargaCompleta()">
-<div class="container">
-<div class="header">
-			<h1 class="title">Apps de BBVA</h1>
-			<ul class="oslist">
-				<li><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/iphone.png">
-				<span>Iphone</span></li>
-				<li><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/ipad.png">
-				<span>Ipad</span></li>
-				<li><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/android.png">
-				<span>Android</span></li>
-			</ul>
- </div>
-<div id="render" class="render"><div>
+
+<div class="container" id="container">
+      <h1 class="title">¿Te ha resultado útil?</h1>     
+      <div class="survey">
+        <span>Nada útil</span>
+        <form id="survey">        
+          
+          <input type="radio" name="quality" value="0">
+          <input type="radio" name="quality" value="1">
+          <input type="radio" name="quality" value="2">
+          <input type="radio" name="quality" value="3">
+          <input type="radio" name="quality" value="4">
+          <input type="radio" name="quality" value="5">       
+
+        </form>
+        <span>Muy útil</span>
+        
+      </div>  
+      <div id="render" class="render"><div>
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
