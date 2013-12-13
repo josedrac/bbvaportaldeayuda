@@ -83,34 +83,9 @@
 <script type="text/javascript">
      var gadgetHelper = null;
          var prefs = new _IG_Prefs();
-         // https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE&usp=sharing
-         var urlTable = https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE;
-         _IG_RegisterOnloadHandler(loadVisualizationAPI);
-
-         function loadVisualizationAPI() {
-                google.load("visualization", "1", {"packages": ["table"]});
-        }
-                
-        function reload(){
-                var gadgetHelper = new google.visualization.GadgetHelper();
-                var opts = {dataType:'jsonp'};
-                var queryDC = new google.visualization.Query(urlTable, opts);
-                 
-                var queryDCtosend = "select A,B,C,D,E,F order by A";
-
-                queryDC.setQuery(queryDCtosend);                          
-                queryDC.send(handleQueryResponseDC);
-   
-        }
-
-        var DataTable= function(data){
-                //
-        }
-
-        function handleQueryResponseDC(response){
-                var dataDC = new DataTable(response.getDataTable());
-        }
-
+         // https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE
+         var urlTable = "https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE";
+        
         jQuery( document ).ready(function() {
           jQuery("input[name='quality']").change(function(){
             console.log(jQuery(this).val());
