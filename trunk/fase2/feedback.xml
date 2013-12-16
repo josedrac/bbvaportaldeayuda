@@ -84,11 +84,7 @@
          var prefs = new _IG_Prefs();
          // https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE
          var urlTable = "https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0Aj5c4zIocZp3dHhDa3loSlJ6aXRkbmRmT2dKRnp5clE";
-         var fullurl = gadgets.util.getUrlParameters()["parent"];
-         var  ladecima = gadgets.util.getUrlParameters();
-         var laundecima = gadgets.util.getServices();
-         console.log(ladecima);
-         console.log(laundecima);
+         var fullurl = gadgets.util.getUrlParameters()["parent"];         
         jQuery( document ).ready(function() {
       console.log('ladecima010');
       console.log(fullurl);
