@@ -103,7 +103,7 @@ img {border:none;}
                         long:5
                 };
                 
-                var URL_DETAIL = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?DetalleAppId=";
+                var URL_DETAIL = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?app_id=";
 
                 var dataDC = data;
                 this.getNumberOfRows = function(){
