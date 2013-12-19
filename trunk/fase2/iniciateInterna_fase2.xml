@@ -319,7 +319,7 @@
 		   html += "<div id='urlVideo'>";
 		   if(data.getValue(0,11)=="Other"){
 		   
-		   html +="<iframe src='https://docs.google.com/presentation/d/1fmrZOSIWY1FzxWY5-htvnYewR8RaZEi7GdHxwk4FZB8/embed?start=false&loop=false&delayms=3000' frameborder='0' width='620' height='427' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>";
+		   html +="<iframe src='"+data.getValue(0,2)+"' frameborder='0' width='620' height='427' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>";
 
 
 		   } else{
@@ -332,23 +332,6 @@
 		   
 		   document.getElementById('listportales').innerHTML = html;				
 		}
-    
-
-			/*	function SendGmail(){
-				
-				//window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
-				var to = emailTo;
-				var subject ='Error en Portal de Ayuda';
-				var str = 'https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+subject;
-				//window.parent.location.href = str;
-				
-				window.open(str,'_blank','send mail');
-				//window.parent.location.href = aux;
-				//window.parent.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
-				//window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
-				
-				return false;
-				}*/
 
 
   </script>
