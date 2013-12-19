@@ -312,16 +312,24 @@
 		   data = response.getDataTable();	
 		   var html = "";
 		   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-		   console.log('ladecima');
+		   
 		   html += "<div id='comboVideo'>";
 		   html += "<div id='video-container'><div id='infoVideo'>";
 		   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
 		   html += "<div id='urlVideo'>";
-		   html += "<object width='620' height='427' data='"+data.getValue(0,2)+"'>" +
+		   if(data.getValue(0,11)=="Other"){
+		   
+		   html +="<iframe src='https://docs.google.com/presentation/d/1fmrZOSIWY1FzxWY5-htvnYewR8RaZEi7GdHxwk4FZB8/embed?start=false&loop=false&delayms=3000' frameborder='0' width='620' height='427' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>";
+
+
+		   } else{
+		   		html += "<object width='620' height='427' data='"+data.getValue(0,2)+"'>" +
 		   			"<param name='video' value='"+data.getValue(0,2)+"'></param>" +
 		   			"<param name='wmode' value='transparent'></param>" + 
 		   			"<iframe src='"+data.getValue(0,2)+"' allowScriptAccess='always' frameborder='0' width='620' height='427'></iframe>" +
 		   			"</object></div>";		  
+		   }
+		   
 		   document.getElementById('listportales').innerHTML = html;				
 		}
     
