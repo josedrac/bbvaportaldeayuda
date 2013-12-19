@@ -317,7 +317,7 @@
 		   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
 		  // if(data.getValue(0,11) == "Video") {
 		   html += "<div id='urlVideo'>";		 
-		   embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";		   
+		   <embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";		   
 		   html += "<object width='620' height='427' data='"+data.getValue(0,2)+"'>" +
 		   			"<param name='video' value='"+data.getValue(0,2)+"'></param>" +
 		   			"<param name='wmode' value='transparent'></param>" + 
