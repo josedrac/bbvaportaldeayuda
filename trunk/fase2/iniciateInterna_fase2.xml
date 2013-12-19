@@ -312,7 +312,7 @@
 		   data = response.getDataTable();	
 		   var html = "";
 		   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-		   
+		   console.log('ladecima');
 		   html += "<div id='comboVideo'>";
 		   html += "<div id='video-container'><div id='infoVideo'>";
 		   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
