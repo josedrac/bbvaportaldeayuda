@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="footer.xml"
+  <ModulePrefs title="footer"
     description=""
-    author_affiliation="Capgemini"
+    author_affiliation="Sopra"
     height="150">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
