@@ -140,17 +140,17 @@
 				var filas = data.getNumberOfRows();
 				var html= "";
 				html += "<table id='tablasoporte'>";
-				html += "<thead><tr><th class='col0'>Pa&iacute;s</th><th class='col1'>Tel&eacute;fono</th><th class='col2'>Correo</th></tr></thead>";
-			    html += "<tbody><tr><td colspan='4'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr>";
+				html += "<thead><tr><th class='col0'>Pa&iacute;s</th><th class='col1'>Tel&eacute;fono</th></tr></thead>";
+			    html += "<tbody><tr><td colspan='3'><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /></td></tr>";
 				for(var i=1;i<filas;i++){
-					if (data.getValue(i,1) == "luis.mayorga@bbva.com")
+				  /* if (data.getValue(i,1) == "luis.mayorga@bbva.com")
 					{ 
-					var mail = "<a href=\"javascript:sendGmail('"+data.getValue(i,1)+"')\"><img src='https://efd75d34-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/portaldeayuda/soporte/enviar_correo.png' class='sobreMail'/></a>"; }
+				  var mail = "<a href=\"javascript:sendGmail('"+data.getValue(i,1)+"')\"><img src='https://efd75d34-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/portaldeayuda/soporte/enviar_correo.png' class='sobreMail'/></a>"; }
 					else
 					{
 						var mail= "<a href=\"javascript:sendGmail('"+data.getValue(i,1)+"')\">"+data.getValue(i,1)+"</a>";
-					}
-					html += "<tr class='datosfila'><td class='dato0'>"+data.getValue(i,0)+"</td><td class='dato1'>"+data.getValue(i,2)+"</td><td class='dato2'>"+mail+"</td></tr>";
+					}*/
+					html += "<tr class='datosfila'><td class='dato0'>"+data.getValue(i,0)+"</td><td class='dato1'>"+data.getValue(i,2)+"</td></tr>";
 					
 				}
 				html += "</tbody></table>";
