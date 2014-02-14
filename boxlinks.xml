@@ -127,22 +127,22 @@
         }
 
         ul li.gplus {
-            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/gplus-56.png') no-repeat;
+            background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/gplus-56.png') no-repeat;
             background-size: 24px;
             background-position: 0px;
         }
         ul li.groups {
-            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/groups-56.png') no-repeat;
+            background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/groups-56.png') no-repeat;
             background-size: 24px;
             background-position: 0px;
         }
         ul li.hangouts {
-            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/hangouts-56.png') no-repeat;
+            background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/hangouts-56.png') no-repeat;
             background-size: 24px;
             background-position: 0px;            
         }
         ul li.sites {
-            background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/sites-56.png') no-repeat;
+            background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fase2/img/sites-56.png') no-repeat;
             background-size: 24px;
             background-position: 0px;            
         }
