@@ -366,8 +366,9 @@ if (!Array.prototype.indexOf) {
 
 	function datospagina()
 	{
-
+		var URLBASE = "https://sites.google.com/a/bbva.com/portaldeayuda/";
 		var parametros = gadgets.util.getUrlParameters()["parent"];
+		parametros = parametros.split(URLBASE)[1];
 		console.log(parametros);
 		if((parametros.indexOf("hpd")!=-1)){
 			var tabiniciate = getElementsByClassName('iniciate');
