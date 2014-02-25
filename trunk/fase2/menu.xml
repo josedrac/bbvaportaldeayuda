@@ -93,32 +93,32 @@ ol, ul {
 
 .cabeceramenu ul li.homefirst,
 .cabeceramenu ul li.iniciate,
-.cabeceramenu ul li.apps,
 .cabeceramenu ul li.trucos,
+.cabeceramenu ul li.exito,
 .cabeceramenu ul li.movilidad{
   float: left;
   text-align: center;
   background: url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/separador-menu.png') no-repeat scroll right top transparent;
 }
 
-.cabeceramenu ul li.exito{
+.cabeceramenu ul li.apps{
   float: left;
   text-align: center;
-  background:none;
+  background-image: none;
   border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 
 }
 
-.cabeceramenu ul li.exito span,
-.cabeceramenu ul li.exito span:hover {
+.cabeceramenu ul li.apps span,
+.cabeceramenu ul li.apps span:hover {
 	border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 
 }
 
-.cabeceramenu ul li.exito a,
-.cabeceramenu ul li.exito a:hover{
+.cabeceramenu ul li.apps a,
+.cabeceramenu ul li.apps a:hover{
 margin-left:0px;
 border-bottom-right-radius: 5px;
 border-top-right-radius: 5px;
@@ -169,7 +169,9 @@ margin-top:-19px;
 .cabeceramenu ul li.apps,
 .cabeceramenu ul li.trucos,
 .cabeceramenu ul li.movilidad,
-.cabeceramenu ul li.exito {
+.cabeceramenu ul li.exito,
+.cabeceramenu ul li.hpd2,
+ {
 	width: 175.75px;
 }
 
@@ -253,6 +255,7 @@ margin-top:-19px;
 
 	<li id="inicio" class="iniciate"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate" target="_parent">HPD</a></span></span></li>
 	<li id="hpd2" class="hpd2"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2" target="_parent">HPD 2.0</a></span></span></li>
+
 	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">Movilidad</a></span></span></li>
 
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li>
@@ -391,7 +394,7 @@ if (!Array.prototype.indexOf) {
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
 		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
-		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
+		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movilidad-apps";}
 		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
 
 		return false;
