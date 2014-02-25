@@ -237,7 +237,6 @@ margin-top:-19px;
 
 <script type="text/javascript">
 
-//console.debug('v1 - menu.xml');
 
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
@@ -310,43 +309,45 @@ if( typeof document.querySelector == "undefined") {
 }
 
 function getElementsByClassName(className) {
+	
 	if (document.getElementsByClassName) {
 		return document.getElementsByClassName(className); }
 	else { return document.querySelectorAll('.' + className); }
 
 	}
-if (!Array.prototype.indexOf) {
-    Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
-        "use strict";
-        if (this == null) {
-            throw new TypeError();
-        }
-        var t = Object(this);
-        var len = t.length >>> 0;
-        if (len === 0) {
-            return -1;
-        }
-        var n = 0;
-        if (arguments.length > 0) {
-            n = Number(arguments[1]);
-            if (n != n) { // shortcut for verifying if it's NaN
-                n = 0;
-            } else if (n != 0 && n != Infinity && n != -Infinity) {
-                n = (n > 0 || -1) * Math.floor(Math.abs(n));
-            }
-        }
-        if (n >= len) {
-            return -1;
-        }
-        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
-        for (; k < len; k++) {
-            if (k in t && t[k] === searchElement) {
-                return k;
-            }
-        }
-        return -1;
-    }
-}
+	
+	if (!Array.prototype.indexOf) {
+	    Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+	        "use strict";
+	        if (this == null) {
+	            throw new TypeError();
+	        }
+	        var t = Object(this);
+	        var len = t.length >>> 0;
+	        if (len === 0) {
+	            return -1;
+	        }
+	        var n = 0;
+	        if (arguments.length > 0) {
+	            n = Number(arguments[1]);
+	            if (n != n) { // shortcut for verifying if it's NaN
+	                n = 0;
+	            } else if (n != 0 && n != Infinity && n != -Infinity) {
+	                n = (n > 0 || -1) * Math.floor(Math.abs(n));
+	            }
+	        }
+	        if (n >= len) {
+	            return -1;
+	        }
+	        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+	        for (; k < len; k++) {
+	            if (k in t && t[k] === searchElement) {
+	                return k;
+	            }
+	        }
+	        return -1;
+	    }
+	}
 
 
 
@@ -354,8 +355,7 @@ if (!Array.prototype.indexOf) {
 	document.getElementById('movilidad').onclick = function() {Go('movilidad');};
 	
 	function Go(destination)
-	{
-		console.log(destination);
+	{		
 		if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd";}
 		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2";}
 
@@ -371,7 +371,6 @@ if (!Array.prototype.indexOf) {
 		var HPD_2="hpd-2";
 		var parametros = gadgets.util.getUrlParameters()["parent"];
 		parametros = parametros.split(URLBASE)[1];
-		//console.log(parametros);
 		if(parametros == HPD_1){
 			var tabiniciate = getElementsByClassName('iniciate');
 			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
