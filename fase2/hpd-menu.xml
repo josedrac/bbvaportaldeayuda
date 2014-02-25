@@ -196,7 +196,8 @@ margin-top:-19px;
 
 	.cabeceramenu{
 		color: #fff;
-		width: 96em;
+		margin-left:80px;
+		width: 36em;
 		height: 5.1em;
 		margin-top: 0px;
 		-webkit-border-radius: 5px;
