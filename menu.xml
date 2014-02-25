@@ -173,7 +173,7 @@ margin-top:-19px;
 .cabeceramenu ul li.movilidad,
 .cabeceramenu ul li.exito
  {
-	width: 140px;
+	width: 144.5px;
 }
 
 .cabeceramenu  ul li.homefirst {
@@ -210,11 +210,19 @@ margin-top:-19px;
 	font-weight: normal;
 
 }
-
+.selectedLeft{
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: rgb(0, 80, 152);
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px inset;
+}
+.selected{
+	background-color: rgb(0, 80, 152);
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px inset;	
+}
 </style>
 <!--[if IE]>
-
-	<style type="text/css">
+<style type="text/css">
 
 	.cabeceramenu{
 		color: #fff;
@@ -401,7 +409,24 @@ if (!Array.prototype.indexOf) {
 		return false;
 	}
 
-	gadgets.util.registerOnLoadHandler(datospagina);
+	gadgets.util.registerOnLoadHandler(renderSelected);
+
+	function renderSelected(){
+		console.log('cleaning styles');
+		resetStyles();
+	}
+	function resetStyles (){
+
+			jQuery('.homefirst').removeClass("selectedLeft");
+			jQuery('.exito').removeClass("selected");
+			jQuery('.apps').removeClass("selected");
+			jQuery('.trucos').removeClass("selected");
+			jQuery('.iniciate').removeClass("selected");
+			jQuery('.movilidad').removeClass("selected");
+			jQuery('.hpd2').removeClass("selected");
+
+		return datospagina();
+	}
 
 	function datospagina()
 	{
@@ -410,54 +435,60 @@ if (!Array.prototype.indexOf) {
 
 		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
 		{
-			var tabhomefirst = getElementsByClassName('homefirst');
+			jQuery('.homefirst').addClass("selectedLeft");
+			/*var tabhomefirst = getElementsByClassName('homefirst');
 			tabhomefirst[0].style['border-bottom-left-radius']="5px";
 			tabhomefirst[0].style['border-top-left-radius']="5px";
 			tabhomefirst[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabhomefirst[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			tabhomefirst[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 		}
 		if(parametros.indexOf("casos-de-exito")!=-1){
-			var tabexito = getElementsByClassName('exito');
+			jQuery('.exito').addClass("selected");
+			/*var tabexito = getElementsByClassName('exito');
 			tabexito[0].style['border-bottom-right-radius']="5px";
 			tabexito[0].style['border-top-right-radius']="5px";
 			tabexito[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabexito[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			tabexito[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 
 		}
 		if(parametros.indexOf("google-apps")!=-1){
-		    var tabapps = getElementsByClassName('apps');
+			jQuery('.apps').addClass("selected");
+		    /*var tabapps = getElementsByClassName('apps');
 			tabapps[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabapps[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			tabapps[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 
 		}
 		if(parametros.indexOf("trucosyconsejos")!=-1){
-			var tabtrucos = getElementsByClassName('trucos');
+			jQuery('.trucos').addClass("selected");
+			/*var tabtrucos = getElementsByClassName('trucos');
 			tabtrucos[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 
 		}
 		if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){
-			var tabiniciate = getElementsByClassName('iniciate');
+			jQuery('.iniciate').addClass("selected");
+			/*var tabiniciate = getElementsByClassName('iniciate');
 			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 		}
 		if(parametros.indexOf("movilidad")!=-1){
-		    var tabmovilidad = getElementsByClassName('movilidad');
+			jQuery('.movilidad').addClass("selected");
+		    /*var tabmovilidad = getElementsByClassName('movilidad');
 			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 
 		}
 		if(parametros.indexOf("hpd-2")!=-1){
-		    var tabhpd2 = getElementsByClassName('hpd2');
+			jQuery('.hpd2').addClass("selected");
+		    /*var tabhpd2 = getElementsByClassName('hpd2');
 			tabhpd2[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabhpd2[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
-
+			tabhpd2[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
 		}
 	}
