@@ -367,16 +367,18 @@ if (!Array.prototype.indexOf) {
 	function datospagina()
 	{
 		var URLBASE = "https://sites.google.com/a/bbva.com/portaldeayuda/";
+		var HPD_1="hpd";
+		var HPD_2="hpd-2";
 		var parametros = gadgets.util.getUrlParameters()["parent"];
 		parametros = parametros.split(URLBASE)[1];
 		console.log(parametros);
-		if((parametros.indexOf("hpd")!=-1)){
+		if(parametros == HPD_1){
 			var tabiniciate = getElementsByClassName('iniciate');
 			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 
 		}
-		if(parametros.indexOf("movilidad")!=-1){
+		if(parametros == HPD_2){
 		    var tabmovilidad = getElementsByClassName('movilidad');
 			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
