@@ -229,7 +229,7 @@ margin-top:-19px;
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
 <div class="cabeceramenu">
   <ul>
-	<li id="inicio" class="iniciate"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate" target="_parent">HPD</a></span></span></li>
+	<li id="inicio" class="iniciate"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd" target="_parent">HPD</a></span></span></li>
 
 	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2"  target="_parent">HPD 2.0</a></span></span></li>
   </ul>
@@ -237,7 +237,7 @@ margin-top:-19px;
 
 <script type="text/javascript">
 
-//console.debug('v1 - menu.xml');
+console.debug('v1 - menu.xml');
 
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
@@ -350,21 +350,14 @@ if (!Array.prototype.indexOf) {
 
 
 
-	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
-	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
-	document.getElementById('trucosyconsejos').onclick = function() {Go('trucosyconsejos');};
 	document.getElementById('movilidad').onclick = function() {Go('movilidad');};
-	document.getElementById('exito').onclick = function (){Go('exito');};
-
+	
 	function Go(destination)
 	{
-		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/home";}
-		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
-		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
-		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
-		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
-		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
+		console.log(destination);
+		if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd";}
+		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2";}
 
 		return false;
 	}
@@ -375,8 +368,8 @@ if (!Array.prototype.indexOf) {
 	{
 
 		var parametros = gadgets.util.getUrlParameters()["parent"];
-		debugger;
-		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
+		console.log(parametros);
+		if (parametros.indexOf("hpd")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
 		{
 			var tabhomefirst = getElementsByClassName('homefirst');
 			tabhomefirst[0].style['border-bottom-left-radius']="5px";
@@ -385,30 +378,7 @@ if (!Array.prototype.indexOf) {
 			tabhomefirst[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 
 		}
-		if(parametros.indexOf("casos-de-exito")!=-1){
-			var tabexito = getElementsByClassName('exito');
-			tabexito[0].style['border-bottom-right-radius']="5px";
-			tabexito[0].style['border-top-right-radius']="5px";
-			tabexito[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabexito[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
-
-
-		}
-		if(parametros.indexOf("google-apps")!=-1){
-		    var tabapps = getElementsByClassName('apps');
-			tabapps[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabapps[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
-
-
-		}
-		if(parametros.indexOf("trucosyconsejos")!=-1){
-			var tabtrucos = getElementsByClassName('trucos');
-			tabtrucos[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
-
-
-		}
-		if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){
+		if((parametros.indexOf("hpd")!=-1)){
 			var tabiniciate = getElementsByClassName('iniciate');
 			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
