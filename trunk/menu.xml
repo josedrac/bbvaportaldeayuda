@@ -63,7 +63,7 @@ ol, ul {
 }
 
 .cabeceramenu {
-	width: 96em;
+	width: 95em;
 	height: 5.1em;
 	margin-top: 0px;
 	-webkit-border-radius: 5px;
@@ -93,6 +93,7 @@ ol, ul {
 
 .cabeceramenu ul li.homefirst,
 .cabeceramenu ul li.iniciate,
+.cabeceramenu ul li.hpd2,
 .cabeceramenu ul li.trucos,
 .cabeceramenu ul li.exito,
 .cabeceramenu ul li.movilidad{
@@ -166,11 +167,13 @@ margin-top:-19px;
 }
 
 .cabeceramenu ul li.iniciate,
+.cabeceramenu ul li.hpd2,
 .cabeceramenu ul li.apps,
 .cabeceramenu ul li.trucos,
 .cabeceramenu ul li.movilidad,
-.cabeceramenu ul li.exito {
-	width: 175.75px;
+.cabeceramenu ul li.exito
+ {
+	width: 140px;
 }
 
 .cabeceramenu  ul li.homefirst {
@@ -215,7 +218,7 @@ margin-top:-19px;
 
 	.cabeceramenu{
 		color: #fff;
-		width: 96em;
+		width: 95em;
 		height: 5.1em;
 		margin-top: 0px;
 		-webkit-border-radius: 5px;
@@ -252,7 +255,7 @@ margin-top:-19px;
 	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/home" target="_parent"  title="home"/></li>
 
 	<li id="inicio" class="iniciate"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate" target="_parent">HPD</a></span></span></li>
-	<!--li id="hpd2" class="hpd2"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2" target="_parent">HPD 2.0</a></span></span></li-->
+	<li id="hpd2" class="hpd2"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2" target="_parent">HPD 2.0</a></span></span></li>
 
 	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">Movilidad</a></span></span></li>
 
@@ -265,8 +268,6 @@ margin-top:-19px;
 </div>
 
 <script type="text/javascript">
-
-//console.debug('v1 - menu.xml');
 
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
@@ -381,6 +382,7 @@ if (!Array.prototype.indexOf) {
 
 	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
+	document.getElementById('hpd2').onclick = function() {Go('hpd2');};
 	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
 	document.getElementById('trucosyconsejos').onclick = function() {Go('trucosyconsejos');};
 	document.getElementById('movilidad').onclick = function() {Go('movilidad');};
@@ -390,6 +392,7 @@ if (!Array.prototype.indexOf) {
 	{
 		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/home";}
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
+		else if(destination=='hpd2'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
 		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
 		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movilidad-apps";}
@@ -447,6 +450,13 @@ if (!Array.prototype.indexOf) {
 		    var tabmovilidad = getElementsByClassName('movilidad');
 			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+
+
+		}
+		if(parametros.indexOf("hpd-2")!=-1){
+		    var tabhpd2 = getElementsByClassName('hpd2');
+			tabhpd2[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabhpd2[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 
 
 		}
