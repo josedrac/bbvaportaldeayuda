@@ -237,7 +237,7 @@ margin-top:-19px;
 
 <script type="text/javascript">
 
-console.debug('v1 - menu.xml');
+//console.debug('v1 - menu.xml');
 
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
@@ -371,7 +371,7 @@ if (!Array.prototype.indexOf) {
 		var HPD_2="hpd-2";
 		var parametros = gadgets.util.getUrlParameters()["parent"];
 		parametros = parametros.split(URLBASE)[1];
-		console.log(parametros);
+		//console.log(parametros);
 		if(parametros == HPD_1){
 			var tabiniciate = getElementsByClassName('iniciate');
 			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
