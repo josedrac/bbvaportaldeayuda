@@ -189,25 +189,6 @@ margin-top:-19px;
 	border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
-
-.bloqueEnlaces {
-	text-align: right;
-	margin-bottom: 10px;
-	margin-right: 5px;
-	color: #003F8C;
-	font-size: 12px;
-	font-family: BBVA Web Book,  Arial;
-}
-
-.bloqueEnlaces a.enlaceMenu {
-	text-decoration: none;
-	color:  #8B9098;
-	font-size: 12px;
-	font-family: BBVA Web Light, Arial;
-	font-weight: normal;
-
-}
-
 </style>
 <!--[if IE]>
 
@@ -244,14 +225,11 @@ margin-top:-19px;
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
-
-<div class="bloqueEnlaces">Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">| English</a></div>
-
 <div class="cabeceramenu">
   <ul>
 	<li id="inicio" class="iniciate"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate" target="_parent">HPD</a></span></span></li>
 
-	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">HPD 2.0</a></span></span></li>
+	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2"  target="_parent">HPD 2.0</a></span></span></li>
   </ul>
 </div>
 
