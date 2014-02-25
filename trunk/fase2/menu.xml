@@ -173,7 +173,7 @@ margin-top:-19px;
 .cabeceramenu ul li.movilidad,
 .cabeceramenu ul li.exito
  {
-	width: 175.75px;
+	width: 140px;
 }
 
 .cabeceramenu  ul li.homefirst {
@@ -268,8 +268,6 @@ margin-top:-19px;
 </div>
 
 <script type="text/javascript">
-
-//console.debug('v1 - menu.xml');
 
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
@@ -384,6 +382,7 @@ if (!Array.prototype.indexOf) {
 
 	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
+	document.getElementById('hpd2').onclick = function() {Go('hpd2');};
 	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
 	document.getElementById('trucosyconsejos').onclick = function() {Go('trucosyconsejos');};
 	document.getElementById('movilidad').onclick = function() {Go('movilidad');};
@@ -393,6 +392,7 @@ if (!Array.prototype.indexOf) {
 	{
 		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/home";}
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
+		else if(destination=='hpd2'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/hpd-2";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
 		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
 		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movilidad-apps";}
@@ -450,6 +450,13 @@ if (!Array.prototype.indexOf) {
 		    var tabmovilidad = getElementsByClassName('movilidad');
 			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+
+
+		}
+		if(parametros.indexOf("hpd-2")!=-1){
+		    var tabhpd2 = getElementsByClassName('hpd2');
+			tabhpd2[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabhpd2[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 
 
 		}
