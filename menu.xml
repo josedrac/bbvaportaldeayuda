@@ -443,7 +443,7 @@ if (!Array.prototype.indexOf) {
 		} else if(parametros.indexOf("trucosyconsejos")!=-1){
 			jQuery('.trucos').addClass("selected");
 			return;
-		} else if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){			
+		} else if((parametros.indexOf("iniciate")!=-1) || (parametros.indexOf("hpd")!=-1) &&(parametros.indexOf("google-apps")==-1)){			
 			jQuery('.iniciate').addClass("selected");
 			return;
 		}else if(parametros.indexOf("movilidad")!=-1){
