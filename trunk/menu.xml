@@ -482,7 +482,7 @@ if (!Array.prototype.indexOf) {
 			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
-		}else if(parametros.indexOf("hpd-2")!=-1){
+		}else if((parametros.indexOf("hpd-2")!=-1)&&(parametros.indexOf("iniciate")==-1)){
 			console.log(parametros);
 			console.log(parametros.indexOf("hpd-2"));
 			jQuery('.hpd2').addClass("selected");
