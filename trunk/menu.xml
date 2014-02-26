@@ -438,55 +438,26 @@ if (!Array.prototype.indexOf) {
 		{
 			jQuery('.homefirst').addClass("selectedLeft");
 			return;
-			/*var tabhomefirst = getElementsByClassName('homefirst');
-			tabhomefirst[0].style['border-bottom-left-radius']="5px";
-			tabhomefirst[0].style['border-top-left-radius']="5px";
-			tabhomefirst[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabhomefirst[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 		}else if(parametros.indexOf("casos-de-exito")!=-1){
 			jQuery('.exito').addClass("selected");
 			return;
-			/*var tabexito = getElementsByClassName('exito');
-			tabexito[0].style['border-bottom-right-radius']="5px";
-			tabexito[0].style['border-top-right-radius']="5px";
-			tabexito[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabexito[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
-
 		} else if(parametros.indexOf("google-apps")!=-1){
 			jQuery('.apps').addClass("selected");
 			return;
-		    /*var tabapps = getElementsByClassName('apps');
-			tabapps[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabapps[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
-
 		} else if(parametros.indexOf("trucosyconsejos")!=-1){
 			jQuery('.trucos').addClass("selected");
 			return;
-			/*var tabtrucos = getElementsByClassName('trucos');
-			tabtrucos[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
-
 		} else if((parametros.indexOf("hpd-2")!=-1)){
 			console.log('only hpd');						
 			jQuery('.hpd2').addClass("selected");
 			jQuery('.iniciate').removeClass("selected");
 			return;
-		    /*var tabhpd2 = getElementsByClassName('hpd2');
-			tabhpd2[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabhpd2[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 		}	else if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){			
 			jQuery('.iniciate').addClass("selected");
 			return;
-			/*var tabiniciate = getElementsByClassName('iniciate');
-			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 		}else if(parametros.indexOf("movilidad")!=-1){
 			jQuery('.movilidad').addClass("selected");
 			return;
-		    /*var tabmovilidad = getElementsByClassName('movilidad');
-			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
-			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
-
 		}
 	}
 
