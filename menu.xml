@@ -433,8 +433,6 @@ if (!Array.prototype.indexOf) {
 	{
 
 		var parametros = gadgets.util.getUrlParameters()["parent"];
-
-		console.log("comparing to highlight");
 		console.log(parametros);
 
 		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
