@@ -448,7 +448,6 @@ if (!Array.prototype.indexOf) {
 			jQuery('.trucos').addClass("selected");
 			return;
 		} else if((parametros.indexOf("hpd-2")!=-1)){
-			console.log('only hpd');						
 			jQuery('.hpd2').addClass("selected");
 			jQuery('.iniciate').removeClass("selected");
 			return;
