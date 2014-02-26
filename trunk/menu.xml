@@ -414,7 +414,6 @@ if (!Array.prototype.indexOf) {
 	gadgets.util.registerOnLoadHandler(renderSelected);
 
 	function renderSelected(){
-		console.log('cleaning styles');
 		resetStyles();
 	}
 	function resetStyles (){
