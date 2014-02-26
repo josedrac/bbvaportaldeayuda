@@ -467,8 +467,7 @@ if (!Array.prototype.indexOf) {
 			tabtrucos[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
-		} else if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){
-			console.log(parametros);
+		} else if((parametros.indexOf("iniciate")!=-1)&&(parametros.indexOf("google-apps")==-1)){			
 			console.log(parametros.indexOf("iniciate"));
 			jQuery('.iniciate').addClass("selected");
 			return;
@@ -482,9 +481,7 @@ if (!Array.prototype.indexOf) {
 			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";*/
 
-		}else if((parametros.indexOf("hpd-2")!=-1)&&(parametros.indexOf("iniciate")==-1)){
-			console.log(parametros);
-			console.log(parametros.indexOf("hpd-2"));
+		}else if((parametros.indexOf("hpd-2")!=-1) && !(parametros.indexOf("iniciate")!=-1)){						
 			jQuery('.hpd2').addClass("selected");
 			return;
 		    /*var tabhpd2 = getElementsByClassName('hpd2');
