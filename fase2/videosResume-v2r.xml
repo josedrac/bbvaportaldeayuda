@@ -556,7 +556,7 @@ color:#434A58;
 		 document.getElementById("allcontent1").onclick = function(){ Go(urlbutton1);};
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlbutton2);};
 
-		 return delayRender;
+		 return delayRender();
 	}
 
 	function Go(destination)
