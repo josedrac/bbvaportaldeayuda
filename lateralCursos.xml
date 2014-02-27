@@ -349,7 +349,6 @@
 				window.open(theURL,winName);
 			}
 			function Go2(destination){
-			    //console.debug(destination);
 				MM_openBrWindow(destination,'_blank');
 				return false;
 			} 
