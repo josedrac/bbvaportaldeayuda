@@ -599,8 +599,7 @@
 	 	console.log(document.getElementsByClassName('youtubeIframe'));
 	 	console.log(document.getElementsByClassName('youtubeIframe')[0].style.display);
 	 	for (var i=0;i<iframes;i++)
-		{
-		console.log(iframes[i].style.display); 
+		{ 
 		document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
 		}
 	 	
