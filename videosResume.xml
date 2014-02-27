@@ -595,7 +595,7 @@
 	//Load
 	 cargaVideos();
 	 function paiting(){
-	 	window.setTimeout("showIframes()",500);	
+	 	window.setTimeout("showIframes()",1000);	
 	 }	 
 	 function showIframes() {
 	 	//console.log('viva');
