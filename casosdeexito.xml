@@ -502,8 +502,11 @@
 		}
 
 		//delay loading 
-		window.setTimeout("showIframes()",500);
-	  
+		delayRender();
+	    function delayRender(){
+	    	console.log('lazy');
+	    	window.setTimeout("showIframes()",500);	
+	    }
 	 	function showIframes() {
 	 		//console.log('debugg');
 		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
