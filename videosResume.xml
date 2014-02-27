@@ -560,7 +560,7 @@
 	
 	 function cargaVideos()
 	 {
-		 console.log('ladecima');
+		 console.log('benzema');
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 		 document.getElementById("allcontent").onclick = function(){ Go(Urlall);};
 		 
