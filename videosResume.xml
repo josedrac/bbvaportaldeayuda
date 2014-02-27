@@ -598,7 +598,7 @@
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	for (var i=0;i<iframes;i++)
 		{ 
-		document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
+		//document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
 		}
 	 	
 	 }		
