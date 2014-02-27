@@ -585,11 +585,12 @@
 	}
 
 	function Go(destination){
-	window.parent.location.href = destination;
+	//window.parent.location.href = destination;
 	return false;
 	}
 	//Load
 	cargaVideos();
+
 
  </script>
     ]]>
