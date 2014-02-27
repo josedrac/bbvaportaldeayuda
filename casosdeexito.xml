@@ -498,6 +498,8 @@
 	    return false;
 		}
 
+		console.log('soy yo');
+
   </script>
     ]]>
   </Content>
