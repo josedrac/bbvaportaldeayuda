@@ -504,13 +504,10 @@
 		//delay loading 
 		delayRender();
 	    function delayRender(){
-	    	console.log('lazy');
 	    	window.setTimeout('showIframes()',1500);	
 	    }
 	 	function showIframes() {
-	 		console.log('debugg');
-
-	 		console.log(document.getElementsByClassName('youtubeIframe').length);
+	 		//console.log('debugg');
 
 		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 
