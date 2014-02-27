@@ -595,11 +595,10 @@
 	//Load
 	 cargaVideos();
 	 function paiting(){
-	 	console.log('dentro');
-	 	window.setTimeout("showIframes()",3000);	
+	 	window.setTimeout("showIframes()",500);	
 	 }	 
 	 function showIframes() {
-	 	console.log('viva');
+	 	//console.log('viva');
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	for (var i=0;i<iframes;i++)
 		{ 
