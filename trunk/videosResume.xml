@@ -594,10 +594,9 @@
 	}
 	//Load
 	 cargaVideos();
-	 function showIframes{
+	 function showIframes() {
 	 	document.getElementsByClassName('youtubeIframe').display='visible';
 	 }	
-	
 	
 
 
