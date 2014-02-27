@@ -37,95 +37,95 @@
 				font-weight: bold;
 			}
   </style>
-  <table width="100%" border="0" id="tablaconfig">  
+<table width="100%" border="0" id="tablaconfig">  
+		<tr>       
+            <td>
+                Url -Page All Videos: <input type="text" size="100" id="Urlall" value="__UP_Urlall__"   onchange="registra('Urlall')"/>                   
+            </td>
+        </tr>
+		<tr/>
+		<tr>       
+            <td>
+                Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
+            </td>
+        </tr>
+		<tr/>
+		<tr>       
+            <td>
+                Img - Tag: <input type="text" size="100" id="imgTag" value="__UP_imgTag__"   onchange="registra('imgTag')"/>                   
+            </td>
+        </tr>
+		<tr>       
+            <td>
+                Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
+            </td>
+        </tr>
+ 
+ 
 			<tr>       
-                <td>
-                    Url -Page All Videos: <input type="text" size="100" id="Urlall" value="__UP_Urlall__"   onchange="registra('Urlall')"/>                   
-                </td>
-            </tr>
-			<tr/>
-			<tr>       
-                <td>
-                    Title - ComboBoxVideo: <input type="text" size="100" id="titlecomboVideo" value="__UP_titlecomboVideo__"   onchange="registra('titlecomboVideo')"/>                   
-                </td>
-            </tr>
-			<tr/>
-			<tr>       
-                <td>
-                    Img - Tag: <input type="text" size="100" id="imgTag" value="__UP_imgTag__"   onchange="registra('imgTag')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
-                </td>
-            </tr>
-	 
-	 
-				<tr>       
-                <td>
-                    Title - Video: <input type="text" size="100" id="titleVideo" value="__UP_titleVideo__"   onchange="registra('titleVideo')"/>                   
-                </td>
-            </tr>
-			 <tr>       
-                <td>
-				 Url to Video: <input type="text" size="100" id="urlVideo" value="__UP_urlVideo__"   onchange="registra('urlVideo')"/>   
+            <td>
+                Title - Video: <input type="text" size="100" id="titleVideo" value="__UP_titleVideo__"   onchange="registra('titleVideo')"/>                   
+            </td>
+        </tr>
+		 <tr>       
+            <td>
+			 Url to Video: <input type="text" size="100" id="urlVideo" value="__UP_urlVideo__"   onchange="registra('urlVideo')"/>   
 
-					
-                </td>
-            </tr>
-			<tr>       
-                <td>
-				 Url to Saber más: <input type="text" size="100" id="urlsabermas" value="__UP_urlsabermas__"   onchange="registra('urlsabermas')"/>   
+				
+            </td>
+        </tr>
+		<tr>       
+            <td>
+			 Url to Saber más: <input type="text" size="100" id="urlsabermas" value="__UP_urlsabermas__"   onchange="registra('urlsabermas')"/>   
 
-					
-                </td>
-            </tr>
+				
+            </td>
+        </tr>
+		<tr>       
+            <td>
+            Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
+           
+            </td>
+        </tr>
+		<tr>       
+            <td>
+                Img - Tag2: <input type="text" size="100" id="imgTag2" value="__UP_imgTag2__"   onchange="registra('imgTag2')"/>                   
+            </td>
+        </tr>
+		<tr>       
+            <td>
+                Tag - Video2: <input type="text" size="100" id="tagVideo2" value="__UP_tagVideo2__"   onchange="registra('tagVideo2')"/>                   
+            </td>
+        </tr>
+ 
+ 
 			<tr>       
-                <td>
-                Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
-               
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Img - Tag2: <input type="text" size="100" id="imgTag2" value="__UP_imgTag2__"   onchange="registra('imgTag2')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Tag - Video2: <input type="text" size="100" id="tagVideo2" value="__UP_tagVideo2__"   onchange="registra('tagVideo2')"/>                   
-                </td>
-            </tr>
-	 
-	 
-				<tr>       
-                <td>
-                    Title - Video2: <input type="text" size="100" id="titleVideo2" value="__UP_titleVideo2__"   onchange="registra('titleVideo2')"/>                   
-                </td>
-            </tr>
-			 <tr>       
-                <td>
-				 Url to Video2: <input type="text" size="100" id="urlVideo2" value="__UP_urlVideo2__"   onchange="registra('urlVideo2')"/>   
+            <td>
+                Title - Video2: <input type="text" size="100" id="titleVideo2" value="__UP_titleVideo2__"   onchange="registra('titleVideo2')"/>                   
+            </td>
+        </tr>
+		 <tr>       
+            <td>
+			 Url to Video2: <input type="text" size="100" id="urlVideo2" value="__UP_urlVideo2__"   onchange="registra('urlVideo2')"/>   
 
-					
-                </td>
-            </tr>
-			<tr>       
-                <td>
-				 Url to Saber más2: <input type="text" size="100" id="urlsabermas2" value="__UP_urlsabermas2__"   onchange="registra('urlsabermas2')"/>   
+				
+            </td>
+        </tr>
+		<tr>       
+            <td>
+			 Url to Saber más2: <input type="text" size="100" id="urlsabermas2" value="__UP_urlsabermas2__"   onchange="registra('urlsabermas2')"/>   
 
-					
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                Text - Video2: <textarea id="textVideo2" style="height: 245px; width: 100%" onchange="registra('textVideo2')" >__UP_textVideo2__</textarea>
-               
-                </td>
-            </tr>
-			
-	</table>	
+				
+            </td>
+        </tr>
+		<tr>       
+            <td>
+            Text - Video2: <textarea id="textVideo2" style="height: 245px; width: 100%" onchange="registra('textVideo2')" >__UP_textVideo2__</textarea>
+           
+            </td>
+        </tr>
+		
+</table>	
 
     <script type="text/javascript">           
             // Get userprefs
@@ -571,7 +571,7 @@
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Saber más</button>";
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
-		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="never" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
+		 document.getElementById("urlVideo").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 if(imgTag2  != ''){
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
@@ -580,7 +580,7 @@
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Saber más</button>";
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
-		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="never" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
+		 document.getElementById("urlVideo2").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
 		 return false;
 	}
 
