@@ -11,6 +11,9 @@
 <![CDATA[
 
 <style type="text/css">
+iframe{
+	display:none; 
+}
 	/* @group fonts */
 	@font-face {
 		font-family: 'BBVA Web Light';
