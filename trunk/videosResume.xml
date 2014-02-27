@@ -595,9 +595,9 @@
 	//Load
 	 cargaVideos();
 	 function showIframes() {
+	 	console.log(document.getElementsByClassName('youtubeIframe'));
 	 	document.getElementsByClassName('youtubeIframe').display='block';
-	 }	
-	
+	 }		
 
 
  </script>
