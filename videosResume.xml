@@ -596,10 +596,12 @@
 	 cargaVideos();
 	 function showIframes() {
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
-	 	for(n in iframes){
-	 	 console.log(document.getElementsByClassName('youtubeIframe')[n]);
-	 	 document.getElementsByClassName('youtubeIframe')[n].display='block';	
-	 	}
+
+	 	for (var i=0;i<iframes.length;i++)
+		{
+		console.log(iframes[i].display); 
+		document.getElementsByClassName('youtubeIframe')[i].display='block';	
+		}
 	 	
 	 }		
 
