@@ -509,6 +509,7 @@
 	    }
 	 	function showIframes() {
 	 		console.log('debugg');
+	 		console.log(document.getElementsByClassName('youtubeIframe'));
 		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 		 	for (var i=0;i<iframes;i++)
 			{ 
