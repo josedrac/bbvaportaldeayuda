@@ -498,7 +498,17 @@
 	    return false;
 		}
 
-		console.log('soy yo');
+		//delay loading 
+		window.setTimeout("showIframes()",3500);
+	  
+	 	function showIframes() {
+	 		//console.log('debugg');
+		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
+		 	for (var i=0;i<iframes;i++)
+			{ 
+			document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
+			}	 	
+	 	}	
 
   </script>
     ]]>
