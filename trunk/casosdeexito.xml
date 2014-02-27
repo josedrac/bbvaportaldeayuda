@@ -367,7 +367,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			   if(data.getValue(i,10)!=""){
-			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' class='youtubeIframe' ></iframe></div>";
 			   
 			   /*html += "<object data='"+data.getValue(i,10)+"'>" +
 		   			   "<param name='video' value='"+data.getValue(i,10)+"'></param>" +
@@ -499,7 +499,7 @@
 		}
 
 		//delay loading 
-		window.setTimeout("showIframes()",3500);
+		window.setTimeout("showIframes()",500);
 	  
 	 	function showIframes() {
 	 		//console.log('debugg');
