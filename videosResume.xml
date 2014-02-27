@@ -596,7 +596,7 @@
 	 cargaVideos();
 	 function paiting(){
 	 	console.log('dentro');
-	 	window.setTimeout("showIframes",3000);	
+	 	window.setTimeout("showIframes()",3000);	
 	 }	 
 	 function showIframes() {
 	 	console.log('viva');
