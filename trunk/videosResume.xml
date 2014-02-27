@@ -598,7 +598,7 @@
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	console.log(document.getElementsByClassName('youtubeIframe'));
 	 	console.log(document.getElementsByClassName('youtubeIframe')[0].style.display);
-	 	for (var i=0;i<iframes.length;i++)
+	 	for (var i=0;i<iframes;i++)
 		{
 		console.log(iframes[i].display); 
 		document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
