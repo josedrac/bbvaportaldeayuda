@@ -418,7 +418,7 @@
 		}
 
 		.youtubeIframe{
-			visibility:hidden;
+			display:none;
 		}
 		
 	</style>
@@ -594,14 +594,11 @@
 	}
 	//Load
 	 cargaVideos();
-	 
 	 function showIframes() {
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
-	 	//console.log(document.getElementsByClassName('youtubeIframe'));
-	 	//console.log(document.getElementsByClassName('youtubeIframe')[0].style.display);
 	 	for (var i=0;i<iframes;i++)
 		{ 
-		document.getElementsByClassName('youtubeIframe')[i].style.visibility='visible';	
+		document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
 		}
 	 	
 	 }		
