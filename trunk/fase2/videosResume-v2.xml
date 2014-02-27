@@ -136,6 +136,9 @@
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <head>
     <style type="text/css">
+        iframe{
+    display:none; 
+}
         @font-face {
             font-family: 'BBVA Web Light';
             src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
@@ -439,8 +442,6 @@
 </body>
 
 <script type="text/javascript">
-
-    //console.debug('v14 - videosResume-v2.xml');
 
     var gadgetHelper = null;
     var prefs = new gadgets.Prefs();

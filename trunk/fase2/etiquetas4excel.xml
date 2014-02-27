@@ -272,7 +272,6 @@
 </div>
 	
    <script type="text/javascript">
-   //console.debug('version23');
     if (!Array.prototype.indexOf) {
     Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
         "use strict";
@@ -324,9 +323,7 @@
 	 var ArrayDeEtiquetas = new Array();
      var filasTotales = 0;
 	 var auxiliar = gadgets.util.getUrlParameters()["parent"];
-	 //console.debug(auxiliar);
 	 if(auxiliar.indexOf('=')!=-1){
-	 //console.debug('entro');
 	 var urlpadre = gadgets.util.getUrlParameters()["parent"].split("=");
 	 urlpadre[1]=urlpadre[1].replace(/\+/g,' ');
 	 urlparameters = decodeURIComponent(urlpadre[1]);
@@ -584,7 +581,6 @@
     var muestra="";
 	var aux1= aux.split(",");
 	muestra +="<div class='titular'>Por nivel</div>";
-	//console.debug(urlparameters);
 	for (var i=0; i<aux1.length; i++){
 	    
 	
