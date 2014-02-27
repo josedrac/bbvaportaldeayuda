@@ -529,7 +529,6 @@ color:#434A58;
 
 	 function cargaVideo()
 	 {
-		 console.log('raul seleccion');
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 			
          if(imgTag  != ''){
