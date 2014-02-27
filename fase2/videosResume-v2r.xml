@@ -113,6 +113,9 @@
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	  <head>
 		<style type="text/css">
+			iframe{
+			display:none !important; 
+			}
 		  /* @group fonts */
 			@font-face {
 				font-family: 'BBVA Web Light';

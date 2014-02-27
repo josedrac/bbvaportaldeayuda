@@ -145,7 +145,7 @@
 	  <head>
 		<style type="text/css">
 			iframe{
-			display:none; 
+			display:none !important; 
 			}
 		  /* @group fonts */
 			@font-face {
