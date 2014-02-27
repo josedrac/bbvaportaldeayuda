@@ -598,6 +598,7 @@
 	 	window.setTimeout("showIframes()",500);
 	 }	 
 	 function showIframes() {
+	 	console.log('firstvideo');
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	for (var i=0;i<iframes;i++)
 		{ 
