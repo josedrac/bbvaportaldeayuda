@@ -558,9 +558,9 @@
 	 var urlsabermas2 = prefs.getString("urlsabermas2");
 	
 	
-	 function cargaVideos()
+	 function cargaVideos(count)
 	 {
-		 console.log('benzema');
+		 console.log('benzema :'+count);
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 		 document.getElementById("allcontent").onclick = function(){ Go(Urlall);};
 		 
@@ -581,7 +581,7 @@
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Saber más</button>";
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
 		 document.getElementById("urlVideo2").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
-		 return false;
+		 return count++;
 	}
 
 	function Go(destination){
@@ -589,7 +589,9 @@
 	return false;
 	}
 	//Load
-	cargaVideos();
+	var count = 0;
+	cargaVideos(count);
+	
 
 
  </script>
