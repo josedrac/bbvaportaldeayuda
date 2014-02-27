@@ -558,7 +558,7 @@
 	 var urlsabermas2 = prefs.getString("urlsabermas2");
 	
 	
-	 function cargaVideo()
+	 function cargaVideos()
 	 {
 		 console.log('ladecima');
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
@@ -589,7 +589,7 @@
 	return false;
 	}
 	//Load
-	cargaVideo();
+	cargaVideos();
 
  </script>
     ]]>
