@@ -137,8 +137,8 @@
 <head>
     <style type="text/css">
         iframe{
-    display:none; 
-}
+            display:none !important; 
+        }
         @font-face {
             font-family: 'BBVA Web Light';
             src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');

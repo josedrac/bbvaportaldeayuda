@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="videoResume.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="SopraGroup-UX">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
@@ -145,6 +145,9 @@
 	  <head>
 		<style type="text/css">
 		  /* @group fonts */
+		  	iframe{
+            display:none !important; 
+        	}
 			@font-face {
 				font-family: 'BBVA Web Light';
 				src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');

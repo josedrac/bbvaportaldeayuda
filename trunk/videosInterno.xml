@@ -429,7 +429,6 @@
 					}
 					else if(i==filas-1)
                     {    			
-				        //console.debug('ANTERIOR>');
 						var pagActualAux = pagActual;
 				        pagActual--;
 						
