@@ -559,10 +559,10 @@ font-weight: normal;
 
 		 return false;
 	}
-	function cargaCompleta()
+	/*function cargaCompleta()
 	{
 		cargaVideo();
-	}
+	}*/
 
 	function Go(destination)
 	{
@@ -570,7 +570,8 @@ font-weight: normal;
 
 		return false;
 	}
-
+	//carga final;
+	cargaVideo();
  </script>
     ]]>
   </Content>
