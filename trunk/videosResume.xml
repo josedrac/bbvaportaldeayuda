@@ -416,6 +416,10 @@
 			margin: 5px auto 5px 0;
 			width: 650px;
 		}
+
+		.youtubeIframe{
+			display:none;
+		}
 		
 	</style>
 		
@@ -556,9 +560,7 @@
 	 var urlVideo2 = prefs.getString("urlVideo2");
 	 var tagVideo2 = prefs.getString("tagVideo2");
 	 var urlsabermas2 = prefs.getString("urlsabermas2");
-	
-	 var numTimes = true;
-	
+		
 	 function cargaVideos()
 	 {
 		 
@@ -572,7 +574,7 @@
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Saber más</button>";
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
-		 document.getElementById("urlVideo").innerHTML = '<iframe style="display: none;" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';
+		 document.getElementById("urlVideo").innerHTML = '<iframe class="youtubeIframe" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';
 		
 		 if(imgTag2  != ''){
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
@@ -581,8 +583,8 @@
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Saber más</button>";
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
-		 document.getElementById("urlVideo2").innerHTML = '<iframe style="display: none;" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';		 
-		 numTimes = false;
+		 document.getElementById("urlVideo2").innerHTML = '<iframe class="youtubeIframe" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';		 
+		
 		 return;
 	}
 
@@ -591,10 +593,8 @@
 	return false;
 	}
 	//Load
-	console.log('numTimes: '+numTimes)
-	if(numTimes){
-	  cargaVideos();	
-	}
+	 cargaVideos();	
+	 document.getElementsByClassName('youtubeIframe').display=block;
 	
 	
 
