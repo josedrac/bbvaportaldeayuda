@@ -111,10 +111,7 @@
   <Content type="html" charset="UTF-8">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>	 
-	<style type="text/css">
-		iframe{
-		//display:none !important; 
-		}
+	<style type="text/css">		
 	  /* @group fonts */
 		@font-face {
 			font-family: 'BBVA Web Light';
