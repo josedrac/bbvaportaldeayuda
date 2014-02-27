@@ -595,7 +595,7 @@
 	//Load
 	 cargaVideos();
 	 function delayRender(){
-	 	window.setTimeout("showIframes()",3000);
+	 	window.setTimeout("showIframes()",500);
 	 }	 
 	 function showIframes() {
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
