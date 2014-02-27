@@ -504,7 +504,7 @@
 		//delay loading 
 		delayRender();
 	    function delayRender(){
-	    	window.setTimeout('showIframes()',1500);	
+	    	window.setTimeout('showIframes()',2000);	
 	    }
 	 	function showIframes() {
 	 		//console.log('debugg');
