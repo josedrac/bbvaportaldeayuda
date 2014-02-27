@@ -351,7 +351,7 @@
 			
 			 if(filas<1)
             {
-    			html += '<p class="text">No hay ningí°£ontenido referente a Portales.</p>';
+    			html += '<p class="text">No hay ningò® £ontenido referente a Portales.</p>';
             }
             else
             {               
@@ -420,8 +420,8 @@
 					}
 					else if(i==filas-1)
                     {    			
-
-				        //console.debug('ANTERIOR>');						var pagActualAux = pagActual;
+				        //console.debug('ANTERIOR>');
+						var pagActualAux = pagActual;
 				        pagActual--;
 						
 					    html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
@@ -497,6 +497,8 @@
 	    window.parent.location.href = destination;
 	    return false;
 		}
+
+		console.log('soy yo');
 
   </script>
     ]]>
