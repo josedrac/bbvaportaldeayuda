@@ -505,10 +505,10 @@
 		delayRender();
 	    function delayRender(){
 	    	console.log('lazy');
-	    	window.setTimeout("showIframes()",500);	
+	    	window.setTimeout('showIframes()',500);	
 	    }
 	 	function showIframes() {
-	 		//console.log('debugg');
+	 		console.log('debugg');
 		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 		 	for (var i=0;i<iframes;i++)
 			{ 
