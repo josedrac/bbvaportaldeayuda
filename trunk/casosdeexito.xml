@@ -267,6 +267,9 @@
 	.checkpage1{
     margin-top:-5px;
 	margin-left:260px;
+	}
+	.youtubeIframe{
+			display:none;
 	}	
 	
 	.checkpage a,
