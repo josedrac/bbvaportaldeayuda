@@ -277,6 +277,10 @@
 		padding-left:2px;
 		padding-right:2px;
 	}
+
+	.youtubeIframe{
+			display:none;
+	}
 	
 	</style>
 	
@@ -351,7 +355,7 @@
 			
 			 if(filas<1)
             {
-    			html += '<p class="text">No hay ningò® £ontenido referente a Portales.</p>';
+    			html += '<p class="text">No hay ningí°£ontenido referente a Portales.</p>';
             }
             else
             {               
@@ -367,7 +371,7 @@
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
 			   if(data.getValue(i,10)!=""){
-			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
+			   html += "<iframe class='youtubeIframe' src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
 			   
 			   /*html += "<object data='"+data.getValue(i,10)+"'>" +
 		   			   "<param name='video' value='"+data.getValue(i,10)+"'></param>" +
@@ -420,8 +424,8 @@
 					}
 					else if(i==filas-1)
                     {    			
-				        //console.debug('ANTERIOR>');
-						var pagActualAux = pagActual;
+
+				        //console.debug('ANTERIOR>');						var pagActualAux = pagActual;
 				        pagActual--;
 						
 					    html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar +'\');"><img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/anterior.png" /></a></div>';
@@ -498,7 +502,17 @@
 	    return false;
 		}
 
-		console.log('soy yo');
+		//delay loading 
+		window.setTimeout("showIframes()",3500);
+	  
+	 	function showIframes() {
+	 		//console.log('debugg');
+		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
+		 	for (var i=0;i<iframes;i++)
+			{ 
+			document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
+			}	 	
+	 	}	
 
   </script>
     ]]>
