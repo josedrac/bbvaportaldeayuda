@@ -593,7 +593,7 @@
 	//Load
 	console.log('numTimes: '+numTimes)
 	if(numTimes){
-	  cargaVideos(count);	
+	  cargaVideos();	
 	}
 	
 	
