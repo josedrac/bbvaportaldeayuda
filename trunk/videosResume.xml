@@ -418,7 +418,7 @@
 		}
 
 		.youtubeIframe{
-			visibility:hidden;
+			display:none;
 		}
 		
 	</style>
@@ -595,7 +595,7 @@
 	//Load
 	 cargaVideos();
 	 function showIframes() {
-	 	document.getElementsByClassName('youtubeIframe').display='visible';
+	 	document.getElementsByClassName('youtubeIframe').display='block';
 	 }	
 	
 
