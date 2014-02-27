@@ -599,6 +599,7 @@
 	 	window.setTimeout("showIframes",3000);	
 	 }	 
 	 function showIframes() {
+	 	console.log('viva');
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	for (var i=0;i<iframes;i++)
 		{ 
