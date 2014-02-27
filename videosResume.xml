@@ -572,7 +572,7 @@
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Saber más</button>";
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
-		 document.getElementById("urlVideo").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';
+		 document.getElementById("urlVideo").innerHTML = '<iframe style="display: none;" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';
 		
 		 if(imgTag2  != ''){
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
@@ -581,7 +581,7 @@
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Saber más</button>";
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
-		 document.getElementById("urlVideo2").innerHTML = '<iframe frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';		 
+		 document.getElementById("urlVideo2").innerHTML = '<iframe style="display: none;" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';		 
 		 numTimes = false;
 		 return;
 	}
