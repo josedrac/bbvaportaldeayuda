@@ -201,8 +201,9 @@
 	.linevideo{
 		width:610px;
 		height:4px;
-		display:block;
-		margin-bottom:23px;
+		display:block;		
+		margin-bottom: 20px;
+		padding-top: 25px;
 	}
 	
 	.sites-embed-align-left-wrapping-off{
@@ -508,7 +509,6 @@
 	    }
 	 	function showIframes() {
 	 		//console.log('debugg');
-
 		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 
 		 	for (var i=0;i<iframes;i++)
