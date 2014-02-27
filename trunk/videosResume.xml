@@ -585,7 +585,7 @@
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
 		 document.getElementById("urlVideo2").innerHTML = '<iframe class="youtubeIframe" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';		 
 		
-		 return paiting();
+		 return delayRender();
 	}
 
 	function Go(destination){
@@ -594,8 +594,8 @@
 	}
 	//Load
 	 cargaVideos();
-	 function paiting(){
-	 	window.setTimeout("showIframes()",2000);	
+	 function delayRender(){
+	 	window.setTimeout("showIframes()",3000);
 	 }	 
 	 function showIframes() {
 	 	console.log('debugg');
