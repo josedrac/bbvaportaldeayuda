@@ -595,7 +595,6 @@
 	//Load
 	 cargaVideos();
 	 function showIframes() {
-	 	debugger;
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	for(n in iframes){
 	 	 console.log(document.getElementsByClassName('youtubeIframe')[n]);
