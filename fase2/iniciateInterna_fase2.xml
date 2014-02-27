@@ -277,7 +277,6 @@
 	
 	
    <script type="text/javascript">
-   	//console.debug('');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");

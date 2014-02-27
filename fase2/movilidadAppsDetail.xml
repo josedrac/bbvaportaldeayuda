@@ -66,7 +66,6 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 <div class="container" id="container"></div>
 
    <script type="text/javascript">
-   //console.log('v3 movilidadAppsDetail.xml');
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -184,7 +183,6 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
                 }
                 var renderManual = function(manual)
                 {
-                  //console.log(manual);
                   var html_manual = '';
                   if(((typeof(manual.title) != 'undefined') && (manual.title != "")) && ((typeof(manual.url) != 'undefined') && (manual.url != "")))
                   {
