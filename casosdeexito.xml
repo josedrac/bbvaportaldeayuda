@@ -277,10 +277,6 @@
 		padding-left:2px;
 		padding-right:2px;
 	}
-
-	.youtubeIframe{
-			display:none;
-	}
 	
 	</style>
 	
@@ -500,7 +496,7 @@
 	    function Go(destination){
 	    window.parent.location.href = destination;
 	    return false;
-		}		
+		}
 
   </script>
     ]]>
