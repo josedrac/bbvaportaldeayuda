@@ -597,11 +597,11 @@
 	 function showIframes() {
 	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
 	 	console.log(document.getElementsByClassName('youtubeIframe'));
-	 	console.log(document.getElementsByClassName('youtubeIframe')[0].display);
+	 	console.log(document.getElementsByClassName('youtubeIframe')[0].style.display);
 	 	for (var i=0;i<iframes.length;i++)
 		{
 		console.log(iframes[i].display); 
-		document.getElementsByClassName('youtubeIframe')[i].display='block';	
+		document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
 		}
 	 	
 	 }		
