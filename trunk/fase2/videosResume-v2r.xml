@@ -569,7 +569,7 @@ color:#434A58;
 	 cargaVideo();
 	 function delayRender(){
 	 	console.log('delay');
-	 	window.setTimeout("showIframes()",500);
+	 	window.setTimeout("showIframes()",1500);
 	 }	 
 	 function showIframes() {
 	 	console.log('debugg');
