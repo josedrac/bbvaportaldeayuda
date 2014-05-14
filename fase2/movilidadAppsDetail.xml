@@ -71,8 +71,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 	 var urlTable = prefs.getString("_table_query_url");
 	 var dispositivo = gadgets.util.getUrlParameters()["parent"].split("app_id=");
    var parameters = dispositivo[1].split("&");
-   console.debug(parameters);
-	 var aux = gadgets.util.getUrlParameters()["parent"];
+   var aux = gadgets.util.getUrlParameters()["parent"];
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
