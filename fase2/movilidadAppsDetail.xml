@@ -70,6 +70,8 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
 	 var dispositivo = gadgets.util.getUrlParameters()["parent"].split("=");
+   console.debug('dispositivo:'+gadgets.util.getUrlParameters()["parent"]);
+   console.debug(gadgets.util.getUrlParameters()["parent"].split("="));
 	 var aux = gadgets.util.getUrlParameters()["parent"];
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
@@ -86,6 +88,7 @@ url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-med
 				var opts = {dataType:'jsonp'};
 				var query = new google.visualization.Query(urlTable, opts);
 				var querytosend = "select * where A like '%"+dispositivo[1]+"%' ";
+            console.debug(querytosend);
 				query.setQuery(querytosend);
 				query.send(handleQueryResponse);
 
