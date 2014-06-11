@@ -82,6 +82,12 @@ h1#elementGuide{
     font-weight: normal;
 }
 
+li.articleGuide{
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
       src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), 
