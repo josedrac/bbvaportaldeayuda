@@ -93,6 +93,7 @@ li.articleGuide{
 
 a.enlace{
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* @group fonts */
