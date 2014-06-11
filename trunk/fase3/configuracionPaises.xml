@@ -72,7 +72,7 @@ li{
 img {border:none;}
 .container .render .article .enlace ul.oslist { text-align: none; margin:0; padding: 0; }
 .container .render .article_ie 
-{ max-width: 180px;height: 300px;width: 32%;display: inline;}
+{ max-width: 180px;height: 80px;width: 32%;display: inline;}
 </style>
 <![endif]-->
 <script type="text/javascript">
@@ -83,15 +83,14 @@ img {border:none;}
          _IG_RegisterOnloadHandler(loadVisualizationAPI); 
 
          function loadVisualizationAPI() {
-                console.log('v1');
+                console.log('v2');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
         function getFromSpreadSheet(spreadsheetUrl,query,callBack){
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
-                var queryDC = new google.visualization.Query(spreadsheetUrl, opts); 
-                console.log(queryDC);   
+                var queryDC = new google.visualization.Query(spreadsheetUrl, opts);
                 queryDC.setQuery(query);                          
                 queryDC.send(callBack);  
         }
@@ -157,7 +156,6 @@ img {border:none;}
 
         function renderList(response){
                 document.getElementById('documentos').innerHTML="";
-                console.log(response);
                 var listData = new DataTableList(response.getDataTable());
                 var filas = listData.getNumberOfRows();               
                 var html= "";
@@ -200,12 +198,10 @@ img {border:none;}
 </script>
 <body>
 <div class="container">
-<div id="render" class="render">
-<ul id="paises" class="list-paises">
-</ul>
-<ul id="documentos">
-</ul>
-</div>
+  <div id="render" class="render">
+    <ul id="paises" class="list-paises"></ul>
+    <ul id="documentos"></ul>
+  </div>
 </div> 
 </body>
 
