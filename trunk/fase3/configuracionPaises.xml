@@ -76,6 +76,7 @@ img {border:none;}
 </style>
 <![endif]-->
 <script type="text/javascript">
+
          var gadgetHelper = null;
          var prefs = new _IG_Prefs();
          var urlTable = prefs.getString("_table_query_url");
@@ -83,6 +84,7 @@ img {border:none;}
          _IG_RegisterOnloadHandler(initGadget); 
 
         function initGadget() {
+                console.log('v1');
                 google.load("visualization", "1", {"packages": ["table"]});
                 getFromSpreadSheet(urlTable,firstQuery,renderCountriesList);
         }                
