@@ -85,9 +85,10 @@ img {border:none;}
 </div>
 </div> 
 <script type="text/javascript">
-     var gadgetHelper = null;
+         var gadgetHelper = null;
          var prefs = new _IG_Prefs();
          var urlTable = prefs.getString("_table_query_url");
+         console.log(urlTable);
          var firstQuery = "select A,B,C,D,E order by A";
          _IG_RegisterOnloadHandler(loadVisualizationAPI); 
 
