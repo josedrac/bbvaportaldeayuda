@@ -7,7 +7,8 @@
 </ModulePrefs>
 <UserPref name="_table_query_url" default_value="https://docs.google.com/a/bbva.com/spreadsheets/d/1a_CVjz3pqSszikAZ_zZHf9N3a7me06uN9avjoSKegI0" display_name="Data source url (Ej:https://docs.google.com/a/bbva.com/spreadsheets/d/1a_CVjz3pqSszikAZ_zZHf9N3a7me06uN9avjoSKegI0)" required="true"/>
 <Content type="html"><![CDATA[
-<script src="https://www.google.com/jsapi" type="text/javascript"></script>  
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <style type="text/css">
 .container { max-width: 620px; margin: 0; padding: 0; width: 100%; font-family: 'BBVA Web Book'; }
 .container .header { display: inline-block; width: 100%; }
@@ -180,7 +181,7 @@ img {border:none;}
 { max-width: 180px;height: 300px;width: 32%;display: inline;}
 </style>
 <![endif]-->
-<body onload="cargaCompleta()">
+<body>
 <div class="container">
         <ul class="list-paises">
         <li class="guia1"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spain.png"><span>España</span></li>
@@ -282,11 +283,12 @@ img {border:none;}
                 reload();
         }
 
-        jQuery(document).ready(function() {         
+        jQuery(document).ready(function() {
+          cargaCompleta();
           jQuery(".list-paises li").click(function(e){
               e.preventDefault();
               var val = jQuery(this).attr('class');               
-              console.log(val);           
+              console.log(val);          
               
           });
         });
