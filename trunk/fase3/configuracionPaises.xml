@@ -26,6 +26,133 @@
 .container .render .article .enlace ul.oslist li .oslogo { width: 32px; }
 .container .render .article .enlace div.short { text-align: left; padding: 10px; font-size: 11px; }
 .container .render .article .enlace div.short span { color: #434A58; }
+.show { display: block; }
+.noshow { 
+    float: left;
+    width: 100%;
+}
+
+.noshow span{
+        display: block;
+    } 
+
+li{
+    list-style: none;
+    float: left;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.flag{
+    width: 100px;
+    height: 75px;
+}
+
+.caja{
+    width: 300px;
+height: auto;
+float: left;
+
+border: 1px solid #DDE3EA;
+border-radius: 2px;
+-ms-border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+-khtml-border-radius: 2px;
+
+clear: both;
+margin-top: 15px;
+
+
+}
+
+.titulo{
+    border-bottom: 1px solid #DDE3EA;
+font-size: 16px;
+font-family: BBVA Web Book, Arial;
+color: #333;
+padding-left: 18px;
+padding-top: 14px;
+padding-bottom: 15px;
+background: linear-gradient(to bottom, #FFF 0%,#F5F7F8 100%);
+}
+
+ul{
+    padding-left: 19px;
+    padding-right: 19px;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+}
+.op1, .op2{
+    list-style: none;
+    float: left;
+    width: 100%;
+    text-align: left;
+
+    border-bottom: 1px solid #DDE3EA;
+    padding-bottom: 12px;
+    padding-top: 17px;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.link1, .link2{
+    padding-left: 0px;
+    vertical-align: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #0073C9;
+}
+
+
+/*  .guia1{
+        width: 100%;
+        height: auto;
+    }
+    .guia2{
+        width: 100%;
+        height: auto;
+    }
+    .guia3{
+        width: 100%;
+        height: auto;
+    }
+    .guia4{
+        width: 100%;
+        height: auto;
+    }
+    .guia5{
+        width: 100%;
+        height: auto;
+    }
+    .guia6{
+        width: 100%;
+        height: auto;
+    }
+    .guia7{
+        width: 100%;
+        height: auto;
+    }
+    .guia8{
+        width: 100%;
+        height: auto;
+    }
+    .guia9{
+        width: 100%;
+        height: auto;
+    }
+    .guia10{
+        width: 100%;
+        height: auto;
+    }
+*/
+
 
 
 
@@ -55,7 +182,19 @@ img {border:none;}
 <![endif]-->
 <body onload="cargaCompleta()">
 <div class="container">
-<div id="render" class="render"><div>
+        <ul class="list-paises">
+        <li class="guia1"><img class="flag" src="img/spain.png"><span>España</span></li>
+        <li class="guia2"><img class="flag" src="img/portugal.png"><span>Portugal</span></li>
+        <li class="guia3"><img class="flag" src="img/mexico.png"><span>Mexico</span></li>
+        <li class="guia4"><img class="flag" src="img/chile.png"><span>Chile</span></li>
+        <li class="guia5"><img class="flag" src="img/venezuela.png"><span>Venezuela</span></li>
+        <li class="guia6"><img class="flag" src="img/argentina.png"><span>Argentina</span></li>
+        <li class="guia7"><img class="flag" src="img/colombia.png"><span>Colombia</span></li>
+        <li class="guia8"><img class="flag" src="img/peru.png"><span>Peru</span></li>
+        <li class="guia9"><img class="flag" src="img/uruguay.png"><span>Uruguay</span></li>
+        <li class="guia10"><img class="flag" src="img/paraguay.png"><span>Paraguay</span></li>
+    </ul>
+<div id="render" class="render"></div>
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
@@ -142,6 +281,17 @@ img {border:none;}
         function cargaCompleta(){
                 reload();
         }
+
+            jQuery(document).ready(function() { 
+        
+        jQuery(".list-paises li").click(function(e){
+            e.preventDefault();
+            var val = jQuery(this).attr('class');               
+            
+            guia(val);
+            
+            //resetear(val);
+        });
  
 </script>
 </body>
