@@ -160,11 +160,13 @@ img {border:none;}
         function getGuides(urlSheet){
           var url = decodeURI(urlSheet);
           var query = "select A,B,C,D order by A";
+          console.log(url);
           getFromSpreadSheet(urlSheet,query,renderList);          
         }
 
         function renderList(response){
-                document.getElementById('documentos').innerHTML=""
+                document.getElementById('documentos').innerHTML="";
+                console.log(response);
                 var listData = new DataTableList(response.getDataTable());
                 var filas = listData.getNumberOfRows();               
                 var html= "";
