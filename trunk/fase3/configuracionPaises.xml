@@ -282,15 +282,13 @@ img {border:none;}
                 reload();
         }
 
-            jQuery(document).ready(function() { 
-        
-        jQuery(".list-paises li").click(function(e){
-            e.preventDefault();
-            var val = jQuery(this).attr('class');               
-            
-            guia(val);
-            
-            //resetear(val);
+        jQuery(document).ready(function() {         
+          jQuery(".list-paises li").click(function(e){
+              e.preventDefault();
+              var val = jQuery(this).attr('class');               
+              console.log(val);           
+              
+          });
         });
  
 </script>
