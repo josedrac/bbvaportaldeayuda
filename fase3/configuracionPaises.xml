@@ -184,15 +184,15 @@ img {border:none;}
 <div class="container">
         <ul class="list-paises">
         <li class="guia1"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spain.png"><span>España</span></li>
-        <li class="guia2"><img class="flag" src="img/portugal.png"><span>Portugal</span></li>
-        <li class="guia3"><img class="flag" src="img/mexico.png"><span>Mexico</span></li>
-        <li class="guia4"><img class="flag" src="img/chile.png"><span>Chile</span></li>
-        <li class="guia5"><img class="flag" src="img/venezuela.png"><span>Venezuela</span></li>
-        <li class="guia6"><img class="flag" src="img/argentina.png"><span>Argentina</span></li>
-        <li class="guia7"><img class="flag" src="img/colombia.png"><span>Colombia</span></li>
-        <li class="guia8"><img class="flag" src="img/peru.png"><span>Peru</span></li>
-        <li class="guia9"><img class="flag" src="img/uruguay.png"><span>Uruguay</span></li>
-        <li class="guia10"><img class="flag" src="img/paraguay.png"><span>Paraguay</span></li>
+        <li class="guia2"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/portugal.png"><span>Portugal</span></li>
+        <li class="guia3"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/mexico.png"><span>Mexico</span></li>
+        <li class="guia4"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/chile.png"><span>Chile</span></li>
+        <li class="guia5"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/venezuela.png"><span>Venezuela</span></li>
+        <li class="guia6"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/argentina.png"><span>Argentina</span></li>
+        <li class="guia7"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/colombia.png"><span>Colombia</span></li>
+        <li class="guia8"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/peru.png"><span>Peru</span></li>
+        <li class="guia9"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/uruguay.png"><span>Uruguay</span></li>
+        <li class="guia10"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paraguay.png"><span>Paraguay</span></li>
     </ul>
 <div id="render" class="render"></div>
 </div> 
