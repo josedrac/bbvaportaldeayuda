@@ -144,7 +144,7 @@ img {border:none;}
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<li class='article'><a onclick='getGuides(\'"+dataDC.getUrl(row)+"\')' class='enlace'>";
+                    html +="<li class='article'><a onclick='getGuides("+dataDC.getUrl(row)+")' class='enlace'>";
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
