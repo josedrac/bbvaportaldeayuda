@@ -50,112 +50,6 @@ li{
     height: 75px;
 }
 
-.caja{
-    width: 300px;
-height: auto;
-float: left;
-
-border: 1px solid #DDE3EA;
-border-radius: 2px;
--ms-border-radius: 2px;
--moz-border-radius: 2px;
--webkit-border-radius: 2px;
--khtml-border-radius: 2px;
-
-clear: both;
-margin-top: 15px;
-
-
-}
-
-.titulo{
-    border-bottom: 1px solid #DDE3EA;
-font-size: 16px;
-font-family: BBVA Web Book, Arial;
-color: #333;
-padding-left: 18px;
-padding-top: 14px;
-padding-bottom: 15px;
-background: linear-gradient(to bottom, #FFF 0%,#F5F7F8 100%);
-}
-
-ul{
-    padding-left: 19px;
-    padding-right: 19px;
-    margin: 0;
-}
-
-li{
-    margin: 0;
-}
-.op1, .op2{
-    list-style: none;
-    float: left;
-    width: 100%;
-    text-align: left;
-
-    border-bottom: 1px solid #DDE3EA;
-    padding-bottom: 12px;
-    padding-top: 17px;
-    cursor: hand;
-    cursor: pointer;
-}
-
-.link1, .link2{
-    padding-left: 0px;
-    vertical-align: 3px;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: Arial;
-    font-weight: bold;
-    color: #0073C9;
-}
-
-
-/*  .guia1{
-        width: 100%;
-        height: auto;
-    }
-    .guia2{
-        width: 100%;
-        height: auto;
-    }
-    .guia3{
-        width: 100%;
-        height: auto;
-    }
-    .guia4{
-        width: 100%;
-        height: auto;
-    }
-    .guia5{
-        width: 100%;
-        height: auto;
-    }
-    .guia6{
-        width: 100%;
-        height: auto;
-    }
-    .guia7{
-        width: 100%;
-        height: auto;
-    }
-    .guia8{
-        width: 100%;
-        height: auto;
-    }
-    .guia9{
-        width: 100%;
-        height: auto;
-    }
-    .guia10{
-        width: 100%;
-        height: auto;
-    }
-*/
-
-
-
 
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
@@ -195,7 +89,10 @@ img {border:none;}
         <li class="guia9"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/uruguay.png"><span>Uruguay</span></li>
         <li class="guia10"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paraguay.png"><span>Paraguay</span></li>
     </ul>
-<div id="render" class="render"></div>
+<div id="render" class="render">
+<ul id="paises" class="list-paises">
+</ul>
+</div>
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
@@ -257,12 +154,12 @@ img {border:none;}
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<div class='article article_ie'><a class='enlace' id='"+dataDC.getCodCountry(row)+"' >";
-                    html +="<div class='articleimg'><img src='"+dataDC.getImage(row)+"'></div>";
-                    html +="<h2>"+dataDC.getCountry(row)+"</h2>";
-                    html +="</a></div>";                     
+                    html +="<li><a class='enlace' id='"+dataDC.getCodCountry(row)+"' >";
+                    html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
+                    html +="<h1>"+dataDC.getCountry(row)+"</h1>";
+                    html +="</a></li>";                     
                 }                
-                document.getElementById('render').innerHTML = html;         
+                document.getElementById('paises').innerHTML = html;         
         }
 
         function cargaCompleta(){
@@ -273,7 +170,7 @@ img {border:none;}
           cargaCompleta();
           jQuery(".list-paises li").click(function(e){
               e.preventDefault();
-              var val = jQuery(this).attr('class');               
+              var val = jQuery(this).attr('id');               
               console.log(val);          
               
           });
