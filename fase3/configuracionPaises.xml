@@ -159,7 +159,8 @@ img {border:none;}
           jQuery(".list-paises li").click(function(e){
               e.preventDefault();
               var val = jQuery(this).attr('id');               
-              console.log(val);          
+              console.log(val);
+
               
           });
         });
