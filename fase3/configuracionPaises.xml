@@ -65,6 +65,14 @@ ul#documentos{
     float: left;
 }
 
+h1#titleGuidesCountry{
+    width: 100%;
+    float: left;
+    color: #0078D2;
+    font-family: BBVA Web Light, BBVA Web, Arial;
+    font-size: 18px;
+}
+
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
       src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), 
@@ -184,7 +192,7 @@ img {border:none;}
                     html +="</a></li>";
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
-                document.getElementById('cosita').innerHTML = htmlTitleCountry;
+                document.getElementById('titleGuidesCountry').innerHTML = htmlTitleCountry;
         }
 
         var DataTableList= function(data){
@@ -220,7 +228,7 @@ img {border:none;}
 <div class="container">
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
-    <h1 id="cosita"> </h1>
+    <h1 id="titleGuidesCountry"> </h1>
     <ul id="documentos"></ul>
   </div>
 </div> 
