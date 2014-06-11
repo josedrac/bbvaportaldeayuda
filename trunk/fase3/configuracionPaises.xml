@@ -129,9 +129,9 @@ img {border:none;}
                         return dataDC.getValue(row, FIELDS.image);
                 }                
                 this.getUrl= function(row){
-                        var objUrl={};
-                        objUrl.url = dataDC.getValue(row, FIELDS.url).trim();
-                        return objUrl;
+                        
+                        return escape(dataDC.getValue(row, FIELDS.url).trim());
+                        
                 }
                 this.isHeaderTable = function(row){
                         return ( row == HEADER_ROW);
@@ -144,7 +144,7 @@ img {border:none;}
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<li class='article'><a onclick='getGuides("+dataDC.getUrl(row)+")' class='enlace'>";
+                    html +="<li class='article'><a onclick='getGuides(\'"+dataDC.getUrl(row)+"\')' class='enlace'>";
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
@@ -158,7 +158,7 @@ img {border:none;}
         });
 
         function getGuides(cod_country){
-          console.log(cod_country);
+          console.log(unescape(cod_country));
         }
  
 </script>
