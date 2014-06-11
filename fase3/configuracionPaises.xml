@@ -50,6 +50,19 @@ li{
     height: 50px;
 }
 
+ul#paises{
+    padding-left: 0;
+}
+
+li.article{
+    padding: 5px 0px;
+    width: 25%;
+}
+
+enlace h1{
+    font-size: 20px;
+    color: #003F8C;
+}
 
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
