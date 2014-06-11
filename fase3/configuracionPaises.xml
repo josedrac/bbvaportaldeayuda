@@ -130,7 +130,7 @@ img {border:none;}
                 }                
                 this.getUrl= function(row){
                         
-                        return escape(dataDC.getValue(row, FIELDS.url).trim());
+                        return encodeURI(dataDC.getValue(row, FIELDS.url).trim());
                         
                 }
                 this.isHeaderTable = function(row){
@@ -158,7 +158,7 @@ img {border:none;}
         });
 
         function getGuides(cod_country){
-          console.log(unescape(cod_country));
+          console.log(decodeURI(cod_country));
         }
  
 </script>
