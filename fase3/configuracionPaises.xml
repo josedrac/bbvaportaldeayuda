@@ -54,12 +54,12 @@ ul#paises{
     padding-left: 0;
 }
 
-li.article{
+.article{
     padding: 5px 0px;
     width: 25%;
 }
 
-enlace h1{
+titleCountry{
     font-size: 20px;
     color: #003F8C;
 }
@@ -152,7 +152,7 @@ img {border:none;}
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='article'><a onclick='getGuides(\""+dataDC.getUrl(row)+"\")' class='enlace'>";
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
-                    html +="<h1>"+dataDC.getCountry(row)+"</h1>";
+                    html +="<h1 class='titleCountry'>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
                 }                 
                 document.getElementById('paises').innerHTML = html;         
