@@ -80,26 +80,27 @@ img {border:none;}
 <div id="render" class="render">
 <ul id="paises" class="list-paises">
 </ul>
+<ul id="documentos">
+</ul>
 </div>
 </div> 
 <script type="text/javascript">
      var gadgetHelper = null;
          var prefs = new _IG_Prefs();
          var urlTable = prefs.getString("_table_query_url");
+         var firstQuery = "select A,B,C,D,E order by A";
          _IG_RegisterOnloadHandler(loadVisualizationAPI); 
 
          function loadVisualizationAPI() {
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
-        function getFromSpreadSheet(){
+        function getFromSpreadSheet(spreadsheetUrl,query,callBack){
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
-                var queryDC = new google.visualization.Query(urlTable, opts);                 
-                var queryDCtosend = "select A,B,C,D,E order by A";
-                queryDC.setQuery(queryDCtosend);                          
-                queryDC.send(handleQueryResponseDC);
-   
+                var queryDC = new google.visualization.Query(spreadsheetUrl, opts);    
+                queryDC.setQuery(query);                          
+                queryDC.send(callBack);   
         }
 
         var DataTable= function(data){
@@ -139,27 +140,72 @@ img {border:none;}
 
         }
 
-        function handleQueryResponseDC(response){
+        function renderCountriesList(response){
                 var dataDC = new DataTable(response.getDataTable());
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<li class='article'><a onclick='getGuides(\""+dataDC.getUrl(row)+"\")' class='enlace enlace2'>";
+                    html +="<li class='article'><a onclick='getGuides(\""+dataDC.getUrl(row)+"\")' class='enlace'>";
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
-                    console.log(dataDC.getUrl(row));
                 }                 
                 document.getElementById('paises').innerHTML = html;         
         }
 
         jQuery(document).ready(function() {
-            getFromSpreadSheet();
+            getFromSpreadSheet(urlTable,firstQuery,renderCountriesList);
         });
 
-        function getGuides(cod_country){
-          console.log(decodeURI(cod_country));
-        } 
+        function getGuides(urlSheet){
+          var url = decodeURI(urlSheet);
+          var query = "select A,B,C,D order by A";
+          getFromSpreadSheet(urlSheet,query,renderList);          
+        }
+
+        function renderList(response){
+                document.getElementById('documentos').innerHTML=""
+                var listData = new DataTableList(response.getDataTable());
+                var filas = listData.getNumberOfRows();               
+                var html= "";
+                for(var row=0;row<filas;row++){                       
+                    html +="<li class='article'><a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
+                    html +="<h1>"+listData.getTitle(row)+"</h1>";
+                    html +="</a></li>";
+                }                 
+                document.getElementById('documentos').innerHTML = html;         
+        }
+
+        var DataTableList= function(data){
+                var HEADER_ROW = 0;
+                var FIELDS = {
+                        id : 0,
+                        title : 1,
+                        contentType: 2,
+                        url:3
+                };
+                
+                this.getNumberOfRows = function(){
+                        return data.getNumberOfRows();
+                }
+                this.getId = function(row){
+                        return data.getValue(row, FIELDS.id);
+                }                
+                this.getTitle = function(row){
+                        return data.getValue(row, FIELDS.title);
+                }              
+                this.getContentType = function(row){
+                        return data.getValue(row, FIELDS.contentType);
+                }                
+                this.getUrl= function(row){                        
+                        return encodeURI(data.getValue(row, FIELDS.url));                        
+                }
+                this.isHeaderTable = function(row){
+                        return ( row == HEADER_ROW);
+                }
+        }
+        
+
  
 </script>
 </body>
