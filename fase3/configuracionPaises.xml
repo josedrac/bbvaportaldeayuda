@@ -101,7 +101,7 @@ img {border:none;}
                 var queryDC = new google.visualization.Query(spreadsheetUrl, opts); 
                 console.log(queryDC);   
                 queryDC.setQuery(query);                          
-                queryDC.send(callBack);   
+                queryDC.send(callBack);  
         }
 
         var DataTable= function(data){
