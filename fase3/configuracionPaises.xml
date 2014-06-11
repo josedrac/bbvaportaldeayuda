@@ -76,18 +76,17 @@ img {border:none;}
 </style>
 <![endif]-->
 <script type="text/javascript">
-
          var gadgetHelper = null;
          var prefs = new _IG_Prefs();
          var urlTable = prefs.getString("_table_query_url");
          var firstQuery = "select A,B,C,D,E order by A";
-         _IG_RegisterOnloadHandler(initGadget); 
+         _IG_RegisterOnloadHandler(loadVisualizationAPI); 
 
-        function initGadget() {
+         function loadVisualizationAPI() {
                 console.log('v1');
                 google.load("visualization", "1", {"packages": ["table"]});
-                getFromSpreadSheet(urlTable,firstQuery,renderCountriesList);
-        }                
+        }
+                
         function getFromSpreadSheet(spreadsheetUrl,query,callBack){
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
@@ -96,6 +95,7 @@ img {border:none;}
                 queryDC.setQuery(query);                          
                 queryDC.send(callBack);  
         }
+
         var DataTable= function(data){
                 var HEADER_ROW = 0;
                 var FIELDS = {
@@ -145,6 +145,10 @@ img {border:none;}
                 }                 
                 document.getElementById('paises').innerHTML = html;         
         }
+
+        jQuery(document).ready(function() {
+            getFromSpreadSheet(urlTable,firstQuery,renderCountriesList);
+        });
 
         function getGuides(urlSheet){
           var query = "select A,B,C,D order by A";          
