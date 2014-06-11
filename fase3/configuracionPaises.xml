@@ -167,6 +167,7 @@ img {border:none;}
                 var listData = new DataTableList(response.getDataTable());
                 var filas = listData.getNumberOfRows();               
                 var html= "";
+                html +="<div class="titleGuia">Guías de Configuración</div>";
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='article'><a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
                     html +="<h1>"+listData.getTitle(row)+"</h1>";
