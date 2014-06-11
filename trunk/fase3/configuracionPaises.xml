@@ -133,7 +133,7 @@ img {border:none;}
                 }                
                 this.getUrl= function(row){
                         
-                        return encodeURI(dataDC.getValue(row, FIELDS.url));
+                        return dataDC.getValue(row, FIELDS.url);
                         
                 }
                 this.isHeaderTable = function(row){
@@ -160,7 +160,6 @@ img {border:none;}
         });
 
         function getGuides(urlSheet){
-          var url = decodeURI(urlSheet);
           var query = "select A,B,C,D order by A";          
           getFromSpreadSheet(urlSheet,query,renderList);          
         }
