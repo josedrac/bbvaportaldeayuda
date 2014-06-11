@@ -96,7 +96,7 @@ img {border:none;}
          _IG_RegisterOnloadHandler(loadVisualizationAPI); 
 
          function loadVisualizationAPI() {
-                console.log('v2');
+                console.log('v33');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
@@ -213,7 +213,6 @@ img {border:none;}
 <div class="container">
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
-    console.log("Hola")
     <ul id="documentos"></ul>
   </div>
 </div> 
