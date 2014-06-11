@@ -130,7 +130,7 @@ img {border:none;}
                 }                
                 this.getUrl= function(row){
                         
-                        return encodeURI(dataDC.getValue(row, FIELDS.url).trim());
+                        return encodeURI(dataDC.getValue(row, FIELDS.url));
                         
                 }
                 this.isHeaderTable = function(row){
@@ -149,7 +149,7 @@ img {border:none;}
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
                     console.log(dataDC.getUrl(row)); 
-                }                
+                }                 
                 document.getElementById('paises').innerHTML = html;         
         }
 
