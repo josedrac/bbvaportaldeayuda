@@ -183,7 +183,7 @@ img {border:none;}
 <body onload="cargaCompleta()">
 <div class="container">
         <ul class="list-paises">
-        <li class="guia1"><img class="flag" src="img/spain.png"><span>España</span></li>
+        <li class="guia1"><img class="flag" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spain.png"><span>España</span></li>
         <li class="guia2"><img class="flag" src="img/portugal.png"><span>Portugal</span></li>
         <li class="guia3"><img class="flag" src="img/mexico.png"><span>Mexico</span></li>
         <li class="guia4"><img class="flag" src="img/chile.png"><span>Chile</span></li>
