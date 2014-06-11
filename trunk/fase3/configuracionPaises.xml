@@ -71,7 +71,7 @@ h1#titleGuidesCountry{
     font-weight: bold; color: #0078D2; font-family: Arial; font-size: 18px;
 }
 
-elementGuide{
+h1#elementGuide{
     color: #0065B7;
     font-size: 12px;
     font-family: Arial;
@@ -115,7 +115,7 @@ img {border:none;}
          var nameCountrySelected = "";
 
          function loadVisualizationAPI() {
-                console.log('v31');
+                console.log('v366');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
