@@ -175,6 +175,8 @@ img {border:none;}
                 var listData = new DataTableList(response.getDataTable());
                 var filas = listData.getNumberOfRows();               
                 var html= "";
+                var htmlTitleCountry= "";
+                htmlTitleCountry += "Guia de configuracion de " + nameCountrySelected;
 
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='article'><a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
@@ -182,7 +184,7 @@ img {border:none;}
                     html +="</a></li>";
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
-                document.getElementById('cosita').innerHTML = nameCountrySelected;
+                document.getElementById('cosita').innerHTML = htmlTitleCountry;
         }
 
         var DataTableList= function(data){
