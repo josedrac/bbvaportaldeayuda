@@ -129,7 +129,9 @@ img {border:none;}
                         return dataDC.getValue(row, FIELDS.image);
                 }                
                 this.getUrl= function(row){
-                        return dataDC.getValue(row, FIELDS.url).trim();
+                        var objUrl={};
+                        objUrl.url = dataDC.getValue(row, FIELDS.url).trim();
+                        return objUrl;
                 }
                 this.isHeaderTable = function(row){
                         return ( row == HEADER_ROW);
@@ -146,7 +148,7 @@ img {border:none;}
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
-                    console.log(dataDC.getUrl(row)); 
+                    console.log(dataDC.getUrl(row));
                 }                
                 document.getElementById('paises').innerHTML = html;         
         }
