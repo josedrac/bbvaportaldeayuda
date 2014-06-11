@@ -208,7 +208,7 @@ img {border:none;}
 <div class="container">
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
-    <ul id="documentos"><div class="titleGuia">Guías de Configuración</div></ul>
+    <ul id="documentos"></ul>
   </div>
 </div> 
 </body>
