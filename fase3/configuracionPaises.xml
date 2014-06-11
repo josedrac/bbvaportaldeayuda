@@ -35,7 +35,7 @@
 
 .noshow span{
         display: block;
-        
+
     } 
 
 li{
@@ -58,6 +58,11 @@ ul#paises{
 h1.titleCountry{
     font-size: 20px;
     color: #003F8C;
+}
+
+ul#documentos{
+    width: 100%;
+    float: left;
 }
 
 /* @group fonts */
@@ -90,6 +95,7 @@ img {border:none;}
          var urlTable = prefs.getString("_table_query_url");
          var firstQuery = "select A,B,C,D,E order by A";
          _IG_RegisterOnloadHandler(loadVisualizationAPI); 
+         var nameCountrySelected = "";
 
          function loadVisualizationAPI() {
                 console.log('v33');
@@ -146,7 +152,7 @@ img {border:none;}
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<li class='article'><a onclick='getGuides(\""+dataDC.getUrl(row)+"\")' class='enlace'>";
+                    html +="<li class='article'><a onclick='getGuides(\""+dataDC.getUrl(row)+"\", \""+dataDC.getUrl(row)+"\")' class='enlace'>";
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1 class='titleCountry'>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
@@ -158,9 +164,10 @@ img {border:none;}
             getFromSpreadSheet(urlTable,firstQuery,renderCountriesList);
         });
 
-        function getGuides(urlSheet){
-          var query = "select A,B,C,D order by A";          
-          getFromSpreadSheet(urlSheet,query,renderList);          
+        function getGuides(urlSheet, nameCountry){
+          var query = "select A,B,C,D order by A";   
+          nameCountrySelected = nameCountry;       
+          getFromSpreadSheet(urlSheet,query,renderList);
         }
 
         function renderList(response){
@@ -168,12 +175,14 @@ img {border:none;}
                 var listData = new DataTableList(response.getDataTable());
                 var filas = listData.getNumberOfRows();               
                 var html= "";
+
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='article'><a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
                     html +="<h1>"+listData.getTitle(row)+"</h1>";
                     html +="</a></li>";
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
+                document.getElementById('cosita').innerHTML = nameCountry;
         }
 
         var DataTableList= function(data){
@@ -209,6 +218,7 @@ img {border:none;}
 <div class="container">
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
+    <h1 id="cosita"> </h1>
     <ul id="documentos"></ul>
   </div>
 </div> 
