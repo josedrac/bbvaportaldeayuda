@@ -211,7 +211,7 @@ img {border:none;}
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
                 var queryDC = new google.visualization.Query(urlTable, opts);                 
-                var queryDCtosend = "select A,B,C,D,E,F order by A";
+                var queryDCtosend = "select A,B,C,D,E order by A";
                 queryDC.setQuery(queryDCtosend);                          
                 queryDC.send(handleQueryResponseDC);
    
@@ -221,15 +221,12 @@ img {border:none;}
                 var HEADER_ROW = 0;
                 var FIELDS = {
                         id : 0,
-                        title : 1,
-                        type: 2,
+                        codCountry : 1,
+                        country: 2,
                         image: 3,
-                        short: 4,
-                        long:5
+                        url:4
                 };
                 
-                var URL_DETAIL = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/app_detail?app_id=";
-
                 var dataDC = data;
                 this.getNumberOfRows = function(){
                         return dataDC.getNumberOfRows();
@@ -237,27 +234,18 @@ img {border:none;}
                 this.getId = function(row){
                         return dataDC.getValue(row, FIELDS.id);
                 }                
-                this.getTitle = function(row){
-                        return dataDC.getValue(row, FIELDS.title);
+                this.getCodCountry = function(row){
+                        return dataDC.getValue(row, FIELDS.codCountry);
+                }              
+                this.getCountry = function(row){
+                        return dataDC.getValue(row, FIELDS.country);
                 }               
                 this.getImage = function(row){
                         return dataDC.getValue(row, FIELDS.image);
+                }                
+                this.getUrl= function(row){
+                        return dataDC.getValue(row, FIELDS.url);
                 }
-                this.getType= function(row){
-                        var icons = (dataDC.getValue(row, FIELDS.type)).split(/[ ,]+/);
-                        return icons;
-                }
-                this.getShort= function(row){
-                        return dataDC.getValue(row, FIELDS.short);
-                }
-                this.getLong= function(row){
-                        return dataDC.getValue(row, FIELDS.long);
-                }
-                
-                this.getUrlDetalle= function(row){
-                        return URL_DETAIL+this.getId(row);
-                }
-
                 this.isHeaderTable = function(row){
                         return ( row == HEADER_ROW);
                 }
@@ -269,10 +257,9 @@ img {border:none;}
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<div class=\"article article_ie\"><a class=\"enlace\" target=\"_parent\" href=\""+dataDC.getUrlDetalle(row)+"\">";
-                    html +="<div class=\"articleimg\"><img src='"+dataDC.getImage(row)+"'></div>";
-                    html +="<h2>"+dataDC.getTitle(row)+"</h2>";
-                    html +="<div class=\"short\"><span>"+dataDC.getShort(row)+"</span></div>";
+                    html +="<div class='article article_ie'><a class='enlace' id='"+dataDC.getCodCountry(row)+"' >";
+                    html +="<div class='articleimg'><img src='"+dataDC.getImage(row)+"'></div>";
+                    html +="<h2>"+dataDC.getCountry(row)+"</h2>";
                     html +="</a></div>";                     
                 }                
                 document.getElementById('render').innerHTML = html;         
