@@ -75,15 +75,6 @@ img {border:none;}
 { max-width: 180px;height: 300px;width: 32%;display: inline;}
 </style>
 <![endif]-->
-<body>
-<div class="container">
-<div id="render" class="render">
-<ul id="paises" class="list-paises">
-</ul>
-<ul id="documentos">
-</ul>
-</div>
-</div> 
 <script type="text/javascript">
          var gadgetHelper = null;
          var prefs = new _IG_Prefs();
@@ -205,11 +196,17 @@ img {border:none;}
                 this.isHeaderTable = function(row){
                         return ( row == HEADER_ROW);
                 }
-        }
-        
-
- 
+        }   
 </script>
+<body>
+<div class="container">
+<div id="render" class="render">
+<ul id="paises" class="list-paises">
+</ul>
+<ul id="documentos">
+</ul>
+</div>
+</div> 
 </body>
 
    
