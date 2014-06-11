@@ -92,7 +92,7 @@ img {border:none;}
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
-        function reload(){
+        function getFromSpreadSheet(){
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
                 var queryDC = new google.visualization.Query(urlTable, opts);                 
@@ -142,7 +142,7 @@ img {border:none;}
                 var filas = dataDC.getNumberOfRows();               
                 var html= "";
                 for(var row=0;row<filas;row++){                       
-                    html +="<li class='article'><a class='enlace' id='"+dataDC.getCodCountry(row)+"' >";
+                    html +="<li class='article'><a class='enlace' onclick='getGuides(dataDC.getCodCountry(row))' >";
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";                     
@@ -150,20 +150,13 @@ img {border:none;}
                 document.getElementById('paises').innerHTML = html;         
         }
 
-        function cargaCompleta(){
-                reload();
-        }
-
         jQuery(document).ready(function() {
-          cargaCompleta();
-          jQuery(".list-paises li").click(function(e){
-              e.preventDefault();
-              var val = jQuery(this).attr('id');               
-              console.log(val);
-
-              
-          });
+            getFromSpreadSheet();
         });
+
+        function getGuides(cod_country){
+          console.log(cod_country);
+        }
  
 </script>
 </body>
