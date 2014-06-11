@@ -146,6 +146,7 @@ img {border:none;}
                     html +="<div class='flag'><img src='"+dataDC.getImage(row)+"'></div>";
                     html +="<h1>"+dataDC.getCountry(row)+"</h1>";
                     html +="</a></li>";
+                    console.log(DataDC.getUrl(row));
                 }                
                 document.getElementById('paises').innerHTML = html;         
         }
