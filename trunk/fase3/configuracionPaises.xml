@@ -68,7 +68,18 @@ ul#documentos{
 h1#titleGuidesCountry{
     width: 100%;
     float: left;
-    font-weight: normal; color: #0078D2; font-family: BBVA Web Light, BBVA Web, Arial; font-size: 18px;
+    font-weight: bold; color: #0078D2; font-family: Arial; font-size: 18px;
+}
+
+elementGuide{
+    color: #0065B7;
+    font-size: 12px;
+    font-family: Arial;
+    margin-left: 24px;
+    padding-top: 4px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
 }
 
 /* @group fonts */
@@ -186,7 +197,7 @@ img {border:none;}
 
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='articleGuide'><a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
-                    html +="<h1>"+listData.getTitle(row)+"</h1>";
+                    html +="<h1 id='elementGuide'>"+listData.getTitle(row)+"</h1>";
                     html +="</a></li>";
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
