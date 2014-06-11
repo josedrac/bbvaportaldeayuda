@@ -182,7 +182,7 @@ img {border:none;}
                     html +="</a></li>";
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
-                document.getElementById('cosita').innerHTML = nameCountry;
+                document.getElementById('cosita').innerHTML = nameCountrySelected;
         }
 
         var DataTableList= function(data){
