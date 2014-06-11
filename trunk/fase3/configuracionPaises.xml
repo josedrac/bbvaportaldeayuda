@@ -98,7 +98,8 @@ img {border:none;}
         function getFromSpreadSheet(spreadsheetUrl,query,callBack){
                 var gadgetHelper = new google.visualization.GadgetHelper();
                 var opts = {dataType:'jsonp'};
-                var queryDC = new google.visualization.Query(spreadsheetUrl, opts);    
+                var queryDC = new google.visualization.Query(spreadsheetUrl, opts); 
+                console.log(queryDC);   
                 queryDC.setQuery(query);                          
                 queryDC.send(callBack);   
         }
@@ -159,8 +160,7 @@ img {border:none;}
 
         function getGuides(urlSheet){
           var url = decodeURI(urlSheet);
-          var query = "select A,B,C,D order by A";
-          console.log(url);
+          var query = "select A,B,C,D order by A";          
           getFromSpreadSheet(urlSheet,query,renderList);          
         }
 
