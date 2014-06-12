@@ -189,7 +189,7 @@
 	   	var html= "";
        //html +='<h2>'+title+'</h2>'; 
 	   	html +='<ul id=\"botonera\">'; 
-   		for(var row=0;row<filas;row++){
+   		for(var row=1;row<filas;row++){
 			if( dataDC.validateRow(row)){
 				html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
 				"<img src='"+dataDC.getImage(row)+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
