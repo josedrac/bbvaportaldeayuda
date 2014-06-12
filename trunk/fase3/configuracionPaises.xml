@@ -146,7 +146,7 @@ img {border:none;}
          var nameCountrySelected = "";
 
          function loadVisualizationAPI() {
-                console.log('v4');
+                console.log('v99');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
