@@ -141,7 +141,7 @@
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,max(B),C,D,E where B<>'caribbeans'   group by A,C,D,E";
+		var queryDCtosend = "select A,max(B),C,D,E where B <> 'no country' group by A,C,D,E";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
