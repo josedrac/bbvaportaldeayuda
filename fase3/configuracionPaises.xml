@@ -71,11 +71,12 @@ ul#documentos{
 h1#titleGuidesCountry{
     width: auto;
     float: left;
-    font-weight: normal; color: #0078D2; font-family: BBVA Web Light; font-size: 22px;
+    font-weight: normal; 
+    font-family: BBVA Web Light; 
+    font-size: 22px;
     margin-top: 40px;
     color: #003F8C;
     padding-bottom: 5px;
-    font-size: 17px;
     border-bottom: 1px solid #ccc;
 }
 
