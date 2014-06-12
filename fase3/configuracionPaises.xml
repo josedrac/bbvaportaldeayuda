@@ -146,7 +146,7 @@ img {border:none;}
          var nameCountrySelected = "";
 
          function loadVisualizationAPI() {
-                console.log('v99');
+                console.log('v65');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
@@ -229,7 +229,12 @@ img {border:none;}
                 htmlTitleCountry += "Guia de configuracion de " + nameCountrySelected;
 
                 for(var row=0;row<filas;row++){                       
-                    html +="<li class='articleGuide'><a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
+                    html +="<li class='articleGuide'>";
+                    if (listData.getContentType=="pagina"){
+                        html += "<a target='_parent' href='"+listData.getUrl(row)+"' class='enlace'>"; 
+                    }else{
+                        html += "<a target='_blank' href='"+listData.getUrl(row)+"' class='enlace'>";
+                    }
                     html +="<h1 id='elementGuide'>"+listData.getTitle(row)+"</h1>";
                     html +="</a></li>";
                 }                 
