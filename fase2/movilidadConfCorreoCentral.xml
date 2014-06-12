@@ -122,10 +122,6 @@
 		<![endif]-->
 		
 <body onload="cargaCompleta()">	
-<!--<div id="textMovilidad">Guías de configuración, según dispositivo: </div>-->
-<!--<div id="movilidad">Guías de configuración, según dispositivo:
- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
-</div>-->
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
@@ -139,12 +135,12 @@
 		google.load("visualization", "1", {"packages": ["table"]});
 	}
 		
-	function devicesCountry(pais){
+	function devicesCountry(){
 		var gadgetHelper = new google.visualization.GadgetHelper();
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,max(B),C,D,E where B like '"+pais+"'   group by A,C,D,E";
+		var queryDCtosend = "select A,B,C,D,E order by A";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
@@ -202,7 +198,7 @@
 	}
 
 	function cargaCompleta(){
-		devicesCountry('España');
+		devicesCountry();
 	}
  
    </script>
