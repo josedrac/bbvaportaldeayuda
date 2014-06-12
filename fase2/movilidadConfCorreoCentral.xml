@@ -141,7 +141,7 @@
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,B,C,D,E group by B order by A";
+		var queryDCtosend = "select A,B,C,D,E group by B";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
@@ -183,6 +183,7 @@
 	 	var dataDC = new DataTable(response.getDataTable());
 		var filas = dataDC.getNumberOfRows();
 		console.log(filas);
+		console.log('benzema');
 	   	var html= "";
        //html +='<h2>'+title+'</h2>'; 
 	   	html +='<ul id=\"botonera\">'; 
