@@ -92,9 +92,10 @@ h1#elementGuide{
 }
 
 li.articleGuide{
-    width: 100%;
+    width: auto;
     text-align: left;
     margin: 0;
+    clear: both;
 }
 
 a.enlace{
