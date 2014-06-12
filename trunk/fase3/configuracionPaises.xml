@@ -146,7 +146,7 @@ img {border:none;}
          var nameCountrySelected = "";
 
          function loadVisualizationAPI() {
-                console.log('v23');
+                console.log('v25');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
@@ -230,6 +230,7 @@ img {border:none;}
 
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='articleGuide'>";
+                    console.log(listData.getContentType(row));
                     if (listData.getContentType(row)=="pagina"){
                         html += "<a target='_parent' href='"+listData.getUrl(row)+"' class='enlace'>"; 
                     }else{
