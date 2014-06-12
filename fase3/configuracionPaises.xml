@@ -230,7 +230,7 @@ img {border:none;}
 
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='articleGuide'>";
-                    console.log(listData.getContentType[i]);
+                    console.log(listData.getContentType[row]);
                     if (listData.getContentType=="pagina"){
                         html += "<a target='_parent' href='"+listData.getUrl(row)+"' class='enlace'>"; 
                     }else{
