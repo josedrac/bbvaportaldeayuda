@@ -122,6 +122,10 @@
 		<![endif]-->
 		
 <body onload="cargaCompleta()">	
+<!--<div id="textMovilidad">Guías de configuración, según dispositivo: </div>-->
+<!--<div id="movilidad">Guías de configuración, según dispositivo:
+ <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
+</div>-->
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
