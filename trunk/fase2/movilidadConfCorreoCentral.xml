@@ -133,8 +133,6 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
-
-		console.log('benzema');
 		google.load("visualization", "1", {"packages": ["table"]});
 	}
 		
@@ -143,7 +141,7 @@
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,max(B),C,D,E where B<>'cuba'   group by A,C,D,E";
+		var queryDCtosend = "select A,max(B),C,D,E where B<>'caribbeans'   group by A,C,D,E";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
@@ -185,11 +183,10 @@
 	 	var dataDC = new DataTable(response.getDataTable());
 		var filas = dataDC.getNumberOfRows();
 		console.log(filas);
-		console.log('raul');
 	   	var html= "";
        //html +='<h2>'+title+'</h2>'; 
 	   	html +='<ul id=\"botonera\">'; 
-   		for(var row=1;row<filas;row++){
+   		for(var row=2;row<filas;row++){
 			if( dataDC.validateRow(row)){
 				html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
 				"<img src='"+dataDC.getImage(row)+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
