@@ -264,7 +264,7 @@ img {border:none;}
 <div class="container">
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
-    <div class="noshow" id="loading"><span>cargando...</span></div>
+    <div class="noshow" id="loading"><img src="https://bbvaportaldeayuda.googlecode.com/svn-history/r3246/trunk/img/gif-load.gif"></div>
     <div class="guide hideBlock">
         <h1 id="titleGuidesCountry"> </h1>
         <ul id="documentos"></ul>
