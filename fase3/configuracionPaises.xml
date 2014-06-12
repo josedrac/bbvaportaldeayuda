@@ -106,6 +106,11 @@ a.enlace{
     visibility: hidden;
 }
 
+#loading{
+    float: left;
+    width: 100%;
+}
+
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
       src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), 
@@ -139,7 +144,7 @@ img {border:none;}
          var nameCountrySelected = "";
 
          function loadVisualizationAPI() {
-                console.log('v2');
+                console.log('v6');
                 google.load("visualization", "1", {"packages": ["table"]});
         }
                 
@@ -206,7 +211,8 @@ img {border:none;}
         });
 
         function getGuides(urlSheet, nameCountry){
-          jQuery("#loading").removeClass("noshow");  
+          jQuery("#loading").removeClass("noshow");
+            jQuery(".guide").addClass("hideBlock"); 
           var query = "select A,B,C,D order by A";   
           nameCountrySelected = nameCountry;       
           getFromSpreadSheet(urlSheet,query,renderList);
