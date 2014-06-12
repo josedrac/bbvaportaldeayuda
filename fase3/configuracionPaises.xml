@@ -101,6 +101,10 @@ a.enlace{
     cursor: pointer;
 }
 
+.hideBlock{
+    visibility: hidden;
+}
+
 /* @group fonts */
 @font-face { font-family: 'BBVA Web Book'; src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot"); 
       src: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix") format("embedded-opentype"), 
@@ -201,6 +205,8 @@ img {border:none;}
         });
 
         function getGuides(urlSheet, nameCountry){
+            enseñar el cargando..
+            jQuery('loading').removeClass("noshow");
           var query = "select A,B,C,D order by A";   
           nameCountrySelected = nameCountry;       
           getFromSpreadSheet(urlSheet,query,renderList);
@@ -221,6 +227,10 @@ img {border:none;}
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
                 document.getElementById('titleGuidesCountry').innerHTML = htmlTitleCountry;
+                ocultar el cargando
+                jQuery('loading').addClass("noshow");
+                quitar clase visibility hidem
+                jQuery('guide').removeClass('hideBlock')
         }
 
         var DataTableList= function(data){
@@ -256,8 +266,11 @@ img {border:none;}
 <div class="container">
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
-    <h1 id="titleGuidesCountry"> </h1>
-    <ul id="documentos"></ul>
+    <div class="loading noshow"><span>cargando...</span></div>
+    <div class="guide hideBlock">
+        <h1 id="titleGuidesCountry"> </h1>
+        <ul id="documentos"></ul>
+    </div>
   </div>
 </div> 
 </body>
