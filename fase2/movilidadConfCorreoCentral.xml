@@ -133,6 +133,8 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
+	 
+		console.log('benzema');
 		google.load("visualization", "1", {"packages": ["table"]});
 	}
 		
@@ -183,7 +185,6 @@
 	 	var dataDC = new DataTable(response.getDataTable());
 		var filas = dataDC.getNumberOfRows();
 		console.log(filas);
-		console.log('benzema');
 	   	var html= "";
        //html +='<h2>'+title+'</h2>'; 
 	   	html +='<ul id=\"botonera\">'; 
