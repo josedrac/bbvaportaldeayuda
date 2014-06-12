@@ -228,7 +228,7 @@ img {border:none;}
                 var filas = listData.getNumberOfRows();               
                 var html= "";
                 var htmlTitleCountry= "";
-                htmlTitleCountry += "Guia de configuracion de " + nameCountrySelected;
+                htmlTitleCountry += "Guías de configuración de " + nameCountrySelected;
 
                 for(var row=0;row<filas;row++){                       
                     html +="<li class='articleGuide'>";
