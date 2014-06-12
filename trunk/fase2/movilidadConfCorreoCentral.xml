@@ -133,7 +133,7 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
-	 
+
 		console.log('benzema');
 		google.load("visualization", "1", {"packages": ["table"]});
 	}
@@ -143,7 +143,7 @@
 		var opts = {dataType:'jsonp'};
 		var queryDC = new google.visualization.Query(urlTable, opts);
 		 
-		var queryDCtosend = "select A,max(B),C,D,E where B not like ''   group by A,C,D,E";
+		var queryDCtosend = "select A,max(B),C,D,E where B not ''   group by A,C,D,E";
 
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);
