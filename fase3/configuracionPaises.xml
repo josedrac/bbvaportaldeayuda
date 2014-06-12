@@ -75,7 +75,7 @@ h1#titleGuidesCountry{
     font-family: BBVA Web Light; 
     font-size: 22px;
     margin-top: 40px;
-    color: #003F8C;
+    color: #0078D2;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
 }
