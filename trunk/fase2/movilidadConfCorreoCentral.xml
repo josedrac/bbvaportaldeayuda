@@ -156,7 +156,6 @@
 		return country;
 	}
 	var country = getCountryFromUrl();
-	console.log(country);
 	var DataTable= function(data){
 		var HEADER_ROW = 0;
 		var FIELDS = {

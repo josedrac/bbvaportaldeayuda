@@ -338,11 +338,9 @@
 		return deviceId;
 	}
 	var dispositivo = getDeviceId();
-	console.log(dispositivo);
 	 
 	 function loadVisualizationAPI() 
 			{
-				console.log('v0');
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
 			}
