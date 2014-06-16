@@ -326,11 +326,19 @@
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
 	 var emailTo = prefs.getString("emailTo");
-	 var dispositivo = gadgets.util.getUrlParameters()["parent"].split("=");
+	 
 	 var aux = gadgets.util.getUrlParameters()["parent"];
 	 
 	 var situation = gadgets.util.getUrlParameters()["parent"];
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
+
+	function getDeviceId(){
+		var fullUrl = gadgets.util.getUrlParameters()["parent"].split("=");		
+		var deviceId = fullUrl.split("&")[0];		
+		return deviceId;
+	}
+	var dispositivo = getDeviceId();
+	console.log(dispositivo);
 	 
 	 function loadVisualizationAPI() 
 			{
@@ -344,7 +352,7 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select * where A like '%"+dispositivo[1]+"%' ";
+				var querytosend = "select * where A like '%"+dispositivo+"%' ";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
