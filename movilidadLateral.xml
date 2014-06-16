@@ -124,7 +124,7 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
-				console.log('v3');
+				console.log('v4');
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
 			}
@@ -152,7 +152,7 @@
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();	
 				
-				for(var i=0;i<filas;i++){
+				for(var i=1;i<filas;i++){
 				 if(data.getValue(i,1) == 'España'){
 					document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
 					} else if(data.getValue(i,1) != 'País'){				    
