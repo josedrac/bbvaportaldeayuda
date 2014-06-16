@@ -147,7 +147,7 @@
 		queryDC.send(handleQueryResponseDC);   
 	}
 	function getCountryFromUrl(){
-		var fullUrl = gadgets.util.getUrlParameters()["parent"]);		
+		var fullUrl = gadgets.util.getUrlParameters()["parent"];		
 		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/guias/"
 		var country = fullUrl.replace(urlSubstring,"");
 		country.split("-")[0];
