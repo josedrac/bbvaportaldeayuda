@@ -129,13 +129,13 @@
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
-	 var title= prefs.getString("title"); 
+	 var title= prefs.getString("title"); 	
+	
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
-	 	console.log('v1');
+	 	console.log('v3');
 		google.load("visualization", "1", {"packages": ["table"]});
-		console.log(gadgets.util.getUrlParameters()["parent"]);		
 	}
 		
 	function devicesCountry(){
@@ -146,7 +146,15 @@
 		queryDC.setQuery(queryDCtosend);			  
 		queryDC.send(handleQueryResponseDC);   
 	}
-
+	function getCountryFromUrl(){
+		var fullUrl = gadgets.util.getUrlParameters()["parent"]);		
+		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/guias/"
+		var country = fullUrl.replace(urlSubstring,"");
+		country.split("-")[0];
+		return country;
+	}
+	var country = getCountryFromUrl();
+	console.log(country);
 	var DataTable= function(data){
 		var HEADER_ROW = 0;
 		var FIELDS = {
@@ -181,9 +189,7 @@
 	function handleQueryResponseDC(response){
 	 	var dataDC = new DataTable(response.getDataTable());
 		var filas = dataDC.getNumberOfRows();
-		console.log(filas);
 	   	var html= "";
-       //html +='<h2>'+title+'</h2>'; 
 	   	html +='<ul id=\"botonera\">'; 
    		for(var row=2;row<filas;row++){
 			if( dataDC.validateRow(row)){
