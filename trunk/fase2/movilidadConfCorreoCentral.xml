@@ -134,7 +134,6 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
-	 	console.log('v4');
 		google.load("visualization", "1", {"packages": ["table"]});
 	}
 		
