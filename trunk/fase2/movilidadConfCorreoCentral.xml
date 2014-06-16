@@ -151,7 +151,7 @@
 		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/guias/"
 		var country = fullUrl.replace(urlSubstring,"");		
 		country = country.split("-")[0];
-		if(country="esp"){
+		if(country=="esp"){
 			country = "";
 		}
 		return country;
