@@ -150,7 +150,11 @@
 		var fullUrl = gadgets.util.getUrlParameters()["parent"];		
 		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/guias/"
 		var country = fullUrl.replace(urlSubstring,"");		
-		return country.split("-")[0];
+		country = country.split("-")[0];
+		if(country="esp"){
+			country = "";
+		}
+		return country;
 	}
 	var country = getCountryFromUrl();
 	console.log(country);
@@ -167,7 +171,7 @@
 			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo='+this.getId(row);
+			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/'+country+'movil?dispositivo='+this.getId(row);
 		}
 		this.getNumberOfRows = function(){
 			return dataDC.getNumberOfRows();
