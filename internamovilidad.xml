@@ -334,7 +334,7 @@
 
 	function getDeviceId(){
 		var fullUrl = gadgets.util.getUrlParameters()["parent"].split("=");		
-		var deviceId = fullUrl.split("&")[0];		
+		var deviceId = fullUrl[1].split("&")[0];		
 		return deviceId;
 	}
 	var dispositivo = getDeviceId();
