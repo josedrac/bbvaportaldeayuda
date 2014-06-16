@@ -149,9 +149,8 @@
 	function getCountryFromUrl(){
 		var fullUrl = gadgets.util.getUrlParameters()["parent"];		
 		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/guias/"
-		var country = fullUrl.replace(urlSubstring,"");
-		country.split("-")[0];
-		return country;
+		var country = fullUrl.replace(urlSubstring,"");		
+		return country.split("-")[0];
 	}
 	var country = getCountryFromUrl();
 	console.log(country);
