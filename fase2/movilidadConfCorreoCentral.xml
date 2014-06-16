@@ -133,19 +133,18 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
+	 	console.log('v1');
 		google.load("visualization", "1", {"packages": ["table"]});
+		console.log(gadgets.util.getUrlParameters()["parent"]);		
 	}
 		
 	function devicesCountry(){
 		var gadgetHelper = new google.visualization.GadgetHelper();
 		var opts = {dataType:'jsonp'};
-		var queryDC = new google.visualization.Query(urlTable, opts);
-		 
+		var queryDC = new google.visualization.Query(urlTable, opts);		 
 		var queryDCtosend = "select A,max(B),C,D,E where B <> 'no country' group by A,C,D,E";
-
 		queryDC.setQuery(queryDCtosend);			  
-		queryDC.send(handleQueryResponseDC);
-   
+		queryDC.send(handleQueryResponseDC);   
 	}
 
 	var DataTable= function(data){
