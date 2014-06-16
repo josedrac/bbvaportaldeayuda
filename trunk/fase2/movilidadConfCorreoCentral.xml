@@ -171,7 +171,7 @@
 			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/'+country+'movil?dispositivo='+this.getId(row);
+			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/'+country+'-movil?dispositivo='+this.getId(row);
 		}
 		this.getNumberOfRows = function(){
 			return dataDC.getNumberOfRows();
