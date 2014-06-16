@@ -154,7 +154,6 @@
 	   var html= "";
 	   html +='<div class=\"titulo\">' + subseccion + '</div>';
 	   html +='<ul id=\"botonera\">'; 
-	   console.log(filas);
 	   for(var i=1;i<filas;i++)
 	   {
 		if(dataDC.getValue(i,2) != 'Dispositivo')
