@@ -124,7 +124,7 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
-				console.log('v4');
+				console.log('v100');
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
 			}
@@ -143,15 +143,14 @@
 		var fullUrl = gadgets.util.getUrlParameters()["parent"];		
 		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/"
 		var country = fullUrl.replace(urlSubstring,"");		
-		country = country.split("movil")[0];
-		console.log(country);
+		country = country.split("movil")[0];		
 		return country;
 	}
 	var country = getCountryFromUrl();
 	 function handleQueryResponse(response) {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();	
-				
+				console.log(filas);				
 				for(var i=1;i<filas;i++){
 				 if(data.getValue(i,1) == 'España'){
 					document.getElementById('paises').innerHTML += "<option selected='selected' value='"+data.getValue(i,1)+"'>"+data.getValue(i,1)+"</option>";
