@@ -134,7 +134,7 @@
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
 	 function loadVisualizationAPI() {
-	 	console.log('v3');
+	 	console.log('v4');
 		google.load("visualization", "1", {"packages": ["table"]});
 	}
 		
@@ -150,7 +150,7 @@
 		var fullUrl = gadgets.util.getUrlParameters()["parent"];		
 		var urlSubstring = "https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/guias/"
 		var country = fullUrl.replace(urlSubstring,"");		
-		country = country.split("-")[0];
+		country = country.split("correo")[0];
 		if(country=="esp"){
 			country = "";
 		}
@@ -171,7 +171,7 @@
 			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/'+country+'-movil?dispositivo='+this.getId(row);
+			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/'+country+'movil?dispositivo='+this.getId(row);
 		}
 		this.getNumberOfRows = function(){
 			return dataDC.getNumberOfRows();
