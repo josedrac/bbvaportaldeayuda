@@ -334,6 +334,7 @@
 	 
 	 function loadVisualizationAPI() 
 			{
+				console.log('v0');
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
 			}
