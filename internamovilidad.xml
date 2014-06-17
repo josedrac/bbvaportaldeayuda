@@ -384,7 +384,7 @@
 		}
 
 		function getImgUrl(url){
-			var baseUrlDrive="google.com/a/bbva.com/file/d/";
+			var baseUrlDrive="https://drive.google.com/a/bbva.com/file/d/";
 			var baseUrlImg="http://drive.google.com/uc?export=view&id=";
 			var urlImg = url;
 			if(urlImg.indexOf(baseUrlDrive)>=0){
