@@ -195,13 +195,26 @@
    		for(var row=2;row<filas;row++){
 			if( dataDC.validateRow(row)){
 				html +="<li><a  href='"+dataDC.getHref(row)+"' target='_parent'>"+
-				"<img src='"+dataDC.getImage(row)+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
+				"<img src='"+getImgUrl(dataDC.getImage(row))+"'/><div class='label'>"+dataDC.getName(row)+"</div></a></li>";
 			}
 	  	}
 
 		html +='</ul>';
 		document.getElementById('content_div').innerHTML = html;
 	 
+	}
+
+	function getImgUrl(url){
+		console.log('correo central');
+		var baseUrlDrive="https://docs.google.com/a/bbva.com/file/d/";
+		var baseUrlImg="http://drive.google.com/uc?export=view&id=";
+		var urlImg = url;
+		if(urlImg.indexOf(baseUrlDrive)==0){
+			var id = urlImg.replace(baseUrlDrive,"");
+			id = id.split("/")[0];
+			urlImg = baseUrlImg+id;
+		}
+		return urlImg;
 	}
 
 	jQuery(document).ready(function() {
