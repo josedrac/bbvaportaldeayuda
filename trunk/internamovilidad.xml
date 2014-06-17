@@ -370,7 +370,7 @@
 			   html += "<div id='textVideo'>"+data.getValue(0,4)+"</div>";
 			   html += "<div id='urlVideo'>";
 			   //html += "<embed src='"+data.getValue(0,3)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'></embed></div>";
-			   html += "<img src='"+data.getValue(0,3)+"' width='360' height='427' /></div>";
+			   html += "<img src='"+getImgUrl(data.getValue(0,3))+"' width='360' height='427' /></div>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="<span class='titleguia'>Índice de esta guía</span>";
 			   html += "<ul class='guias'>";
@@ -381,6 +381,19 @@
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   //html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";
 			   document.getElementById('listportales').innerHTML = html;				
+		}
+
+		function getImgUrl(url){
+			var baseUrlDrive="https://docs.google.com/a/bbva.com/file/d/";
+			var baseUrlImg="http://drive.google.com/uc?export=view&id=";
+			var urlImg = url;
+			if(urlImg.indexOf(baseUrlDrive)==0){
+				console.log('editando url');
+				var id = urlImg.replace(baseUrlDrive,"");
+				id = id.split("/")[0];
+				urlImg = baseUrlImg+id;
+			}
+			return urlImg;
 		}
 
   </script>
