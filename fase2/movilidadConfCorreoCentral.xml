@@ -205,11 +205,11 @@
 	}
 
 	function getImgUrl(url){
-		console.log('correo central');
 		var baseUrlDrive="https://docs.google.com/a/bbva.com/file/d/";
 		var baseUrlImg="http://drive.google.com/uc?export=view&id=";
 		var urlImg = url;
 		if(urlImg.indexOf(baseUrlDrive)==0){
+			console.log('correo central v2');
 			var id = urlImg.replace(baseUrlDrive,"");
 			id = id.split("/")[0];
 			urlImg = baseUrlImg+id;
