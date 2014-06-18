@@ -241,6 +241,7 @@ img {border:none;}
                 }                 
                 document.getElementById('documentos').innerHTML = html;         
                 document.getElementById('titleGuidesCountry').innerHTML = htmlTitleCountry;
+                window.location.href='#listDocuments';
                jQuery("#loading").addClass("noshow");
                jQuery(".guide").removeClass("hideBlock"); 
         }
@@ -279,7 +280,7 @@ img {border:none;}
   <div id="render" class="render">
     <ul id="paises" class="list-paises"></ul>
     <div class="noshow" id="loading"><img src="https://bbvaportaldeayuda.googlecode.com/svn-history/r3246/trunk/img/gif-load.gif"></div>
-    <div class="guide hideBlock">
+    <div id="listDocuments" class="guide hideBlock">
         <h1 id="titleGuidesCountry"> </h1>
         <ul id="documentos"></ul>
     </div>
