@@ -281,17 +281,6 @@
 	 var prefs = new _IG_Prefs(); 
 	 var urlTable = prefs.getString("_table_query_url");
 	 var emailTo = prefs.getString("emailTo");
-    /*
-	 var portalContenido = gadgets.util.getUrlParameters()["parent"].split("=");
-    
-	 console.log('portalContenido[0]'+portalContenido[0]);
-   console.log('portalContenido[1]'+portalContenido[1]);
-   
-   
-	 var situation = gadgets.util.getUrlParameters()["parent"];
-    
-    console.log('situation'+situation);
-    */
     
     function getDeviceId(){
 		var fullUrl = gadgets.util.getUrlParameters()["parent"].split("=");		
