@@ -316,7 +316,13 @@
 
 		function handleQueryResponse(response) 
 		{
-		
+		 console.log('portalContenido[0]'+portalContenido[0]);
+   console.log('portalContenido[1]'+portalContenido[1]);
+   
+   
+         
+    
+    console.log('situation'+situation);
 		   data = response.getDataTable();	
 		   var html = "";
 		   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
